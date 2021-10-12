@@ -47,46 +47,47 @@ A level-1 auxiliary file: Cascaras/fin.aux
 Database file #1: nuestros.bib
 Database file #2: latex.bib
 Database file #3: otros.bib
+Warning--empty journal in article_2
 Warning--empty journal in article_1
-You've used 7 entries,
+You've used 8 entries,
             2962 wiz_defined-function locations,
-            1133 strings with 13580 characters,
-and the built_in function-call counts, 3724 in all, are:
-= -- 250
-> -- 159
+            1139 strings with 13875 characters,
+and the built_in function-call counts, 4492 in all, are:
+= -- 298
+> -- 209
 < -- 4
-+ -- 67
-- -- 54
-* -- 266
-:= -- 581
-add.period$ -- 22
-call.type$ -- 7
-change.case$ -- 48
-chr.to.int$ -- 7
-cite$ -- 8
-duplicate$ -- 303
-empty$ -- 314
-format.name$ -- 67
-if$ -- 727
++ -- 86
+- -- 72
+* -- 342
+:= -- 696
+add.period$ -- 26
+call.type$ -- 8
+change.case$ -- 59
+chr.to.int$ -- 8
+cite$ -- 10
+duplicate$ -- 363
+empty$ -- 362
+format.name$ -- 88
+if$ -- 867
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 68
-newline$ -- 40
-num.names$ -- 29
-pop$ -- 163
+missing$ -- 82
+newline$ -- 46
+num.names$ -- 33
+pop$ -- 196
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 56
 quote$ -- 0
-skip$ -- 114
+skip$ -- 128
 stack$ -- 0
-substring$ -- 83
-swap$ -- 131
+substring$ -- 94
+swap$ -- 166
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 52
-warning$ -- 1
-while$ -- 21
+type$ -- 62
+warning$ -- 2
+while$ -- 24
 width$ -- 0
-write$ -- 89
-(There was 1 warning)
+write$ -- 102
+(There were 2 warnings)
