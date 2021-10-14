@@ -8,17 +8,21 @@
 \contentsline {section}{\numberline {1.2}Objetivos}{4}{section.12}%
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {2}Estado de la Cuesti\'on}{5}{chapter.13}%
-\contentsline {chapter}{\numberline {3}Propuesta del TFG}{7}{chapter.14}%
-\contentsline {chapter}{\numberline {4}Evaluaciones}{9}{chapter.15}%
-\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{11}{chapter.16}%
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{13}{chapter.17}%
+\contentsline {section}{\numberline {2.1}Enfermedad del Alzheimer}{5}{section.14}%
+\contentsline {section}{\numberline {2.2}Fases de la enfermedad}{6}{section.15}%
+\contentsline {section}{\numberline {2.3}Escala de deterioro global de Reisberg}{6}{section.16}%
+\contentsline {section}{\numberline {2.4}Historias de Vida}{6}{section.17}%
+\contentsline {chapter}{\numberline {3}Propuesta del TFG}{7}{chapter.18}%
+\contentsline {chapter}{\numberline {4}Evaluaciones}{9}{chapter.19}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{11}{chapter.20}%
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{13}{chapter.21}%
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {6}Trabajo Individual}{15}{chapter.18}%
-\contentsline {section}{\numberline {6.1}Cristina Barquilla Blanco}{15}{section.19}%
-\contentsline {section}{\numberline {6.2}Santiago Marco Mulas L\'opez}{15}{section.20}%
-\contentsline {section}{\numberline {6.3}Patricia D\IeC {\'\i }ez Garc\IeC {\'\i }a}{15}{section.21}%
-\contentsline {section}{\numberline {6.4}Eva Verd\'u Rodr\IeC {\'\i }guez}{15}{section.22}%
+\contentsline {chapter}{\numberline {6}Trabajo Individual}{15}{chapter.22}%
+\contentsline {section}{\numberline {6.1}Cristina Barquilla Blanco}{15}{section.23}%
+\contentsline {section}{\numberline {6.2}Santiago Marco Mulas L\'opez}{15}{section.24}%
+\contentsline {section}{\numberline {6.3}Patricia D\IeC {\'\i }ez Garc\IeC {\'\i }a}{15}{section.25}%
+\contentsline {section}{\numberline {6.4}Eva Verd\'u Rodr\IeC {\'\i }guez}{15}{section.26}%
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo}{17}{appendix.23}%
-\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo}{19}{appendix.24}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{21}{appendix*.25}%
+\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo}{17}{appendix.27}%
+\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo}{19}{appendix.28}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{21}{appendix*.29}%
