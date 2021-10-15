@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {2.1}Enfermedad del Alzheimer}{5}{section.14}%
 \contentsline {section}{\numberline {2.2}Fases del Alzheimer}{6}{section.15}%
 \contentsline {section}{\numberline {2.3}Escala de deterioro global de Reisberg}{7}{section.16}%
-\contentsline {section}{\numberline {2.4}Terapias basadas en la reminiscencia}{7}{section.17}%
+\contentsline {section}{\numberline {2.4}Terapias basadas en reminiscencia}{7}{section.17}%
 \contentsline {section}{\numberline {2.5}Historias de Vida}{7}{section.18}%
 \contentsline {chapter}{\numberline {3}Propuesta del TFG}{9}{chapter.19}%
 \contentsline {chapter}{\numberline {4}Evaluaciones}{11}{chapter.20}%
