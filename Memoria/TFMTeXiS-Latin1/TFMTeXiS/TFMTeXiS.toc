@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {2.3}Escala de deterioro global de Reisberg}{7}{section.16}%
 \contentsline {section}{\numberline {2.4}Terapias basadas en reminiscencia}{7}{section.17}%
 \contentsline {section}{\numberline {2.5}Historias de Vida}{8}{section.18}%
-\contentsline {section}{\numberline {2.6}Trabajos relacionados}{8}{section.19}%
+\contentsline {section}{\numberline {2.6}Trabajos relacionados}{9}{section.19}%
 \contentsline {chapter}{\numberline {3}Propuesta del TFG}{11}{chapter.20}%
 \contentsline {chapter}{\numberline {4}Evaluaciones}{13}{chapter.21}%
 \contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{15}{chapter.22}%
