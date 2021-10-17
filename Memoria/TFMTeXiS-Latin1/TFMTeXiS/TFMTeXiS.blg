@@ -49,45 +49,45 @@ Database file #2: latex.bib
 Database file #3: otros.bib
 Warning--empty journal in article_2
 Warning--empty journal in article_1
-You've used 8 entries,
+You've used 2 entries,
             2962 wiz_defined-function locations,
-            1139 strings with 13875 characters,
-and the built_in function-call counts, 4492 in all, are:
-= -- 298
-> -- 209
-< -- 4
-+ -- 86
-- -- 72
-* -- 342
-:= -- 696
-add.period$ -- 26
-call.type$ -- 8
-change.case$ -- 59
-chr.to.int$ -- 8
-cite$ -- 10
-duplicate$ -- 363
-empty$ -- 362
-format.name$ -- 88
-if$ -- 867
+            1106 strings with 13171 characters,
+and the built_in function-call counts, 1244 in all, are:
+= -- 82
+> -- 60
+< -- 1
++ -- 23
+- -- 21
+* -- 107
+:= -- 193
+add.period$ -- 8
+call.type$ -- 2
+change.case$ -- 17
+chr.to.int$ -- 2
+cite$ -- 4
+duplicate$ -- 103
+empty$ -- 87
+format.name$ -- 25
+if$ -- 228
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 82
-newline$ -- 46
-num.names$ -- 33
-pop$ -- 196
+missing$ -- 23
+newline$ -- 16
+num.names$ -- 8
+pop$ -- 54
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 15
 quote$ -- 0
-skip$ -- 128
+skip$ -- 30
 stack$ -- 0
-substring$ -- 94
-swap$ -- 166
+substring$ -- 22
+swap$ -- 53
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 62
+type$ -- 20
 warning$ -- 2
-while$ -- 24
+while$ -- 6
 width$ -- 0
-write$ -- 102
+write$ -- 29
 (There were 2 warnings)
