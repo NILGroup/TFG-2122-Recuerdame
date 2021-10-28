@@ -9,25 +9,23 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {2}Estado de la Cuesti\'on}{5}{chapter.13}%
 \contentsline {section}{\numberline {2.1}Enfermedad del Alzheimer}{5}{section.14}%
-\contentsline {section}{\numberline {2.2}Fases del Alzheimer}{6}{section.15}%
-\contentsline {section}{\numberline {2.3}Escala de deterioro global de Reisberg}{7}{section.16}%
-\contentsline {section}{\numberline {2.4}Terapias basadas en reminiscencia}{7}{section.17}%
-\contentsline {section}{\numberline {2.5}Historias de Vida}{8}{section.18}%
-\contentsline {section}{\numberline {2.6}Trabajos relacionados}{9}{section.19}%
-\contentsline {chapter}{\numberline {3}Recu\'erdame}{11}{chapter.20}%
-\contentsline {section}{\numberline {3.1}Captura de Requisitos}{11}{section.21}%
-\contentsline {chapter}{\numberline {4}Evaluaci\'on}{13}{chapter.22}%
-\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{15}{chapter.23}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{15}{section.24}%
-\contentsline {section}{\numberline {5.2}Trabajo futuro}{15}{section.25}%
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{17}{chapter.26}%
+\contentsline {section}{\numberline {2.2}Terapias basadas en reminiscencia}{7}{section.15}%
+\contentsline {section}{\numberline {2.3}Historias de Vida}{8}{section.16}%
+\contentsline {section}{\numberline {2.4}Trabajos relacionados}{9}{section.17}%
+\contentsline {chapter}{\numberline {3}Recu\'erdame}{11}{chapter.18}%
+\contentsline {section}{\numberline {3.1}Captura de Requisitos}{11}{section.19}%
+\contentsline {chapter}{\numberline {4}Evaluaci\'on}{13}{chapter.20}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{15}{chapter.21}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{15}{section.22}%
+\contentsline {section}{\numberline {5.2}Trabajo futuro}{15}{section.23}%
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{17}{chapter.24}%
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {6}Trabajo Individual}{19}{chapter.27}%
-\contentsline {section}{\numberline {6.1}Cristina Barquilla Blanco}{19}{section.28}%
-\contentsline {section}{\numberline {6.2}Santiago Marco Mulas L\'opez}{19}{section.29}%
-\contentsline {section}{\numberline {6.3}Patricia D\IeC {\'\i }ez Garc\IeC {\'\i }a}{19}{section.30}%
-\contentsline {section}{\numberline {6.4}Eva Verd\'u Rodr\IeC {\'\i }guez}{19}{section.31}%
+\contentsline {chapter}{\numberline {6}Trabajo Individual}{19}{chapter.25}%
+\contentsline {section}{\numberline {6.1}Cristina Barquilla Blanco}{19}{section.26}%
+\contentsline {section}{\numberline {6.2}Santiago Marco Mulas L\'opez}{19}{section.27}%
+\contentsline {section}{\numberline {6.3}Patricia D\IeC {\'\i }ez Garc\IeC {\'\i }a}{19}{section.28}%
+\contentsline {section}{\numberline {6.4}Eva Verd\'u Rodr\IeC {\'\i }guez}{19}{section.29}%
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo}{21}{appendix.32}%
-\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo}{23}{appendix.33}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{25}{appendix*.34}%
+\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo}{21}{appendix.30}%
+\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo}{23}{appendix.31}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{25}{appendix*.32}%
