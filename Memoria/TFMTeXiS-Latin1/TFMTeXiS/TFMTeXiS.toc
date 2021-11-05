@@ -1,33 +1,36 @@
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.9}%
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducci\'on}{3}{chapter.10}%
 \contentsline {section}{\numberline {1.1}Motivaci\'on}{3}{section.11}%
 \contentsline {section}{\numberline {1.2}Objetivos}{4}{section.12}%
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {2}Estado de la Cuesti\'on}{5}{chapter.13}%
 \contentsline {section}{\numberline {2.1}Enfermedad del Alzheimer}{5}{section.14}%
 \contentsline {subsection}{\numberline {2.1.1}Fases del Alzheimer}{6}{subsection.15}%
 \contentsline {subsection}{\numberline {2.1.2}Escala de deterioro global de Reisberg}{7}{subsection.16}%
 \contentsline {section}{\numberline {2.2}Terapias basadas en reminiscencia}{7}{section.17}%
 \contentsline {subsection}{\numberline {2.2.1}Historias de Vida}{8}{subsection.18}%
-\contentsline {section}{\numberline {2.3}Trabajos relacionados}{9}{section.19}%
-\contentsline {chapter}{\numberline {3}Recu\'erdame}{11}{chapter.20}%
-\contentsline {section}{\numberline {3.1}Captura de Requisitos}{11}{section.21}%
-\contentsline {chapter}{\numberline {4}Evaluaci\'on}{13}{chapter.22}%
-\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{15}{chapter.23}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{15}{section.24}%
-\contentsline {section}{\numberline {5.2}Trabajo futuro}{15}{section.25}%
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{17}{chapter.26}%
-\babel@toc {english}{}
-\contentsline {chapter}{\numberline {6}Trabajo Individual}{19}{chapter.27}%
-\contentsline {section}{\numberline {6.1}Cristina Barquilla Blanco}{19}{section.28}%
-\contentsline {section}{\numberline {6.2}Santiago Marco Mulas L\'opez}{19}{section.29}%
-\contentsline {section}{\numberline {6.3}Patricia D\IeC {\'\i }ez Garc\IeC {\'\i }a}{19}{section.30}%
-\contentsline {section}{\numberline {6.4}Eva Verd\'u Rodr\IeC {\'\i }guez}{19}{section.31}%
-\babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo}{21}{appendix.32}%
-\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo}{23}{appendix.33}%
-\contentsline {chapter}{Bibliograf\'{\i }a}{25}{appendix*.34}%
+\contentsline {section}{\numberline {2.3}Trabajos relacionados}{10}{section.19}%
+\contentsline {subsection}{\numberline {2.3.1}Generaci\'on de historias a partir de una base de conocimiento:}{10}{subsection.20}%
+\contentsline {subsection}{\numberline {2.3.2}Extracci\'on de informaci\'on personal a partir de redes sociales para la creaci\'on de un libro de vida:}{10}{subsection.21}%
+\contentsline {subsection}{\numberline {2.3.3}Sistemas para cuidado de enfermos de Alzheimer:}{12}{subsection.32}%
+\contentsline {chapter}{\numberline {3}Recu\'erdame}{17}{chapter.33}%
+\contentsline {section}{\numberline {3.1}Captura de Requisitos}{17}{section.34}%
+\contentsline {chapter}{\numberline {4}Evaluaci\'on}{19}{chapter.35}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Trabajo Futuro}{21}{chapter.36}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{21}{section.37}%
+\contentsline {section}{\numberline {5.2}Trabajo futuro}{21}{section.38}%
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{23}{chapter.39}%
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {6}Trabajo Individual}{25}{chapter.40}%
+\contentsline {section}{\numberline {6.1}Cristina Barquilla Blanco}{25}{section.41}%
+\contentsline {section}{\numberline {6.2}Santiago Marco Mulas L\'opez}{25}{section.42}%
+\contentsline {section}{\numberline {6.3}Patricia D\IeC {\'\i }ez Garc\IeC {\'\i }a}{25}{section.43}%
+\contentsline {section}{\numberline {6.4}Eva Verd\'u Rodr\IeC {\'\i }guez}{25}{section.44}%
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {A}T\IeC {\'\i }tulo}{27}{appendix.45}%
+\contentsline {chapter}{\numberline {B}T\IeC {\'\i }tulo}{29}{appendix.46}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{31}{appendix*.47}%
