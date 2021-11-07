@@ -47,41 +47,41 @@ A level-1 auxiliary file: Cascaras/fin.aux
 Database file #1: nuestros.bib
 Database file #2: latex.bib
 Database file #3: otros.bib
-Warning--empty journal in article_2
+Warning--empty journal in article_3
 Warning--empty journal in article_1
 You've used 2 entries,
             2962 wiz_defined-function locations,
-            1106 strings with 13171 characters,
-and the built_in function-call counts, 1244 in all, are:
-= -- 82
-> -- 60
+            1106 strings with 13222 characters,
+and the built_in function-call counts, 1126 in all, are:
+= -- 78
+> -- 44
 < -- 1
-+ -- 23
-- -- 21
-* -- 107
-:= -- 193
++ -- 17
+- -- 15
+* -- 91
+:= -- 175
 add.period$ -- 8
 call.type$ -- 2
-change.case$ -- 17
+change.case$ -- 15
 chr.to.int$ -- 2
 cite$ -- 4
-duplicate$ -- 103
-empty$ -- 87
-format.name$ -- 25
-if$ -- 228
+duplicate$ -- 97
+empty$ -- 83
+format.name$ -- 19
+if$ -- 208
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 23
+missing$ -- 21
 newline$ -- 16
 num.names$ -- 8
-pop$ -- 54
+pop$ -- 50
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 13
 quote$ -- 0
 skip$ -- 30
 stack$ -- 0
 substring$ -- 22
-swap$ -- 53
+swap$ -- 47
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0

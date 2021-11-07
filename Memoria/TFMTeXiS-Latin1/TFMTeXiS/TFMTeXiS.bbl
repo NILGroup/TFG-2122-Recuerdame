@@ -1,15 +1,14 @@
 \begin{thebibliography}{2}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
-\bibitem[{Galende et\ al.(2021)Galende, Ortiz, Velasco, Luque, de~Silanes~de
-  Miguel y Jurczynska}]{article_2}
-{\sc Galende, A.~V.}, {\sc Ortiz, M.~E.}, {\sc Velasco, S.}, {\sc Luque, M.},
-  {\sc de~Silanes~de Miguel, C.} y {\sc Jurczynska, C.~P.}
-\newblock Impacto social de la enfermedad de alzheimer y otras demencias.
+\bibitem[{Oliveras et\ al.(2021)Oliveras, Munoz, Ulloa y Alvarez}]{article_3}
+{\sc Oliveras, D.~B.}, {\sc Munoz, C.~C.}, {\sc Ulloa, D.~P.} y {\sc Alvarez,
+  C.~S.}
+\newblock Sistema de asistencia para cuidados de enfermos del alzheimer.
 \newblock 2021.
 \newblock Disponible en
-  \url{https://www.sciencedirect.com/science/article/pii/S021348531730350X/}
-  (último acceso,  Octubre, 2021).
+  \url{https://eprints.ucm.es/id/eprint/67069/1/PRATS%20Ulloa%2082953_David_Prats_Ulloa_Sistema_de_asistencia_para_cuidados_de_enfermos_del_Alzheimer_784051_897793820.pdf}
+  (último acceso,  Noviembre, 2021).
 
 \bibitem[{Saez(2020)}]{article_1}
 {\sc Saez, E.~P.}
