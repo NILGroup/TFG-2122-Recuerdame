@@ -137,17 +137,128 @@ Con todo lo anteriormente mencionado y el uso de estas Historias de Vida en las 
 
 
 \section{Trabajos relacionados}
+En este apartado hablaremos de tres trabajos que son parte del proyecto Cantor, realizados por antiguos alumnos de la universidad.
 
 
-En este apartado hablaremos de tres trabajos que son parte del proyecto Cantor, realizados por antiguos alumnos de la universidad:
+\subsection{Generación de historias a partir de una base de conocimiento} 
+Se han desarrollado varios proyectos con el fin de poder ayudar a pacientes y cuidadores en las terapias contra el alzhéimer. Uno de los proyectos a destacar es el TFG "Generación de historias a partir de una base de conocimiento" del año 2020-2021. Este trabajo entra dentro del proyecto CANTOR (Composición Automática de Narrativas personales como apoyo a Terapia Ocupacional basada en Reminiscencia, PID2019-108927RB-I00).\\
 
+El objetivo de este TFG era hacer un análisis que permitiera transformar todos los recuerdos de los pacientes en material digital útil para que, posteriormente, sirviera de ayuda tanto para los pacientes como para los cuidadores. Debido a que las personas con alzhéimer son, en mayor medida, personas mayores y no están habituadas a utilizar aplicaciones informáticas, la herramienta se desarrolló para que los usuarios principales que la utilizaran fueran las personas de apoyo, es decir, los cuidadores, terapeutas o familiares del paciente.\\
 
+Lo habitual es que los usuarios construyan una Historia de Vida del paciente mediante una serie de sesiones y entrevistas y registren toda la información obtenida en la aplicación. De esta forma, y con una presentación adecuada de los datos, el familiar o el cuidador podría utilizar la herramienta para proporcionar estímulos verbales y visuales que desencadenen el proceso de reminiscencia en el paciente.\\
 
-		\subsection{Generación de historias a partir de una base de conocimiento:} 
+Para la construcción de la herramienta se pensó en llevar a cabo una terapia de este tipo pero de una forma guiada y que en cada sesión se pudiera tratar un tema concreto por lo que se hicieron diferentes categorías para poder elegir cuál de ellas se iba a tratar en las distintas sesiones. Estas categorías se clasificaron según los datos básicos que se suelen preguntar para construir un libro de vida: datos personales, infancia, juventud, edad adulta, familia, comida, vacaciones y aficiones.\\
+
+A partir de toda esta información, se podrán crear relaciones para que aparezcan en el tema de una sesión. Por ejemplo, al hablar de familia aparecerán las palabras "madre", "padre", "tío", etc. Después de analizar cómo se podría desarrollar la herramienta en base a estas relaciones, se elaboraron una serie de textos que se procesan para ver cuáles son las palabras más habituales relacionadas con cada categoría. En total, había 294 textos: 47 de etapa adulta, 46 de aficiones, 30 de comida, 33 de familia, 46 de infancia, 47 de juventud y 45 de vacaciones.\\
+
+La aplicación se desarrolló con Python por su versatilidad y para poder hacer una herramienta interactiva. Para el análisis de los textos se utilizó el entorno Python interactivo Google Colaboratory. Todos los textos de la misma categoría se almacenaron en un mismo fichero con un formato sencillo en el cual cada uno de los textos se separan mediante "\#". Para el procesamiento del lenguaje en Python, se utilizó la librería SpaCy para el procesamiento de los textos. En la figura \ref{fig:figura2.1}, se puede ver mediante un diagrama como se procesan los textos y se construyen las relaciones.\\
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.1}
+  	\caption{Diagrama de procesado de textos. En azul, los sustantivos, en verde, los verbos, y en rojo, los adjetivos.}
+	\label{fig:figura2.1}
+\end{figure}
+
+La interfaz de la aplicación es sencilla y se desarrolló en HTML con la ayuda de Google Web Designer que permite generar páginas HTML sin necesidad de empezar desde cero. Para crear un estilo minimalista se utiliza el Framework Flask para enlazar la parte front con Python.\\
+
+Lo primero que permite la aplicación es iniciar sesión o crear un nuevo usuario como se muestra en la imagen \ref{fig:figura2.2}.\\
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.2}
+  	\caption{Primera pantalla de la aplicación.}
+	\label{fig:figura2.2}
+\end{figure}
+
+Una vez se ha iniciado sesión se puede elegir la categoría sobre la que se va a trabajar en la sesión como se muestra en la figura \ref{fig:figura2.3}. A partir de estas categorías, el usuario puede crear las relaciones necesarias sobre el tema seleccionado en la sesión.
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.3}
+  	\caption{Pantalla para elegir la categoría sobre la que se trabajará en una sesión.}
+	\label{fig:figura2.3}
+\end{figure}
+\newpage
+
+La idea de la aplicación es poder crear relaciones a partir de recomendaciones. Por tanto, para poder crear estas relaciones, la aplicación recomendará una serie de palabras clave y dentro de la palabra seleccionada, habrá una serie de relación de palabras recomendadas. En esta relación se podrá asociar una imagen o se podrán añadir nuevas sugerencias de relaciones con dicha palabra como se muestras en la figura \ref{fig:figura2.5}. A través de la pantalla que se muestra en la figura \ref{fig:figura2.4}, se puede acceder a las palabras relacionadas, al progreso del paciente y a la relación de imágenes.
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=5cm]{./Imagenes/Figuras/figura 2.4}
+  	\caption{Página principal de la aplicación, una vez iniciada la sesión.}
+	\label{fig:figura2.4}
+\end{figure}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.5}
+  	\caption{Ejemplo palabra "pedir".}
+	\label{fig:figura2.5}
+\end{figure}
+
+\newpage
+Para poder ver el progreso de un paciente, se pueden visualizar los grafos de las relaciones como se puede ver en el grafo de la figura \ref{fig:figura2.6}. O bien, visualizar las estadísticas (figura \ref{fig:figura2.7}) de la pantalla de Progreso para acceder a las relaciones que se han creado en las distintas sesiones.
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.6}
+  	\caption{Grafo resultante de la categoría "vacaciones" tras la evaluación con usuarios.}
+	\label{fig:figura2.6}
+\end{figure}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.7}
+  	\caption{Estadísticas resultantes tras la sesión de evaluación. Los nombres propios se encuentran pixelados.}
+	\label{fig:figura2.7}
+\end{figure}
+
+\newpage
+Para poder categorizar y relacionar imágenes, se dispone de un apartado donde poder asociar una imagen a una categoría y a un concepto como se muestras en la figura \ref{fig:figura2.8}. Y, de esta forma, poder crear la relación.
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.8}
+  	\caption{Relacionar fotografía con una categoría y un concepto a relacionar.}
+	\label{fig:figura2.8}
+\end{figure}
+
+\newpage
+También, tal y como se muestra en la figura \ref{fig:figura2.9}, se puede encontrar un buscador de imágenes donde introduciendo una palabra clave se muestran todas las imágenes relacionadas con la palabra introducida. Se puede introducir un nombre propio para ver todas las imágenes asociadas a ese paciente.
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=5cm]{./Imagenes/Figuras/figura 2.9}
+  	\caption{Imágenes asociadas con un nombre propio.}
+	\label{fig:figura2.9}
+\end{figure}
+
+\newpage
+Por último, la aplicación permite el registro de los datos personales del paciente mediante la pantalla que se muestra en la figura \ref{fig:figura2.11}. Todo estos datos personales son opcionales y son almacenados en una tabla de base de datos de MySQL. Solo existe una tabla como se muestra en la figura \ref{fig:figura2.12} con 23 columnas en total. Dos columnas reservadas para almacenar la lista de imágenes utilizadas y los datos personales. El resto, 21 columnas, una por cada documento de texto a almacenar que son cada una de las 7 categorías que existen con las palrabas visitadas, el grafo y el progreso.
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.11}
+  	\caption{Pantalla para el registro de los datos personales.}
+	\label{fig:figura2.11}
+\end{figure}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/figura 2.12}
+  	\caption{Características de la tabla de usuarios.}
+	\label{fig:figura2.12}
+\end{figure}
+
+\newpage
+En la figura \ref{fig:figura2.10} podemos ver un diagrama del resumen del funcionamiento de la aplicación.
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=14cm]{./Imagenes/Figuras/figura 2.10}
+  	\caption{Resumen de la aplicación.}
+	\label{fig:figura2.10}
+\end{figure}
+
+Los resultados de la aplicación fueron muy satisfactorios y cabe destacar que tanto las categorías como el buscador de imágenes fueron muy útiles. Algo que hubiera sido de gran ayuda sería el poder organizar las fotografías cronológicamente y el poder navegar de forma más sencilla entre las distintas palabras con un hipervínculo, sin tener que escribirlas expresamente siempre que se necesiten. Aunque las categorías que se eligieron fueron acertadas, se echó en falta una categoría de Eventos aunque esté estrechamente relacionada con la categoría Familia y poder marcar las imágenes con lugares y fechas en concreto.
+\newpage
+
 		
-		
-		
-		\subsection{Extracción de información personal a partir de redes sociales para la creación de un libro de vida:}
+\subsection{Extracción de información personal a partir de redes sociales para la creación de un libro de vida:}
 		El objetivo de este proyecto se basa en la creación de una aplicación que sirva de ayuda a los terapeutas ocupacionales a desarrollar un libro de vida para tratar a los pacientes con problemas de memoria. Para llevar a cabo el trabajo combinaron técnicas de extracción y tratamiento de datos en la red social Facebook, combinando con información extraída de Google, almacenando dicha información en una base de datos SQL, y obteniendo de esta manera los datos más relevantes para la construcción del libro, que se volcará finalmente en una interfaz de tipo web, implementada con React, donde poder visualizar los datos recogidos fácilmente, mediante tablas, mapas, líneas de tiempo y galerías de fotos.\\
 
 En cuanto a las características del proyecto, en primer lugar, hablar de los lenguajes de programación y herramientas más utilizadas en el proyecto para el desarrollo e implementación de la aplicación. Han utilizado Python en la mayor parte de la aplicación, especialmente para el back-end y el tratamiento de datos, ya que tiene mucha disponibilidad a la hora de enlazar con otras tecnologías; en cuanto al tratamiento de datos y su almacenamiento, se ha utilizado SQL, para almacenar la información en tablas relacionales, y luego esta información tratarla para introducirla en la base de datos; para la interfaz de usuario utilizaron React JS, que brinda una gran cantidad de componentes gráficos para el desarrollo web; y al igual que en nuestro proyecto utilizaron Latex para la redacción de la memoria. Luego más secundariamente se ha utilizado JavaScript native para la creación del tutorial de descarga de datos de Facebook, y también HTML para el desarrollo y creación de páginas web. Por otro lado, comentar las herramientas utilizadas, como XAMPP, un servidor para conectar la base de datos con la aplicación, Visual Studio Code, un editor de código fuente empleado para el desarrollo del software, GitHUb, para compartir el trabajo realizado y poder trabajar en paralelo, Discord, para la realización de reuniones entre los integrantes del grupo, Node.js para visualizar la aplicación, Draw.io para la realización de diagramas en la fase de diseño antes de ponerse con el desarrollo y PlanUML también utilizado para la creación de los diagramas finales de la aplicación.\\
