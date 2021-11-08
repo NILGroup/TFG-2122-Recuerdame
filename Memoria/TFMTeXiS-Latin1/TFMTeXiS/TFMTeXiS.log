@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.17)  8 NOV 2021 16:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.17)  8 NOV 2021 16:43
 entering extended mode
 **./TFMTeXiS.tex
 (TFMTeXiS.tex
@@ -717,7 +717,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \evensidemarginOriginal=\skip85
 \oddsidemarginOriginal=\skip86
 \longTitulo=\skip87
-<Imagenes/Vectorial/escudoUCM.pdf, id=147, 597.23125pt x 844.15375pt>
+<Imagenes/Vectorial/escudoUCM.pdf, id=151, 597.23125pt x 844.15375pt>
 File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 <use Imagenes/Vectorial/escudoUCM.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/escudoUCM.pdf  used on input line 1
@@ -814,12 +814,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 7.
-LaTeX Info: Redefining \. on input line 10.
-LaTeX Info: Redefining \% on input line 10.
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
 
 [15]
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
+LaTeX Info: Redefining \. on input line 35.
+LaTeX Info: Redefining \% on input line 35.
 )
 \tf@toc=\write6
 \openout6 = `TFMTeXiS.toc'.
@@ -927,20 +927,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
 )
 LaTeX Info: Redefining \. on input line 148.
 LaTeX Info: Redefining \% on input line 148.
- [5]
+ [6]
 \openout2 = `Capitulos/EstadoDeLaCuestion.aux'.
 
- (Capitulos/EstadoDeLaCuestion.tex [6
+ (Capitulos/EstadoDeLaCuestion.tex
+Cap\'itulo 2.
+[7
 
 
 
 
 ]
-Cap\'itulo 2.
-[7]
 Underfull \hbox (badness 10000) in paragraph at lines 23--26
 
  []
@@ -1000,18 +1022,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
-<./Imagenes/Figuras/2.1.png, id=399, 408.02437pt x 266.9975pt>
+<./Imagenes/Figuras/2.1.png, id=404, 408.02437pt x 266.9975pt>
 File: ./Imagenes/Figuras/2.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/2.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/2.1.png  used on input line 158.
 (pdftex.def)             Requested size: 251.9989pt x 164.90117pt.
-<./Imagenes/Figuras/figura 2.6.2.png, id=401, 548.54938pt x 263.48438pt>
+<./Imagenes/Figuras/figura 2.6.2.png, id=406, 548.54938pt x 263.48438pt>
 File: ./Imagenes/Figuras/figura 2.6.2.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.2.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.2.png  used on input lin
 e 164.
 (pdftex.def)             Requested size: 251.9989pt x 121.03943pt.
-<./Imagenes/Figuras/figura 2.6.3.png, id=402, 285.065pt x 366.36874pt>
+<./Imagenes/Figuras/figura 2.6.3.png, id=407, 285.065pt x 366.36874pt>
 File: ./Imagenes/Figuras/figura 2.6.3.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.3.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.3.png  used on input lin
@@ -1028,7 +1050,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
-<./Imagenes/Figuras/figura 2.6.4.png, id=408, 360.34625pt x 200.75pt>
+<./Imagenes/Figuras/figura 2.6.4.png, id=413, 360.34625pt x 200.75pt>
 File: ./Imagenes/Figuras/figura 2.6.4.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.4.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.4.png  used on input lin
@@ -1045,7 +1067,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--186
 LaTeX Info: Redefining \. on input line 186.
 LaTeX Info: Redefining \% on input line 186.
 [13 <./Imagenes/Figuras/2.1.png> <./Imagenes/Figuras/figura 2.6.2.png>]
-<./Imagenes/Figuras/figura 2.6.5.png, id=418, 384.43625pt x 224.33812pt>
+<./Imagenes/Figuras/figura 2.6.5.png, id=423, 384.43625pt x 224.33812pt>
 File: ./Imagenes/Figuras/figura 2.6.5.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.5.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.5.png  used on input lin
@@ -1055,7 +1077,7 @@ e 189.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Imagenes/Figuras/figura 2.6.6.png, id=419, 379.4175pt x 224.84pt>
+<./Imagenes/Figuras/figura 2.6.6.png, id=424, 379.4175pt x 224.84pt>
 File: ./Imagenes/Figuras/figura 2.6.6.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.6.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.6.png  used on input lin
@@ -1064,7 +1086,7 @@ e 196.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Imagenes/Figuras/figura 2.6.7.png, id=420, 368.87813pt x 293.59688pt>
+<./Imagenes/Figuras/figura 2.6.7.png, id=425, 368.87813pt x 293.59688pt>
 File: ./Imagenes/Figuras/figura 2.6.7.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.7.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.7.png  used on input lin
@@ -1078,7 +1100,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
-<./Imagenes/Figuras/figura 2.6.8.png, id=424, 550.055pt x 303.1325pt>
+<./Imagenes/Figuras/figura 2.6.8.png, id=429, 550.055pt x 303.1325pt>
 File: ./Imagenes/Figuras/figura 2.6.8.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.8.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.8.png  used on input lin
@@ -1087,7 +1109,7 @@ e 211.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Imagenes/Figuras/figura 2.6.9.png, id=425, 538.01pt x 291.0875pt>
+<./Imagenes/Figuras/figura 2.6.9.png, id=430, 538.01pt x 291.0875pt>
 File: ./Imagenes/Figuras/figura 2.6.9.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.9.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.9.png  used on input lin
@@ -1096,7 +1118,7 @@ e 217.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Imagenes/Figuras/figura 2.6.10.png, id=426, 370.88562pt x 273.02pt>
+<./Imagenes/Figuras/figura 2.6.10.png, id=431, 370.88562pt x 273.02pt>
 File: ./Imagenes/Figuras/figura 2.6.10.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.10.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.10.png  used on input li
@@ -1133,13 +1155,13 @@ LaTeX Info: Redefining \% on input line 240.
 [18
 
 ]
-<./Imagenes/Figuras/base_datos_paciente.PNG, id=461, 263.7855pt x 378.213pt>
+<./Imagenes/Figuras/base_datos_paciente.PNG, id=466, 263.7855pt x 378.213pt>
 File: ./Imagenes/Figuras/base_datos_paciente.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/base_datos_paciente.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/base_datos_paciente.PNG  used on in
 put line 245.
 (pdftex.def)             Requested size: 237.40475pt x 340.38855pt.
-<./Imagenes/Figuras/base_datos_terapeuta.PNG, id=462, 150.5625pt x 186.09525pt>
+<./Imagenes/Figuras/base_datos_terapeuta.PNG, id=467, 150.5625pt x 186.09525pt>
 
 File: ./Imagenes/Figuras/base_datos_terapeuta.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/base_datos_terapeuta.PNG>
@@ -1163,7 +1185,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 276.
 
-<./Imagenes/Figuras/movil_menu.PNG, id=470, 483.0045pt x 317.988pt>
+<./Imagenes/Figuras/movil_menu.PNG, id=475, 483.0045pt x 317.988pt>
 File: ./Imagenes/Figuras/movil_menu.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_menu.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_menu.PNG  used on input line 
@@ -1173,7 +1195,7 @@ Package pdftex.def Info: ./Imagenes/Figuras/movil_menu.PNG  used on input line
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 286.
 
-<./Imagenes/Figuras/movil_nuevo_paciente.PNG, id=472, 484.81125pt x 322.806pt>
+<./Imagenes/Figuras/movil_nuevo_paciente.PNG, id=477, 484.81125pt x 322.806pt>
 File: ./Imagenes/Figuras/movil_nuevo_paciente.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_nuevo_paciente.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_nuevo_paciente.PNG  used on i
@@ -1183,7 +1205,7 @@ nput line 288.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 296.
 
-<./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=474, 482.40225pt x 322.203
+<./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=479, 482.40225pt x 322.203
 75pt>
 File: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_evaluacion_clinica.PNG>
@@ -1194,7 +1216,7 @@ on input line 298.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 306.
 
-<./Imagenes/Figuras/movil_nuevo_terapeuta.PNG, id=476, 309.5565pt x 416.757pt>
+<./Imagenes/Figuras/movil_nuevo_terapeuta.PNG, id=481, 309.5565pt x 416.757pt>
 File: ./Imagenes/Figuras/movil_nuevo_terapeuta.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_nuevo_terapeuta.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_nuevo_terapeuta.PNG  used on 
@@ -1204,7 +1226,7 @@ input line 308.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 316.
 
-<./Imagenes/Figuras/movil_buscar_paciente.PNG, id=480, 413.1435pt x 274.02374pt
+<./Imagenes/Figuras/movil_buscar_paciente.PNG, id=485, 413.1435pt x 274.02374pt
 >
 File: ./Imagenes/Figuras/movil_buscar_paciente.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_buscar_paciente.PNG>
@@ -1215,7 +1237,7 @@ input line 318.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 322.
 
-<./Imagenes/Figuras/movil_recuerdos.PNG, id=481, 413.74574pt x 275.8305pt>
+<./Imagenes/Figuras/movil_recuerdos.PNG, id=486, 413.74574pt x 275.8305pt>
 File: ./Imagenes/Figuras/movil_recuerdos.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_recuerdos.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_recuerdos.PNG  used on input 
@@ -1225,7 +1247,7 @@ line 324.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 328.
 
-<./Imagenes/Figuras/movil_relaciones.PNG, id=482, 203.5605pt x 272.81924pt>
+<./Imagenes/Figuras/movil_relaciones.PNG, id=487, 203.5605pt x 272.81924pt>
 File: ./Imagenes/Figuras/movil_relaciones.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_relaciones.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_relaciones.PNG  used on input
@@ -1235,7 +1257,7 @@ Package pdftex.def Info: ./Imagenes/Figuras/movil_relaciones.PNG  used on input
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 337.
 
-<./Imagenes/Figuras/movil_editar_usuario.PNG, id=485, 480.5955pt x 322.20375pt>
+<./Imagenes/Figuras/movil_editar_usuario.PNG, id=490, 480.5955pt x 322.20375pt>
 
 File: ./Imagenes/Figuras/movil_editar_usuario.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_editar_usuario.PNG>
@@ -1261,7 +1283,7 @@ ecuerdos.PNG>]
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 343.
 
-<./Imagenes/Figuras/movil_recuerdo_paciente.PNG, id=509, 479.99326pt x 320.9992
+<./Imagenes/Figuras/movil_recuerdo_paciente.PNG, id=514, 479.99326pt x 320.9992
 5pt>
 File: ./Imagenes/Figuras/movil_recuerdo_paciente.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_recuerdo_paciente.PNG>
@@ -1285,7 +1307,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 350--351
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 352.
 
-<./Imagenes/Figuras/movil_editar_terapeuta.PNG, id=511, 255.95625pt x 342.68025
+<./Imagenes/Figuras/movil_editar_terapeuta.PNG, id=516, 255.95625pt x 342.68025
 pt>
 File: ./Imagenes/Figuras/movil_editar_terapeuta.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_editar_terapeuta.PNG>
@@ -1309,7 +1331,7 @@ _editar_terapeuta.PNG>]
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 361.
 
-<./Imagenes/Figuras/movil_informacion_adicional.PNG, id=526, 481.8pt x 322.806p
+<./Imagenes/Figuras/movil_informacion_adicional.PNG, id=531, 481.8pt x 322.806p
 t>
 File: ./Imagenes/Figuras/movil_informacion_adicional.PNG Graphic file (type png
 )
@@ -1317,7 +1339,7 @@ File: ./Imagenes/Figuras/movil_informacion_adicional.PNG Graphic file (type png
 Package pdftex.def Info: ./Imagenes/Figuras/movil_informacion_adicional.PNG  us
 ed on input line 363.
 (pdftex.def)             Requested size: 337.25769pt x 225.96265pt.
-<./Imagenes/Figuras/movil_informacion_adicional_2.PNG, id=527, 252.945pt x 342.
+<./Imagenes/Figuras/movil_informacion_adicional_2.PNG, id=532, 252.945pt x 342.
 078pt>
 File: ./Imagenes/Figuras/movil_informacion_adicional_2.PNG Graphic file (type p
 ng)
@@ -1341,7 +1363,7 @@ ovil_informacion_adicional_2.PNG>]
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 374.
 
-<./Imagenes/Figuras/movil_multimedia.PNG, id=535, 254.75175pt x 342.078pt>
+<./Imagenes/Figuras/movil_multimedia.PNG, id=540, 254.75175pt x 342.078pt>
 File: ./Imagenes/Figuras/movil_multimedia.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_multimedia.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_multimedia.PNG  used on input
@@ -1356,7 +1378,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 381--382
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 383.
 
-<./Imagenes/Figuras/movil_historia_vida.PNG, id=537, 481.19775pt x 278.84175pt>
+<./Imagenes/Figuras/movil_historia_vida.PNG, id=542, 481.19775pt x 278.84175pt>
 
 File: ./Imagenes/Figuras/movil_historia_vida.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_historia_vida.PNG>
@@ -1372,7 +1394,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 390--391
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 392.
 
-<./Imagenes/Figuras/movil_personas_contacto.PNG, id=539, 481.19775pt x 320.397p
+<./Imagenes/Figuras/movil_personas_contacto.PNG, id=544, 481.19775pt x 320.397p
 t>
 File: ./Imagenes/Figuras/movil_personas_contacto.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_personas_contacto.PNG>
@@ -1388,7 +1410,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--400
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 401.
 
-<./Imagenes/Figuras/movil_usuarios_terapeuta.PNG, id=541, 253.54726pt x 340.271
+<./Imagenes/Figuras/movil_usuarios_terapeuta.PNG, id=546, 253.54726pt x 340.271
 26pt>
 File: ./Imagenes/Figuras/movil_usuarios_terapeuta.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_usuarios_terapeuta.PNG>
@@ -1542,16 +1564,16 @@ LaTeX Info: Redefining \% on input line 47.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `TFMTeXiS.out' has not changed.
-(rerunfilecheck)             Checksum: ABE093D5A71D2D685BCF24717F55A946;6116.
+(rerunfilecheck)             Checksum: 31EFD7DCA0BA311E83C997385A6AE3ED;6300.
  ) 
 Here is how much of TeX's memory you used:
- 17014 strings out of 478864
- 274775 string characters out of 2848660
+ 17016 strings out of 478864
+ 274797 string characters out of 2848660
  700176 words of memory out of 3000000
- 34089 multiletter control sequences out of 15000+600000
+ 34090 multiletter control sequences out of 15000+600000
  421398 words of font info for 57 fonts, out of 8000000 for 9000
  1379 hyphenation exceptions out of 8191
- 94i,11n,100p,1659b,772s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 94i,11n,100p,1659b,727s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk> <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecrm1000.pk> <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -1571,9 +1593,9 @@ ta\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\crist
 k><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a
 .pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a
 .pfb>
-Output written on TFMTeXiS.pdf (67 pages, 2737586 bytes).
+Output written on TFMTeXiS.pdf (67 pages, 2740283 bytes).
 PDF statistics:
- 1243 PDF objects out of 1440 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 434 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1248 PDF objects out of 1440 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
+ 442 words of extra memory for PDF output out of 10000 (max. 10000000)
 
