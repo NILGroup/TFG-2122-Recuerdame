@@ -45,49 +45,69 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Cascaras/fin.aux
 Database file #1: nuestros.bib
+Warning--string name "abr" is undefined
+--line 32 of file nuestros.bib
+Warning--string name "abr" is undefined
+--line 41 of file nuestros.bib
+Warning--string name "abr" is undefined
+--line 50 of file nuestros.bib
+Warning--string name "abr" is undefined
+--line 60 of file nuestros.bib
+Warning--string name "abr" is undefined
+--line 69 of file nuestros.bib
+Warning--string name "abr" is undefined
+--line 78 of file nuestros.bib
 Database file #2: latex.bib
 Database file #3: otros.bib
+Warning--empty journal in article_5
+Warning--empty journal in article_7
+Warning--empty journal in article_9
+Warning--empty journal in article_2
+Warning--empty journal in article_4
+Warning--empty journal in article_6
+Warning--empty journal in article_8
 Warning--empty journal in article_3
 Warning--empty journal in article_1
-You've used 2 entries,
+Warning--empty journal in article_10
+You've used 10 entries,
             2962 wiz_defined-function locations,
-            1106 strings with 13222 characters,
-and the built_in function-call counts, 1126 in all, are:
-= -- 78
-> -- 44
-< -- 1
-+ -- 17
-- -- 15
-* -- 91
-:= -- 175
-add.period$ -- 8
-call.type$ -- 2
-change.case$ -- 15
-chr.to.int$ -- 2
-cite$ -- 4
-duplicate$ -- 97
-empty$ -- 83
-format.name$ -- 19
-if$ -- 208
+            1140 strings with 14394 characters,
+and the built_in function-call counts, 5065 in all, are:
+= -- 364
+> -- 164
+< -- 8
++ -- 64
+- -- 54
+* -- 370
+:= -- 780
+add.period$ -- 40
+call.type$ -- 10
+change.case$ -- 68
+chr.to.int$ -- 10
+cite$ -- 20
+duplicate$ -- 458
+empty$ -- 397
+format.name$ -- 68
+if$ -- 957
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 21
-newline$ -- 16
-num.names$ -- 8
-pop$ -- 50
+missing$ -- 98
+newline$ -- 64
+num.names$ -- 40
+pop$ -- 230
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 58
 quote$ -- 0
-skip$ -- 30
+skip$ -- 149
 stack$ -- 0
-substring$ -- 22
-swap$ -- 47
+substring$ -- 110
+swap$ -- 208
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
-warning$ -- 2
-while$ -- 6
+type$ -- 100
+warning$ -- 10
+while$ -- 30
 width$ -- 0
-write$ -- 29
-(There were 2 warnings)
+write$ -- 133
+(There were 16 warnings)

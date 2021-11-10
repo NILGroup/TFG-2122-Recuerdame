@@ -1,15 +1,30 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
-\bibitem[{Oliveras et\ al.(2021)Oliveras, Munoz, Ulloa y Alvarez}]{article_3}
-{\sc Oliveras, D.~B.}, {\sc Munoz, C.~C.}, {\sc Ulloa, D.~P.} y {\sc Alvarez,
-  C.~S.}
-\newblock Sistema de asistencia para cuidados de enfermos del alzheimer.
-\newblock 2021.
+\bibitem[{Alzheimer(2018)}]{article_5}
+{\sc Alzheimer, K.}
+\newblock Fases del alzheimer.
+\newblock 2018.
 \newblock Disponible en
-  \url{https://eprints.ucm.es/id/eprint/67069/1/PRATS%20Ulloa%2082953_David_Prats_Ulloa_Sistema_de_asistencia_para_cuidados_de_enfermos_del_Alzheimer_784051_897793820.pdf}
+  \url{https://knowalzheimer.com/todo-sobre-el-alzheimer/fases-del-alzheimer/}
   (último acceso,  Noviembre, 2021).
-  
+
+\bibitem[{association(2018)}]{article_7}
+{\sc association, A.}
+\newblock ?`qu\'e es el alzheimer?
+\newblock 2018.
+\newblock Disponible en
+  \url{https://blog.fpmaragall.org/las-fases-de-la-enfermedad-de-alzheimer}
+  (último acceso,  Noviembre, 2021).
+
+\bibitem[{demencias(2018)}]{article_9}
+{\sc demencias, C.}
+\newblock Historias de vida 2,c\'omo hacerlas.
+\newblock 2018.
+\newblock Disponible en
+  \url{https://comunicacionydemencias.com/historia-de-vida/} (último acceso,
+  Noviembre, 2021).
+
 \bibitem[{Galende et\ al.(2021)Galende, Ortiz, Velasco, Luque, de~Silanes~de
   Miguel y Jurczynska}]{article_2}
 {\sc Galende, A.~V.}, {\sc Ortiz, M.~E.}, {\sc Velasco, S.}, {\sc Luque, M.},
@@ -20,6 +35,39 @@
   \url{https://www.sciencedirect.com/science/article/pii/S021348531730350X/}
   (último acceso,  Octubre, 2021).
 
+\bibitem[{Lechuga(2018)}]{article_4}
+{\sc Lechuga, R.~G.}
+\newblock ?`qu\'e es la terapia de reminiscencia y c\'omo se puede realizar?
+\newblock 2018.
+\newblock Disponible en
+  \url{https://www.estimulacioncognitiva.info/2018/04/11/qu%C3%A9-es-la-terapia-de-reminiscencia-y-c%C3%B3mo-se-puede-realizar/}
+  (último acceso,  Noviembre, 2021).
+
+\bibitem[{Maragall(2018)}]{article_6}
+{\sc Maragall, F.~P.}
+\newblock Gds.
+\newblock 2018.
+\newblock Disponible en
+  \url{https://blog.fpmaragall.org/las-fases-de-la-enfermedad-de-alzheimer}
+  (último acceso,  Noviembre, 2021).
+
+\bibitem[{MIT(2018)}]{article_8}
+{\sc MIT, C.}
+\newblock Historias de vida, qu\'e contienen.
+\newblock 2018.
+\newblock Disponible en
+  \url{https://mitcentrodedia.es/actividades/historia-de-vida/} (último acceso,
+   Noviembre, 2021).
+
+\bibitem[{Oliveras et\ al.(2021)Oliveras, Munoz, Ulloa y Alvarez}]{article_3}
+{\sc Oliveras, D.~B.}, {\sc Munoz, C.~C.}, {\sc Ulloa, D.~P.} y {\sc Alvarez,
+  C.~S.}
+\newblock Sistema de asistencia para cuidados de enfermos del alzheimer.
+\newblock 2021.
+\newblock Disponible en
+  \url{https://eprints.ucm.es/id/eprint/67069/1/PRATS%20Ulloa%2082953_David_Prats_Ulloa_Sistema_de_asistencia_para_cuidados_de_enfermos_del_Alzheimer_784051_897793820.pdf}
+  (último acceso,  Noviembre, 2021).
+
 \bibitem[{Saez(2020)}]{article_1}
 {\sc Saez, E.~P.}
 \newblock Terapia de reminiscencia.
@@ -27,5 +75,13 @@
 \newblock Disponible en
   \url{https://blogcrea.imserso.es/terapia-de-reminiscencia/} (último acceso,
   Septiembre, 2021).
+
+\bibitem[{Valencia(2017)}]{article_10}
+{\sc Valencia, U.~I.}
+\newblock Mec lobo.
+\newblock 2017.
+\newblock Disponible en
+  \url{https://www.universidadviu.com/es/actualidad/nuestros-expertos/como-identificar-las-fases-alzheimer}
+  (último acceso,  Noviembre, 2021).
 
 \end{thebibliography}
