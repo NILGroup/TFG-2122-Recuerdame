@@ -16,9 +16,9 @@ A level-1 auxiliary file: Cascaras/abstract.aux
 Reallocating 'name_of_file' (item size: 1) to 20 items.
 A level-1 auxiliary file: TeXiS/TeXiS_toc.aux
 Reallocating 'name_of_file' (item size: 1) to 27 items.
-A level-1 auxiliary file: Capitulos/Introduction.aux
-Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: Capitulos/Introduccion.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: Capitulos/Introduction.aux
 Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: Capitulos/EstadoDeLaCuestion.aux
 Reallocating 'name_of_file' (item size: 1) to 30 items.
@@ -63,51 +63,53 @@ Warning--empty journal in article_5
 Warning--empty journal in article_7
 Warning--empty journal in article_9
 Warning--empty journal in article_2
+Warning--empty journal in article_13
 Warning--empty journal in article_4
 Warning--empty journal in article_6
 Warning--empty journal in article_8
+Warning--empty journal in article_12
 Warning--empty journal in article_3
-Warning--empty journal in article_1
+Warning--empty journal in article_11
 Warning--empty journal in article_10
-You've used 10 entries,
+You've used 12 entries,
             2962 wiz_defined-function locations,
-            1140 strings with 14394 characters,
-and the built_in function-call counts, 5065 in all, are:
-= -- 364
-> -- 164
+            1148 strings with 15166 characters,
+and the built_in function-call counts, 6306 in all, are:
+= -- 450
+> -- 224
 < -- 8
-+ -- 64
-- -- 54
-* -- 370
-:= -- 780
-add.period$ -- 40
-call.type$ -- 10
-change.case$ -- 68
-chr.to.int$ -- 10
-cite$ -- 20
-duplicate$ -- 458
-empty$ -- 397
-format.name$ -- 68
-if$ -- 957
++ -- 87
+- -- 75
+* -- 482
+:= -- 965
+add.period$ -- 48
+call.type$ -- 12
+change.case$ -- 85
+chr.to.int$ -- 12
+cite$ -- 24
+duplicate$ -- 563
+empty$ -- 483
+format.name$ -- 95
+if$ -- 1187
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 98
-newline$ -- 64
-num.names$ -- 40
-pop$ -- 230
+missing$ -- 121
+newline$ -- 76
+num.names$ -- 48
+pop$ -- 286
 preamble$ -- 1
-purify$ -- 58
+purify$ -- 73
 quote$ -- 0
-skip$ -- 149
+skip$ -- 177
 stack$ -- 0
-substring$ -- 110
-swap$ -- 208
+substring$ -- 132
+swap$ -- 263
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 100
-warning$ -- 10
-while$ -- 30
+type$ -- 120
+warning$ -- 12
+while$ -- 36
 width$ -- 0
-write$ -- 133
-(There were 16 warnings)
+write$ -- 159
+(There were 18 warnings)

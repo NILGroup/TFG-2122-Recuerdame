@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{12}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Alzheimer(2018)}]{article_5}
@@ -35,6 +35,15 @@
   \url{https://www.sciencedirect.com/science/article/pii/S021348531730350X/}
   (último acceso,  Octubre, 2021).
 
+\bibitem[{Kirk et\ al.(2018)Kirk, Rasmussen, Overgaard y Berntsen}]{article_13}
+{\sc Kirk, M.}, {\sc Rasmussen, K.~W.}, {\sc Overgaard, S.~B.} y {\sc Berntsen,
+  D.}
+\newblock Five weeks of immersive reminiscence therapy improves
+  autobiographical memory in alzheimer's disease.
+\newblock 2018.
+\newblock Disponible en \url{https://pubmed.ncbi.nlm.nih.gov/30198380/} (último
+  acceso,  Septiembre, 2021).
+
 \bibitem[{Lechuga(2018)}]{article_4}
 {\sc Lechuga, R.~G.}
 \newblock ?`qu\'e es la terapia de reminiscencia y c\'omo se puede realizar?
@@ -59,8 +68,17 @@
   \url{https://mitcentrodedia.es/actividades/historia-de-vida/} (último acceso,
    Noviembre, 2021).
 
-\bibitem[{Oliveras et\ al.(2021)Oliveras, Munoz, Ulloa y Alvarez}]{article_3}
-{\sc Oliveras, D.~B.}, {\sc Munoz, C.~C.}, {\sc Ulloa, D.~P.} y {\sc Alvarez,
+\bibitem[{Neurol\'ogica(2017)}]{article_12}
+{\sc Neurol\'ogica, R.}
+\newblock Eficacia de la terapia de reminiscencia grupal en personas con
+  demencia. revisi\'on sistemÃ¡\'atica y metaan\'alisis.
+\newblock 2017.
+\newblock Disponible en
+  \url{https://www.researchgate.net/publication/321165965_Eficacia_de_la_terapia_de_reminiscencia_grupal_en_personas_con_demencia_Revision_sistematica_y_metaanalisis}
+  (último acceso,  Septiembre, 2021).
+
+\bibitem[{Oliveras et\ al.(2021)Oliveras, Munoz, Ulloa y \'Alvarez}]{article_3}
+{\sc Oliveras, D.~B.}, {\sc Munoz, C.~C.}, {\sc Ulloa, D.~P.} y {\sc \'Alvarez,
   C.~S.}
 \newblock Sistema de asistencia para cuidados de enfermos del alzheimer.
 \newblock 2021.
@@ -68,13 +86,15 @@
   \url{https://eprints.ucm.es/id/eprint/67069/1/PRATS%20Ulloa%2082953_David_Prats_Ulloa_Sistema_de_asistencia_para_cuidados_de_enfermos_del_Alzheimer_784051_897793820.pdf}
   (último acceso,  Noviembre, 2021).
 
-\bibitem[{Saez(2020)}]{article_1}
-{\sc Saez, E.~P.}
-\newblock Terapia de reminiscencia.
-\newblock 2020.
-\newblock Disponible en
-  \url{https://blogcrea.imserso.es/terapia-de-reminiscencia/} (último acceso,
-  Septiembre, 2021).
+\bibitem[{Su et\ al.(2012)Su, Wu y Lin}]{article_11}
+{\sc Su, T.~W.}, {\sc Wu, L.-L.} y {\sc Lin, C.-P.}
+\newblock La prevalencia de la demencia y la depresi\'on en los pacientes
+  taiwaneses con lepra institucionalizados y la evaluaci\'on de la eficacia de
+  la terapia de reminiscencia: un estudio de control aleatorio, longitudinal,
+  simple ciego.
+\newblock 2012.
+\newblock Disponible en \url{https://pubmed.ncbi.nlm.nih.gov/21425346/} (último
+  acceso,  Septiembre, 2021).
 
 \bibitem[{Valencia(2017)}]{article_10}
 {\sc Valencia, U.~I.}
