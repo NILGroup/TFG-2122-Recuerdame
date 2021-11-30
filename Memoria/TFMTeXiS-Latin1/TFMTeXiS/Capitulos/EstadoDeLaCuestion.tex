@@ -343,66 +343,114 @@ Finalmente con todos los datos descargados del paciente, se podrá visualizar las
 \caption{Pagina historias de vida: Galería de fotos}
 \label{pic}
 \end{figure} 
-\FloatBarrier
+
 		
 \subsection{Sistema de asistencia para cuidado de enfermos del Alzheimer}
 
-Este trabajo fue realizado en junio de 2021 por estudiantes de la Universidad Complutense de Madrid \citep{article_3}. 
+Este TFG \citep{article_3} presenta un sistema capaz de gestionar la información que guardan las historias de vida.
+Esta aplicación es un sistema que, además de almacenar los recuerdos y los
+datos importantes de un paciente, es capaz de generar una historia de vida,
+una narración de los recuerdos y experiencias de la vida del paciente, que
+puede ser utilizada por terapeutas para sus terapias de reminiscencia. Además se pueden realizar observaciones de los recuerdos indicando la emocion que le produce al paciente y el estado del recuerdo. Lo que finalmente surgió de este TFG fue: una base de datos que permite recopilar de manera ordenada y eficiente, toda la información de las historias de vida. Además de una pequeña aplicación que permitía al usuario ver, añadir, editar y eliminar esa información. \\
 
-Al igual que este TFG, se trata de una colaboración con el proyecto CANTOR, para crear una aplicación capaz de ayudar a los terapeutas en la realización de sus terapias de reminiscencia. Creando finalmente un sistema capaz de gestionar la información que guardan las historias de vida.
-Esta aplicación incluye un inicio de sesión simple para los terapeutas, donde puedan guardar a un paciente con sus recuerdos, su historia, sus familiares y relaciones cercanas. Además de poder realizar observaciones de los recuerdos indicando sus emociones y el estado del recuerdo. Además cuenta con soporte tanto para aplicaciones como para un navegador web.  \\
+La arquitectura creada para la base de datos esta dividida en dos partes, por una parte el usuario/paciente y por otra, el terapeuta. Dentro de estos se guardan distintos parámetros y características, estos son:
 
-Lo que finalmente surgió de este TFG fue: una base de datos que permite recopilar de manera ordenada y eficiente, toda la información de las historias de vida. Además de una pequeña aplicación que permitía al usuario ver, añadir, editar y eliminar esa información. \\
-
-La arquitectura creada para la base de datos esta dividida en dos partes, por una parte el usuario/paciente y por otra, el terapeuta. Dentro de estos se guardan distintos parámetros y características. Que se muestran en los diagramas de las figuras \ref{fig:base_datos_paciente} y \ref{fig:base_datos_terapeuta}
-
-\newpage
-
-%[Arquitectura base de datos paciente]
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=.9]{./Imagenes/Figuras/base_datos_paciente.PNG}
-  \caption{Arquitectura de la base de datos del paciente.}
-  \label{fig:base_datos_paciente}
-\end{figure}
-
-%[Arquitectura base de datos  Terapeuta]\\
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=.9]{./Imagenes/Figuras/base_datos_terapeuta.PNG} 
-  \caption{Arquitectura de la base de datos del terapeuta.}
-  \label{fig:base_datos_terapeuta}
-\end{figure}
-
-\newpage
-
-Una vez entendida la arquitectura de la base de datos, se procede a mostrar cómo se implementó la aplicación y después se mostrarán, con capturas y explicaciones, las distintas funcionalidades que tiene.\\
-
-La aplicación fue implementada con las siguientes herramientas:
 \begin{itemize}
-	\item ReactJS: es una librería de JavaScript para construir interfaces de usuario. Ayuda a crear interfaces de usuario interactivas de forma sencilla, permitiendo diseñar vistas simples para cada componente en la aplicación.
-	\item JSX: es una extensión de JavaScript para representar etiquetas HTML, sin serlo. Se usa en React para darle apariencia a los componentes y es de gran utilidad.
-	\item Firebase: es una plataforma comprada por Google en 2014 que ofrece
-servicios en la nube de varias maneras. Se usó como base de datos para la aplicación.
-	\item Otros:	JavaScript, HTML, CSS, Material, React-Bootstrap, Node, GIT para
-el control de versiones y Visual Studio Code como IDE.
+	\item Usario o paciente guarda:
+	\begin{itemize}
+		\item DNI o Número de identificación del usuario.
+		\item Nombre.
+		\item Apellidos.
+		\item Género.
+		\item Fecha de nacimiento.
+		\item Residencia.
+		\item Tipo de residencia.
+		\item Recuerdos.
+		\begin{itemize}
+			\item Emoción.
+			\item Estado del recuerdo.
+			\item Fecha.
+			\item Texto.
+		\end{itemize}
+		\item Relaciones: Personas cercanas al usuario.
+		
+		\begin{itemize}
+			\item Nombre.
+			\item Tipo de relación (Padre, madre, hijo, amigo,...).
+			\item Experiencias(Que ha tenido con dicha persona).
+			\begin{itemize}
+				\item Emoción.
+				\item Fecha.
+				\item Texto.
+				\item Fotografías.
+				\item Vídeos.
+				\item Audios.
+			\end{itemize}
+		\end{itemize}
+		\item Fotografías
+		\item Audios
+		\item Características: Características del usuario.
+		\begin{itemize}
+			\item Nacionalidad
+		\end{itemize}
+		\item Contactos.
+		\begin{itemize}
+			\item Nombre.
+			\item Tipo de relación.
+			\item Número de teléfono.
+			\item Email.
+		\end{itemize}
+		\item Localización.
+		\item GDS.
+		\item Historial.
+		\begin{itemize}	
+			\item Terapeuta.
+			\item Fecha.
+			\item Texto.	
+		\end{itemize}
+		\item Terapeuta.
+	\end{itemize}
+	
+	\item Terapeuta guarda:
+	\begin{itemize}
+		\item DNI: Número de identificación del usuario.
+		\item Nombre.
+		\item Apellidos.
+		\item Género.
+		\item Fecha de nacimiento.
+		\item Localización.
+	\end{itemize}
 \end{itemize}
 
-Con dichas herramientas y mucho trabajo por parte de los estudiantes, se llegó a el siguiente resultado.\\
 
-Lo primero que mostramos es el menú principal (Figura \ref{fig:movil_menu}) desde el cual se puede acceder a las distintas funcionalidades de la aplicación. Esta son: Nuevo usuario, Evaluación clínica, Nuevo terapeuta, Buscar usuario, editar usuario, editas terapeuta, Información adicional, Multimedia, Historia de vida, Contactos de usuario y usuario de terapeuta (Cada una se explicará con mayor detenimiento a continuación)
+
+En la Figura \ref{fig:movil_menu} se muestra la página principal de la aplicación desde el cual se puede acceder a las distintas funcionalidades de la aplicación. Esta son:
+\begin{itemize}
+		\item Nuevo usuario: Registro de nuevos pacientes.
+		\item Evaluación clínica: Evaluación del estado del paciente.
+		\item Nuevo terapeuta: Registro de nuevos terapeutas.
+		\item Buscar usuario: Búsqueda de un usuario.
+		\item Editar usuario: Editor de datos de un usuario.
+		\item Editar terapeuta: Editor de datos de un terapeuta.
+		\item Información adicional: Registro de relaciones y recuerdos a un usuario.
+		\item Multimedia: Registro de contenido multimedia a un usuario.
+		\item Historia de vida: Redacción automática de la historia de vida de un usuario.
+		\item Contactos de usuario: Visualización de los contactos registrados a un usuario.
+		\item Usuario de terapeuta: Visualización de los usuario que tiene un terapeuta.
+	\end{itemize}
+
 %[movil_menu]
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_menu.PNG}
   \caption{Menú principal de la aplicación.}
   \label{fig:movil_menu}
 \end{figure}
 
-La primera funcionalidad que podemos observar es la de ``nuevo usuario'', en esta pantalla se podrá registrar un nuevo paciente con sus datos personales (Nombre, Apellidos, Dni, etc.) y además se le podrá asignar un terapeuta específico (Figura \ref{fig:movil_nuevo_paciente}). 
+La primera funcionalidad que podemos observar es la de ``nuevo usuario'', en esta pantalla se podrá registrar un nuevo paciente con sus datos personales (Nombre, apellidos, DNI, fecha de nacimiento, fecha de fallecimiento, nacionalidad, género, lugar de residencia, tipo de residencia y DNI del terapeuta asignado) y además se le podrá asignar un terapeuta específico (Figura \ref{fig:movil_nuevo_paciente}). 
 
 %[movil_nuevo_paciente]
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_nuevo_paciente.PNG}
   \caption{Pantalla de registro de un nuevo usuario.}
@@ -412,17 +460,17 @@ La primera funcionalidad que podemos observar es la de ``nuevo usuario'', en est
 Otra funcionalidad es la ``evaluación clínica'' donde se podrá realizar una evaluación de un paciente especifico, indicando su grado GDS y donde se podrá añadir anotaciones sobre el paciente y su evaluación (Figura \ref{fig:movil_evaluacion_clinica}).
 
 %[movil_evaluacion_clinica]
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_evaluacion_clinica.PNG}
   \caption{Pantalla de evaluación clínica de un paciente.}
   \label{fig:movil_evaluacion_clinica}
 \end{figure}
 
-La funcionalidad de ``nuevo terapeuta'', permite añadir un nuevo terapeuta a la base de datos. Añadiendo sus datos personales (Figura \ref{fig:movil_nuevo_terapeuta}).
+La funcionalidad de ``nuevo terapeuta'', permite añadir un nuevo terapeuta a la base de datos. Añadiendo sus datos personales(Nombre, apellidos, DNI, Fecha de nacimiento, género y localización) (Figura \ref{fig:movil_nuevo_terapeuta}).
 
 %[movil_nuevo_terapeuta]
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_nuevo_terapeuta.PNG}
   \caption{Pantalla de registro de un nuevo terapeuta.}
@@ -432,19 +480,19 @@ La funcionalidad de ``nuevo terapeuta'', permite añadir un nuevo terapeuta a la 
 En ``buscar usuario'' saldrá una barra de búsqueda donde podrás buscar usuarios por nombre y DNI. Tras la búsqueda, se mostrará información almacenada de ese paciente, sus datos, sus recuerdos, sus fotos y audiosy sus relaciones. (Figura \ref{fig:movil_buscar_paciente}, Figura \ref{fig:movil_recuerdos} y Figura \ref{fig:movil_relaciones}).
 
 %[movil_buscar_paciente]
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_buscar_paciente.PNG}
   \caption{Pantalla de búsqueda de usuario.}
   \label{fig:movil_buscar_paciente}
 \end{figure}
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_recuerdos.PNG}
   \caption{Menú principal de la aplicación.}
   \label{fig:movil_recuerdos}
 \end{figure}
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_relaciones.PNG}
   \caption{Menú principal de la aplicación.}
@@ -453,22 +501,22 @@ En ``buscar usuario'' saldrá una barra de búsqueda donde podrás buscar usuarios 
 
 En la funcionalidad de ``editar usuario'' se podrá editar los datos de nuestros usuario, añadir recuerdo y editarlos además de añadir contenido multimedia como fotos o audios (Figura \ref{fig:movil_editar_usuario} y Figura \ref{fig:movil_recuerdo_paciente}).
 
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_editar_usuario.PNG}
   \caption{Página para editar los datos que se guardan de un usuario.}
   \label{fig:movil_editar_usuario}
 \end{figure}
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_recuerdo_paciente.PNG}
   \caption{Página para editar los recuerdos del usuario}
   \label{fig:movil_recuerdo_paciente}
 \end{figure}
 
-En la funcionalidad de ``editar terapeuta'' se podrá editar los datos guardados de los terapeutas registrados. (Figura \ref{fig:movil_editar_terapeuta} )
+En la funcionalidad de ``editar terapeuta'' se podrá editar los datos guardados de los terapeutas registrados (Figura \ref{fig:movil_editar_terapeuta} ).
 
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_editar_terapeuta.PNG}
   \caption{Pantalla editar terapeuta.}
@@ -477,7 +525,7 @@ En la funcionalidad de ``editar terapeuta'' se podrá editar los datos guardados 
 
 En la funcionalidad de ``información adicional'' cuando se busque a un usuario se le podrá añadir tanto o una relación nueva o un nuevo recuerdo (Figura \ref{fig:movil_informacion_adicional} y Figura \ref{fig:movil_informacion_adicional_2}). \\
 
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_informacion_adicional.PNG}
   \caption{Pantalla de información adicional(a).}
@@ -490,47 +538,43 @@ En la funcionalidad de ``información adicional'' cuando se busque a un usuario s
 
 En la funcionalidad de ``multimedia'' se podrá elegir un usuario y añadirle o imagenes, o audios o videos. (Figura \ref{fig:movil_multimedia})\\
 
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_multimedia.PNG}
   \caption{Pantalla de multimedia.}
   \label{fig:movil_multimedia}
 \end{figure}
 
-La funcionalidad de ``historia de vida'' permitirá generar a partir de todos los datos guardados una historia de vida. Se podrá elegir entre mostrar la historia de vida completa o con diversos filtros y agrupaciones. Esta historia de vida podrá ser guardada en PDF. (Figura \ref{fig:movil_historia_vida})\\
+La funcionalidad de ``historia de vida'' permitirá generar a partir de todos los datos guardados una historia de vida. Se podrá elegir entre mostrar la historia de vida completa o con diversos filtros y agrupaciones. Esta historia de vida podrá ser guardada en PDF (Figura \ref{fig:movil_historia_vida}).\\
 
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_historia_vida.PNG}
   \caption{Pantalla de historias de vida.}
   \label{fig:movil_historia_vida}
 \end{figure}
 
-En la funcionalidad de ``contactos del usuario'' se seleccionara a un usuario por su DNI y saldrán todos los contactos que el usuario tiene, ademas de dar de alta a contactos nuevos. contactos  (Figura \ref{fig:movil_personas_contacto}) \\
+En la funcionalidad de ``contactos del usuario'' se seleccionara a un usuario por su DNI y saldrán todos los contactos que el usuario tiene, ademas de dar de alta a contactos nuevos (Figura \ref{fig:movil_personas_contacto}). \\
 
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_personas_contacto.PNG}
   \caption{Pantalla de contactos del usuario.}
   \label{fig:movil_personas_contacto}
 \end{figure}
 
-En la funcionalidad de ``usuarios de terapeuta'' podrás buscar un terapeuta y la aplicación mostrará todos los usuario y pacientes asignados a ese terapeuta. (Figura:\ref{fig:movil_usuarios_terapeuta}) \\
+En la funcionalidad de ``usuarios de terapeuta'' podrás buscar un terapeuta y la aplicación mostrará todos los usuario y pacientes asignados a ese terapeuta (Figura:\ref{fig:movil_usuarios_terapeuta}). \\
 
-\begin{figure}[!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=.7]{./Imagenes/Figuras/movil_usuarios_terapeuta.PNG}
   \caption{Pantalla usuario del terapeuta.}
   \label{fig:movil_usuarios_terapeuta}
 \end{figure} 
-\FloatBarrier
 
-Tras a ver visualizado y estudiado la aplicación creada por este TFG, nuestro equipo ha detectado las siguientes carencias:
+\subsection{Conclusiones}
 
-\begin{itemize}
-\item El diseño gráfico de la aplicación no está bien desarrollada y no se considera agradable visualmente.
-\item Los colores de la aplicación son tristes y apagados.
-\item El programa no permite añadir etiquetas a los recuerdos.
-\item No se permiten relacionar fotos o personas a recuerdos específicos.
-\end{itemize}
-
+Tras a ver visualizado y estudiado estos TFGs, nuestro equipo ha llegado a las siguientes conclusiones. Al ser unos TFGs enfocados a recopilar las historias de vida y no en mostrarlas, el diseño gráfico de la aplicación no está bien desarrollada y no se considera agradable visualmente. Además ninguna de las tres bases de datos se considera que está del todo a nuestro gusto. 
+Por hemos decidido juntar y comparar los tres tipos de bases de datos. Para elegir la que más se nos adecua a nuestro proyecto.
+%El programa no permite añadir etiquetas a los recuerdos.
+%No se permiten relacionar fotos o personas a recuerdos específicos.
