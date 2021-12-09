@@ -1,107 +1,68 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{7}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
-\bibitem[{Alzheimer(2018)}]{article_5}
-{\sc Alzheimer, K.}
-\newblock Fases del alzheimer.
-\newblock 2018.
-\newblock Disponible en
-  \url{https://knowalzheimer.com/todo-sobre-el-alzheimer/fases-del-alzheimer/}
-  (último acceso,  Noviembre, 2021).
+\bibitem[{{Aguilera Heredero} y {Molina Munoz}(2021)}]{article_15}
+{\sc {Aguilera Heredero}, P.} y {\sc {Molina Munoz}, C.}
+\newblock Extracci\'on de informaci\'on personal a partir de redes sociales
+  para la creaci\'on de un libro de vida.
+\newblock Informe t\'ecnico, Universidad Complutense de Madrid, 2021.
+\newblock TFG. Grado de Ingener\'ia Inform\'atica. Departamento de Ingenier\'ia
+  del Software e Inteligencia Artificial.
 
-\bibitem[{association(2018)}]{article_7}
-{\sc association, A.}
-\newblock ?`qu\'e es el alzheimer?
-\newblock 2018.
-\newblock Disponible en
-  \url{https://blog.fpmaragall.org/las-fases-de-la-enfermedad-de-alzheimer}
-  (último acceso,  Noviembre, 2021).
+\bibitem[{{Castilla Castellano}(2021)}]{article_14}
+{\sc {Castilla Castellano}, L.}
+\newblock Generaci\'on de historias a partir de una base de conocimiento.
+\newblock Informe t\'ecnico, Universidad Complutense de Madrid, 2021.
+\newblock TFG. Grado de Ingener\'ia Inform\'atica. Departamento de Ingenier\'ia
+  del Software e Inteligencia Artificial.
 
-\bibitem[{demencias(2018)}]{article_9}
-{\sc demencias, C.}
-\newblock Historias de vida 2,c\'omo hacerlas.
-\newblock 2018.
-\newblock Disponible en
-  \url{https://comunicacionydemencias.com/historia-de-vida/} (último acceso,
-  Noviembre, 2021).
-
-\bibitem[{Galende et\ al.(2021)Galende, Ortiz, Velasco, Luque, de~Silanes~de
-  Miguel y Jurczynska}]{article_2}
-{\sc Galende, A.~V.}, {\sc Ortiz, M.~E.}, {\sc Velasco, S.}, {\sc Luque, M.},
-  {\sc de~Silanes~de Miguel, C.} y {\sc Jurczynska, C.~P.}
-\newblock Impacto social de la enfermedad de alzheimer y otras demencias.
-\newblock 2021.
-\newblock Disponible en
-  \url{https://www.sciencedirect.com/science/article/pii/S021348531730350X/}
-  (último acceso,  Octubre, 2021).
-
-\bibitem[{Kirk et\ al.(2018)Kirk, Rasmussen, Overgaard y Berntsen}]{article_13}
-{\sc Kirk, M.}, {\sc Rasmussen, K.~W.}, {\sc Overgaard, S.~B.} y {\sc Berntsen,
-  D.}
-\newblock Five weeks of immersive reminiscence therapy improves
-  autobiographical memory in alzheimer's disease.
-\newblock 2018.
-\newblock Disponible en \url{https://pubmed.ncbi.nlm.nih.gov/30198380/} (último
-  acceso,  Septiembre, 2021).
-
-\bibitem[{Lechuga(2018)}]{article_4}
-{\sc Lechuga, R.~G.}
-\newblock ?`qu\'e es la terapia de reminiscencia y c\'omo se puede realizar?
-\newblock 2018.
-\newblock Disponible en
-  \url{https://www.estimulacioncognitiva.info/2018/04/11/qu%C3%A9-es-la-terapia-de-reminiscencia-y-c%C3%B3mo-se-puede-realizar/}
-  (último acceso,  Noviembre, 2021).
-
-\bibitem[{Maragall(2018)}]{article_6}
-{\sc Maragall, F.~P.}
-\newblock Gds.
-\newblock 2018.
-\newblock Disponible en
-  \url{https://blog.fpmaragall.org/las-fases-de-la-enfermedad-de-alzheimer}
-  (último acceso,  Noviembre, 2021).
-
-\bibitem[{MIT(2018)}]{article_8}
-{\sc MIT, C.}
-\newblock Historias de vida, qu\'e contienen.
-\newblock 2018.
-\newblock Disponible en
-  \url{https://mitcentrodedia.es/actividades/historia-de-vida/} (último acceso,
-   Noviembre, 2021).
-
-\bibitem[{Neurol\'ogica(2017)}]{article_12}
-{\sc Neurol\'ogica, R.}
+\bibitem[{Irazoki et\ al.(2017)Irazoki, Garc\'ia-Casal, Sanchez-Meca y
+  Franco}]{article_12}
+{\sc Irazoki, E.}, {\sc Garc\'ia-Casal, J.~A.}, {\sc Sanchez-Meca, J.} y {\sc
+  Franco, M.}
 \newblock Eficacia de la terapia de reminiscencia grupal en personas con
-  demencia. revisi\'on sistemÃ¡\'atica y metaan\'alisis.
-\newblock 2017.
+  demencia. revisi\'on sistem\'atica y metaan\'alisis.
+\newblock {\em Revista de neurolog\'ia\/}, vol.\ 65, p\'aginas 447--456, 2017.
 \newblock Disponible en
   \url{https://www.researchgate.net/publication/321165965_Eficacia_de_la_terapia_de_reminiscencia_grupal_en_personas_con_demencia_Revision_sistematica_y_metaanalisis}
   (último acceso,  Septiembre, 2021).
+
+\bibitem[{Kirk et\ al.(2019)Kirk, Rasmussen, Overgaard y Berntsen}]{article_13}
+{\sc Kirk, M.}, {\sc Rasmussen, K.}, {\sc Overgaard, S.} y {\sc Berntsen, D.}
+\newblock Five weeks of immersive reminiscence therapy improves
+  autobiographical memory in alzheimer's disease.
+\newblock {\em Memory\/}, vol.\ 27(4), p\'aginas 441--454, 2019.
+\newblock ISSN 0965-8211.
+\newblock Disponible en \url{https://pubmed.ncbi.nlm.nih.gov/30198380/} (último
+  acceso,  Septiembre, 2021).
 
 \bibitem[{Oliveras et\ al.(2021)Oliveras, Munoz, Ulloa y \'Alvarez}]{article_3}
 {\sc Oliveras, D.~B.}, {\sc Munoz, C.~C.}, {\sc Ulloa, D.~P.} y {\sc \'Alvarez,
   C.~S.}
 \newblock Sistema de asistencia para cuidados de enfermos del alzheimer.
-\newblock 2021.
-\newblock Disponible en
-  \url{https://eprints.ucm.es/id/eprint/67069/1/PRATS%20Ulloa%2082953_David_Prats_Ulloa_Sistema_de_asistencia_para_cuidados_de_enfermos_del_Alzheimer_784051_897793820.pdf}
-  (último acceso,  Noviembre, 2021).
+\newblock Informe t\'ecnico, Universidad Complutense de Madrid, 2021.
+\newblock TFG. Grado de Ingener\'ia Inform\'atica y grado de Ingener\'ia del
+  Software.
 
-\bibitem[{Su et\ al.(2012)Su, Wu y Lin}]{article_11}
-{\sc Su, T.~W.}, {\sc Wu, L.-L.} y {\sc Lin, C.-P.}
-\newblock La prevalencia de la demencia y la depresi\'on en los pacientes
-  taiwaneses con lepra institucionalizados y la evaluaci\'on de la eficacia de
-  la terapia de reminiscencia: un estudio de control aleatorio, longitudinal,
-  simple ciego.
-\newblock 2012.
+\bibitem[{Su et\ al.(2011)Su, Wu y Lin}]{article_11}
+{\sc Su, T.-W.}, {\sc Wu, L.-L.} y {\sc Lin, C.-P.}
+\newblock The prevalence of dementia and depression in taiwanese
+  institutionalized leprosy patients, and the effectiveness evaluation of
+  reminiscence therapy-a longitudinal, single-blind, randomized control study.
+\newblock {\em Int. J. Geriat. Psychiatry\/}, vol.\ 27(2), p\'aginas 187--196,
+  2011.
 \newblock Disponible en \url{https://pubmed.ncbi.nlm.nih.gov/21425346/} (último
   acceso,  Septiembre, 2021).
 
-\bibitem[{Valencia(2017)}]{article_10}
-{\sc Valencia, U.~I.}
-\newblock Mec lobo.
-\newblock 2017.
-\newblock Disponible en
-  \url{https://www.universidadviu.com/es/actualidad/nuestros-expertos/como-identificar-las-fases-alzheimer}
-  (último acceso,  Noviembre, 2021).
+\bibitem[{{Villarejo Galende} et\ al.(2021){Villarejo Galende}, {Eimil Ortiz},
+  {Llamas Velasco}, {Llanero Luque}, C.{ L\'opez de Silanes de Miguel} y
+  {Prieto Jurczynska}}]{article_2}
+{\sc {Villarejo Galende}, A.}, {\sc {Eimil Ortiz}, M.}, {\sc {Llamas Velasco},
+  S.}, {\sc {Llanero Luque}, M.}, {\sc C.{ L\'opez de Silanes de Miguel}} y
+  {\sc {Prieto Jurczynska}, C.}
+\newblock Informe de la fundaci\'on del cerebro. impacto social de la
+  enfermedad de alzheimer y otras demencias.
+\newblock {\em Neurolog\'ia\/}, vol.\ 36(1), p\'aginas 39--49, 2021.
+\newblock ISSN 0213-4853.
 
 \end{thebibliography}

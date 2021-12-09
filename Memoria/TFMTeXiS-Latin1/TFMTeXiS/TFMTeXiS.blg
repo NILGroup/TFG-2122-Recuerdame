@@ -45,71 +45,46 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Cascaras/fin.aux
 Database file #1: nuestros.bib
-Warning--string name "abr" is undefined
---line 32 of file nuestros.bib
-Warning--string name "abr" is undefined
---line 41 of file nuestros.bib
-Warning--string name "abr" is undefined
---line 50 of file nuestros.bib
-Warning--string name "abr" is undefined
---line 60 of file nuestros.bib
-Warning--string name "abr" is undefined
---line 69 of file nuestros.bib
-Warning--string name "abr" is undefined
---line 78 of file nuestros.bib
 Database file #2: latex.bib
 Database file #3: otros.bib
-Warning--empty journal in article_5
-Warning--empty journal in article_7
-Warning--empty journal in article_9
-Warning--empty journal in article_2
-Warning--empty journal in article_13
-Warning--empty journal in article_4
-Warning--empty journal in article_6
-Warning--empty journal in article_8
-Warning--empty journal in article_12
-Warning--empty journal in article_3
-Warning--empty journal in article_11
-Warning--empty journal in article_10
-You've used 12 entries,
+You've used 7 entries,
             2962 wiz_defined-function locations,
-            1148 strings with 15166 characters,
-and the built_in function-call counts, 6306 in all, are:
-= -- 450
-> -- 224
-< -- 8
-+ -- 87
-- -- 75
-* -- 482
-:= -- 965
-add.period$ -- 48
-call.type$ -- 12
-change.case$ -- 85
-chr.to.int$ -- 12
-cite$ -- 24
-duplicate$ -- 563
-empty$ -- 483
-format.name$ -- 95
-if$ -- 1187
+            1143 strings with 14788 characters,
+and the built_in function-call counts, 5050 in all, are:
+= -- 398
+> -- 206
+< -- 10
++ -- 81
+- -- 72
+* -- 410
+:= -- 715
+add.period$ -- 29
+call.type$ -- 7
+change.case$ -- 65
+chr.to.int$ -- 7
+cite$ -- 7
+duplicate$ -- 408
+empty$ -- 346
+format.name$ -- 93
+if$ -- 995
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 121
-newline$ -- 76
-num.names$ -- 48
-pop$ -- 286
+missing$ -- 84
+newline$ -- 47
+num.names$ -- 28
+pop$ -- 156
 preamble$ -- 1
-purify$ -- 73
+purify$ -- 52
 quote$ -- 0
-skip$ -- 177
+skip$ -- 139
 stack$ -- 0
-substring$ -- 132
-swap$ -- 263
-text.length$ -- 0
+substring$ -- 201
+swap$ -- 271
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
-warning$ -- 12
-while$ -- 36
+type$ -- 70
+warning$ -- 0
+while$ -- 32
 width$ -- 0
-write$ -- 159
-(There were 18 warnings)
+write$ -- 110
