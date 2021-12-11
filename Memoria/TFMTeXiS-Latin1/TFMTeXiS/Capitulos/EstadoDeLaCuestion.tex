@@ -158,16 +158,24 @@ Lo habitual es que los usuarios construyan una Historia de Vida del paciente med
 
 Para la construcción de la herramienta se pensó en llevar a cabo una terapia de este tipo pero de una forma guiada y que en cada sesión se pudiera tratar un tema concreto por lo que se hicieron diferentes categorías para poder elegir cuál de ellas se iba a tratar en las distintas sesiones. Estas categorías se clasificaron según los datos básicos que se suelen preguntar para construir una historia de vida: datos personales, infancia, juventud, edad adulta, familia, comida, vacaciones y aficiones.\\
 
-Lo primero que permite la aplicación es iniciar sesión o crear un nuevo usuario como se muestra en la Figura \ref{fig:figura2.2}.\\
-
+Lo primero que permite la aplicación es iniciar sesión o crear un nuevo usuario como se muestra en la Figura \ref{fig:figura2.1}.\\
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.2}
+  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.1}
   	\caption{Primera pantalla de la aplicación.}
+	\label{fig:figura2.1}
+\end{figure}
+
+Una vez se ha iniciado sesión, a través de la pantalla que se muestra en la Figura \ref{fig:figura2.2}, ser puede elegir el tipo de sesión para acceder a las relaciones de palabras, al progreso del paciente o a la relación de imágenes.\\
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=5cm]{./Imagenes/Figuras/figura 2.2}
+  	\caption{Página principal de la aplicación, una vez iniciada la sesión.}
 	\label{fig:figura2.2}
 \end{figure}
 
-Una vez se ha iniciado sesión, la aplicación permite registrar los datos personales del paciente y muestra una serie de categorías tal y como se muestra en la Figura \ref{fig:figura2.3}. Para poder registrar los datos del paciente, se deben rellenar los datos que se indican en la Figura \ref{fig:figura2.11}. Una vez registrados los datos, se puede elegir una de las categorías de la Figura \ref{fig:figura2.3} sobre la que se va a trabajar en la sesión. A partir de estas categorías, el usuario puede crear las relaciones necesarias sobre el tema seleccionado en la sesión.\\
+\newpage
+En el caso de elegir la opción de Palabras, se podrá elegir una de las categorías de la Figura \ref{fig:figura2.3} sobre la que se va a trabajar en la sesión con el paciente. A partir de estas categorías, el usuario puede crear las relaciones necesarias sobre el tema seleccionado en la sesión. Además de elegir una categoría, también se puede elegir la opción de registrar los datos personales del paciente cumplimentando los datos que se indican en la Figura \ref{fig:figura2.4}.\\
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.3}
@@ -177,19 +185,12 @@ Una vez se ha iniciado sesión, la aplicación permite registrar los datos persona
 
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.11}
+  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.4}
   	\caption{Pantalla para el registro de los datos personales.}
-	\label{fig:figura2.11}
-\end{figure}
-
-La idea de la aplicación es poder crear relaciones a partir de recomendaciones. Por tanto, para poder crear estas relaciones, la aplicación recomendará una serie de palabras clave y dentro de la palabra seleccionada, habrá una serie de palabras recomendadas. En esta relación se podrá asociar una imagen o se podrán añadir nuevas sugerencias de relaciones con dicha palabra como se muestras en la Figura \ref{fig:figura2.5}. A través de la pantalla que se muestra en la Figura \ref{fig:figura2.4}, se puede acceder a las palabras relacionadas, al progreso del paciente y a la relación de imágenes.
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=5cm]{./Imagenes/Figuras/figura 2.4}
-  	\caption{Página principal de la aplicación, una vez iniciada la sesión.}
 	\label{fig:figura2.4}
 \end{figure}
 
+La idea de la aplicación es poder crear relaciones a partir de recomendaciones. Por tanto, para poder crear estas relaciones, la aplicación recomendará una serie de palabras clave y dentro de la palabra seleccionada, habrá una serie de palabras recomendadas. En esta relación se podrá asociar una imagen o se podrán añadir nuevas sugerencias de relaciones con dicha palabra como se muestras en la Figura \ref{fig:figura2.5}. Todo esto se hace dentro de la opción de Palabras.\\
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.5}
@@ -197,22 +198,23 @@ La idea de la aplicación es poder crear relaciones a partir de recomendaciones. 
 	\label{fig:figura2.5}
 \end{figure}
 
-Para poder ver el progreso de un paciente, se pueden visualizar los grafos de las relaciones como se puede ver en el grafo de la Figura \ref{fig:figura2.6}. O bien, visualizar las estadísticas (Figura \ref{fig:figura2.7}) de la pantalla de Progreso para acceder a las relaciones que se han creado en las distintas sesiones.
+\newpage
+En la opción de Progreso, se puede visualizar el progreso de un paciente. Lo primero que se puede ver son las estadísticas generales de todas las palabras como se muestra en la Figura \ref{fig:figura2.6}. Permite la opción de seleccionar una categoría en concreto para poder visualizar un grafo con el progreso de dicha categoría como se puede ver en la Figura \ref{fig:figura2.7}.\\
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=10cm]{./Imagenes/Figuras/figura 2.6}
-  	\caption{Grafo resultante de la categoría "vacaciones" tras la evaluación con usuarios.}
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/figura 2.6}
+  	\caption{Estadísticas resultantes tras la sesión de evaluación. Los nombres propios se encuentran pixelados.}
 	\label{fig:figura2.6}
 \end{figure}
 
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=10cm]{./Imagenes/Figuras/figura 2.7}
-  	\caption{Estadísticas resultantes tras la sesión de evaluación. Los nombres propios se encuentran pixelados.}
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura 2.7}
+  	\caption{Grafo resultante de la categoría "vacaciones" tras la evaluación con usuarios.}
 	\label{fig:figura2.7}
 \end{figure}
 
-Para poder categorizar y relacionar imágenes, se dispone de un apartado donde poder asociar una imagen a una categoría y a un concepto como se muestras en la Figura \ref{fig:figura2.8}. Y, de esta forma, poder crear la relación.
+Para poder categorizar y relacionar imágenes, se dispone del tipo de sesión Imágenes donde se puede asociar una imagen a una categoría y a un concepto como se muestra en la Figura \ref{fig:figura2.8}. Y, de esta forma, poder crear una relación.\\
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.8}
@@ -220,7 +222,7 @@ Para poder categorizar y relacionar imágenes, se dispone de un apartado donde po
 	\label{fig:figura2.8}
 \end{figure}
 
-También, tal y como se muestra en la Figura \ref{fig:figura2.9}, la herramienta proporciona un buscador de imágenes donde introduciendo una palabra clave se muestran todas las imágenes relacionadas con la palabra introducida. En el buscador se puede introducir un nombre propio para ver todas las imágenes asociadas a ese paciente.
+En esta sección, tal y como se muestra en la Figura \ref{fig:figura2.9}, la herramienta proporciona un buscador de imágenes donde introduciendo una palabra clave se muestran todas las imágenes relacionadas con la palabra introducida.\\
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=5cm]{./Imagenes/Figuras/figura 2.9}
@@ -228,7 +230,12 @@ También, tal y como se muestra en la Figura \ref{fig:figura2.9}, la herramienta 
 	\label{fig:figura2.9}
 \end{figure}
 
-Los resultados de la aplicación fueron muy satisfactorios y cabe destacar que tanto las categorías como el buscador de imágenes fueron muy útiles. Algo que hubiera sido de gran ayuda sería el poder organizar las fotografías cronológicamente y el poder navegar de forma más sencilla entre las distintas palabras con un hipervínculo, sin tener que escribirlas expresamente siempre que se necesiten. Aunque las categorías que se eligieron fueron acertadas, se echó en falta una categoría de Eventos aunque esté estrechamente relacionada con la categoría Familia y poder marcar las imágenes con lugares y fechas en concreto.
+Una vez finalizada la aplicación, se hizo una evaluación de la misma. Para ello, se llevó a cabo una entrevista a una mujer de 78 años y a su familiar de apoyo donde se les proporcionó una descripción del proyecto y se les indicó el objetivo principal. Se trataron todas las etapas de la vida (infancia, etapa adulta, etc.), se recopilaron las palabras clave de cada una de ellas, se etiquetaron todas las imágenes. Una vez recopilado todos los datos, se obtuvieron y analizaron unas estadísticas mediante el apartado Progreso de la aplicación para comprobar si se cumplieron los objetivos del proyecto.\\
+
+\newpage
+En base a la entrevista y a las estadísticas, se pudo comprobar que los resultados de la aplicación fueron muy satisfactorios. Las recomendaciones aleatorias de relaciones de palabras fueron muy efectivas para iniciar una primera conversación y poder registrar cada palabra clave de cada historia. Con respecto a la visualización de imágenes, tuvo mucho impacto el poder acceder a todas las imágenes y tenerlas etiquetadas mediante categorías y palabras clave para saber de qué trata cada imagen. Cabe destacar que tanto las categorías como el buscador de imágenes fueron muy útiles. \\
+
+Algo que hubiera sido de gran ayuda sería el poder organizar las fotografías cronológicamente y el poder navegar de forma más sencilla entre las distintas palabras con un hipervínculo, sin tener que escribirlas expresamente siempre que se necesiten. Aunque las categorías que se eligieron fueron acertadas, se echó en falta una categoría de Eventos aunque esté estrechamente relacionada con la categoría Familia y poder marcar las imágenes con lugares y fechas en concreto.\\
 
 		
 \subsection{Extracción de información personal a partir de redes sociales para la creación de un libro de vida:}
