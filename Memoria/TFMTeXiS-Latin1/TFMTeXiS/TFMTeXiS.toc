@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {2.3}Historias de Vida}{11}{section.23}%
 \contentsline {section}{\numberline {2.4}Trabajos relacionados}{12}{section.26}%
 \contentsline {subsection}{\numberline {2.4.1}Generaci\'on de historias a partir de una base de conocimiento}{12}{subsection.27}%
-\contentsline {subsection}{\numberline {2.4.2}Extracci\'on de informaci\'on personal a partir de redes sociales para la creaci\'on de un libro de vida:}{18}{subsection.37}%
+\contentsline {subsection}{\numberline {2.4.2}Extracci\'on de informaci\'on personal a partir de redes sociales para la creaci\'on de un libro de vida}{18}{subsection.37}%
 \contentsline {subsection}{\numberline {2.4.3}Sistema de asistencia para cuidado de enfermos del Alzheimer}{20}{subsection.46}%
 \contentsline {subsection}{\numberline {2.4.4}Conclusiones}{26}{subsection.62}%
 \babel@toc {spanish}{}
