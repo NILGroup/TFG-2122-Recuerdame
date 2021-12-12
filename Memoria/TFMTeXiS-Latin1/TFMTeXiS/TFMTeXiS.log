@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.17)  11 DEC 2021 18:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.17)  12 DEC 2021 10:59
 entering extended mode
 **./TFMTeXiS.tex
 (TFMTeXiS.tex
@@ -1437,7 +1437,11 @@ Overfull \hbox (17.99701pt too wide) in paragraph at lines 46--47
 as?(Familia,
  []
 
-
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
+6.
+(C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
@@ -1484,21 +1488,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
- [38])
+ [38]
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+
+[39])
 LaTeX Info: Redefining \. on input line 150.
 LaTeX Info: Redefining \% on input line 150.
-
-[39]
+ [40]
 \openout2 = `Capitulos/Evaluaciones.aux'.
 
- (Capitulos/Evaluaciones.tex [40
+ (Capitulos/Evaluaciones.tex
+Cap\'itulo 4.
+) [41
 
 
 
 
 ]
-Cap\'itulo 4.
-) [41]
 \openout2 = `Capitulos/ConclusionesTrabajoFuturo.aux'.
 
  (Capitulos/ConclusionesTrabajoFuturo.tex [42
@@ -1538,7 +1545,7 @@ LaTeX Info: Redefining \% on input line 162.
 
  (Apendices/appendixA.tex
 Ap\'{e}ndice A.
-<./Archivos/mini_mental.pdf, id=912, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=915, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 10.
@@ -1547,7 +1554,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 10.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
-<./Archivos/mini_mental.pdf, id=915, page=1, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=918, page=1, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 1>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page1 used on input line 
@@ -1625,7 +1632,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
-<./Archivos/mini_mental.pdf, id=957, page=2, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=960, page=2, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 2>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page2 used on input line 
@@ -1652,7 +1659,7 @@ Package pdftex.def Info: ./Archivos/mini_mental.pdf , page2 used on input line
 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
  [51 <./Archivos/mini_mental.pdf>]
-<./Archivos/mini_mental.pdf, id=967, page=3, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=970, page=3, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 3>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page3 used on input line 
@@ -1981,12 +1988,6 @@ LaTeX Info: Redefining \% on input line 167.
 \openout2 = `Cascaras/bibliografia.aux'.
 
  (Cascaras/bibliografia.tex (TFMTeXiS.bbl
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-7.
-
-(C:\Users\crist\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
 Underfull \hbox (badness 1424) in paragraph at lines 21--29
 []\T1/cmr/m/sc/10.95 Irazoki, E.\T1/cmr/m/n/10.95 , \T1/cmr/m/sc/10.95 García-C
 asal, J. A.\T1/cmr/m/n/10.95 , \T1/cmr/m/sc/10.95 Sanchez-Meca, J. \T1/cmr/m/n/
@@ -2068,10 +2069,10 @@ Here is how much of TeX's memory you used:
  424605 words of font info for 63 fonts, out of 8000000 for 9000
  1379 hyphenation exceptions out of 8191
  94i,19n,100p,1467b,772s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
-1095.pk> <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm1000.pk> <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecti1000.pk> <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+ <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
+1000.pk> <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecti1000.pk> <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ectt1095.pk> <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
 pen/ec/dpi600\ecrm0900.pk> <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/
 ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\crist\AppData\Local\MiKTeX\fon
@@ -2091,9 +2092,9 @@ k> <C:\Users\crist\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
 ublic/amsfonts/cm/cmsy10.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/font
 s/type1/urw/helvetic/uhvr8a.pfb><C:/Users/crist/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmr8a.pfb>
-Output written on TFMTeXiS.pdf (96 pages, 3429352 bytes).
+Output written on TFMTeXiS.pdf (96 pages, 3436560 bytes).
 PDF statistics:
- 1833 PDF objects out of 2073 (max. 8388607)
+ 1851 PDF objects out of 2073 (max. 8388607)
  236 named destinations out of 1000 (max. 500000)
  838 words of extra memory for PDF output out of 10000 (max. 10000000)
 
