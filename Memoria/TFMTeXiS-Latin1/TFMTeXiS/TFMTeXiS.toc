@@ -1,13 +1,13 @@
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.9}%
 \contentsline {section}{\numberline {1.1}Motivaci\'on}{1}{section.10}%
 \contentsline {section}{\numberline {1.2}Objetivos}{2}{section.11}%
 \contentsline {section}{\numberline {1.3}Metodolog\IeC {\'\i }a}{3}{section.12}%
 \contentsline {section}{\numberline {1.4}Estructura de la Memoria}{3}{section.13}%
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.14}%
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {2}Estado de la Cuesti\'on}{7}{chapter.15}%
 \contentsline {section}{\numberline {2.1}Enfermedad del Alzheimer}{7}{section.16}%
 \contentsline {section}{\numberline {2.2}Terapias basadas en reminiscencia}{10}{section.21}%
@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {2.4.2}Extracci\'on de informaci\'on personal a partir de redes sociales para la creaci\'on de un libro de vida}{18}{subsection.36}%
 \contentsline {subsection}{\numberline {2.4.3}Sistema de asistencia para cuidado de enfermos del Alzheimer}{20}{subsection.45}%
 \contentsline {subsection}{\numberline {2.4.4}Conclusiones}{26}{subsection.61}%
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {3}Recu\'erdame}{35}{chapter.62}%
 \contentsline {section}{\numberline {3.1}Captura de Requisitos}{35}{section.63}%
 \contentsline {subsection}{\numberline {3.1.1}Preparaci\'on de la entrevista}{35}{subsection.68}%
@@ -29,13 +29,13 @@
 \contentsline {section}{\numberline {5.1}Conclusiones}{45}{section.85}%
 \contentsline {section}{\numberline {5.2}Trabajo futuro}{45}{section.86}%
 \contentsline {chapter}{\numberline {5}Conclusions and Future Work}{47}{chapter.87}%
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {6}Trabajo Individual}{49}{chapter.88}%
 \contentsline {section}{\numberline {6.1}Cristina Barquilla Blanco}{49}{section.89}%
 \contentsline {section}{\numberline {6.2}Patricia D\IeC {\'\i }ez Garc\IeC {\'\i }a}{49}{section.90}%
 \contentsline {section}{\numberline {6.3}Santiago Marco Mulas L\'opez}{50}{section.91}%
 \contentsline {section}{\numberline {6.4}Eva Verd\'u Rodr\IeC {\'\i }guez}{50}{section.92}%
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {A}Anexo: Minimental, Test de Lobo}{51}{appendix.93}%
 \contentsline {chapter}{\numberline {B}Anexo 2: Transcripciones entrevistas}{55}{appendix.95}%
 \contentsline {section}{\numberline {B.1}Transcripci\'on de la entrevista a Adriana}{55}{section.96}%
