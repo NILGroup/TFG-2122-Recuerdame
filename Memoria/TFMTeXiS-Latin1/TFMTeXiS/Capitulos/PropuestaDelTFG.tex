@@ -105,32 +105,134 @@ Así mismo, los terapeutas consideran dos tipos de informaciones, información cua
 La grabación de la entrevista se encuentra en \url{https://drive.google.com/file/d/1g1-YmsEua1orr-qjbm2qgZQkTM4lM3yg/view?usp=sharing}.
 
 \subsection{Requisitos obtenidos}
-En este apartado se encuentran los distintos requisitos obtenidos de las entrevistas realizadas a los expertos.
-\begin{itemize}
-	\item La aplicación permitirá preparar una sesión de la siguiente forma:
-	\begin{itemize}
-		\item Se podrá elegir un interés entre varios temas registrados previamente por el terapeuta en la entrevista inicial con el paciente.
-		\item Se visualizarán todos los recuerdos ordenados ordenados cronológicamente relacionados con el tema a tratar.
-		\item Se permite seleccionar un recuerdo para ver más información y poder modificar ese recuerdo añadiendo más información.
-		\item Al finalizar la sesión, el terapeuta podrá registrar un informe de seguimiento para reflejar tanto las emociones positivas como las negativas e información dada por los familiares.
-	\end{itemize}
-	\item En la sesión, el recuerdo se podrá etiquetar como positivo, neutro o negativo. Y, en caso de que sea positivo, calificarlo de 0 a 10. También, se podrá añadir si el recuerdo es conservado, en riesgo de perdida o perdido.
-	\item Se podrá reutilizar información externa (imágenes o audios) ya registrada en otras sesiones.
-	\item La herramienta tendrá una sección de Evaluación Clínica donde habrá dos secciones:
-	\begin{itemize}
-		\item Una para gestionar los informes de seguimiento de cada sesión del paciente ordenados cronológicamente.
-		\item Otra para la evolución del paciente que se utilizará para conocer el estado del paciente cada 3 meses.
-	\end{itemize}
-	\item Se proporcionará un buscador por paciente que permita filtrar por dos grupos de etiquetas:
-	\begin{itemize}
-		\item Las etapas de una historia de vida: infancia, adolescencia y etapa adulta.
-		\item Unas categorías básicas previamente dadas: familia, amistad, hobbies, trabajo o mascotas.
-	\end{itemize}
-	Además, El terapeuta podrá añadir más categorías en caso de que lo necesite.
-	\item El terapeuta podrá elegir un paciente y mostrar su historia de vida completa ordenando los recuerdos de forma cronológica donde se incluirán imágenes, texto o audio.
-	\item El terapeuta podrá registrar en la aplicación a un familiar de apoyo al paciente para que pueda acceder a la herramienta y visualizar un calendario con todas las actividades que pueden realizar los pacientes antes de una sesión.
-	\item La aplicación permitirá asignar un paciente a varios terapeutas.
-	\item Mensajería para comunicarse familiar y terapeuta.
-	\item La aplicación tiene que ser compatible para ordenadores y tablets.
+En este apartado se encuentran redactados los distintos requisitos obtenidos de las entrevistas realizadas a los expertos.
 
+Las historias de vida han de tener los siguientes atributos:
+\begin{itemize}
+	\item Nombre del paciente
+	\item Apellidos del paciente
+	\item Género
+	\item Fecha de nacimiento
+	\item Lugar de nacimiento
+	\item Nacionalidad
+	\item Residencia actual
+	\item Tipo de residencia
+	\item Recuerdos
+		\begin{itemize}
+			\item Nombre
+			\item Texto
+			\item Estado del recuerdo (conservado, en riesgo de perder, perdido)
+			\item Fecha
+			\item Localización
+			\item Etapa (infancia, adolescencia, adulto joven, adulto, adulto mayor)
+			\item Emoción (alegría, nostalgia, ira, enfado, etc.)
+			\item Etiqueta (positivo, neutro, negativo)
+			\item Puntuación (calificar un recuerdo positivo de 0 - 10)
+			\item Fotos
+			\item Audios
+			\item Vídeos
+			\item Personas relacionadas
+			\item Categoría. Las categorías iniciales son: familia, amistad, hobbies, trabajo o mascotas. Además, se podrán añadir más si el terapeuta lo considera necesario.
+		\end{itemize}
+	\item Persona relacionada
+		\begin{itemize}
+			\item Nombre
+			\item Apellidos
+			\item Ocupación
+			\item Número de teléfono
+			\item Email
+			\item Tipo de relación
+		\end{itemize}
+	\item Fotos/Vídeos/Audios
+		\begin{itemize}
+			\item Fecha
+			\item Etapa (infancia, adolescencia, adulto joven, adulto, adulto mayor)
+			\item Localización
+			\item Descripción
+			\item Personas relacionadas
+		\end{itemize}
+\end{itemize}
+
+La aplicación debe permitir al terapeuta realizar las siguientes funcionalidades:
+\begin{itemize}
+	\item Preparar una sesión. Para ello:
+		\begin{itemize}
+			\item Visualizar las sesiones y los informes de seguimientos anteriores. De cada paciente se guardarán su evaluación clínica además de todas las sesiones realizadas y su informe. En la sesión se guarda:
+				\begin{itemize}
+					\item Fecha de la sesión
+					\item Terapeuta que realiza la sesión
+					\item Objetivo
+					\item Intereses tratados
+					\item Recuerdos utilizados
+					\item Descripción de lo que se ha hecho durante la sesión
+				\end{itemize}
+			\item Crear una nueva sesión:
+				\begin{itemize}
+					\item Rellenar cuál es la fecha, el objetivo, la descripción de la sesión.
+					\item Elegir un interés entre todos los existentes en la Historia de Vida del paciente.
+					\item Se visualizarán todos los recuerdos relacionados con el tema a tratar ordenados cronológicamente. De cada recuerdo se mostrará una descripción, imágenes, audios y vídeos relacionados. Además se proporcionará un buscador por paciente que permita filtrar los recuerdos por:
+					\begin{itemize}
+						\item Las etapas de la historia de vida: infancia, adolescencia, adulto joven, adulto, adulto mayor.
+						\item Categorías: familia, amistad, hobbies, trabajo o mascotas.
+						\item Fecha del recuerdo.
+						\item Localización.
+						\item Personas relacionadas.
+						\item Emoción.
+						\item Tipo de archivo multimedia: foto, vídeo o audio.
+					\end{itemize}
+					\item Podrá seleccionar los recuerdos que vaya a utilizar en la sesión y se guardarán en dicha sesión.
+				\end{itemize}
+		\end{itemize}
+	\item Realizar una sesión. Para ello:
+		\begin{itemize}
+			\item Se permite seleccionar en los recuerdos guardados en la sesión para ver más información y poder modificar ese recuerdo añadiendo más información como imágenes, audios o vídeos externos, o reutilizar material que ya está registrado en otras sesiones. Esto se realizará a través de una opción de búsqueda de imágenes, audios o vídeos donde el terapeuta podrá seleccionar el archivo multimedia que desee.
+			\item Se podrán añadir más recuerdos ya existentes a la sesión.
+			\item Se podrán crear nuevos recuerdos.
+		\end{itemize}
+	\item Finalizar una sesión. Al finalizar una sesión el terapeuta debe poder realizar las siguientes acciones:
+		\begin{itemize}
+			\item Crear un informe de seguimiento de la sesión. Donde se guardará:
+				\begin{itemize}
+					\item La sesión de ese día.
+					\item Informe de cómo ha reaccionado el paciente a la sesión.
+					\item Cada recuerdo de la sesión, se podrán etiquetar como positivo, neutro o negativo. En caso de que sea positivo, calificarlo de 0 a 10, siendo 10 un recuerdo muy alegre y 0 mayoritariamente negativo. También, se podrá añadir si el recuerdo es conservado, en riesgo de pérdida o perdido. Además, se podrá registrar la emoción que le ha producido ese recuerdo al paciente (tristeza, ira, nostalgia, alegría,...).
+				\end{itemize}
+		\end{itemize}
+	\item Evaluación del paciente. La herramienta tendrá una sección de Evaluación Clínica donde habrá dos secciones:
+		\begin{itemize}
+			\item Una para visualizar los informes de seguimiento de cada sesión del paciente ordenados cronológicamente.
+			\item Otra para la evolución del paciente. Esta evaluación se realiza cada 3 meses aproximadamente, y sirve para ver la evolución GDS del paciente, es decir, si el paciente ha empeorado su estado de demencia o no. Después de la evaluación realizada por el terapeuta, guardará la siguiente información:
+				\begin{itemize}
+					\item GDS actual: Grado de deterioro cognitivo que el paciente ha mostrado en la evaluación.
+					\item Estado: Si el paciente ha mejorado, se mantiene o ha empeorado en su enfermedad.
+					\item Diagnóstico: Conclusión de la evolución del paciente realizada por el terapeuta.
+				\end{itemize}
+			Además, se presentarán también todas las evaluaciones ordenadas cronológicamente.
+		\end{itemize}
+	\item La aplicación permitirá generar automáticamente una Histora de Vida con los vídeos o un libro con las fotos acompañando a los eventos de la Historia de Vida. Para crear este vídeo o libro se podrá filtrar los eventos que se desea que aparezcan por etapas (infancia, adolescencia, adulto joven, adulto, adulto mayor), por fecha y/o por los intereses de la Historia de Vida del paciente.
+	\item Otras actividades:
+		\begin{itemize}
+			\item La aplicación dispondrá de sesiones donde existirán dos tipos de usuarios: terapeuta y familiar/cuidador. Se podrá acceder a sus sesiones mediante usuario y contraseña.
+			\item El terapeuta podrá registrar a un paciente y otorgarle un usuario, con el que los familiares o los cuidadores tengan acceso a sus datos y a su calendario de actividades.
+			\item Podrá registrar actividades en un calendario para que los familiares o los cuidadores puedan realizar pequeñas actividades con ellos. Cada actividad contará con:
+				\begin{itemize}
+					\item Fecha.
+					\item Nombre actividad.
+					\item Descripción de la actividad.
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+Un familiar de apoyo o acompañante debe poder realizar actividades con el paciente. Para ello previamente tendrá que ser registrado por el terapeuta en la aplicación. Los pasos a seguir son:
+\begin{itemize}
+	\item El familiar de apoyo o acompañante puede acceder mediante su usuario y contraseña a la aplicación.
+	\item Visualizar la historia de vida.
+	\item El acompañante podrá visualizar un calendario con todas las actividades que pueden realizar los pacientes antes de una sesión.
+	\item Tendrá acceso a una mensajería para comunicarse entre el familiar y el terapeuta.
+\end{itemize}
+
+Otro tipo de requisitos que debe de tener la aplicación son:
+\begin{itemize}
+	\item Permitirá asignar un paciente a varios terapeutas.
+	\item La aplicación tiene que ser compatible para ordenadores y tablets.
 \end{itemize}
