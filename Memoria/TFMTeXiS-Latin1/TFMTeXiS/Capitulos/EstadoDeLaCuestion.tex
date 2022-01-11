@@ -148,77 +148,57 @@ El objetivo de este TFG \citep{article_14} era crear una herramienta que permiti
 
 Lo habitual es que se construya una Historia de Vida del paciente mediante una serie de sesiones y entrevistas los terapeutas irán registrando toda la información obtenida en estas sesiones en la aplicación. Además, la aplicación permitirá que el familiar o el cuidador utilicen la herramienta para proporcionar estímulos verbales y visuales al paciente que desencadenen el proceso de reminiscencia en el paciente.
 
-Para construir la Historia de Vida, la aplicación va guiando al terapeuta  para que en cada sesión se trate un tema concreto. Para ello, se crearon distintas categorías para poder elegir cuál de ellas se iba a tratar en las distintas sesiones. Estas categorías se clasificaron según los datos básicos que se suelen preguntar para construir una historia de vida: datos personales, infancia, juventud, edad adulta, familia, comida, vacaciones y aficiones.
+Aunque el objetivo inicial era crear una Historia de Vida a partir de los recuerdos, lo que la aplicación final hace es crear relaciones de palabras e imágenes, a partir de una serie de palabras iniciales recomendadas, para unir todos los recuerdos del paciente y generar una serie de estadísticas para ver su progreso.
 
-Una vez que el terapeuta ha iniciado sesión, se puede elegir el tipo de sesión: palabras, al progreso del paciente o a la relación de imágenes.
+Para construir estas relaciones, la aplicación va guiando al terapeuta para que en cada sesión se trate un tema concreto como por ejemplo un hobbie o una celebración. Para ello, se crearon distintas categorías para poder elegir cuál de ellas se iba a tratar en las distintas sesiones. Estas categorías se clasificaron según los datos básicos que se suelen preguntar para construir una historia de vida: datos personales, infancia, juventud, edad adulta, familia, comida, vacaciones y aficiones.
+
+Una vez que el terapeuta ha iniciado sesión en la aplicación, se puede elegir el tipo de sesión:
+\begin{itemize}
+	\item La sesión Palabras, donde se podrá elegir una de las categorías sobre la que se va a trabajar en la sesión con el paciente. Dentro de una categoría, se pueden encontrar las relaciones con distintas palabras y dentro de cada una de las palabras, se pueden encontrar las relaciones con otras palabras e imágenes (Ver Figura \ref{fig:figura2.1}) que se podrán añadir o borrar según sea necesario.
+
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=5cm]{./Imagenes/Figuras/figura 2.2}
-  	\caption{Página principal de la aplicación, una vez iniciada la sesión.}
+  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.1}
+  	\caption{Ejemplo palabra "pedir".}
+	\label{fig:figura2.1}
+\end{figure}
+
+	\item En la sesión Progreso se puede visualizar el progreso de un paciente. Lo primero que se puede ver son las estadísticas generales de todas las palabras como se muestra en la Figura \ref{fig:figura2.2}. Permite la opción de seleccionar una categoría en concreto para poder visualizar un grafo con el progreso de dicha categoría como se puede ver en la Figura \ref{fig:figura2.3}.
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/figura 2.2}
+  	\caption{Estadísticas resultantes tras la sesión de evaluación. Los nombres propios se encuentran pixelados.}
 	\label{fig:figura2.2}
 \end{figure}
 
-\newpage
-En el caso de elegir la opción de Palabras, se podrá elegir una de las categorías de la Figura \ref{fig:figura2.3} sobre la que se va a trabajar en la sesión con el paciente. A partir de estas categorías, el usuario puede crear las relaciones necesarias sobre el tema seleccionado en la sesión. Además de elegir una categoría, también se puede elegir la opción de registrar los datos personales del paciente cumplimentando los datos que se indican en la Figura \ref{fig:figura2.4}.
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.3}
-  	\caption{Pantalla para elegir la categoría sobre la que se trabajará en una sesión.}
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura 2.3}
+  	\caption{Grafo resultante de la categoría "vacaciones" tras la evaluación con usuarios.}
 	\label{fig:figura2.3}
 \end{figure}
 
+	\item Y por último, la sesión Imágenes donde se asociar una imagen a una categoría y a un concepto como se muestra en la Figura \ref{fig:figura2.4}. Y, de esta forma, poder crear una relación. La aplicación proporciona buscador de imágenes donde introduciendo una palabra clave se muestran todas las imágenes relacionadas con la palabra introducida (Ver Figura \ref{fig:figura2.5}).
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.4}
-  	\caption{Pantalla para el registro de los datos personales.}
+  	\caption{Relacionar fotografía con una categoría y un concepto a relacionar.}
 	\label{fig:figura2.4}
 \end{figure}
 
-La idea de la aplicación es poder crear relaciones a partir de recomendaciones. Por tanto, para poder crear estas relaciones, la aplicación recomendará una serie de palabras clave y dentro de la palabra seleccionada, habrá una serie de palabras recomendadas. En esta relación se podrá asociar una imagen o se podrán añadir nuevas sugerencias de relaciones con dicha palabra como se muestras en la Figura \ref{fig:figura2.5}. Todo esto se hace dentro de la opción de Palabras.
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.5}
-  	\caption{Ejemplo palabra "pedir".}
+  	\includegraphics[width=5cm]{./Imagenes/Figuras/figura 2.5}
+  	\caption{Imágenes asociadas con un nombre propio.}
 	\label{fig:figura2.5}
 \end{figure}
-
-\newpage
-En la sesión de Progreso, se puede visualizar el progreso de un paciente. Lo primero que se puede ver son las estadísticas generales de todas las palabras como se muestra en la Figura \ref{fig:figura2.6}. Permite la opción de seleccionar una categoría en concreto para poder visualizar un grafo con el progreso de dicha categoría como se puede ver en la Figura \ref{fig:figura2.7}.
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=15cm]{./Imagenes/Figuras/figura 2.6}
-  	\caption{Estadísticas resultantes tras la sesión de evaluación. Los nombres propios se encuentran pixelados.}
-	\label{fig:figura2.6}
-\end{figure}
-
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura 2.7}
-  	\caption{Grafo resultante de la categoría "vacaciones" tras la evaluación con usuarios.}
-	\label{fig:figura2.7}
-\end{figure}
-
-Para poder categorizar y relacionar imágenes, se dispone del tipo de sesión Imágenes donde se puede asociar una imagen a una categoría y a un concepto como se muestra en la Figura \ref{fig:figura2.8}. Y, de esta forma, poder crear una relación. La aplicación proporciona buscador de imágenes donde introduciendo una palabra clave se muestran todas las imágenes relacionadas con la palabra introducida (Ver Figura \ref{fig:figura2.9}).
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.8}
-  	\caption{Relacionar fotografía con una categoría y un concepto a relacionar.}
-	\label{fig:figura2.8}
-\end{figure}
-
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=5cm]{./Imagenes/Figuras/figura 2.9}
-  	\caption{Imágenes asociadas con un nombre propio.}
-	\label{fig:figura2.9}
-\end{figure}
+\end{itemize} 
 
 Una vez finalizada la aplicación, se hizo una evaluación de la misma. Para ello, se llevó a cabo una entrevista a una mujer de 78 años y a su familiar de apoyo donde se les proporcionó una descripción del proyecto y se les indicó el objetivo principal. Se trataron todas las etapas de la vida (infancia, etapa adulta, etc.), se recopilaron las palabras clave de cada una de ellas y se etiquetaron todas las imágenes. Una vez recopilados todos los datos, se obtuvieron y analizaron unas estadísticas mediante el apartado Progreso de la aplicación para comprobar si se cumplieron los objetivos del proyecto.
 
-\newpage
-En base a la entrevista y a las estadísticas, se pudo comprobar que los resultados de la aplicación fueron muy satisfactorios. Las recomendaciones aleatorias de relaciones de palabras fueron muy efectivas para iniciar una primera conversación y poder registrar cada palabra clave de cada historia. Con respecto a la visualización de imágenes, tuvo mucho impacto el poder acceder a todas las imágenes y tenerlas etiquetadas mediante categorías y palabras clave para saber de qué trata cada imagen. Cabe destacar que tanto las categorías como el buscador de imágenes fueron muy útiles. \\
+En base a la entrevista y a las estadísticas, se pudo comprobar que los resultados de la aplicación fueron muy satisfactorios. Las recomendaciones aleatorias de relaciones de palabras fueron muy efectivas para iniciar una primera conversación y poder registrar cada palabra clave de cada historia. Con respecto a la visualización de imágenes, tuvo mucho impacto el poder acceder a todas las imágenes y tenerlas etiquetadas mediante categorías y palabras clave para saber de qué trata cada imagen. Cabe destacar que tanto las categorías como el buscador de imágenes fueron muy útiles.
 
-Algo que hubiera sido de gran ayuda sería el poder organizar las fotografías cronológicamente y el poder navegar de forma más sencilla entre las distintas palabras con un hipervínculo, sin tener que escribirlas expresamente siempre que se necesiten. Aunque las categorías que se eligieron fueron acertadas, se echó en falta una categoría de Eventos aunque esté estrechamente relacionada con la categoría Familia y poder marcar las imágenes con lugares y fechas en concreto.\\
+Algo que hubiera sido de gran ayuda sería el poder organizar las fotografías cronológicamente y el poder navegar de forma más sencilla entre las distintas palabras con un hipervínculo, sin tener que escribirlas expresamente siempre que se necesiten. Aunque las categorías que se eligieron fueron acertadas, se echó en falta una categoría de Eventos aunque esté estrechamente relacionada con la categoría Familia y poder marcar las imágenes con lugares y fechas en concreto.
 
 		
 \subsection{Extracción de información personal a partir de redes sociales para la creación de un libro de vida}
