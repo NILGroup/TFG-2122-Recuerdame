@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.8)  26 JAN 2022 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.8)  27 JAN 2022 00:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -922,14 +922,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--80
 LaTeX Info: Redefining \. on input line 81.
 LaTeX Info: Redefining \% on input line 81.
 [9]
-LaTeX Info: Redefining \. on input line 108.
-LaTeX Info: Redefining \% on input line 108.
+LaTeX Info: Redefining \. on input line 112.
+LaTeX Info: Redefining \% on input line 112.
  [10]
-LaTeX Info: Redefining \. on input line 136.
-LaTeX Info: Redefining \% on input line 136.
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
  [11]
-LaTeX Info: Redefining \. on input line 157.
-LaTeX Info: Redefining \% on input line 157.
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
  [12]
 <./Imagenes/Figuras/figura 2.1.png, id=794, 426.75893pt x 178.1751pt>
 File: ./Imagenes/Figuras/figura 2.1.png Graphic file (type png)
@@ -969,29 +969,29 @@ File: ./Imagenes/Figuras/figura 2.5.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.5.png  used on input line 
 193.
 (pdftex.def)             Requested size: 142.26378pt x 351.3381pt.
-LaTeX Info: Redefining \. on input line 200.
-LaTeX Info: Redefining \% on input line 200.
+LaTeX Info: Redefining \. on input line 202.
+LaTeX Info: Redefining \% on input line 202.
 
 [14 <./Imagenes/Figuras/figura 2.3.png> <./Imagenes/Figuras/figura 2.4.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 204.
-LaTeX Info: Redefining \% on input line 204.
+LaTeX Info: Redefining \. on input line 206.
+LaTeX Info: Redefining \% on input line 206.
  [15 <./Imagenes/Figuras/figura 2.5.png>]
 <./Imagenes/Figuras/2.1.png, id=825, 408.02437pt x 266.9975pt>
 File: ./Imagenes/Figuras/2.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/2.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/2.1.png  used on input line 212.
 (pdftex.def)             Requested size: 251.9989pt x 164.90117pt.
-LaTeX Info: Redefining \. on input line 219.
-LaTeX Info: Redefining \% on input line 219.
- [16 <./Imagenes/Figuras/2.1.png>]
-<./Imagenes/Figuras/figura 2.6.4.png, id=833, 360.34625pt x 200.75pt>
+<./Imagenes/Figuras/figura 2.6.4.png, id=827, 360.34625pt x 200.75pt>
 File: ./Imagenes/Figuras/figura 2.6.4.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.4.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.4.png  used on input lin
 e 222.
 (pdftex.def)             Requested size: 251.9989pt x 140.38925pt.
+LaTeX Info: Redefining \. on input line 228.
+LaTeX Info: Redefining \% on input line 228.
+ [16 <./Imagenes/Figuras/2.1.png>]
 <./Imagenes/Figuras/figura 2.6.5.png, id=837, 384.43625pt x 224.33812pt>
 File: ./Imagenes/Figuras/figura 2.6.5.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.5.png>
@@ -1016,37 +1016,41 @@ File: ./Imagenes/Figuras/figura 2.6.8.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.8.png  used on input lin
 e 253.
 (pdftex.def)             Requested size: 360.0pt x 198.39828pt.
-LaTeX Info: Redefining \. on input line 256.
-LaTeX Info: Redefining \% on input line 256.
- [17 <./Imagenes/Figuras/figura 2.6.4.png> <./Imagenes/Figuras/figura 2.6.5.png
->]
-<./Imagenes/Figuras/figura 2.6.9.png, id=850, 538.01pt x 291.0875pt>
+<./Imagenes/Figuras/figura 2.6.9.png, id=844, 538.01pt x 291.0875pt>
 File: ./Imagenes/Figuras/figura 2.6.9.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.9.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.9.png  used on input lin
 e 259.
 (pdftex.def)             Requested size: 360.0pt x 194.77887pt.
-<./Imagenes/Figuras/figura 2.6.10.png, id=851, 370.88562pt x 273.02pt>
+<./Imagenes/Figuras/figura 2.6.10.png, id=845, 370.88562pt x 273.02pt>
 File: ./Imagenes/Figuras/figura 2.6.10.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.10.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.10.png  used on input li
 ne 265.
 (pdftex.def)             Requested size: 360.0pt x 265.01237pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 277.
+LaTeX Info: Redefining \% on input line 277.
+ [17 <./Imagenes/Figuras/figura 2.6.4.png> <./Imagenes/Figuras/figura 2.6.5.png
+>]
+Underfull \vbox (badness 1184) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 277.
 LaTeX Info: Redefining \% on input line 277.
  [18 <./Imagenes/Figuras/figura 2.6.6.png> <./Imagenes/Figuras/figura 2.6.7.png
 >]
-Underfull \vbox (badness 6725) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 283.
-LaTeX Info: Redefining \% on input line 283.
+LaTeX Info: Redefining \. on input line 285.
+LaTeX Info: Redefining \% on input line 285.
  [19 <./Imagenes/Figuras/figura 2.6.8.png> <./Imagenes/Figuras/figura 2.6.9.png
 >]
-LaTeX Info: Redefining \. on input line 306.
-LaTeX Info: Redefining \% on input line 306.
- [20 <./Imagenes/Figuras/figura 2.6.10.png>]
-LaTeX Info: Redefining \. on input line 356.
-LaTeX Info: Redefining \% on input line 356.
+LaTeX Info: Redefining \. on input line 309.
+LaTeX Info: Redefining \% on input line 309.
+
+[20 <./Imagenes/Figuras/figura 2.6.10.png>]
+LaTeX Info: Redefining \. on input line 359.
+LaTeX Info: Redefining \% on input line 359.
  [21]
 <./Imagenes/Figuras/movil_menu.PNG, id=879, 483.0045pt x 317.988pt>
 File: ./Imagenes/Figuras/movil_menu.PNG Graphic file (type png)
@@ -1060,10 +1064,7 @@ File: ./Imagenes/Figuras/movil_nuevo_paciente.PNG Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/movil_nuevo_paciente.PNG  used on i
 nput line 377.
 (pdftex.def)             Requested size: 339.36555pt x 225.96265pt.
-LaTeX Info: Redefining \. on input line 383.
-LaTeX Info: Redefining \% on input line 383.
- [22 <./Imagenes/Figuras/movil_menu.PNG>]
-<./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=888, 482.40225pt x 322.203
+<./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=883, 482.40225pt x 322.203
 75pt>
 File: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_evaluacion_clinica.PNG>
@@ -1072,14 +1073,20 @@ on input line 387.
 (pdftex.def)             Requested size: 337.67926pt x 225.54108pt.
 LaTeX Info: Redefining \. on input line 393.
 LaTeX Info: Redefining \% on input line 393.
- [23 <./Imagenes/Figuras/movil_nuevo_paciente.PNG> <./Imagenes/Figuras/movil_ev
-aluacion_clinica.PNG>]
-<./Imagenes/Figuras/movil_nuevo_terapeuta.PNG, id=896, 309.5565pt x 416.757pt>
+ [22 <./Imagenes/Figuras/movil_menu.PNG>]
+<./Imagenes/Figuras/movil_nuevo_terapeuta.PNG, id=890, 309.5565pt x 416.757pt>
 File: ./Imagenes/Figuras/movil_nuevo_terapeuta.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_nuevo_terapeuta.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_nuevo_terapeuta.PNG  used on 
 input line 397.
 (pdftex.def)             Requested size: 216.68806pt x 291.7279pt.
+
+Underfull \vbox (badness 2941) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 403.
+LaTeX Info: Redefining \% on input line 403.
+ [23 <./Imagenes/Figuras/movil_nuevo_paciente.PNG> <./Imagenes/Figuras/movil_ev
+aluacion_clinica.PNG>]
 <./Imagenes/Figuras/movil_buscar_paciente.PNG, id=900, 413.1435pt x 274.02374pt
 >
 File: ./Imagenes/Figuras/movil_buscar_paciente.PNG Graphic file (type png)
@@ -1142,19 +1149,19 @@ File: ./Imagenes/Figuras/movil_multimedia.PNG Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/movil_multimedia.PNG  used on input
  line 465.
 (pdftex.def)             Requested size: 178.325pt x 239.45296pt.
-
-Underfull \vbox (badness 1360) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 471.
-LaTeX Info: Redefining \% on input line 471.
- [24 <./Imagenes/Figuras/movil_nuevo_terapeuta.PNG>]
-<./Imagenes/Figuras/movil_historia_vida.PNG, id=921, 481.19775pt x 278.84175pt>
+<./Imagenes/Figuras/movil_historia_vida.PNG, id=916, 481.19775pt x 278.84175pt>
 
 File: ./Imagenes/Figuras/movil_historia_vida.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_historia_vida.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_historia_vida.PNG  used on in
 put line 474.
 (pdftex.def)             Requested size: 336.83614pt x 195.18788pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 480.
+LaTeX Info: Redefining \% on input line 480.
+ [24 <./Imagenes/Figuras/movil_nuevo_terapeuta.PNG>]
 <./Imagenes/Figuras/movil_personas_contacto.PNG, id=923, 481.19775pt x 320.397p
 t>
 File: ./Imagenes/Figuras/movil_personas_contacto.PNG Graphic file (type png)
@@ -1169,23 +1176,18 @@ File: ./Imagenes/Figuras/movil_usuarios_terapeuta.PNG Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/movil_usuarios_terapeuta.PNG  used 
 on input line 492.
 (pdftex.def)             Requested size: 177.48184pt x 238.18825pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 501.
-LaTeX Info: Redefining \% on input line 501.
+LaTeX Info: Redefining \. on input line 502.
+LaTeX Info: Redefining \% on input line 502.
  [25 <./Imagenes/Figuras/movil_buscar_paciente.PNG> <./Imagenes/Figuras/movil_r
 ecuerdos.PNG>]
-LaTeX Info: Redefining \. on input line 505.
-LaTeX Info: Redefining \% on input line 505.
- [26 <./Imagenes/Figuras/movil_relaciones.PNG> <./Imagenes/Figuras/movil_editar
-_usuario.PNG>]
-Underfull \vbox (badness 1221) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 508.
 LaTeX Info: Redefining \% on input line 508.
+ [26 <./Imagenes/Figuras/movil_relaciones.PNG> <./Imagenes/Figuras/movil_editar
+_usuario.PNG>])
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
  [27 <./Imagenes/Figuras/movil_recuerdo_paciente.PNG> <./Imagenes/Figuras/movil
-_editar_terapeuta.PNG>])
+_editar_terapeuta.PNG>]
 LaTeX Info: Redefining \. on input line 149.
 LaTeX Info: Redefining \% on input line 149.
  [28 <./Imagenes/Figuras/movil_informacion_adicional.PNG> <./Imagenes/Figuras/m
@@ -1208,14 +1210,9 @@ Cap\'itulo 3.
 
 
 ]
-Overfull \hbox (15.27693pt too wide) in paragraph at lines 48--49
-\T1/cmr/m/n/10.95 cha? ¾Al-fa-bé-ti-ca-men-te? ¾Re-cuer-dos or-de-na-dos por et
-i-que-tas(Familia,
- []
-
 LaTeX Info: Redefining \. on input line 49.
 LaTeX Info: Redefining \% on input line 49.
-[32]
+ [32]
 Underfull \hbox (badness 10000) in paragraph at lines 56--56
 [][][]\T1/cmr/m/n/9 https://drive.google.com/file/d/1_CZ86xjh8Vm4PwV1afp1xr2XV3
 lp5a9-
@@ -1526,14 +1523,14 @@ File: ./Imagenes/Figuras/f.7.png Graphic file (type png)
 <use ./Imagenes/Figuras/f.7.png>
 Package pdftex.def Info: ./Imagenes/Figuras/f.7.png  used on input line 583.
 (pdftex.def)             Requested size: 227.62204pt x 174.38055pt.
-<./Imagenes/Figuras/f.8.png, id=1205, 198.7425pt x 149.55875pt>
+LaTeX Info: Redefining \. on input line 597.
+LaTeX Info: Redefining \% on input line 597.
+ [56 <./Imagenes/Figuras/f.9.png> <./Imagenes/Figuras/f.1.png>]
+<./Imagenes/Figuras/f.8.png, id=1209, 198.7425pt x 149.55875pt>
 File: ./Imagenes/Figuras/f.8.png Graphic file (type png)
 <use ./Imagenes/Figuras/f.8.png>
 Package pdftex.def Info: ./Imagenes/Figuras/f.8.png  used on input line 600.
 (pdftex.def)             Requested size: 227.62204pt x 171.29747pt.
-LaTeX Info: Redefining \. on input line 603.
-LaTeX Info: Redefining \% on input line 603.
- [56 <./Imagenes/Figuras/f.9.png> <./Imagenes/Figuras/f.1.png>]
 <./Imagenes/Figuras/f.10.png, id=1211, 191.71625pt x 152.06813pt>
 File: ./Imagenes/Figuras/f.10.png Graphic file (type png)
 <use ./Imagenes/Figuras/f.10.png>
@@ -1554,8 +1551,8 @@ File: ./Imagenes/Figuras/f.11.png Graphic file (type png)
 <use ./Imagenes/Figuras/f.11.png>
 Package pdftex.def Info: ./Imagenes/Figuras/f.11.png  used on input line 638.
 (pdftex.def)             Requested size: 227.62204pt x 178.22063pt.
-LaTeX Info: Redefining \. on input line 645.
-LaTeX Info: Redefining \% on input line 645.
+LaTeX Info: Redefining \. on input line 642.
+LaTeX Info: Redefining \% on input line 642.
 
 [57 <./Imagenes/Figuras/f.6.png> <./Imagenes/Figuras/f.7.png>]
 <./Imagenes/Figuras/f.21.png, id=1223, 208.27812pt x 146.5475pt>
@@ -1573,43 +1570,43 @@ File: ./Imagenes/Figuras/f.12.png Graphic file (type png)
 <use ./Imagenes/Figuras/f.12.png>
 Package pdftex.def Info: ./Imagenes/Figuras/f.12.png  used on input line 670.
 (pdftex.def)             Requested size: 227.62204pt x 171.56813pt.
-<./Imagenes/Figuras/f.19.png, id=1229, 240.9pt x 151.06438pt>
-File: ./Imagenes/Figuras/f.19.png Graphic file (type png)
-<use ./Imagenes/Figuras/f.19.png>
-Package pdftex.def Info: ./Imagenes/Figuras/f.19.png  used on input line 679.
-(pdftex.def)             Requested size: 227.62204pt x 142.74274pt.
-<./Imagenes/Figuras/f.13.png, id=1231, 187.19937pt x 158.5925pt>
-File: ./Imagenes/Figuras/f.13.png Graphic file (type png)
-<use ./Imagenes/Figuras/f.13.png>
-Package pdftex.def Info: ./Imagenes/Figuras/f.13.png  used on input line 687.
-(pdftex.def)             Requested size: 227.62204pt x 192.84851pt.
-LaTeX Info: Redefining \. on input line 691.
-LaTeX Info: Redefining \% on input line 691.
+LaTeX Info: Redefining \. on input line 676.
+LaTeX Info: Redefining \% on input line 676.
  [58 <./Imagenes/Figuras/f.8.png> <./Imagenes/Figuras/f.10.png>]
 
 LaTeX Warning: Text page 59 contains only floats.
 
-LaTeX Info: Redefining \. on input line 691.
-LaTeX Info: Redefining \% on input line 691.
+LaTeX Info: Redefining \. on input line 676.
+LaTeX Info: Redefining \% on input line 676.
 [59 <./Imagenes/Figuras/f.17.png> <./Imagenes/Figuras/f.18.png> <./Imagenes/Fig
 uras/f.11.png>]
-LaTeX Info: Redefining \. on input line 695.
-LaTeX Info: Redefining \% on input line 695.
+LaTeX Info: Redefining \. on input line 676.
+LaTeX Info: Redefining \% on input line 676.
  [60 <./Imagenes/Figuras/f.21.png> <./Imagenes/Figuras/f.15.png> <./Imagenes/Fi
 guras/f.12.png>]
+<./Imagenes/Figuras/f.19.png, id=1241, 240.9pt x 151.06438pt>
+File: ./Imagenes/Figuras/f.19.png Graphic file (type png)
+<use ./Imagenes/Figuras/f.19.png>
+Package pdftex.def Info: ./Imagenes/Figuras/f.19.png  used on input line 679.
+(pdftex.def)             Requested size: 227.62204pt x 142.74274pt.
+<./Imagenes/Figuras/f.13.png, id=1243, 187.19937pt x 158.5925pt>
+File: ./Imagenes/Figuras/f.13.png Graphic file (type png)
+<use ./Imagenes/Figuras/f.13.png>
+Package pdftex.def Info: ./Imagenes/Figuras/f.13.png  used on input line 687.
+(pdftex.def)             Requested size: 227.62204pt x 192.84851pt.
 <./Imagenes/Figuras/f.20.png, id=1246, 202.25563pt x 159.59625pt>
 File: ./Imagenes/Figuras/f.20.png Graphic file (type png)
 <use ./Imagenes/Figuras/f.20.png>
 Package pdftex.def Info: ./Imagenes/Figuras/f.20.png  used on input line 701.
 (pdftex.def)             Requested size: 227.62204pt x 179.61594pt.
-<./Imagenes/Figuras/f.14.png, id=1250, 194.22563pt x 143.53625pt>
+LaTeX Info: Redefining \. on input line 710.
+LaTeX Info: Redefining \% on input line 710.
+ [61 <./Imagenes/Figuras/f.19.png> <./Imagenes/Figuras/f.13.png>]
+<./Imagenes/Figuras/f.14.png, id=1255, 194.22563pt x 143.53625pt>
 File: ./Imagenes/Figuras/f.14.png Graphic file (type png)
 <use ./Imagenes/Figuras/f.14.png>
 Package pdftex.def Info: ./Imagenes/Figuras/f.14.png  used on input line 716.
 (pdftex.def)             Requested size: 227.62204pt x 168.22145pt.
-LaTeX Info: Redefining \. on input line 722.
-LaTeX Info: Redefining \% on input line 722.
- [61 <./Imagenes/Figuras/f.19.png> <./Imagenes/Figuras/f.13.png>]
 <./Imagenes/Figuras/f.16.png, id=1257, 261.97874pt x 153.57375pt>
 File: ./Imagenes/Figuras/f.16.png Graphic file (type png)
 <use ./Imagenes/Figuras/f.16.png>
@@ -1620,8 +1617,8 @@ File: ./Imagenes/Figuras/f.22.png Graphic file (type png)
 <use ./Imagenes/Figuras/f.22.png>
 Package pdftex.def Info: ./Imagenes/Figuras/f.22.png  used on input line 732.
 (pdftex.def)             Requested size: 227.62204pt x 156.76624pt.
-LaTeX Info: Redefining \. on input line 747.
-LaTeX Info: Redefining \% on input line 747.
+LaTeX Info: Redefining \. on input line 736.
+LaTeX Info: Redefining \% on input line 736.
  [62 <./Imagenes/Figuras/f.20.png> <./Imagenes/Figuras/f.14.png>]
 <./Imagenes/Figuras/figura_3.2.4_1.jpg, id=1264, 1927.2pt x 1084.05pt>
 File: ./Imagenes/Figuras/figura_3.2.4_1.jpg Graphic file (type jpg)
@@ -1629,26 +1626,26 @@ File: ./Imagenes/Figuras/figura_3.2.4_1.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./Imagenes/Figuras/figura_3.2.4_1.jpg  used on input l
 ine 752.
 (pdftex.def)             Requested size: 341.43306pt x 192.0439pt.
-LaTeX Info: Redefining \. on input line 766.
-LaTeX Info: Redefining \% on input line 766.
+LaTeX Info: Redefining \. on input line 759.
+LaTeX Info: Redefining \% on input line 759.
  [63 <./Imagenes/Figuras/f.16.png> <./Imagenes/Figuras/f.22.png>]
-<./Imagenes/Figuras/figura_3.2.4_2.jpg, id=1277, 1927.2pt x 1084.05pt>
+LaTeX Info: Redefining \. on input line 767.
+LaTeX Info: Redefining \% on input line 767.
+ [64 <./Imagenes/Figuras/figura_3.2.4_1.jpg>]
+<./Imagenes/Figuras/figura_3.2.4_2.jpg, id=1281, 1927.2pt x 1084.05pt>
 File: ./Imagenes/Figuras/figura_3.2.4_2.jpg Graphic file (type jpg)
 <use ./Imagenes/Figuras/figura_3.2.4_2.jpg>
 Package pdftex.def Info: ./Imagenes/Figuras/figura_3.2.4_2.jpg  used on input l
 ine 770.
 (pdftex.def)             Requested size: 341.43306pt x 192.0439pt.
-LaTeX Info: Redefining \. on input line 774.
-LaTeX Info: Redefining \% on input line 774.
- [64 <./Imagenes/Figuras/figura_3.2.4_1.jpg>]
 <./Imagenes/Figuras/figura_3.2.4_3.jpg, id=1283, 1425.325pt x 1084.05pt>
 File: ./Imagenes/Figuras/figura_3.2.4_3.jpg Graphic file (type jpg)
 <use ./Imagenes/Figuras/figura_3.2.4_3.jpg>
 Package pdftex.def Info: ./Imagenes/Figuras/figura_3.2.4_3.jpg  used on input l
 ine 777.
 (pdftex.def)             Requested size: 341.43306pt x 259.68108pt.
-LaTeX Info: Redefining \. on input line 790.
-LaTeX Info: Redefining \% on input line 790.
+LaTeX Info: Redefining \. on input line 785.
+LaTeX Info: Redefining \% on input line 785.
  [65 <./Imagenes/Figuras/figura_3.2.4_2.jpg>]
 <./Imagenes/Figuras/figura_3.2.4_4.jpg, id=1289, 1927.2pt x 1084.05pt>
 File: ./Imagenes/Figuras/figura_3.2.4_4.jpg Graphic file (type jpg)
@@ -1656,7 +1653,10 @@ File: ./Imagenes/Figuras/figura_3.2.4_4.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./Imagenes/Figuras/figura_3.2.4_4.jpg  used on input l
 ine 793.
 (pdftex.def)             Requested size: 341.43306pt x 192.0439pt.
-<./Imagenes/Figuras/figura_3.2.4_5.jpg, id=1290, 894.34125pt x 1084.05pt>
+LaTeX Info: Redefining \. on input line 802.
+LaTeX Info: Redefining \% on input line 802.
+[66 <./Imagenes/Figuras/figura_3.2.4_3.jpg>]
+<./Imagenes/Figuras/figura_3.2.4_5.jpg, id=1294, 894.34125pt x 1084.05pt>
 File: ./Imagenes/Figuras/figura_3.2.4_5.jpg Graphic file (type jpg)
 <use ./Imagenes/Figuras/figura_3.2.4_5.jpg>
 Package pdftex.def Info: ./Imagenes/Figuras/figura_3.2.4_5.jpg  used on input l
@@ -1665,22 +1665,21 @@ ine 808.
 )
 LaTeX Info: Redefining \. on input line 150.
 LaTeX Info: Redefining \% on input line 150.
- [66 <./Imagenes/Figuras/figura_3.2.4_3.jpg>]
+ [67 <./Imagenes/Figuras/figura_3.2.4_4.jpg>]
 LaTeX Info: Redefining \. on input line 150.
 LaTeX Info: Redefining \% on input line 150.
- [67 <./Imagenes/Figuras/figura_3.2.4_4.jpg> <./Imagenes/Figuras/figura_3.2.4_5
-.jpg>]
+ [68 <./Imagenes/Figuras/figura_3.2.4_5.jpg>]
 \openout2 = `Capitulos/Evaluaciones.aux'.
 
 
-(./Capitulos/Evaluaciones.tex [68
+(./Capitulos/Evaluaciones.tex
+Cap\'itulo 4.
+) [69
 
 
 
 
 ]
-Cap\'itulo 4.
-) [69]
 \openout2 = `Capitulos/ConclusionesTrabajoFuturo.aux'.
 
  (./Capitulos/ConclusionesTrabajoFuturo.tex [70
@@ -1712,13 +1711,21 @@ LaTeX Info: Redefining \% on input line 160.
 
 ]
 Cap\'itulo 6.
-[75])
+[75]
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
+ [76])
 LaTeX Info: Redefining \. on input line 162.
 LaTeX Info: Redefining \% on input line 162.
- [76]
+ [77]
 \openout2 = `Cascaras/bibliografia.aux'.
 
- (./Cascaras/bibliografia.tex (./TFMTeXiS.bbl
+ (./Cascaras/bibliografia.tex (./TFMTeXiS.bbl [78
+
+
+
+
+]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
 7.
 
@@ -1738,8 +1745,8 @@ i-nis-cen-cia gru-pal en per-
  []
 
 
-Underfull \hbox (badness 5189) in paragraph at lines 21--29
-\T1/cmr/m/n/10.95 so-nas con de-men-cia. re-vi-sión sis-te-má-ti-ca y me-ta-aná
+Underfull \hbox (badness 4279) in paragraph at lines 21--29
+\T1/cmr/m/n/10.95 so-nas con de-men-cia. Re-vi-sión sis-te-má-ti-ca y me-ta-aná
 -li-sis.  \T1/cmr/m/it/10.95 Re-
  []
 
@@ -1761,20 +1768,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--29
  en _ personas _
  []
 
-[77
-
-
-
-
-]))
+[79]))
 LaTeX Info: Redefining \. on input line 169.
 LaTeX Info: Redefining \% on input line 169.
- [78]
+ [80]
 \openout2 = `Apendices/appendixA.aux'.
 
  (./Apendices/appendixA.tex
 Ap\'{e}ndice A.
-<./Archivos/mini_mental.pdf, id=1355, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=1364, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 10.
@@ -1783,7 +1785,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 10.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
-<./Archivos/mini_mental.pdf, id=1358, page=1, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=1367, page=1, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 1>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page1 used on input line 
@@ -1827,7 +1829,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page1 used on input line 
 16.
 (pdftex.def)             Requested size: 597.21974pt x 418.34505pt.
-[79
+[81
 
 
 
@@ -1848,7 +1850,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page1 used on input line 
 16.
 (pdftex.def)             Requested size: 597.21974pt x 446.79773pt.
- [80]
+ [82]
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 20.
@@ -1861,7 +1863,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
-<./Archivos/mini_mental.pdf, id=1401, page=2, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=1409, page=2, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 2>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page2 used on input line 
@@ -1887,8 +1889,8 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page2 used on input line 
 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
- [81 <./Archivos/mini_mental.pdf>]
-<./Archivos/mini_mental.pdf, id=1410, page=3, 597.2212pt x 845.1374pt>
+ [83 <./Archivos/mini_mental.pdf>]
+<./Archivos/mini_mental.pdf, id=1418, page=3, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 3>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page3 used on input line 
@@ -1905,7 +1907,7 @@ Package pdftex.def Info: ./Archivos/mini_mental.pdf , page3 used on input line
 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
 
-[82 <./Archivos/mini_mental.pdf>])
+[84 <./Archivos/mini_mental.pdf>])
 \openout2 = `Apendices/appendixB.aux'.
 
  (./Apendices/appendixB.tex
@@ -1933,7 +1935,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83
+ [85
 
 
 
@@ -1955,7 +1957,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
-[84]
+[86]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
@@ -1977,7 +1979,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 LaTeX Info: Redefining \. on input line 39.
 LaTeX Info: Redefining \% on input line 39.
-[85]
+[87]
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
@@ -2009,31 +2011,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
 LaTeX Info: Redefining \. on input line 51.
 LaTeX Info: Redefining \% on input line 51.
-[86]
+[88]
 LaTeX Info: Redefining \. on input line 60.
 LaTeX Info: Redefining \% on input line 60.
- [87]
+ [89]
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 LaTeX Info: Redefining \. on input line 71.
 LaTeX Info: Redefining \% on input line 71.
-[88]
+[90]
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
-[89]
+[91]
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
-[90]
+[92]
 Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
@@ -2058,7 +2060,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 117.
 LaTeX Info: Redefining \% on input line 117.
- [91]
+ [93]
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
@@ -2083,7 +2085,7 @@ Underfull \vbox (badness 1038) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 128.
 LaTeX Info: Redefining \% on input line 128.
- [92]
+ [94]
 Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
@@ -2103,7 +2105,7 @@ Underfull \vbox (badness 1077) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 138.
 LaTeX Info: Redefining \% on input line 138.
- [93]
+ [95]
 Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
@@ -2115,7 +2117,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
 LaTeX Info: Redefining \. on input line 145.
 LaTeX Info: Redefining \% on input line 145.
-[94]
+[96]
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
@@ -2132,7 +2134,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
 LaTeX Info: Redefining \. on input line 162.
 LaTeX Info: Redefining \% on input line 162.
-[95]
+[97]
 Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
@@ -2149,7 +2151,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
 LaTeX Info: Redefining \. on input line 172.
 LaTeX Info: Redefining \% on input line 172.
-[96]
+[98]
 Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
@@ -2184,7 +2186,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 188.
 LaTeX Info: Redefining \% on input line 188.
- [97]
+ [99]
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
@@ -2206,19 +2208,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
-[98])
+[100])
 LaTeX Info: Redefining \. on input line 174.
 LaTeX Info: Redefining \% on input line 174.
- [99] [100
+ [101] [102
 
 
 
 ]
 \openout2 = `Cascaras/fin.aux'.
 
- (./Cascaras/fin.tex [101
+ (./Cascaras/fin.tex [103
 
-] [102]) (./TFMTeXiS.aux
+] [104]) (./TFMTeXiS.aux
 (./Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
@@ -2244,10 +2246,10 @@ Package rerunfilecheck Info: File `TFMTeXiS.out' has not changed.
 (rerunfilecheck)             Checksum: A98845C756FDB3A31D3020C65873A2B9;21891.
  ) 
 Here is how much of TeX's memory you used:
- 17351 strings out of 478994
- 273264 string characters out of 5858185
+ 17352 strings out of 478994
+ 273265 string characters out of 5858185
  754757 words of memory out of 5000000
- 33688 multiletter control sequences out of 15000+600000
+ 33687 multiletter control sequences out of 15000+600000
  424605 words of font info for 63 fonts, out of 8000000 for 9000
  1379 hyphenation exceptions out of 8191
  105i,19n,107p,1455b,740s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2273,10 +2275,10 @@ e1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
 /public/cm-super/sftt1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/u
 rw/helvetic/uhvr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb>
-Output written on TFMTeXiS.pdf (126 pages, 15659576 bytes).
+Output written on TFMTeXiS.pdf (128 pages, 15660175 bytes).
 PDF statistics:
- 1644 PDF objects out of 1728 (max. 8388607)
- 1314 compressed objects within 14 object streams
- 349 named destinations out of 1000 (max. 500000)
+ 1653 PDF objects out of 1728 (max. 8388607)
+ 1321 compressed objects within 14 object streams
+ 351 named destinations out of 1000 (max. 500000)
  1141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
