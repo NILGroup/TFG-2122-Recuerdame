@@ -266,7 +266,7 @@ Cada uno de los 4 integrantes del grupo hemos hecho un diseño de la aplicación s
 \subsection{Prototipo de Cristina Barquilla Blanco}
 El prototipo se ha diseñado con la herramienta balsamiq siguiendo los requisitos obtenidos.
 
-Una vez el terapeuta ha iniciado sesión, lo primero que puede ver es un listado de sus pacientes como se muestra en la Figura \ref{fig:figura3.2.2.1}.
+Una vez el terapeuta ha iniciado sesión, lo primero que puede hacer es seleccionar un paciente de un listado con los pacientes que tiene asociados. En este listado se muestra el nombre, los apellidos, el género y la edad de cada paciente tal y como se muestra en la Figura \ref{fig:figura3.2.2.1}. El menú inicial que se muestra tiene las siguientes opciones: pacientes, mensajería, asignar paciente y cerrar sesión.
 
 \begin{figure}[!ht]
   	\centering
@@ -275,43 +275,228 @@ Una vez el terapeuta ha iniciado sesión, lo primero que puede ver es un listado 
 	\label{fig:figura3.2.2.1}
 \end{figure}
 
-En este listado se puede añadir, modificar o borrar un paciente. Al seleccionar un paciente de la lista se podrá ver un listado de las sesiones que se han realizado con ese paciente (Ver Figura \ref{fig:figura3.2.2.2}). Para poder preparar una sesión, el terapeuta podrá crear una nueva sesión desde esta pantalla que le llevará a otra pantalla que contiene 3 pasos: Datos de la sesión, Añadir recuerdos y Confirmar.
+Se puede añadir, modificar o borrar un paciente. Al seleccionar un paciente de la lista se puede ver otro menú con varias opciones para realizar diferentes acciones con respecto al paciente seleccionado y ver qué paciente ha seleccionado (Ver Figura \ref{fig:figura3.2.2.2}).
 
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.2}
-  	\caption{Listado de las sesiones de un paciente.}
+  	\caption{Paciente seleccionado para realizar distintas acciones del menú.}
 	\label{fig:figura3.2.2.2}
 \end{figure}
 
-\begin{enumerate}
-	\item Datos de la sesión (Ver Figura \ref{fig:figura3.2.2.3}). El terapeuta podrá añadir la fecha, el objetivo, el interés y la descripción. Además, aparecerá su nombre que se guardará automáticamente como el terapeuta que registró la sesión.
+Las diferentes opciones del menú son:
+\begin{itemize}
+	\item Pacientes. Para poder volver al listado de pacientes de la Figura \ref{fig:figura3.2.2.1} y poder elegir otro paciente.
 	
-	\begin{figure}[!ht]
-  		\centering
-  		\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.3}
-  		\caption{Registrar los datos de una nueva sesión.}
-		\label{fig:figura3.2.2.3}
-	\end{figure}
+	\item Sesiones. En este menú se pueden ver un listado de las sesiones de un paciente ordenadas cronológicamente por fecha y, donde se muestran los siguientes datos de cada sesión: fecha, interés, descripción y el estado (si se ha finalizado la sesión o no). Además, se permite ver, modificar o borrar una sesión.
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.3}
+		  	\caption{Listado de las sesiones de un paciente.}
+			\label{fig:figura3.2.2.3}
+		\end{figure}
+		
+			La aplicación permite crear una sesión mediante un formulario con 3 pasos:
+			\begin{enumerate}
+				\item Datos de la sesión. Se podrán añadir la fecha de la sesión, el interés, el objetivo y la descripción. Además, se mostrará automáticamente el terapeuta que está registrando la sesión y se guardará en el registro (Ver Figura \ref{fig:figura3.2.2.7}).
+				\begin{figure}[!ht]
+  					\centering
+		  			\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.7}
+		  			\caption{Crear una sesión: Datos de la sesión.}
+					\label{fig:figura3.2.2.7}
+				\end{figure}
+				
+				\item Añadir recuerdos. La aplicación permitirá añadir los recuerdos registrados de ese paciente en base al interés seleccionado en los datos de la sesión, mediante un buscador donde se mostrarán todos los recuerdos del paciente ordenados cronológicamente y con la siguiente información: nombre del recuerdo, etapa, etiqueta, descripción y el tipo de archivo multimedia que contiene. En el buscador se podrán aplicar los siguientes filtros: fecha, etapa, categoría, emoción y tipo de archivo multimedia que facilitará la búsqueda de los recuerdos (Ver figura \ref{fig:figura3.2.2.8}).
+				\begin{figure}[!ht]
+  					\centering
+		  			\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.8}
+		  			\caption{Crear una sesión: Añadir recuerdos.}
+					\label{fig:figura3.2.2.8}
+				\end{figure}
+				
+				\item Confirmar. Por último, se mostrará una pantalla de confirmación de datos donde se podrán ver todos los datos y recuerdos introducidos como se muestra en la Figura \ref{fig:figura3.2.2.9}.
+				\begin{figure}[!ht]
+  					\centering
+		  			\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.9}
+		  			\caption{Crear una sesión: Confirmación.}
+					\label{fig:figura3.2.2.9}
+				\end{figure}
+				
+			\end{enumerate}
+	
+		Mediante el icono de editar de la lista de sesiones, se puede acceder al detalle de una sesión donde se pueden ver los siguientes datos: fecha, interés, terapeuta que ha creado la sesión, objetivo y descripción (Ver Figura \ref{fig:figura3.2.2.4}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.4}
+		  	\caption{Datos de una sesión.}
+			\label{fig:figura3.2.2.4}
+		\end{figure}
+		
+		Además, se permite finalizar la sesión mediante un botón que muestra un formulario donde poder registrar un informe de seguimiento donde se podrá indicar la fecha, las reacciones del paciente y las observaciones necesarias (Ver Figura \ref{fig:figura3.2.2.5}). Este informe se podrá imprimir y vendrán reflejados tanto los datos del informe como los datos del paciente y un listado con los recuerdos de la sesión del informe donde se podrá ver el estado, etiqueta, emoción, puntuación y descripción de cada recuerdo (Ver Figura \ref{fig:figura3.2.2.6}).		
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.5}
+		  	\caption{Datos de informe de seguimiento.}
+			\label{fig:figura3.2.2.5}
+		\end{figure}
+		
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.6}
+		  	\caption{Informe de seguimiento.}
+			\label{fig:figura3.2.2.6}
+		\end{figure}
 
-	\item Añadir recuerdos (Ver Figura \ref{fig:figura3.2.2.4}). Se podrá ver un listado con todos los recuerdos de ese paciente y del interés relacionado para poder seleccionar los recuerdos que se van a añadir a la sesión para utilizarlos posteriormente con el paciente. También, hay un buscador y los siguientes filtros para que sea más sencilla la búsqueda de los recuerdos: fecha, etapa, categoría, emoción y tipo de archivo multimedia.
-	
+		También, se podrá ver un listado de los recuerdos de una sesión con los siguientes datos: nombre, fecha, etapa, interés, estado y tipo de archivo multimedia (Ver Figura \ref{fig:figura3.2.2.10}).
 	\begin{figure}[!ht]
-  		\centering
-  		\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.4}
-  		\caption{Añadir recuerdos a una nueva sesión.}
-		\label{fig:figura3.2.2.4}
-	\end{figure}
-	
-	\item Confirmar (Ver Figura \ref{fig:figura3.2.2.5}). Se podrá ver un resumen de los datos registrados en la sesión así como los recuerdos añadidos para comprobar que los datos son correctos y confirmarlos.
-	
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.10}
+		  	\caption{Recuerdos de una sesión.}
+			\label{fig:figura3.2.2.10}
+		\end{figure}	
+		
+	La aplicación permite acceder a los datos de un recuerdo. Los datos que contiene son: nombre del recuerdo, fecha, estado, etiqueta, puntuación, descripción, etapa, emoción, categoría, un resumen de las personas relacionadas y el tipo de relación de cada una de ellas y, por último, se podrá ver un audio, una imagen o un vídeo si tiene algún tipo de archivo el recuerdo.Todos estos datos se podrán modificar (Ver Figura \ref{fig:figura3.2.2.11}).
 	\begin{figure}[!ht]
-  		\centering
-  		\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.5}
-  		\caption{Confirmar sesión.}
-		\label{fig:figura3.2.2.5}
-	\end{figure}
-\end{enumerate}
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.11}
+		  	\caption{Datos del recuerdo de una sesión.}
+			\label{fig:figura3.2.2.11}
+		\end{figure}	
+		
+	Dentro de un recuerdo se podrán añadir archivos multimedia de dos formas distintas:
+	\begin{itemize}
+		\item Añadir un nuevo archivo donde se podrá seleccionar el tipo de archivo (imagen, audio o vídeo) y se podrá adjuntar el archivo (Ver Figura \ref{fig:figura3.2.2.12}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.12}
+		  	\caption{Añadir un archivo multimedia nuevo a un recuerdo.}
+			\label{fig:figura3.2.2.12}
+		\end{figure}	
+		
+		\item Añadir un archivo ya existente en otro recuerdo (Ver Figura \ref{fig:figura3.2.2.13}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.13}
+		  	\caption{Añadir un archivo multimedia ya existente a un recuerdo.}
+			\label{fig:figura3.2.2.13}
+		\end{figure}
+	\end{itemize}	
+		
+	También, desde la pantalla de datos de un recuerdo, se puede acceder al listado de las personas relacionadas de ese recuerdo. (Ver Figura \ref{fig:figura3.2.2.14}). En este listado se muestra el nombre, los apellidos y el tipo de relación. Y, se puede ver, modificar o borrar una persona relacionada del recuerdo. Dentro de la pantalla de datos se pueden ver o modificar los siguientes datos: nombre, apellidos, teléfono, ocupación, email y tipo de relación (Ver Figura \ref{fig:figura3.2.2.15}).
+	\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.14}
+		  	\caption{Listado de personas relacionadas de un recuerdo.}
+			\label{fig:figura3.2.2.14}
+		\end{figure}	
+		
+	\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.15}
+		  	\caption{Datos de una persona relacionada de un recuerdo.}
+			\label{fig:figura3.2.2.15}
+		\end{figure}	
+		
+	\item Evaluaciones. Informes de seguimiento. Se podrán visualizar todos los informes de seguimiento del paciente y descargarlos (Ver Figura \ref{fig:figura3.2.2.16}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.16}
+		  	\caption{Listado de los informes de seguimiento de un paciente.}
+			\label{fig:figura3.2.2.16}
+		\end{figure}	
+		
+	\item Evaluaciones. Evaluación Clínica. Mediante esta sección se podrá ver un listado de las evaluaciones clínicas del paciente que se realizan cada 3 meses ordenadas cronológicamente (Ver Figura \ref{fig:figura3.2.2.17}). En este listado se muestra la fecha, el GDS y el estado del paciente. Dentro de los datos de la evaluación clínica se pueden ver los siguientes datos: nombre, apellidos, GDS, estado, diagnóstico y observaciones. De estos campos, el nombre y apellidos se cargan automáticamente del paciente y no se pueden modificar (Ver Figura \ref{fig:figura3.2.2.18}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.17}
+		  	\caption{Evaluaciones clínicas.}
+			\label{fig:figura3.2.2.17}
+		\end{figure}	
+
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.18}
+		  	\caption{Datos de una evaluación clínica.}
+			\label{fig:figura3.2.2.18}
+		\end{figure}	
+		
+	\item Historia de Vida. Mediante esta opción se puede generar un "libro" de la Historia de Vida del paciente con todos los recuerdos ordenados cronológicamente. La aplicación permite filtrar por fecha, etapa y categoría (Ver Figura \ref{fig:figura3.2.2.19}). Con estos filtros, se genera una Historia de Vida que mostrará uno a uno los recuerdos y que se podrá pasar de un recuerdo a otro hacia adelante y hacia atrás. El recuerdo mostrará una descripción, la etapa, la categoría y el archivo multimedia si lo tiene (Ver Figura \ref{fig:figura3.2.2.20}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.19}
+		  	\caption{Filtros de la Historia de Vida.}
+			\label{fig:figura3.2.2.19}
+		\end{figure}	
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.20}
+		  	\caption{Historia de vida.}
+			\label{fig:figura3.2.2.20}
+		\end{figure}	
+		
+	\item Calendario. La aplicación permite ver tanto al terapeuta como al cuidador del paciente un calendario con los actividades que el cuidador puede realizar con el paciente (Ver Figura \ref{fig:figura3.2.2.21}). Y también permite añadir estas actividades por parte del terapeuta al calendario (Ver Figura \ref{fig:figura3.2.2.22}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.21}
+		  	\caption{Calendario de actividades.}
+			\label{fig:figura3.2.2.21}
+		\end{figure}	
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.22}
+		  	\caption{Datos de la actividad.}
+			\label{fig:figura3.2.2.22}
+		\end{figure}	
+	
+	\item Mensajería. Esta opción permite que tanto el terapeuta como el cuidador del paciente puedan mandarse correos entre ellos. Los datos que se deben indicar son: fecha, email y mensaje (Ver Figura \ref{fig:figura3.2.2.23}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.23}
+		  	\caption{Mensajería entre terapeuta y cuidador del paciente.}
+			\label{fig:figura3.2.2.23}
+		\end{figure}	
+		
+	\item Asignar pacientes. Mediante esta opción, el terapeuta podrá asignar sus pacientes a otros terapeutas. Para ello, deberá seleccionar el terapeuta al que quiere asignarle uno o varios pacientes y podrá asignar los pacientes seleccionados mediante una lista donde aparecen el nombre y apellidos de cada uno de sus pacientes (Ver Figura \ref{fig:figura3.2.2.24}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.24}
+		  	\caption{Asignar pacientes a otro terapeuta.}
+			\label{fig:figura3.2.2.24}
+		\end{figure}
+\end{itemize}
+
+El cuidador del paciente tendrá acceso a la aplicación pero solo a una serie de opciones:
+\begin{itemize}
+	\item Calendario. Donde podrá ver las actividades que ha añadido el terapeuta (Ver Figura \ref{fig:figura3.2.2.25}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.25}
+		  	\caption{Calendario de actividades del paciente.}
+			\label{fig:figura3.2.2.25}
+		\end{figure}
+
+	\item Historia de Vida. Para poder realizar las actividades, al cuidador se le permite ver la Historia de Vida del paciente. Y, al igual, que el terapeuta, podrá filtrar por fecha, etapa y categoría (Ver Figura \ref{fig:figura3.2.2.26}) y, se generará un "libro" con la Historia de vida del paciente (Ver Figura \ref{fig:figura3.2.2.27}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.26}
+		  	\caption{Filtros para generar la Historia de Vida del paciente.}
+			\label{fig:figura3.2.2.26}
+		\end{figure}
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.27}
+		  	\caption{Historia de Vida del paciente.}
+			\label{fig:figura3.2.2.27}
+		\end{figure}
+	
+	\item Mensajería. El cuidador tiene la opción de enviar un correo al terapeuta mediante esta opción donde podrá indicar la fecha, el email y el mensaje a enviar (Ver Figura \ref{fig:figura3.2.2.28}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.2.28}
+		  	\caption{Mensajería entre el terapeuta y el cuidador del paciente.}
+			\label{fig:figura3.2.2.28}
+		\end{figure}
+\end{itemize}
 
 \subsection{Prototipo de Patricia Díez García}
 Los prototipos de la aplicación se han diseñado con dos perspectivas diferentes.
