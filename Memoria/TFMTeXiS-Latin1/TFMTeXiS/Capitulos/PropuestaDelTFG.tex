@@ -550,4 +550,82 @@ Cuando el terapeuta empiece a trabajar con el paciente irá a la pantalla \ref{fi
 
 \subsection{Prototipo de Eva Verdú Rodríguez}
 
+Este diseño fue hecho a mano mediante herramientas digitales.
+
+Este prototipo empieza con una pantalla principal donde el terapeuta o el cuidador puede iniciar sesión. Según quién inicie sesión aparecerán pantallas distintas.
+\begin{itemize}
+	\item \textbf{Inicia sesión terapeuta:}
+	En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqueda de paciente donde tendrá que elegir uno entre los que tenga asignados. 
+	\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.4_1}
+  	\caption{Pagina de paciente y preparación de la sesión.}
+	\label{fig:figura_3.2.4_1}
+	\end{figure}
+	Una vez elija uno, se le conducirá a la página de inicio de paciente donde aparecerán 6 opciones:
+	\begin{enumerate}
+		\item Preparar sesión
+		\item Realizar sesión
+		\item Historia de vida
+		\item Evaluación e informes
+		\item Menú
+		\item Configuración
+	\end{enumerate}
+	\item \textbf{Preparar sesión:} Al pulsar el botón de ''Preparar sesión'' aparecerá una pantalla con dos opciones: ''Ver el historial de sesiones'', donde se podrán  ver una lista de las sesiones realizadas y poder ver todos los detalles sobre estas, y ''Crear una nueva sesión''. Para crear una nueva sesión, podrás seleccionar la opción de coger una sesión anterior. Esto autocompletará los detalles de la sesión, que después se podrán modificar en caso de que el terapeuta no quiera que la sesión sea exactamente igual. En esa misma pantalla, tendrás la lista de todos los recuerdos. Estos serán seleccionables, para que el terapeuta pueda elegir cuales son útiles para la sesión. Cada recuerdo dispone de un botón con forma de ojo que abrirá una ventana emergente donde se podrá ver los detalles del recuerdo en concreto. Todo lo comentado anteriormente se puede observar en la figura \ref{fig:figura_3.2.4_1}
+	\item \textbf{Realizar sesión:} Al pulsar el botón de ''Realizar sesión'' Se abrirá una pantalla con una lista de sesiones. AL pulsar aparecerá los datos guardados sobre esa sesión con el objetivo, intereses y los recuerdos (que se podrán ver en detalle con el botón en forma de ojo explicado anteriormente). Al final de la pantalla aparecerá el botón de ''Finalizar y evaluar'' que te llevará a una pantalla para rellenar el informe de seguimiento. En este se tendrá que rellenar: la sesión del informe(que se hace automáticamente), el informe y los recuerdo utilizados que se podrán calificar. Al darle a calificar el recuerdo, aparecerá una venta emergente donde te pedirá rellenar los datos para ver como el paciente a reaccionado al recuerdo en esa sesión.
+	\item \textbf{Historia de vida:} Al darle a esta pantalla aparecerán dos opciones: ''Ver la historia de vida completa'', que te cargará un PDF con todos los recuerdo ordenados cronológicamente y por etapas, y ''Ver la historia de vida filtrada'' donde tendrás varias opciones de filtrado y te generará el PDF con los filtros aplicados. Esta opción como la de "Realizar sesión" se ven reflejadas en la figura \ref{fig:figura_3.2.4_2}
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.4_2}
+	  	\caption{Pantalla 2}
+		\label{fig:figura_3.2.4_2}
+	\end{figure}
+	\item \textbf{Evaluación e informes:} Al pulsar este botón, se nos llevará a una pantalla con tres opciones: ''Crear una nueva evaluación'', donde el terapeuta escribirá como ha ido la evaluación trimestral, Mostrar las evaluaciones'' donde aparecerá la lista de evaluaciones realizadas y donde se podrán ver en detalle, y ''Mostrar informes de seguimiento'' donde se mostrará una lista con todos los informes y se podrán ver los detalles. Estas pantallas se pueden ver en la figura \ref{fig:figura_3.2.4_3}
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.4_3}
+	  	\caption{Evaluación e informes de paciente.}
+		\label{fig:figura_3.2.4_3}
+	\end{figure}
+	\item \textbf{Menú:} En el menú del terapeuta, que se mostrará durante todas las pantallas de la aplicación, hay 5 opciones:
+	\begin{itemize}
+		\item Inicio: que te lleva a la pantalla de inicio del paciente.
+		\item Mis pacientes: donde encontráis una lista de pacientes donde si seleccionas alguno, cambiarás de paciente seleccionado y aparecerás en su pantalla de inicio.
+		\item Mensajería: que te llevará a una 
+		\item Mi perfil: donde se ve el perfil del terapeuta.
+		\item Cerrar sesión: que te llevará de nuevo al inicio de sesión.
+	\end{itemize}	 
+	\item \textbf{Configuración:} En esta pantalla tenemos dos opciones: ''Calendario de actividades'', donde aparecerá un calendario y el terapeuta podrá añadir nuevas tareas a sus pacientes, y ''Asignar a más terapeutas'' donde el terapeuta puede asignar al paciente a otro terapeuta mediante una lista seleccionable. La configuración y el menú se pueden observar en la figura \ref{fig:figura_3.2.4_4}
+	
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.4_4}
+	  	\caption{Menú y configuración de paciente.}
+		\label{fig:figura_3.2.4_4}
+	\end{figure}
+	
+	\item \textbf{Inicia sesión un acompañante o tutor:} En este caso tanto el menú como la pantalla de inicio cambian.  En la pantalla de inicio se visualizará en calendario con las distintas tareas asignadas por el terapeuta. En el menú las opciones son:
+	\begin{itemize}
+		\item Inicio: que te llevaría a la pantalla de inicio de acompañante con el calendario.
+		\item Mensajería: Donde tanto terapeuta con acompañante o tutor podrán mandarse mensajes para dudas y cuestiones.
+		\item Historia de vida: Aparecerá la misma pantalla que en el caso del terapeuta. Podrá mirar y filtrar la historia de vida del paciente.
+		\item Cerrar sesión.
+	\end{itemize}	 	
+	 
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=0.6\textwidth]{./Imagenes/Figuras/figura_3.2.4_5}
+	  	\caption{Pantalla 5}
+		\label{fig:figura_3.2.4_5}
+	\end{figure}
+\end{itemize} 
+
+	
+
+	
+
+
+	
+
+
 \subsection{Diseño competitivo}
