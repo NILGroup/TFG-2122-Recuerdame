@@ -16,8 +16,8 @@
 \contentsline {subsection}{\numberline {2.4.1}Generaci\'on de historias a partir de una base de conocimiento}{12}{subsection.36}%
 \contentsline {subsection}{\numberline {2.4.2}Extracci\'on de informaci\'on personal a partir de redes sociales para la creaci\'on de un libro de vida}{16}{subsection.42}%
 \contentsline {subsection}{\numberline {2.4.3}Sistema de asistencia para cuidado de enfermos con alzh\'eimer}{18}{subsection.51}%
-\contentsline {subsection}{\numberline {2.4.4}Extracci\'on de preguntas a partir de im\'agenes para personas con problemas de memoria mediante t\'ecnicas de Deep Learning}{25}{subsection.67}%
-\contentsline {subsection}{\numberline {2.4.5}Conclusiones}{29}{subsection.75}%
+\contentsline {subsection}{\numberline {2.4.4}Extracci\'on de preguntas a partir de im\'agenes para personas con problemas de memoria mediante t\'ecnicas de Deep Learning}{26}{subsection.67}%
+\contentsline {subsection}{\numberline {2.4.5}Conclusiones}{31}{subsection.75}%
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {3}Recu\'erdame}{35}{chapter.76}%
 \contentsline {section}{\numberline {3.1}Captura de Requisitos}{35}{section.77}%
