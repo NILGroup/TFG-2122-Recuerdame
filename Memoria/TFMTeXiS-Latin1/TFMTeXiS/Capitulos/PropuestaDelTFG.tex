@@ -54,7 +54,9 @@ Tras la finalización del guión se llevaron a cabo las entrevistas tal y como se 
 
 \subsection{Entrevistas realizadas}
 
-\subsection{Entrevista a la Dra. Adriana Ivette Ávila Álvarez}
+En la siguiente sección, se encuentra un resumen de los datos recogidos en las entrevistas realizadas a los terapeutas. Estos datos nos serán útiles para la obtención y redacción de los requisitos.
+
+\subsubsection{Entrevista a la Dra. Adriana Ivette Ávila Álvarez}
 Esta entrevista se realizó el día 22 de octubre de 10:00 a 11:15 de la mañana a través de Google Meet. Al empezar la entrevista le dimos las gracias a la doctora por su tiempo y le pedimos su consentimiento para la grabación de la entrevista\footnote{La grabación de la entrevista está disponible en: https://drive.google.com/file/d/1\_CZ86xjh8Vm4PwV1afp1xr2XV3lp5a9-/view?usp=sharing/}. La transcripción de esta entrevista se puede consultar en el Apéndice \ref{appendix:key2}). Los principales datos que obtuvimos en la entrevista fueron los siguientes: 
 
 \begin{itemize}
@@ -82,7 +84,7 @@ Además, los terapeutas harán uso de informes de seguimiento del paciente cada tr
 \item Es conveniente que el uso de los dispositivos que vayan a contener las historias de vida con las que se vayan a realizar las terapias con el paciente tengan pantallas táctiles para que el paciente se sienta cómodo. Además debe de aportar comodidad al terapeuta y facilidad en la realización de estas historias de vida, por lo tanto los dispositivos más interesantes serían una tablet u ordenador. Debido a que actualmente, en sus despachos trabajan con un ordenador pero, para realizar terapias en domicilios, se llevan un dispositivo tablet. 
 
 \end{itemize}
-\subsection{Entrevista a el Dr. Iván De Rosende Celeiro}
+\subsubsection{Entrevista a el Dr. Iván De Rosende Celeiro}
 Esta entrevista se realizó el día 22 de octubre de 17:00 a 18:15 de la tarde a través de Google Meets. Al empezar la entrevista le dimos las gracias al doctor por su tiempo y le pedimos su consentimiento para la grabación de la entrevista\footnote{La grabación de la entrevista está disponible en: https://drive.google.com/file/d/1g1-YmsEua1orr-qjbm2qgZQkTM4lM3yg/view?usp=sharing}. La transcripción de esta entrevista se puede consultar en el Apéndice \ref{appendix:key2}). Los principales datos que obtuvimos en la entrevista fueron los siguientes:
 
 \begin{itemize}
@@ -863,75 +865,227 @@ Luego en la página principal del familiar (\ref{fig:family_ses}) vemos el nombre
 
 \subsection{Prototipo de Eva Verdú Rodríguez}
 
-Este diseño fue hecho a mano mediante herramientas digitales.
+Este diseño fue realizado utilizando la herramienta de dibujo Clip Paint Studio.
 
 Este prototipo empieza con una pantalla principal donde el terapeuta o el cuidador puede iniciar sesión. Según quién inicie sesión aparecerán pantallas distintas.
-\begin{itemize}
-	\item \textbf{Inicia sesión terapeuta:}
-	En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqueda de paciente donde tendrá que elegir uno entre los que tenga asignados. 
-	\begin{figure}[htp]
+
+\subsubsection{Sesión Terapeuta}
+En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqueda de paciente (Figura \ref{fig:pro_eva_bus_paciente}) donde tendrá que elegir uno entre los que tenga asignados. 
+
+\begin{figure}[htp]
+	\centering
+ 	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/buscador_pacientes.png}
+  	\caption{Búsqueda del paciente del prototipo de Eva}
+	\label{fig:pro_eva_bus_paciente}
+\end{figure}
+	
+Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \ref{fig:pro_eva_menu_paciente}) donde aparecerán 6 opciones:
+
+\begin{enumerate}
+	\item Preparar sesión.
+	\item Realizar sesión.
+	\item Historia de vida.
+	\item Evaluación e informes.
+	\item Menú.
+	\item Configuración.
+\end{enumerate}
+
+\begin{figure}[htp]
   	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.4_1}
-  	\caption{Página de paciente y preparación de la sesión.}
-	\label{fig:figura_3.2.4_1}
-	\end{figure}
-	Una vez elija uno, se le conducirá a la página de inicio de paciente donde aparecerán 6 opciones:
-	\begin{enumerate}
-		\item Preparar sesión.
-		\item Realizar sesión.
-		\item Historia de vida.
-		\item Evaluación e informes.
-		\item Menú.
-		\item Configuración.
-	\end{enumerate}
-	\item \textbf{Preparar sesión:} Al pulsar el botón de ``Preparar sesión'' aparecerá una pantalla con dos opciones: ``Ver el historial de sesiones'', donde se podrá ver una lista de las sesiones realizadas y poder ver todos los detalles sobre estas, y ``Crear una nueva sesión''. Para crear una nueva sesión, podrás seleccionar la opción de coger una sesión anterior. Esto autocompletará los detalles de la sesión, que después se podrán modificar en caso de que el terapeuta no quiera que la sesión sea exactamente igual. En esa misma pantalla, tendrás la lista de todos los recuerdos. Estos serán seleccionables, para que el terapeuta pueda elegir cuales son útiles para la sesión. Cada recuerdo dispone de un botón con forma de ojo que abrirá una ventana emergente donde se podrá ver los detalles del recuerdo en concreto. Todo lo comentado anteriormente se puede observar en la Figura \ref{fig:figura_3.2.4_1}.
-	\item \textbf{Realizar sesión:} Al pulsar el botón de ``Realizar sesión'' se abrirá una pantalla con una lista de sesiones. Al pulsar, aparecerán los datos guardados sobre esa sesión con el objetivo, intereses y los recuerdos (que se podrán ver en detalle con el botón en forma de ojo explicado anteriormente). Al final de la pantalla aparecerá el botón de ``Finalizar y evaluar'' que te llevará a una pantalla para rellenar el informe de seguimiento. En este se tendrá que rellenar: la sesión del informe (que se hace automáticamente), el informe y los recuerdo utilizados que se podrán calificar. Al darle a calificar el recuerdo, aparecerá una venta emergente donde te pedirá rellenar los datos para ver como el paciente a reaccionado al recuerdo en esa sesión.
-	\item \textbf{Historia de vida:} Al darle a esta pantalla aparecerán dos opciones: ``Ver la historia de vida completa'', que te cargará un PDF con todos los recuerdo ordenados cronológicamente y por etapas, y ``Ver la historia de vida filtrada'' donde tendrás varias opciones de filtrado y te generará el PDF con los filtros aplicados. Esta opción como la de ``Realizar sesión'' se ven reflejadas en la Figura \ref{fig:figura_3.2.4_2}.
-	\begin{figure}[htp]
-	  	\centering
-	  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.4_2}
-	  	\caption{Pantalla 2}
-		\label{fig:figura_3.2.4_2}
-	\end{figure}
-	\item \textbf{Evaluación e informes:} Al pulsar este botón, nos llevará a una pantalla con tres opciones: ``Crear una nueva evaluación'', donde el terapeuta escribirá como ha ido la evaluación trimestral, ``Mostrar las evaluaciones'' donde aparecerá la lista de evaluaciones realizadas y donde se podrán ver en detalle, y ``Mostrar informes de seguimiento'' donde se mostrará una lista con todos los informes y se podrán ver los detalles. Estas pantallas se pueden ver en la Figura \ref{fig:figura_3.2.4_3}.
-	\begin{figure}[htp]
-	  	\centering
-	  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.4_3}
-	  	\caption{Evaluación e informes de paciente.}
-		\label{fig:figura_3.2.4_3}
-	\end{figure}
-	\item \textbf{Menú:} En el menú del terapeuta, que se mostrará durante todas las pantallas de la aplicación, hay 5 opciones:
-	\begin{itemize}
-		\item Inicio: que te lleva a la pantalla de inicio del paciente.
-		\item Mis pacientes: donde encontráis una lista de pacientes donde si seleccionas alguno, cambiarás de paciente seleccionado y aparecerás en su pantalla de inicio.
-		\item Mensajería: que te llevará a una pantalla donde el terapeuta podrá abrir una conversación con el acompañante o con otros terapeuta.
-		\item Mi perfil: donde se ve el perfil del terapeuta.
-		\item Cerrar sesión: que te llevará de nuevo al inicio de sesión.
-	\end{itemize}	 
-	\item \textbf{Configuración:} En esta pantalla tenemos dos opciones: ``Calendario de actividades'', donde aparecerá un calendario y el terapeuta podrá añadir nuevas tareas a sus pacientes, y ``Asignar a más terapeutas'' donde el terapeuta puede asignar al paciente a otro terapeuta mediante una lista seleccionable. La configuración y el menú se pueden observar en la Figura \ref{fig:figura_3.2.4_4}.
-	
-	\begin{figure}[htp]
-	  	\centering
-	  	\includegraphics[width=12cm]{./Imagenes/Figuras/figura_3.2.4_4}
-	  	\caption{Menú y configuración de paciente.}
-		\label{fig:figura_3.2.4_4}
-	\end{figure}
-	
-	\item \textbf{Inicia sesión un acompañante o tutor:} En este caso tanto el menú como la pantalla de inicio cambian. En la pantalla de inicio se visualizará en calendario con las distintas tareas asignadas por el terapeuta. En el menú las opciones son:
-	\begin{itemize}
-		\item Inicio: que te llevaría a la pantalla de inicio de acompañante con el calendario.
-		\item Mensajería: donde tanto terapeuta con acompañante o tutor podrán mandarse mensajes para dudas y cuestiones.
-		\item Historia de vida: aparecerá la misma pantalla que en el caso del terapeuta. Podrá mirar y filtrar la historia de vida del paciente.
-		\item Cerrar sesión.
-	\end{itemize}	 	
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/menu_paciente.png}
+  	\caption{La página de inicio del paciente del prototipo de Eva}
+	\label{fig:pro_eva_menu_paciente}
+\end{figure}
+
+\begin{itemize}
+	\item \textbf{Preparar sesión:} Al pulsar el botón de ``Preparar sesión'' aparecerá una pantalla con dos opciones(Figura \ref{fig:pro_eva_realizar_ss}):
 	 
 	\begin{figure}[htp]
 	  	\centering
-	  	\includegraphics[width=0.6\textwidth]{./Imagenes/Figuras/figura_3.2.4_5}
-	  	\caption{Pantalla 5}
-		\label{fig:figura_3.2.4_5}
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png}
+	  	\caption{Opciones de preparar sesión del prototipo de Eva.}
+		\label{fig:pro_eva_realizar_ss}
 	\end{figure}
-\end{itemize}
+	
+	\begin{itemize}
+		\item ``Ver el historial de sesiones'', donde se podrá ver una lista de las sesiones realizadas y poder ver todos los detalles sobre estas (Figura \ref{fig:pro_eva_historial_ss}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/historial_sesiones.png}
+	  		\caption{Historial de sesiones del prototipo de Eva.}
+			\label{fig:pro_eva_historial_ss}
+		\end{figure}
+		
+		\item ``Crear una nueva sesión'', para crear una nueva sesión, podrás seleccionar la opción de coger una sesión anterior. Esto autocompletará los detalles de la sesión, que después se podrán modificar en caso de que el terapeuta no quiera que la sesión sea exactamente igual. En esa misma pantalla, tendrás la lista de todos los recuerdos. Estos serán seleccionables, para que el terapeuta pueda elegir cuales son útiles para la sesión. Cada recuerdo dispone de un botón con forma de ojo que abrirá una ventana emergente donde se podrá ver los detalles del recuerdo en concreto (Figura \ref{fig:pro_eva_crear_ss}).
+		
+		 \begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/nueva_sesion.png}
+	  		\caption{Nueva sesión del prototipo de Eva.}
+			\label{fig:pro_eva_crear_ss}
+		\end{figure}
+		
+	\end{itemize}
+
+	\item \textbf{Realizar sesión:} Al pulsar el botón de ``Realizar sesión'' se abrirá una pantalla (Figura \ref{fig:pro_eva_realizar_ss}) con una lista de sesiones. Al pulsar, aparecerán los datos guardados sobre esa sesión con el objetivo, intereses y los recuerdos (que se podrán ver en detalle con el botón en forma de ojo explicado anteriormente). Al final de la pantalla aparecerá el botón de ``Finalizar y evaluar'' que te llevará a una pantalla (Figura \ref{fig:pro_eva_finalizar_ss}) para rellenar el informe de seguimiento. En este se tendrá que rellenar: la sesión del informe (que se hace automáticamente), el informe y los recuerdo utilizados que se podrán calificar. Al darle a calificar el recuerdo, aparecerá una ventana emergente donde te pedirá rellenar los datos para ver como el paciente ha reaccionado al recuerdo en esa sesión.
+	
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/realizar_sesion.png}
+	  	\caption{Historia de vida del prototipo de Eva.}
+		\label{fig:pro_eva_realizar_ss}
+	\end{figure}
+	
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png}
+	  	\caption{Historia de vida del prototipo de Eva.}
+		\label{fig:pro_eva_finalizar_ss}
+	\end{figure}
+	
+	\item \textbf{Historia de vida:} La aplicación permitirá ver la historia de vida completa (un PDF con todos los recuerdo ordenados cronológicamente y por etapas) y ver la historia de vida filtrada donde tendrás varias opciones de filtrado y te generará el PDF con los filtros aplicados. Esta opción como la de ``Realizar sesión'' se ven reflejadas en la Figura \ref{fig:pro_eva_hv}.
+	
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/historia_vida.png}
+	  	\caption{Historia de vida del prototipo de Eva.}
+		\label{fig:pro_eva_hv}
+	\end{figure}
+	
+	\item \textbf{Evaluación e informes:} Al pulsar este botón, nos llevará a una pantalla con tres opciones: 
+	\begin{itemize}
+		\item ``Crear una nueva evaluación'', donde el terapeuta escribirá como ha ido la evaluación trimestral (Figura \ref{fig:pro_eva_crear_evalu}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png}
+	  		\caption{Crear nueva evaluación del prototipo de Eva.}
+			\label{fig:pro_eva_crear_evalu}
+		\end{figure}
+		
+		\item ``Mostrar las evaluaciones'' donde aparecerá la lista de evaluaciones realizadas y donde se podrán ver en detalle (Figura \ref{fig:pro_eva_mostrar_evalu}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.png}
+	  		\caption{Mostrar evaluaciones del prototipo de Eva.}
+			\label{fig:pro_eva_mostrar_evalu}
+		\end{figure}
+		
+		\item ``Mostrar informes de seguimiento'' donde se mostrará una lista con todos los informes y se podrán ver los detalles (Figura \ref{fig:pro_eva_mostrar_infor}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/lista_informes.png}
+	  		\caption{Mostrar informes de seguimiento del prototipo de Eva.}
+			\label{fig:pro_eva_mostrar_infor}
+		\end{figure}
+		
+	\end{itemize} 
+	
+	\item \textbf{Menú:} En el menú del terapeuta (Figura \ref{fig:pro_eva_t_menu}), que se mostrará durante todas las pantallas de la aplicación, hay 5 opciones:
+	\begin{figure}[htp]
+  		\centering
+  		\includegraphics[width=0.3\textwidth]{./Imagenes/Figuras/prototipo_eva/menu.png}
+  		\caption{Menú del terapeuta del prototipo de Eva.}
+		\label{fig:pro_eva_t_menu}
+	\end{figure}
+
+	\begin{itemize}
+		\item Inicio: que te lleva a la pantalla de inicio del paciente.
+		\item Mis pacientes: donde encontráis una lista de pacientes donde si seleccionas alguno, cambiarás de paciente seleccionado y aparecerás en su pantalla de inicio (Figura \ref{fig:pro_eva_lista_paci}).
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/lista_pacientes.png}
+	  		\caption{Lista de pacientes del terapeuta del prototipo de Eva.}
+			\label{fig:pro_eva_lista_paci}
+		\end{figure}
+	
+		\item Mensajería: que te llevará a una pantalla donde el terapeuta podrá abrir una conversación con el acompañante o con otros terapeuta (Figura \ref{fig:pro_eva_t_men}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/mensajeria.png}
+	  		\caption{Mensajería del terapeuta del prototipo de Eva.}
+			\label{fig:pro_eva_t_men}
+		\end{figure}
+	
+		\item Mi perfil: donde se ve el perfil del terapeuta (Figura \ref{fig:pro_eva_t_perfil}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/mi_perfil.png}
+	  		\caption{Perfil del terapeuta del prototipo de Eva.}
+			\label{fig:pro_eva_t_perfil}
+		\end{figure}
+	
+		\item Cerrar sesión: que te llevará de nuevo al inicio de sesión.
+	\end{itemize}	
+	 
+	\item \textbf{Configuración:} En esta pantalla tenemos dos opciones (Figura \ref{fig:pro_eva_opc_config}):
+	 
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png}
+	  	\caption{Opciones de configuración del prototipo de Eva.}
+		\label{fig:pro_eva_opc_config}
+	\end{figure}
+	
+	\begin{itemize}
+		\item ``Calendario de actividades'' (Figura \ref{fig:pro_eva_calendario}), donde aparecerá un calendario y el terapeuta podrá añadir nuevas tareas a sus pacientes.
+		\item ``Asignar a más terapeutas'' (Figura \ref{fig:pro_eva_asig_tera}) donde el terapeuta puede asignar al paciente a otro terapeuta mediante una lista seleccionable.
+	\end{itemize}
+	
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/calendario.png}
+	  	\caption{Calendario del terapeuta del prototipo de Eva.}
+		\label{fig:pro_eva_calendario}
+	\end{figure}
+	
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png}
+	  	\caption{Asignar paciente a más terapeutas del prototipo de Eva.}
+		\label{fig:pro_eva_asig_tera}
+	\end{figure}
+	
+\end{itemize}	
+
+\subsubsection{Sesión acompañante o cuidador}
+En este caso tanto el menú como la pantalla de inicio cambian. En la pantalla de inicio se visualizará en calendario con las distintas tareas asignadas por el terapeuta. En el menú (Figura \ref{fig:pro_eva_c_menu}) las opciones son:
+
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=0.3\textwidth]{./Imagenes/Figuras/prototipo_eva/c_menu.png}
+  	\caption{Menú del cuidador del prototipo de Eva.}
+	\label{fig:pro_eva_c_menu}
+\end{figure}
+
+\begin{itemize}
+	\item Inicio: que te llevaría a la pantalla de inicio de acompañante con el calendario (Figura \ref{fig:pro_eva_c_calendario}).
+	
+	\begin{figure}[htp]
+  		\centering
+  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/c_calendario.png}
+  		\caption{Pantalla de inicio del cuidador del prototipo de Eva.}
+		\label{fig:pro_eva_c_calendario}
+	\end{figure}
+	
+	\item Mensajería: donde tanto terapeuta con acompañante o tutor podrán mandarse mensajes para dudas y cuestiones (Figura \ref{fig:pro_eva_c_men}).
+	
+	\begin{figure}[htp]
+  		\centering
+  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/c_mensajeria.png}
+  		\caption{Mensajería del cuidador del prototipo de Eva.}
+		\label{fig:pro_eva_c_men}
+	\end{figure}
+	
+	\item Historia de vida: aparecerá la misma pantalla que en el caso del terapeuta. Podrá mirar y filtrar la historia de vida del paciente.
+	\item Cerrar sesión.
+\end{itemize}	 	
+
 
 \subsection{Diseño competitivo}
 Después de realizar y documentar cada uno de los prototipos, los integrantes del grupo nos reunimos por una videollamada en Discord el lunes 10 de enero a las 17:00. En la reunión , cada integrante expuso su prototipo de manera detallada. A continuación, discutimos las semejanzas y diferencias entre cada uno de los diseños, para posteriormente proceder a la elección de uno de ellos.
