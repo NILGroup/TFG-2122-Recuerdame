@@ -145,24 +145,18 @@ En este apartado hablaremos de cuatro trabajos que son parte del proyecto CANTOR
 \subsection{Generación de historias a partir de una base de conocimiento} 
 El objetivo de este TFG \citep{article_14} era crear una herramienta que permitiera registrar todos los recuerdos de los pacientes para crear su Historia de Vida.
 
-Lo habitual es que se construya una Historia de Vida del paciente mediante una serie de sesiones y entrevistas los terapeutas irán registrando toda la información obtenida en estas sesiones en la aplicación. Además, la aplicación permitirá que el familiar o el cuidador utilicen la herramienta para proporcionar estímulos verbales y visuales al paciente que desencadenen el proceso de reminiscencia en el paciente.
-
-Aunque el objetivo inicial era crear una Historia de Vida a partir de los recuerdos, lo que la aplicación final hace es crear relaciones de palabras e imágenes, a partir de una serie de palabras iniciales recomendadas, para unir todos los recuerdos del paciente y generar una serie de estadísticas para ver su progreso.
-
-Para construir estas relaciones, la aplicación va guiando al terapeuta para que en cada sesión se trate un tema concreto como por ejemplo un hobbie o una celebración. Para ello, se crearon distintas categorías para poder elegir cuál de ellas se iba a tratar en las distintas sesiones. Estas categorías se clasificaron según los datos básicos que se suelen preguntar para construir una historia de vida: datos personales, infancia, juventud, edad adulta, familia, comida, vacaciones y aficiones.
-
-Una vez que el terapeuta ha iniciado sesión en la aplicación, se puede elegir el tipo de sesión:
+Aunque el objetivo inicial era crear una Historia de Vida a partir de los recuerdos, la aplicación final creada como resultado de este TFG, crea relaciones de palabras e imágenes, a partir de una serie de palabras iniciales recomendadas, para unir todos los recuerdos del paciente y generar una serie de estadísticas para ver su progreso. Para construir estas relaciones, la aplicación va guiando al terapeuta para que en cada sesión se trate un tema concreto como por ejemplo un hobbie o una celebración. Una vez que el terapeuta ha iniciado sesión en la aplicación, se puede elegir el tipo de sesión:
 \begin{itemize}
-	\item La sesión Palabras, donde se podrá elegir una de las categorías sobre la que se va a trabajar en la sesión con el paciente. Dentro de una categoría, se pueden encontrar las relaciones con distintas palabras y dentro de cada una de las palabras, se pueden encontrar las relaciones con otras palabras e imágenes (ver Figura \ref{fig:figura2.1}) que se podrán añadir o borrar según sea necesario.
+	\item Sesión Palabras: En este tipo de sesión se podrá elegir una de las categorías sobre la que se va a trabajar en la sesión con el paciente. Dentro de una categoría, se pueden encontrar las relaciones con distintas palabras y dentro de cada una de las palabras, se pueden encontrar las relaciones con otras palabras e imágenes (ver Figura \ref{fig:figura2.1}) que se podrán añadir o borrar según sea necesario. Por ejemplo, partimos de una palabra recomendada que es la palabra "pedir". Este concepto tiene relacionadas las palabras clave "comida" y "pizza" y la imagen "pizza.jpg". De esta forma, el terapeuta ha creado una relación de la que poder partir para iniciar una conversación con el paciente.
 
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.1}
-  	\caption{Ejemplo palabra ``pedir''.}
+  	\includegraphics[width=10cm]{./Imagenes/Figuras/figura 2.1}
+  	\caption{Ejemplo palabra inicial recomendada ``pedir'' donde poder añadir relaciones con archivos multimedia o palabras clave.}
 	\label{fig:figura2.1}
 \end{figure}
 
-	\item En la sesión Progreso se puede visualizar el progreso de un paciente. Lo primero que se puede ver son las estadísticas generales de todas las palabras como se muestra en la Figura \ref{fig:figura2.2}. Permite la opción de seleccionar una categoría en concreto para poder visualizar un grafo con el progreso de dicha categoría como se puede ver en la Figura \ref{fig:figura2.3}.
+	\item Sesión Progreso: Este tipo de sesión sirve para visualizar el progreso de un paciente. Se pueden ver las siguientes estadísticas agrupadas por categorías (infancia, juventud, etapa adulta, familia, comida y vacaciones): el número de palabras visitadas (como la palabra pedir vista anteriormente), el porcentaje de las palabras visitadas, un top 3 de las palabras que tienen más relaciones, un top 3 de las palabras que tienen más imágenes relacionadas, número de imágenes relacionadas, porcentaje del número de imágenes relacionadas y un top 3 de las imágenes con más relaciones. Permite la opción de seleccionar una categoría en concreto para poder visualizar un grafo con el progreso de dicha categoría como se puede ver en la Figura \ref{fig:figura2.3}.
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=15cm]{./Imagenes/Figuras/figura 2.2}
@@ -177,7 +171,7 @@ Una vez que el terapeuta ha iniciado sesión en la aplicación, se puede elegir el
 	\label{fig:figura2.3}
 \end{figure}
 
-	\item Y por último, la sesión Imágenes donde se asociar una imagen a una categoría y a un concepto como se muestra en la Figura \ref{fig:figura2.4}. Y, de esta forma, poder crear una relación. La aplicación proporciona buscador de imágenes donde introduciendo una palabra clave se muestran todas las imágenes relacionadas con la palabra introducida (ver Figura \ref{fig:figura2.5}).
+	\item Sesión Imágenes: Este tipo de sesión sirve para asociar una imagen a una categoría y a un concepto. Es decir, una vez se ha relacionado una imagen a una palabra como en el ejemplo de la palabra pedir de la Figura \ref{fig:figura2.1}, hay que relacionar esta imagen con o varias de las siguientes categorías: infancia, juventud, etapa adulta, familia, comida, vacaciones y aficiones como se muestra en la Figura \ref{fig:figura2.4}.
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=7cm]{./Imagenes/Figuras/figura 2.4}
@@ -185,19 +179,17 @@ Una vez que el terapeuta ha iniciado sesión en la aplicación, se puede elegir el
 	\label{fig:figura2.4}
 \end{figure}
 
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=5cm]{./Imagenes/Figuras/figura 2.5}
-  	\caption{Imágenes asociadas con un nombre propio.}
-	\label{fig:figura2.5}
-\end{figure}
-\end{itemize} 
+Una vez finalizada la aplicación, se hizo una evaluación de la misma. Para ello, se llevó a cabo una entrevista a una mujer de 78 años y a su familiar de apoyo. Se les proporcionó una descripción del proyecto y se les indicó el objetivo principal. Se trataron todas las etapas de la vida (infancia, etapa adulta, etc.), y a través de la aplicación, se recopilaron y registraron las palabras clave de cada una de ellas y se etiquetaron todas las imágenes. Una vez recopilados todos los datos, se obtuvieron y analizaron unas estadísticas mediante el apartado Progreso de la aplicación para comprobar si se cumplieron los objetivos del proyecto. En base a la entrevista y a las estadísticas, se pudo comprobar que los resultados de la aplicación fueron muy satisfactorios. Las recomendaciones aleatorias de relaciones de palabras fueron muy efectivas para iniciar una primera conversación y poder registrar cada palabra clave de cada historia. Con respecto a la visualización de imágenes, tuvo mucho impacto el poder acceder a todas las imágenes y tenerlas etiquetadas mediante categorías y palabras clave para saber de qué trata cada imagen. Cabe destacar que tanto las categorías como el buscador de imágenes fueron muy útiles.
 
-Una vez finalizada la aplicación, se hizo una evaluación de la misma. Para ello, se llevó a cabo una entrevista a una mujer de 78 años y a su familiar de apoyo donde se les proporcionó una descripción del proyecto y se les indicó el objetivo principal. Se trataron todas las etapas de la vida (infancia, etapa adulta, etc.), se recopilaron las palabras clave de cada una de ellas y se etiquetaron todas las imágenes. Una vez recopilados todos los datos, se obtuvieron y analizaron unas estadísticas mediante el apartado Progreso de la aplicación para comprobar si se cumplieron los objetivos del proyecto.
+Una vez, analizados los resultados de la evaluación de la aplicación, se sacaron las siguientes conclusiones:
+	\begin{itemize}
+		\item Hubiera sido de gran ayuda poder organizar las fotografías cronológicamente.
+		\item Navegar de forma más sencilla entre las distintas palabras con un hipervínculo, sin tener que escribirlas expresamente siempre que se necesiten.
+		\item Las categorías que se eligieron fueron acertadas. Sin embargo, se echó en falta una categoría de Eventos (aunque esté estrechamente relacionada con la categoría Familia) y poder marcar las imágenes con lugares y fechas en concreto.
+	\end{itemize}
+\end{itemize}
 
-En base a la entrevista y a las estadísticas, se pudo comprobar que los resultados de la aplicación fueron muy satisfactorios. Las recomendaciones aleatorias de relaciones de palabras fueron muy efectivas para iniciar una primera conversación y poder registrar cada palabra clave de cada historia. Con respecto a la visualización de imágenes, tuvo mucho impacto el poder acceder a todas las imágenes y tenerlas etiquetadas mediante categorías y palabras clave para saber de qué trata cada imagen. Cabe destacar que tanto las categorías como el buscador de imágenes fueron muy útiles.
 
-Algo que hubiera sido de gran ayuda sería el poder organizar las fotografías cronológicamente y el poder navegar de forma más sencilla entre las distintas palabras con un hipervínculo, sin tener que escribirlas expresamente siempre que se necesiten. Aunque las categorías que se eligieron fueron acertadas, se echó en falta una categoría de Eventos aunque esté estrechamente relacionada con la categoría Familia y poder marcar las imágenes con lugares y fechas en concreto.
 
 		
 \subsection{Extracción de información personal a partir de redes sociales para la creación de un libro de vida}
