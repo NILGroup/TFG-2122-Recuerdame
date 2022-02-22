@@ -193,7 +193,7 @@ Una vez, analizados los resultados de la evaluación de la aplicación, se sacaron
 
 		
 \subsection{Extracción de información personal a partir de redes sociales para la creación de un libro de vida}
-El objetivo de este TFG \citep{article_15} era crear una aplicación que sirviera de ayuda a los terapeutas ocupacionales a crear una historia de vida para tratar a los pacientes con problemas de memoria. La idea era extraer información del paciente de forma automática de sus redes sociales. Para llevar a cabo el trabajo combinaron técnicas de extracción y tratamiento de datos en la red social Facebook, e información extraída de Google. Los datos extraídos del paciente de Facebook y Google se mostraban en una interfaz mediante tablas, mapas, líneas de tiempo y galerías de fotos. En la figura \ref{flujo_app} podemos ver el flujo de la aplicación por el que el usuario pasa para la obtención y visualización de los datos. En primer lugar el usuario realizará el login en la aplicación, se obtendrán los diferentes datos de las aplicaciones, se procesaran esos datos, y por último se podrán visualizar en la página de la aplicación.
+El objetivo de este TFG \citep{article_15} era crear una aplicación que sirviera de ayuda a los terapeutas ocupacionales para crear una historia de vida de los pacientes con problemas de memoria. La idea era extraer información del paciente de forma automática de sus redes sociales y con dicha información crear su historia de vida. Para llevar a cabo el trabajo combinaron técnicas de extracción y tratamiento de datos en la red social Facebook, e información extraída de Google. Los datos extraídos del paciente de Facebook y Google se mostraban en una interfaz mediante tablas, mapas, líneas de tiempo y galerías de fotos. En la Figura \ref{flujo_app} podemos ver el flujo de la aplicación por el que el usuario pasa para la obtención y visualización de los datos. En primer lugar el usuario realizará el login en la aplicación, se obtienen los diferentes datos de Facebook y Google, se procesaran esos datos, y por último se visualiza en la aplicación.
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.7\textwidth]{./Imagenes/Figuras/2.1.png}
@@ -201,38 +201,7 @@ El objetivo de este TFG \citep{article_15} era crear una aplicación que sirviera
 \label{flujo_app}
 \end{figure}
 
-
-En la figura \ref{mainpage} se puede ver el estado final de la página principal de la aplicación, en esta página en la parte superior podemos ver las diferentes categorías de historia de vida que se pueden ver en la aplicación (amigos, lugares, fechas, fotos, páginas, logros, info, familia).
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.9\textwidth]{./Imagenes/Figuras/figura 2.6.4.png}
-\caption{Página principal}
-\label{mainpage}
-\end{figure}
-
-En primer lugar, al iniciar la aplicación, el usuario se encuentra con una ventana para realizar el login, a través de Facebook para la descarga de información, y descargar datos del paciente, también visualizar el libro de vida (en caso de estar registrado ya) y salir de la aplicación (figura \ref{register} donde vemos el botón de login y descarga, el botón de ver libro de vida y el de cerrar la aplicación, en la figura \ref{log_face} nos encontramos con el login de Facebook y en la figura \ref{download} vemos la página para descargar los diferentes datos de Facebook, como pueden ser fotos, amigos, fechas, vídeos, etc.). Una vez descargados los datos de Facebook se procede a descargar datos de Google, como pueden ser fechas, páginas relacionadas, logros, fotos y más de una manera similar a la anterior vista en las figuras con Facebook.
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.7\textwidth]{./Imagenes/Figuras/figura 2.6.5.png}
-\caption{Registro/Login/Ver libro de vida}
-\label{register}
-\end{figure}
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.7\textwidth]{./Imagenes/Figuras/figura 2.6.6.png}
-\caption{Login Facebook}
-\label{log_face}
-\end{figure}
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.7\textwidth]{./Imagenes/Figuras/figura 2.6.7.png}
-\caption{Descarga datos de Facebook}
-\label{download}
-\end{figure}
-
-Finalmente con todos los datos descargados del paciente, se podrá visualizar la historia de vida del paciente (amigos, lugares, fechas, fotos, etc), como podemos ver en la figura \ref{friends}, en la que se ve la lista de amigos de un usuario con los que ha tenido más contacto, luego en la figura \ref{places} vemos un mapa con las diferentes localizaciones de lugares favoritos del usuario y por último vemos en la figura \ref{pic} una galería de fotos de diferentes recuerdos.
+Todos los datos descargados del paciente y procesados, se podrán visualizar en la historia de vida del paciente (amigos, lugares, fechas, fotos, etc), tal y como podemos ver en la Figura \ref{friends}, en la que se ve la lista de amigos de un usuario con los que ha tenido más contacto, luego en la Figura \ref{places} vemos un mapa con las diferentes localizaciones de lugares favoritos del usuario y por último vemos en la Figura \ref{pic} una galería de fotos de diferentes recuerdos.
 
 \begin{figure}[!ht]
 \centering
@@ -365,11 +334,10 @@ La aplicación creada en este TFG, permite:
 
 
 \subsection{Extracción de preguntas a partir de imágenes para personas con problemas de memoria mediante técnicas de Deep Learning}
-Este proyecto nace con la intención de ayudar a las personas con pérdida de memoria a recordar aspectos de sus vidas a partir de técnicas de Deep Learning como redes convolucionales y recurrente. Para lograrlo se intentó desarrollar un sistema capaz de extraer preguntas de fotografías que puedan presentar recuerdos para las personas con problemas de memoria, creando un bot que simula una sesión de terapia de reminiscencia. Para ello, el usuario de la aplicación tiene que enviarle las imágenes al bot y este se encargará de enviarle las preguntas generadas por la red neuronal. A partir de aquí, el usuario deberá recordar todo lo posible para poder responder a las preguntas y conseguir ejercitar su memoria.
+Este proyecto \citep{article_16} nace con la intención de ayudar a las personas con pérdida de memoria a recordar aspectos de sus vidas a partir de técnicas de Deep Learning como redes convolucionales y recurrentes. Para lograrlo se intentó desarrollar un sistema capaz de extraer preguntas de fotografías que puedan presentar recuerdos para las personas con problemas de memoria, creando un bot que simula una sesión de terapia de reminiscencia. Para ello, el usuario de la aplicación tiene que enviarle las imágenes al bot y este se encargará de enviarle las preguntas generadas por la red neuronal. A partir de aquí, el usuario deberá recordar todo lo posible para poder responder a las preguntas y conseguir ejercitar su memoria.
 
-El proyecto se divide en dos módulos que se relacionan entre sí para poder simular la terapia de reminiscencia, el bot, que pertenece a Telegram y una red neuronal programada para la generación de preguntas visuales. Todos los datos, como pueden ser imágenes se consiguen a través de datasets.
+El proyecto se divide en dos módulos que se relacionan entre sí para poder simular la terapia de reminiscencia, el bot, que utilizamos a través de  Telegram y una red neuronal programada para la generación de preguntas visuales. Todos los datos, se almacenan, para luego ser utilizados en la generación de preguntas. En la Figura \ref{fig:funcionamiento_bot} se puede ver el flujo del trabajo del bot.
 
-Como antes hemos comentado utilizamos un bot con el funcionamiento que se ve en la Figura \ref{fig:funcionamiento_bot}.
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=.7]{./Imagenes/Figuras/funcionamiento_bot.PNG}
@@ -377,14 +345,15 @@ Como antes hemos comentado utilizamos un bot con el funcionamiento que se ve en 
  \label{fig:funcionamiento_bot}
 \end{figure}
 
-El bot dispone de diferentes funciones como podemos ver en la Figura \ref{fig:interaccion_usuario}, que son comenzar terapia, que es el estado en el que el usuario realizará la terapia, y se van mostrando imágenes al usuario previamente almacenadas para ayudar a recordar al usuario; subir imágenes, que es el modo en el que el usuario puede subir imágenes para utilizar en la terapia; descargar historial, funcionalidad con la que se guardan las respuestas de los usuarios a las diferentes imágenes para poder llevar un recuento; eliminar datos, para el momento que quiera de dejar usar la aplicación el usuario y eliminar las imágenes; y por último, salir, para dar la posibilidad al bot de estar en un estado de pausa.
+El bot dispone de cinco funcionalidades \ref{fig:interaccion_usuario}, que son comenzar terapia, subir imágenes, descargar historial, eliminar datos y salir. Si seleccionamos comenzar terapia, en caso de que el usuario tenga ya fotos subidas podrá comenzar la terapia, y se van mostrando por pantalla las imágenes previamente guardadas para ayudar al paciente a generar recuerdo; luego está subir imágenes, funcionalidad para adjuntar imágenes en la aplicación que serán posteriormente usadas en la terapia;después descargar historial, usada para llevar un registro de las diferentes respuestas del paciente a las imágenes para llevar un informe con detalles; luego esta eliminar datos, para eliminar los datos de las imagenes en caso de ya no necesitar su utilización en las terapias o por dejar de usar la aplicación; y por último la funcionalidad de salir, para abandonar la aplicación, y dejar el bot en estado de pausa.
 \begin{figure}[!ht]
  \centering
  \includegraphics[scale=.7]{./Imagenes/Figuras/interaccion_usuario.PNG}
  \caption{interacción usuario}
  \label{fig:interaccion_usuario}
 \end{figure}
-A continuación, veremos un ejemplo de uso del bot, en la primera imagen \ref{fig:bienvenida_bot}, en la que el bot escribe un mensaje de bienvenida al usuario. En el caso de ser la primera experiencia del usuario deberá subir imágenes \ref{fig:imagenes_bot}, y en el caso de no subir imágenes saldrá un mensaje de error \ref{fig:errorimagenes_bot}. también se podrá cambiar de imagen \ref{fig:cambioimagen}; una vez respondida una pregunta, el usuario realizará cinco más hasta que cambie de imagen \ref{fig:pregunta_bot}. Se seguirán realizando preguntas hasta que se pulse en el botón terminar anteriormente visto.
+
+A continuación, veremos un ejemplo de uso del bot, en la figura \ref{fig:bienvenida_bot}, se muestra el mensaje de bienvenida al usuario. En el caso de ser la primera experiencia del usuario deberá subir las imágenes que quiera utilizar durante las sesiones de terapia (ver Figura \ref{fig:imagenes_bot}). Una vez subidas las imágenes, el usuario responderá cinco preguntas de cada imagen para ir realizando el informe de evaluación, previamente comentado en la funcionalidad de descargar historial, como vemos en la Figura \ref{fig:pregunta_bot}, se siguen realizando preguntas hasta que se pulse en el botón de salir anteriormente visto para cerrar aplicación.
 
 \begin{figure}[!ht]
  \centering
@@ -400,19 +369,6 @@ A continuación, veremos un ejemplo de uso del bot, en la primera imagen \ref{fig
  \label{fig:imagenes_bot}
 \end{figure}
 
-\begin{figure}[!ht]
- \centering
- \includegraphics[scale=.7]{./Imagenes/Figuras/errorimagenes_bot.PNG}
- \caption{Error subir imágenes bot}
- \label{fig:errorimagenes_bot}
-\end{figure}
-
-\begin{figure}[!ht]
- \centering
- \includegraphics[scale=.7]{./Imagenes/Figuras/cambioimagen.PNG}
- \caption{Cambio Imagen}
- \label{fig:cambioimagen}
-\end{figure}
 
 \begin{figure}[!ht]
  \centering
@@ -420,8 +376,6 @@ A continuación, veremos un ejemplo de uso del bot, en la primera imagen \ref{fig
  \caption{pregunta bot}
  \label{fig:pregunta_bot}
 \end{figure}
-Al final, las historias de vida en este TFG, son las imágenes que sube el usuario que tienen alguna relación a él y a partir de las cuales se generan preguntas para poner en práctica la memoria.
-Y como conclusión apuntar que consiguieron sus objetivos principales, pero tienen posibles mejoras que se pueden apañar.
 
 \subsection{Conclusiones}
 Tras haber estudiado estos TFG's y haber visualizado la estructura de las historias de vida en cada unos de ellos, hemos concluido que:
