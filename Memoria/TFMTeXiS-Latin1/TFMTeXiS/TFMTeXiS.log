@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.8)  22 FEB 2022 23:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.8)  22 FEB 2022 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2828,7 +2828,7 @@ ts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2021/texmf-dist/fonts
 ype1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb>
-Output written on TFMTeXiS.pdf (146 pages, 24076201 bytes).
+Output written on TFMTeXiS.pdf (146 pages, 24076200 bytes).
 PDF statistics:
  1926 PDF objects out of 2073 (max. 8388607)
  1506 compressed objects within 16 object streams
