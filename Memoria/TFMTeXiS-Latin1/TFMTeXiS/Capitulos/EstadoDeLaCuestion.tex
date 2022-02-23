@@ -147,7 +147,7 @@ El objetivo de este TFG \citep{article_14} era crear una herramienta que permiti
 
 Aunque el objetivo inicial era crear una Historia de Vida a partir de los recuerdos, la aplicación final creada como resultado de este TFG, crea relaciones de palabras e imágenes, a partir de una serie de palabras iniciales recomendadas, para unir todos los recuerdos del paciente y generar una serie de estadísticas para ver su progreso. Para construir estas relaciones, la aplicación va guiando al terapeuta para que en cada sesión se trate un tema concreto como por ejemplo un hobbie o una celebración. Una vez que el terapeuta ha iniciado sesión en la aplicación, se puede elegir el tipo de sesión:
 \begin{itemize}
-	\item Sesión Palabras: En este tipo de sesión se podrá elegir una de las categorías sobre la que se va a trabajar en la sesión con el paciente. Dentro de una categoría, se pueden encontrar las relaciones con distintas palabras y dentro de cada una de las palabras, se pueden encontrar las relaciones con otras palabras e imágenes (ver Figura \ref{fig:figura2.1}) que se podrán añadir o borrar según sea necesario. Por ejemplo, partimos de una palabra recomendada que es la palabra "pedir". Este concepto tiene relacionadas las palabras clave "comida" y "pizza" y la imagen "pizza.jpg". De esta forma, el terapeuta ha creado una relación de la que poder partir para iniciar una conversación con el paciente.
+	\item Sesión Palabras: En este tipo de sesión se podrá elegir una de las categorías sobre la que se va a trabajar en la sesión con el paciente. Dentro de una categoría, se pueden encontrar las relaciones con distintas palabras y dentro de cada una de las palabras, se pueden encontrar las relaciones con otras palabras e imágenes (ver Figura \ref{fig:figura2.1}) que se podrán añadir o borrar según sea necesario. Por ejemplo, partimos de una palabra recomendada que es la palabra ``pedir''. Este concepto tiene relacionadas las palabras clave ``comida'' y ``pizza'' y la imagen ``pizza.jpg''. De esta forma, el terapeuta ha creado una relación de la que poder partir para iniciar una conversación con el paciente.
 
 \begin{figure}[!ht]
   	\centering
@@ -353,7 +353,7 @@ El bot dispone de cinco funcionalidades \ref{fig:interaccion_usuario}, que son c
  \label{fig:interaccion_usuario}
 \end{figure}
 
-A continuación, veremos un ejemplo de uso del bot, en la figura \ref{fig:bienvenida_bot}, se muestra el mensaje de bienvenida al usuario. En el caso de ser la primera experiencia del usuario deberá subir las imágenes que quiera utilizar durante las sesiones de terapia (ver Figura \ref{fig:imagenes_bot}). Una vez subidas las imágenes, el usuario responderá cinco preguntas de cada imagen para ir realizando el informe de evaluación, previamente comentado en la funcionalidad de descargar historial, como vemos en la Figura \ref{fig:pregunta_bot}, se siguen realizando preguntas hasta que se pulse en el botón de salir anteriormente visto para cerrar aplicación.
+A continuación, veremos un ejemplo de uso del bot, en la Figura \ref{fig:bienvenida_bot}, se muestra el mensaje de bienvenida al usuario. En el caso de ser la primera experiencia del usuario deberá subir las imágenes que quiera utilizar durante las sesiones de terapia (ver Figura \ref{fig:imagenes_bot}). Una vez subidas las imágenes, el usuario responderá cinco preguntas de cada imagen para ir realizando el informe de evaluación, previamente comentado en la funcionalidad de descargar historial, como vemos en la Figura \ref{fig:pregunta_bot}, se siguen realizando preguntas hasta que se pulse en el botón de salir anteriormente visto para cerrar aplicación.
 
 \begin{figure}[!ht]
  \centering
@@ -378,15 +378,19 @@ A continuación, veremos un ejemplo de uso del bot, en la figura \ref{fig:bienven
 \end{figure}
 
 \subsection{Conclusiones}
-Tras haber estudiado estos TFG's y haber visualizado la estructura de las historias de vida en cada unos de ellos, hemos concluido que:
+Tras haber estudiado los trabajos relacionados, hemos concluido que:
 \begin{itemize}
-\item Los cuatro tienen en común en su estructura las siguientes características:
-	\begin{itemize}
-	\item Los cuatro TFG's tienen en común que guardan la información de la vida del paciente en bases de datos.
-	\item Todos guardan por etapa de vida (Infancia, joven y adulto).
-	\item Todos ellos son capaces de guardar recursos multimedia.
-	\item La mayoría hacen una evaluación del estado del paciente.
+	\item Todos guardan la información de la Historia de vida clasificada por etapa de vida (infancia, joven y adulto).
+	\item Todos ellos guardan recursos multimedia como parte de la Historia de vida del paciente.
+	\item La mayoría hace una evaluación del estado del paciente.
 	
-	\end{itemize}
-\item En base a las conclusiones de todos los trabajos relacionados vemos que el único que realmente crea una historia de vida es el TFG ``Sistema de asistencia para cuidado de enfermos con alzhéimer'' y, por tanto, se adecua más a lo que necesitamos para nuestro TFG. Sin embargo, vamos a realizar unos cambios en los atributos recogidos para la historia de vida en base a los requisitos solicitados. Estos serán explicados en la sección \ref{cap:requisitosObtenidos} de ``Requisitos obtenidos''.
+\end{itemize}
+El único trabajo que realmente crea una historia de vida es el de asistencia para cuidado de enfermos con alzhéimer. Ya que el resto se centran en otros conceptos, también relacionados con la historia de vida y las terapias de reminiscencia, pero con otros objetivos. Como pueden ser:
+\begin{itemize}
+	\item La facilitación de recogida de datos de una persona a través de las redes sociales (Trabajo relacionado de ``Extracción de información personal a partir de redes sociales para la creación de un libro de vida'').
+	\item La facilitación de la realización de las terapias mediante:
+	\begin{itemize}
+		\item Un sistema capaz de relacionar palabras (Trabajo relacionado de ``Generación de historias a partir de una base de conocimiento'').
+		\item Un sistema capaz de extraer preguntas a través de imágenes (Trabajo relacionado de `` Extracción de preguntas a partir de imágenes para personas con problemas de memoria mediante técnicas de Deep Learning'' ).
+	\end{itemize}	
 \end{itemize}
