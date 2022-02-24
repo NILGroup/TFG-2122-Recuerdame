@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.23)  23 FEB 2022 23:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.23)  24 FEB 2022 01:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1055,25 +1055,25 @@ LaTeX Info: Redefining \% on input line 129.
 [11]
 
 Package natbib Warning: Citation `article_14' on page 12 undefined on input lin
-e 146.
+e 143.
 
-LaTeX Info: Redefining \. on input line 151.
-LaTeX Info: Redefining \% on input line 151.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
 [12]
 <./Imagenes/Figuras/figura 2.1.png, id=882, 426.75893pt x 178.1751pt>
 File: ./Imagenes/Figuras/figura 2.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.1.png  used on input line 
-154.
+151.
 (pdftex.def)             Requested size: 284.52756pt x 118.79216pt.
 <./Imagenes/Figuras/figura 2.2.png, id=885, 426.75893pt x 176.81151pt>
 File: ./Imagenes/Figuras/figura 2.2.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.2.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.2.png  used on input line 
-162.
+159.
 (pdftex.def)             Requested size: 426.79134pt x 176.82724pt.
 
-Overfull \hbox (66.79134pt too wide) in paragraph at lines 162--163
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 159--160
  [][] 
  []
 
@@ -1081,40 +1081,40 @@ Overfull \hbox (66.79134pt too wide) in paragraph at lines 162--163
 File: ./Imagenes/Figuras/figura 2.3.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.3.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.3.png  used on input line 
-169.
+166.
 (pdftex.def)             Requested size: 341.43306pt x 198.91702pt.
 <./Imagenes/Figuras/figura 2.4.png, id=889, 426.75893pt x 307.26114pt>
 File: ./Imagenes/Figuras/figura 2.4.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.4.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.4.png  used on input line 
-177.
+174.
 (pdftex.def)             Requested size: 199.16928pt x 143.40005pt.
-LaTeX Info: Redefining \. on input line 183.
-LaTeX Info: Redefining \% on input line 183.
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
 [13 <./Imagenes/Figuras/figura 2.1.png>]
-LaTeX Info: Redefining \. on input line 183.
-LaTeX Info: Redefining \% on input line 183.
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
  [14 <./Imagenes/Figuras/figura 2.2.png> <./Imagenes/Figuras/figura 2.3.png>]
 
 Package natbib Warning: Citation `article_15' on page 15 undefined on input lin
-e 196.
+e 193.
 
 <./Imagenes/Figuras/2.1.png, id=903, 408.02437pt x 266.9975pt>
 File: ./Imagenes/Figuras/2.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/2.1.png>
-Package pdftex.def Info: ./Imagenes/Figuras/2.1.png  used on input line 199.
+Package pdftex.def Info: ./Imagenes/Figuras/2.1.png  used on input line 196.
 (pdftex.def)             Requested size: 251.9989pt x 164.90117pt.
-LaTeX Info: Redefining \. on input line 203.
-LaTeX Info: Redefining \% on input line 203.
+LaTeX Info: Redefining \. on input line 200.
+LaTeX Info: Redefining \% on input line 200.
 [15 <./Imagenes/Figuras/figura 2.4.png>]
 <./Imagenes/Figuras/figura 2.6.8.png, id=912, 550.055pt x 303.1325pt>
 File: ./Imagenes/Figuras/figura 2.6.8.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.8.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.8.png  used on input lin
-e 208.
+e 205.
 (pdftex.def)             Requested size: 431.9989pt x 238.07979pt.
 
-Overfull \hbox (71.9989pt too wide) in paragraph at lines 208--209
+Overfull \hbox (71.9989pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
@@ -1122,10 +1122,10 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 208--209
 File: ./Imagenes/Figuras/figura 2.6.9.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.9.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.9.png  used on input lin
-e 214.
+e 211.
 (pdftex.def)             Requested size: 431.9989pt x 233.73198pt.
 
-Overfull \hbox (71.9989pt too wide) in paragraph at lines 214--215
+Overfull \hbox (71.9989pt too wide) in paragraph at lines 211--212
  [][] 
  []
 
@@ -1133,95 +1133,95 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 214--215
 File: ./Imagenes/Figuras/figura 2.6.10.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.10.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.10.png  used on input li
-ne 220.
+ne 217.
 (pdftex.def)             Requested size: 431.9989pt x 318.01152pt.
 
-Overfull \hbox (71.9989pt too wide) in paragraph at lines 220--221
+Overfull \hbox (71.9989pt too wide) in paragraph at lines 217--218
  [][] 
  []
 
 
 Package natbib Warning: Citation `article_3' on page 16 undefined on input line
- 229.
+ 226.
 
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+[16 <./Imagenes/Figuras/2.1.png>]
 LaTeX Info: Redefining \. on input line 235.
 LaTeX Info: Redefining \% on input line 235.
-[16 <./Imagenes/Figuras/2.1.png>]
-LaTeX Info: Redefining \. on input line 238.
-LaTeX Info: Redefining \% on input line 238.
  [17 <./Imagenes/Figuras/figura 2.6.8.png> <./Imagenes/Figuras/figura 2.6.9.png
 >]
-LaTeX Info: Redefining \. on input line 258.
-LaTeX Info: Redefining \% on input line 258.
+LaTeX Info: Redefining \. on input line 255.
+LaTeX Info: Redefining \% on input line 255.
  [18 <./Imagenes/Figuras/figura 2.6.10.png>]
 <./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=933, 482.40225pt x 322.203
 75pt>
 File: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_evaluacion_clinica.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG  used 
-on input line 310.
+on input line 307.
 (pdftex.def)             Requested size: 337.67926pt x 225.54108pt.
-LaTeX Info: Redefining \. on input line 315.
-LaTeX Info: Redefining \% on input line 315.
+LaTeX Info: Redefining \. on input line 312.
+LaTeX Info: Redefining \% on input line 312.
 [19]
 <./Imagenes/Figuras/movil_historia_vida.PNG, id=940, 481.19775pt x 278.84175pt>
 
 File: ./Imagenes/Figuras/movil_historia_vida.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_historia_vida.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_historia_vida.PNG  used on in
-put line 323.
+put line 320.
 (pdftex.def)             Requested size: 336.83614pt x 195.18788pt.
 
 
 Package natbib Warning: Citation `article_16' on page 20 undefined on input lin
-e 337.
+e 334.
 
-LaTeX Info: Redefining \. on input line 338.
-LaTeX Info: Redefining \% on input line 338.
+LaTeX Info: Redefining \. on input line 335.
+LaTeX Info: Redefining \% on input line 335.
 [20 <./Imagenes/Figuras/movil_evaluacion_clinica.PNG>]
 <./Imagenes/Figuras/funcionamiento_bot.PNG, id=947, 416.30531pt x 242.40562pt>
 File: ./Imagenes/Figuras/funcionamiento_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/funcionamiento_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/funcionamiento_bot.PNG  used on inp
-ut line 343.
+ut line 340.
 (pdftex.def)             Requested size: 291.41173pt x 169.68277pt.
 <./Imagenes/Figuras/interaccion_usuario.PNG, id=949, 241.65282pt x 140.77594pt>
 
 File: ./Imagenes/Figuras/interaccion_usuario.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/interaccion_usuario.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/interaccion_usuario.PNG  used on in
-put line 351.
+put line 348.
 (pdftex.def)             Requested size: 169.1558pt x 98.54247pt.
 
 Underfull \vbox (badness 2772) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 355.
-LaTeX Info: Redefining \% on input line 355.
+LaTeX Info: Redefining \. on input line 352.
+LaTeX Info: Redefining \% on input line 352.
  [21 <./Imagenes/Figuras/movil_historia_vida.PNG>]
 <./Imagenes/Figuras/bienvenida_bot.PNG, id=958, 231.86626pt x 319.94531pt>
 File: ./Imagenes/Figuras/bienvenida_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/bienvenida_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/bienvenida_bot.PNG  used on input l
-ine 360.
+ine 357.
 (pdftex.def)             Requested size: 162.30525pt x 223.96017pt.
 <./Imagenes/Figuras/imagenes_bot.PNG, id=959, 243.15843pt x 237.13594pt>
 File: ./Imagenes/Figuras/imagenes_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/imagenes_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/imagenes_bot.PNG  used on input lin
-e 367.
+e 364.
 (pdftex.def)             Requested size: 170.20973pt x 165.994pt.
 <./Imagenes/Figuras/pregunta_bot.PNG, id=960, 234.1247pt x 420.06938pt>
 File: ./Imagenes/Figuras/pregunta_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/pregunta_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/pregunta_bot.PNG  used on input lin
-e 375.
+e 372.
 (pdftex.def)             Requested size: 163.88615pt x 294.04655pt.
-LaTeX Info: Redefining \. on input line 384.
-LaTeX Info: Redefining \% on input line 384.
+LaTeX Info: Redefining \. on input line 381.
+LaTeX Info: Redefining \% on input line 381.
  [22 <./Imagenes/Figuras/funcionamiento_bot.PNG> <./Imagenes/Figuras/interaccio
 n_usuario.PNG>]
-LaTeX Info: Redefining \. on input line 390.
-LaTeX Info: Redefining \% on input line 390.
+LaTeX Info: Redefining \. on input line 387.
+LaTeX Info: Redefining \% on input line 387.
  [23 <./Imagenes/Figuras/bienvenida_bot.PNG> <./Imagenes/Figuras/imagenes_bot.P
 NG>])
 LaTeX Info: Redefining \. on input line 149.
@@ -3075,7 +3075,7 @@ l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk><C:/Users/Patricia/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/P
 atricia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/U
 sers/Patricia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on TFMTeXiS.pdf (154 pages, 24735579 bytes).
+Output written on TFMTeXiS.pdf (154 pages, 24735363 bytes).
 PDF statistics:
  2577 PDF objects out of 2984 (max. 8388607)
  444 named destinations out of 1000 (max. 500000)
