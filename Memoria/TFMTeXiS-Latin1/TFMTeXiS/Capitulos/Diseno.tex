@@ -596,12 +596,10 @@ Luego en la página principal del familiar (Figura \ref{fig:family_ses}) vemos el
 
 \section{Prototipo de Eva Verdú Rodríguez}
 
-Este diseño fue realizado utilizando la herramienta de dibujo Clip Paint Studio.
-
-Este prototipo empieza con una pantalla principal donde el terapeuta o el cuidador puede iniciar sesión. Según quién inicie sesión aparecerán pantallas distintas.
+Este diseño fue realizado utilizando la herramienta de dibujo Clip Paint Studio. Este prototipo empieza con una pantalla principal donde el terapeuta o el cuidador puede iniciar sesión. Según quién inicie sesión aparecerán pantallas distintas, en las siguientes secciones se explican cada una de estas pantallas según quien haya iniciado sesión.
 
 \subsection{Sesión Terapeuta}
-En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqueda de paciente (Figura \ref{fig:pro_eva_bus_paciente}) donde tendrá que elegir uno entre los que tenga asignados. 
+En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqueda de paciente (Figura \ref{fig:pro_eva_bus_paciente}) donde tendrá que elegir uno entre los que tenga asignados. Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \ref{fig:pro_eva_menu_paciente}) donde aparecerán 6 opciones:
 
 \begin{figure}[htp]
 	\centering
@@ -609,17 +607,6 @@ En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqu
   	\caption{Búsqueda del paciente del prototipo de Eva}
 	\label{fig:pro_eva_bus_paciente}
 \end{figure}
-	
-Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \ref{fig:pro_eva_menu_paciente}) donde aparecerán 6 opciones:
-
-\begin{enumerate}
-	\item Preparar sesión.
-	\item Realizar sesión.
-	\item Historia de vida.
-	\item Evaluación e informes.
-	\item Menú.
-	\item Configuración.
-\end{enumerate}
 
 \begin{figure}[htp]
   	\centering
@@ -628,8 +615,9 @@ Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \re
 	\label{fig:pro_eva_menu_paciente}
 \end{figure}
 
-\begin{itemize}
-	\item \textbf{Preparar sesión:} Al pulsar el botón de ``Preparar sesión'' aparecerá una pantalla con dos opciones(Figura \ref{fig:pro_eva_realizar_ss}):
+\begin{enumerate}
+
+	\item \textbf{Preparar sesión:} Al pulsar el botón de ``Preparar sesión'' aparecerá una pantalla con dos opciones (Figura \ref{fig:pro_eva_realizar_ss}):
 	 
 	\begin{figure}[htp]
 	  	\centering
@@ -639,7 +627,7 @@ Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \re
 	\end{figure}
 	
 	\begin{itemize}
-		\item ``Ver el historial de sesiones'', donde se podrá ver una lista de las sesiones realizadas y poder ver todos los detalles sobre estas (Figura \ref{fig:pro_eva_historial_ss}).
+		\item Ver el historial de sesiones: donde se podrá ver una lista de las sesiones realizadas y poder ver todos los detalles sobre estas (Figura \ref{fig:pro_eva_historial_ss}).
 		
 		\begin{figure}[htp]
 	  		\centering
@@ -648,7 +636,7 @@ Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \re
 			\label{fig:pro_eva_historial_ss}
 		\end{figure}
 		
-		\item ``Crear una nueva sesión'', para crear una nueva sesión, podrás seleccionar la opción de coger una sesión anterior. Esto autocompletará los detalles de la sesión, que después se podrán modificar en caso de que el terapeuta no quiera que la sesión sea exactamente igual. En esa misma pantalla, tendrás la lista de todos los recuerdos. Estos serán seleccionables, para que el terapeuta pueda elegir cuales son útiles para la sesión. Cada recuerdo dispone de un botón con forma de ojo que abrirá una ventana emergente donde se podrá ver los detalles del recuerdo en concreto (Figura \ref{fig:pro_eva_crear_ss}).
+		\item Crear una nueva sesión: para crear una nueva sesión, podrás seleccionar la opción de coger una sesión anterior. Esto autocompletará los detalles de la sesión, que después se podrán modificar en caso de que el terapeuta no quiera que la sesión sea exactamente igual. En esa misma pantalla, tendrás la lista de todos los recuerdos. Estos serán seleccionables, para que el terapeuta pueda elegir cuales son útiles para la sesión. Cada recuerdo dispone de un botón con forma de ojo que abrirá una ventana emergente donde se podrá ver los detalles del recuerdo en concreto (Figura \ref{fig:pro_eva_crear_ss}).
 		
 		 \begin{figure}[htp]
 	  		\centering
@@ -659,7 +647,7 @@ Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \re
 		
 	\end{itemize}
 
-	\item \textbf{Realizar sesión:} Al pulsar el botón de ``Realizar sesión'' se abrirá una pantalla (Figura \ref{fig:pro_eva_realizar_ss}) con una lista de sesiones. Al pulsar, aparecerán los datos guardados sobre esa sesión con el objetivo, intereses y los recuerdos (que se podrán ver en detalle con el botón en forma de ojo explicado anteriormente). Al final de la pantalla aparecerá el botón de ``Finalizar y evaluar'' que te llevará a una pantalla (Figura \ref{fig:pro_eva_finalizar_ss}) para rellenar el informe de seguimiento. En este se tendrá que rellenar: la sesión del informe (que se hace automáticamente), el informe y los recuerdo utilizados que se podrán calificar. Al darle a calificar el recuerdo, aparecerá una ventana emergente donde te pedirá rellenar los datos para ver como el paciente ha reaccionado al recuerdo en esa sesión.
+	\item \textbf{Realizar sesión:} Al pulsar el botón de ``Realizar sesión'' se abrirá una pantalla (Figura \ref{fig:pro_eva_realizar_ss}) con una lista de sesiones. Al pulsar, aparecerán los datos guardados sobre esa sesión con el objetivo, intereses y los recuerdos (que se podrán ver en detalle con el botón en forma de ojo explicado anteriormente). Al final de la pantalla aparecerá el botón de ``Finalizar y evaluar'' que te llevará a una pantalla para rellenar el informe de seguimiento (Figura \ref{fig:pro_eva_finalizar_ss}). En este se tendrá que rellenar: la sesión del informe (que se hace automáticamente), el informe y los recuerdo utilizados que se podrán calificar. Al darle a calificar el recuerdo, aparecerá una ventana emergente donde te pedirá rellenar los datos para ver como el paciente ha reaccionado al recuerdo en esa sesión.
 	
 	\begin{figure}[htp]
 	  	\centering
@@ -686,7 +674,7 @@ Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \re
 	
 	\item \textbf{Evaluación e informes:} Al pulsar este botón, nos llevará a una pantalla con tres opciones: 
 	\begin{itemize}
-		\item ``Crear una nueva evaluación'', donde el terapeuta escribirá como ha ido la evaluación trimestral (Figura \ref{fig:pro_eva_crear_evalu}).
+		\item Crear una nueva evaluación: el terapeuta escribirá como ha ido la evaluación trimestral (Figura \ref{fig:pro_eva_crear_evalu}).
 		
 		\begin{figure}[htp]
 	  		\centering
@@ -695,7 +683,7 @@ Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \re
 			\label{fig:pro_eva_crear_evalu}
 		\end{figure}
 		
-		\item ``Mostrar las evaluaciones'' donde aparecerá la lista de evaluaciones realizadas y donde se podrán ver en detalle (Figura \ref{fig:pro_eva_mostrar_evalu}).
+		\item Mostrar las evaluaciones: aparecerá la lista de evaluaciones realizadas y se podrán ver en detalle (Figura \ref{fig:pro_eva_mostrar_evalu}).
 		
 		\begin{figure}[htp]
 	  		\centering
@@ -704,7 +692,7 @@ Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \re
 			\label{fig:pro_eva_mostrar_evalu}
 		\end{figure}
 		
-		\item ``Mostrar informes de seguimiento'' donde se mostrará una lista con todos los informes y se podrán ver los detalles (Figura \ref{fig:pro_eva_mostrar_infor}).
+		\item Mostrar informes de seguimiento: se mostrará una lista con todos los informes y se podrán ver los detalles (Figura \ref{fig:pro_eva_mostrar_infor}).
 		
 		\begin{figure}[htp]
 	  		\centering
@@ -764,8 +752,8 @@ Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \re
 	\end{figure}
 	
 	\begin{itemize}
-		\item ``Calendario de actividades'' (Figura \ref{fig:pro_eva_calendario}), donde aparecerá un calendario y el terapeuta podrá añadir nuevas tareas a sus pacientes.
-		\item ``Asignar a más terapeutas'' (Figura \ref{fig:pro_eva_asig_tera}) donde el terapeuta puede asignar al paciente a otro terapeuta mediante una lista seleccionable.
+		\item Calendario de actividades (Figura \ref{fig:pro_eva_calendario}): aparecerá un calendario y el terapeuta podrá añadir nuevas tareas a sus pacientes.
+		\item Asignar a más terapeutas (Figura \ref{fig:pro_eva_asig_tera}): el terapeuta puede asignar al paciente a otro terapeuta mediante una lista seleccionable.
 	\end{itemize}
 	
 	\begin{figure}[htp]
@@ -782,7 +770,7 @@ Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \re
 		\label{fig:pro_eva_asig_tera}
 	\end{figure}
 	
-\end{itemize}	
+\end{enumerate}	
 
 \subsection{Sesión acompañante o cuidador}
 En este caso tanto el menú como la pantalla de inicio cambian. En la pantalla de inicio se visualizará en calendario con las distintas tareas asignadas por el terapeuta. En el menú (Figura \ref{fig:pro_eva_c_menu}) las opciones son:
