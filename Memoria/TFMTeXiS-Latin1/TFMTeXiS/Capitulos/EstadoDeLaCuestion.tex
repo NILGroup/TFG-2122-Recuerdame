@@ -139,7 +139,8 @@ Con todo lo anteriormente mencionado se crea la historia de vida del paciente qu
 El proyecto CANTOR dentro del cual se encentra enmarcado este TFG, propone el desarrollo de una herramienta digital integrada capaz de utilizar tecnologías de Inteligencia Artificial con el fin de crear historias de vida de un paciente\footnote{https://www.ucm.es/itc/noticias/40943}.
 En este apartado hablaremos de cuatro trabajos que son parte del proyecto CANTOR, realizados por antiguos alumnos de la universidad y que están muy relacionados con el objetivo principal de este TFG.
 
-\subsection{Generación de historias a partir de una base de conocimiento} 
+\subsection{Generación de historias a partir de una base de conocimiento}
+\label{tfg:gen_his_base_cono} 
 El objetivo de este TFG \citep{article_14} era crear una herramienta que permitiera registrar todos los recuerdos de los pacientes para crear su Historia de Vida.
 
 Aunque el objetivo inicial era crear una Historia de Vida a partir de los recuerdos, la aplicación final creada como resultado de este TFG, crea relaciones de palabras e imágenes, a partir de una serie de palabras iniciales recomendadas, para unir todos los recuerdos del paciente y generar una serie de estadísticas para ver su progreso. Para construir estas relaciones, la aplicación va guiando al terapeuta para que en cada sesión se trate un tema concreto como por ejemplo un hobbie o una celebración. Una vez que el terapeuta ha iniciado sesión en la aplicación, se puede elegir el tipo de sesión:
@@ -190,6 +191,7 @@ Una vez, analizados los resultados de la evaluación de la aplicación, se sacaron
 
 		
 \subsection{Extracción de información personal a partir de redes sociales para la creación de un libro de vida}
+\label{tfg:ext_inf_per_por_red_soc}
 El objetivo de este TFG \citep{article_15} era crear una aplicación que sirviera de ayuda a los terapeutas ocupacionales para crear una historia de vida de los pacientes con problemas de memoria. La idea era extraer información del paciente de forma automática de sus redes sociales y con dicha información crear su historia de vida. Para llevar a cabo el trabajo combinaron técnicas de extracción y tratamiento de datos en la red social Facebook, e información extraída de Google. Los datos extraídos del paciente de Facebook y Google se mostraban en una interfaz mediante tablas, mapas, líneas de tiempo y galerías de fotos. En la Figura \ref{flujo_app} podemos ver el flujo de la aplicación por el que el usuario pasa para la obtención y visualización de los datos. En primer lugar el usuario realizará el login en la aplicación, se obtienen los diferentes datos de Facebook y Google, se procesaran esos datos, y por último se visualiza en la aplicación.
 \begin{figure}[!ht]
 \centering
@@ -221,6 +223,7 @@ Todos los datos descargados del paciente y procesados, se podrán visualizar en l
 
 		
 \subsection{Sistema de asistencia para cuidado de enfermos con alzhéimer}
+\label{tfg:sis_asis_cui_enf_alz}
 %\citep{article_3}
 % \footnote{Oliveras, D. B., Muñoz, C. C., Ulloa, D. P.yY Álvarez, C. S. (2021) Sistema de asistencia para cuidados de enfermos del Alzheimer}
 En este TFG \cite{article_3} desarrollaron una aplicación de soporte para la realización de terapias basadas en reminiscencia.
@@ -331,6 +334,7 @@ La aplicación creada en este TFG, permite:
 
 
 \subsection{Extracción de preguntas a partir de imágenes para personas con problemas de memoria mediante técnicas de Deep Learning}
+\label{tfg:ext_pre_por_img_alz}
 Este proyecto \citep{article_16} nace con la intención de ayudar a las personas con pérdida de memoria a recordar aspectos de sus vidas a partir de técnicas de Deep Learning como redes convolucionales y recurrentes. Para lograrlo se intentó desarrollar un sistema capaz de extraer preguntas de fotografías que puedan presentar recuerdos para las personas con problemas de memoria, creando un bot que simula una sesión de terapia de reminiscencia. Para ello, el usuario de la aplicación tiene que enviarle las imágenes al bot y este se encargará de enviarle las preguntas generadas por la red neuronal. A partir de aquí, el usuario deberá recordar todo lo posible para poder responder a las preguntas y conseguir ejercitar su memoria.
 
 El proyecto se divide en dos módulos que se relacionan entre sí para poder simular la terapia de reminiscencia, el bot, que utilizamos a través de  Telegram y una red neuronal programada para la generación de preguntas visuales. Todos los datos, se almacenan, para luego ser utilizados en la generación de preguntas. En la Figura \ref{fig:funcionamiento_bot} se puede ver el flujo del trabajo del bot.
@@ -382,12 +386,12 @@ Tras haber estudiado los trabajos relacionados, hemos concluido que:
 	\item La mayoría hace una evaluación del estado del paciente.
 	
 \end{itemize}
-El único trabajo que realmente crea una historia de vida es el de asistencia para cuidado de enfermos con alzhéimer. Ya que el resto se centran en otros conceptos, también relacionados con la historia de vida y las terapias de reminiscencia, pero con otros objetivos. Como pueden ser:
+El único trabajo que realmente crea una historia de vida es el de asistencia para cuidado de enfermos con alzhéimer (Sección \ref{tfg:sis_asis_cui_enf_alz}) ya que el resto se centran en otros aspectos, también relacionados con la historia de vida y las terapias de reminiscencia, pero con otros objetivos. Como pueden ser:
 \begin{itemize}
-	\item La facilitación de recogida de datos de una persona a través de las redes sociales (Trabajo relacionado de ``Extracción de información personal a partir de redes sociales para la creación de un libro de vida'').
+	\item La facilitación de recogida de datos de una persona a través de las redes sociales (Sección \ref{tfg:ext_inf_per_por_red_soc}).
 	\item La facilitación de la realización de las terapias mediante:
 	\begin{itemize}
-		\item Un sistema capaz de relacionar palabras (Trabajo relacionado de ``Generación de historias a partir de una base de conocimiento'').
-		\item Un sistema capaz de extraer preguntas a través de imágenes (Trabajo relacionado de `` Extracción de preguntas a partir de imágenes para personas con problemas de memoria mediante técnicas de Deep Learning'' ).
+		\item La relación entre palabras (Sección \ref{tfg:gen_his_base_cono}).
+		\item La extracción de preguntas a través de imágenes (Sección \ref{tfg:ext_pre_por_img_alz}).
 	\end{itemize}	
 \end{itemize}
