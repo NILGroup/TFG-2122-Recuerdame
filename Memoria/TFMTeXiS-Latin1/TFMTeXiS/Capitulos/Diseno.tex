@@ -1,0 +1,1136 @@
+\chapter{Diseño}
+\label{cap:disenoDelTFG}
+
+Cada uno de los 4 integrantes del grupo hemos hecho un diseño de la aplicación siguiendo los requisitos que hemos obtenidos de las entrevistas con los expertos. Una vez hemos hecho estos prototipos, nos hemos reunido para que cada uno presentara su diseño al resto del grupo y entre todos hemos elegido cuál es el que más se adapta y cubre las funcionalidades necesarias. Como se ha optado por utilizar un diseño centrado en el usuario, una vez acabemos el diseño final, nos reuniremos con los usuarios finales para que puedan valorar si es lo que realmente necesitan.
+
+\section{Prototipo de Cristina Barquilla Blanco}
+\label{cap:disenio_cris}
+El prototipo de Cristina se diseñó con la herramienta Balsamiq.
+
+Una vez el terapeuta ha iniciado sesión, lo primero que puede hacer es seleccionar un paciente de un listado con los pacientes que tiene asociados. En este listado se muestra el nombre, los apellidos, el género y la edad de cada paciente tal y como se muestra en la Figura \ref{fig:3.2.1_listado_pacientes}. El menú inicial que se muestra tiene las siguientes opciones: pacientes, mensajería, asignar paciente y cerrar sesión. En esta pantalla se puede añadir, modificar o borrar un paciente.
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes}
+  	\caption{Listado de los pacientes del terapeuta en el prototipo de Cristina.}
+	\label{fig:3.2.1_listado_pacientes}
+\end{figure}
+
+Al seleccionar un paciente de la lista se puede ver otro menú con varias opciones para realizar diferentes acciones con respecto al paciente seleccionado y ver qué paciente ha seleccionado (ver Figura \ref{fig:3.2.1_ver_paciente}). Las diferentes opciones del menú son:
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente}
+  	\caption{Paciente seleccionado en el prototipo de Cristina.}
+	\label{fig:3.2.1_ver_paciente}
+\end{figure}
+
+\subsection{Pacientes}
+Esta opción sirve para poder volver al listado de pacientes de la Figura \ref{fig:3.2.1_listado_pacientes} y poder elegir otro paciente.
+
+\subsection{Sesiones}
+En este menú se puede ver un listado de las sesiones de un paciente ordenadas cronológicamente descendente por fecha (ver Figura \ref{fig:3.2.1_listado_sesiones}) y, donde se muestran los siguientes datos de cada sesión: fecha, interés, descripción y el estado (si se ha finalizado la sesión o no). Además, se permite ver, modificar o borrar cada sesión.
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones}
+  	\caption{Listado de las sesiones de un paciente en el prototipo de Cristina.}
+	\label{fig:3.2.1_listado_sesiones}
+\end{figure}
+
+La aplicación permite crear una sesión mediante un formulario con 3 pasos:
+	\begin{enumerate}
+		\item Datos de la sesión. Se podrán añadir la fecha de la sesión, el interés, el objetivo y la descripción. Además, se mostrará automáticamente el terapeuta que está registrando la sesión y se guardará en el registro (ver Figura \ref{fig:3.2.1_nueva_sesion}).
+			\begin{figure}[!ht]
+  				\centering
+		  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion}
+		  		\caption{Crear una sesión: datos de la sesión en el prototipo de Cristina.}
+				\label{fig:3.2.1_nueva_sesion}
+			\end{figure}
+				
+		\item Añadir recuerdos. La aplicación permitirá añadir los recuerdos registrados de ese paciente en base al interés seleccionado en los datos de la sesión, mediante un buscador donde se mostrarán todos los recuerdos del paciente ordenados cronológicamente y con la siguiente información: nombre del recuerdo, etapa, etiqueta, descripción y el tipo de archivo multimedia que contiene. En el buscador se podrán aplicar los siguientes filtros: fecha, etapa, categoría, emoción y tipo de archivo multimedia que facilitará la búsqueda de los recuerdos (ver Figura \ref{fig:3.2.1_nueva_sesion_recuerdos}).
+			\begin{figure}[!ht]
+  				\centering
+		  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos}
+		  		\caption{Crear una sesión: añadir recuerdos en el prototipo de Cristina.}
+				\label{fig:3.2.1_nueva_sesion_recuerdos}
+			\end{figure}
+				
+		\item Confirmar. Por último, se mostrará una pantalla de confirmación de datos donde se podrán ver todos los datos y recuerdos introducidos como se muestra en la Figura \ref{fig:3.2.1_nueva_sesion_confirmacion}.
+			\begin{figure}[!ht]
+  				\centering
+		  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion}
+		  		\caption{Crear una sesión: confirmación en el prototipo de Cristina.}
+				\label{fig:3.2.1_nueva_sesion_confirmacion}
+			\end{figure}	
+	\end{enumerate}
+	
+Mediante el icono de editar de la lista de sesiones, se puede acceder al detalle de una sesión donde se pueden ver los siguientes datos: fecha, interés, terapeuta que ha creado la sesión, objetivo y descripción (ver Figura \ref{fig:3.2.1_ver_sesion}).
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion}
+  	\caption{Datos de una sesión en el prototipo de Cristina.}
+	\label{fig:3.2.1_ver_sesion}
+\end{figure}
+		
+Además, se permite finalizar la sesión mediante un botón que muestra un formulario donde poder registrar un informe de seguimiento donde se podrá indicar la fecha, las reacciones del paciente y las observaciones necesarias (ver Figura \ref{fig:3.2.1_finalizar_sesion}). Este informe se podrá imprimir y vendrán reflejados tanto los datos del informe como los datos del paciente y un listado con los recuerdos de la sesión del informe donde se podrá ver el estado, etiqueta, emoción, puntuación y descripción de cada recuerdo (ver Figura \ref{fig:3.2.1_informe_seguimiento}).		
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion}
+  	\caption{Datos de informe de seguimiento en el prototipo de Cristina.}
+	\label{fig:3.2.1_finalizar_sesion}
+\end{figure}
+		
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento}
+  	\caption{Informe de seguimiento en el prototipo de Cristina.}
+	\label{fig:3.2.1_informe_seguimiento}
+\end{figure}
+
+También, se podrá ver un listado de los recuerdos de una sesión con los siguientes datos: nombre, fecha, etapa, interés, estado y tipo de archivo multimedia (ver Figura \ref{fig:3.2.1_ver_sesion_recuerdos}).
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos}
+  	\caption{Recuerdos de una sesión.}
+	\label{fig:3.2.1_ver_sesion_recuerdos}
+\end{figure}	
+		
+Se puede añadir un nuevo recuerdo de 2 formas distintas:
+\begin{itemize}
+	\item Añadiendo un recuerdo ya existente en otra sesión como se puede ver en la Figura \ref{fig:3.2.1_nuevo_recuerdo_existente}. Se podrá ver una lista de recuerdos que mediante un buscador se podrán elegir los recuerdos que se quieran añadir a la sesión. Los filtros son: fecha, etapa, categoría, emoción y tipo de archivo.
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente}
+		  	\caption{Añadir un recuerdo ya existente a una sesión en el prototipo de Cristina.}
+			\label{fig:3.2.1_nuevo_recuerdo_existente}
+		\end{figure}	
+		
+	\item Creando un nuevo recuerdo donde se podrá añadir la siguiente información: nombre del recuerdo, fecha, estado, etiqueta, puntuación, descripción, etapa, emoción, categoría, personas relacionadas y archivos multimedia (ver Figura \ref{fig:3.2.1_nuevo_recuerdo}).
+		\begin{figure}[!ht]
+  			\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo}
+		  	\caption{Datos del recuerdo de una sesión en el prototipo de Cristina.}
+			\label{fig:3.2.1_nuevo_recuerdo}
+		\end{figure}	
+		
+\end{itemize}
+
+De la misma forma que se puede crear un nuevo recuerdo, la aplicación permite acceder a los datos de un recuerdo o modificarlos. Donde se podrán ver todos los datos mencionados en la Figura \ref{fig:3.2.1_nuevo_recuerdo}.
+		
+Dentro de un recuerdo se podrán añadir archivos multimedia de dos formas distintas:
+	\begin{itemize}
+		\item Añadir un nuevo archivo donde se podrá seleccionar el tipo de archivo (imagen, audio o vídeo) y se podrá adjuntar el archivo (ver Figura \ref{fig:3.2.1_nuevo_multimedia}).
+			\begin{figure}[!ht]
+  				\centering
+			  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia}
+		  		\caption{Añadir un archivo multimedia nuevo a un recuerdo en el prototipo de Cristina.}
+				\label{fig:3.2.1_nuevo_multimedia}
+			\end{figure}	
+		
+		\item Añadir un archivo ya existente en otro recuerdo (ver Figura \ref{fig:3.2.1_nuevo_multimedia_existente}).
+			\begin{figure}[!ht]
+  				\centering
+		  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente}
+		  		\caption{Añadir un archivo multimedia ya existente a un recuerdo en el prototipo de Cristina.}
+				\label{fig:3.2.1_nuevo_multimedia_existente}
+			\end{figure}
+	\end{itemize}	
+		
+También, desde la pantalla de datos de un recuerdo, se puede acceder al listado de las personas relacionadas con ese recuerdo como se puede ver en la Figura \ref{fig:3.2.1_listado_personas_relacionadas}. En este listado se muestra el nombre, los apellidos y el tipo de relación. Y, se puede ver, modificar o borrar una persona relacionada con el recuerdo. Dentro de la pantalla de datos se pueden ver o modificar los siguientes datos: nombre, apellidos, teléfono, ocupación, email y tipo de relación (ver Figura \ref{fig:3.2.1_persona_relacionada}).
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_listado_personas_relacionadas}
+  	\caption{Listado de personas relacionadas de un recuerdo del prototipo de Cristina.}
+	\label{fig:3.2.1_listado_personas_relacionadas}
+\end{figure}	
+		
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada}
+  	\caption{Datos de una persona relacionada de un recuerdo del prototipo de Cristina.}
+	\label{fig:3.2.1_persona_relacionada}
+\end{figure}	
+
+\subsection{Evaluaciones. Informes de seguimiento}
+Se podrán visualizar todos los informes de seguimiento del paciente y descargarlos (ver Figura \ref{fig:3.2.1_listado_informes_seguimiento}).
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento}
+	\caption{Listado de los informes de seguimiento de un paciente del prototipo de Cristina.}
+	\label{fig:3.2.1_listado_informes_seguimiento}
+\end{figure}	
+
+\subsection{Evaluaciones. Evaluación Clínica}
+Se podrá ver un listado de las evaluaciones clínicas del paciente que se realizan cada 3 meses ordenadas cronológicamente tal y como se puede ver en la Figura \ref{fig:3.2.1_listado_evaluaciones}. En este listado se muestra la fecha, el GDS y el estado del paciente. Dentro de los datos de la evaluación clínica se pueden ver los siguientes datos: nombre, apellidos, GDS, estado, diagnóstico y observaciones. De estos campos, el nombre y apellidos se cargan automáticamente del paciente y no se pueden modificar (ver Figura \ref{fig:3.2.1_evaluacion}).
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones}
+  	\caption{Evaluaciones clínicas del prototipo de Cristina.}
+	\label{fig:3.2.1_listado_evaluaciones}
+\end{figure}	
+
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion}
+  	\caption{Datos de una evaluación clínica del prototipo de Cristina.}
+	\label{fig:3.2.1_evaluacion}
+\end{figure}	
+
+\subsection{Historia de Vida}
+Mediante esta opción se puede generar un ``libro'' de la Historia de Vida del paciente con todos los recuerdos ordenados cronológicamente. La aplicación permite filtrar por fecha, etapa y categoría (ver Figura \ref{fig:3.2.1_historia_vida}). Con estos filtros, se genera una Historia de Vida que mostrará uno a uno los recuerdos y que se podrá pasar de un recuerdo a otro hacia adelante y hacia atrás. El recuerdo mostrará una descripción, la etapa, la categoría y el archivo multimedia si lo tiene (ver Figura \ref{fig:3.2.1_historia_vida_libro}).
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida}
+  	\caption{Filtros de la Historia de Vida del prototipo de Cristina.}
+	\label{fig:3.2.1_historia_vida}
+\end{figure}	
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro}
+  	\caption{Historia de vida del prototipo de Cristina.}
+	\label{fig:3.2.1_historia_vida_libro}
+\end{figure}	
+
+\subsection{Calendario}
+La aplicación permite ver tanto al terapeuta como al cuidador del paciente un calendario con los actividades que el cuidador puede realizar con el paciente (ver Figura \ref{fig:3.2.1_calendario}). Y también permite añadir estas actividades por parte del terapeuta al calendario tal y como se puede ver en la Figura \ref{fig:3.2.1_actividad}.
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_calendario}
+  	\caption{Calendario de actividades del prototipo de Cristina.}
+	\label{fig:3.2.1_calendario}
+\end{figure}	
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_actividad}
+  	\caption{Datos de la actividad del prototipo de Cristina.}
+	\label{fig:3.2.1_actividad}
+\end{figure}	
+
+\subsection{Mesajería}
+Esta opción permite que tanto el terapeuta como el cuidador del paciente puedan mandarse correos entre ellos. Los datos que se deben indicar son: fecha, email y mensaje (ver Figura \ref{fig:3.2.1_mensajeria_terapeuta}).
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta}
+  	\caption{Mensajería entre terapeuta y cuidador del paciente del prototipo de Cristina.}
+	\label{fig:3.2.1_mensajeria_terapeuta}
+\end{figure}	
+
+\subsection{Asignar pacientes}
+Mediante esta opción, el terapeuta podrá asignar sus pacientes a otros terapeutas. Para ello, deberá seleccionar el terapeuta al que quiere asignarle uno o varios pacientes y podrá asignar los pacientes seleccionados mediante una lista donde aparecen el nombre y apellidos de cada uno de sus pacientes (ver Figura \ref{fig:3.2.1_asignar_pacientes}).
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacientes}
+  	\caption{Asignar pacientes a otro terapeuta del prototipo de Cristina.}
+	\label{fig:3.2.1_asignar_pacientes}
+\end{figure}
+
+El cuidador del paciente tendrá acceso a la aplicación pero solo a una serie de opciones:
+\subsection{Calendario}
+Se podrá ver las actividades que ha añadido el terapeuta (ver Figura \ref{fig:3.2.1_calendario_cuidador}).
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador}
+  	\caption{Calendario de actividades del paciente.}
+	\label{fig:3.2.1_calendario_cuidador}
+\end{figure}
+
+\subsection{Historia de Vida}
+Para poder realizar las actividades, al cuidador se le permite ver la Historia de Vida del paciente. Y, al igual, que el terapeuta, podrá filtrar por fecha, etapa y categoría (ver Figura \ref{fig:3.2.1_historia_vida_cuidador}) y, se generará un ``libro'' con la Historia de vida del paciente (ver Figura \ref{fig:3.2.1_historia_vida_libro_cuidador}).
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador}
+  	\caption{Filtros para generar la Historia de Vida del paciente del prototipo de Cristina.}
+	\label{fig:3.2.1_historia_vida_cuidador}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador}
+  	\caption{Historia de Vida del paciente del prototipo de Cristina.}
+	\label{fig:3.2.1_historia_vida_libro_cuidador}
+\end{figure}
+
+\subsection{Mensajería}
+El cuidador tiene la opción de enviar un correo al terapeuta mediante esta opción donde podrá indicar la fecha, el email y el mensaje a enviar tal y como se muestra en la Figura \ref{fig:3.2.1_mensajeria_cuidador}.
+\begin{figure}[!ht]
+	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador}
+  	\caption{Mensajería entre el terapeuta y el cuidador del paciente del prototipo de Cristina.}
+	\label{fig:3.2.1_mensajeria_cuidador}
+\end{figure}
+
+
+\section{Prototipo de Patricia Díez García}
+El diseño de este prototipo inicial se ha realizado en papel ya que se trata de una base inicial para un futuro prototipo final el cual será más detallado. Además este prototipo se ha diseñado diferenciando dos perspectivas, la primera respecto al cuidador (ver Figura \ref{fig:f.2}) y a continuación desde el punto de vista del terapeuta (ver Figura \ref{fig:f.1}).
+
+\subsection{Vista cuidador}
+En primer lugar, podemos observar la aplicación desde el punto de vista del cuidador, donde en un principio va a poder iniciar sesión introduciendo su usuario y una contraseña (ver Figura \ref{fig:f.2}).
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.2}
+  	\caption{Inicio sesión cuidador del prototipo de Patricia.}
+	\label{fig:f.2}
+\end{figure}
+
+Una vez que el cuidador se registre y pulse en el botón de aceptar será llevado a la pantalla de Sesión cuidador (ver Figura \ref{fig:f.3}). En la pantalla del cuidador tendrá varias opciones a elegir:
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.3}
+  	\caption{Sesión del cuidador del prototipo de Patricia.}
+	\label{fig:f.3}
+\end{figure}
+
+\begin{itemize}
+	\item Datos cuidador: accede a los datos del cuidador como podemos observar en la Figura \ref{fig:f.4}.
+	
+	\begin{figure}[!ht]
+	  	\centering
+  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.4}
+  		\caption{Datos cuidador del prototipo de Patricia.}
+		\label{fig:f.4}
+	\end{figure}
+	
+	\item Calendario de actividades: son aquellas puestas por el terapeuta, en la pantalla podemos observar la fecha en la que se tiene que realizar la actividad, el nombre de la actividad a realizar y una descripción detallada por parte del terapeuta para poder llevarla a cabo. (ver Figura \ref{fig:f.5}).
+
+	\begin{figure}[!ht]
+	  	\centering
+  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.5}
+  		\caption{Calendario de actividades para el cuidador del prototipo de Patricia.}
+		\label{fig:f.5}
+	\end{figure}
+
+	\item Visualizar la historia de vida: en esta pantalla el cuidador podrá observar los datos de su familiar asociado, nombre, apellidos, foto, así como los recuerdos asociados al mismo, la multimedia (imágenes, vídeos y audio) y personas relacionadas entre otros datos. (ver Figura \ref{fig:f.9}).
+	
+	\begin{figure}[!ht]
+	  	\centering
+  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.9}
+  		\caption{Historia de vida del paciente del prototipo de Patricia.}
+		\label{fig:f.9}
+	\end{figure}
+	
+	\item Enviar un mensaje al terapeuta.
+	
+	\item Finalizar.
+	
+\end{itemize}
+
+\subsection{Vista terapeuta}
+
+El terapeuta tendrá una pantalla de inicio de sesión en ella deberá introducir el usurario, el número de colegiado y una contraseña (ver Figura \ref{fig:f.1}).
+
+\begin{figure}[!ht]
+ 	\centering
+	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.1}
+	\caption{Inicio sesión terapeuta del prototipo de Patricia.}
+	\label{fig:f.1}
+\end{figure}
+
+Una vez el terapeuta inicie sesión encontrará diversas opciones (ver Figura \ref{fig:f.6}):
+
+\begin{figure}[!ht]
+ 	\centering
+	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.6}
+	\caption{Sesión terapeuta del prototipo de Patricia.}
+	\label{fig:f.6}
+\end{figure}
+
+\begin{itemize}
+
+	\item Registrar cuidador: en esta pantalla podremos ver unos campos de registro donde el terapeuta tendrá la posibilidad de poner un nombre y unos apellidos, el familiar asociado a ese cuidador, una contraseña y finalmente un correo electrónico para poder ponerse en contacto con el de ser necesario (ver Figura \ref{fig:f.7}).
+	
+	\begin{figure}[!ht]
+ 		\centering
+		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.7}
+		\caption{Resistro del cuidador del prototipo de Patricia.}
+		\label{fig:f.7}
+	\end{figure}
+	
+	\item Selección de paciente: un desplegable donde el terapeuta elegirá el paciente con el que quiere trabajar y que posteriormente realizará las sesiones (ver Figura \ref{fig:f.8}). En ésta podremos observar varias opciones:
+	
+	\begin{figure}[!ht]
+ 		\centering
+		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.8}
+		\caption{Sesión del terapeuta con el paciente del prototipo de Patricia.}
+		\label{fig:f.8}
+	\end{figure}
+
+\begin{itemize}
+
+	\item Preparar una sesión: cuando el terapeuta decida preparar una sesión tendrá dos posibilidades: (ver Figura \ref{fig:f.10}).
+	
+		\begin{figure}[!ht]
+		 		\centering
+			\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.10}
+			\caption{Preparación de la sesión del prototipo de Patricia.}
+			\label{fig:f.10}
+		\end{figure}
+		
+		\begin{itemize}
+			\item Ver las sesiones Anteriores (ver Figura \ref{fig:f.17}). El terapeuta podrá observar tanto la fecha de la sesión, el terapeuta que la realizó, los objetivos tratados en la misma, así como los recuerdos utilizados y los intereses tratados, además de una descripción más extensa de lo realizado a lo largo de dicha sesión.
+			
+			\begin{figure}[!ht]
+		 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.17}
+				\caption{Ver sesiones del paciente del prototipo de Patricia.}
+				\label{fig:f.17}
+			\end{figure}
+			
+			\item Crear una nueva sesión (ver Figura \ref{fig:f.18}). Aquí el terapeuta podrá crear una sesión nueva para trabajar con el paciente, en ella se registrará la fecha en la que se va a realizar la sesión, los objetivos que se pretenden conseguir con la misma y una descripción extensa, además podrá seleccionar los recuerdos filtrados que se van a usar para trabajar en dicha sesión.
+			
+			\begin{figure}[!ht]
+		 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.18}
+				\caption{Creación nueva sesión del prototipo de Patricia.}
+				\label{fig:f.18}
+			\end{figure}
+		\end{itemize}
+		
+	\item Realizar una sesión (Ver Figura \ref{fig:f.11}). En este caso, el terapeuta tendrá diversas opciones:
+	
+		\begin{figure}[!ht]
+	 		\centering
+			\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.11}
+			\caption{Realización de la sesión del prototipo de Patricia.}
+			\label{fig:f.11}
+		\end{figure}
+		
+		\begin{itemize}
+			\item Selección recuerdos: El terapeuta seleccionará una serie de recuerdos filtrados. Una de las principales ventajas de tener los recuerdos filtrados es que no nos saldrán todos los de la base de datos, únicamente aquellos que vamos a utilizar. La aplicación los filtrará por etapas (infancia, adolescencia, adultez...), según sus categorías (familia, amistad, infancia...), una fecha orientativa del recuerdo, la localización del mismo, las personas que aparecen en ese recuerdo, las emociones que provoca al usuario ese recuerdo y el tipo de archivo que se quiere seleccionar (imagen, vídeo o audio) (ver Figura \ref{fig:f.21}).
+			
+			\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.21}
+				\caption{Recuerdos filtrados del prototipo de Patricia.}
+				\label{fig:f.21}
+			\end{figure}
+			
+			\item Añadir recuerdos: Para crear un recuerdo nuevo deberemos poner un nombre al recuerdo, un texto explicativo de lo que trata el recuerdo, un estado actual del recuerdo (conservado, en riesgo de perder o perdido), la fecha orientativa del recuerdo, la localización del mismo, la etapa en la que se desarrolla éste recuerdo, la emoción que provoca al usuario, una serie de etiquetas que posteriormente facilitarán la búsqueda del recuerdo, la puntuación de 0 a 10 dependiendo de lo mejor o peor que el terapeuta considere que es el recuerdo, las personas relacionadas que se encuentren en el mismo, la categoría y finalmente la multimedia donde el terapeuta podrá acceder a la recogida de archivos para incluir en el recuerdo (ver Figura \ref{fig:f.15}).
+			
+			\item Modificar recuerdos: Los campos de esta pantalla serían principalmente como los de la anterior pero respecto a un recuerdo ya registrado.
+		\end{itemize}
+		
+		
+		\begin{figure}[!ht]
+	 		\centering
+			\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.15}
+			\caption{Recuerdos del prototipo de Patricia.}
+			\label{fig:f.15}
+		\end{figure}		
+		
+	\item Finalizar sesión (ver Figura \ref{fig:f.12}): En este apartado el terapeuta podrá crear un informe que contendrá la fecha de la sesión el recuerdo o la emoción que le ha provocado el recuerdo (ver Figura \ref{fig:f.19}).
+	
+		\begin{figure}[!ht]
+	 		\centering
+			\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.12}
+			\caption{Finalización de la sesión del prototipo de Patricia.}
+			\label{fig:f.12}
+		\end{figure}
+		
+		\begin{figure}[!ht]
+	 		\centering
+			\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.19}
+			\caption{Informe del prototipo de Patricia.}
+			\label{fig:f.19}
+		\end{figure}
+		
+	\item Evaluar al paciente (ver Figura \ref{fig:f.13}): En esta pantalla podremos observar:
+	
+		\begin{figure}[!ht]
+	 		\centering
+			\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.13}
+			\caption{Evaluación del paciente del prototipo de Patricia.}
+			\label{fig:f.13}
+		\end{figure}
+		
+		\begin{itemize}
+			\item Visualizar informes del paciente: Estos no podrán ser modificados y tendrán los campos de la fecha de cuando se realizó la sesión, el sentimiento del recuerdo (positivo, neutro o negativo) y la emoción que provoca en el usuario (tristeza, ira, nostalgia, alegría)(ver Figura \ref{fig:f.19}).
+			
+			\item Evaluar paciente: se indicará el nuevo GDS del paciente, el estado actual y un diagnóstico detallado (ver Figura \ref{fig:f.20}).
+			
+			\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.20}
+				\caption{Evaluar paciente del prototipo de Patricia.}
+				\label{fig:f.20}
+			\end{figure}
+		
+		\end{itemize}
+	\item Generar una Historia de Vida (ver Figura \ref{fig:f.9}). En ella podremos observar las principales características de la Historia de Vida del paciente y encontraremos tres opciones importantes.
+	\begin{itemize}
+	
+		\item Recuerdos: donde observará los recuerdos de la Historia de Vida del paciente (ver Figura \ref{fig:f.15}).
+		
+		\item Personas relacionadas: encontraremos el cuidador o cuidadores (ver Figura \ref{fig:f.14}).
+		
+			\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.14}
+				\caption{Familiar asociado del prototipo de Patricia.}
+				\label{fig:f.14}
+			\end{figure}
+			
+		\item Multimedia: donde tendremos acceso a toda la multimedia (vídeo, audio o imágenes) de la Historia de Vida del paciente (ver Figura \ref{fig:f.16}). En esta pantalla tendremos un botón de Ver multimedia con el cual accederemos a la pantalla que se muestra en la Figura \ref{fig:f.22}. En ella podremos seleccionar, si queremos visualizar las imágenes, los vídeos, los audios o toda la multimedia en conjunto de la Historia de Vida.
+		
+			\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.16}
+				\caption{Multimedia del prototipo de Patricia.}
+				\label{fig:f.16}
+			\end{figure}
+		
+		\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.22}
+				\caption{Ver multimedia del prototipo de Patricia.}
+				\label{fig:f.22}
+			\end{figure}
+	\end{itemize}
+		
+	\item Historia de vida del paciente donde podrá observar sin editar la historia de vida del paciente seleccionado, en ella observaremos el nombre del paciente, los apellidos, el género, la residencia actual, el lugar de nacimiento, los recuerdos asociados a esa historia de vida, las personas relacionadas en la misma y la multimedia asociada a ese paciente (ver Figura \ref{fig:f.9}).
+	
+	\item Finalizar sesión.
+	
+\end{itemize}
+
+\end{itemize}
+
+
+
+\section{Prototipo de Santiago Marco Mulas López}
+Este prototipo ha sido realizado en papel. El prototipo empieza con una ventana (Figura \ref{fig:login_san}) donde hacer el login tanto para el terapeuta, como para el paciente, con cuenta creada por un terapeuta. En esta ventana habrá un recuadro para introducir las credenciales, en la parte superior aparece el nombre de la aplicación y en la parte superior derecha el logotipo de esta.
+\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_santi/login_san_2.PNG}
+				\caption{Login (terapeuta y paciente) del prototipo de Santiago}
+				\label{fig:login_san}
+			\end{figure}
+
+A continuación, veremos la página de inicio del terapeuta (Figura \ref{fig:ini_san}), donde en la parte central veremos el nombre de la aplicación con el logotipo, luego en la esquina superior derecha, están las opciones de logout, para desconectarte, crear usuario, para crear un nuevo paciente, y de mensajería, para contactar con pacientes. Después veremos en la columna de la izquierda todas las funciones que podrá realizar el terapeuta.
+		\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_santi/ini_san_2.PNG}
+				\caption{Página principal (terapeuta) del prototipo de Santiago}
+				\label{fig:ini_san}
+			\end{figure}
+\begin{itemize}
+
+
+
+	\item Preparar una sesión (figura \ref{fig:prep_ses}):
+	
+	En este apartado, veremos un buscador para encontrar el paciente sobre el que queremos preparar la sesión, una vez encontrado, nos saldrá su nombre completo con una imagen. Debajo aparecen tres pestañas, informe de sesiones, en la que aparece la lista de sesiones ordenada cronológicamente, con la fecha y con un informe de sesión de cada una; después esta el apartado de historia de vida, con las diferentes categorías que hay dentro de ellas, donde se verán recuerdos, fotos, canciones, etc. Y, por último, datos de paciente, donde se encuentran los datos personales del paciente como puede ser el nombre, edad y género.
+			\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_santi/prep_ses_2.PNG}
+				\caption{Página preparar sesión del prototipo de Santiago}
+				\label{fig:prep_ses}
+			\end{figure}
+	
+	\item Crear sesión (Figura \ref{fig:crea_ses}): Al igual que en el apartado de preparar sesión, aparece un buscador para elegir el usuario del que queremos crear la sesión, con un pequeño formulario donde poner la fecha para realizar la sesión, los objetivos de la sesión, la descripción, y añadir posibles materiales para utilizar en la sesión.
+	
+	\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_santi/crea_ses_2.PNG}
+				\caption{Página crear sesión del prototipo de Santiago}
+				\label{fig:crea_ses}
+			\end{figure}
+
+
+			
+			
+			
+	\item Realizar sesión (Figura \ref{fig:rea_ses}): También aparece un buscador para lo mismo que en los otros apartados, y debajo una lista con las sesiones del terapeuta que tiene pendiente, con la fecha de la sesión, nombre del paciente, el botón actualizar, para actualizar nuevos materiales, es decir, añadir nuevas imágenes, videos, canciones, fechas importantes y demás posibles recuerdos que sirvan de ayuda en las sesiones;  y por último la opción de eliminar sesión con el icono de la papelera.
+	
+			\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_santi/rea_ses_2.PNG}
+				\caption{Página realizar sesión del prototipo de Santiago}
+				\label{fig:rea_ses}
+			\end{figure}
+	\item Finalizar sesión (Figura \ref{fig:fin_ses}): En esta ventana, accederemos una vez que tenemos abierta una sesión y queramos finalizarla, en ella se podrán añadir diferentes recuerdos marcándolos como positivo, neutro o negativo, para completar el informe de sesión, también aparece un cuadro de texto para hacer un breve resumen de la sesión finalizada.
+			\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_santi/fin_ses_2.PNG}
+				\caption{Página finalizar sesión del prototipo de Santiago}
+				\label{fig:fin_ses}
+			\end{figure}
+\end{itemize}
+
+Luego en la página principal del familiar (Figura \ref{fig:family_ses}) vemos el nombre del paciente con su foto de perfil, y luego tres opciones:
+\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_santi/family_ses_2.PNG}
+				\caption{Página inicial familiar del prototipo de Santiago}
+				\label{fig:family_ses}
+			\end{figure}
+			
+\begin{itemize}
+\item Calendario (Figura \ref{fig:cal_san}): Aparece un calendario con las actividades en los días marcados, donde al seleccionar el día de la actividad, nos mostrará mas información sobre ella.
+	\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_santi/cal_san_2.PNG}
+				\caption{Página calendario) del prototipo de Santiago}
+				\label{fig:cal_san}
+			\end{figure}
+
+\item Historia de vida (Figura \ref{fig:hv_san}): Página donde se encuentra la historia de vida del paciente con todos sus recuerdos, fotos, personas, acontecimientos y demás que se han añadido en la aplicación. Aparece un buscador también, para realizar una búsqueda por las diferentes categorías.
+			
+			\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_santi/hv_san_2.PNG}
+				\caption{Página historia de vida del prototipo de Santiago}
+				\label{fig:hv_san}
+			\end{figure}
+\item Chat (Figura \ref{fig:chat_san}): Chat para contactar entre el terapeuta y el paciente.
+	\begin{figure}[!ht]
+	 			\centering
+				\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_santi/chat_san_2.PNG}
+				\caption{Página chat del prototipo de Santiago}
+				\label{fig:chat_san}
+			\end{figure}
+\end{itemize}
+
+
+
+\section{Prototipo de Eva Verdú Rodríguez}
+
+Este diseño fue realizado utilizando la herramienta de dibujo Clip Paint Studio.
+
+Este prototipo empieza con una pantalla principal donde el terapeuta o el cuidador puede iniciar sesión. Según quién inicie sesión aparecerán pantallas distintas.
+
+\subsection{Sesión Terapeuta}
+En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqueda de paciente (Figura \ref{fig:pro_eva_bus_paciente}) donde tendrá que elegir uno entre los que tenga asignados. 
+
+\begin{figure}[htp]
+	\centering
+ 	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/buscador_pacientes.png}
+  	\caption{Búsqueda del paciente del prototipo de Eva}
+	\label{fig:pro_eva_bus_paciente}
+\end{figure}
+	
+Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \ref{fig:pro_eva_menu_paciente}) donde aparecerán 6 opciones:
+
+\begin{enumerate}
+	\item Preparar sesión.
+	\item Realizar sesión.
+	\item Historia de vida.
+	\item Evaluación e informes.
+	\item Menú.
+	\item Configuración.
+\end{enumerate}
+
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/menu_paciente.png}
+  	\caption{La página de inicio del paciente del prototipo de Eva}
+	\label{fig:pro_eva_menu_paciente}
+\end{figure}
+
+\begin{itemize}
+	\item \textbf{Preparar sesión:} Al pulsar el botón de ``Preparar sesión'' aparecerá una pantalla con dos opciones(Figura \ref{fig:pro_eva_realizar_ss}):
+	 
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png}
+	  	\caption{Opciones de preparar sesión del prototipo de Eva.}
+		\label{fig:pro_eva_realizar_ss}
+	\end{figure}
+	
+	\begin{itemize}
+		\item ``Ver el historial de sesiones'', donde se podrá ver una lista de las sesiones realizadas y poder ver todos los detalles sobre estas (Figura \ref{fig:pro_eva_historial_ss}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/historial_sesiones.png}
+	  		\caption{Historial de sesiones del prototipo de Eva.}
+			\label{fig:pro_eva_historial_ss}
+		\end{figure}
+		
+		\item ``Crear una nueva sesión'', para crear una nueva sesión, podrás seleccionar la opción de coger una sesión anterior. Esto autocompletará los detalles de la sesión, que después se podrán modificar en caso de que el terapeuta no quiera que la sesión sea exactamente igual. En esa misma pantalla, tendrás la lista de todos los recuerdos. Estos serán seleccionables, para que el terapeuta pueda elegir cuales son útiles para la sesión. Cada recuerdo dispone de un botón con forma de ojo que abrirá una ventana emergente donde se podrá ver los detalles del recuerdo en concreto (Figura \ref{fig:pro_eva_crear_ss}).
+		
+		 \begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/nueva_sesion.png}
+	  		\caption{Nueva sesión del prototipo de Eva.}
+			\label{fig:pro_eva_crear_ss}
+		\end{figure}
+		
+	\end{itemize}
+
+	\item \textbf{Realizar sesión:} Al pulsar el botón de ``Realizar sesión'' se abrirá una pantalla (Figura \ref{fig:pro_eva_realizar_ss}) con una lista de sesiones. Al pulsar, aparecerán los datos guardados sobre esa sesión con el objetivo, intereses y los recuerdos (que se podrán ver en detalle con el botón en forma de ojo explicado anteriormente). Al final de la pantalla aparecerá el botón de ``Finalizar y evaluar'' que te llevará a una pantalla (Figura \ref{fig:pro_eva_finalizar_ss}) para rellenar el informe de seguimiento. En este se tendrá que rellenar: la sesión del informe (que se hace automáticamente), el informe y los recuerdo utilizados que se podrán calificar. Al darle a calificar el recuerdo, aparecerá una ventana emergente donde te pedirá rellenar los datos para ver como el paciente ha reaccionado al recuerdo en esa sesión.
+	
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/realizar_sesion.png}
+	  	\caption{Historia de vida del prototipo de Eva.}
+		\label{fig:pro_eva_realizar_ss}
+	\end{figure}
+	
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png}
+	  	\caption{Historia de vida del prototipo de Eva.}
+		\label{fig:pro_eva_finalizar_ss}
+	\end{figure}
+	
+	\item \textbf{Historia de vida:} La aplicación permitirá ver la historia de vida completa (un PDF con todos los recuerdo ordenados cronológicamente y por etapas) y ver la historia de vida filtrada donde tendrás varias opciones de filtrado y te generará el PDF con los filtros aplicados. Esta opción como la de ``Realizar sesión'' se ven reflejadas en la Figura \ref{fig:pro_eva_hv}.
+	
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/historia_vida.png}
+	  	\caption{Historia de vida del prototipo de Eva.}
+		\label{fig:pro_eva_hv}
+	\end{figure}
+	
+	\item \textbf{Evaluación e informes:} Al pulsar este botón, nos llevará a una pantalla con tres opciones: 
+	\begin{itemize}
+		\item ``Crear una nueva evaluación'', donde el terapeuta escribirá como ha ido la evaluación trimestral (Figura \ref{fig:pro_eva_crear_evalu}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png}
+	  		\caption{Crear nueva evaluación del prototipo de Eva.}
+			\label{fig:pro_eva_crear_evalu}
+		\end{figure}
+		
+		\item ``Mostrar las evaluaciones'' donde aparecerá la lista de evaluaciones realizadas y donde se podrán ver en detalle (Figura \ref{fig:pro_eva_mostrar_evalu}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.png}
+	  		\caption{Mostrar evaluaciones del prototipo de Eva.}
+			\label{fig:pro_eva_mostrar_evalu}
+		\end{figure}
+		
+		\item ``Mostrar informes de seguimiento'' donde se mostrará una lista con todos los informes y se podrán ver los detalles (Figura \ref{fig:pro_eva_mostrar_infor}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/lista_informes.png}
+	  		\caption{Mostrar informes de seguimiento del prototipo de Eva.}
+			\label{fig:pro_eva_mostrar_infor}
+		\end{figure}
+		
+	\end{itemize} 
+	
+	\item \textbf{Menú:} En el menú del terapeuta (Figura \ref{fig:pro_eva_t_menu}), que se mostrará durante todas las pantallas de la aplicación, hay 5 opciones:
+	\begin{figure}[htp]
+  		\centering
+  		\includegraphics[width=0.3\textwidth]{./Imagenes/Figuras/prototipo_eva/menu.png}
+  		\caption{Menú del terapeuta del prototipo de Eva.}
+		\label{fig:pro_eva_t_menu}
+	\end{figure}
+
+	\begin{itemize}
+		\item Inicio: que te lleva a la pantalla de inicio del paciente.
+		\item Mis pacientes: donde se muestra una lista de pacientes donde si seleccionas alguno, cambiarás de paciente seleccionado y aparecerás en su pantalla de inicio (Figura \ref{fig:pro_eva_lista_paci}).
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/lista_pacientes.png}
+	  		\caption{Lista de pacientes del terapeuta del prototipo de Eva.}
+			\label{fig:pro_eva_lista_paci}
+		\end{figure}
+	
+		\item Mensajería: donde el terapeuta podrá abrir una conversación con el acompañante o con otros terapeuta (Figura \ref{fig:pro_eva_t_men}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/mensajeria.png}
+	  		\caption{Mensajería del terapeuta del prototipo de Eva.}
+			\label{fig:pro_eva_t_men}
+		\end{figure}
+	
+		\item Mi perfil: donde se ve el perfil del terapeuta (Figura \ref{fig:pro_eva_t_perfil}).
+		
+		\begin{figure}[htp]
+	  		\centering
+	  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/mi_perfil.png}
+	  		\caption{Perfil del terapeuta del prototipo de Eva.}
+			\label{fig:pro_eva_t_perfil}
+		\end{figure}
+	
+		\item Cerrar sesión.
+	\end{itemize}	
+	 
+	\item \textbf{Configuración:} En esta pantalla tenemos dos opciones (Figura \ref{fig:pro_eva_opc_config}):
+	 
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png}
+	  	\caption{Opciones de configuración del prototipo de Eva.}
+		\label{fig:pro_eva_opc_config}
+	\end{figure}
+	
+	\begin{itemize}
+		\item ``Calendario de actividades'' (Figura \ref{fig:pro_eva_calendario}), donde aparecerá un calendario y el terapeuta podrá añadir nuevas tareas a sus pacientes.
+		\item ``Asignar a más terapeutas'' (Figura \ref{fig:pro_eva_asig_tera}) donde el terapeuta puede asignar al paciente a otro terapeuta mediante una lista seleccionable.
+	\end{itemize}
+	
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/calendario.png}
+	  	\caption{Calendario del terapeuta del prototipo de Eva.}
+		\label{fig:pro_eva_calendario}
+	\end{figure}
+	
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png}
+	  	\caption{Asignar paciente a más terapeutas del prototipo de Eva.}
+		\label{fig:pro_eva_asig_tera}
+	\end{figure}
+	
+\end{itemize}	
+
+\subsection{Sesión acompañante o cuidador}
+En este caso tanto el menú como la pantalla de inicio cambian. En la pantalla de inicio se visualizará en calendario con las distintas tareas asignadas por el terapeuta. En el menú (Figura \ref{fig:pro_eva_c_menu}) las opciones son:
+
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=0.3\textwidth]{./Imagenes/Figuras/prototipo_eva/c_menu.png}
+  	\caption{Menú del cuidador del prototipo de Eva.}
+	\label{fig:pro_eva_c_menu}
+\end{figure}
+
+\begin{itemize}
+	\item Inicio: que te llevaría a la pantalla de inicio de acompañante con el calendario (Figura \ref{fig:pro_eva_c_calendario}).
+	
+	\begin{figure}[htp]
+  		\centering
+  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/c_calendario.png}
+  		\caption{Pantalla de inicio del cuidador y calendario del prototipo de Eva.}
+		\label{fig:pro_eva_c_calendario}
+	\end{figure}
+	
+	\item Mensajería: donde tanto terapeuta con acompañante o tutor podrán mandarse mensajes para dudas y cuestiones (Figura \ref{fig:pro_eva_c_men}).
+	
+	\begin{figure}[htp]
+  		\centering
+  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/c_mensajeria.png}
+  		\caption{Mensajería del cuidador del prototipo de Eva.}
+		\label{fig:pro_eva_c_men}
+	\end{figure}
+	
+	\item Historia de vida: aparecerá la misma pantalla que en el caso del terapeuta. Podrá mirar y filtrar la historia de vida del paciente.
+	\item Cerrar sesión.
+\end{itemize}	 	
+
+
+\section{Diseño competitivo}
+Después de realizar y documentar cada uno de los prototipos, los integrantes del grupo nos reunimos por una videollamada en Discord el lunes 10 de enero a las 17:00. En la reunión , cada integrante expuso su prototipo de manera detallada. A continuación, discutimos las semejanzas y diferencias entre cada uno de los diseños, para posteriormente proceder a la elección de uno de ellos.
+
+Finalmente el diseño base elegido en consenso fue el del capitulo \ref{cap:disenio_cris} realizado por Cristina. La decisión fue tomada debido a que consideramos que este prototipo es el más completo y sencillo para la comprensión del usuario. A este prototipo se han añadido los siguientes cambios:
+
+\subsection{General}
+Partiendo del prototipo de Cristina, se han realizado unos cambios generales de diseño para guardar consistencia:
+\begin{itemize}
+	\item Todas las listas siguen el mismo formato. Para añadir un nuevo registro, se ha añadido un botón ``+'' (ver Figura \ref{fig:3.2.5_listado_pacientes}) para guardar la consistencia externa de otras aplicaciones. Para ver un registro, se puede hacer de dos formas: mediante un link en la primera columna de la lista o mediante el icono de un ojo. Para modificar un registro se utiliza el icono de un lápiz y para borrarlo se utiliza un icono de una papelera en rojo.
+	\item Se ha separado el menú que había a la izquierda en dos menús:
+		\begin{itemize}
+			\item Un menú general del usuario en la parte superior de la pantalla donde se pueden ver 3 iconos que permiten acceder a los pacientes, a la mensajería entre el terapeuta y el cuidador del paciente y permite cerrar sesión al usuario logado respectivamente (ver Figura \ref{fig:3.2.5_listado_pacientes}). A este menú se puede acceder desde cualquier pantalla de la aplicación.
+			\item Un menú que aparece una vez se ha seleccionado un paciente y que tiene las siguientes opciones: pacientes, sesiones, informes de seguimiento, evaluaciones, calendario, generar historia de vida, recuerdos y personas relacionadas. 
+		\end{itemize}
+	\item Además, una vez se está trabajando con un paciente, es decir, se ha seleccionado un paciente de la lista, se puede ver en todas las pantallas una cabecera al lado del menú con los datos del paciente seleccionado. Estos datos son: la foto del paciente, nombre y apellidos, género y edad.
+	\item Se han modificado todas las pantallas para mostrar datos reales.
+\end{itemize}
+
+\subsection{Login}
+Se ha añadido un Login con dos sesiones distintas: la sesión del terapeuta y la sesión del cuidador (ver Figura \ref{fig:3.2.5_login}).
+	\begin{figure}[htp]
+  		\centering
+  		\includegraphics[width=8cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png}
+  		\caption{Login de la aplicación.}
+		\label{fig:3.2.5_login}
+	\end{figure}
+
+\subsection{Pacientes}
+En el listado de pacientes se añade la opción de crear un nuevo paciente mediante la pantalla que se muestra en la Figura \ref{fig:3.2.5_listado_pacientes} a la que se accede a través del botón ``+''. En esta pantalla (ver Figura \ref{fig:3.2.5_nuevo paciente}) se pueden añadir los siguientes datos al paciente: una foto, el nombre y apellidos, género, edad, lugar de nacimiento, nacionalidad, fecha de nacimiento, residencia actual y tipo de residencia.
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png}
+  	\caption{Listado de paciente.}
+	\label{fig:3.2.5_listado_pacientes}
+\end{figure}
+
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png}
+  	\caption{Añadir un nuevo paciente.}
+	\label{fig:3.2.5_nuevo paciente}
+\end{figure}
+
+También, se puede modificar uno ya existente (ver Figura \ref{fig:3.2.5_modificar_paciente}) mediante el icono que se muestra como un lápiz.
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png}
+  	\caption{Modificar un paciente.}
+	\label{fig:3.2.5_modificar_paciente}
+\end{figure}
+
+Al seleccionar un paciente se muestra la pantalla de datos del paciente seleccionado donde se han añadido los siguientes campos: foto del paciente, género, edad, lugar de nacimiento, nacionalidad, fecha de nacimiento, residencia actual y tipo de residencia.
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png}
+  	\caption{Seleccionar un paciente.}
+	\label{fig:3.2.5_ver_paciente}
+\end{figure}
+
+\subsection{Sesiones}
+En el listado de sesiones se puede ver un listado con todas las sesiones del paciente ordenadas por fecha descendente y donde se pueden ver los siguientes datos de cada sesión: la fecha de la sesión, el objetivo y si se ha finalizado o no. Además, se ha añadido un nuevo icono ''check`` tal y como se muestra en la Figura \ref{fig:3.2.5_listado_sesiones} para poder acceder a la pantalla de finalizar sesión.
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png}
+  	\caption{Listado de sesiones de un paciente.}
+	\label{fig:3.2.5_listado_sesiones}
+\end{figure}
+
+Se ha modificado todo el proceso de añadir una sesión para que se puedan añadir todos los datos de la sesión y los recuerdos en una misma pantalla en vez de en un proceso de 3 pasos. De esta forma y tal y como se muestra en la Figura \ref{fig:3.2.5_nueva_sesion} se pueden añadir la fecha de la sesión, el objetivo, la descripción y la categoría y hay una lista con los recuerdos de una sesión donde se puede añadir un nuevo recuerdo o un recuerdo existente. Además, se ha añadido una nueva funcionalidad para añadir el material multimedia que se va a utilizar en la sesión.
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png}
+  	\caption{Añadir una nueva sesión.}
+	\label{fig:3.2.5_nueva_sesion}
+\end{figure}
+
+En el listado de recuerdos se pueden añadir, modificar y borrar los recuerdos relacionados al igual que en el resto de listados de la aplicación. Hay dos formas de añadir un recuerdo a una sesión:
+\begin{itemize}
+	\item Nuevo recuerdo. Se crea un nuevo recuerdo añadiendo los siguientes datos: nombre, fecha, estado, etiqueta, puntuación, descripción, etapa, emoción, categoría y localización (ver Figura \ref{fig:3.2.5_nuevo_recuerdo}). Además, siguiendo el formato al crear una nueva sesión, hay una lista con las personas relacionadas con ese recuerdo donde se puede añadir una nueva persona relacionada o añadir a ese recuerdo una persona relacionada ya existente. Y, se puede añadir el material multimedia relacionado con ese recuerdo.
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png}
+	  	\caption{Añadir un nuevo recuerdo a una sesión.}
+		\label{fig:3.2.5_nuevo_recuerdo}
+	\end{figure}	
+	
+	\item Recuerdo existente. Mediante una listado de recuerdos ya existentes (ver Figura \ref{fig:3.2.5_nuevo_recuerdo_existente}), se puede seleccionar qué recuerdos añadir a la sesión. Esta lista de recuerdos está ordenada cronológicamente por fecha de forma ascendente y se pueden ver los siguientes datos de cada recuerdo: nombre, fecha, etapa, categoría, estado y etiqueta.
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png}
+	  	\caption{Añadir un recuerdo existente a una sesión.}
+		\label{fig:3.2.5_nuevo_recuerdo_existente}
+	\end{figure}	
+	
+\end{itemize}
+
+Dentro del recuerdo de una sesión, se puede ver un listado de personas relacionadas con ese recuerdo. En este listado se puede añadir, modificar o borrar una persona relacionada. Y, al igual que los recuerdos, hay dos formas de añadir una nueva persona relacionada:
+\begin{itemize}
+	\item Nueva persona relacionada. Se crea una nueva persona relacionada añadiendo los siguientes datos: nombre y apellidos, teléfono, ocupación, email y el tipo de relación (ver Figura \ref{fig:3.2.5_nueva_persona_relacionada}).
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png}
+	  	\caption{Añadir una nueva persona relacionada a un recuerdo.}
+		\label{fig:3.2.5_nueva_persona_relacionada}
+	\end{figure}	
+	
+	\item Persona relacionada ya existente. Mediante un listado de personas relacionadas ya existentes, se puede seleccionar qué personas añadir al recuerdo. En esta lista se pueden ver los siguientes datos de cada persona: nombre, apellidos y tipo de relación.
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_existente.png}
+	  	\caption{Añadir una persona relacionado ya existente a un recuerdo.}
+		\label{fig:3.2.5_nueva_persona_relacionada_existente}
+	\end{figure}	
+\end{itemize}
+
+Para añadir material multimedia a una sesión y a un recuerdo se puede hacer de dos formas:
+\begin{itemize}
+	\item Nuevo archivo multimedia. Bien arrastrando el fichero al recuadro donde pone ``Arrastrar y soltar'' o en el icono de la nube para poder abrir el explorador de archivos y seleccionar un archivo multimedia tal y como se muestra en la Figura \ref{fig:3.2.5_nuevo_multimedia}.
+		\begin{figure}[htp]
+		  	\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png}
+		  	\caption{Añadir un archivo multimedia.}
+			\label{fig:3.2.5_nuevo_multimedia}
+		\end{figure}	
+	
+	\item Archivo multimedia ya existente. Mediante un listado de archivos multimedia ya existente en la aplicación, se puede seleccionar qué archivos añadir. En esta lista se pueden ver los siguiente datos de cada uno de los ficheros: nombre, categoría y el tipo de archivo multimedia (ver Figura \ref{fig:3.2.5_nuevo_multimedia_existente}). En el tipo de archivo multimedia se podrán ver 3 iconos: una cámara para los archivos que sean imágenes, un altavoz para los archivos que sean audios y una cámara grabadora para los vídeos.
+		\begin{figure}[htp]
+		  	\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.png}
+		  	\caption{Añadir un archivo multimedia ya existente.}
+			\label{fig:3.2.5_nuevo_multimedia_existente}
+		\end{figure}	
+\end{itemize}
+
+\subsection{Historia de Vida}
+En esta opción de menú se han añadido 3 subopciones:
+
+\subsection{Generar Historia de Vida}
+Se ha modificado la pantalla de filtros para generar una Historia de Vida añadiendo los siguientes campos: fecha desde y fecha hasta y el filtro de categoría tal y como se muestra en la Figura.
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png}
+  	\caption{Generar Historia de Vida.}
+	\label{fig:3.2.5_generar_historia_vida}
+\end{figure}	
+
+Además, se ha añadido un nuevo botón para generar la Historia de Vida como PDF por lo que tendríamos las dos siguientes formas de ver una Historia de Vida de un paciente:
+\begin{itemize}
+	\item Libro. Genera una Historia de Vida como un Libro de Vida donde se pueden ver los recuerdos en un carrousel ordenados cronológicamente. Los datos del recuerdo que se pueden ver son: los archivos multimedia del recuerdo, nombre, descripción, etapa y categoría (ver Figura \ref{fig:3.2.5_generar_historia_vida_libro}).
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.png}
+	  	\caption{Generar Historia de Vida como Libro.}
+		\label{fig:3.2.5_generar_historia_vida_libro}
+	\end{figure}	
+	
+	\item PDF. Genera una Historia de vida en un PDF donde se puede ver el nombre, apellidos, edad, género y foto del paciente y un listado de recuerdos ordenados cronológicamente. Los datos de cada recuerdo que se pueden ver son: nombre, fecha, descripción y archivos multimedia tal y como se puede ver en la Figura.
+		\begin{figure}[htp]
+		  	\centering
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png}
+		  	\caption{Generar Historia de Vida como PDF.}
+			\label{fig:3.2.5_generar_historia_vida_pdf}
+		\end{figure}	
+\end{itemize}
+
+\subsection{Recuerdos}
+En esta opción se puede ver un listado de los recuerdos del paciente ordenados cronológicamente de forma ascendente por fecha y, donde se muestran los siguientes datos de cada recuerdo: nombre, fecha, etapa, categoría, estado y etiqueta (ver Figura \ref{fig:3.2.5_listado_recuerdos}). En este listado, para facilitar la búsqueda de recuerdos, se puede filtrar pos los siguientes campos: fecha, etapa, categoría, emoción, tipo de archivo multimedia y persona relacionada. Además, se permite ver, modificar o borrar un recuerdo. Este listado se utiliza en los datos de una sesión para poder añadir un recuerdo ya existente.
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png}
+  	\caption{Listado de recuerdos de un paciente.}
+	\label{fig:3.2.5_listado_recuerdos}
+\end{figure}	
+
+\subsection{Personas relacionadas}
+En esta opción se puede ver un listado de las personas relacionadas del paciente donde se muestran los siguientes datos de cada persona: nombre, apellidos y tipo de relación (ver Figura \ref{fig:3.2.5_listado_personas_relacionadas}). Además, se permite ver, modificar o borrar una persona relacionada. Este listado se utiliza en los datos de un recuerdo para poder añadir un recuerdo ya existente, tanto en los datos de una sesión como en la opción de menú de recuerdos.
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas.png}
+  	\caption{Listado de personas relacionadas de un paciente.}
+	\label{fig:3.2.5_listado_personas_relacionadas}
+\end{figure}	
+
+
+\subsection{Mensajería}
+En la mensajería del terapeuta se ha modificado la pantalla para seleccionar a qué persona relacionada del paciente mandar el mensaje tal y como se muestra en la Figura \ref{fig:3.2.5_mensajeria_terapeuta}.
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png}
+  	\caption{Mensajería del terapeuta.}
+	\label{fig:3.2.5_mensajeria_terapeuta}
+\end{figure}	
+
+Se ha añadido un popup de confirmación de mensaje enviado como se muestra en la Figura \ref{fig:3.2.5_mensajeria_terapeuta_enviado}.
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.png}
+  	\caption{Confirmación de mensaje enviado en la mensajería del terapeuta.}
+	\label{fig:3.2.5_mensajeria_terapeuta_enviado}
+\end{figure}	
+
+En la mensajería del cuidador se ha modificado la pantalla para seleccionar el terapeuta asociado del paciente ya que un paciente puede tener varios terapeutas asociados (ver Figura \ref{fig:3.2.5_mensajeria_cuidador}).
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png}
+  	\caption{Mensajería del cuidador.}
+	\label{fig:3.2.5_mensajeria_cuidador}
+\end{figure}	
+
+Se ha añadido un popup de confirmación de mensaje enviado como se muestra en la Figura \ref{fig:3.2.5_mensajeria_cuidador_enviado}.
+\begin{figure}[htp]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.png}
+  	\caption{Confirmación de mensaje enviado en la mensajería del cuidador.}
+	\label{fig:3.2.5_mensajeria_cuidador_enviado}
+\end{figure}	
+
+\section{Evaluación del diseño competitivo con expertos}
+Una vez realizado el prototipo competitivo y tras las correspondientes correcciones con las directoras del TFG, nos reunimos los integrantes del proyecto para preparar, organizar y dividir las tareas para la reunión con los expertos.
+
+El 16 de Febrero a las 16.00 h. tuvimos la reunión por Google Meets con el Dr. Iván De Rosende Celeiro para enseñarle el diseño\footnote{https://drive.google.com/file/d/1F4iYaDdrvrE2GygW3gI-jiZCIjOv-3Gy/view?usp=sharing}. Tras terminar de explicar el mismo, se procedió a realizar un debriefing con el que se mandó el documento \ref{aped.C} para que Iván nos diera su feedback sobre el funcionamiento de la aplicación y sus posibles mejoras. Además de contestarnos a estas preguntas, nos indicó algunos cambios que consideraba necesarios para un mayor entendimiento de la aplicación y mejor legibilidad.
+
+\begin{itemize}
+	\item Menú: se nos indicó cambiar los nombres de ``Informes de seguimiento'' por ``Informes de sesión'' y ``Evaluaciones'' por ``Evaluaciones de seguimiento'' (ver Figura \ref{fig:3.2.6_Menu}).
+\end{itemize}
+	
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Menu}
+  	\caption{Menú del diseño competitivo.}
+	\label{fig:3.2.6_Menu}
+\end{figure}
+
+\begin{itemize}
+	\item Pacientes: donde nos propuso añadir un campo con el ``Diagnóstico histórico'' que con el que el usuario comienza a hacer la terapia y un ``Diagnóstico actual'' que se modifica cuando el terapeuta lo considere necesario, así mismo, aparecerá la fecha de diagnóstico de ambos en la parte superior (ver Figura \ref{fig:3.2.6_Paciente}). 
+\end{itemize}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente}
+  	\caption{Pantalla del paciente del diseño competitivo.}
+	\label{fig:3.2.6_Paciente}
+\end{figure}
+
+\begin{itemize}
+	\item Sesiones: se nos indicó cambiar la palabra del campo ``Categoría'' por una más significativa, por lo que se optó por poner ``Etapa de vida''. Además, en esta propia pantalla creamos dos campos nuevos llamados ``Barreras'' y ``Facilitadores'' donde barreras son las dificultades que pone el usuario para realizar la sesión y facilitadores aquellos que ayudan a hacerla de manera más amena (ver Figura \ref{fig:3.2.6_Sesiones}).
+\end{itemize}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones}
+  	\caption{Pantalla de sesiones del diseño competitivo.}
+	\label{fig:3.2.6_Sesiones}
+\end{figure}
+
+\begin{itemize}
+	\item Informes de seguimiento: nos indicó que no entendía de manera clara para qué se utilizaba el botón de finalizar sesión por lo que hemos optado por quitar el tick y poner un botón para cuando él considere mejor finalizar el informe de seguimiento. Así mismo, como anteriormente cambiar el nombre del campo ``Reacción del paciente'' por ``Respuesta del usuario'' y ampliar el espacio de edición (ver Figura \ref{fig:3.2.6_Informes_de_sesion}). 
+\end{itemize}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion}
+  	\caption{Pantalla de informes de seguimiento del diseño competitivo.}
+	\label{fig:3.2.6_Informes_de_sesion}
+\end{figure}
+
+\begin{itemize}
+	\item Evaluaciones: se sugirió eliminar el campo ``Estado'' y añadir tres nuevos, el de test mini mental/MEC Lobo, CDR y otra escala, en ellas se puede observar el valor editable de dichos campos y la fecha en la que se diagnostica (ver Figura \ref{fig:3.2.6_Evaluaciones}).
+\end{itemize}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones}
+  	\caption{Pantalla evaluaciones del diseño competitivo.}
+	\label{fig:3.2.6_Evaluaciones}
+\end{figure}
+
+\begin{itemize}
+	\item Calendario: Iván indicó que una mejora de lo que teníamos era poder introducir multimedia a las actividades que ellos mandan a los cuidadores de los usuarios para así facilitarle la tarea al cuidador (ver Figura \ref{fig:3.2.6_Calendario2}).
+\end{itemize}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2}
+  	\caption{Pantalla actividad de calendario del diseño competitivo.}
+	\label{fig:3.2.6_Calendario2}
+\end{figure}
+
+\begin{itemize}
+	\item Recuerdos: se modificó para que se pudiesen ordenar por distintos parámetros, así como poner filtros en la parte superior y la posibilidad de modificar los recuerdos (ver Figura \ref{fig:3.2.6_Recuerdos1}) y (ver Figura \ref{fig:3.2.6_Recuerdos2}).
+\end{itemize}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1}
+  	\caption{Pantalla recuerdos del diseño competitivo.}
+	\label{fig:3.2.6_Recuerdos1}
+\end{figure}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2}
+  	\caption{Pantalla recuerdos con filtros del diseño competitivo.}
+	\label{fig:3.2.6_Recuerdos2}
+\end{figure}
+
+\begin{itemize}
+	\item Personas Relacionadas: donde se cambió el nombre del campo ``Relación'' por ``Tipo de relación/parentesco'' y se incluyó un icono de un correo para que el terapeuta pueda enviar un mensaje con mayor facilidad a la persona relacionada con el usuario (ver Figura \ref{fig:3.2.6_Personas_relacionadas}).
+\end{itemize}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Personas_relacionadas}
+  	\caption{Pantalla personas relacionadas del diseño competitivo.}
+	\label{fig:3.2.6_Personas_relacionadas}
+\end{figure}
