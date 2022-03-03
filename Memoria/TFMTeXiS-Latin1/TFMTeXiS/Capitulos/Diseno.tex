@@ -1,7 +1,7 @@
 \chapter{Diseño}
 \label{cap:disenoDelTFG}
 
-Cada uno de los 4 integrantes del grupo hemos hecho un diseño de la aplicación siguiendo los requisitos que hemos obtenidos de las entrevistas con los expertos. Una vez hemos hecho estos prototipos, nos hemos reunido para que cada uno presentara su diseño al resto del grupo y entre todos hemos elegido cuál es el que más se adapta y cubre las funcionalidades necesarias. Como se ha optado por utilizar un diseño centrado en el usuario, una vez acabemos el diseño final, nos reuniremos con los usuarios finales para que puedan valorar si es lo que realmente necesitan.
+Cada uno de los 4 integrantes del grupo hemos hecho un diseño de la aplicación siguiendo los requisitos que hemos obtenidos de las entrevistas con los expertos. Una vez hemos hecho estos prototipos, nos hemos reunido para que cada uno presentara su diseño al resto del grupo y entre todos hemos elegido cuál es el que más se adapta y cubre las funcionalidades necesarias.
 
 \section{Prototipo de Cristina Barquilla Blanco}
 \label{cap:disenio_cris}
@@ -16,7 +16,11 @@ Una vez el terapeuta ha iniciado sesión, lo primero que puede hacer es seleccion
 	\label{fig:3.2.1_listado_pacientes}
 \end{figure}
 
-Al seleccionar un paciente de la lista se puede ver otro menú con varias opciones para realizar diferentes acciones con respecto al paciente seleccionado y ver qué paciente ha seleccionado (ver Figura \ref{fig:3.2.1_ver_paciente}). Las diferentes opciones del menú son:
+Al seleccionar un paciente de la lista se puede ver otro menú con varias opciones para realizar diferentes acciones con respecto al paciente seleccionado y ver qué paciente ha seleccionado (ver Figura \ref{fig:3.2.1_ver_paciente}). Las diferentes opciones del menú, que se explican en detalle en las siguientes subsecciones, son:
+\begin{itemize}
+	\item Terapeuta: Pacientes, sesiones, evaluaciones, historia de vida, calendario, mensajería y asignar pacientes.
+	\item Cuidador: Calendario, historia de vida y mensajería.
+\end{itemize}
 
 \begin{figure}[!ht]
   	\centering
@@ -25,11 +29,11 @@ Al seleccionar un paciente de la lista se puede ver otro menú con varias opcione
 	\label{fig:3.2.1_ver_paciente}
 \end{figure}
 
-\subsection{Pacientes}
-Esta opción sirve para poder volver al listado de pacientes de la Figura \ref{fig:3.2.1_listado_pacientes} y poder elegir otro paciente.
+\subsection{Pacientes de la sesión del terapeuta}
+Se muestra el listado de pacientes de la Figura \ref{fig:3.2.1_listado_pacientes} y se puede elegir otro paciente.
 
-\subsection{Sesiones}
-En este menú se puede ver un listado de las sesiones de un paciente ordenadas cronológicamente descendente por fecha (ver Figura \ref{fig:3.2.1_listado_sesiones}) y, donde se muestran los siguientes datos de cada sesión: fecha, interés, descripción y el estado (si se ha finalizado la sesión o no). Además, se permite ver, modificar o borrar cada sesión.
+\subsection{Sesiones de la sesión del terapeuta}
+Permite ver un listado de las sesiones de un paciente ordenadas cronológicamente descendente por fecha (ver Figura \ref{fig:3.2.1_listado_sesiones}). De cada sesión: fecha, interés, descripción y el estado (si se ha finalizado la sesión o no). Además, se permite ver, modificar o borrar cada sesión.
 
 \begin{figure}[!ht]
   	\centering
@@ -152,7 +156,7 @@ También, desde la pantalla de datos de un recuerdo, se puede acceder al listado 
 	\label{fig:3.2.1_persona_relacionada}
 \end{figure}	
 
-\subsection{Evaluaciones. Informes de seguimiento}
+\subsection{Evaluaciones de la sesión del terapeuta}
 Se podrán visualizar todos los informes de seguimiento del paciente y descargarlos (ver Figura \ref{fig:3.2.1_listado_informes_seguimiento}).
 \begin{figure}[!ht]
 	\centering
@@ -161,7 +165,6 @@ Se podrán visualizar todos los informes de seguimiento del paciente y descargarl
 	\label{fig:3.2.1_listado_informes_seguimiento}
 \end{figure}	
 
-\subsection{Evaluaciones. Evaluación Clínica}
 Se podrá ver un listado de las evaluaciones clínicas del paciente que se realizan cada 3 meses ordenadas cronológicamente tal y como se puede ver en la Figura \ref{fig:3.2.1_listado_evaluaciones}. En este listado se muestra la fecha, el GDS y el estado del paciente. Dentro de los datos de la evaluación clínica se pueden ver los siguientes datos: nombre, apellidos, GDS, estado, diagnóstico y observaciones. De estos campos, el nombre y apellidos se cargan automáticamente del paciente y no se pueden modificar (ver Figura \ref{fig:3.2.1_evaluacion}).
 \begin{figure}[!ht]
 	\centering
@@ -177,7 +180,7 @@ Se podrá ver un listado de las evaluaciones clínicas del paciente que se realiza
 	\label{fig:3.2.1_evaluacion}
 \end{figure}	
 
-\subsection{Historia de Vida}
+\subsection{Historia de Vida de la sesión del terapeuta}
 Mediante esta opción se puede generar un ``libro'' de la Historia de Vida del paciente con todos los recuerdos ordenados cronológicamente. La aplicación permite filtrar por fecha, etapa y categoría (ver Figura \ref{fig:3.2.1_historia_vida}). Con estos filtros, se genera una Historia de Vida que mostrará uno a uno los recuerdos y que se podrá pasar de un recuerdo a otro hacia adelante y hacia atrás. El recuerdo mostrará una descripción, la etapa, la categoría y el archivo multimedia si lo tiene (ver Figura \ref{fig:3.2.1_historia_vida_libro}).
 \begin{figure}[!ht]
 	\centering
@@ -192,8 +195,8 @@ Mediante esta opción se puede generar un ``libro'' de la Historia de Vida del pa
 	\label{fig:3.2.1_historia_vida_libro}
 \end{figure}	
 
-\subsection{Calendario}
-La aplicación permite ver tanto al terapeuta como al cuidador del paciente un calendario con los actividades que el cuidador puede realizar con el paciente (ver Figura \ref{fig:3.2.1_calendario}). Y también permite añadir estas actividades por parte del terapeuta al calendario tal y como se puede ver en la Figura \ref{fig:3.2.1_actividad}.
+\subsection{Calendario de la sesión del terapeuta}
+La aplicación permite ver un calendario con los actividades que el cuidador puede realizar con el paciente (ver Figura \ref{fig:3.2.1_calendario}). Y también permite añadir estas actividades por parte del terapeuta al calendario tal y como se puede ver en la Figura \ref{fig:3.2.1_actividad}.
 \begin{figure}[!ht]
 	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_calendario}
@@ -207,8 +210,8 @@ La aplicación permite ver tanto al terapeuta como al cuidador del paciente un ca
 	\label{fig:3.2.1_actividad}
 \end{figure}	
 
-\subsection{Mesajería}
-Esta opción permite que tanto el terapeuta como el cuidador del paciente puedan mandarse correos entre ellos. Los datos que se deben indicar son: fecha, email y mensaje (ver Figura \ref{fig:3.2.1_mensajeria_terapeuta}).
+\subsection{Mesajería de la sesión del terapeuta}
+Esta opción permite que el terapeuta puedan mandar correos al cuidador del paciente. Los datos que se deben indicar son: fecha, email y mensaje (ver Figura \ref{fig:3.2.1_mensajeria_terapeuta}).
 \begin{figure}[!ht]
 	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta}
@@ -216,7 +219,7 @@ Esta opción permite que tanto el terapeuta como el cuidador del paciente puedan 
 	\label{fig:3.2.1_mensajeria_terapeuta}
 \end{figure}	
 
-\subsection{Asignar pacientes}
+\subsection{Asignar pacientes de la sesión del terapeuta}
 Mediante esta opción, el terapeuta podrá asignar sus pacientes a otros terapeutas. Para ello, deberá seleccionar el terapeuta al que quiere asignarle uno o varios pacientes y podrá asignar los pacientes seleccionados mediante una lista donde aparecen el nombre y apellidos de cada uno de sus pacientes (ver Figura \ref{fig:3.2.1_asignar_pacientes}).
 \begin{figure}[!ht]
 	\centering
@@ -226,7 +229,7 @@ Mediante esta opción, el terapeuta podrá asignar sus pacientes a otros terapeuta
 \end{figure}
 
 El cuidador del paciente tendrá acceso a la aplicación pero solo a una serie de opciones:
-\subsection{Calendario}
+\subsection{Calendario de la sesión del cuidador}
 Se podrá ver las actividades que ha añadido el terapeuta (ver Figura \ref{fig:3.2.1_calendario_cuidador}).
 \begin{figure}[!ht]
 	\centering
@@ -235,7 +238,7 @@ Se podrá ver las actividades que ha añadido el terapeuta (ver Figura \ref{fig:3.
 	\label{fig:3.2.1_calendario_cuidador}
 \end{figure}
 
-\subsection{Historia de Vida}
+\subsection{Historia de Vida de la sesión del cuidador}
 Para poder realizar las actividades, al cuidador se le permite ver la Historia de Vida del paciente. Y, al igual, que el terapeuta, podrá filtrar por fecha, etapa y categoría (ver Figura \ref{fig:3.2.1_historia_vida_cuidador}) y, se generará un ``libro'' con la Historia de vida del paciente (ver Figura \ref{fig:3.2.1_historia_vida_libro_cuidador}).
 \begin{figure}[!ht]
 	\centering
@@ -251,7 +254,7 @@ Para poder realizar las actividades, al cuidador se le permite ver la Historia d
 	\label{fig:3.2.1_historia_vida_libro_cuidador}
 \end{figure}
 
-\subsection{Mensajería}
+\subsection{Mensajería de la sesión del cuidador}
 El cuidador tiene la opción de enviar un correo al terapeuta mediante esta opción donde podrá indicar la fecha, el email y el mensaje a enviar tal y como se muestra en la Figura \ref{fig:3.2.1_mensajeria_cuidador}.
 \begin{figure}[!ht]
 	\centering

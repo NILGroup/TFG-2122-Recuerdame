@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.8)  3 MAR 2022 23:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.8)  3 MAR 2022 23:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -704,7 +704,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \evensidemarginOriginal=\skip85
 \oddsidemarginOriginal=\skip86
 \longTitulo=\skip87
-<Imagenes/Vectorial/escudoUCM.pdf, id=418, 597.23125pt x 844.15375pt>
+<Imagenes/Vectorial/escudoUCM.pdf, id=414, 597.23125pt x 844.15375pt>
 File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 <use Imagenes/Vectorial/escudoUCM.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/escudoUCM.pdf  used on input line 1
@@ -811,17 +811,13 @@ conocimiento[] [][]
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
 [15] [16]
-LaTeX Info: Redefining \. on input line 71.
-LaTeX Info: Redefining \% on input line 71.
-
-Underfull \vbox (badness 4872) has occurred while \output is active []
-
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
  [17])
 \tf@toc=\write6
 \openout6 = `TFMTeXiS.toc'.
 
-
-[18] (./TFMTeXiS.lof
+ [18] (./TFMTeXiS.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 3.
@@ -1019,25 +1015,25 @@ LaTeX Info: Redefining \% on input line 132.
 LaTeX Info: Redefining \. on input line 147.
 LaTeX Info: Redefining \% on input line 147.
  [12]
-<./Imagenes/Figuras/figura 2.1.png, id=1040, 426.75893pt x 178.1751pt>
+<./Imagenes/Figuras/figura 2.1.png, id=1035, 426.75893pt x 178.1751pt>
 File: ./Imagenes/Figuras/figura 2.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.1.png  used on input line 
 150.
 (pdftex.def)             Requested size: 284.52756pt x 118.79216pt.
-<./Imagenes/Figuras/figura 2.2.png, id=1043, 426.75893pt x 248.62698pt>
+<./Imagenes/Figuras/figura 2.2.png, id=1038, 426.75893pt x 248.62698pt>
 File: ./Imagenes/Figuras/figura 2.2.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.2.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.2.png  used on input line 
 158.
 (pdftex.def)             Requested size: 341.43306pt x 198.91702pt.
-<./Imagenes/Figuras/figura 2.3.png, id=1046, 426.75893pt x 307.26114pt>
+<./Imagenes/Figuras/figura 2.3.png, id=1041, 426.75893pt x 307.26114pt>
 File: ./Imagenes/Figuras/figura 2.3.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.3.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.3.png  used on input line 
 166.
 (pdftex.def)             Requested size: 284.52756pt x 204.85588pt.
-<./Imagenes/Figuras/figura 2.4.png, id=1048, 426.75893pt x 176.81151pt>
+<./Imagenes/Figuras/figura 2.4.png, id=1043, 426.75893pt x 176.81151pt>
 File: ./Imagenes/Figuras/figura 2.4.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.4.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.4.png  used on input line 
@@ -1054,7 +1050,7 @@ LaTeX Info: Redefining \% on input line 178.
 LaTeX Info: Redefining \. on input line 178.
 LaTeX Info: Redefining \% on input line 178.
  [14 <./Imagenes/Figuras/figura 2.2.png> <./Imagenes/Figuras/figura 2.3.png>]
-<./Imagenes/Figuras/2.1.png, id=1064, 408.02437pt x 266.9975pt>
+<./Imagenes/Figuras/2.1.png, id=1059, 408.02437pt x 266.9975pt>
 File: ./Imagenes/Figuras/2.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/2.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/2.1.png  used on input line 195.
@@ -1062,7 +1058,7 @@ Package pdftex.def Info: ./Imagenes/Figuras/2.1.png  used on input line 195.
 LaTeX Info: Redefining \. on input line 199.
 LaTeX Info: Redefining \% on input line 199.
  [15 <./Imagenes/Figuras/figura 2.4.png>]
-<./Imagenes/Figuras/figura 2.6.8.png, id=1074, 550.055pt x 303.1325pt>
+<./Imagenes/Figuras/figura 2.6.8.png, id=1069, 550.055pt x 303.1325pt>
 File: ./Imagenes/Figuras/figura 2.6.8.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.8.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.8.png  used on input lin
@@ -1073,7 +1069,7 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 204--205
  [][] 
  []
 
-<./Imagenes/Figuras/figura 2.6.9.png, id=1075, 538.01pt x 291.0875pt>
+<./Imagenes/Figuras/figura 2.6.9.png, id=1070, 538.01pt x 291.0875pt>
 File: ./Imagenes/Figuras/figura 2.6.9.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.9.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.9.png  used on input lin
@@ -1084,7 +1080,7 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 210--211
  [][] 
  []
 
-<./Imagenes/Figuras/figura 2.6.10.png, id=1076, 370.88562pt x 273.02pt>
+<./Imagenes/Figuras/figura 2.6.10.png, id=1071, 370.88562pt x 273.02pt>
 File: ./Imagenes/Figuras/figura 2.6.10.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.10.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.10.png  used on input li
@@ -1105,7 +1101,7 @@ LaTeX Info: Redefining \% on input line 238.
 LaTeX Info: Redefining \. on input line 258.
 LaTeX Info: Redefining \% on input line 258.
  [18 <./Imagenes/Figuras/figura 2.6.10.png>]
-<./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=1098, 482.40225pt x 322.20
+<./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=1093, 482.40225pt x 322.20
 375pt>
 File: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_evaluacion_clinica.PNG>
@@ -1115,7 +1111,7 @@ on input line 307.
 LaTeX Info: Redefining \. on input line 315.
 LaTeX Info: Redefining \% on input line 315.
 [19]
-<./Imagenes/Figuras/movil_historia_vida.PNG, id=1105, 481.19775pt x 278.84175pt
+<./Imagenes/Figuras/movil_historia_vida.PNG, id=1100, 481.19775pt x 278.84175pt
 >
 File: ./Imagenes/Figuras/movil_historia_vida.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_historia_vida.PNG>
@@ -1125,14 +1121,14 @@ put line 320.
 LaTeX Info: Redefining \. on input line 336.
 LaTeX Info: Redefining \% on input line 336.
  [20 <./Imagenes/Figuras/movil_evaluacion_clinica.PNG>]
-<./Imagenes/Figuras/funcionamiento_bot.PNG, id=1115, 416.30531pt x 242.40562pt>
+<./Imagenes/Figuras/funcionamiento_bot.PNG, id=1109, 416.30531pt x 242.40562pt>
 
 File: ./Imagenes/Figuras/funcionamiento_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/funcionamiento_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/funcionamiento_bot.PNG  used on inp
 ut line 341.
 (pdftex.def)             Requested size: 291.41173pt x 169.68277pt.
-<./Imagenes/Figuras/interaccion_usuario.PNG, id=1117, 241.65282pt x 140.77594pt
+<./Imagenes/Figuras/interaccion_usuario.PNG, id=1111, 241.65282pt x 140.77594pt
 >
 File: ./Imagenes/Figuras/interaccion_usuario.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/interaccion_usuario.PNG>
@@ -1145,19 +1141,19 @@ Underfull \vbox (badness 2772) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 353.
 LaTeX Info: Redefining \% on input line 353.
  [21 <./Imagenes/Figuras/movil_historia_vida.PNG>]
-<./Imagenes/Figuras/bienvenida_bot.PNG, id=1127, 231.86626pt x 319.94531pt>
+<./Imagenes/Figuras/bienvenida_bot.PNG, id=1122, 231.86626pt x 319.94531pt>
 File: ./Imagenes/Figuras/bienvenida_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/bienvenida_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/bienvenida_bot.PNG  used on input l
 ine 358.
 (pdftex.def)             Requested size: 162.30525pt x 223.96017pt.
-<./Imagenes/Figuras/imagenes_bot.PNG, id=1128, 243.15843pt x 237.13594pt>
+<./Imagenes/Figuras/imagenes_bot.PNG, id=1123, 243.15843pt x 237.13594pt>
 File: ./Imagenes/Figuras/imagenes_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/imagenes_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/imagenes_bot.PNG  used on input lin
 e 365.
 (pdftex.def)             Requested size: 170.20973pt x 165.994pt.
-<./Imagenes/Figuras/pregunta_bot.PNG, id=1129, 234.1247pt x 420.06938pt>
+<./Imagenes/Figuras/pregunta_bot.PNG, id=1124, 234.1247pt x 420.06938pt>
 File: ./Imagenes/Figuras/pregunta_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/pregunta_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/pregunta_bot.PNG  used on input lin
@@ -1241,7 +1237,7 @@ LaTeX Info: Redefining \% on input line 150.
 
  (./Capitulos/Diseno.tex
 Cap\'itulo 4.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png, id=1227, 1144.2
+<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png, id=1221, 1144.2
 75pt x 357.335pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png Graphic fil
 e (type png)
@@ -1249,869 +1245,860 @@ e (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacien
 tes.png  used on input line 14.
 (pdftex.def)             Requested size: 341.43306pt x 106.62335pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png, id=1229, 1060.96375p
-t x 320.19624pt>
-File: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png Graphic file (ty
-pe png)
-<use ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png>
-Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.p
-ng  used on input line 23.
-(pdftex.def)             Requested size: 341.43306pt x 103.04141pt.
 [37
 
 
 
 
-]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png, id=1237, 1060.96
+ <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png, id=1230, 1060.96375p
+t x 320.19624pt>
+File: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png Graphic file (ty
+pe png)
+<use ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png>
+Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.p
+ng  used on input line 27.
+(pdftex.def)             Requested size: 341.43306pt x 103.04141pt.
+<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png, id=1233, 1060.96
 375pt x 359.3425pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png Graphic file
  (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesion
-es.png  used on input line 36.
+es.png  used on input line 40.
 (pdftex.def)             Requested size: 341.43306pt x 115.63895pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png, id=1239, 1031.855pt 
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
+ [38 <./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png> <./Imagenes/Fig
+uras/prototipo_cris/3.2.1_listado_sesiones.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png, id=1241, 1031.855pt 
 x 431.6125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png Graphic file (ty
 pe png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.p
-ng  used on input line 46.
+ng  used on input line 50.
 (pdftex.def)             Requested size: 341.43306pt x 142.81453pt.
-LaTeX Info: Redefining \. on input line 50.
-LaTeX Info: Redefining \% on input line 50.
- [38 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png> <./Imagene
-s/Figuras/prototipo_cris/3.2.1_ver_paciente.png> <./Imagenes/Figuras/prototipo_
-cris/3.2.1_listado_sesiones.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png, id=1249, 1
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png, id=1243, 1
 032.85875pt x 519.9425pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png Graphi
 c file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_r
-ecuerdos.png  used on input line 54.
+ecuerdos.png  used on input line 58.
 (pdftex.def)             Requested size: 341.43306pt x 171.87509pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png, id=1251
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png, id=1245
 , 1034.86626pt x 578.16pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png Gra
 phic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_c
-onfirmacion.png  used on input line 62.
+onfirmacion.png  used on input line 66.
 (pdftex.def)             Requested size: 341.43306pt x 190.74927pt.
-LaTeX Info: Redefining \. on input line 66.
-LaTeX Info: Redefining \% on input line 66.
- [39 <./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png> <./Imagenes/Fig
-uras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png, id=1261, 1033.8625pt x
+<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png, id=1247, 1033.8625pt x
  410.53375pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png Graphic file (type
  png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png
-  used on input line 71.
+  used on input line 75.
 (pdftex.def)             Requested size: 341.43306pt x 135.57678pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png, id=1264, 1033.86
+<./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png, id=1250, 1033.86
 25pt x 449.68pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png Graphic file
  (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesi
-on.png  used on input line 79.
+on.png  used on input line 83.
 (pdftex.def)             Requested size: 341.43306pt x 148.50464pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png, id=1265, 612.
+<./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png, id=1251, 612.
 2875pt x 594.22pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png Graphic f
 ile (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguim
-iento.png  used on input line 86.
+iento.png  used on input line 90.
 (pdftex.def)             Requested size: 341.43306pt x 331.35553pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png, id=1267, 103
+<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png, id=1253, 103
 3.8625pt x 380.42125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png Graphic 
 file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_rec
-uerdos.png  used on input line 94.
+uerdos.png  used on input line 98.
 (pdftex.def)             Requested size: 341.43306pt x 125.63226pt.
-LaTeX Info: Redefining \. on input line 98.
-LaTeX Info: Redefining \% on input line 98.
- [40 <./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png> <.
-/Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png>]
-Underfull \vbox (badness 2790) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 98.
-LaTeX Info: Redefining \% on input line 98.
- [41 <./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png> <./Imagenes
-/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png, id=1281,
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [39 <./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png, id=1263,
  1036.87375pt x 513.92pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png Grap
 hic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo
-_existente.png  used on input line 104.
+_existente.png  used on input line 108.
 (pdftex.def)             Requested size: 341.43306pt x 169.2334pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png, id=1283, 1035.87pt
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png, id=1265, 1035.87pt
  x 622.325pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png Graphic file (
 type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo
-.png  used on input line 112.
+.png  used on input line 116.
 (pdftex.def)             Requested size: 341.43306pt x 205.12099pt.
-LaTeX Info: Redefining \. on input line 121.
-LaTeX Info: Redefining \% on input line 121.
- [42 <./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png> <./Imag
-enes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png, id=1292, 1033.86
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+ [40 <./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png> <./Im
+agenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png, id=1274, 1033.86
 25pt x 364.36125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png Graphic file
  (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimed
-ia.png  used on input line 126.
+ia.png  used on input line 130.
 (pdftex.def)             Requested size: 341.43306pt x 120.32854pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png, id=129
-4, 1031.855pt x 522.95375pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png, id=127
+6, 1031.855pt x 522.95375pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png Gr
 aphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimed
-ia_existente.png  used on input line 134.
+ia_existente.png  used on input line 138.
 (pdftex.def)             Requested size: 341.43306pt x 173.03809pt.
 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_personas_relacionadas.png, id=
-1297, 1033.8625pt x 345.29pt>
+1279, 1033.8625pt x 345.29pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_personas_relacionadas.png
  Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_personas_relacionadas.png>
 
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_person
-as_relacionadas.png  used on input line 143.
+as_relacionadas.png  used on input line 147.
 (pdftex.def)             Requested size: 341.43306pt x 114.03033pt.
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
- [43 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png> <./Imagenes/F
-iguras/prototipo_cris/3.2.1_nuevo_multimedia.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png, id=1305, 1035
+LaTeX Info: Redefining \. on input line 151.
+LaTeX Info: Redefining \% on input line 151.
+ [41 <./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png> <./Imagenes/Figur
+as/prototipo_cris/3.2.1_finalizar_sesion.png>]
+LaTeX Info: Redefining \. on input line 151.
+LaTeX Info: Redefining \% on input line 151.
+ [42 <./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png> <./Image
+nes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png, id=1292, 1035
 .87pt x 366.36874pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png Graphic f
 ile (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relaci
-onada.png  used on input line 150.
+onada.png  used on input line 154.
 (pdftex.def)             Requested size: 341.43306pt x 120.7567pt.
 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png, id=1
-307, 1031.855pt x 361.35pt>
+294, 1031.855pt x 361.35pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png 
 Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_inform
-es_seguimiento.png  used on input line 159.
+es_seguimiento.png  used on input line 163.
 (pdftex.def)             Requested size: 341.43306pt x 119.56566pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png, id=1310, 103
+<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png, id=1297, 103
 3.8625pt x 298.11375pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png Graphic 
 file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evalua
-ciones.png  used on input line 168.
+ciones.png  used on input line 171.
 (pdftex.def)             Requested size: 341.43306pt x 98.45062pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 172.
-LaTeX Info: Redefining \% on input line 172.
- [44 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png> <
-./Imagenes/Figuras/prototipo_cris/3.2.1_listado_personas_relacionadas.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png, id=1317, 1034.86626pt 
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+ [43 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png> <./
+Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png>]
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+ [44 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png> <./Imagenes
+/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png> <./Imagenes/Figur
+as/prototipo_cris/3.2.1_listado_personas_relacionadas.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png, id=1312, 1034.86626pt 
 x 400.49625pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png Graphic file (type
  png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png
-  used on input line 175.
+  used on input line 178.
 (pdftex.def)             Requested size: 341.43306pt x 132.1336pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.png, id=1320, 1037.8775p
+<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.png, id=1315, 1037.8775p
 t x 367.3725pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.png Graphic file (t
 ype png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.
-png  used on input line 184.
+png  used on input line 187.
 (pdftex.def)             Requested size: 341.43306pt x 120.85771pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro.png, id=1321, 1035
+<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro.png, id=1316, 1035
 .87pt x 402.50375pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro.png Graphic f
 ile (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_
-libro.png  used on input line 190.
+libro.png  used on input line 193.
 (pdftex.def)             Requested size: 341.43306pt x 132.66696pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png, id=1324, 1032.85875pt 
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
+
+[45 <./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png> <./Imagen
+es/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png> <./Imagenes/F
+iguras/prototipo_cris/3.2.1_listado_evaluaciones.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png, id=1326, 1032.85875pt 
 x 359.3425pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png Graphic file (type
  png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png
-  used on input line 199.
+  used on input line 202.
 (pdftex.def)             Requested size: 341.43306pt x 118.78625pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png, id=1325, 1035.87pt x 35
+<./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png, id=1327, 1035.87pt x 35
 6.33125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png Graphic file (type 
 png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png 
- used on input line 205.
+ used on input line 208.
 (pdftex.def)             Requested size: 341.43306pt x 117.4483pt.
-LaTeX Info: Redefining \. on input line 209.
-LaTeX Info: Redefining \% on input line 209.
- [45 <./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png> <./Image
-nes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png, id=1333, 103
+LaTeX Info: Redefining \. on input line 212.
+LaTeX Info: Redefining \% on input line 212.
+ [46 <./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png> <./Imagenes/Figur
+as/prototipo_cris/3.2.1_historia_vida.png> <./Imagenes/Figuras/prototipo_cris/3
+.2.1_historia_vida_libro.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png, id=1336, 103
 4.86626pt x 348.30125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png Graphic 
 file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_ter
-apeuta.png  used on input line 214.
+apeuta.png  used on input line 217.
 (pdftex.def)             Requested size: 341.43306pt x 114.9132pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
- [46 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png> <./Imag
-enes/Figuras/prototipo_cris/3.2.1_evaluacion.png> <./Imagenes/Figuras/prototipo
-_cris/3.2.1_historia_vida.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png, id=1342, 1034.8
+<./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png, id=1338, 1034.8
 6626pt x 563.10374pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png Graphic fil
 e (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacien
-tes.png  used on input line 223.
+tes.png  used on input line 226.
 (pdftex.def)             Requested size: 341.43306pt x 185.78185pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 227.
-LaTeX Info: Redefining \% on input line 227.
- [47 <./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro.png> <./Image
-nes/Figuras/prototipo_cris/3.2.1_calendario.png> <./Imagenes/Figuras/prototipo_
-cris/3.2.1_actividad.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png, id=1351, 1034
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+ [47 <./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png> <./Imagenes/Figur
+as/prototipo_cris/3.2.1_actividad.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png, id=1346, 1034
 .86626pt x 363.3575pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png Graphic f
 ile (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cui
-dador.png  used on input line 233.
+dador.png  used on input line 236.
 (pdftex.def)             Requested size: 341.43306pt x 119.88062pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png, id=1354, 1
+<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png, id=1349, 1
 034.86626pt x 186.6975pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png Graphi
 c file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_
-cuidador.png  used on input line 242.
+cuidador.png  used on input line 245.
 (pdftex.def)             Requested size: 341.43306pt x 61.59612pt.
-LaTeX Info: Redefining \. on input line 246.
-LaTeX Info: Redefining \% on input line 246.
- [48 <./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png> <./Imag
-enes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png>]
 <./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png, id=1
-362, 1031.855pt x 399.4925pt>
+350, 1031.855pt x 399.4925pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png 
 Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_
-libro_cuidador.png  used on input line 249.
+libro_cuidador.png  used on input line 252.
 (pdftex.def)             Requested size: 341.43306pt x 132.18648pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png, id=1364, 1032
+<./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png, id=1352, 1032
 .85875pt x 288.07625pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png Graphic f
 ile (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cui
-dador.png  used on input line 258.
+dador.png  used on input line 261.
 (pdftex.def)             Requested size: 341.43306pt x 95.22809pt.
-LaTeX Info: Redefining \. on input line 262.
-LaTeX Info: Redefining \% on input line 262.
-
-[49 <./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png> <./Imagen
-es/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png> <./Imagenes/Figuras
-/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.2.png, id=1376, 182.18062pt x 148.555p
+LaTeX Info: Redefining \. on input line 265.
+LaTeX Info: Redefining \% on input line 265.
+ [48 <./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png> <./Imag
+enes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png>]
+LaTeX Info: Redefining \. on input line 272.
+LaTeX Info: Redefining \% on input line 272.
+ [49 <./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png> <./Image
+nes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png> <./Imagenes/Figura
+s/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.2.png, id=1371, 182.18062pt x 148.555p
 t>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.2.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.2.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.2.png  used on
- input line 272.
+ input line 275.
 (pdftex.def)             Requested size: 227.62204pt x 185.61621pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.3.png, id=1378, 197.23688pt x 155.5812
+<./Imagenes/Figuras/prototipo_Patricia/f.3.png, id=1373, 197.23688pt x 155.5812
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.3.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.3.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.3.png  used on
- input line 280.
+ input line 283.
 (pdftex.def)             Requested size: 227.62204pt x 179.55087pt.
-LaTeX Info: Redefining \. on input line 284.
-LaTeX Info: Redefining \% on input line 284.
- [50 <./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png> <./Image
-nes/Figuras/prototipo_Patricia/f.2.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.4.png, id=1385, 197.23688pt x 155.5812
+<./Imagenes/Figuras/prototipo_Patricia/f.4.png, id=1375, 197.23688pt x 155.5812
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.4.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.4.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.4.png  used on
- input line 290.
+ input line 293.
 (pdftex.def)             Requested size: 227.62204pt x 179.55087pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.5.png, id=1387, 200.24812pt x 155.5812
+<./Imagenes/Figuras/prototipo_Patricia/f.5.png, id=1377, 200.24812pt x 155.5812
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.5.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.5.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.5.png  used on
- input line 299.
+ input line 302.
 (pdftex.def)             Requested size: 227.62204pt x 176.8588pt.
-LaTeX Info: Redefining \. on input line 305.
-LaTeX Info: Redefining \% on input line 305.
- [51 <./Imagenes/Figuras/prototipo_Patricia/f.3.png> <./Imagenes/Figuras/protot
-ipo_Patricia/f.4.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.9.png, id=1393, 268.00125pt x 152.0681
+LaTeX Info: Redefining \. on input line 308.
+LaTeX Info: Redefining \% on input line 308.
+[50 <./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png> <./Imagen
+es/Figuras/prototipo_Patricia/f.2.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.9.png, id=1384, 268.00125pt x 152.0681
 3pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.9.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.9.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.9.png  used on
- input line 308.
+ input line 311.
 (pdftex.def)             Requested size: 227.62204pt x 129.15642pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.1.png, id=1395, 191.21437pt x 159.0943
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 325.
+LaTeX Info: Redefining \% on input line 325.
+ [51 <./Imagenes/Figuras/prototipo_Patricia/f.3.png> <./Imagenes/Figuras/protot
+ipo_Patricia/f.4.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.1.png, id=1390, 191.21437pt x 159.0943
 8pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.1.png  used on
- input line 325.
+ input line 328.
 (pdftex.def)             Requested size: 227.62204pt x 189.39502pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.6.png, id=1397, 202.25563pt x 136.51pt
+<./Imagenes/Figuras/prototipo_Patricia/f.6.png, id=1392, 202.25563pt x 136.51pt
 >
 File: ./Imagenes/Figuras/prototipo_Patricia/f.6.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.6.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.6.png  used on
- input line 334.
+ input line 337.
 (pdftex.def)             Requested size: 227.62204pt x 153.63376pt.
-LaTeX Info: Redefining \. on input line 337.
-LaTeX Info: Redefining \% on input line 337.
- [52 <./Imagenes/Figuras/prototipo_Patricia/f.5.png> <./Imagenes/Figuras/protot
-ipo_Patricia/f.9.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.7.png, id=1403, 195.22937pt x 149.5587
+<./Imagenes/Figuras/prototipo_Patricia/f.7.png, id=1394, 195.22937pt x 149.5587
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.7.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.7.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.7.png  used on
- input line 345.
+ input line 348.
 (pdftex.def)             Requested size: 227.62204pt x 174.38055pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.8.png, id=1405, 198.7425pt x 149.55875
+LaTeX Info: Redefining \. on input line 354.
+LaTeX Info: Redefining \% on input line 354.
+ [52 <./Imagenes/Figuras/prototipo_Patricia/f.5.png> <./Imagenes/Figuras/protot
+ipo_Patricia/f.9.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.8.png, id=1400, 198.7425pt x 149.55875
 pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.8.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.8.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.8.png  used on
- input line 354.
+ input line 357.
 (pdftex.def)             Requested size: 227.62204pt x 171.29747pt.
-LaTeX Info: Redefining \. on input line 362.
-LaTeX Info: Redefining \% on input line 362.
- [53 <./Imagenes/Figuras/prototipo_Patricia/f.1.png> <./Imagenes/Figuras/protot
-ipo_Patricia/f.6.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.10.png, id=1411, 191.71625pt x 152.068
+<./Imagenes/Figuras/prototipo_Patricia/f.10.png, id=1402, 191.71625pt x 152.068
 13pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.10.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.10.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.10.png  used o
-n input line 365.
+n input line 368.
 (pdftex.def)             Requested size: 227.62204pt x 180.55956pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.17.png, id=1413, 235.37938pt x 144.54p
+<./Imagenes/Figuras/prototipo_Patricia/f.17.png, id=1404, 235.37938pt x 144.54p
 t>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.17.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.17.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.17.png  used o
-n input line 375.
+n input line 378.
 (pdftex.def)             Requested size: 227.62204pt x 139.77794pt.
-LaTeX Info: Redefining \. on input line 381.
-LaTeX Info: Redefining \% on input line 381.
- [54 <./Imagenes/Figuras/prototipo_Patricia/f.7.png> <./Imagenes/Figuras/protot
-ipo_Patricia/f.8.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.18.png, id=1419, 239.89626pt x 151.064
+LaTeX Info: Redefining \. on input line 384.
+LaTeX Info: Redefining \% on input line 384.
+ [53 <./Imagenes/Figuras/prototipo_Patricia/f.1.png> <./Imagenes/Figuras/protot
+ipo_Patricia/f.6.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.18.png, id=1410, 239.89626pt x 151.064
 38pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.18.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.18.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.18.png  used o
-n input line 384.
+n input line 387.
 (pdftex.def)             Requested size: 227.62204pt x 143.33745pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.11.png, id=1421, 194.22563pt x 152.068
+<./Imagenes/Figuras/prototipo_Patricia/f.11.png, id=1412, 194.22563pt x 152.068
 13pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.11.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.11.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.11.png  used o
-n input line 394.
+n input line 397.
 (pdftex.def)             Requested size: 227.62204pt x 178.22063pt.
+LaTeX Info: Redefining \. on input line 404.
+LaTeX Info: Redefining \% on input line 404.
+ [54 <./Imagenes/Figuras/prototipo_Patricia/f.7.png> <./Imagenes/Figuras/protot
+ipo_Patricia/f.8.png>]
+
+LaTeX Warning: Text page 55 contains only floats.
+
+LaTeX Info: Redefining \. on input line 404.
+LaTeX Info: Redefining \% on input line 404.
+[55 <./Imagenes/Figuras/prototipo_Patricia/f.10.png> <./Imagenes/Figuras/protot
+ipo_Patricia/f.17.png> <./Imagenes/Figuras/prototipo_Patricia/f.18.png>]
 <./Imagenes/Figuras/prototipo_Patricia/f.21.png, id=1423, 208.27812pt x 146.547
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.21.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.21.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.21.png  used o
-n input line 404.
+n input line 407.
 (pdftex.def)             Requested size: 227.62204pt x 160.16515pt.
-LaTeX Info: Redefining \. on input line 410.
-LaTeX Info: Redefining \% on input line 410.
- [55 <./Imagenes/Figuras/prototipo_Patricia/f.10.png> <./Imagenes/Figuras/proto
-tipo_Patricia/f.17.png>]
-LaTeX Info: Redefining \. on input line 412.
-LaTeX Info: Redefining \% on input line 412.
- [56 <./Imagenes/Figuras/prototipo_Patricia/f.18.png> <./Imagenes/Figuras/proto
-tipo_Patricia/f.11.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.15.png, id=1434, 268.00125pt x 151.064
+LaTeX Info: Redefining \. on input line 413.
+LaTeX Info: Redefining \% on input line 413.
+
+[56 <./Imagenes/Figuras/prototipo_Patricia/f.11.png> <./Imagenes/Figuras/protot
+ipo_Patricia/f.21.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.15.png, id=1429, 268.00125pt x 151.064
 38pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.15.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.15.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.15.png  used o
-n input line 417.
+n input line 420.
 (pdftex.def)             Requested size: 227.62204pt x 128.3039pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.12.png, id=1437, 201.75375pt x 152.068
+<./Imagenes/Figuras/prototipo_Patricia/f.12.png, id=1432, 201.75375pt x 152.068
 13pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.12.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.12.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.12.png  used o
-n input line 426.
+n input line 429.
 (pdftex.def)             Requested size: 227.62204pt x 171.56813pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.19.png, id=1438, 240.9pt x 151.06438pt
+<./Imagenes/Figuras/prototipo_Patricia/f.19.png, id=1433, 240.9pt x 151.06438pt
 >
 File: ./Imagenes/Figuras/prototipo_Patricia/f.19.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.19.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.19.png  used o
-n input line 433.
+n input line 436.
 (pdftex.def)             Requested size: 227.62204pt x 142.74274pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.13.png, id=1440, 187.19937pt x 158.592
+<./Imagenes/Figuras/prototipo_Patricia/f.13.png, id=1435, 187.19937pt x 158.592
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.13.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.13.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.13.png  used o
-n input line 442.
+n input line 445.
 (pdftex.def)             Requested size: 227.62204pt x 192.84851pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.20.png, id=1443, 202.25563pt x 159.596
+LaTeX Info: Redefining \. on input line 452.
+LaTeX Info: Redefining \% on input line 452.
+ [57 <./Imagenes/Figuras/prototipo_Patricia/f.15.png> <./Imagenes/Figuras/proto
+tipo_Patricia/f.12.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.20.png, id=1442, 202.25563pt x 159.596
 25pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.20.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.20.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.20.png  used o
-n input line 454.
+n input line 457.
 (pdftex.def)             Requested size: 227.62204pt x 179.61594pt.
-LaTeX Info: Redefining \. on input line 461.
-LaTeX Info: Redefining \% on input line 461.
-
-[57 <./Imagenes/Figuras/prototipo_Patricia/f.21.png> <./Imagenes/Figuras/protot
-ipo_Patricia/f.15.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.14.png, id=1451, 194.22563pt x 143.536
+<./Imagenes/Figuras/prototipo_Patricia/f.14.png, id=1446, 194.22563pt x 143.536
 25pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.14.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.14.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.14.png  used o
-n input line 469.
+n input line 472.
 (pdftex.def)             Requested size: 227.62204pt x 168.22145pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.16.png, id=1454, 261.97874pt x 153.573
+LaTeX Info: Redefining \. on input line 475.
+LaTeX Info: Redefining \% on input line 475.
+ [58 <./Imagenes/Figuras/prototipo_Patricia/f.19.png> <./Imagenes/Figuras/proto
+tipo_Patricia/f.13.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.16.png, id=1453, 261.97874pt x 153.573
 75pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.16.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.16.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.16.png  used o
-n input line 478.
+n input line 481.
 (pdftex.def)             Requested size: 227.62204pt x 133.43701pt.
-LaTeX Info: Redefining \. on input line 481.
-LaTeX Info: Redefining \% on input line 481.
- [58 <./Imagenes/Figuras/prototipo_Patricia/f.12.png> <./Imagenes/Figuras/proto
-tipo_Patricia/f.19.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.22.png, id=1459, 212.795pt x 146.5475p
+<./Imagenes/Figuras/prototipo_Patricia/f.22.png, id=1454, 212.795pt x 146.5475p
 t>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.22.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.22.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.22.png  used o
-n input line 485.
+n input line 488.
 (pdftex.def)             Requested size: 227.62204pt x 156.76624pt.
-<./Imagenes/Figuras/prototipo_santi/login_san_2.PNG, id=1462, 466.74374pt x 295
+LaTeX Info: Redefining \. on input line 495.
+LaTeX Info: Redefining \% on input line 495.
+
+[59 <./Imagenes/Figuras/prototipo_Patricia/f.20.png> <./Imagenes/Figuras/protot
+ipo_Patricia/f.14.png>]
+<./Imagenes/Figuras/prototipo_santi/login_san_2.PNG, id=1461, 466.74374pt x 295
 .1025pt>
 File: ./Imagenes/Figuras/prototipo_santi/login_san_2.PNG Graphic file (type png
 )
 <use ./Imagenes/Figuras/prototipo_santi/login_san_2.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/login_san_2.PNG  us
-ed on input line 505.
+ed on input line 508.
 (pdftex.def)             Requested size: 227.62204pt x 143.91704pt.
-
-Underfull \vbox (badness 5231) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 509.
-LaTeX Info: Redefining \% on input line 509.
- [59 <./Imagenes/Figuras/prototipo_Patricia/f.13.png> <./Imagenes/Figuras/proto
-tipo_Patricia/f.20.png>]
-Overfull \vbox (21.00787pt too high) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 509.
-LaTeX Info: Redefining \% on input line 509.
-
-[60 <./Imagenes/Figuras/prototipo_Patricia/f.14.png> <./Imagenes/Figuras/protot
-ipo_Patricia/f.16.png> <./Imagenes/Figuras/prototipo_Patricia/f.22.png>]
-<./Imagenes/Figuras/prototipo_santi/ini_san_2.PNG, id=1473, 506.89375pt x 392.4
+<./Imagenes/Figuras/prototipo_santi/ini_san_2.PNG, id=1463, 506.89375pt x 392.4
 6625pt>
 File: ./Imagenes/Figuras/prototipo_santi/ini_san_2.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/ini_san_2.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/ini_san_2.PNG  used
- on input line 513.
+ on input line 516.
 (pdftex.def)             Requested size: 227.62204pt x 176.23688pt.
-<./Imagenes/Figuras/prototipo_santi/prep_ses_2.PNG, id=1475, 837.1275pt x 568.1
+LaTeX Info: Redefining \. on input line 520.
+LaTeX Info: Redefining \% on input line 520.
+ [60 <./Imagenes/Figuras/prototipo_Patricia/f.16.png> <./Imagenes/Figuras/proto
+tipo_Patricia/f.22.png>]
+<./Imagenes/Figuras/prototipo_santi/prep_ses_2.PNG, id=1470, 837.1275pt x 568.1
 225pt>
 File: ./Imagenes/Figuras/prototipo_santi/prep_ses_2.PNG Graphic file (type png)
 
 <use ./Imagenes/Figuras/prototipo_santi/prep_ses_2.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/prep_ses_2.PNG  use
-d on input line 526.
+d on input line 529.
 (pdftex.def)             Requested size: 227.62204pt x 154.47005pt.
-LaTeX Info: Redefining \. on input line 530.
-LaTeX Info: Redefining \% on input line 530.
-
-[61 <./Imagenes/Figuras/prototipo_santi/login_san_2.PNG> <./Imagenes/Figuras/pr
-ototipo_santi/ini_san_2.PNG>]
-<./Imagenes/Figuras/prototipo_santi/crea_ses_2.PNG, id=1484, 887.315pt x 601.24
+LaTeX Info: Redefining \. on input line 533.
+LaTeX Info: Redefining \% on input line 533.
+ [61 <./Imagenes/Figuras/prototipo_santi/login_san_2.PNG> <./Imagenes/Figuras/p
+rototipo_santi/ini_san_2.PNG>]
+<./Imagenes/Figuras/prototipo_santi/crea_ses_2.PNG, id=1479, 887.315pt x 601.24
 625pt>
 File: ./Imagenes/Figuras/prototipo_santi/crea_ses_2.PNG Graphic file (type png)
 
 <use ./Imagenes/Figuras/prototipo_santi/crea_ses_2.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/crea_ses_2.PNG  use
-d on input line 535.
+d on input line 538.
 (pdftex.def)             Requested size: 227.62204pt x 154.22859pt.
-LaTeX Info: Redefining \. on input line 545.
-LaTeX Info: Redefining \% on input line 545.
- [62 <./Imagenes/Figuras/prototipo_santi/prep_ses_2.PNG> <./Imagenes/Figuras/pr
-ototipo_santi/crea_ses_2.PNG>]
-<./Imagenes/Figuras/prototipo_santi/rea_ses_2.PNG, id=1492, 965.6075pt x 767.86
+<./Imagenes/Figuras/prototipo_santi/rea_ses_2.PNG, id=1481, 965.6075pt x 767.86
 874pt>
 File: ./Imagenes/Figuras/prototipo_santi/rea_ses_2.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/rea_ses_2.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/rea_ses_2.PNG  used
- on input line 548.
+ on input line 551.
 (pdftex.def)             Requested size: 227.62204pt x 180.99986pt.
-<./Imagenes/Figuras/prototipo_santi/fin_ses_2.PNG, id=1494, 704.6325pt x 468.75
+<./Imagenes/Figuras/prototipo_santi/fin_ses_2.PNG, id=1483, 704.6325pt x 468.75
 125pt>
 File: ./Imagenes/Figuras/prototipo_santi/fin_ses_2.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/fin_ses_2.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/fin_ses_2.PNG  used
- on input line 555.
+ on input line 558.
 (pdftex.def)             Requested size: 227.62204pt x 151.41966pt.
-<./Imagenes/Figuras/prototipo_santi/family_ses_2.PNG, id=1496, 654.445pt x 493.
+LaTeX Info: Redefining \. on input line 562.
+LaTeX Info: Redefining \% on input line 562.
+
+[62 <./Imagenes/Figuras/prototipo_santi/prep_ses_2.PNG> <./Imagenes/Figuras/pro
+totipo_santi/crea_ses_2.PNG>]
+<./Imagenes/Figuras/prototipo_santi/family_ses_2.PNG, id=1491, 654.445pt x 493.
 845pt>
 File: ./Imagenes/Figuras/prototipo_santi/family_ses_2.PNG Graphic file (type pn
 g)
 <use ./Imagenes/Figuras/prototipo_santi/family_ses_2.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/family_ses_2.PNG  u
-sed on input line 564.
+sed on input line 567.
 (pdftex.def)             Requested size: 227.62204pt x 171.76323pt.
-LaTeX Info: Redefining \. on input line 568.
-LaTeX Info: Redefining \% on input line 568.
- [63 <./Imagenes/Figuras/prototipo_santi/rea_ses_2.PNG> <./Imagenes/Figuras/pro
-totipo_santi/fin_ses_2.PNG>]
-<./Imagenes/Figuras/prototipo_santi/cal_san_2.PNG, id=1504, 815.045pt x 497.86p
+<./Imagenes/Figuras/prototipo_santi/cal_san_2.PNG, id=1493, 815.045pt x 497.86p
 t>
 File: ./Imagenes/Figuras/prototipo_santi/cal_san_2.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/cal_san_2.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/cal_san_2.PNG  used
- on input line 573.
+ on input line 576.
 (pdftex.def)             Requested size: 227.62204pt x 139.0352pt.
-<./Imagenes/Figuras/prototipo_santi/hv_san_2.PNG, id=1506, 877.2775pt x 560.092
+LaTeX Info: Redefining \. on input line 582.
+LaTeX Info: Redefining \% on input line 582.
+ [63 <./Imagenes/Figuras/prototipo_santi/rea_ses_2.PNG> <./Imagenes/Figuras/pro
+totipo_santi/fin_ses_2.PNG>]
+<./Imagenes/Figuras/prototipo_santi/hv_san_2.PNG, id=1501, 877.2775pt x 560.092
 5pt>
 File: ./Imagenes/Figuras/prototipo_santi/hv_san_2.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/hv_san_2.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/hv_san_2.PNG  used 
-on input line 582.
+on input line 585.
 (pdftex.def)             Requested size: 227.62204pt x 145.32149pt.
-<./Imagenes/Figuras/prototipo_santi/chat_san_2.PNG, id=1508, 750.805pt x 537.00
+<./Imagenes/Figuras/prototipo_santi/chat_san_2.PNG, id=1503, 750.805pt x 537.00
 626pt>
 File: ./Imagenes/Figuras/prototipo_santi/chat_san_2.PNG Graphic file (type png)
 
 <use ./Imagenes/Figuras/prototipo_santi/chat_san_2.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/chat_san_2.PNG  use
-d on input line 589.
+d on input line 592.
 (pdftex.def)             Requested size: 227.62204pt x 162.79929pt.
-LaTeX Info: Redefining \. on input line 600.
-LaTeX Info: Redefining \% on input line 600.
+LaTeX Info: Redefining \. on input line 606.
+LaTeX Info: Redefining \% on input line 606.
  [64 <./Imagenes/Figuras/prototipo_santi/family_ses_2.PNG> <./Imagenes/Figuras/
 prototipo_santi/cal_san_2.PNG>]
-<./Imagenes/Figuras/prototipo_eva/buscador_pacientes.png, id=1517, 684.5575pt x
+<./Imagenes/Figuras/prototipo_eva/buscador_pacientes.png, id=1512, 684.5575pt x
  605.26125pt>
 File: ./Imagenes/Figuras/prototipo_eva/buscador_pacientes.png Graphic file (typ
 e png)
 <use ./Imagenes/Figuras/prototipo_eva/buscador_pacientes.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/buscador_pacientes.pn
-g  used on input line 606.
+g  used on input line 609.
 (pdftex.def)             Requested size: 227.62204pt x 201.25145pt.
-<./Imagenes/Figuras/prototipo_eva/menu_paciente.png, id=1518, 685.56125pt x 606
+<./Imagenes/Figuras/prototipo_eva/menu_paciente.png, id=1513, 685.56125pt x 606
 .265pt>
 File: ./Imagenes/Figuras/prototipo_eva/menu_paciente.png Graphic file (type png
 )
 <use ./Imagenes/Figuras/prototipo_eva/menu_paciente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/menu_paciente.png  us
-ed on input line 613.
+ed on input line 616.
 (pdftex.def)             Requested size: 227.62204pt x 201.28917pt.
-<./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png, id=1520, 1193.45876pt 
+<./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png, id=1515, 1193.45876pt 
 x 862.22125pt>
 File: ./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png Graphic file (type
  png)
 <use ./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png
-  used on input line 624.
+  used on input line 627.
 (pdftex.def)             Requested size: 227.62204pt x 164.4421pt.
-LaTeX Info: Redefining \. on input line 627.
-LaTeX Info: Redefining \% on input line 627.
- [65 <./Imagenes/Figuras/prototipo_santi/hv_san_2.PNG> <./Imagenes/Figuras/prot
-otipo_santi/chat_san_2.PNG>]
-LaTeX Info: Redefining \. on input line 627.
-LaTeX Info: Redefining \% on input line 627.
- [66 <./Imagenes/Figuras/prototipo_eva/buscador_pacientes.png> <./Imagenes/Figu
-ras/prototipo_eva/menu_paciente.png>]
-<./Imagenes/Figuras/prototipo_eva/historial_sesiones.png, id=1535, 1701.35625pt
+<./Imagenes/Figuras/prototipo_eva/historial_sesiones.png, id=1517, 1701.35625pt
  x 573.14125pt>
 File: ./Imagenes/Figuras/prototipo_eva/historial_sesiones.png Graphic file (typ
 e png)
 <use ./Imagenes/Figuras/prototipo_eva/historial_sesiones.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/historial_sesiones.pn
-g  used on input line 634.
+g  used on input line 637.
 (pdftex.def)             Requested size: 341.43306pt x 115.01976pt.
-<./Imagenes/Figuras/prototipo_eva/nueva_sesion.png, id=1537, 1776.6375pt x 521.
+LaTeX Info: Redefining \. on input line 643.
+LaTeX Info: Redefining \% on input line 643.
+ [65 <./Imagenes/Figuras/prototipo_santi/hv_san_2.PNG> <./Imagenes/Figuras/prot
+otipo_santi/chat_san_2.PNG>]
+LaTeX Info: Redefining \. on input line 643.
+LaTeX Info: Redefining \% on input line 643.
+ [66 <./Imagenes/Figuras/prototipo_eva/buscador_pacientes.png> <./Imagenes/Figu
+ras/prototipo_eva/menu_paciente.png>]
+LaTeX Info: Redefining \. on input line 643.
+LaTeX Info: Redefining \% on input line 643.
+
+[67 <./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png> <./Imagenes/Figura
+s/prototipo_eva/historial_sesiones.png>]
+<./Imagenes/Figuras/prototipo_eva/nueva_sesion.png, id=1539, 1776.6375pt x 521.
 95pt>
 File: ./Imagenes/Figuras/prototipo_eva/nueva_sesion.png Graphic file (type png)
 
 <use ./Imagenes/Figuras/prototipo_eva/nueva_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/nueva_sesion.png  use
-d on input line 643.
+d on input line 646.
 (pdftex.def)             Requested size: 341.43306pt x 100.30246pt.
-LaTeX Info: Redefining \. on input line 651.
-LaTeX Info: Redefining \% on input line 651.
- [67 <./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png> <./Imagenes/Figur
-as/prototipo_eva/historial_sesiones.png>]
-<./Imagenes/Figuras/prototipo_eva/realizar_sesion.png, id=1548, 1734.48pt x 562
+<./Imagenes/Figuras/prototipo_eva/realizar_sesion.png, id=1542, 1734.48pt x 562
 .1pt>
 File: ./Imagenes/Figuras/prototipo_eva/realizar_sesion.png Graphic file (type p
 ng)
 <use ./Imagenes/Figuras/prototipo_eva/realizar_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/realizar_sesion.png  
-used on input line 654.
+used on input line 657.
 (pdftex.def)             Requested size: 341.43306pt x 110.64258pt.
-<./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png, id=1549, 1637.11626pt x
+<./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png, id=1543, 1637.11626pt x
  605.26125pt>
 File: ./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png Graphic file (type 
 png)
 <use ./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png 
- used on input line 661.
+ used on input line 664.
 (pdftex.def)             Requested size: 341.43306pt x 126.23123pt.
-LaTeX Info: Redefining \. on input line 667.
-LaTeX Info: Redefining \% on input line 667.
+LaTeX Info: Redefining \. on input line 670.
+LaTeX Info: Redefining \% on input line 670.
  [68 <./Imagenes/Figuras/prototipo_eva/nueva_sesion.png> <./Imagenes/Figuras/pr
-ototipo_eva/realizar_sesion.png> <./Imagenes/Figuras/prototipo_eva/finalizar_se
-sion.png>]
-<./Imagenes/Figuras/prototipo_eva/historia_vida.png, id=1558, 1684.2925pt x 627
+ototipo_eva/realizar_sesion.png>]
+<./Imagenes/Figuras/prototipo_eva/historia_vida.png, id=1553, 1684.2925pt x 627
 .34375pt>
 File: ./Imagenes/Figuras/prototipo_eva/historia_vida.png Graphic file (type png
 )
 <use ./Imagenes/Figuras/prototipo_eva/historia_vida.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/historia_vida.png  us
-ed on input line 670.
+ed on input line 673.
 (pdftex.def)             Requested size: 341.43306pt x 127.17043pt.
-<./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png, id=1560, 851.18pt x 652
+<./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png, id=1555, 851.18pt x 652
 .4375pt>
 File: ./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png Graphic file (type 
 png)
 <use ./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png 
- used on input line 681.
+ used on input line 684.
 (pdftex.def)             Requested size: 227.62204pt x 174.46806pt.
-<./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.png, id=1562, 1425.325pt x
+<./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.png, id=1557, 1425.325pt x
  443.6575pt>
 File: ./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.png Graphic file (typ
 e png)
 <use ./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.pn
-g  used on input line 690.
+g  used on input line 693.
 (pdftex.def)             Requested size: 341.43306pt x 106.27687pt.
-<./Imagenes/Figuras/prototipo_eva/lista_informes.png, id=1564, 1425.325pt x 403
+<./Imagenes/Figuras/prototipo_eva/lista_informes.png, id=1559, 1425.325pt x 403
 .5075pt>
 File: ./Imagenes/Figuras/prototipo_eva/lista_informes.png Graphic file (type pn
 g)
 <use ./Imagenes/Figuras/prototipo_eva/lista_informes.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/lista_informes.png  u
-sed on input line 699.
+sed on input line 702.
 (pdftex.def)             Requested size: 341.43306pt x 96.65906pt.
-<./Imagenes/Figuras/prototipo_eva/menu.png, id=1566, 380.42125pt x 810.02625pt>
+<./Imagenes/Figuras/prototipo_eva/menu.png, id=1561, 380.42125pt x 810.02625pt>
 
 File: ./Imagenes/Figuras/prototipo_eva/menu.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/menu.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/menu.png  used on inp
-ut line 709.
+ut line 712.
 (pdftex.def)             Requested size: 108.0011pt x 229.9576pt.
-LaTeX Info: Redefining \. on input line 713.
-LaTeX Info: Redefining \% on input line 713.
-
-[69 <./Imagenes/Figuras/prototipo_eva/historia_vida.png> <./Imagenes/Figuras/pr
-ototipo_eva/nueva_evaluacion.png>]
-<./Imagenes/Figuras/prototipo_eva/lista_pacientes.png, id=1576, 1413.28pt x 777
+<./Imagenes/Figuras/prototipo_eva/lista_pacientes.png, id=1563, 1413.28pt x 777
 .90625pt>
 File: ./Imagenes/Figuras/prototipo_eva/lista_pacientes.png Graphic file (type p
 ng)
 <use ./Imagenes/Figuras/prototipo_eva/lista_pacientes.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/lista_pacientes.png  
-used on input line 719.
+used on input line 722.
 (pdftex.def)             Requested size: 341.43306pt x 187.93578pt.
-<./Imagenes/Figuras/prototipo_eva/mensajeria.png, id=1578, 1015.795pt x 764.857
+LaTeX Info: Redefining \. on input line 726.
+LaTeX Info: Redefining \% on input line 726.
+
+[69 <./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png> <./Imagenes/Figuras
+/prototipo_eva/historia_vida.png>]
+LaTeX Info: Redefining \. on input line 726.
+LaTeX Info: Redefining \% on input line 726.
+ [70 <./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png> <./Imagenes/Figura
+s/prototipo_eva/lista_evaluaciones.png> <./Imagenes/Figuras/prototipo_eva/lista
+_informes.png>]
+<./Imagenes/Figuras/prototipo_eva/mensajeria.png, id=1580, 1015.795pt x 764.857
 5pt>
 File: ./Imagenes/Figuras/prototipo_eva/mensajeria.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/mensajeria.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/mensajeria.png  used 
-on input line 728.
+on input line 731.
 (pdftex.def)             Requested size: 227.62204pt x 171.38525pt.
-<./Imagenes/Figuras/prototipo_eva/mi_perfil.png, id=1580, 1000.73875pt x 741.77
+<./Imagenes/Figuras/prototipo_eva/mi_perfil.png, id=1582, 1000.73875pt x 741.77
 126pt>
 File: ./Imagenes/Figuras/prototipo_eva/mi_perfil.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/mi_perfil.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/mi_perfil.png  used o
-n input line 737.
+n input line 740.
 (pdftex.def)             Requested size: 227.62204pt x 168.71361pt.
-<./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png, id=1582, 1034.86626pt 
+<./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png, id=1584, 1034.86626pt 
 x 838.13126pt>
 File: ./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png Graphic file (type
  png)
 <use ./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png
-  used on input line 749.
+  used on input line 752.
 (pdftex.def)             Requested size: 227.62204pt x 184.33829pt.
-<./Imagenes/Figuras/prototipo_eva/calendario.png, id=1585, 1362.08875pt x 1027.
+<./Imagenes/Figuras/prototipo_eva/calendario.png, id=1587, 1362.08875pt x 1027.
 84pt>
 File: ./Imagenes/Figuras/prototipo_eva/calendario.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/calendario.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/calendario.png  used 
-on input line 761.
+on input line 764.
 (pdftex.def)             Requested size: 227.62204pt x 171.75061pt.
-<./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png, id=1586, 838.13126pt 
+<./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png, id=1588, 838.13126pt 
 x 712.6625pt>
 File: ./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png Graphic file (typ
 e png)
 <use ./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.pn
-g  used on input line 768.
+g  used on input line 771.
 (pdftex.def)             Requested size: 227.62204pt x 193.5415pt.
-<./Imagenes/Figuras/prototipo_eva/c_menu.png, id=1588, 234.8775pt x 444.66125pt
+<./Imagenes/Figuras/prototipo_eva/c_menu.png, id=1590, 234.8775pt x 444.66125pt
 >
 File: ./Imagenes/Figuras/prototipo_eva/c_menu.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/c_menu.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/c_menu.png  used on i
-nput line 780.
+nput line 783.
 (pdftex.def)             Requested size: 108.0011pt x 204.46523pt.
-LaTeX Info: Redefining \. on input line 783.
-LaTeX Info: Redefining \% on input line 783.
- [70 <./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.png> <./Imagenes/Figu
-ras/prototipo_eva/lista_informes.png>]
-LaTeX Info: Redefining \. on input line 783.
-LaTeX Info: Redefining \% on input line 783.
-
-[71 <./Imagenes/Figuras/prototipo_eva/menu.png> <./Imagenes/Figuras/prototipo_e
-va/lista_pacientes.png>]
-LaTeX Info: Redefining \. on input line 783.
-LaTeX Info: Redefining \% on input line 783.
- [72 <./Imagenes/Figuras/prototipo_eva/mensajeria.png> <./Imagenes/Figuras/prot
-otipo_eva/mi_perfil.png>]
-LaTeX Info: Redefining \. on input line 783.
-LaTeX Info: Redefining \% on input line 783.
- [73 <./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png> <./Imagenes/Figur
-as/prototipo_eva/calendario.png>]
-<./Imagenes/Figuras/prototipo_eva/c_calendario.png, id=1618, 894.34125pt x 361.
+<./Imagenes/Figuras/prototipo_eva/c_calendario.png, id=1592, 894.34125pt x 361.
 35pt>
 File: ./Imagenes/Figuras/prototipo_eva/c_calendario.png Graphic file (type png)
 
 <use ./Imagenes/Figuras/prototipo_eva/c_calendario.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/c_calendario.png  use
-d on input line 790.
+d on input line 793.
 (pdftex.def)             Requested size: 341.43306pt x 137.95403pt.
-<./Imagenes/Figuras/prototipo_eva/c_mensajeria.png, id=1620, 894.34125pt x 311.
+LaTeX Info: Redefining \. on input line 799.
+LaTeX Info: Redefining \% on input line 799.
+ [71 <./Imagenes/Figuras/prototipo_eva/menu.png>]
+LaTeX Info: Redefining \. on input line 799.
+LaTeX Info: Redefining \% on input line 799.
+ [72 <./Imagenes/Figuras/prototipo_eva/lista_pacientes.png> <./Imagenes/Figuras
+/prototipo_eva/mensajeria.png>]
+LaTeX Info: Redefining \. on input line 799.
+LaTeX Info: Redefining \% on input line 799.
+ [73 <./Imagenes/Figuras/prototipo_eva/mi_perfil.png> <./Imagenes/Figuras/proto
+tipo_eva/ajustes_pacientes.png>]
+LaTeX Info: Redefining \. on input line 799.
+LaTeX Info: Redefining \% on input line 799.
+ [74 <./Imagenes/Figuras/prototipo_eva/calendario.png> <./Imagenes/Figuras/prot
+otipo_eva/asignar_terapeutas.png>]
+LaTeX Info: Redefining \. on input line 799.
+LaTeX Info: Redefining \% on input line 799.
+ [75 <./Imagenes/Figuras/prototipo_eva/c_menu.png> <./Imagenes/Figuras/prototip
+o_eva/c_calendario.png>]
+<./Imagenes/Figuras/prototipo_eva/c_mensajeria.png, id=1626, 894.34125pt x 311.
 1625pt>
 File: ./Imagenes/Figuras/prototipo_eva/c_mensajeria.png Graphic file (type png)
 
 <use ./Imagenes/Figuras/prototipo_eva/c_mensajeria.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/c_mensajeria.png  use
-d on input line 799.
+d on input line 802.
 (pdftex.def)             Requested size: 341.43306pt x 118.79373pt.
-LaTeX Info: Redefining \. on input line 817.
-LaTeX Info: Redefining \% on input line 817.
- [74 <./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png>]
-LaTeX Info: Redefining \. on input line 817.
-LaTeX Info: Redefining \% on input line 817.
- [75 <./Imagenes/Figuras/prototipo_eva/c_menu.png> <./Imagenes/Figuras/prototip
-o_eva/c_calendario.png> <./Imagenes/Figuras/prototipo_eva/c_mensajeria.png>]
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png, id=1637, 544.0325pt x 
+LaTeX Info: Redefining \. on input line 823.
+LaTeX Info: Redefining \% on input line 823.
+ [76 <./Imagenes/Figuras/prototipo_eva/c_mensajeria.png>]
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png, id=1636, 544.0325pt x 
 556.0775pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png Graphic file (type
  png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png
-  used on input line 831.
+  used on input line 834.
 (pdftex.def)             Requested size: 227.62204pt x 232.66002pt.
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png, id=1640, 1
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png, id=1639, 1
 139.25626pt x 364.36125pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png Graphi
 c file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_p
-acientes.png  used on input line 840.
+acientes.png  used on input line 843.
 (pdftex.def)             Requested size: 341.43306pt x 109.19801pt.
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png, id=1641, 1147
+LaTeX Info: Redefining \. on input line 847.
+LaTeX Info: Redefining \% on input line 847.
+ [77 <./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png>]
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png, id=1645, 1147
 .28625pt x 512.91624pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png Graphic f
 ile (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_pac
-iente.png  used on input line 847.
+iente.png  used on input line 850.
 (pdftex.def)             Requested size: 341.43306pt x 152.63948pt.
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png, id=1643, 
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png, id=1647, 
 1019.81pt x 520.94624pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png Graph
 ic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar
-_paciente.png  used on input line 855.
+_paciente.png  used on input line 858.
 (pdftex.def)             Requested size: 341.43306pt x 174.41672pt.
-LaTeX Info: Redefining \. on input line 859.
-LaTeX Info: Redefining \% on input line 859.
- [76]
-LaTeX Info: Redefining \. on input line 859.
-LaTeX Info: Redefining \% on input line 859.
- [77 <./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png> <./Imagenes/Figur
-as/disenio_competitivo/3.2.5_listado_pacientes.png> <./Imagenes/Figuras/disenio
-_competitivo/3.2.5_nuevo_paciente.png>]
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png, id=1655, 1134.2
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png, id=1648, 1134.2
 375pt x 652.4375pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png Graphic fil
 e (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_pacie
-nte.png  used on input line 863.
+nte.png  used on input line 866.
 (pdftex.def)             Requested size: 341.43306pt x 196.39977pt.
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png, id=1657, 11
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png, id=1650, 11
 30.2225pt x 467.7475pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png Graphic
  file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_s
-esiones.png  used on input line 872.
+esiones.png  used on input line 875.
 (pdftex.def)             Requested size: 341.43306pt x 141.30312pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 876.
-LaTeX Info: Redefining \% on input line 876.
- [78 <./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png> <./I
+LaTeX Info: Redefining \. on input line 879.
+LaTeX Info: Redefining \% on input line 879.
+ [78 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png> <./Im
+agenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png>]
+LaTeX Info: Redefining \. on input line 879.
+LaTeX Info: Redefining \% on input line 879.
+ [79 <./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png> <./I
 magenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png, id=1665, 812.03
 375pt x 871.255pt>
@@ -2119,7 +2106,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png Graphic fil
 e (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_ses
-ion.png  used on input line 880.
+ion.png  used on input line 883.
 (pdftex.def)             Requested size: 341.43306pt x 366.32344pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png, id=1667, 813.
 0375pt x 841.1425pt>
@@ -2127,7 +2114,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png Graphic f
 ile (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_rec
-uerdo.png  used on input line 890.
+uerdo.png  used on input line 893.
 (pdftex.def)             Requested size: 341.43306pt x 353.2261pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png, id=
 1669, 1051.93pt x 449.68pt>
@@ -2136,80 +2123,80 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png>
 
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_rec
-uerdo_existente.png  used on input line 898.
+uerdo_existente.png  used on input line 901.
 (pdftex.def)             Requested size: 341.43306pt x 145.959pt.
-LaTeX Info: Redefining \. on input line 902.
-LaTeX Info: Redefining \% on input line 902.
- [79 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png>]
-LaTeX Info: Redefining \. on input line 902.
-LaTeX Info: Redefining \% on input line 902.
- [80 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png>]
-LaTeX Info: Redefining \. on input line 902.
-LaTeX Info: Redefining \% on input line 902.
- [81 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png>]
+LaTeX Info: Redefining \. on input line 905.
+LaTeX Info: Redefining \% on input line 905.
+ [80 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png>]
+LaTeX Info: Redefining \. on input line 905.
+LaTeX Info: Redefining \% on input line 905.
+ [81 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png>]
+LaTeX Info: Redefining \. on input line 905.
+LaTeX Info: Redefining \% on input line 905.
+ [82 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png, id
-=1687, 1115.16624pt x 475.7775pt>
+=1686, 1115.16624pt x 475.7775pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.pn
 g Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png
 >
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_per
-sona_relacionada.png  used on input line 910.
+sona_relacionada.png  used on input line 913.
 (pdftex.def)             Requested size: 341.43306pt x 145.66728pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_existen
-te.png, id=1688, 1099.10625pt x 470.75874pt>
+te.png, id=1687, 1099.10625pt x 470.75874pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_ex
 istente.png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_exi
 stente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_per
-sona_relacionada_existente.png  used on input line 918.
+sona_relacionada_existente.png  used on input line 921.
 (pdftex.def)             Requested size: 341.43306pt x 146.2354pt.
-LaTeX Info: Redefining \. on input line 925.
-LaTeX Info: Redefining \% on input line 925.
- [82 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png
+LaTeX Info: Redefining \. on input line 928.
+LaTeX Info: Redefining \% on input line 928.
+ [83 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png
 > <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png>]
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png, id=1696, 84
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png, id=1695, 84
 5.1575pt x 861.2175pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png Graphic
  file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_mul
-timedia.png  used on input line 929.
+timedia.png  used on input line 932.
 (pdftex.def)             Requested size: 341.43306pt x 347.92386pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.png, i
-d=1698, 1237.62375pt x 529.98pt>
+d=1697, 1237.62375pt x 529.98pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.p
 ng Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.pn
 g>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_mul
-timedia_existente.png  used on input line 937.
+timedia_existente.png  used on input line 940.
 (pdftex.def)             Requested size: 341.43306pt x 146.20993pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png, id=169
-9, 1115.16624pt x 450.68375pt>
+8, 1115.16624pt x 450.68375pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png Gr
 aphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_h
-istoria_vida.png  used on input line 950.
+istoria_vida.png  used on input line 953.
 (pdftex.def)             Requested size: 341.43306pt x 137.98442pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.png, 
-id=1701, 1197.47375pt x 578.16pt>
+id=1700, 1197.47375pt x 578.16pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.
 png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.p
 ng>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_h
-istoria_vida_libro.png  used on input line 960.
+istoria_vida_libro.png  used on input line 963.
 (pdftex.def)             Requested size: 341.43306pt x 164.84789pt.
-LaTeX Info: Redefining \. on input line 964.
-LaTeX Info: Redefining \% on input line 964.
- [83 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_ex
+LaTeX Info: Redefining \. on input line 967.
+LaTeX Info: Redefining \% on input line 967.
+ [84 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_ex
 istente.png>]
-LaTeX Info: Redefining \. on input line 964.
-LaTeX Info: Redefining \% on input line 964.
- [84 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png> <./Ima
+LaTeX Info: Redefining \. on input line 967.
+LaTeX Info: Redefining \% on input line 967.
+ [85 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png> <./Ima
 genes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png, id
 =1713, 1366.10374pt x 741.77126pt>
@@ -2218,7 +2205,7 @@ g Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png
 >
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_h
-istoria_vida_pdf.png  used on input line 968.
+istoria_vida_pdf.png  used on input line 971.
 (pdftex.def)             Requested size: 341.43306pt x 185.38576pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png, id=1715, 1
 135.24126pt x 545.03625pt>
@@ -2226,109 +2213,109 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png Graphi
 c file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_r
-ecuerdos.png  used on input line 978.
+ecuerdos.png  used on input line 981.
 (pdftex.def)             Requested size: 341.43306pt x 163.91965pt.
-LaTeX Info: Redefining \. on input line 982.
-LaTeX Info: Redefining \% on input line 982.
- [85 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png> <
+LaTeX Info: Redefining \. on input line 985.
+LaTeX Info: Redefining \% on input line 985.
+ [86 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png> <
 ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas.png
-, id=1724, 1073.00874pt x 443.6575pt>
+, id=1723, 1073.00874pt x 443.6575pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionada
 s.png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas
 .png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_p
-ersonas_relacionadas.png  used on input line 987.
+ersonas_relacionadas.png  used on input line 990.
 (pdftex.def)             Requested size: 341.43306pt x 141.1677pt.
-LaTeX Info: Redefining \. on input line 991.
-LaTeX Info: Redefining \% on input line 991.
- [86 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.pn
+LaTeX Info: Redefining \. on input line 994.
+LaTeX Info: Redefining \% on input line 994.
+ [87 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.pn
 g> <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png>]
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png, id=1732
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png, id=1731
 , 1208.515pt x 451.6875pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png Gra
 phic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeri
-a_terapeuta.png  used on input line 997.
+a_terapeuta.png  used on input line 1000.
 (pdftex.def)             Requested size: 341.43306pt x 127.60884pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.png,
- id=1734, 1057.9525pt x 396.48125pt>
+ id=1733, 1057.9525pt x 396.48125pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado
 .png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.
 png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeri
-a_terapeuta_enviado.png  used on input line 1005.
+a_terapeuta_enviado.png  used on input line 1008.
 (pdftex.def)             Requested size: 341.43306pt x 127.95345pt.
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png, id=1736,
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png, id=1735,
  1104.125pt x 446.66875pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png Grap
 hic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeri
-a_cuidador.png  used on input line 1013.
+a_cuidador.png  used on input line 1016.
 (pdftex.def)             Requested size: 341.43306pt x 138.12509pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.png, 
-id=1738, 1208.515pt x 497.86pt>
+id=1737, 1208.515pt x 497.86pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.
 png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.p
 ng>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeri
-a_cuidador_enviado.png  used on input line 1021.
+a_cuidador_enviado.png  used on input line 1024.
 (pdftex.def)             Requested size: 341.43306pt x 140.6533pt.
 
 Underfull \vbox (badness 1072) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 1028.
-LaTeX Info: Redefining \% on input line 1028.
- [87 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionada
+LaTeX Info: Redefining \. on input line 1031.
+LaTeX Info: Redefining \% on input line 1031.
+ [88 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionada
 s.png> <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png>]
-LaTeX Info: Redefining \. on input line 1028.
-LaTeX Info: Redefining \% on input line 1028.
- [88 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado
+LaTeX Info: Redefining \. on input line 1031.
+LaTeX Info: Redefining \% on input line 1031.
+ [89 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado
 .png> <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png> <.
 /Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1029
+Underfull \hbox (badness 10000) in paragraph at lines 1032--1032
 [][][]\T1/cmr/m/n/9 https://drive.google.com/file/d/1F4iYaDdrvrE2GygW3gI-jiZCIj
 Ov-
  []
 
-<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Menu.png, id=1756, 467.24562
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Menu.png, id=1755, 467.24562
 pt x 69.25874pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Menu.png Graphic file (
 type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Menu.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Menu
-.png  used on input line 1038.
+.png  used on input line 1041.
 (pdftex.def)             Requested size: 341.43306pt x 50.61234pt.
-<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png, id=1758, 383.9
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png, id=1757, 383.9
 3437pt x 268.00125pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png Graphic fi
 le (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paci
-ente.png  used on input line 1049.
+ente.png  used on input line 1052.
 (pdftex.def)             Requested size: 341.43306pt x 238.34859pt.
-<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png, id=1760, 407.5
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png, id=1759, 407.5
 225pt x 321.70187pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png Graphic fi
 le (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesi
-ones.png  used on input line 1060.
+ones.png  used on input line 1063.
 (pdftex.def)             Requested size: 341.43306pt x 269.5405pt.
-LaTeX Info: Redefining \. on input line 1067.
-LaTeX Info: Redefining \% on input line 1067.
-[89 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Menu.png>]
+LaTeX Info: Redefining \. on input line 1070.
+LaTeX Info: Redefining \% on input line 1070.
+[90 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Menu.png>]
 
-LaTeX Warning: Text page 90 contains only floats.
+LaTeX Warning: Text page 91 contains only floats.
 
-LaTeX Info: Redefining \. on input line 1067.
-LaTeX Info: Redefining \% on input line 1067.
-[90 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png> <./Imagene
+LaTeX Info: Redefining \. on input line 1070.
+LaTeX Info: Redefining \% on input line 1070.
+[91 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png> <./Imagene
 s/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png>]
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png, id=1
 771, 463.23062pt x 198.24063pt>
@@ -2336,7 +2323,7 @@ File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png
 Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Info
-rmes_de_sesion.png  used on input line 1071.
+rmes_de_sesion.png  used on input line 1074.
 (pdftex.def)             Requested size: 341.43306pt x 146.11801pt.
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png, id=1773, 4
 58.21187pt x 304.63812pt>
@@ -2344,7 +2331,7 @@ File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png Graphi
 c file (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Eval
-uaciones.png  used on input line 1082.
+uaciones.png  used on input line 1085.
 (pdftex.def)             Requested size: 341.43306pt x 227.00912pt.
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2.png, id=1775, 46
 1.725pt x 342.27875pt>
@@ -2352,7 +2339,7 @@ File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2.png Graphic
  file (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Cale
-ndario2.png  used on input line 1093.
+ndario2.png  used on input line 1096.
 (pdftex.def)             Requested size: 341.43306pt x 253.10472pt.
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1.png, id=1778, 379
 .91937pt x 320.69812pt>
@@ -2360,7 +2347,7 @@ File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1.png Graphic
 file (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recu
-erdos1.png  used on input line 1104.
+erdos1.png  used on input line 1107.
 (pdftex.def)             Requested size: 341.43306pt x 288.21947pt.
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2.png, id=1779, 462
 .22687pt x 215.30438pt>
@@ -2368,7 +2355,7 @@ File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2.png Graphic
 file (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recu
-erdos2.png  used on input line 1111.
+erdos2.png  used on input line 1114.
 (pdftex.def)             Requested size: 341.43306pt x 159.0402pt.
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Personas_relacionadas.png, i
 d=1781, 457.71pt x 194.22563pt>
@@ -2377,86 +2364,86 @@ ng Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Personas_relacionadas.pn
 g>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Pers
-onas_relacionadas.png  used on input line 1122.
+onas_relacionadas.png  used on input line 1125.
 (pdftex.def)             Requested size: 341.43306pt x 144.88942pt.
 )
 LaTeX Info: Redefining \. on input line 151.
 LaTeX Info: Redefining \% on input line 151.
- [91 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png>
+ [92 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png>
 ]
 LaTeX Info: Redefining \. on input line 151.
 LaTeX Info: Redefining \% on input line 151.
- [92 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png> <./Im
+ [93 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png> <./Im
 agenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2.png>]
 LaTeX Info: Redefining \. on input line 151.
 LaTeX Info: Redefining \% on input line 151.
- [93 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1.png> <./Imag
+ [94 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1.png> <./Imag
 enes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2.png>]
 LaTeX Info: Redefining \. on input line 151.
 LaTeX Info: Redefining \% on input line 151.
- [94 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Personas_relacionadas.p
+ [95 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Personas_relacionadas.p
 ng>]
 \openout2 = `Capitulos/Implementacion.aux'.
 
- (./Capitulos/Implementacion.tex
-Cap\'itulo 5.
-) [95
+ (./Capitulos/Implementacion.tex [96
 
 
 
 
 ]
+Cap\'itulo 5.
+) [97]
 \openout2 = `Capitulos/Evaluaciones.aux'.
 
- (./Capitulos/Evaluaciones.tex [96
+ (./Capitulos/Evaluaciones.tex [98
 
 
 
 
 ]
 Cap\'itulo 6.
-) [97]
+) [99]
 \openout2 = `Capitulos/ConclusionesTrabajoFuturo.aux'.
 
- (./Capitulos/ConclusionesTrabajoFuturo.tex [98
+ (./Capitulos/ConclusionesTrabajoFuturo.tex [100
 
 
 
 
 ]
 Cap\'itulo 7.
-) [99]
+) [101]
 \openout2 = `Capitulos/ConclusionsFutureWork.aux'.
 
- (./Capitulos/ConclusionsFutureWork.tex [100
+ (./Capitulos/ConclusionsFutureWork.tex [102
 
 
 
 
 ]
 Chapter 7.
-) [101]
+) [103]
 LaTeX Info: Redefining \. on input line 162.
 LaTeX Info: Redefining \% on input line 162.
 \openout2 = `Capitulos/TrabajoIndividual.aux'.
 
- (./Capitulos/TrabajoIndividual.tex [102
+ (./Capitulos/TrabajoIndividual.tex [104
 
 
 
 
 ]
 Cap\'itulo 8.
-[103]
+[105]
 LaTeX Info: Redefining \. on input line 47.
 LaTeX Info: Redefining \% on input line 47.
- [104])
+ [106])
 LaTeX Info: Redefining \. on input line 164.
 LaTeX Info: Redefining \% on input line 164.
- [105]
+ [107]
 \openout2 = `Cascaras/bibliografia.aux'.
 
- (./Cascaras/bibliografia.tex (./TFMTeXiS.bbl [106
+ (./Cascaras/bibliografia.tex (./TFMTeXiS.bbl [108
 
 
 
@@ -2504,15 +2491,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--37
  en _ personas _
  []
 
-[107]))
+[109]))
 LaTeX Info: Redefining \. on input line 171.
 LaTeX Info: Redefining \% on input line 171.
- [108]
+ [110]
 \openout2 = `Apendices/appendixA.aux'.
 
  (./Apendices/appendixA.tex
 Ap\'{e}ndice A.
-<./Archivos/mini_mental.pdf, id=1867, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=1871, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 10.
@@ -2521,7 +2508,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 10.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
-<./Archivos/mini_mental.pdf, id=1870, page=1, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=1874, page=1, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 1>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page1 used on input line 
@@ -2565,7 +2552,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page1 used on input line 
 16.
 (pdftex.def)             Requested size: 597.21974pt x 418.34505pt.
-[109
+[111
 
 
 
@@ -2586,7 +2573,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page1 used on input line 
 16.
 (pdftex.def)             Requested size: 597.21974pt x 446.79773pt.
- [110]
+ [112]
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 20.
@@ -2599,7 +2586,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
-<./Archivos/mini_mental.pdf, id=1913, page=2, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=1916, page=2, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 2>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page2 used on input line 
@@ -2625,8 +2612,8 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page2 used on input line 
 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
- [111 <./Archivos/mini_mental.pdf>]
-<./Archivos/mini_mental.pdf, id=1922, page=3, 597.2212pt x 845.1374pt>
+ [113 <./Archivos/mini_mental.pdf>]
+<./Archivos/mini_mental.pdf, id=1925, page=3, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 3>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page3 used on input line 
@@ -2643,7 +2630,7 @@ Package pdftex.def Info: ./Archivos/mini_mental.pdf , page3 used on input line
 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
 
-[112 <./Archivos/mini_mental.pdf>])
+[114 <./Archivos/mini_mental.pdf>])
 \openout2 = `Apendices/appendixB.aux'.
 
  (./Apendices/appendixB.tex
@@ -2671,7 +2658,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [113
+ [115
 
 
 
@@ -2693,7 +2680,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
-[114]
+[116]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
@@ -2715,7 +2702,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 LaTeX Info: Redefining \. on input line 39.
 LaTeX Info: Redefining \% on input line 39.
-[115]
+[117]
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
@@ -2747,27 +2734,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
 LaTeX Info: Redefining \. on input line 51.
 LaTeX Info: Redefining \% on input line 51.
-[116]
+[118]
 LaTeX Info: Redefining \. on input line 60.
 LaTeX Info: Redefining \% on input line 60.
- [117]
+ [119]
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 LaTeX Info: Redefining \. on input line 71.
 LaTeX Info: Redefining \% on input line 71.
-[118]
+[120]
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
-[119]
+[121]
 LaTeX Info: Redefining \. on input line 103.
 LaTeX Info: Redefining \% on input line 103.
- [120]
+ [122]
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
@@ -2794,7 +2781,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
 LaTeX Info: Redefining \. on input line 117.
 LaTeX Info: Redefining \% on input line 117.
-[121]
+[123]
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
@@ -2816,7 +2803,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
 LaTeX Info: Redefining \. on input line 128.
 LaTeX Info: Redefining \% on input line 128.
-[122]
+[124]
 Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
@@ -2833,7 +2820,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
 LaTeX Info: Redefining \. on input line 138.
 LaTeX Info: Redefining \% on input line 138.
-[123]
+[125]
 Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
@@ -2845,7 +2832,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
 LaTeX Info: Redefining \. on input line 145.
 LaTeX Info: Redefining \% on input line 145.
-[124]
+[126]
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
@@ -2862,7 +2849,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
 LaTeX Info: Redefining \. on input line 161.
 LaTeX Info: Redefining \% on input line 161.
-[125]
+[127]
 Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
@@ -2879,7 +2866,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
 LaTeX Info: Redefining \. on input line 172.
 LaTeX Info: Redefining \% on input line 172.
-[126]
+[128]
 Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
@@ -2914,7 +2901,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 184.
 LaTeX Info: Redefining \% on input line 184.
- [127]
+ [129]
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
@@ -2936,20 +2923,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
 LaTeX Info: Redefining \. on input line 201.
 LaTeX Info: Redefining \% on input line 201.
-[128])
+[130])
 LaTeX Info: Redefining \. on input line 176.
 LaTeX Info: Redefining \% on input line 176.
- [129]
+ [131]
 \openout2 = `Apendices/appendixC.aux'.
 
- (./Apendices/appendixC.tex [130
+ (./Apendices/appendixC.tex [132
 
 
 
 
 ]
 Ap\'{e}ndice C.
-<./Archivos/debriefing.pdf, id=2003, 598.235pt x 845.1575pt>
+<./Archivos/debriefing.pdf, id=2006, 598.235pt x 845.1575pt>
 File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf>
 Package pdftex.def Info: ./Archivos/debriefing.pdf  used on input line 8.
@@ -2958,7 +2945,7 @@ File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf>
 Package pdftex.def Info: ./Archivos/debriefing.pdf  used on input line 8.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/debriefing.pdf, id=2006, page=1, 598.235pt x 845.1575pt>
+<./Archivos/debriefing.pdf, id=2009, page=1, 598.235pt x 845.1575pt>
 File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf, page 1>
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page1 used on input line 8
@@ -2987,7 +2974,7 @@ File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf>
 Package pdftex.def Info: ./Archivos/debriefing.pdf  used on input line 12.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/debriefing.pdf, id=2013, page=2, 598.235pt x 845.1575pt>
+<./Archivos/debriefing.pdf, id=2016, page=2, 598.235pt x 845.1575pt>
 File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf, page 2>
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page2 used on input line 1
@@ -3003,7 +2990,7 @@ File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page1 used on input line 1
 2.
 (pdftex.def)             Requested size: 358.94377pt x 370.52414pt.
-[131 <./Archivos/debriefing.pdf>]
+[133 <./Archivos/debriefing.pdf>]
 File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf, page 2>
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page2 used on input line 1
@@ -3019,16 +3006,16 @@ File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page2 used on input line 1
 2.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
- [132 <./Archivos/debriefing.pdf>])
+ [134 <./Archivos/debriefing.pdf>])
 \openout2 = `Cascaras/fin.aux'.
 
 
-(./Cascaras/fin.tex [133
+(./Cascaras/fin.tex [135
 
 
 
 
-] [134]) (./TFMTeXiS.aux (./Cascaras/cover.aux)
+] [136]) (./TFMTeXiS.aux (./Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 
@@ -3055,13 +3042,13 @@ LaTeX Info: Redefining \% on input line 49.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `TFMTeXiS.out' has not changed.
-(rerunfilecheck)             Checksum: C6E6503E5056F61A89C17AEA0619EA7D;27676.
+(rerunfilecheck)             Checksum: 81E50A683C931525417EDD5C14D23C4C;28825.
  ) 
 Here is how much of TeX's memory you used:
  17874 strings out of 478994
- 303975 string characters out of 5858185
+ 303961 string characters out of 5858185
  756757 words of memory out of 5000000
- 34006 multiletter control sequences out of 15000+600000
+ 34005 multiletter control sequences out of 15000+600000
  424605 words of font info for 63 fonts, out of 8000000 for 9000
  1379 hyphenation exceptions out of 8191
  105i,19n,107p,1455b,761s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3087,10 +3074,10 @@ e1/public/cm-super/sfti1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
 /public/cm-super/sftt1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/u
 rw/helvetic/uhvr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb>
-Output written on TFMTeXiS.pdf (158 pages, 24713381 bytes).
+Output written on TFMTeXiS.pdf (160 pages, 24713947 bytes).
 PDF statistics:
- 2215 PDF objects out of 2487 (max. 8388607)
- 1754 compressed objects within 18 object streams
- 457 named destinations out of 1000 (max. 500000)
- 1650 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2218 PDF objects out of 2487 (max. 8388607)
+ 1755 compressed objects within 18 object streams
+ 458 named destinations out of 1000 (max. 500000)
+ 1642 words of extra memory for PDF output out of 10000 (max. 10000000)
 
