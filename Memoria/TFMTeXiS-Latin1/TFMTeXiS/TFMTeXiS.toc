@@ -1,13 +1,13 @@
-\babel@toc {spanish}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}
+\babel@toc {english}{}
+\babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.9}%
 \contentsline {section}{\numberline {1.1}Motivaci\'on}{1}{section.10}%
 \contentsline {section}{\numberline {1.2}Objetivos}{2}{section.11}%
 \contentsline {section}{\numberline {1.3}Metodolog\IeC {\'\i }a}{2}{section.12}%
 \contentsline {section}{\numberline {1.4}Estructura de la Memoria}{3}{section.18}%
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.19}%
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {chapter}{\numberline {2}Estado de la Cuesti\'on}{7}{chapter.20}%
 \contentsline {section}{\numberline {2.1}Enfermedad del Alzheimer}{7}{section.21}%
 \contentsline {section}{\numberline {2.2}Terapias basadas en reminiscencia}{10}{section.29}%
@@ -15,10 +15,10 @@
 \contentsline {section}{\numberline {2.4}Trabajos relacionados}{12}{section.34}%
 \contentsline {subsection}{\numberline {2.4.1}Generaci\'on de historias a partir de una base de conocimiento}{12}{subsection.36}%
 \contentsline {subsection}{\numberline {2.4.2}Extracci\'on de informaci\'on personal a partir de redes sociales para la creaci\'on de un libro de vida}{15}{subsection.41}%
-\contentsline {subsection}{\numberline {2.4.3}Sistema de asistencia para cuidado de enfermos con alzh\'eimer}{17}{subsection.46}%
-\contentsline {subsection}{\numberline {2.4.4}Extracci\'on de preguntas a partir de im\'agenes para personas con problemas de memoria mediante t\'ecnicas de Deep Learning}{20}{subsection.49}%
+\contentsline {subsection}{\numberline {2.4.3}Sistema de asistencia para cuidado de enfermos con alzh\'eimer}{16}{subsection.46}%
+\contentsline {subsection}{\numberline {2.4.4}Extracci\'on de preguntas a partir de im\'agenes para personas con problemas de memoria mediante t\'ecnicas de Deep Learning}{21}{subsection.49}%
 \contentsline {subsection}{\numberline {2.4.5}Conclusiones}{22}{subsection.55}%
-\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {3}Captura de requisitos}{25}{chapter.56}%
 \contentsline {section}{\numberline {3.1}Preparaci\'on de la entrevista}{25}{section.61}%
 \contentsline {section}{\numberline {3.2}Entrevistas realizadas}{27}{section.73}%
@@ -62,13 +62,13 @@
 \contentsline {section}{\numberline {7.1}Conclusiones}{99}{section.242}%
 \contentsline {section}{\numberline {7.2}Trabajo futuro}{99}{section.243}%
 \contentsline {chapter}{\numberline {7}Conclusions and Future Work}{101}{chapter.244}%
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \contentsline {chapter}{\numberline {8}Trabajo Individual}{103}{chapter.245}%
 \contentsline {section}{\numberline {8.1}Cristina Barquilla Blanco}{103}{section.246}%
 \contentsline {section}{\numberline {8.2}Patricia D\IeC {\'\i }ez Garc\IeC {\'\i }a}{104}{section.247}%
 \contentsline {section}{\numberline {8.3}Santiago Marco Mulas L\'opez}{104}{section.248}%
 \contentsline {section}{\numberline {8.4}Eva Verd\'u Rodr\IeC {\'\i }guez}{105}{section.249}%
-\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}
 \contentsline {chapter}{Bibliograf\'{\i }a}{107}{chapter*.250}%
 \contentsline {chapter}{\numberline {A}Minimental, Test de Lobo}{109}{appendix.251}%
 \contentsline {chapter}{\numberline {B}Transcripciones entrevistas}{113}{appendix.253}%
