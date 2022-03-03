@@ -812,22 +812,17 @@ En este caso tanto el menú como la pantalla de inicio cambian. En la pantalla de
 \section{Diseño competitivo}
 Después de realizar y documentar cada uno de los prototipos, los integrantes del grupo nos reunimos por una videollamada en Discord el lunes 10 de enero a las 17:00. En la reunión, cada integrante expuso su prototipo de manera detallada. A continuación, discutimos las semejanzas y diferencias entre cada uno de los diseños, para posteriormente proceder a la elección de uno de ellos.
 
-Finalmente el diseño base elegido en consenso fue el del capitulo \ref{cap:disenio_cris} realizado por Cristina. La decisión fue tomada debido a que consideramos que este prototipo es el más completo y sencillo para la comprensión del usuario. A este prototipo se han añadido los siguientes cambios:
+Finalmente el diseño base elegido en consenso fue el realizado por Cristina (\ref{cap:disenio_cris}). La decisión fue tomada debido a que consideramos que este prototipo es el más completo y sencillo para la comprensión del usuario. A este prototipo se han añadido los cambios que se detallan a continuación:
 
-\subsection{General}
-Partiendo del prototipo de Cristina, se han realizado unos cambios generales de diseño para guardar consistencia:
-\begin{itemize}
-	\item Todas las listas siguen el mismo formato. Para añadir un nuevo registro, se ha añadido un botón ``+'' (ver Figura \ref{fig:3.2.5_listado_pacientes}) para guardar la consistencia externa de otras aplicaciones. Para ver un registro, se puede hacer de dos formas: mediante un link en la primera columna de la lista o mediante el icono de un ojo. Para modificar un registro se utiliza el icono de un lápiz y para borrarlo se utiliza un icono de una papelera en rojo.
-	\item Se ha separado el menú que había a la izquierda en dos menús:
+Todas las listas siguen el mismo formato: para añadir un nuevo registro, se ha añadido un botón ``+'' (ver Figura \ref{fig:3.2.5_listado_pacientes}), para guardar la consistencia externa de otras aplicaciones. Para ver un registro, se puede hacer de dos formas: mediante un link en la primera columna de la lista o mediante el icono de un ojo. Para modificar un registro se utiliza el icono de un lápiz. Para borrarlo se utiliza un icono de una papelera en rojo.
+Se ha separado el menú que había a la izquierda en dos menús:
 		\begin{itemize}
-			\item Un menú general del usuario en la parte superior de la pantalla donde se pueden ver 3 iconos que permiten acceder a los pacientes, a la mensajería entre el terapeuta y el cuidador del paciente y permite cerrar sesión al usuario logado respectivamente (ver Figura \ref{fig:3.2.5_listado_pacientes}). A este menú se puede acceder desde cualquier pantalla de la aplicación.
-			\item Un menú que aparece una vez se ha seleccionado un paciente y que tiene las siguientes opciones: pacientes, sesiones, informes de seguimiento, evaluaciones, calendario, generar historia de vida, recuerdos y personas relacionadas. 
+			\item Un menú general del usuario en la parte superior de la pantalla donde se pueden ver 3 iconos que permiten acceder a los pacientes, a la mensajería y cerrar sesión (ver Figura \ref{fig:3.2.5_listado_pacientes}). A este menú se puede acceder desde cualquier pantalla de la aplicación.
+			\item Un menú (ver Figura \ref{fig:3.2.5_ver_paciente} que aparece una vez se ha seleccionado un paciente y que tiene las siguientes opciones: pacientes, sesiones, informes de seguimiento, evaluaciones, calendario, generar historia de vida, recuerdos y personas relacionadas. 
 		\end{itemize}
-	\item Además, una vez se está trabajando con un paciente, es decir, se ha seleccionado un paciente de la lista, se puede ver en todas las pantallas una cabecera al lado del menú con los datos del paciente seleccionado. Estos datos son: la foto del paciente, nombre y apellidos, género y edad.
-	\item Se han modificado todas las pantallas para mostrar datos reales.
-\end{itemize}
 
-\subsection{Login}
+Además, una vez se está trabajando con un paciente, es decir, se ha seleccionado un paciente de la lista, se puede ver en todas las pantallas una cabecera al lado del menú con los datos del paciente seleccionado (ver Figura \ref{fig:3.2.5_ver_paciente}. Estos datos son: la foto del paciente, nombre y apellidos, género y edad.
+
 Se ha añadido un Login con dos sesiones distintas: la sesión del terapeuta y la sesión del cuidador (ver Figura \ref{fig:3.2.5_login}).
 	\begin{figure}[htp]
   		\centering
@@ -836,8 +831,7 @@ Se ha añadido un Login con dos sesiones distintas: la sesión del terapeuta y la 
 		\label{fig:3.2.5_login}
 	\end{figure}
 
-\subsection{Pacientes}
-En el listado de pacientes se añade la opción de crear un nuevo paciente mediante la pantalla que se muestra en la Figura \ref{fig:3.2.5_listado_pacientes} a la que se accede a través del botón ``+''. En esta pantalla (ver Figura \ref{fig:3.2.5_nuevo paciente}) se pueden añadir los siguientes datos al paciente: una foto, el nombre y apellidos, género, edad, lugar de nacimiento, nacionalidad, fecha de nacimiento, residencia actual y tipo de residencia.
+En el listado de pacientes se añade la opción de crear un nuevo paciente mediante la pantalla que se muestra en la Figura \ref{fig:3.2.5_listado_pacientes} a la que se accede a través del botón ``+''. En esta pantalla (ver Figura \ref{fig:3.2.5_nuevo paciente}) se pueden añadir los siguientes datos al paciente: una foto, el nombre y apellidos, género, edad, lugar de nacimiento, nacionalidad, fecha de nacimiento, residencia actual y tipo de residencia. También, se puede modificar un paciente ya existente (ver Figura \ref{fig:3.2.5_modificar_paciente}) mediante el icono que se muestra como un lápiz.
 \begin{figure}[htp]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png}
@@ -852,7 +846,6 @@ En el listado de pacientes se añade la opción de crear un nuevo paciente mediant
 	\label{fig:3.2.5_nuevo paciente}
 \end{figure}
 
-También, se puede modificar uno ya existente (ver Figura \ref{fig:3.2.5_modificar_paciente}) mediante el icono que se muestra como un lápiz.
 \begin{figure}[htp]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png}
@@ -868,8 +861,7 @@ Al seleccionar un paciente se muestra la pantalla de datos del paciente seleccio
 	\label{fig:3.2.5_ver_paciente}
 \end{figure}
 
-\subsection{Sesiones}
-En el listado de sesiones se puede ver un listado con todas las sesiones del paciente ordenadas por fecha descendente y donde se pueden ver los siguientes datos de cada sesión: la fecha de la sesión, el objetivo y si se ha finalizado o no. Además, se ha añadido un nuevo icono ''check`` tal y como se muestra en la Figura \ref{fig:3.2.5_listado_sesiones} para poder acceder a la pantalla de finalizar sesión.
+En el listado de sesiones se puede ver un listado con todas las sesiones del paciente ordenadas por fecha descendente, y de cada sesión se muestra: la fecha de la sesión, el objetivo y si se ha finalizado o no. Además, se ha añadido un nuevo icono ''check`` tal y como se muestra en la Figura \ref{fig:3.2.5_listado_sesiones} para poder acceder a la pantalla de finalizar sesión.
 \begin{figure}[htp]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png}
@@ -943,58 +935,53 @@ Para añadir material multimedia a una sesión y a un recuerdo se puede hacer de d
 		\end{figure}	
 \end{itemize}
 
-\subsection{Historia de Vida}
-En esta opción de menú se han añadido 3 subopciones:
+En la opción del menú Historias de vida se han añadido 3 subopciones:
 
-\subsection{Generar Historia de Vida}
-Se ha modificado la pantalla de filtros para generar una Historia de Vida añadiendo los siguientes campos: fecha desde y fecha hasta y el filtro de categoría tal y como se muestra en la Figura.
-\begin{figure}[htp]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png}
-  	\caption{Generar Historia de Vida.}
-	\label{fig:3.2.5_generar_historia_vida}
-\end{figure}	
-
-Además, se ha añadido un nuevo botón para generar la Historia de Vida como PDF por lo que tendríamos las dos siguientes formas de ver una Historia de Vida de un paciente:
 \begin{itemize}
-	\item Libro. Genera una Historia de Vida como un Libro de Vida donde se pueden ver los recuerdos en un carrousel ordenados cronológicamente. Los datos del recuerdo que se pueden ver son: los archivos multimedia del recuerdo, nombre, descripción, etapa y categoría (ver Figura \ref{fig:3.2.5_generar_historia_vida_libro}).
+	\item Generar Historia de Vida: Se ha modificado la pantalla de filtros para generar una Historia de Vida añadiendo los siguientes campos: fecha desde y fecha hasta y el filtro de categoría tal y como se muestra en la Figura \ref{fig:3.2.5_generar_historia_vida}. Además, se ha añadido un nuevo botón para generar la Historia de Vida como PDF por lo que tendríamos las dos siguientes formas de ver una Historia de Vida de un paciente:
 	\begin{figure}[htp]
 	  	\centering
-	  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.png}
-	  	\caption{Generar Historia de Vida como Libro.}
-		\label{fig:3.2.5_generar_historia_vida_libro}
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png}
+	  	\caption{Generar Historia de Vida.}
+		\label{fig:3.2.5_generar_historia_vida}
 	\end{figure}	
 	
-	\item PDF. Genera una Historia de vida en un PDF donde se puede ver el nombre, apellidos, edad, género y foto del paciente y un listado de recuerdos ordenados cronológicamente. Los datos de cada recuerdo que se pueden ver son: nombre, fecha, descripción y archivos multimedia tal y como se puede ver en la Figura.
+	\begin{itemize}
+		\item Libro. Genera una Historia de Vida como un Libro de Vida donde se pueden ver los recuerdos en un carrousel ordenados cronológicamente. Los datos del recuerdo que se pueden ver son: los archivos multimedia del recuerdo, nombre, descripción, etapa y categoría (ver Figura \ref{fig:3.2.5_generar_historia_vida_libro}).
 		\begin{figure}[htp]
 		  	\centering
-		  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png}
-		  	\caption{Generar Historia de Vida como PDF.}
-			\label{fig:3.2.5_generar_historia_vida_pdf}
+		  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.png}
+		  	\caption{Generar Historia de Vida como Libro.}
+			\label{fig:3.2.5_generar_historia_vida_libro}
 		\end{figure}	
+		
+		\item PDF: Genera una Historia de vida en un PDF donde se puede ver el nombre, apellidos, edad, género y foto del paciente y un listado de recuerdos ordenados cronológicamente. Los datos de cada recuerdo que se pueden ver son: nombre, fecha, descripción y archivos multimedia tal y como se puede ver en la Figura.
+			\begin{figure}[htp]
+			  	\centering
+			  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png}
+			  	\caption{Generar Historia de Vida como PDF.}
+				\label{fig:3.2.5_generar_historia_vida_pdf}
+			\end{figure}	
+	\end{itemize}
+	
+	\item Recuerdos: En esta opción se puede ver un listado de los recuerdos del paciente ordenados cronológicamente de forma ascendente por fecha y, donde se muestran los siguientes datos de cada recuerdo: nombre, fecha, etapa, categoría, estado y etiqueta (ver Figura \ref{fig:3.2.5_listado_recuerdos}). En este listado, para facilitar la búsqueda de recuerdos, se puede filtrar por los siguientes campos: fecha, etapa, categoría, emoción, tipo de archivo multimedia y persona relacionada. Además, se permite ver, modificar o borrar un recuerdo. Este listado se utiliza en los datos de una sesión para poder añadir un recuerdo ya existente.
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png}
+	  	\caption{Listado de recuerdos de un paciente.}
+		\label{fig:3.2.5_listado_recuerdos}
+	\end{figure}	
+	
+	\item Personas relacionadas: En esta opción se puede ver un listado de las personas relacionadas del paciente donde se muestran los siguientes datos de cada persona: nombre, apellidos y tipo de relación (ver Figura \ref{fig:3.2.5_listado_personas_relacionadas}). Además, se permite ver, modificar o borrar una persona relacionada. Este listado se utiliza en los datos de un recuerdo para poder añadir un recuerdo ya existente, tanto en los datos de una sesión como en la opción de menú de recuerdos.
+	\begin{figure}[htp]
+	  	\centering
+	  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas.png}
+	  	\caption{Listado de personas relacionadas de un paciente.}
+		\label{fig:3.2.5_listado_personas_relacionadas}
+	\end{figure}	
 \end{itemize}
 
-\subsection{Recuerdos}
-En esta opción se puede ver un listado de los recuerdos del paciente ordenados cronológicamente de forma ascendente por fecha y, donde se muestran los siguientes datos de cada recuerdo: nombre, fecha, etapa, categoría, estado y etiqueta (ver Figura \ref{fig:3.2.5_listado_recuerdos}). En este listado, para facilitar la búsqueda de recuerdos, se puede filtrar pos los siguientes campos: fecha, etapa, categoría, emoción, tipo de archivo multimedia y persona relacionada. Además, se permite ver, modificar o borrar un recuerdo. Este listado se utiliza en los datos de una sesión para poder añadir un recuerdo ya existente.
-\begin{figure}[htp]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png}
-  	\caption{Listado de recuerdos de un paciente.}
-	\label{fig:3.2.5_listado_recuerdos}
-\end{figure}	
-
-\subsection{Personas relacionadas}
-En esta opción se puede ver un listado de las personas relacionadas del paciente donde se muestran los siguientes datos de cada persona: nombre, apellidos y tipo de relación (ver Figura \ref{fig:3.2.5_listado_personas_relacionadas}). Además, se permite ver, modificar o borrar una persona relacionada. Este listado se utiliza en los datos de un recuerdo para poder añadir un recuerdo ya existente, tanto en los datos de una sesión como en la opción de menú de recuerdos.
-\begin{figure}[htp]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas.png}
-  	\caption{Listado de personas relacionadas de un paciente.}
-	\label{fig:3.2.5_listado_personas_relacionadas}
-\end{figure}	
-
-
-\subsection{Mensajería}
-En la mensajería del terapeuta se ha modificado la pantalla para seleccionar a qué persona relacionada del paciente mandar el mensaje tal y como se muestra en la Figura \ref{fig:3.2.5_mensajeria_terapeuta}.
+En la mensajería del terapeuta se ha modificado la pantalla para seleccionar a qué persona relacionada del paciente mandar el mensaje tal y como se muestra en la Figura \ref{fig:3.2.5_mensajeria_terapeuta}. También se ha añadido un popup de confirmación de mensaje enviado como se muestra en la Figura \ref{fig:3.2.5_mensajeria_terapeuta_enviado}.
 \begin{figure}[htp]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png}
@@ -1002,7 +989,6 @@ En la mensajería del terapeuta se ha modificado la pantalla para seleccionar a q
 	\label{fig:3.2.5_mensajeria_terapeuta}
 \end{figure}	
 
-Se ha añadido un popup de confirmación de mensaje enviado como se muestra en la Figura \ref{fig:3.2.5_mensajeria_terapeuta_enviado}.
 \begin{figure}[htp]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.png}
@@ -1010,7 +996,7 @@ Se ha añadido un popup de confirmación de mensaje enviado como se muestra en la 
 	\label{fig:3.2.5_mensajeria_terapeuta_enviado}
 \end{figure}	
 
-En la mensajería del cuidador se ha modificado la pantalla para seleccionar el terapeuta asociado del paciente ya que un paciente puede tener varios terapeutas asociados (ver Figura \ref{fig:3.2.5_mensajeria_cuidador}).
+En la mensajería del cuidador se ha modificado la pantalla para seleccionar el terapeuta asociado del paciente ya que un paciente puede tener varios terapeutas asociados (ver Figura \ref{fig:3.2.5_mensajeria_cuidador}). También se ha añadido un popup de confirmación de mensaje enviado como se muestra en la Figura \ref{fig:3.2.5_mensajeria_cuidador_enviado}.
 \begin{figure}[htp]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png}
@@ -1018,7 +1004,6 @@ En la mensajería del cuidador se ha modificado la pantalla para seleccionar el t
 	\label{fig:3.2.5_mensajeria_cuidador}
 \end{figure}	
 
-Se ha añadido un popup de confirmación de mensaje enviado como se muestra en la Figura \ref{fig:3.2.5_mensajeria_cuidador_enviado}.
 \begin{figure}[htp]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.png}
