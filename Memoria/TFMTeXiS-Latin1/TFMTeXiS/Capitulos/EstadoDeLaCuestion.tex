@@ -332,48 +332,44 @@ La aplicación creada en este TFG, permite:
 
 \subsection{Extracción de preguntas a partir de imágenes para personas con problemas de memoria mediante técnicas de Deep Learning}
 \label{tfg:ext_pre_por_img_alz}
-Este proyecto \citep{article_16} nace con la intención de ayudar a las personas con pérdida de memoria a recordar aspectos de sus vidas a partir de técnicas de Deep Learning como redes convolucionales y recurrentes. Para lograrlo se intentó desarrollar un sistema capaz de extraer preguntas de fotografías que puedan presentar recuerdos para las personas con problemas de memoria, creando un bot que simula una sesión de terapia de reminiscencia. Para ello, el usuario de la aplicación tiene que enviarle las imágenes al bot y este se encargará de enviarle las preguntas generadas por la red neuronal. A partir de aquí, el usuario deberá recordar todo lo posible para poder responder a las preguntas y conseguir ejercitar su memoria.
+El TFG de \citep{article_16} nace con la intención de ayudar a las personas con pérdida de memoria a recordar aspectos de sus vidas a partir de técnicas de Deep Learning como redes convolucionales y recurrentes. Para lograrlo se intentó desarrollar un sistema capaz de extraer preguntas de fotografías que puedan presentar recuerdos para las personas con problemas de memoria, creando un bot que simula una sesión de terapia de reminiscencia. Para ello, el usuario de la aplicación tiene que enviarle las imágenes al bot y este se encargará de enviarle las preguntas generadas por la red neuronal. A partir de aquí, el usuario deberá recordar todo lo posible para poder responder a las preguntas y conseguir ejercitar su memoria.
 
 El proyecto se divide en dos módulos que se relacionan entre sí para poder simular la terapia de reminiscencia, el bot, que utilizamos a través de  Telegram y una red neuronal programada para la generación de preguntas visuales. Todos los datos, se almacenan, para luego ser utilizados en la generación de preguntas. En la Figura \ref{fig:funcionamiento_bot} se puede ver el flujo del trabajo del bot.
 
 \begin{figure}[!ht]
- \centering
- \includegraphics[scale=.7]{./Imagenes/Figuras/funcionamiento_bot.PNG}
- \caption{Funcionamiento bot}
- \label{fig:funcionamiento_bot}
+\centering
+\includegraphics[scale=.7]{./Imagenes/Figuras/funcionamiento_bot.PNG}
+\caption{Funcionamiento bot}
+\label{fig:funcionamiento_bot}
 \end{figure}
 
-El bot dispone de cinco funcionalidades \ref{fig:interaccion_usuario}, que son comenzar terapia, subir imágenes, descargar historial, eliminar datos y salir. Si seleccionamos comenzar terapia, en caso de que el usuario tenga ya fotos subidas podrá comenzar la terapia, y se van mostrando por pantalla las imágenes previamente guardadas para ayudar al paciente a generar recuerdo; luego está subir imágenes, funcionalidad para adjuntar imágenes en la aplicación que serán posteriormente usadas en la terapia;después descargar historial, usada para llevar un registro de las diferentes respuestas del paciente a las imágenes para llevar un informe con detalles; luego esta eliminar datos, para eliminar los datos de las imagenes en caso de ya no necesitar su utilización en las terapias o por dejar de usar la aplicación; y por último la funcionalidad de salir, para abandonar la aplicación, y dejar el bot en estado de pausa.
-\begin{figure}[!ht]
- \centering
- \includegraphics[scale=.7]{./Imagenes/Figuras/interaccion_usuario.PNG}
- \caption{interacción usuario}
- \label{fig:interaccion_usuario}
-\end{figure}
+El bot dispone de cinco funcionalidades: comenzar terapia, subir imágenes, descargar historial, eliminar datos y salir. Si seleccionamos comenzar terapia, en caso de que el usuario tenga ya fotos subidas podrá comenzar la terapia, y se van mostrando por pantalla las imágenes previamente guardadas para ayudar al paciente a generar recuerdos; luego está subir imágenes, funcionalidad para adjuntar imágenes en la aplicación que serán posteriormente usadas en la terapia;después descargar historial, usada para llevar un registro de las diferentes respuestas del paciente a las imágenes para llevar un informe con detalles; luego esta eliminar datos, para eliminar los datos de las imagenes en caso de ya no necesitar su utilización en las terapias o por dejar de usar la aplicación; y por último la funcionalidad de salir, para abandonar la aplicación, y dejar el bot en estado de pausa.
 
-A continuación, veremos un ejemplo de uso del bot, en la Figura \ref{fig:bienvenida_bot}, se muestra el mensaje de bienvenida al usuario. En el caso de ser la primera experiencia del usuario deberá subir las imágenes que quiera utilizar durante las sesiones de terapia (ver Figura \ref{fig:imagenes_bot}). Una vez subidas las imágenes, el usuario responderá cinco preguntas de cada imagen para ir realizando el informe de evaluación, previamente comentado en la funcionalidad de descargar historial, como vemos en la Figura \ref{fig:pregunta_bot}, se siguen realizando preguntas hasta que se pulse en el botón de salir anteriormente visto para cerrar aplicación.
+A continuación, veremos un ejemplo de uso del bot, en la figura \ref{fig:bienvenida_bot}, se muestra el mensaje de bienvenida al usuario. En el caso de ser la primera experiencia del usuario deberá subir las imágenes que quiera utilizar durante las sesiones de terapia (ver Figura \ref{fig:imagenes_bot}). Una vez subidas las imágenes, el usuario responderá cinco preguntas de cada imagen para ir realizando el informe de evaluación, previamente comentado en la funcionalidad de descargar historial, como vemos en la Figura \ref{fig:pregunta_bot}, se siguen realizando preguntas hasta que se pulse en el botón de salir anteriormente visto para cerrar aplicación.
 
 \begin{figure}[!ht]
- \centering
- \includegraphics[scale=.7]{./Imagenes/Figuras/bienvenida_bot.PNG}
- \caption{bienvenidabot}
- \label{fig:bienvenida_bot}
+\centering
+\includegraphics[scale=.7]{./Imagenes/Figuras/bienvenida_bot.PNG}
+\caption{bienvenidabot}
+\label{fig:bienvenida_bot}
 \end{figure}
 
 \begin{figure}[!ht]
- \centering
- \includegraphics[scale=.7]{./Imagenes/Figuras/imagenes_bot.PNG}
- \caption{imágenes bot}
- \label{fig:imagenes_bot}
+\centering
+\includegraphics[scale=.7]{./Imagenes/Figuras/imagenes_bot.PNG}
+\caption{imágenes bot}
+\label{fig:imagenes_bot}
 \end{figure}
 
 
 \begin{figure}[!ht]
- \centering
- \includegraphics[scale=.7]{./Imagenes/Figuras/pregunta_bot.PNG}
- \caption{pregunta bot}
- \label{fig:pregunta_bot}
+\centering
+\includegraphics[scale=.7]{./Imagenes/Figuras/pregunta_bot.PNG}
+\caption{pregunta bot}
+\label{fig:pregunta_bot}
 \end{figure}
+
+
 
 \subsection{Conclusiones}
 Tras haber estudiado los trabajos relacionados, hemos concluido que:
