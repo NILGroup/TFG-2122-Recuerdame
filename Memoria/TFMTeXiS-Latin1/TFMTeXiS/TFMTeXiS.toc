@@ -41,11 +41,11 @@
 \contentsline {subsection}{\numberline {4.2.1}Vista cuidador}{50}{subsection.129}%
 \contentsline {subsection}{\numberline {4.2.2}Vista terapeuta}{52}{subsection.135}%
 \contentsline {section}{\numberline {4.3}Prototipo de Santiago Marco Mulas L\'opez}{60}{section.153}%
-\contentsline {section}{\numberline {4.4}Prototipo de Eva Verd\'u Rodr\IeC {\'\i }guez}{64}{section.164}%
+\contentsline {section}{\numberline {4.4}Prototipo de Eva Verd\'u Rodr\IeC {\'\i }guez}{65}{section.164}%
 \contentsline {subsection}{\numberline {4.4.1}Sesi\'on Terapeuta}{65}{subsection.165}%
-\contentsline {subsection}{\numberline {4.4.2}Sesi\'on acompa\~nante o cuidador}{71}{subsection.190}%
-\contentsline {section}{\numberline {4.5}Dise\~no competitivo}{76}{section.194}%
-\contentsline {section}{\numberline {4.6}Evaluaci\'on del dise\~no competitivo con expertos}{88}{section.217}%
+\contentsline {subsection}{\numberline {4.4.2}Sesi\'on acompa\~nante o cuidador}{70}{subsection.190}%
+\contentsline {section}{\numberline {4.5}Dise\~no competitivo}{74}{section.194}%
+\contentsline {section}{\numberline {4.6}Evaluaci\'on del dise\~no competitivo con expertos}{87}{section.217}%
 \contentsline {chapter}{\numberline {5}Implementaci\'on}{95}{chapter.228}%
 \contentsline {chapter}{\numberline {6}Evaluaci\'on}{97}{chapter.229}%
 \contentsline {chapter}{\numberline {7}Conclusiones y Trabajo Futuro}{99}{chapter.230}%
@@ -92,3 +92,4 @@
 \contentsline {subsection}{\numberline {B.2.9}Varios comentarios de Iv\'an - 50:40}{128}{subsection.270}%
 \contentsline {subsection}{\numberline {B.2.10}\IeC {\textquestiondown }Qu\'e dispositivo te sueles llevar para hacer las terapias de vida? - 1:04:33}{129}{subsection.271}%
 \contentsline {chapter}{\numberline {C}Debriefing}{131}{appendix.272}%
+\contentsline {chapter}{\numberline {D}Debriefing Dr. Iv\'an De Rosende Celeiro}{133}{appendix.274}%
