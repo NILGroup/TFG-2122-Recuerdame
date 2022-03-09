@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <?php include "./resources/views/layout/header.php" ?>
-  <?php include "./resources/views/layout/nav.php" ?>
+  <?php include "./src/views/layout/header.php" ?>
+  <?php include "./src/views/layout/nav.php" ?>
 </body>
 
 </html>
