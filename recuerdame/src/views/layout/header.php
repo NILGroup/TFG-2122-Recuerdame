@@ -2,15 +2,16 @@
 
 <head>
   <link rel="stylesheet" href="resources/bootstrap-5.1.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="resources/css/styles.css">
   <script src="https://kit.fontawesome.com/d1ab37e54e.js" crossorigin="anonymous"></script>
   <script src="resources/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
   <title>Recuerdame</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light header">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Recuerdame</a>
+      <a class="navbar-brand" href="#"><img class="logotipoMarca" src="resources/img/Marca_recuerdame.png"/></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

@@ -28,3 +28,28 @@
     padding: 0px 20px;
     margin-bottom: 3%;
 }
+.header{
+    background-color: #fef9e7 !important;
+}
+
+.footer{
+    background-color: #fef9e7 !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.logotipoMarca{
+    height: 50px;
+}
+
+.nav-menu{
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #4F7BC5;
+    padding: 0;
+}
+
+.letra-primary-color{
+    color: #4F7BC5;
+}
