@@ -53,3 +53,16 @@
 .letra-primary-color{
     color: #4F7BC5;
 }
+
+.tableActions{
+    text-align: center;
+}
+
+.tableIcon{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.contenedor{
+    padding: 20px;
+}

@@ -1,10 +1,10 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="resources/bootstrap-5.1.3-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/styles.css">
     <script src="https://kit.fontawesome.com/d1ab37e54e.js" crossorigin="anonymous"></script>
-    <script src="resources/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <title>Recuerdame</title>
 </head>
 
@@ -29,8 +29,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle letra-primary-color" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Historias de Vida</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Generar Historia de Vida</a></li>
-                            <li><a class="dropdown-item" href="#">Recuerdos</a></li>
+                            <li><a class="dropdown-item" href="historiaVida.php">Generar Historia de Vida</a></li>
+                            <li><a class="dropdown-item" href="listadoRecuerdos.php">Recuerdos</a></li>
                             <li><a class="dropdown-item" href="#">Personas relacionadas</a></li>
                         </ul>
                     </li>
