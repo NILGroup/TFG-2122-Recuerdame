@@ -22,8 +22,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle letra-primary-color" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Evaluaciones</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Informes de seguimiento</a></li>
-                            <li><a class="dropdown-item" href="#">Evaluaciones</a></li>
+                            <li><a class="dropdown-item" href="listadoInformesSesion.php">Informes de las sesiones</a></li>
+                            <li><a class="dropdown-item" href="listadoInformesSeguimiento.php">Informes de seguimiento</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
