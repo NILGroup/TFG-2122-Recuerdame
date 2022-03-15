@@ -1,5 +1,5 @@
 <?php
-
+ 
 class InformeSesion{
 
     private $informes;
@@ -14,6 +14,10 @@ class InformeSesion{
     }
     
     public function ImprimeInforme($id){
+        echo utf8_encode("<h1> Informe de sesión: ".$this->informes[$id - 1][0]."<h1>");
+        echo utf8_encode("<h4> Fecha de la sesión: ".$this->informes[$id - 1][1]."<h4>");
+        echo utf8_encode("<h4> Numero de la sesión: ".$this->informes[$id - 1][2]."<h4>");
+        echo utf8_encode("<h4> Reaccion del paciente a la sesión: ".$this->informes[$id - 1][3]."<h4>");
 
     }
 

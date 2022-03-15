@@ -48,15 +48,17 @@
                                         </head>
                                         <body>                                       
                                             <tr>
-                                                <th scope="row">'.$informe[0].'</th>
-                                                <td>'.$informe[1].'</td>
-                                                <td>'.$informe[2].'</td>
-                                                <td>'.$informe[3].'</td>
-                                                <td class="tableActions">
-                                                    <i class="fa-solid fa-eye tableIcon"></i>
-                                                    <i class="fa-solid fa-pencil text-primary tableIcon"></i>
-                                                    <i class="fa-solid fa-trash-can text-danger tableIcon"></i>
-                                                </td>
+                                                
+                                                    <th scope="row">'.$informe[0].'</th>
+                                                    <td>'.$informe[1].'</td>
+                                                    <td> <a href="MostrarInformeSesion.php?id='.$informe[2].'"> Sesión '.$informe[2].' </a></td>  
+                                                    <td>'.$informe[3].'</td>
+                                                    <td class="tableActions">
+                                                        <a style="text-decoration:none" href="MostrarInformeSesion.php?id='.$informe[2].'"> <i class="fa-solid fa-eye tableIcon"></i> </a>
+                                                        <i class="fa-solid fa-pencil text-primary tableIcon"></i>
+                                                        <i class="fa-solid fa-trash-can text-danger tableIcon"></i>
+                                                    </td>
+                                                
                                             </tr>                                             
                                         </body>
                                     </html>

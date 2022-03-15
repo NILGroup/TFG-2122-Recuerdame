@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\models",
     "\\public",
-    "\\public\\bootstrap-5.1.3-dist"
+    "\\public\\bootstrap-5.1.3-dist",
+    "\\public\\css",
+    "\\public\\img"
   ],
-  "SelectedNode": "\\controllers",
+  "SelectedNode": "\\models\\InformeSeguimiento.php",
   "PreviewInSolutionExplorer": false
 }
