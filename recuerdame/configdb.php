@@ -16,7 +16,7 @@ class Configdb {
     public function __construct() {
         $this->conexion = new mysqli($this->host, $this->user, $this->pass, $this->db_name);
 
-        if ($this->conexion->connect_errorno) {
+        if ($this->conexion->connect_error) {
             $this->error = true;
         }
     }
