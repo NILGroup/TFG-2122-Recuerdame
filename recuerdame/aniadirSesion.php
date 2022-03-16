@@ -18,8 +18,9 @@
     <?php include "models/listadoDeSesiones.php" ?>
 
     <div class="contenedor">
-        <div>
-            <h4>Datos de la sesión</h4>
+        <div class="pt-4 pb-2">
+            <h5 class="text-muted">Datos del recuerdo</h5>
+            <hr class="lineaTitulo">
         </div>
        
         <div>
