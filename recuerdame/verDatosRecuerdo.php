@@ -15,13 +15,20 @@
     <?php include "layout/nav.php" ?>
     <?php include "layout/footer.php" ?>
     <?php include "controllers/RecuerdosController.php" ?>
+    <?php include "controllers/ComunesController.php" ?>
 
     <div class="container-fluid">
         <?php
-        if (!empty($_GET['idRecuerdo'])) {
-            $recuerdosController = new RecuerdosController();
-            $recuerdo = $recuerdosController->verRecuerdo($_GET['idRecuerdo']);
-        }
+            if (!empty($_GET['idRecuerdo'])) {
+                $recuerdosController = new RecuerdosController();
+                $recuerdo = $recuerdosController->verRecuerdo($_GET['idRecuerdo']);
+            }
+            $comunesController = new ComunesController();
+            $listaEstados = $comunesController->getListaEstados();
+            $listaEtiquetas = $comunesController->getListaEtiquetas();
+            $listaEtapas = $comunesController->getListaEtapas();
+            $listaEmociones = $comunesController->getListaEmociones();
+            $listaCategorias = $comunesController->getListaCategorias();
         ?>
         <div class="pt-4 pb-2">
             <h5 class="text-muted">Datos del recuerdo</h5>
@@ -41,9 +48,13 @@
                     <label for="estado" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Estado</label>
                     <div class="col-sm-9 col-md-6 col-lg-4">
                         <select disabled class="form-select form-select-sm" name="estado">
-                            <option selected value="0">Conservado</option>
-                            <option value="1">En riesgo de perder</option>
-                            <option value="2">Perdido</option>
+                            <?php
+                                foreach ($listaEstados as $row) {
+                            ?>
+                                <option value="<?php echo ($row["id_estado"]) ?>" <?php if ($recuerdo['id_estado'] == $row['id_estado']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
+                            <?php
+                                }
+                            ?>
                         </select>
                     </div>
                 </div>
@@ -60,9 +71,13 @@
                     <label for="etiqueta" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Etiqueta</label>
                     <div class="col-sm-9 col-md-6 col-lg-4">
                         <select disabled class="form-select form-select-sm" name="etiqueta">
-                            <option selected value="0">Positivo</option>
-                            <option value="1">Neutro</option>
-                            <option value="2">Negativo</option>
+                            <?php
+                                foreach ($listaEtiquetas as $row) {
+                            ?>
+                                <option value="<?php echo ($row["id_etiqueta"]) ?>" <?php if ($recuerdo['id_etiqueta'] == $row['id_etiqueta']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
+                            <?php
+                                }
+                            ?>
                         </select>
                     </div>
                 </div>
@@ -87,30 +102,39 @@
                     <label for="etapa" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Etapa de la vida</label>
                     <div class="col-sm-3 col-md-3 col-lg-2">
                         <select disabled class="form-select form-select-sm" name="etapa">
-                            <option selected value="0">Infancia</option>
-                            <option value="1">Adolescencia</option>
-                            <option value="2">Adultez</option>
-                            <option value="3">Vejez</option>
+                            <?php
+                                foreach ($listaEtapas as $row) {
+                            ?>
+                                <option value="<?php echo ($row["id_etapa"]) ?>" <?php if ($recuerdo['id_etapa'] == $row['id_etapa']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
+                            <?php
+                                }
+                            ?>
                         </select>
                     </div>
 
                     <label for="emocion" class="form-label col-form-label-sm col-sm-2 col-md-12col-lg-1">Emoción</label>
                     <div class="col-sm-3 col-md-3 col-lg-2">
                         <select disabled class="form-select form-select-sm" name="emocion">
-                            <option selected value="0">Alegría</option>
-                            <option value="1">Nostalgia</option>
-                            <option value="2">Ira</option>
+                            <?php
+                                foreach ($listaEmociones as $row) {
+                            ?>
+                                <option value="<?php echo ($row["id_emocion"]) ?>" <?php if ($recuerdo['id_emocion'] == $row['id_emocion']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
+                            <?php
+                                }
+                            ?>
                         </select>
                     </div>
 
                     <label for="categoria" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-1">Categoría</label>
                     <div class="col-sm-3 col-md-3 col-lg-2">
                         <select disabled class="form-select form-select-sm" name="categoria">
-                            <option selected value="0">Familia</option>
-                            <option value="1">Trabajo</option>
-                            <option value="2">Hobbies</option>
-                            <option value="3">Amistad</option>
-                            <option value="4">Mascotas</option>
+                            <?php
+                                foreach ($listaCategorias as $row) {
+                            ?>
+                                <option value="<?php echo ($row["id_categoria"]) ?>" <?php if ($recuerdo['id_categoria'] == $row['id_categoria']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
+                            <?php
+                                }
+                            ?>
                         </select>
                     </div>
                 </div>
@@ -124,7 +148,7 @@
         </div>
 
         <div>
-            <button type="button" class="btn btn-primary btn-sm">Atrás</button>
+            <a href="listadoRecuerdos.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
         </div>
     </div>
 

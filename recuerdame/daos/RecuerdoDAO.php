@@ -42,8 +42,9 @@ class RecuerdoDAO{
     }
 
     public function eliminarRecuerdo($idRecuerdo) {
+        echo "<script>console.log('Debug Objects: " . $idRecuerdo . "' );</script>";
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("DELETE * FROM recuerdo WHERE id_recuerdo = '$idRecuerdo'")
+        $conexion->query("DELETE FROM recuerdo WHERE id_recuerdo = '$idRecuerdo'")
             or die ($conexion->error);
     }
 

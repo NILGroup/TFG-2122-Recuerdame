@@ -9,11 +9,10 @@ class RecuerdosController{
     
     public function __construct() {
         $this->recuerdoDao = new RecuerdoDAO();
-        $this->listaRecuerdos = $this->recuerdoDao->getListaRecuerdos(1);
     }
 
     public function getListaRecuerdos() {
-        return $this->listaRecuerdos;
+        return $this->listaRecuerdos = $this->recuerdoDao->getListaRecuerdos(1);
     }
 
     public function verRecuerdo($idRecuerdo) {

@@ -30,7 +30,7 @@
                 <span class="input-group-text border-0" id="search-addon">
                     <i class="fas fa-search"></i>
                 </span>
-                <button type="button" class="btn btn-success btn-sm">+</button>
+                <a href="modificarDatosRecuerdo.php"><button type="button" class="btn btn-success btn-sm">+</button></a>
             </div>
         </div>
 
