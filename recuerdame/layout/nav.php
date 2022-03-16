@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse justify-content-left" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link letra-primary-color active" aria-current="page" href="#">Sesiones</a>
+                        <a class="nav-link letra-primary-color active" aria-current="page" href="listadoSesiones.php">Sesiones</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle letra-primary-color" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Evaluaciones</a>
