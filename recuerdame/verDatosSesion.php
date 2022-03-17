@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <link rel="stylesheet" type="text/css" href="public/css/styles.css">
     <meta charset="utf-8" />
+    <script src ="public/js/general.js" defer></script>
     <title>Recuerdame</title>
 </head>
 
@@ -94,6 +95,13 @@
             <h5 class="text-muted">Recuerdos</h5>
             <hr class="lineaTitulo">
         </div>
+
+        <section class="droparea">
+            <i class="far fa-images"></i>
+            <p>Suelta aquí tus archivos .png o .jpg!</p>
+            <p><small>Up to 20 images, No max file size.</small></p>
+        </section>
+
 
         <div>
             <button type="button" class="btn btn-primary btn-sm">Atrás</button>
