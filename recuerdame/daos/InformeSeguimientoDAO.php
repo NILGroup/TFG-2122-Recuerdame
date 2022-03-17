@@ -1,7 +1,7 @@
 <?php
 
-    require_once('models/InformeSeguimiento.php');
-    require_once('configdb.php');
+    include('models/InformeSeguimiento.php');
+    include('configdb.php');
  
 class InformeSeguimientoDAO{
 
