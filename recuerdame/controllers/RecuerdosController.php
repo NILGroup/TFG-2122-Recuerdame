@@ -23,6 +23,10 @@ class RecuerdosController{
         $this->recuerdoDao->eliminarRecuerdo($idRecuerdo);
         return $this->listaRecuerdos = $this->recuerdoDao->getListaRecuerdos(1);;
     }
+
+    public function getListaRecuerdosSesion() {
+        return $this->listaRecuerdos = $this->recuerdoDao->getListaRecuerdosSesion(1);
+    }
 }
 
 ?>

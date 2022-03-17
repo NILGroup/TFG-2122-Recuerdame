@@ -48,6 +48,28 @@ class RecuerdoDAO{
             or die ($conexion->error);
     }
 
+    public function getListaRecuerdosSesion($idSesion) {
+        $conexion = $this->db->getConexion();
+        $row = $conexion->query("SELECT s.id_sesion AS idSesion, r.fecha, r.nombre, e.nombre AS nombreEtapa,
+        c.nombre AS nombreCategoria, em.nombre AS nombreEmocion, es.nombre AS nombreEstado,
+        et.nombre AS nombreEtiqueta 
+                FROM sesion_recuerdo s 
+                JOIN recuerdo r ON r.id_recuerdo = s.id_recuerdo
+                LEFT JOIN etapa e ON e.id_etapa = r.id_etapa
+                LEFT JOIN categoria c ON c.id_categoria = r.id_categoria
+                LEFT JOIN emocion em ON em.id_emocion = r.id_emocion
+                LEFT JOIN estado es ON es.id_estado = r.id_estado
+                LEFT JOIN etiqueta et ON et.id_etiqueta = r.id_etiqueta
+                WHERE s.id_sesion = '$idSesion'")
+            or die ($conexion->error);
+
+        while ($rows = $row->fetch_assoc()) {
+            $listaRecuerdosSesion[] = $rows;
+        };
+
+        return $listaRecuerdosSesion;
+    }
+
 }
 
 ?>
