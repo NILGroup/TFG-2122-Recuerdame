@@ -27,7 +27,7 @@ class ComunesController{
     }
 
     public function getListaEtiquetas() {
-        return $this->listaEtiquetas = $this->comunesDao->getListaEmociones();
+        return $this->listaEtiquetas = $this->comunesDao->getListaEtiquetas();
     }
 
     public function getListaTiposRelacion() {

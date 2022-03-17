@@ -3,8 +3,7 @@
     require_once('daos/RecuerdoDAO.php');
 
 class RecuerdosController{
-    
-    private $listaRecuerdos;
+
     private $recuerdoDao;
     
     public function __construct() {
@@ -17,6 +16,17 @@ class RecuerdosController{
 
     public function verRecuerdo($idRecuerdo) {
         return $this->recuerdoDao->getRecuerdo($idRecuerdo);
+    }
+
+    public function guardarRecuerdo($recuerdo) {
+        $idRecuerdo = null;
+        if ($recuerdo->getIdRecuerdo() == null) {
+            $idRecuerdo = $this->recuerdoDao->nuevoRecuerdo($recuerdo);
+        } else {
+            $idRecuerdo = $this->recuerdoDao->modificarRecuerdo($recuerdo);
+        }
+
+        return $idRecuerdo;
     }
 
     public function eliminarRecuerdo($idRecuerdo) {
