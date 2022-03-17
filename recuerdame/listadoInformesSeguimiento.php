@@ -41,11 +41,11 @@
                         foreach ($informes as $row) {
                         ?>
                             <th scope="row"><?php echo $i ?></th>
-                            <td><?php echo utf8_encode ("Informe nº {$row["idInforme"]}") ?></td>
+                            <td><a href="verDatosInformeSeguimiento.php?idInforme=<?php echo ($row['idInforme']) ?>"><?php echo utf8_encode ("Informe nº {$row["idInforme"]}") ?></td>
                             <td><?php echo (date("d/m/Y", strtotime($row["fecha"]))) ?></td>
                             <td><?php echo ($row["diagnostico"]) ?></td>
                             <td class="tableActions">
-                                <a href=""><i class="fa-solid fa-eye text-black tableIcon"></i></a>
+                                <a href="verDatosInformeSeguimiento.php?idInforme=<?php echo ($row['idInforme']) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
                                 <a href=""><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
                                 <a href=""><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
                             </td>
