@@ -33,6 +33,10 @@ class ComunesController{
     public function getListaTiposRelacion() {
         return $this->listaTiposRelacion = $this->comunesDao->getListaTiposRelacion();
     }
+
+    public function getListaTerapeutas() {
+        return $this->listaTerapeutas = $this->comunesDao->getListaTerapeutas();
+    }
 }
 
 ?>

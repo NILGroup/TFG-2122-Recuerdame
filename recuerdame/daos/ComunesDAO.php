@@ -75,4 +75,15 @@ class ComunesDAO{
         };
         return $listaTiposRelacion;
     }
+
+    public function getListaTerapeutas() {
+        $conexion = $this->db->getConexion();
+        $row = $conexion->query("SELECT * FROM usuario")
+            or die ($conexion->error);
+
+        while ($rows = $row->fetch_assoc()) {
+            $listaTerapeutas[] = $rows;
+        };
+        return $listaTerapeutas;
+    }
 }
