@@ -13,11 +13,12 @@
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
     <?php include "layout/footer.php" ?>
-    <?php include "models/InformeSesion.php" ?>
+    <?php include "controllers/InformeSesionController.php" ?>
 
     <div class="contenedor">
-        <div>
-            <h4>Listado de informes de las sesiones realizadas</h4>
+        <div class="pt-4 pb-2">
+            <h5 class="text-muted">Listado de informes de sesión</h5>
+            <hr class="lineaTitulo">
         </div>
 
         <div >
@@ -25,46 +26,33 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Fecha</th>
-                        <th scope="col">Nº Sesión</th>
-                        <th scope="col">Reacción</th>
+                        <th scope="col">Informe</th>
+                        <th scope="col">Fecha finalización</th>
+                        <th scope="col">Sesion</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
                 <?php
-                    $informe_class = new InformeSesion();
-                    $informes = $informe_class->imprimeListaInformes();
+                    $informeController = new InformeSesionController();
+                    $informes = $informeController->getListaInformeSesion();
+                    $i = 1;
                     if($informes != null){ //Si los resultados devueltos son mayor a 0
-                        foreach ($informes as $informe) {
-                            $html = '
-                                    <html>
-                                        <head>
-                                            <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
-                                            <link rel="stylesheet" href="public/css/styles.css">
-                                            <script src="https://kit.fontawesome.com/d1ab37e54e.js" crossorigin="anonymous"></script>
-                                            <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
-                                            <title>Recuerdame</title>
-                                        </head>
-                                        <body>                                       
-                                            <tr>
-                                                
-                                                    <th scope="row">'.$informe[0].'</th>
-                                                    <td>'.$informe[1].'</td>
-                                                    <td> <a href="MostrarInformeSesion.php?id='.$informe[2].'"> Sesión '.$informe[2].' </a></td>  
-                                                    <td>'.$informe[3].'</td>
-                                                    <td class="tableActions">
-                                                        <a style="text-decoration:none" href="MostrarInformeSesion.php?id='.$informe[2].'"> <i class="fa-solid fa-eye tableIcon"></i> </a>
-                                                        <i class="fa-solid fa-pencil text-primary tableIcon"></i>
-                                                        <i class="fa-solid fa-trash-can text-danger tableIcon"></i>
-                                                    </td>
-                                                
-                                            </tr>                                             
-                                        </body>
-                                    </html>
-                                    ';
-                            echo $html;
-                                
+                        foreach ($informes as $row) {
+                        ?>                                              
+                            <tr>
+                                <th scope="row"><?php echo $i ?></th>
+                                <td><?php echo "Informe nº {$row["idInforme"]}" ?></td>
+                                <td><?php echo (date("d/m/Y", strtotime($row["fecha_finalizada"]))) ?></td>
+                                <td><?php echo "Sesión nº {$row["idInforme"]}" ?></td>
+                                <td class="tableActions">
+                                <a href=""><i class="fa-solid fa-eye text-black tableIcon"></i></a>
+                                <a href=""><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
+                                <a href=""><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
+                                </td>
+                            </tr> 
+                        <?php
+                            $i++;
                         }
                     }
                 ?>

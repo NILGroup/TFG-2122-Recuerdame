@@ -26,6 +26,7 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
+                        <th scope="col">Informe</th>
                         <th scope="col">Fecha</th>
                         <th scope="col">Diagnóstico</th>
                         <th scope="col"></th>
@@ -35,10 +36,12 @@
                 <?php
                     $informeController = new InformeSeguimientoController();
                     $informes = $informeController->getListaInformeSeguimiento();
+                    $i = 1;
                     if($informes != null){ //Si los resultados devueltos son mayor a 0
                         foreach ($informes as $row) {
                         ?>
-                            <th scope="row"><?php echo ($row["idInforme"]) ?></th>
+                            <th scope="row"><?php echo $i ?></th>
+                            <td><?php echo utf8_encode ("Informe nº {$row["idInforme"]}") ?></td>
                             <td><?php echo (date("d/m/Y", strtotime($row["fecha"]))) ?></td>
                             <td><?php echo ($row["diagnostico"]) ?></td>
                             <td class="tableActions">
@@ -46,7 +49,8 @@
                                 <a href=""><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
                                 <a href=""><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
                             </td>
-                        <?php      
+                        <?php 
+                            $i++;
                         }
                     }
                 ?>

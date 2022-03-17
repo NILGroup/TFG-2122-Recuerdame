@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\controllers",
+    "\\daos",
     "\\models",
-    "\\public",
-    "\\public\\bootstrap-5.1.3-dist",
-    "\\public\\css",
-    "\\public\\img"
+    "\\public"
   ],
-  "SelectedNode": "\\models\\InformeSeguimiento.php",
+  "SelectedNode": "\\daos\\InformeSesionDAO.php",
   "PreviewInSolutionExplorer": false
 }
