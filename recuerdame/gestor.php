@@ -21,15 +21,25 @@
         $recuerdo->setDescripcion($descripcion);
         $recuerdo->setLocalizacion($localizacion);
         $recuerdo->setIdEtapa($idEtapa);
-        $recuerdo->setIdCategoria($idCategoria);
-        $recuerdo->setIdEmocion($idEmocion);
-        $recuerdo->setIdEstado($idEstado);
-        $recuerdo->setIdEtiqueta($idEtiqueta);
+        $recuerdo->setIdCategoria(empty($idCategoria) ? NULL : $idCategoria);
+        $recuerdo->setIdEmocion(empty($idEmocion) ? NULL : $idEmocion);
+        $recuerdo->setIdEstado(empty($idEstado) ? NULL : $idEstado);
+        $recuerdo->setIdEtiqueta(empty($idEtiqueta) ? NULL : $idEtiqueta);
         $recuerdo->setPuntuacion($puntuacion);
       
         $recuerdosController = new RecuerdosController();
         $idRecuerdo = $recuerdosController->guardarRecuerdo($recuerdo);
         
         header("Location: verDatosRecuerdo.php?idRecuerdo=$idRecuerdo");
+
+    } else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarRecuerdo') {
+        include("controllers/RecuerdosController.php");
+
+        $idRecuerdo = $_GET['idRecuerdo'];
+      
+        $recuerdosController = new RecuerdosController();
+        $recuerdosController->eliminarRecuerdo($idRecuerdo);
+        
+        header("Location: listadoRecuerdos.php");
     }
 ?>

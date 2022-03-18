@@ -19,7 +19,22 @@ class RecuerdoDAO
         $row = $conexion->query("SELECT * FROM recuerdo WHERE id_recuerdo = '$idRecuerdo'")
             or die($conexion->error);
 
-        $recuerdo = $row->fetch_assoc();
+        $r = $row->fetch_assoc();
+
+        $recuerdo = new Recuerdo();
+        $recuerdo->setIdRecuerdo($r['id_recuerdo']);
+        $recuerdo->setFecha($r['fecha']);
+        $recuerdo->setNombre($r['nombre']);
+        $recuerdo->setDescripcion($r['descripcion']);
+        $recuerdo->setLocalizacion($r['localizacion']);
+        $recuerdo->setIdEtapa($r['id_etapa']);
+        $recuerdo->setIdCategoria($r['id_categoria']);
+        $recuerdo->setIdEmocion($r['id_emocion']);
+        $recuerdo->setIdEstado($r['id_estado']);
+        $recuerdo->setIdEtiqueta($r['id_etiqueta']);
+        $recuerdo->setPuntuacion($r['puntuacion']);
+        $recuerdo->setIdPaciente($r['id_paciente']);
+
         return $recuerdo;
     }
 
@@ -47,33 +62,53 @@ class RecuerdoDAO
 
     public function nuevoRecuerdo($recuerdo) {
         $conexion = $this->db->getConexion();
-
         $consultaSQL = "INSERT INTO recuerdo (id_recuerdo, nombre, fecha, descripcion, localizacion,
-            id_etapa, id_categoria, id_emocion, id_estado, id_etiqueta, puntuacion, id_paciente) 
-            VALUES (NULL
-                    , '" . $recuerdo->getNombre() . "'
-                    , '" . $recuerdo->getFecha() . "'
-                    , '" . $recuerdo->getDescripcion() . "'
-                    , '" . $recuerdo->getLocalizacion() . "'
-                    , " . $recuerdo->getIdEtapa() . "
-                    , " . $recuerdo->getIdCategoria() . "
-                    , " . $recuerdo->getIdEmocion() . "
-                    , " . $recuerdo->getIdEstado() . "
-                    , " . $recuerdo->getIdEtiqueta() . "
-                    , '" . $recuerdo->getPuntuacion() . "'
-                    , 1)";
-        $conexion->query($consultaSQL) or die($conexion->error);
+                            id_etapa, id_categoria, id_emocion, id_estado, id_etiqueta, puntuacion, id_paciente) 
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        $stmt = $conexion->prepare($consultaSQL);
+        $stmt->execute(array(
+            NULL,
+            $recuerdo->getNombre(), 
+            $recuerdo->getFecha(), 
+            $recuerdo->getDescripcion(),
+            $recuerdo->getLocalizacion(),
+            $recuerdo->getIdEtapa(),
+            $recuerdo->getIdCategoria(),
+            $recuerdo->getIdEmocion(),
+            $recuerdo->getIdEstado(),
+            $recuerdo->getIdEtiqueta(),
+            $recuerdo->getPuntuacion(),
+            1
+            ));
+
+        $stmt->close();
 
         return $conexion->insert_id;
     }
 
     public function modificarRecuerdo($recuerdo) {
-        $consultaSQL = "UPDATE recuerdo SET
-                        nombre = '" . $recuerdo->getNombre() . "'
-                        WHERE id_recuerdo = '" . $recuerdo->getIdRecuerdo() . "'";
         $conexion = $this->db->getConexion();
-        $conexion->query($consultaSQL)
-            or die($conexion->error);
+        $consultaSQL = "UPDATE recuerdo 
+                        SET nombre = ?, fecha = ?, descripcion = ?, localizacion = ?,
+                            id_etapa = ?, id_categoria = ?, id_emocion = ?, id_estado = ?,
+                            id_etiqueta = ?, puntuacion = ?
+                        WHERE id_recuerdo = ?;";
+        $stmt = $conexion->prepare($consultaSQL);
+        $stmt->execute(array(
+            $recuerdo->getNombre(), 
+            $recuerdo->getFecha(), 
+            $recuerdo->getDescripcion(),
+            $recuerdo->getLocalizacion(),
+            $recuerdo->getIdEtapa(),
+            $recuerdo->getIdCategoria(),
+            $recuerdo->getIdEmocion(),
+            $recuerdo->getIdEstado(),
+            $recuerdo->getIdEtiqueta(),
+            $recuerdo->getPuntuacion(),
+            $recuerdo->getIdRecuerdo()
+            ));
+
+        $stmt->close();
 
         return $recuerdo->getIdRecuerdo();
     }

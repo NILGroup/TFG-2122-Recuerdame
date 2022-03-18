@@ -66,7 +66,7 @@
                             <td class="tableActions">
                                 <a href="verDatosRecuerdo.php?idRecuerdo=<?php echo ($row['idRecuerdo']) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
                                 <a href="modificarDatosRecuerdo.php?idRecuerdo=<?php echo ($row['idRecuerdo']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
-                                <a href=""><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
+                                <a href="gestor.php?accion=eliminarRecuerdo&idRecuerdo=<?php echo ($row['idRecuerdo']) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
                             </td>
                         </tr>
                     <?php

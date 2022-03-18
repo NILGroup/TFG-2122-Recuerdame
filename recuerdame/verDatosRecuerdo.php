@@ -40,7 +40,7 @@
                 <div class="row col-sm-6 col-md-6 col-lg-6">
                     <label for="nombre" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Nombre</label>
                     <div class="col-sm-9 col-md-10 col-lg-5">
-                        <input type="text" disabled class="form-control form-control-sm" id="nombre" value="<?php echo ($recuerdo['nombre']) ?>">
+                        <input type="text" disabled class="form-control form-control-sm" id="nombre" value="<?php echo ($recuerdo->getNombre()) ?>">
                     </div>
                 </div>
 
@@ -48,10 +48,11 @@
                     <label for="estado" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Estado</label>
                     <div class="col-sm-9 col-md-6 col-lg-4">
                         <select disabled class="form-select form-select-sm" name="estado">
+                            <option></option>
                             <?php
                                 foreach ($listaEstados as $row) {
                             ?>
-                                <option value="<?php echo ($row["id_estado"]) ?>" <?php if ($recuerdo['id_estado'] == $row['id_estado']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
+                                <option value="<?php echo ($row["id_estado"]) ?>" <?php if ($recuerdo->getIdEstado() == $row['id_estado']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
                             <?php
                                 }
                             ?>
@@ -64,17 +65,18 @@
                 <div class="row col-sm-6 col-md-6 col-lg-6">
                     <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha</label>
                     <div class="col-sm-9 col-md-6 col-lg-4">
-                        <input disabled type="date" class="form-control form-control-sm" id="fecha" value="<?php echo ($recuerdo['fecha']) ?>">
+                        <input disabled type="date" class="form-control form-control-sm" id="fecha" value="<?php echo ($recuerdo->getFecha()) ?>">
                     </div>
                 </div>
                 <div class="row col-sm-6 col-md-6 col-lg-6">
                     <label for="etiqueta" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Etiqueta</label>
                     <div class="col-sm-9 col-md-6 col-lg-4">
                         <select disabled class="form-select form-select-sm" name="etiqueta">
+                            <option></option>
                             <?php
                                 foreach ($listaEtiquetas as $row) {
                             ?>
-                                <option value="<?php echo ($row["id_etiqueta"]) ?>" <?php if ($recuerdo['id_etiqueta'] == $row['id_etiqueta']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
+                                <option value="<?php echo ($row["id_etiqueta"]) ?>" <?php if ($recuerdo->getIdEtiqueta() == $row['id_etiqueta']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
                             <?php
                                 }
                             ?>
@@ -87,14 +89,14 @@
                 <div class="row col-sm-12 col-md-12 col-lg-12">
                     <label for="puntuacion" class="form-label col-form-label-sm col-sm-2 col-md-2 col-lg-1">Puntuación</label>
                     <div class="col-sm-5 col-md-5 col-lg-2">
-                        <input disabled type="range" class="form-range" id="puntuacion" min="0" max="5" step="0.5">
+                        <input disabled type="range" class="form-range" id="puntuacion" name="puntuacion" min="0" max="5" step="0.5" value="<?php echo ($recuerdo->getPuntuacion()) ?>">
                     </div>
                 </div>
             </div>
 
             <div class="mb-3">
                 <label for="descripcion" class="form-label col-form-label-sm">Descripción</label>
-                <textarea disabled class="form-control form-control-sm" id="descripcion" rows="3"><?php echo ($recuerdo['descripcion']) ?></textarea>
+                <textarea disabled class="form-control form-control-sm" id="descripcion" name="descripcion" rows="3"><?php echo ($recuerdo->getDescripcion()) ?></textarea>
             </div>
 
             <div class="row justify-content-between">
@@ -105,7 +107,7 @@
                             <?php
                                 foreach ($listaEtapas as $row) {
                             ?>
-                                <option value="<?php echo ($row["id_etapa"]) ?>" <?php if ($recuerdo['id_etapa'] == $row['id_etapa']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
+                                <option value="<?php echo ($row["id_etapa"]) ?>" <?php if ($recuerdo->getIdEtapa() == $row['id_etapa']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
                             <?php
                                 }
                             ?>
@@ -115,10 +117,11 @@
                     <label for="emocion" class="form-label col-form-label-sm col-sm-2 col-md-12col-lg-1">Emoción</label>
                     <div class="col-sm-3 col-md-3 col-lg-2">
                         <select disabled class="form-select form-select-sm" name="emocion">
+                            <option></option>
                             <?php
                                 foreach ($listaEmociones as $row) {
                             ?>
-                                <option value="<?php echo ($row["id_emocion"]) ?>" <?php if ($recuerdo['id_emocion'] == $row['id_emocion']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
+                                <option value="<?php echo ($row["id_emocion"]) ?>" <?php if ($recuerdo->getIdEmocion() == $row['id_emocion']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
                             <?php
                                 }
                             ?>
@@ -128,10 +131,11 @@
                     <label for="categoria" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-1">Categoría</label>
                     <div class="col-sm-3 col-md-3 col-lg-2">
                         <select disabled class="form-select form-select-sm" name="categoria">
+                            <option></option>
                             <?php
                                 foreach ($listaCategorias as $row) {
                             ?>
-                                <option value="<?php echo ($row["id_categoria"]) ?>" <?php if ($recuerdo['id_categoria'] == $row['id_categoria']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
+                                <option value="<?php echo ($row["id_categoria"]) ?>" <?php if ($recuerdo->getIdCategoria() == $row['id_categoria']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
                             <?php
                                 }
                             ?>
@@ -142,7 +146,7 @@
 
             <div class="mb-3">
                 <label for="localizacion" class="form-label col-form-label-sm">Localización</label>
-                <textarea disabled class="form-control form-control-sm" id="localizacion" rows="3"><?php echo ($recuerdo['localizacion']) ?></textarea>
+                <textarea disabled class="form-control form-control-sm" id="localizacion" rows="3"><?php echo ($recuerdo->getLocalizacion()) ?></textarea>
             </div>
 
         </div>
