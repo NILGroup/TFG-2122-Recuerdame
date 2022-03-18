@@ -18,7 +18,7 @@ class InformeSesionController{
     }
 
     public function verInformeSesion($idInforme) {
-        return $this->informeSesionDao->getRecuerdo($idInforme);
+        return  $this->informeSesionDao->getInformeSesion($idInforme);
     }
 
     public function eliminarInformeSesion($idInforme) {

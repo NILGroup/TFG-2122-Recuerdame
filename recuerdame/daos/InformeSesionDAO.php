@@ -13,7 +13,7 @@ class InformeSesionDAO{
     
     public function getInformeSesion($idInforme) {
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("SELECT * FROM sesion WHERE id_sesión = '$idInforme'")
+        $row = $conexion->query("SELECT * FROM sesion WHERE id_sesion = '$idInforme'")
             or die ($conexion->error);
 
         $informe = $row->fetch_assoc();
