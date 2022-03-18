@@ -31,7 +31,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="historiaVida.php">Generar Historia de Vida</a></li>
                             <li><a class="dropdown-item" href="listadoRecuerdos.php">Recuerdos</a></li>
-                            <li><a class="dropdown-item" href="#">Personas relacionadas</a></li>
+                            <li><a class="dropdown-item" href="listadoPersonasRelacionadas.php">Personas relacionadas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

@@ -41,5 +41,42 @@
         $recuerdosController->eliminarRecuerdo($idRecuerdo);
         
         header("Location: listadoRecuerdos.php");
+
+    } else if (isset($_POST['guardarPersonaRelacionada'])) {
+        include("controllers/PersonasRelacionadasController.php");
+
+        $idPersonaRelacionada = $_GET['idPersonaRelacionada'];
+        $nombre = $_POST['nombre'];
+        $apellidos = $_POST['apellidos'];
+        $telefono = $_POST['telefono'];
+        $ocupacion = $_POST['ocupacion'];
+        $email = $_POST['email'];
+        $idTipoRelacion = $_POST['idTipoRelacion'];
+
+        echo "<script>console.log('Debug idTipoRelacion: " . $idTipoRelacion . "' );</script>";
+
+        $personaRelacionada = new PersonaRelacionada();
+        $personaRelacionada->setIdPersonaRelacionada($idPersonaRelacionada);
+        $personaRelacionada->setNombre($nombre);
+        $personaRelacionada->setApellidos($apellidos);
+        $personaRelacionada->setTelefono($telefono);
+        $personaRelacionada->setOcupacion($ocupacion);
+        $personaRelacionada->setEmail($email);
+        $personaRelacionada->setIdTipoRelacion($idTipoRelacion);
+      
+        $personasRelacionadasController = new PersonasRelacionadasController();
+        $idPersonaRelacionada = $personasRelacionadasController->guardarPersonaRelacionada($personaRelacionada);
+        
+        header("Location: verDatosPersonaRelacionada.php?idPersonaRelacionada=$idPersonaRelacionada");
+
+    } else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarPersonaRelacionada') {
+        include("controllers/PersonasRelacionadasController.php");
+
+        $idPersonaRelacionada = $_GET['idPersonaRelacionada'];
+      
+        $personasRelacionadasController = new PersonasRelacionadasController();
+        $personasRelacionadasController->eliminarPersonaRelacionada($idPersonaRelacionada);
+        
+        header("Location: listadoPersonasRelacionadas.php");
     }
 ?>
