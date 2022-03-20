@@ -32,7 +32,7 @@
         
         header("Location: verDatosRecuerdo.php?idRecuerdo=$idRecuerdo");
 
-    } else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarRecuerdo') {
+    }  else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarRecuerdo') {
         include("controllers/RecuerdosController.php");
 
         $idRecuerdo = $_GET['idRecuerdo'];
@@ -78,5 +78,53 @@
         $personasRelacionadasController->eliminarPersonaRelacionada($idPersonaRelacionada);
         
         header("Location: listadoPersonasRelacionadas.php");
+
+    } else if (isset($_POST['guardarInformeSeguimiento'])) {
+        
+        include("controllers/InformeSeguimientoController.php");
+        $idInforme = $_GET['idInforme'];
+        $fecha = $_POST['fecha'];
+        $gds = $_POST['gds'];
+        $fechaGds = $_POST['gds_fecha'];
+        $mental = $_POST['mental'];
+        $fechaMental = $_POST['mental_fecha'];
+        $cdr = $_POST['cdr'];
+        $fechaCdr = $_POST['cdr_fecha'];
+        $diagnostico = $_POST['diagnostico'];
+        $observaciones = $_POST['observaciones'];
+        $nombreEscala = $_POST['nombre_escala'];
+        $escala = $_POST['escala'];
+        $fechaEscala = $_POST['fecha_escala'];
+
+        $informe = new InformeSeguimiento();
+        $informe->setIdEvaluacion($idInforme);
+        $informe->setFecha($fecha);
+        $informe->setGds($gds);
+        $informe->setFechaGds($fechaGds);
+        $informe->setMental($mental);
+        $informe->setFechaMental($fechaMental);
+        $informe->setCdr($cdr);
+        $informe->setFechaCdr($fechaCdr);
+        $informe->setDiagnostico($diagnostico);
+        $informe->setObservaciones($observaciones);
+        $informe->setNombreEscala($nombreEscala);
+        $informe->setEscala($escala);
+        $informe->setFechaEscala($fechaEscala);
+
+        $informeSeguimientoController = new InformeSeguimientoController();
+        $idInforme = $informeSeguimientoController->guardarInformeSeguimiento($informe);
+        
+        header("Location: verDatosInformeSeguimiento.php?idInforme=$idInforme");
+
+    } else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarInformeSeguimiento') {
+        include("controllers/InformeSeguimientoController.php");
+
+        $idInformeSeguimiento = $_GET['idInforme'];
+      
+        $informeSeguimientoController = new InformeSeguimientoController();
+        $informeSeguimientoController->eliminarInformeSeguimiento($idInformeSeguimiento);
+        
+        header("Location: listadoInformesSeguimiento.php");
+
     }
 ?>

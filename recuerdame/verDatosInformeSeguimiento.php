@@ -31,7 +31,7 @@
         <div class="row">
             <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha:</label>
             <div class="col-sm-9 col-md-6 col-lg-2">
-                <input disabled type="date" class="form-control form-control-sm" id="fecha" value="<?php echo ($informeSeguimiento['fecha']) ?>">
+                <input disabled type="date" class="form-control form-control-sm" id="fecha" value="<?php echo ($informeSeguimiento->getFecha()) ?>">
             </div>
         </div>
         <div class="row">
@@ -46,32 +46,32 @@
         <div class="row">
             <label for="GDS" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">GDS:</label>
             <div class="col-sm-9 col-md-6 col-lg-2">
-                 <input type="text" disabled class="form-control form-control-sm" id="valor" value="<?php echo ($informeSeguimiento['gds']) ?>">
+                 <input type="number" disabled class="form-control form-control-sm" id="gds" name="gds" value="<?php echo ($informeSeguimiento->getGds()) ?>">
             </div>
             <div class="col-sm-9 col-md-6 col-lg-2">
-                <input disabled type="date" class="form-control form-control-sm" id="gds_fecha" value="<?php echo ($informeSeguimiento['gds_fecha']) ?>">
+                <input disabled type="date" class="form-control form-control-sm" id="gds_fecha" name="gds_fecha" value="<?php echo ($informeSeguimiento->getFechaGds()) ?>">
             </div>
         </div>
         <div class="row">
             <label for="Mental" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Mini mental/MEC de Lobo:</label>
             <div class="col-sm-9 col-md-6 col-lg-2">
-                 <input type="text" disabled class="form-control form-control-sm" id="valor" value="<?php echo ($informeSeguimiento['mental']) ?>">
+                 <input type="number" disabled class="form-control form-control-sm"id="mental" name="mental" value="<?php echo ($informeSeguimiento->getMental()) ?>">
             </div>
             <div class="col-sm-9 col-md-6 col-lg-2">
-                <input disabled type="date" class="form-control form-control-sm" id="mental_fecha" value="<?php echo ($informeSeguimiento['mental_fecha']) ?>">
+                <input disabled type="date" class="form-control form-control-sm" id="mental_fecha" name="mental_fecha" value="<?php echo ($informeSeguimiento->getFechaMental()) ?>">
             </div>
         </div>
         <div class="row">
             <label for="CDR" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">CDR:</label>
             <div class="col-sm-9 col-md-6 col-lg-2">
-                 <input type="text" disabled class="form-control form-control-sm" id="valor" value="<?php echo ($informeSeguimiento['cdr']) ?>">
+                 <input type="number" disabled class="form-control form-control-sm" id="cdr" name="cdr" value="<?php echo ($informeSeguimiento->getCdr()) ?>">
             </div>
             <div class="col-sm-9 col-md-6 col-lg-2">
-                <input disabled type="date" class="form-control form-control-sm" id="cdr_fecha" value="<?php echo ($informeSeguimiento['cdr_fecha']) ?>">
+                <input disabled type="date" class="form-control form-control-sm" id="cdr_fecha" name="cdr_fecha" value="<?php echo ($informeSeguimiento->getFechaCdr()) ?>">
             </div>
         </div>
         <?php 
-        if(!empty($informeSeguimiento['nombre_escala'])){
+        if(!empty($informeSeguimiento->getNombreEscala())){
         ?>
             <div class="row">
                 <label for="Otra_escala" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2"><b>Otra escala:</b></label>
@@ -85,13 +85,13 @@
         
         <div class="row">
             <div class="col-sm-9 col-md-6 col-lg-2">
-                 <input type="text" disabled class="form-control form-control-sm" id="nombre" value="<?php echo ($informeSeguimiento['nombre_escala']) ?>">
+                 <input type="text" disabled class="form-control form-control-sm" id="nombre_escala" name="nombre_escala" value="<?php echo ($informeSeguimiento->getNombreEscala()) ?>">
             </div>
             <div class="col-sm-9 col-md-6 col-lg-2">
-                 <input type="text" disabled class="form-control form-control-sm" id="valor" value="<?php echo ($informeSeguimiento['escala']) ?>">
+                 <input type="number" disabled class="form-control form-control-sm"id="escala" name="escala" value="<?php echo ($informeSeguimiento->getEscala()) ?>">
             </div>
             <div class="col-sm-9 col-md-6 col-lg-2">
-                <input disabled type="date" class="form-control form-control-sm" id="escala_fecha" value="<?php echo ($informeSeguimiento['fecha_escala']) ?>">
+                <input disabled type="date" class="form-control form-control-sm" id="fecha_esacala" name="fecha_escala" value="<?php echo ($informeSeguimiento->getFechaEscala()) ?>">
             </div>
         </div>
         <?php 
@@ -99,11 +99,15 @@
         ?>
         <div class="mb-3">
             <label for="diagnostico" class="form-label col-form-label-sm">Diagnostico:</label>
-            <textarea disabled class="form-control form-control-sm" id="diagnostico" rows="1"><?php echo ($informeSeguimiento['diagnostico']) ?></textarea>
+            <textarea disabled class="form-control form-control-sm"id="diagnostico" name="diagnostico" rows="1"><?php echo ($informeSeguimiento->getDiagnostico()) ?></textarea>
         </div>
         <div class="mb-3">
             <label for="observaciones" class="form-label col-form-label-sm">Observaciones:</label>
-            <textarea disabled class="form-control form-control-sm" id="observaciones" rows="1"><?php echo ($informeSeguimiento['observaciones']) ?></textarea>
+            <textarea disabled class="form-control form-control-sm" id="observaciones" name="observaciones" rows="1"><?php echo ($informeSeguimiento->getObservaciones()) ?></textarea>
+        </div>
+
+        <div>
+            <a href="listadoInformesSeguimiento.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
         </div>
 
     </div>

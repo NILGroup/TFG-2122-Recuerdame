@@ -20,8 +20,18 @@ class InformeSeguimientoController{
         return $this->informeSeguimientoDao->getInformeSeguimiento($idInforme);
     }
 
+    public function guardarInformeSeguimiento($informe) {
+        $idInforme = null;
+        if ($informe->getIdEvaluacion() == null) {
+            $idInforme = $this->informeSeguimientoDao->nuevoInformeSeguimiento($informe);
+        } else {
+            $idInforme = $this->informeSeguimientoDao->modificarInformeSeguimiento($informe);
+        }
+
+        return $idInforme;
+    }
+
     public function eliminarInformeSeguimiento($idInforme) {
-        $this->informeSeguimientoDao->eliminarInformeSeguimiento($idInforme);
-        return $this->listaInformeSeguimiento = $this->informeSeguimientoDao->getListaInformeSeguimiento(1);
+        return $this->informeSeguimientoDao->eliminarInformeSeguimiento($idInforme);
     }
 }
