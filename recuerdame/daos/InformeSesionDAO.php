@@ -16,8 +16,52 @@ class InformeSesionDAO{
         $row = $conexion->query("SELECT * FROM sesion WHERE id_sesion = '$idInforme'")
             or die ($conexion->error);
 
-        $informe = $row->fetch_assoc();
+        $i = $row->fetch_assoc();
+
+        $informe = new InformeSesion();
+        $informe->setIdSesion($i['id_sesion']);
+        $informe->setFecha($i['fecha']);
+        $informe->setFechaFinalizacion($i['fecha_finalizada']);
+        $informe->setRespuesta($i['respuesta']);
+        $informe->setObservaciones($i['observaciones']);
+
         return $informe;
+    }
+
+    public function nuevoInformeSesion($informe){
+        $conexion = $this->db->getConexion();
+        $consultaSQL = "INSERT INTO sesion (fecha_finalizada, respuesta, observaciones)
+                        VALUES (?, ?, ?,)
+                        WHERE id_sesion = ?;";
+        $stmt = $conexion->prepare($consultaSQL);
+        $stmt->execute(array(
+            $informe->getFechaFinalizacion(), 
+            $informe->getRespuesta(),
+            $informe->getObservaciones(),
+            $informe->getIdSesion(),
+            ));
+
+        $stmt->close();
+
+        return $conexion->getIdSesion();
+    }
+
+    public function modificarInformeSesion($informe){
+        $conexion = $this->db->getConexion();
+        $consultaSQL = "UPDATE sesion 
+                        SET fecha_finalizada = ?, respuesta = ?, observaciones = ?
+                        WHERE id_sesion = ?;";
+        $stmt = $conexion->prepare($consultaSQL);
+        $stmt->execute(array(
+            $informe->getFechaFinalizacion(), 
+            $informe->getRespuesta(),
+            $informe->getObservaciones(),
+            $informe->getIdSesion(),
+            ));
+
+        $stmt->close();
+
+        return $informe->getIdSesion();
     }
 
     public function getListaInformeSesion($idPaciente) {
@@ -36,7 +80,9 @@ class InformeSesionDAO{
 
     public function eliminarInformeSesion($idInforme) {
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("DELETE * FROM sesion WHERE id_sesion = '$idInforme'")
+        $conexion->query("UPDATE sesion SET
+                        fecha_finalizada = NULL, respuesta = NULL, observaciones = NULL 
+                        WHERE id_sesion = '$idInforme'")
             or die ($conexion->error);
     }
 

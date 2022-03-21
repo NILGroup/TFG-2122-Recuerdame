@@ -9,11 +9,11 @@ class InformeSesionController{
     
     public function __construct() {
         $this->informeSesionDao = new InformeSesionDAO();
+        $this->listaInformeSesion = $this->informeSesionDao->getListaInformeSesion(1);
         
     }
 
     public function getListaInformeSesion() {
-        $this->listaInformeSesion= $this->informeSesionDao->getListaInformeSesion(1);
         return $this->listaInformeSesion;
     }
 
@@ -21,9 +21,19 @@ class InformeSesionController{
         return  $this->informeSesionDao->getInformeSesion($idInforme);
     }
 
+    public function guardarInformeSesion($informe) {
+        $idInforme = null;
+        if ($informe->getIdSesion() == null) {
+            $idInforme = $this->informeSesionDao->nuevoInformeSesion($informe);
+        } else {
+            $idInforme = $this->informeSesionDao->modificarInformeSesion($informe);
+        }
+
+        return $idInforme;
+    }
+
     public function eliminarInformeSesion($idInforme) {
-        $this->informeSesionDao->eliminarInforme($idInforme);
-        return $this->listaInformeSesion = $this->informeSesionDao->getListaInformeSesion(1);
+        return $this->informeSesionDao->eliminarInformeSesion($idInforme);
     }
 
 }

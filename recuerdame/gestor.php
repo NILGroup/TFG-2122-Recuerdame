@@ -126,5 +126,35 @@
         
         header("Location: listadoInformesSeguimiento.php");
 
+    } else if (isset($_POST['guardarInformeSesion'])) {
+        
+        include("controllers/InformeSesionController.php");
+        $idInforme = $_GET['idInforme'];
+        $fecha = $_POST['fecha'];
+        $fecha_finalizada = $_POST['fecha_finalizada'];
+        $respuesta = $_POST['respuesta'];
+        $observaciones = $_POST['observaciones'];
+        $informe = new InformeSesion();
+        $informe->setIdSesion($idInforme);
+        $informe->setFecha($fecha);
+        $informe->setFechaFinalizacion($fecha_finalizada);
+        $informe->setRespuesta($respuesta);
+        $informe->setObservaciones($observaciones);
+
+        $informeSesionController = new InformeSesionController();
+        $idInforme = $informeSesionController->guardarInformeSesion($informe);
+        
+        header("Location: verDatosInformeSesion.php?idInforme=$idInforme");
+
+    } else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarInformeSesion') {
+        include("controllers/InformeSesionController.php");
+
+        $idInformeSesion = $_GET['idInforme'];
+      
+        $informeSesionController = new InformeSesionController();
+        $informeSesionController->eliminarInformeSesion($idInformeSesion);
+        
+        header("Location: listadoInformesSesion.php");
+
     }
 ?>

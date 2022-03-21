@@ -31,27 +31,28 @@
         <div class="row">
             <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha sesión:</label>
             <div class="col-sm-9 col-md-6 col-lg-2">
-                <input disabled type="date" class="form-control form-control-sm" id="fecha" value="<?php echo ($informeSesion['fecha']) ?>">
+                <input disabled type="date" class="form-control form-control-sm" id="fecha" name="fecha" value="<?php echo ($informeSesion->getFecha()) ?>">
             </div>
         </div>
 
         <div class="row">
             <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha de informe:</label>
             <div class="col-sm-9 col-md-6 col-lg-2">
-                <input disabled type="date" class="form-control form-control-sm" id="fecha" value="<?php echo ($informeSesion['fecha_finalizada']) ?>">
+                <input disabled type="date" class="form-control form-control-sm" id="fecha_finalizada" name="fecha_finalizada" value="<?php echo ($informeSesion->getFechaFinalizacion()) ?>">
             </div>
         </div>
 
         <div class="mb-3">
             <label for="respuesta" class="form-label col-form-label-sm">Respuesta del paciente:</label>
-            <textarea disabled class="form-control form-control-sm" id="respuesta" rows="1"><?php echo ($informeSesion['respuesta']) ?></textarea>
+            <textarea disabled class="form-control form-control-sm" id="respuesta" name="respuesta" rows="1"><?php echo ($informeSesion->getRespuesta()) ?></textarea>
         </div>
 
         <div class="mb-3">
             <label for="observaciones" class="form-label col-form-label-sm">Observaciones:</label>
-            <textarea disabled class="form-control form-control-sm" id="observaciones" rows="1"><?php echo ($informeSesion['observaciones']) ?></textarea>
+            <textarea disabled class="form-control form-control-sm" id="observaciones" name="observaciones" rows="1"><?php echo ($informeSesion->getObservaciones()) ?></textarea>
         </div>
 
+        <a href="listadoInformesSesion.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
 
     </div>
 </body>
