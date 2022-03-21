@@ -151,6 +151,8 @@
 
         </div>
 
+        <?php include "listadoPersonasRelacionadas.php" ?>
+
         <div>
             <a href="listadoRecuerdos.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
         </div>

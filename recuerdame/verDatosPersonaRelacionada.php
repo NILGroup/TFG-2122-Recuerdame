@@ -90,7 +90,7 @@
         </div>
 
         <div>
-            <a href="listadoPersonasRelacionadas.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+            <a href="personasRelacionadas.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
         </div>
     </div>
 
