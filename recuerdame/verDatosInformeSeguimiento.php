@@ -108,7 +108,7 @@
 
         <div>
             <a href="listadoInformesSeguimiento.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
-            <a href="generarPDFInformeSeguimiento.php"><button type="button" class="btn btn-primary btn-sm">Generar PDF</button></a>
+            <a href="generarPDFInformeSeguimiento.php?idInforme=<?php echo ($informeSeguimiento->getIdEvaluacion())?>"><button type="button" class="btn btn-primary btn-sm">Generar PDF</button></a>
         </div>
 
     </div>
