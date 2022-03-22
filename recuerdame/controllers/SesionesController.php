@@ -20,6 +20,17 @@ class SesionesController{
         return $this->sesionDao->getSesion($idSesion);
     }
 
+    public function guardarSesion($sesion) {
+        $idSesion = null;
+        if ($sesion->getIdSesion() == null) {
+            $idSesion = $this->sesionDao->nuevaSesion($sesion);
+        } else {
+            $idSesion = $this->sesionDao->modificarSesion($sesion);
+        }
+
+        return $idSesion;
+    }
+
     public function eliminarSesion($idSesion) {
         $this->sesionDao->eliminarSesion($idSesion);
         return $this->listaSesiones = $this->sesionDao->getListaSesiones(1);;

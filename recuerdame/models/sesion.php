@@ -1,6 +1,6 @@
 <?php
 
-class ListaSesion{
+class Sesion{
 
     private $idSesion;
     private $fecha;
@@ -12,46 +12,88 @@ class ListaSesion{
     private $fechaFinalizada;
     private $idPaciente;
 
-    function __construct($idSesion, $fecha, $idEtapa, $objetivo, $descripcion, $barreras, $facilitadores, $fechaFinalizada, 
-        $idPaciente) {
-
-        $this->idSesion = $idSesion;
-        $this->fecha = $fecha;
-        $this->idEtapa = $idEtapa;
-        $this->objetivo = $objetivo;
-        $this->descripcion = $descripcion;
-        $this->barreras = $barreras;
-        $this->facilitadores = $facilitadores;
-        $this->fechaFinalizada = $fechaFinalizada;
-        $this->idPaciente = $idPaciente;
+    function __construct(){
     }
 
     public function getIdSesion(){
         return $this->idSesion;
     }
+    public function setIdSesion($idSesion) {
+        $this->idSesion = $idSesion;
+
+        return $this;
+    }
+
     public function getFecha() {
         return $this->fecha;
     }
+    public function setFecha($fecha) {
+        $this->fecha = $fecha;
+
+        return $this;
+    }
+
     public function getIdEtapa() {
         return $this->idEtapa;
     }
+    public function setIdEtapa($idEtapa) {
+        $this->idEtapa = $idEtapa;
+
+        return $this;
+    }
+
     public function getObjetivo() {
         return $this->objetivo;
     }
+    public function setObjetivo($objetivo) {
+        $this->objetivo = $objetivo;
+
+        return $this;
+    }
+
     public function getDescripcion() {
         return $this->descripcion;
     }
+    public function setDescripcion($descripcion) {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
     public function getBarreras() {
         return $this->barreras;
     }
+    public function setBarreras($barreras) {
+        $this->barreras = $barreras;
+
+        return $this;
+    }
+
     public function getFacilitadores() {
         return $this->facilitadores;
     }
+    public function setFacilitadores($facilitadores) {
+        $this->facilitadores = $facilitadores;
+
+        return $this;
+    }
+
     public function getFechaFinalizada() {
         return $this->fechaFinalizada;
     }
+    public function setFechaFinalizada($fechaFinalizada) {
+        $this->fechaFinalizada = $fechaFinalizada;
+
+        return $this;
+    }
+
     public function getIdPaciente() {
         return $this->idPaciente;
+    }
+    public function setIdPaciente($idPaciente) {
+        $this->idPaciente = $idPaciente;
+
+        return $this;
     }
 
 }

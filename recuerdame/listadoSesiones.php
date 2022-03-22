@@ -25,13 +25,12 @@
             <div class="row">
                 <div class="col-12 justify-content-end d-flex">
                     <div>
-                        <input type="text" class="form-control" placeholder="Buscar" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" placeholder="Buscar..." aria-label="Username" aria-describedby="basic-addon1">
                     </div> 
                     <span class="input-group-text border-0" id="search-addon">
                         <i class="fas fa-search"></i>
                     </span>
-                    <a href = "aniadirSesion.php">
-                        <button type="button" class="btn btn-outline-dark">+</button>
+                        <a href="modificarDatosSesion.php"><button type="button" class="btn btn-outline-dark">+</button>
                     </a>   
                 </div>
             </div>
@@ -62,7 +61,7 @@
                                 <td class="tableActions">
                                     <a href="verDatosSesion.php?idSesion=<?php echo ($row['idSesion']) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
                                     <a href="modificarDatosSesion.php?idSesion=<?php echo ($row['idSesion']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
-                                    <a href=""><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
+                                    <a href="gestor.php?accion=eliminarSesion&idSesion=<?php echo ($row['idSesion']) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
                                 </td>
                             </tr>
                         <?php

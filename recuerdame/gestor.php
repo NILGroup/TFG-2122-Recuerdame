@@ -156,5 +156,44 @@
         
     } else if (isset($_GET['historiaVida']) && $_GET['historiaVida'] == 'libro') {
         header("Location: historiaVidaLibro.php");
-    }
+
+    } else if(isset($_POST['guardarSesion']))
+        include("controllers/SesionesController.php");
+        
+        $idSesion = $_GET['idSesion'];
+        $fecha = $_POST['fecha'];
+        $idEtapa = $_POST['idEtapa'];
+        $objetivo = $_POST['objetivo'];
+        $descripcion = $_POST['descripcion'];
+        $barreras = $_POST['barreras'];
+        $facilitadores = $_POST['facilitadores'];
+        $fechaFinalizada = $_POST['fechaFinalizada'];
+        $idPaciente = $_POST['idPaciente'];
+
+        $sesion = new Sesion();
+        $sesion->setIdSesion($idSesion);
+        $sesion->setFecha($fecha);
+        $sesion->setIdEtapa($idEtapa);
+        $sesion->setObjetivo($objetivo);
+        $sesion->setDescripcion($descripcion);
+        $sesion->setBarreras($barreras);
+        $sesion->setFacilitadores($facilitadores);
+        $sesion->setFechaFinalizada($fechaFinalizada);
+        $sesion->setIdPaciente($idPaciente);
+      
+        $sesionesController = new SesionesController();
+        $idSesion = $sesionesController->guardarSesion($sesion);
+        
+        header("Location: verDatosSesion.php?idSesion=$idSesion");
+
+    } else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarSesion') {
+        include("controllers/SesionesController.php");
+
+        $idSesion = $_GET['idSesion'];
+      
+        $sesionesController = new SesionesController();
+        $rsesionesController->eliminarSesion($idSesion);
+        
+        header("Location: listadoSesiones.php");
+
 ?>
