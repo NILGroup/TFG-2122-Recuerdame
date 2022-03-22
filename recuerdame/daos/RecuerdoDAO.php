@@ -149,7 +149,6 @@ class RecuerdoDAO
         $row = $conexion->query("SELECT *
                 FROM recuerdo r
                 WHERE r.id_paciente = '$idPaciente'
-                AND r.id_recuerdo = 26
                 ORDER BY r.fecha")
             or die($conexion->error);
 
@@ -169,7 +168,7 @@ class RecuerdoDAO
                 WHERE rm.id_recuerdo = $idRecuerdo")
             or die($conexion->error);
 
-        $listaMultimedia[] = [];
+        $listaMultimedia = array();
         while ($rows = $row->fetch_assoc()) {
             $listaMultimedia[] = $rows;
         };

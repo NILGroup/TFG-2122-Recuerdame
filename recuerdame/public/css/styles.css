@@ -112,3 +112,18 @@ border-color: rgb(9, 146, 135);
 .asterisco{
     color: red;
 }
+
+.img-responsive {
+    width: auto;
+    height: 250px;
+}
+
+.testimonial-group > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.testimonial-group > .row > .col-sm-4 {
+    display: inline-block;
+    float: none;
+}
