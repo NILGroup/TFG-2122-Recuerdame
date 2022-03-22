@@ -31,11 +31,11 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="historiaVida.php">Generar Historia de Vida</a></li>
                             <li><a class="dropdown-item" href="listadoRecuerdos.php">Recuerdos</a></li>
-                            <li><a class="dropdown-item" href="listadoPersonasRelacionadas.php">Personas relacionadas</a></li>
+                            <li><a class="dropdown-item" href="personasRelacionadas.php">Personas relacionadas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link letra-primary-color" href="#">Calendario</a>
+                        <a class="nav-link letra-primary-color" href="calendario.php">Calendario</a>
                     </li>
                 </ul>
             </div>

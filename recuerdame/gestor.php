@@ -53,8 +53,6 @@
         $email = $_POST['email'];
         $idTipoRelacion = $_POST['idTipoRelacion'];
 
-        echo "<script>console.log('Debug idTipoRelacion: " . $idTipoRelacion . "' );</script>";
-
         $personaRelacionada = new PersonaRelacionada();
         $personaRelacionada->setIdPersonaRelacionada($idPersonaRelacionada);
         $personaRelacionada->setNombre($nombre);
@@ -155,6 +153,8 @@
         $informeSesionController->eliminarInformeSesion($idInformeSesion);
         
         header("Location: listadoInformesSesion.php");
-
+        
+    } else if (isset($_GET['historiaVida']) && $_GET['historiaVida'] == 'libro') {
+        header("Location: historiaVidaLibro.php");
     }
 ?>

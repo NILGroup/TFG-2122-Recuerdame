@@ -36,6 +36,10 @@ class RecuerdosController{
     public function getListaRecuerdosSesion() {
         return $this->listaRecuerdos = $this->recuerdoDao->getListaRecuerdosSesion(1);
     }
+
+    public function getListaMultimediaRecuerdo($idRecuerdo) {
+        return $this->recuerdoDao->getListaMultimediaRecuerdo($idRecuerdo);
+    }
 }
 
 ?>
