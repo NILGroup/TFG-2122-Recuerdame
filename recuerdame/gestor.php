@@ -157,7 +157,7 @@
     } else if (isset($_GET['historiaVida']) && $_GET['historiaVida'] == 'libro') {
         header("Location: historiaVidaLibro.php");
 
-    } else if(isset($_POST['guardarSesion']))
+    } else if(isset($_POST['guardarSesion'])) {
         include("controllers/SesionesController.php");
         
         $idSesion = $_GET['idSesion'];
@@ -195,5 +195,6 @@
         $rsesionesController->eliminarSesion($idSesion);
         
         header("Location: listadoSesiones.php");
+    }
 
 ?>
