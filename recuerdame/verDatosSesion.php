@@ -141,6 +141,11 @@
                 </div>
             </div>
 
+            <div class="pt-4 pb-2">
+                <h5 class="text-muted">Material</h5>
+                <hr class="lineaTitulo">
+            </div>
+
             <section class="droparea">
                 <i class="fa-solid fa-cloud-arrow-up"></i>
                 <p><small>Arrastrar y soltar</small></p>

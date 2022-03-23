@@ -97,9 +97,17 @@
             </div>
         </div>
 
-        <div class="pt-4 pb-2">
+            <div class="pt-4 pb-2">
                 <h5 class="text-muted">Recuerdos</h5>
                 <hr class="lineaTitulo">
+            </div>
+
+            <div class="row">
+                <div class="col-12 justify-content-end d-flex"> 
+                        <a href="modificarDatosRecuerdo.php"><button type="button" class="btn btn-outline-dark">+</button>
+                        <a href="modificarDatosRecuerdo.php"><button type="button" class="btn btn-outline-dark">Añadir existente</button>
+                    </a>   
+                </div>
             </div>
 
             <div>
@@ -144,11 +152,24 @@
                 </table>
             </div>
 
+            <div class="pt-4 pb-2">
+                <h5 class="text-muted">Material</h5>
+                <hr class="lineaTitulo">
+            </div>
+
+            <div class="row">
+                <div class="col-12 justify-content-end d-flex">
+                        <a href=""><i class="fa-solid fa-cloud-arrow-up"></i>
+                        <a href=""><button type="button" class="btn btn-outline-dark">Añadir existente</button>
+                    </a>   
+                </div>
+            </div>
+
             <section class="droparea">
                 <i class="fa-solid fa-cloud-arrow-up"></i>
                 <p><small>Arrastrar y soltar</small></p>
             </section>
-
+           
         <div>
             <button type="button" class="btn btn-primary btn-sm">Atrás</button>
         </div>

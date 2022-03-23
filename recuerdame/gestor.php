@@ -192,7 +192,7 @@
         $idSesion = $_GET['idSesion'];
       
         $sesionesController = new SesionesController();
-        $rsesionesController->eliminarSesion($idSesion);
+        $sesionesController->eliminarSesion($idSesion);
         
         header("Location: listadoSesiones.php");
     }

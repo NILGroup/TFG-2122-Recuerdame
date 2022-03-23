@@ -9,11 +9,11 @@ class SesionesController{
     
     public function __construct() {
         $this->sesionDao = new SesionDAO();
-        $this->listaSesiones = $this->sesionDao->getListaSesiones(1);
+   
     }
 
     public function getListaSesiones() {
-        return $this->listaSesiones;
+        return $this->listaSesiones = $this->sesionDao->getListaSesiones(1);
     }
 
     public function verSesion($idSesion) {
@@ -33,7 +33,6 @@ class SesionesController{
 
     public function eliminarSesion($idSesion) {
         $this->sesionDao->eliminarSesion($idSesion);
-        return $this->listaSesiones = $this->sesionDao->getListaSesiones(1);;
     }
 }
 
