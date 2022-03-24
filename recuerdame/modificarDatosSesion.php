@@ -127,7 +127,6 @@
                     <tbody>
                         <?php
                         $recuerdosController = new RecuerdosController();
-                        echo "<script>console.log('Debug Objects: " . $sesion->getIdSesion() . "' );</script>";
                         $listaRecuerdosSesion = $recuerdosController->getListaRecuerdosSesion($sesion->getIdSesion());
                         $i = 1;
                         foreach ($listaRecuerdosSesion as $row) {
