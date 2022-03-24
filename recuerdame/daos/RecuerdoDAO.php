@@ -43,7 +43,7 @@ class RecuerdoDAO
         $conexion = $this->db->getConexion();
         $row = $conexion->query("SELECT r.id_recuerdo AS idRecuerdo, r.fecha, r.nombre, e.nombre AS nombreEtapa,
                 c.nombre AS nombreCategoria, em.nombre AS nombreEmocion, es.nombre AS nombreEstado,
-                et.nombre AS nombreEtiqueta
+                et.nombre AS nombreEtiqueta, r.descripcion
                 FROM recuerdo r 
                 LEFT JOIN etapa e ON e.id_etapa = r.id_etapa
                 LEFT JOIN categoria c ON c.id_categoria = r.id_categoria

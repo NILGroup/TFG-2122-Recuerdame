@@ -37,7 +37,7 @@
                             <div class="d-block w-100">
                                 <div class="">
                                     <h5 class="text-center text-muted"><?php echo $recuerdo['nombre'] ?></h5>
-                                    <p><?php echo $recuerdo['descripcion'] ?></p>
+                                    <p><?php echo nl2br($recuerdo['descripcion']) ?></p>
 
                                     <div class="testimonial-group">
                                         <div class="row text-center flex-nowrap">
