@@ -54,7 +54,7 @@
                         ?>
                             <tr>
                                 <th scope="row"><?php echo $i ?></th>
-                                <td><a href="verDatosSesion.php?idSesion=<?php echo ($row['idSesion']) ?>"><?php echo ($row['fecha']) ?></a></td>
+                                <td><a href="verDatosSesion.php?idSesion=<?php echo ($row['idSesion']) ?>"><?php echo (date("d/m/Y", strtotime($row["fecha"]))) ?></a></td>
                                 <td><?php echo ($row["objetivo"]) ?></td>
                                 <td><i class="fa-regular fa-square-check text-success tableIcon"></i></td>
                                 <td class="tableActions">

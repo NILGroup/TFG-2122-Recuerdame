@@ -40,12 +40,12 @@
         <form action="gestor.php?idSesion=<?php echo ($sesion->getIdSesion()) ?>" method="POST">
         <div class="row">
                 <div class="row">
-                    <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha:</label>
+                    <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha:<span class="asterisco">*</span></label>
                     <div class="col-sm-9 col-md-6 col-lg-2">
                         <input type="date" class="form-control form-control-sm" id="fecha" name="fecha" value="<?php echo ($sesion->getFecha()) ?>">
                     </div>
                     
-                    <label for="etapa" class="form-label col-form-label-sm col-sm-2 col-md-12col-lg-1">Etapa:</label>
+                    <label for="etapa" class="form-label col-form-label-sm col-sm-2 col-md-12col-lg-1">Etapa:<span class="asterisco">*</span></label>
                     <div class="col-sm-3 col-md-3 col-lg-2">
                             <select class="form-select form-select-sm" id="idEtapa" name="idEtapa">
                                 <?php
@@ -58,7 +58,7 @@
                             </select>  
                     </div>
 
-                    <label for="terapeuta" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-1">Terapeuta:</label>
+                    <label for="terapeuta" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-1">Terapeuta:<span class="asterisco">*</span></label>
                     <div class="col-sm-3 col-md-3 col-lg-2">
                         <select disabled class="form-select form-select-sm" name="terapeuta">
                             <?php
@@ -74,13 +74,13 @@
             </div>
 
             <div class="mb-3">
-                <label for="objetivo" class="form-label col-form-label-sm">Objetivo:</label>
-                <textarea maxlength="255" class="form-control form-control-sm" id="objetivo" name="objetivo" rows="3"><?php echo ($sesion->getObjetivo()) ?></textarea>
+                <label for="objetivo" class="form-label col-form-label-sm">Objetivo:<span class="asterisco">*</span></label>
+                <textarea required maxlength="255" class="form-control form-control-sm" id="objetivo" name="objetivo" rows="3"><?php echo ($sesion->getObjetivo()) ?></textarea>
             </div>
 
             <div class="mb-3">
                 <label for="descripcion" class="form-label col-form-label-sm">Descripción:</label>
-                <textarea maxlength="255" class="form-control form-control-sm" id="descripcion" name="descripcion" rows="3"><?php echo ($sesion->getDescripcion()) ?></textarea>
+                <textarea required maxlength="255" class="form-control form-control-sm" id="descripcion" name="descripcion" rows="3"><?php echo ($sesion->getDescripcion()) ?></textarea>
             </div>
 
             <div>
@@ -170,7 +170,8 @@
             </section>
            
         <div>
-            <button type="button" class="btn btn-primary btn-sm">Atrás</button>
+            <button type="submit" name="guardarSesion" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
+            <a href="listadoSesiones.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
         </div>
     </div>
     <?php include "layout/footer.php" ?>

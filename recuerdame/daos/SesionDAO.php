@@ -46,7 +46,8 @@ class SesionDAO{
         return $listaSesiones;
     }
 
-    public function nuevaSesion($sesion) {
+    public function nuevaSesion($sesion) 
+    {
         $conexion = $this->db->getConexion();
         $consultaSQL = "INSERT INTO sesion (id_sesion, fecha, id_etapa, objetivo, descripcion,
                             barreras, facilitadores, id_Paciente) 
@@ -63,14 +64,15 @@ class SesionDAO{
             $sesion->getFacilitadores(),
             $sesion->getIdPaciente(),
             1
-            ));
+        ));
 
         $stmt->close();
 
         return $conexion->insert_id;
     }
 
-    public function modificarSesion($sesion) {
+    public function modificarSesion($sesion) 
+    {
         $conexion = $this->db->getConexion();
         $consultaSQL = "UPDATE sesion 
                         SET fecha = ?, id_etapa = ?, objetivo = ?, descripcion = ?, barreras = ?, 
