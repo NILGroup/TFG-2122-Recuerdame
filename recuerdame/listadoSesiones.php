@@ -2,7 +2,7 @@
     
 <head>
   <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
-  <script src="https://kit.fontawesome.com/d1ab37e54e.js" crossorigin="anonymous"></script>
+  <link href="public/fontawesome6/css/all.css" rel="stylesheet">
   <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
   <link rel="stylesheet" type="text/css" href="public/css/styles.css">

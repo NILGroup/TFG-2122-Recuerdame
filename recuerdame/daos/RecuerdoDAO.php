@@ -53,6 +53,7 @@ class RecuerdoDAO
                 WHERE r.id_paciente = '$idPaciente'")
             or die($conexion->error);
 
+        $listaRecuerdos = array();
         while ($rows = $row->fetch_assoc()) {
             $listaRecuerdos[] = $rows;
         };
@@ -60,7 +61,8 @@ class RecuerdoDAO
         return $listaRecuerdos;
     }
 
-    public function nuevoRecuerdo($recuerdo) {
+    public function nuevoRecuerdo($recuerdo)
+    {
         $conexion = $this->db->getConexion();
         $consultaSQL = "INSERT INTO recuerdo (id_recuerdo, nombre, fecha, descripcion, localizacion,
                             id_etapa, id_categoria, id_emocion, id_estado, id_etiqueta, puntuacion, id_paciente) 
@@ -68,8 +70,8 @@ class RecuerdoDAO
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
             NULL,
-            $recuerdo->getNombre(), 
-            $recuerdo->getFecha(), 
+            $recuerdo->getNombre(),
+            $recuerdo->getFecha(),
             $recuerdo->getDescripcion(),
             $recuerdo->getLocalizacion(),
             $recuerdo->getIdEtapa(),
@@ -79,14 +81,15 @@ class RecuerdoDAO
             $recuerdo->getIdEtiqueta(),
             $recuerdo->getPuntuacion(),
             1
-            ));
+        ));
 
         $stmt->close();
 
         return $conexion->insert_id;
     }
 
-    public function modificarRecuerdo($recuerdo) {
+    public function modificarRecuerdo($recuerdo)
+    {
         $conexion = $this->db->getConexion();
         $consultaSQL = "UPDATE recuerdo 
                         SET nombre = ?, fecha = ?, descripcion = ?, localizacion = ?,
@@ -95,8 +98,8 @@ class RecuerdoDAO
                         WHERE id_recuerdo = ?;";
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
-            $recuerdo->getNombre(), 
-            $recuerdo->getFecha(), 
+            $recuerdo->getNombre(),
+            $recuerdo->getFecha(),
             $recuerdo->getDescripcion(),
             $recuerdo->getLocalizacion(),
             $recuerdo->getIdEtapa(),
@@ -106,7 +109,7 @@ class RecuerdoDAO
             $recuerdo->getIdEtiqueta(),
             $recuerdo->getPuntuacion(),
             $recuerdo->getIdRecuerdo()
-            ));
+        ));
 
         $stmt->close();
 
@@ -136,6 +139,7 @@ class RecuerdoDAO
                 WHERE s.id_sesion = '$idSesion'")
             or die($conexion->error);
 
+        $listaRecuerdosSesion = array();
         while ($rows = $row->fetch_assoc()) {
             $listaRecuerdosSesion[] = $rows;
         };
@@ -152,6 +156,7 @@ class RecuerdoDAO
                 ORDER BY r.fecha")
             or die($conexion->error);
 
+        $listaRecuerdosHistoriaVida = array();
         while ($rows = $row->fetch_assoc()) {
             $listaRecuerdosHistoriaVida[] = $rows;
         };

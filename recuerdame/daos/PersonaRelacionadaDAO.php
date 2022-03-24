@@ -43,6 +43,7 @@ class PersonaRelacionadaDAO
                 WHERE p.id_paciente = $idPaciente")
             or die($conexion->error);
 
+        $listaPersonasRelacionadas = array();
         while ($rows = $row->fetch_assoc()) {
             $listaPersonasRelacionadas[] = $rows;
         };
@@ -50,7 +51,8 @@ class PersonaRelacionadaDAO
         return $listaPersonasRelacionadas;
     }
 
-    public function nuevaPersonaRelacionada($personaRelacionada) {
+    public function nuevaPersonaRelacionada($personaRelacionada)
+    {
         $conexion = $this->db->getConexion();
         $consultaSQL = "INSERT INTO persona_relacionada (id_persona_relacionada, nombre, apellidos, telefono, ocupacion,
                             email, id_tipo_relacion, id_paciente) 
@@ -58,21 +60,22 @@ class PersonaRelacionadaDAO
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
             NULL,
-            $personaRelacionada->getNombre(), 
-            $personaRelacionada->getApellidos(), 
+            $personaRelacionada->getNombre(),
+            $personaRelacionada->getApellidos(),
             $personaRelacionada->getTelefono(),
             $personaRelacionada->getOcupacion(),
             $personaRelacionada->getEmail(),
             $personaRelacionada->getIdTipoRelacion(),
             1
-            ));
+        ));
 
         $stmt->close();
 
         return $conexion->insert_id;
     }
 
-    public function modificarPersonaRelacionada($personaRelacionada) {
+    public function modificarPersonaRelacionada($personaRelacionada)
+    {
         echo "<script>console.log('Debug getNombre: " . $personaRelacionada->getNombre() . "' );</script>";
         echo "<script>console.log('Debug getApellidos: " . $personaRelacionada->getApellidos() . "' );</script>";
         echo "<script>console.log('Debug getTelefono: " . $personaRelacionada->getTelefono() . "' );</script>";
@@ -86,14 +89,14 @@ class PersonaRelacionadaDAO
                         WHERE id_persona_relacionada = ?;";
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
-            $personaRelacionada->getNombre(), 
-            $personaRelacionada->getApellidos(), 
+            $personaRelacionada->getNombre(),
+            $personaRelacionada->getApellidos(),
             $personaRelacionada->getTelefono(),
             $personaRelacionada->getOcupacion(),
             $personaRelacionada->getEmail(),
             $personaRelacionada->getIdTipoRelacion(),
             $personaRelacionada->getIdPersonaRelacionada()
-            ));
+        ));
 
         $stmt->close();
 

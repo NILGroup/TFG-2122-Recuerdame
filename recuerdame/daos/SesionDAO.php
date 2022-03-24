@@ -38,6 +38,7 @@ class SesionDAO{
             WHERE s.id_paciente = '$idPaciente'")
         or die ($conexion->error);
 
+        $listaSesiones = array();
         while ($rows = $row->fetch_assoc()) {
             $listaSesiones[] = $rows;
         };
@@ -99,5 +100,3 @@ class SesionDAO{
     }
 
 }
-
-?>

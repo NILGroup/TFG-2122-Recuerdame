@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="public/css/styles.css">
-    <script src="https://kit.fontawesome.com/d1ab37e54e.js" crossorigin="anonymous"></script>
+    <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Recuerdame</title>
@@ -39,7 +39,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Informe</th>
                         <th scope="col">Fecha</th>
-                        <th scope="col">Diagn�stico</th>
+                        <th scope="col">Diagnóstico</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>

@@ -1,20 +1,23 @@
 <?php
 
-    include('models/InformeSeguimiento.php');
-    include('configdb.php');
- 
-class InformeSeguimientoDAO{
+include('models/InformeSeguimiento.php');
+include('configdb.php');
+
+class InformeSeguimientoDAO
+{
 
     private $db;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->db = new Configdb();
     }
-    
-    public function getInformeSeguimiento($idInforme) {
+
+    public function getInformeSeguimiento($idInforme)
+    {
         $conexion = $this->db->getConexion();
         $row = $conexion->query("SELECT * FROM evaluacion WHERE id_evaluacion = '$idInforme'")
-            or die ($conexion->error);
+            or die($conexion->error);
 
         $i = $row->fetch_assoc();
 
@@ -37,7 +40,8 @@ class InformeSeguimientoDAO{
         return $informe;
     }
 
-    public function nuevoInformeSeguimiento($informe) {
+    public function nuevoInformeSeguimiento($informe)
+    {
         $conexion = $this->db->getConexion();
         $consultaSQL = "INSERT INTO evaluacion (id_evaluacion, fecha, gds, gds_fecha, mental, mental_fecha, cdr, cdr_fecha,
                             diagnostico, observaciones, nombre_escala, escala, fecha_escala, id_paciente)
@@ -45,7 +49,7 @@ class InformeSeguimientoDAO{
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
             NULL,
-            $informe->getFecha(), 
+            $informe->getFecha(),
             $informe->getGds(),
             $informe->getFechaGds(),
             $informe->getMental(),
@@ -58,14 +62,15 @@ class InformeSeguimientoDAO{
             $informe->getEscala(),
             $informe->getFechaEscala(),
             1
-            ));
+        ));
 
         $stmt->close();
 
         return $conexion->insert_id;
     }
 
-    public function modificarInformeSeguimiento($informe) {
+    public function modificarInformeSeguimiento($informe)
+    {
         $conexion = $this->db->getConexion();
         $consultaSQL = "UPDATE evaluacion 
                         SET fecha = ?, gds = ?, gds_fecha = ?,
@@ -77,7 +82,7 @@ class InformeSeguimientoDAO{
 
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
-            $informe->getFecha(), 
+            $informe->getFecha(),
             $informe->getGds(),
             $informe->getFechaGds(),
             $informe->getMental(),
@@ -90,20 +95,22 @@ class InformeSeguimientoDAO{
             $informe->getEscala(),
             $informe->getFechaEscala(),
             $informe->getIdEvaluacion(),
-            ));
+        ));
 
         $stmt->close();
 
         return $informe->getIdEvaluacion();
     }
 
-    public function getListaInformeSeguimiento($idPaciente) {
+    public function getListaInformeSeguimiento($idPaciente)
+    {
         $conexion = $this->db->getConexion();
         $row = $conexion->query("SELECT i.id_evaluacion AS idInforme, i.fecha, i.diagnostico
             FROM evaluacion i
             WHERE i.id_paciente = '$idPaciente'")
-        or die ($conexion->error);
+            or die($conexion->error);
 
+        $listaInformes = array();
         while ($rows = $row->fetch_assoc()) {
             $listaInformes[] = $rows;
         };
@@ -111,10 +118,10 @@ class InformeSeguimientoDAO{
         return $listaInformes;
     }
 
-    public function eliminarInformeSeguimiento($idInforme) {
+    public function eliminarInformeSeguimiento($idInforme)
+    {
         $conexion = $this->db->getConexion();
         $conexion->query("DELETE FROM evaluacion WHERE id_evaluacion = '$idInforme'")
-            or die ($conexion->error);
+            or die($conexion->error);
     }
-
 }
