@@ -118,12 +118,31 @@ border-color: rgb(9, 146, 135);
     height: 250px;
 }
 
+.hv-box{
+    height: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    background-color: #fff;
+    background-clip: border-box;
+}
+
 .testimonial-group > .row {
     overflow-x: auto;
     white-space: nowrap;
 }
 
-.testimonial-group > .row > .col-sm-4 {
-    display: inline-block;
-    float: none;
+.testimonial-group > .row::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 2px;
+}
+
+.testimonial-group > .row::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.hv-control {
+    padding: 0 !important;
+    width: auto !important
 }
