@@ -9,10 +9,9 @@
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
     <?php include "controllers/InformeSesionController.php" ?>
 
     <div class="contenedor">
@@ -58,6 +57,7 @@
             </table>
         </div>
     </div>
+    <?php include "layout/footer.php" ?>
 </body>
 
 </html>

@@ -157,6 +157,12 @@
     } else if (isset($_GET['historiaVida']) && $_GET['historiaVida'] == 'libro') {
         header("Location: historiaVidaLibro.php");
 
+    } else if (isset($_GET['historiaVida']) && $_GET['historiaVida'] == 'pdf') {
+
+        if (isset($_GET['idPaciente'])) {
+            header("Location: generarPDFHistoriaVida.php");
+        }
+
     } else if(isset($_POST['guardarSesion'])) {
         include("controllers/SesionesController.php");
         

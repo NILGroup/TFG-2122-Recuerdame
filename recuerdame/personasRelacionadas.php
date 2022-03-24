@@ -10,10 +10,9 @@
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
 
     <div class="container-fluid">
         <div class="pt-4 pb-2">
@@ -37,7 +36,7 @@
             <?php include "listadoPersonasRelacionadas.php" ?>
         </div>
     </div>
-
+    <?php include "layout/footer.php" ?>
 </body>
 
 </html>

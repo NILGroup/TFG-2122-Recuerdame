@@ -10,10 +10,9 @@
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
     <?php include "controllers/PersonasRelacionadasController.php" ?>
     <?php include "controllers/ComunesController.php" ?>
 
@@ -93,7 +92,7 @@
             <a href="personasRelacionadas.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
         </div>
     </div>
-
+    <?php include "layout/footer.php" ?>
 </body>
 
 </html>

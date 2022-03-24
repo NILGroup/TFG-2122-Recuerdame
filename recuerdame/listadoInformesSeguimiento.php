@@ -9,10 +9,9 @@
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
     <?php include "controllers/InformeSeguimientoController.php" ?>
 
     <div class="contenedor">
@@ -40,7 +39,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Informe</th>
                         <th scope="col">Fecha</th>
-                        <th scope="col">Diagnóstico</th>
+                        <th scope="col">Diagnï¿½stico</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
@@ -54,7 +53,7 @@
                         ?>
                         <tr>
                             <th scope="row"><?php echo $i ?></th>
-                            <td><a href="verDatosInformeSeguimiento.php?idInforme=<?php echo ($row['idInforme']) ?>"><?php echo utf8_encode ("Informe nº {$row["idInforme"]}") ?></td>
+                            <td><a href="verDatosInformeSeguimiento.php?idInforme=<?php echo ($row['idInforme']) ?>"><?php echo utf8_encode ("Informe nï¿½ {$row["idInforme"]}") ?></td>
                             <td><?php echo (date("d/m/Y", strtotime($row["fecha"]))) ?></td>
                             <td><?php echo ($row["diagnostico"]) ?></td>
                             <td class="tableActions">
@@ -72,6 +71,7 @@
             </table>
         </div>
     </div>
+    <?php include "layout/footer.php" ?>
 </body>
 
 </html>

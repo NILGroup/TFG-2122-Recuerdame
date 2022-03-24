@@ -11,10 +11,9 @@
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
     <?php include "controllers/SesionesController.php" ?>
     <?php include "controllers/ComunesController.php" ?>
     <?php include "controllers/RecuerdosController.php" ?>
@@ -128,7 +127,8 @@
                     <tbody>
                         <?php
                         $recuerdosController = new RecuerdosController();
-                        $listaRecuerdosSesion = $recuerdosController->getListaRecuerdosSesion();
+                        echo "<script>console.log('Debug Objects: " . $sesion->getIdSesion() . "' );</script>";
+                        $listaRecuerdosSesion = $recuerdosController->getListaRecuerdosSesion($sesion->getIdSesion());
                         $i = 1;
                         foreach ($listaRecuerdosSesion as $row) {
                         ?>
@@ -174,7 +174,7 @@
             <button type="button" class="btn btn-primary btn-sm">Atrás</button>
         </div>
     </div>
-
+    <?php include "layout/footer.php" ?>
 </body>
 
 </html>

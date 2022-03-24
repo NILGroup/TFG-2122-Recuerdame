@@ -10,10 +10,9 @@
   <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
    
    
     <div class="container-fluid">
@@ -25,7 +24,7 @@
            
      </div>
      <div id="calendar"></div>
-    
+     <?php include "layout/footer.php" ?>
     <script src="calendario/fullcalendar/main.js"></script>
     <!-- Script para trabajar nuestro calendario -->
     <script src="public/js/calendar.js"></script>

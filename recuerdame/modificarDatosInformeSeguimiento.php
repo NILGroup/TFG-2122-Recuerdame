@@ -9,10 +9,9 @@
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
     <?php include "controllers/InformeSeguimientoController.php" ?>
 
     <div class="container-fluid">
@@ -110,9 +109,10 @@
 
                 <div>
                     <button type="submit" name="guardarInformeSeguimiento" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
-                    <a href="listadoInformesSeguimiento.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <a href="listadoInformesSeguimiento.php"><button type="button" class="btn btn-primary btn-sm">Atrï¿½s</button></a>
                 </div>
             </div>
          </form>
     </div>
+    <?php include "layout/footer.php" ?>
 </body>

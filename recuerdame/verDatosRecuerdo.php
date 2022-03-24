@@ -10,25 +10,24 @@
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
     <?php include "controllers/RecuerdosController.php" ?>
     <?php include "controllers/ComunesController.php" ?>
 
     <div class="container-fluid">
         <?php
-            if (!empty($_GET['idRecuerdo'])) {
-                $recuerdosController = new RecuerdosController();
-                $recuerdo = $recuerdosController->verRecuerdo($_GET['idRecuerdo']);
-            }
-            $comunesController = new ComunesController();
-            $listaEstados = $comunesController->getListaEstados();
-            $listaEtiquetas = $comunesController->getListaEtiquetas();
-            $listaEtapas = $comunesController->getListaEtapas();
-            $listaEmociones = $comunesController->getListaEmociones();
-            $listaCategorias = $comunesController->getListaCategorias();
+        if (!empty($_GET['idRecuerdo'])) {
+            $recuerdosController = new RecuerdosController();
+            $recuerdo = $recuerdosController->verRecuerdo($_GET['idRecuerdo']);
+        }
+        $comunesController = new ComunesController();
+        $listaEstados = $comunesController->getListaEstados();
+        $listaEtiquetas = $comunesController->getListaEtiquetas();
+        $listaEtapas = $comunesController->getListaEtapas();
+        $listaEmociones = $comunesController->getListaEmociones();
+        $listaCategorias = $comunesController->getListaCategorias();
         ?>
         <div class="pt-4 pb-2">
             <h5 class="text-muted">Datos del recuerdo</h5>
@@ -50,11 +49,11 @@
                         <select disabled class="form-select form-select-sm" name="estado">
                             <option></option>
                             <?php
-                                foreach ($listaEstados as $row) {
+                            foreach ($listaEstados as $row) {
                             ?>
                                 <option value="<?php echo ($row["id_estado"]) ?>" <?php if ($recuerdo->getIdEstado() == $row['id_estado']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
                             <?php
-                                }
+                            }
                             ?>
                         </select>
                     </div>
@@ -74,11 +73,11 @@
                         <select disabled class="form-select form-select-sm" name="etiqueta">
                             <option></option>
                             <?php
-                                foreach ($listaEtiquetas as $row) {
+                            foreach ($listaEtiquetas as $row) {
                             ?>
                                 <option value="<?php echo ($row["id_etiqueta"]) ?>" <?php if ($recuerdo->getIdEtiqueta() == $row['id_etiqueta']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
                             <?php
-                                }
+                            }
                             ?>
                         </select>
                     </div>
@@ -105,11 +104,11 @@
                     <div class="col-sm-3 col-md-3 col-lg-2">
                         <select disabled class="form-select form-select-sm" name="etapa">
                             <?php
-                                foreach ($listaEtapas as $row) {
+                            foreach ($listaEtapas as $row) {
                             ?>
                                 <option value="<?php echo ($row["id_etapa"]) ?>" <?php if ($recuerdo->getIdEtapa() == $row['id_etapa']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
                             <?php
-                                }
+                            }
                             ?>
                         </select>
                     </div>
@@ -119,11 +118,11 @@
                         <select disabled class="form-select form-select-sm" name="emocion">
                             <option></option>
                             <?php
-                                foreach ($listaEmociones as $row) {
+                            foreach ($listaEmociones as $row) {
                             ?>
                                 <option value="<?php echo ($row["id_emocion"]) ?>" <?php if ($recuerdo->getIdEmocion() == $row['id_emocion']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
                             <?php
-                                }
+                            }
                             ?>
                         </select>
                     </div>
@@ -133,11 +132,11 @@
                         <select disabled class="form-select form-select-sm" name="categoria">
                             <option></option>
                             <?php
-                                foreach ($listaCategorias as $row) {
+                            foreach ($listaCategorias as $row) {
                             ?>
                                 <option value="<?php echo ($row["id_categoria"]) ?>" <?php if ($recuerdo->getIdCategoria() == $row['id_categoria']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
                             <?php
-                                }
+                            }
                             ?>
                         </select>
                     </div>
@@ -157,7 +156,7 @@
             <a href="listadoRecuerdos.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
         </div>
     </div>
-
+    <?php include "layout/footer.php" ?>
 </body>
 
 </html>

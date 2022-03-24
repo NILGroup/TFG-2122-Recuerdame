@@ -9,10 +9,9 @@
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
     <?php include "controllers/InformeSeguimientoController.php" ?>
 
     <div class="container-fluid">
@@ -107,9 +106,10 @@
         </div>
 
         <div>
-            <a href="listadoInformesSeguimiento.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+            <a href="listadoInformesSeguimiento.php"><button type="button" class="btn btn-primary btn-sm">Atrï¿½s</button></a>
             <a href="generarPDFInformeSeguimiento.php?idInforme=<?php echo ($informeSeguimiento->getIdEvaluacion())?>"><button type="button" class="btn btn-primary btn-sm">Generar PDF</button></a>
         </div>
 
     </div>
+    <?php include "layout/footer.php" ?>
 </body>

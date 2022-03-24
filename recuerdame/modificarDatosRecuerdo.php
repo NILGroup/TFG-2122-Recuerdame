@@ -5,17 +5,16 @@
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <link rel="stylesheet" type="text/css" href="public/css/styles.css">
+    <script src ="public/js/general.js" defer></script>
     <meta charset="utf-8" />
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
     <?php include "controllers/RecuerdosController.php" ?>
     <?php include "controllers/ComunesController.php" ?>
-
 
     <div class="container-fluid">
         <?php
@@ -125,7 +124,7 @@
                                 <?php
                                 foreach ($listaEmociones as $row) {
                                 ?>
-                                    <option value="<?php echo ($row["id_emocion"]) ?>" <?php if ($recuerdo->getIdEmocion()== $row['id_emocion']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
+                                    <option value="<?php echo ($row["id_emocion"]) ?>" <?php if ($recuerdo->getIdEmocion() == $row['id_emocion']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
                                 <?php
                                 }
                                 ?>
@@ -153,6 +152,11 @@
                     <textarea maxlength="255" class="form-control form-control-sm" id="localizacion" name="localizacion" rows="3"><?php echo ($recuerdo->getLocalizacion()) ?></textarea>
                 </div>
 
+                <section class="droparea">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <p><small>Arrastrar y soltar</small></p>
+                </section>
+
                 <div>
                     <button type="submit" name="guardarRecuerdo" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
                     <a href="listadoRecuerdos.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
@@ -160,7 +164,7 @@
             </div>
         </form>
     </div>
-
+<?php include "layout/footer.php" ?>
 
 </body>
 

@@ -9,10 +9,9 @@
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
     <?php include "controllers/InformeSesionController.php" ?>
 
     <div class="container-fluid">
@@ -24,12 +23,12 @@
         ?>
 
         <div class="pt-4 pb-2">
-            <h5 class="text-muted">Datos informe de sesión</h5>
+            <h5 class="text-muted">Datos informe de sesiï¿½n</h5>
             <hr class="lineaTitulo">
         </div>
 
         <div class="row">
-            <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha sesión:</label>
+            <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha sesiï¿½n:</label>
             <div class="col-sm-9 col-md-6 col-lg-2">
                 <input disabled type="date" class="form-control form-control-sm" id="fecha" name="fecha" value="<?php echo ($informeSesion->getFecha()) ?>">
             </div>
@@ -52,7 +51,8 @@
             <textarea disabled class="form-control form-control-sm" id="observaciones" name="observaciones" rows="1"><?php echo ($informeSesion->getObservaciones()) ?></textarea>
         </div>
 
-        <a href="listadoInformesSesion.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+        <a href="listadoInformesSesion.php"><button type="button" class="btn btn-primary btn-sm">Atrï¿½s</button></a>
 
     </div>
+    <?php include "layout/footer.php" ?>
 </body>

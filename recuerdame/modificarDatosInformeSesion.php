@@ -9,10 +9,9 @@
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
     <?php include "controllers/InformeSesionController.php" ?>
 
     <div class="container-fluid">
@@ -27,14 +26,14 @@
         ?>
 
         <div class="pt-4 pb-2">
-            <h5 class="text-muted">Datos informe de sesión</h5>
+            <h5 class="text-muted">Datos informe de sesiï¿½n</h5>
             <hr class="lineaTitulo">
         </div>
 
         <form action="gestor.php?idInforme=<?php echo ($informeSesion->getIdSesion()) ?>" method="POST">
             <div>
                 <div class="row">
-                    <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha sesión:</label>
+                    <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha sesiï¿½n:</label>
                     <div class="col-sm-9 col-md-6 col-lg-2">
                         <input type="date" class="form-control form-control-sm" id="fecha" name="fecha" value="<?php echo ($informeSesion->getFecha()) ?>">
                     </div>
@@ -59,11 +58,12 @@
 
                 <div>
                     <button type="submit" name="guardarInformeSesion" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
-                    <a href="listadoInformesSesion.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <a href="listadoInformesSesion.php"><button type="button" class="btn btn-primary btn-sm">Atrï¿½s</button></a>
                 </div>
 
             </div>
          </form>
 
     </div>
+    <?php include "layout/footer.php" ?>
 </body>

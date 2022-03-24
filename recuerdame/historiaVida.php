@@ -10,10 +10,9 @@
     <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
     <?php include "controllers/ComunesController.php" ?>
 
     <div class="container-fluid">
@@ -95,11 +94,11 @@
 
             <div>
                 <button type="submit" name="generarLibro" value="Generar libro" class="btn btn-outline-primary btn-sm">Generar libro</button>
-                <button type="submit" name="generarPdf" value="Generar PDF" class="btn btn-outline-primary btn-sm">Generar PDF</button>
+                <button type="submit" name="generarPdf" formaction="gestor.php?historiaVida=pdf&idPaciente=1" value="Generar PDF" class="btn btn-outline-primary btn-sm">Generar PDF</button>
             </div>
         </form>
     </div>
-
+    <?php include "layout/footer.php" ?>
 </body>
 
 </html>
