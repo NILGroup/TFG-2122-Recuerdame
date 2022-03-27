@@ -28,7 +28,7 @@ class PacienteDAO
         $paciente->setLugarNacimiento($p['lugar_nacimiento']);
         $paciente->setNacionalidad($p['nacionalidad']);
         $paciente->setFechaNacimiento($p['fecha_nacimiento']);
-        $paciente->setIdTipoResidencia($p['tipo_residencia']);
+        $paciente->setTipoResidencia($p['tipo_residencia']);
         $paciente->setResidenciaActual($p['residencia_actual']);
 
         return $paciente;

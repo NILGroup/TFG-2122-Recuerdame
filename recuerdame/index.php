@@ -13,6 +13,7 @@
 <body class="d-flex flex-column min-vh-100">
   <?php include "layout/header.php" ?>
   <?php include "layout/nav.php" ?>
+  <?php include "verDatosPaciente.php" ?>
   <?php include "layout/footer.php" ?>
 </body>
 

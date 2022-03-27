@@ -9,6 +9,18 @@
 </head>
 
 <body>
+    <?php include "controllers/PacientesController.php" ?>
+    <?php
+    $pacientesController = new PacientesController();
+    $paciente = $pacientesController->verPaciente(1);
+    $cumpleanos = new DateTime($paciente->getFechaNacimiento());
+    $hoy = new DateTime();
+    $edad = $hoy->diff($cumpleanos);
+
+    $genero = '';
+    if ($paciente->getGenero() == 'H') $genero = 'Hombre';
+    else if ($paciente->getGenero() == 'M') $genero = 'Mujer';
+    ?>
     <nav class="navbar navbar-expand-lg justify-content-left nav-menu">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +50,36 @@
                         <a class="nav-link letra-primary-color" href="calendario.php">Calendario</a>
                     </li>
                 </ul>
+            </div>
+            <div class="row align-items-center pe-4">
+                <div class="col-12">
+                    <?php
+                    if ($paciente->getGenero() == 'H') {
+                    ?>
+                    <img src="public/img/avatar_hombre.png" alt="Avatar" class="avatar-mini">
+                    <?php
+                    } else if ($paciente->getGenero() == 'M') {
+                    ?>
+                    <img src="public/img/avatar_mujer.png" alt="Avatar" class="avatar-mini">
+                    <?php
+                    }
+                    ?>
+                </div>
+            </div>
+            <div class="row align-items-center pe-4">
+                <div class="col-12">
+                    <?php echo ($paciente->getNombre()) . " " . ($paciente->getApelliods()) ?>
+                </div>
+            </div>
+            <div class="row align-items-center pe-4">
+                <div class="col-12">
+                    <?php echo ($genero) ?>
+                </div>
+            </div>
+            <div class="row align-items-center pe-4">
+                <div class="col-12">
+                    Edad: <?php echo ($edad->format('%y')) ?>
+                </div>
             </div>
     </nav>
 </body>

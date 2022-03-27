@@ -75,7 +75,7 @@
         $personasRelacionadasController = new PersonasRelacionadasController();
         $personasRelacionadasController->eliminarPersonaRelacionada($idPersonaRelacionada);
         
-        header("Location: listadoPersonasRelacionadas.php");
+        header("Location: personasRelacionadas.php");
 
     } else if (isset($_POST['guardarInformeSeguimiento'])) {
         

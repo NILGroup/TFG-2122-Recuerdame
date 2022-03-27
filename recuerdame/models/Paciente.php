@@ -9,7 +9,7 @@ class Paciente {
     private $lugarNacimiento;
     private $nacionalidad;
     private $fechaNacimiento;
-    private $idTipoResidencia;
+    private $tipoResidencia;
     private $residenciaActual;
 
     function __construct() {
@@ -84,13 +84,13 @@ class Paciente {
 
         return $this;
     }
-    public function getIdTipoResidencia()
+    public function getTipoResidencia()
     {
-        return $this->idTipoResidencia;
+        return $this->tipoResidencia;
     }
-    public function setIdTipoResidencia($idTipoResidencia)
+    public function setTipoResidencia($tipoResidencia)
     {
-        $this->idTipoResidencia = $idTipoResidencia;
+        $this->tipoResidencia = $tipoResidencia;
 
         return $this;
     }

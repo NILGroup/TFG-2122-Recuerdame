@@ -124,6 +124,18 @@ border-color: rgb(9, 146, 135);
     border-radius: 0.25rem;
     background-color: #fff;
     background-clip: border-box;
+    overflow-y: auto;
+}
+
+.hv-box::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 2px;
+}
+
+.hv-box::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 
 .testimonial-group > .row {
@@ -145,4 +157,17 @@ border-color: rgb(9, 146, 135);
 .hv-control {
     padding: 0 !important;
     width: auto !important
+}
+
+.avatar-mini {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.avatar {
+    vertical-align: middle;
+    height: 200px;
+    width: auto;
 }
