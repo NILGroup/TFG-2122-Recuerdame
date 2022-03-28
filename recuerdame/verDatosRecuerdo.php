@@ -15,12 +15,15 @@
     <?php include "layout/nav.php" ?>
     <?php include "controllers/RecuerdosController.php" ?>
     <?php include "controllers/ComunesController.php" ?>
+    <?php include "controllers/PersonasRelacionadasController.php" ?>
 
     <div class="container-fluid">
         <?php
+        $idRecuerdo = null;
         if (!empty($_GET['idRecuerdo'])) {
+            $idRecuerdo = $_GET['idRecuerdo'];
             $recuerdosController = new RecuerdosController();
-            $recuerdo = $recuerdosController->verRecuerdo($_GET['idRecuerdo']);
+            $recuerdo = $recuerdosController->verRecuerdo($idRecuerdo);
         }
         $comunesController = new ComunesController();
         $listaEstados = $comunesController->getListaEstados();
@@ -150,7 +153,49 @@
 
         </div>
 
-        <?php include "listadoPersonasRelacionadas.php" ?>
+        <div class="pt-4 pb-2">
+            <h5 class="text-muted">Listado de personas relacionadas</h5>
+            <hr class="lineaTitulo">
+        </div>
+        <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Tipo de relación/parentesco</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $personasRelacionadasController = new PersonasRelacionadasController();
+                    $lista = $personasRelacionadasController->getListaPersonasRelacionadasRecuerdo($idRecuerdo);
+                    $i = 1;
+                    foreach ($lista as $row) {
+                    ?>
+                        <tr>
+                            <th scope="row"><?php echo $i ?></th>
+                            <td><a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&ventanaAtras=verDatosRecuerdo.php?idRecuerdo=<?php echo($idRecuerdo) ?>"><?php echo ($row['nombre']) ?></a></td>
+                            <td><?php echo ($row["apellidos"]) ?></td>
+                            <td><?php echo ($row["nombreTipoRelacion"]) ?></td>
+                            <td class="tableActions">
+                                <a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&ventanaAtras=verDatosRecuerdo.php?idRecuerdo=<?php echo($idRecuerdo) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
+                            </td>
+                        </tr>
+                    <?php
+                        $i++;
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pt-4 pb-2">
+            <h5 class="text-muted">Material</h5>
+            <hr class="lineaTitulo">
+        </div>
 
         <div>
             <a href="listadoRecuerdos.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>

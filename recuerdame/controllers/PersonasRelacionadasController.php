@@ -14,6 +14,10 @@ class PersonasRelacionadasController{
         return $this->personaRelacionadaDao->getListaPersonasRelacionadas(1);
     }
 
+    public function getListaPersonasRelacionadasRecuerdo($idRecuerdo) {
+        return $this->personaRelacionadaDao->getListaPersonasRelacionadasRecuerdo(1, $idRecuerdo);
+    }
+
     public function verPersonaRelacionada($idPersonaRelacionada) {
         return $this->personaRelacionadaDao->getPersonaRelacionada($idPersonaRelacionada);
     }

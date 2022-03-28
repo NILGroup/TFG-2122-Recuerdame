@@ -95,7 +95,7 @@
 
                 <div>
                     <button type="submit" name="guardarPersonaRelacionada" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
-                    <a href="personasRelacionadas.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <button type="button" onclick="history.back();" class="btn btn-primary btn-sm">Atrás</button>
                 </div>
             </div>
         </form>

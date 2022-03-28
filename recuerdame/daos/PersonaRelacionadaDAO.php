@@ -51,6 +51,26 @@ class PersonaRelacionadaDAO
         return $listaPersonasRelacionadas;
     }
 
+    public function getListaPersonasRelacionadasRecuerdo($idPaciente, $idRecuerdo)
+    {
+        $conexion = $this->db->getConexion();
+        $row = $conexion->query("SELECT p.id_persona_relacionada AS idPersonaRelacionada,
+                p.nombre, p.apellidos, t.nombre AS nombreTipoRelacion, rp.id_recuerdo
+                FROM persona_relacionada p
+                LEFT JOIN recuerdo_persona_relacionada rp ON rp.id_persona_relacionada = p.id_persona_relacionada
+                LEFT JOIN tipo_relacion t ON t.id_tipo_relacion = p.id_tipo_relacion
+                WHERE p.id_paciente = $idPaciente
+                AND (rp.id_recuerdo IS NULL OR rp.id_recuerdo = $idRecuerdo)")
+            or die($conexion->error);
+
+        $listaPersonasRelacionadas = array();
+        while ($rows = $row->fetch_assoc()) {
+            $listaPersonasRelacionadas[] = $rows;
+        };
+
+        return $listaPersonasRelacionadas;
+    }
+
     public function nuevaPersonaRelacionada($personaRelacionada)
     {
         $conexion = $this->db->getConexion();

@@ -18,10 +18,18 @@
 
     <div class="container-fluid">
         <?php
-        if (!empty($_GET['idPersonaRelacionada'])) {
+        if (isset($_GET['idPersonaRelacionada']) && !empty($_GET['idPersonaRelacionada'])) {
             $personasRelacionadasController = new PersonasRelacionadasController();
             $personaRelacionada = $personasRelacionadasController->verPersonaRelacionada($_GET['idPersonaRelacionada']);
         }
+        // Ventana a la que volver con el botón Atrás
+        // Si se indica en la variable from es porque viene de modificar o ver recuerdo
+        // Si no viene la variable es porque se utiliza en el listado de personas relacionadas
+        /*if (isset($_GET['ventanaAtras']) && !empty($_GET['ventanaAtras'])) {
+            $ventanaAtras = $_GET['ventanaAtras'];
+        } else {
+            $ventanaAtras = 'listadoPersonasRelacionadas.php';    
+        }*/
         $comunesController = new ComunesController();
         $listaTiposRelacion = $comunesController->getListaTiposRelacion();
         ?>
@@ -89,7 +97,8 @@
         </div>
 
         <div>
-            <a href="personasRelacionadas.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+            <!--<a href="<?php echo($ventanaAtras) ?>"><button type="button" onclick="history.back();" class="btn btn-primary btn-sm">Atrás</button></a>-->
+            <a href="<?php echo($ventanaAtras) ?>"><button type="button" onclick="history.back();" class="btn btn-primary btn-sm">Atrás</button></a>
         </div>
     </div>
     <?php include "layout/footer.php" ?>
