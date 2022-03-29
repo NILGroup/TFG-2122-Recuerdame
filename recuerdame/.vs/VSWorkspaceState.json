@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\controllers",
-    "\\daos",
     "\\models",
     "\\public"
   ],
-  "SelectedNode": "\\listadoInformesSesion.php",
+  "SelectedNode": "\\verDatosInformeSeguimiento.php",
   "PreviewInSolutionExplorer": false
 }
