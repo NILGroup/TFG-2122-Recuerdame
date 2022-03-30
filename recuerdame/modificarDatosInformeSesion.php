@@ -26,7 +26,7 @@
         ?>
 
         <div class="pt-4 pb-2">
-            <h5 class="text-muted">Datos informe de sesi�n</h5>
+            <h5 class="text-muted">Datos informe de sesión</h5>
             <hr class="lineaTitulo">
         </div>
 

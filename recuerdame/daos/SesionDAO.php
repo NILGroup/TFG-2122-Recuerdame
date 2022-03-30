@@ -39,7 +39,7 @@ class SesionDAO{
 
     public function getListaSesiones($idPaciente) {
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("SELECT s.id_sesion AS idSesion, s.fecha, s.objetivo
+        $row = $conexion->query("SELECT s.id_sesion AS idSesion, s.fecha, s.objetivo, s.fecha_finalizada
             FROM sesion s
             WHERE s.id_paciente = '$idPaciente'")
         or die ($conexion->error);

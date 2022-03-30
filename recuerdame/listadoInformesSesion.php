@@ -40,7 +40,7 @@
                         ?>                                              
                             <tr>
                                 <th scope="row"><?php echo $i ?></th>
-                                <td><a href="verDatosInformeSesion.php?idInforme=<?php echo ($row['idInforme']) ?>"><?php echo "Informe de la sesión nº {$row["idInforme"]}" ?></td>
+                                <td><a href="verDatosInformeSesion.php?idInforme=<?php echo ($row['idInforme']) ?>"><?php echo "Informe de la sesión Nº {$row["idInforme"]}" ?></td>
                                 <td><?php echo (date("d/m/Y", strtotime($row["fecha_finalizada"]))) ?></td>
                                 <td class="tableActions">
                                 <a href="verDatosInformeSesion.php?idInforme=<?php echo ($row['idInforme']) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>

@@ -53,7 +53,7 @@
                         ?>
                         <tr>
                             <th scope="row"><?php echo $i ?></th>
-                            <td><a href="verDatosInformeSeguimiento.php?idInforme=<?php echo ($row['idInforme']) ?>"><?php echo utf8_encode ("Informe n� {$row["idInforme"]}") ?></td>
+                            <td><a href="verDatosInformeSeguimiento.php?idInforme=<?php echo ($row['idInforme']) ?>"><?php echo ("Informe Nº {$row["idInforme"]}") ?></td>
                             <td><?php echo (date("d/m/Y", strtotime($row["fecha"]))) ?></td>
                             <td><?php echo ($row["diagnostico"]) ?></td>
                             <td class="tableActions">

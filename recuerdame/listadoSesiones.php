@@ -56,7 +56,7 @@
                                 <th scope="row"><?php echo $i ?></th>
                                 <td><a href="verDatosSesion.php?idSesion=<?php echo ($row['idSesion']) ?>"><?php echo (date("d/m/Y", strtotime($row["fecha"]))) ?></a></td>
                                 <td><?php echo ($row["objetivo"]) ?></td>
-                                <td><i class="fa-regular fa-square-check text-success tableIcon"></i></td>
+                                <td><?php if ($row['fecha_finalizada'] != null) echo '<i class="fa-solid fa-check text-success tableIcon"></i>'; ?></td>
                                 <td class="tableActions">
                                     <a href="verDatosSesion.php?idSesion=<?php echo ($row['idSesion']) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
                                     <a href="modificarDatosSesion.php?idSesion=<?php echo ($row['idSesion']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
