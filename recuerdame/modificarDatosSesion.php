@@ -23,8 +23,10 @@
             if (!empty($_GET['idSesion'])) {
                 $sesionesController = new SesionesController();
                 $sesion = $sesionesController->verSesion($_GET['idSesion']);
+                echo "<script> console.log('Usuario: " . $sesion->getIdUsuario() . "'); </script>";
             } else {
                 $sesion = new Sesion();
+                $sesion->setIdUsuario(1);
                 $sesion->setFecha(date('Y-m-d'));
             }
             $comunesController = new ComunesController();
@@ -37,7 +39,7 @@
             <hr class="lineaTitulo">
         </div>
 
-        <form action="gestor.php?idSesion=<?php echo ($sesion->getIdSesion()) ?>" method="POST">
+        <form action="gestor.php?idSesion=<?php echo ($sesion->getIdSesion()) ?>&idUsuario=<?php echo ($sesion->getIdUsuario()) ?>" method="POST">
         <div class="row">
                 <div class="row">
                     <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha:<span class="asterisco">*</span></label>
@@ -58,17 +60,9 @@
                             </select>  
                     </div>
 
-                    <label for="terapeuta" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-1">Terapeuta:<span class="asterisco">*</span></label>
+                    <label for="terapeuta" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-1">Terapeuta:</label>
                     <div class="col-sm-3 col-md-3 col-lg-2">
-                        <select disabled class="form-select form-select-sm" name="terapeuta">
-                            <?php
-                                foreach ($listaTerapeutas as $row) {
-                            ?>
-                                <option value="<?php echo ($row["id_usuario"]) ?>" <?php if ($sesion->getIdPaciente() == $row['id_usuario']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
-                            <?php
-                                }
-                            ?>
-                        </select>
+                        <label for="terapeuta" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-1"><?php echo ($sesion->getNombreUsuario()) ?></label>
                     </div>
                 </div>
             </div>
@@ -80,7 +74,7 @@
 
             <div class="mb-3">
                 <label for="descripcion" class="form-label col-form-label-sm">Descripción:</label>
-                <textarea required maxlength="255" class="form-control form-control-sm" id="descripcion" name="descripcion" rows="3"><?php echo ($sesion->getDescripcion()) ?></textarea>
+                <textarea maxlength="255" class="form-control form-control-sm" id="descripcion" name="descripcion" rows="3"><?php echo ($sesion->getDescripcion()) ?></textarea>
             </div>
 
             <div>

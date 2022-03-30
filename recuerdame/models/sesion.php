@@ -11,6 +11,10 @@ class Sesion{
     private $facilitadores;
     private $fechaFinalizada;
     private $idPaciente;
+    private $idUsuario;
+    private $respuesta;
+    private $observaciones;
+    private $nombreUsuario;
 
     function __construct(){
     }
@@ -92,6 +96,42 @@ class Sesion{
     }
     public function setIdPaciente($idPaciente) {
         $this->idPaciente = $idPaciente;
+
+        return $this;
+    }
+
+    public function getIdUsuario() {
+        return $this->idUsuario;
+    }
+    public function setIdUsuario($idUsuario) {
+        $this->idUsuario = $idUsuario;
+
+        return $this;
+    }
+
+    public function getRespuesta() {
+        return $this->respuesta;
+    }
+    public function setRespuesta($respuesta) {
+        $this->respuesta = $respuesta;
+
+        return $this;
+    }
+
+    public function getObservaciones() {
+        return $this->observaciones;
+    }
+    public function setObservaciones($observaciones) {
+        $this->observaciones = $observaciones;
+
+        return $this;
+    }
+
+    public function getNombreUsuario() {
+        return $this->nombreUsuario;
+    }
+    public function setNombreUsuario($nombreUsuario) {
+        $this->nombreUsuario = $nombreUsuario;
 
         return $this;
     }

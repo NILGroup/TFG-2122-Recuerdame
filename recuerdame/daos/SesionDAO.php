@@ -13,7 +13,7 @@ class SesionDAO{
 
     public function getSesion($idSesion) {
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("SELECT * FROM sesion WHERE id_sesion = '$idSesion'")
+        $row = $conexion->query("SELECT s.*, u.nombre as nombreUsuario FROM sesion s join usuario u on u.id_usuario = s.id_usuario WHERE id_sesion = '$idSesion'")
             or die ($conexion->error);
 
         $s = $row->fetch_assoc();
@@ -27,6 +27,12 @@ class SesionDAO{
         $sesion->setBarreras($s['barreras']);
         $sesion->setFacilitadores($s['facilitadores']);
         $sesion->setIdPaciente($s['id_paciente']);
+        $sesion->setIdUsuario($s['id_usuario']);
+        $sesion->setFechaFinalizada($s['fecha_finalizada']);
+        $sesion->setRespuesta($s['respuesta']);
+        $sesion->setObservaciones($s['observaciones']);
+        $sesion->setNombreUsuario($s['nombreUsuario']);
+
 
         return $sesion;
     }
@@ -50,19 +56,18 @@ class SesionDAO{
     {
         $conexion = $this->db->getConexion();
         $consultaSQL = "INSERT INTO sesion (id_sesion, fecha, id_etapa, objetivo, descripcion,
-                            barreras, facilitadores, id_Paciente) 
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
+                            barreras, facilitadores, id_usuario, id_paciente) 
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
             NULL,
-            $sesion->getIdSesion(), 
             $sesion->getFecha(), 
             $sesion->getIdEtapa(),
             $sesion->getObjetivo(),
             $sesion->getDescripcion(),
             $sesion->getBarreras(),
             $sesion->getFacilitadores(),
-            $sesion->getIdPaciente(),
+            $sesion->getIdUsuario(),
             1
         ));
 
@@ -73,10 +78,11 @@ class SesionDAO{
 
     public function modificarSesion($sesion) 
     {
+        echo "<script> console.log('Usuario: " . $sesion->getIdUsuario() . "'); </script>";
         $conexion = $this->db->getConexion();
         $consultaSQL = "UPDATE sesion 
                         SET fecha = ?, id_etapa = ?, objetivo = ?, descripcion = ?, barreras = ?, 
-                        facilitadores = ?, id_paciente = ?
+                        facilitadores = ?, id_usuario = ?
                         WHERE id_sesion = ?;";
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
@@ -86,8 +92,8 @@ class SesionDAO{
             $sesion->getDescripcion(),
             $sesion->getBarreras(),
             $sesion->getFacilitadores(),
-            $sesion->getIdPaciente(),
-            $sesion->getIdSesion(), 
+            $sesion->getIdUsuario(),
+            $sesion->getIdSesion()
             ));
 
         $stmt->close();

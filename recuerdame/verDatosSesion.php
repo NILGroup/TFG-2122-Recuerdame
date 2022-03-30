@@ -56,15 +56,7 @@
 
                     <label for="terapeuta" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-1">Terapeuta:</label>
                     <div class="col-sm-3 col-md-3 col-lg-2">
-                        <select disabled class="form-select form-select-sm" name="terapeuta">
-                            <?php
-                                foreach ($listaTerapeutas as $row) {
-                            ?>
-                                <option value="<?php echo ($row["id_usuario"]) ?>" <?php if ($sesion->getIdPaciente() == $row['id_usuario']) echo 'selected="selected" '; ?>><?php echo ($row["nombre"]) ?></option>
-                            <?php
-                                }
-                            ?>
-                        </select>
+                    <label for="terapeuta" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-1"><?php echo ($sesion->getNombreUsuario()) ?></label>
                     </div>
                 </div>
             </div>

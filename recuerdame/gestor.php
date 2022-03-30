@@ -173,8 +173,9 @@
         $descripcion = $_POST['descripcion'];
         $barreras = $_POST['barreras'];
         $facilitadores = $_POST['facilitadores'];
-        $fechaFinalizada = $_POST['fechaFinalizada'];
-        $idPaciente = $_POST['idPaciente'];
+        $idUsuario = $_GET['idUsuario'];
+        echo "<script> console.log('Usuario: " . $idUsuario . "'); </script>";
+        echo "<script> console.log('Usuario: " . $_GET['idUsuario'] . "'); </script>";
 
         $sesion = new Sesion();
         $sesion->setIdSesion($idSesion);
@@ -184,8 +185,7 @@
         $sesion->setDescripcion($descripcion);
         $sesion->setBarreras($barreras);
         $sesion->setFacilitadores($facilitadores);
-        $sesion->setFechaFinalizada($fechaFinalizada);
-        $sesion->setIdPaciente($idPaciente);
+        $sesion->setIdUsuario($idUsuario);
       
         $sesionesController = new SesionesController();
         $idSesion = $sesionesController->guardarSesion($sesion);
