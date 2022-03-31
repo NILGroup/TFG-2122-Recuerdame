@@ -7,7 +7,7 @@ Todas nuestras decisiones fueron tomadas a partir de las requisitos y las especi
 
 \section{Estructura de la aplicación web}
 
-La arquitectura de la aplicación esta basada en el patrón Modelo-Vista-Controlador (Figura \ref{fig:str_mvc}), este patrón se basa en separar, como su nombre indica, el código en tres partes:
+La arquitectura de la aplicación esta basada en el patrón Modelo-Vista-Controlador (Figura \ref{fig:str_mvc}). Este patrón se basa en separar, como su nombre indica, el código en tres partes:
 \begin{itemize}
 \item \textbf{Modelo:} Es el encargado de gestionar la base de datos, ya que es el único que se comunica con este.
 \item \textbf{Controlador:} Actúa de intermediario entre el Modelo y la Vista, responde a eventos e invocan las peticiones al modelo.
@@ -20,7 +20,7 @@ Esta decisión fue tomada debido a las grandes ventajas que este modelo impone en
 	\item La separación clara de dónde tiene que ir cada tipo de lógica, permite: facilidad el mantenimiento y escalabilidad de la aplicación.
 	\item La facilidad para la realización de pruebas unitarias de los componentes y para el manejo de errores.
 	\item La posibilidad de mostrar múltiples representaciones de los datos.
-	\item La separación en tres partes distintas, permite un manejo mas fácil del control de versiones, además de que facilita también la división de trabajo.
+	\item La separación en tres partes distintas permite un manejo mas fácil del control de versiones. Además facilita también la división de trabajo.
 \end{itemize}
 
 \begin{figure}[!ht]
@@ -30,52 +30,52 @@ Esta decisión fue tomada debido a las grandes ventajas que este modelo impone en
 	\label{fig:str_mvc}
 \end{figure}
 
-Para aplicar este patron de la manera más ordenada posible, además aplicamos esta division a cada modulo/accion que la aplicacion realiza, algunas de estas son:
+Para aplicar este patrón de la manera más ordenada posible aplicamos esta división a cada modulo/acción que la aplicación realiza. Algunas de estas divisiones son:
 \begin{itemize}
-	\item Usuario: Controla la información del usuario a tratar y permite modificar, añadir y eliminar pacientes.
-	\item Terapeuta: Controla la información del terapeuta y permite modificar, añadir y eliminar terapeutas.
-	\item Sesiones:  Controla las sesiones para el usuario, permite modificar, añadir y eliminar sesiones.
-	\item Informes de sesion: Controla los informes de la sesiones realizadas y finalizadas. Permite modificar, añadir y eliminar los distintos informes.
-	\item Informes de seguimiento: Controla los informes de seguimiento del paciente. Permite modificar, añadir y eliminar
+	\item Paciente: Controla la información del paciente a tratar y permite modificar, añadir y eliminar pacientes.
+	\item Usuario: Controla la información del terapeuta y permite modificar, añadir y eliminar terapeutas.
+	\item Sesiones: Controla las sesiones para el usuario, permite modificar, añadir y eliminar sesiones.
+	\item Informes de sesión: Controla los informes de la sesiones realizadas y finalizadas. Permite modificar, añadir y eliminar los distintos informes.
+	\item Informes de seguimiento: Controla los informes de seguimiento del paciente. Permite modificar, añadir y eliminar.
 	\item Historia de vida: Permite mostrar la historia de vida del paciente con distintos filtros y en distintos formatos.
 	\item Recuerdos: Controla los recuerdos del usuario. Permite modificar, añadir y eliminar los recuerdos.
 	\item Personas Relacionadas: Controla los contactos del usuario. Permite modificar, añadir y eliminar las distintas personas.
 	\item Calendario: Muestra el calendario por mes. Permite modificar, añadir y eliminar tareas en el calendario.
 \end{itemize}
 
-Como resultado obtendremos que cada modulo tendrá: por una parte distintas vistas para sus distintas acciones y por otra, un controlador y un modelo. Por ejemplo, en el caso del modulo "Sesiones", una de sus vistas es "Modificar Datos de la Sesion" que se encarga de mostrar la pantalla para modificar los distintos datos de una sesión. Además de eso, tiene un modelo que se encarga de pedir los datos de la sesión a la base de datos y un controlador que comunica la vista con el modelo.
+Como resultado, cada modulo tendrá: por una parte distintas vistas para sus distintas acciones y, por otra, un controlador y un modelo. Por ejemplo, en el caso del modulo "Sesiones", una de sus vistas es "Modificar Datos de la Sesión" que se encarga de mostrar la pantalla para modificar los distintos datos de una sesión. Además de eso, tiene un modelo que se encarga de pedir los datos de la sesión a la base de datos y un controlador que comunica la vista con el modelo.
 
 \section{Modelo de datos}
 
-Por las necesidades del proyecto y tras un estudio cerciorado, decidimos que la mejor forma de guardar la base de datos de nuestra aplicación seria MySQL. Por varias razones:
+Por las necesidades del proyecto y tras un estudio cerciorado, decidimos que la mejor forma de guardar la base de datos de nuestra aplicación sería MySQL. Por varias razones:
 \begin{itemize}
 	\item Su portabilidad: puede ser usado en distintos dispositivos como ordenadores, tablets y moviles.
-	\item Su gratuidad, al ser código abierto no requiere de ningun coste.
+	\item Su gratuidad, al ser código abierto no requiere de ningún coste.
 	\item Su eficiencia: necesita pocos requerimientos y ocupa poca memoria.
-	\item Su experiencia: al ser uno de los mas usados exite gran cantidad de información.
+	\item Su experiencia: al ser uno de los mas usados, existe gran cantidad de información.
 	\item Su seguridad: al tratar con datos muy personales de alto riesgo, es muy importante estar seguros de donde se están alojando esos datos. MySQL es altamente seguro, gracias a varias funciones avanzadas de seguridad.
 \end{itemize}	
 
-La estructura de la base de datos (Figura \ref{fig:str_bd}) fue definida, en parte, por toda la información que aportada por los terapeutas durante las entrevistas y durante la evaluación del diseño competitivo.
+La estructura de la base de datos (Figura \ref{fig:str_bd}) fue definida, en parte, por toda la información aportada por los terapeutas durante las entrevistas y durante la evaluación del diseño competitivo.
 
-A continuación se explicarán algunas de las tablas que se pueden observar en la base de datos:
+A continuación, se explicarán algunas de las tablas que se pueden observar en la base de datos:
 \begin{itemize}
-	\item Paciente: Información del usuario a tratar.
-	\item Recuerdo: Información de los recuerdos del usuario.
-	\item Para los datos de los recuerdos que suponían una lista de opciones, se creó una tabla separada para que, en caso de que fuera necesario, añadir o eliminar elementos de las listas, alguno de estas tablas son:
+	\item Paciente: Información del paciente a tratar.
+	\item Recuerdo: Información de los recuerdos del paciente.
+	\item Para los datos de los recuerdos que necesitaban una lista de opciones como la etapa de vida, se crearon varias tablas con datos pre-definidos y que se pueden añadir, modificar o borrar. Estas tablas son las siguientes:
 	\begin{itemize}
 		\item Categoría: Indica una forma de etiquetar los recuerdos.
 		\item Etiqueta: Indica si el recuerdo es positivo, negativo o neutro.
 		\item Etapa: Indica la etapa de vida en la que sucedió ese recuerdo.
 		\item Emoción: Indica la emoción con la que el usuario recuerda el momento.
-		\item Estado: Indica como el usuario conserva el recuerdo en su memoria.
+		\item Estado: Indica como el paciente conserva el recuerdo en su memoria.
 	\end{itemize}
 	 \item Sesión: Información sobre las distintas sesiones para el usuario.
 	 \item Usuario: Información del terapeuta.
 	 \item Evaluación: Información sobre el informe de seguimiento del usuario.
-	 \item Persona relacionada: Contractos cercanos del usuario. Al igual que los recuerdos, personas relacionadas guarda una lista de "tipo de relación" que indica la relación que tiene el usuario con su contacto.
+	 \item Persona relacionada: Contactos cercanos del usuario. Al igual que los recuerdos, personas relacionadas guarda una lista de "tipo de relación" que indica la relación que tiene el paciente con su contacto.
 	 \item Actividad: Guarda las actividades puestas en el calendario.
-	 \item Multimedia: Guarda las imágenes, vídeos o audios que se utilizaran durante las funcionalidades de la aplicación.
+	 \item Multimedia: Guarda las imágenes, vídeos o audios que se utilizarán durante las funcionalidades de la aplicación.
 \end{itemize}
 
 \begin{figure}[!ht]
