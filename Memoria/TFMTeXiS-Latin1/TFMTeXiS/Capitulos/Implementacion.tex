@@ -1,13 +1,160 @@
 \chapter{Implementación}
 \label{cap:implementacionDelTFG}
 
-\section{Herramientas utilizadas}
+	Una vez establecida la arquitectura de la base de datos y de la aplicación, se comienza a realizar la implementación de la aplicación siguiendo los patrones definidos en el capítulo anterior.
+
+\section{Herramientas utilizadas para la implementación}
 La implementación de esta aplicación se ha llevado a cabo con la siguientes herramientas:
 \begin{itemize}
-	\item Para el front-end de la aplicación hemos utilizado HTML y CSS por la facilidad de uso y generación de código. También, hemos incorporado Bootstrap para los estilos de la aplicación ya que simplifica la generación de formulario. Además, Bootstrap genera código Responsive que es uno de los requisitos para poder utilizar la aplicación en tablets. Para la conexión con el Back hemos utilizado JavaScript por sencillez y porque es un lenguaje que conocemos todos los integrantes del grupo.
+	\item Para el front-end de la aplicación hemos utilizado HTML y CSS por la facilidad de uso y generación de código. También, hemos incorporado Bootstrap para los estilos de la aplicación ya que simplifica la generación de formulario. Además, Bootstrap genera código Responsive que es uno de los requisitos para poder utilizar la aplicación en tablets. Hemos usado una librería de Bootstrap llamada Fontawesome que es un conjunto de herramientas de fuentes e iconos basado en CSS.
+	 Para la conexión con el Backend hemos utilizado JavaScript por sencillez y porque es un lenguaje que conocemos todos los integrantes del grupo. Dentro de JavaScript hemos utilizado un plugin para realizar el calendario llamado FullCalendar, que ofrece bastantes facilidades para ello.
 	\item Para el back-end hemos utilizado PHP porque lo hemos utilizado en otras asignaturas y nos resulta muy familiar.
 	\item Para almacenar los datos hemos utilizado el motor de base de datos MySQL porque es de código abierto.
 	\item Como servidor local hemos utilizado Xampp porque es un servidor de plataforma libre y nos da muchas facilidades porque integra varias aplicaciones (MySQL, PHP). Además, se puede ejecutar en diversos sistemas operativos que nos ha facilitado colaborar en equipo.
 	\item Como herramienta de control de versiones hemos utilizao GitHub ya que es donde alojamos todo el material del TFG.
 	\item Para desarrollar la aplicación utilizamos  Visual Studio Code como editor de código puesto que consideramos que es el más completo y con el que más familiarizados estamos.
 \end{itemize}
+
+
+\section{Desarrollo interfaz gráfica y objetos}
+
+A continuación, se describirá la interfaz gráfica de la aplicación, así como los objetos relacionados con cada parte de esta interfaz gráfica.
+
+En primer lugar, comentar la pagina de index.php, que esta compuesta por la cabecera de la aplicación que se verá en todas las pantallas de nuestra aplicación,así como la barra de navegación y el pie de página; con el logo de la aplicación en la parte superior izquierda, y en la otra esquina los iconos de cerrar, mensajería y otros pacientes. Luego nos encontramos la barra de navegación que nos permitirá acceder por todas las secciones de la aplicación que comentaremos a continuación, con la foto e información del paciente; después el pie de página que constará del sello de copyright. EN esta página de index se nos mostrará toda la información del paciente seleccionado( Figura \ref{fig:index}).
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/index.png}
+  	\caption{Pagina de index.}
+	\label{fig:index}
+\end{figure}
+Para el desarrollo de la lógica de la aplicación hemos aplicado programación orientada a objetos para tratar los diferentes elementos con los que trabaja el backend de la aplicación. A continuación se muestran los diferentes objetos de los que consta la aplicación, y los cuales cada uno de ellos consta de su clase modelo, clase vista y clase controlador:
+ 	\begin{itemize}
+ 		\item Informe de seguimiento: Con este objeto se permite la creación de un resumen de los informes de la sesiones. En la vista aparecerá un listado con todos los informes de seguimiento realizados con la fecha de realización, un enlace para ver los datos del informe, el diagnóstico y las opciones de visualizar, editar y eliminar el informe (Figura \ref{fig:infSegui}).
+  \begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/infSegui.png}
+  	\caption{Listado informes de seguimiento.}
+	\label{fig:infSegui}
+\end{figure}
+
+ 		Una vez dentro del informe de seguimiento podemos ver más información detallada de este, mediante un formulario con los campos bloqueados, excepto si ha sido llamado mediante el botón de editar, muestra las diferentes escalas( GDS, minimental/MEC de Lobo y CDR) con su respectivo valor y la fecha en la que se documentó el dato, con la posibilidad de introducir otro dato, también el valor del diagnóstico final y un area de texo con las observaciones(Figura \ref{fig:datInfSegui}. Por último, esta la posibilidad de generas un PDF con la información anteriormente detallada(Figura \ref{fig:pdfInfSegui}.
+ 		
+ 		\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/datInfSegui.png}
+  	\caption{Datos informe de seguimiento.}
+	\label{fig:datInfSegui}
+\end{figure}
+	\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/pdfInfSegui.png}
+  	\caption{PDF con datos informe de seguimiento.}
+	\label{fig:pdfInfSegui}
+\end{figure}
+ 		\item Informe de sesión: Objeto con el que se manejan los informes de las sesiones, estos informes son realizados por el terapeuta una vez terminada la sesión con el paciente. Podremos visualizar un listado con todos los informes de sesión (Figura: \ref{fig:InfSes}), donde se ve la fecha del informe y los botones de visualización, edición y borrado. 
+ 		Cada informe tiene un enlace a otra página donde se encuentra un formulario con los campos bloqueados excepto que la llamada venga del botón de editar, para registrar la respuesta del paciente a la sesión y añadir observaciones(Figura: \ref{fig:datSes}).Al igual que en los informes de seguimiento, se puede generar un pdf con los datos del informe de la sesión (Figura: \ref{fig:pdfSes}).
+ 		\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/infSes.png}
+  	\caption{Listado informes de sesion.}
+	\label{fig:InfSes}
+\end{figure}
+ 		\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/datInfSes.png}
+  	\caption{Respuesta paciente informe de sesión.}
+  	
+	\label{fig:datSes}
+\end{figure}
+	\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/pdfInfSes.png}
+  	\caption{PDF informe de sesión.}
+  	
+	\label{fig:pdfSes}
+\end{figure}
+ 		\item Paciente: El objeto paciente recoge la información de los diferentes pacientes que están registrados en la base de datos de la aplicación. La información guardada en la base datos será el nombre, apellidos, género, lugar de nacimiento, fecha de nacimiento, nacionalidad, tipo de residencia y residencia actual. Toda esta información podrá ser visualizada en la pagina de inicio del terapeuta como vemos en la figura \ref{fig:pac}, en la cabecera de la aplicación podremos ver un resumen de la información con el nombre, apellidos, género y edad del paciente, así como una foto de carnet de este. 
+ 		\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/paciente.png}
+  	\caption{Información del paciente.}
+  	
+	\label{fig:pac}
+\end{figure}
+ 		\item Persona relacionada: Este objeto esta relacionado con el paciente. A partir del navegador de la cabecera, en la parte de historias de vida se accede a la sección de personas relacionadas, una vez allí se nos muestra un listado con las personas relacionadas del paciente que tiene seleccionado el terapeuta (Figura \ref{fig:listpr}). Cada persona en el listado contiene el nombre, apellido, tipo de relación, correo electrónico y la posibilidad de ver, editar o borrar, según la opción elegida nos aparecerá un formulario con los campos bloqueados si has elegido la opción de ver o con la posibilidad de modificar los campos en caso de elegir la opción de editar (Figura \ref{fig:formpr}).
+ 		\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/listPersRel.png}
+  	\caption{Listado personas relacionadas.}
+  	
+	\label{fig:listpr}
+\end{figure}
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/formPR.png}
+  	\caption{Formulario personas relacionadas.}
+  	
+	\label{fig:formpr}
+\end{figure}
+ 		\item Recuerdo: Este objeto esta relacionado con el paciente y con las personas relacionadas. A partir del navegador de la cabecera, en la parte de historias de vida se accede a la sección de recuerdos, una vez allí se nos muestra un listado con los recuerdos  del paciente que tiene seleccionado el terapeuta (Figura \ref{fig:rec}). Cada recuerdo en el listado contiene el nombre, fecha, etapa de la vida , categoría, estado, etiqueta(positivo, neutro, negativo), categoría y unos botones con la posibilidad de ver, editar o borrar, según la opción elegida nos aparecerá un formulario con los campos bloqueados si has elegido la opción de ver o con la posibilidad de modificar los campos en caso de elegir la opción de editar (Figura \ref{fig:formRec}). Además de la información nombrada anteriormente una vez seleccionado el botón de ver o editar, también mostrará el formulario anteriormente comentado con esos campos y además con los campos de puntuación, descripción, emoción, categoría, localización; también un listado de personas relacionadas, con la posibilidad de añadir más; y la opción de añadir archivos multimedia relacionados con este recuerdo.
+ 			\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/listRecuerdos.png}
+  	\caption{Listado recuerdos.}
+  	
+	\label{fig:rec}
+\end{figure}
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/formRecuerdos.png}
+  	\caption{Formulario recuerdos.}
+  	\label{fig:formRec}
+\end{figure}
+  	
+ 		\item Sesión: Este objeto se encarga de la lógica del tratamiento de sesiones. A través de la cabecera de la aplicación en el apartado de sesiones, accedemos al listado de las sesiones de un paciente(Figura \ref{fig:listses}). De cada sesión, en el listado aparece, su fecha, la descripción y si esta finalizada o no, y como en los anteriores listados las opciones de editar, ver y eliminar. una vez seleccionado el botón de ver o editar, nos aparece un formulario con los datos de la sesión, como son la fecha, etapa, terapeuta que realiza la sesión, objetivo, descripción, barreras, facilitadores, con el material a utilizar, como pueden ser recuerdos o archivos multimedia (como podemos ver en las figuras \ref{fig:ses} y \ref{fig:ses2}).
+ 		
+ 		
+ \begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/sesiones.png}
+  	\caption{Listado sesiones.}
+  	
+	\label{fig:listses}
+\end{figure}
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/ses.png}
+  	\caption{Información de la  sesión.}
+  	\label{fig:ses}
+\end{figure}
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/ses2.png}
+  	\caption{Información de la sesión.}
+  	\label{fig:ses2}
+\end{figure}
+ 		\item Actividad: Este objeto está directamente relacionado con el calendario, estas actividades son una especie de tareas que el terapeuta manda al cuidador del paciente y son registradas en el calendario. Con ayuda del plugin FullCalendar de JavaScript, hemos implementado un calendario donde se guardan estas actividades que están almacenadas en la base de datos.
+ 		Estas actividades se añaden a través del botón del "+" que sale en la cabecera del calendario o haciendo click en el día que quieres establecer esa actividad, una vez elegida una de estas opciones, aparecerá un formulario para rellenar con los datos de la actividad (Figura: \ref{fig:formCal}). 
+ 		\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/formCal.png}
+  	\caption{Formulario nueva actividad.}
+  	
+	\label{fig:formCal}
+	\end{figure}
+		\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/calendario.png}
+  	\caption{Calendario.}
+	\label{fig:Cal}
+	\end{figure}
+	Para modificar o eliminar una actividad hay que hacer click sobre esta y nos aparecerá el formulario anteriormente vacío con todos los datos rellenos y con los botones de eliminar y modificar que son mandados a un documento PHP para tratar la información según la opción elegida (Figura \ref{fig:modCal}).
+ 	\end{itemize}
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/modCal.png}
+  	\caption{Modificar/eliminar actividad.}
+	\label{fig:modCal}
+	\end{figure}
+
+

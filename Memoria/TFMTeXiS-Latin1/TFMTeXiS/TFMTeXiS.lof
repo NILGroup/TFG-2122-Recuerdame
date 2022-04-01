@@ -1,25 +1,25 @@
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ejemplo palabra inicial recomendada ``pedir'' donde poder a\~nadir relaciones con archivos multimedia o palabras clave.\relax }}{13}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Grafo resultante de la categor\IeC {\'\i }a ``vacaciones'' tras la evaluaci\'on con usuarios.\relax }}{14}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Grafo resultante de la categor\IeC {\'\i }a ``vacaciones'' tras la evaluaci\'on con usuarios.\relax }}{13}{figure.caption.38}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Relacionar fotograf\IeC {\'\i }a con una categor\IeC {\'\i }a y un concepto a relacionar.\relax }}{14}{figure.caption.39}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Estad\IeC {\'\i }sticas resultantes tras la sesi\'on de evaluaci\'on. Los nombres propios se encuentran pixelados.\relax }}{15}{figure.caption.40}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Flujo de la aplicaci\'on\relax }}{16}{figure.caption.42}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces P\'agina historias de vida: Amigos\relax }}{17}{figure.caption.43}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces P\'agina historias de vida: Amigos\relax }}{16}{figure.caption.43}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces P\'agina historias de vida: Lugares favoritos \relax }}{17}{figure.caption.44}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces P\'agina historias de vida: Galer\IeC {\'\i }a de fotos\relax }}{18}{figure.caption.45}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Pantalla de evaluaci\'on cl\IeC {\'\i }nica de un paciente.\relax }}{20}{figure.caption.47}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Pantalla de historias de vida.\relax }}{21}{figure.caption.48}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Funcionamiento bot\relax }}{22}{figure.caption.50}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces bienvenidabot\relax }}{23}{figure.caption.51}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces bienvenidabot\relax }}{22}{figure.caption.51}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces im\'agenes bot\relax }}{23}{figure.caption.52}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces pregunta bot\relax }}{24}{figure.caption.53}%
-\babel@toc {spanish}{}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces pregunta bot\relax }}{23}{figure.caption.53}%
+\babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Listado de los pacientes del terapeuta en el prototipo de Cristina.\relax }}{37}{figure.caption.86}%
@@ -139,12 +139,30 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Estructura de Modelo-Vista-Controlador\relax }}{96}{figure.caption.230}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Estructura de la base de datos\relax }}{98}{figure.caption.232}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Pagina de index.\relax }}{100}{figure.caption.236}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Listado informes de seguimiento.\relax }}{101}{figure.caption.237}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Datos informe de seguimiento.\relax }}{102}{figure.caption.238}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces PDF con datos informe de seguimiento.\relax }}{102}{figure.caption.239}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Listado informes de sesion.\relax }}{103}{figure.caption.240}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Respuesta paciente informe de sesi\'on.\relax }}{103}{figure.caption.241}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces PDF informe de sesi\'on.\relax }}{104}{figure.caption.242}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Informaci\'on del paciente.\relax }}{104}{figure.caption.243}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Listado personas relacionadas.\relax }}{105}{figure.caption.244}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Formulario personas relacionadas.\relax }}{105}{figure.caption.245}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Listado recuerdos.\relax }}{106}{figure.caption.246}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Formulario recuerdos.\relax }}{106}{figure.caption.247}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Listado sesiones.\relax }}{106}{figure.caption.248}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Informaci\'on de la sesi\'on.\relax }}{107}{figure.caption.249}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Informaci\'on de la sesi\'on.\relax }}{107}{figure.caption.250}%
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Formulario nueva actividad.\relax }}{108}{figure.caption.251}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Calendario.\relax }}{108}{figure.caption.252}%
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Modificar/eliminar actividad.\relax }}{109}{figure.caption.253}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
