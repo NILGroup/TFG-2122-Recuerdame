@@ -81,7 +81,7 @@ Para el desarrollo de la lógica de la aplicación hemos aplicado programación ori
   	
 	\label{fig:pac}
 \end{figure}
- 		\item Persona relacionada: Este objeto esta relacionado con el paciente. A partir del navegador de la cabecera, en la parte de historias de vida se accede a la sección de personas relacionadas, una vez allí se nos muestra un listado con las personas relacionadas del paciente que tiene seleccionado el terapeuta (Figura \ref{fig:listpr}). Cada persona en el listado contiene el nombre, apellido, tipo de relación, correo electrónico y la posibilidad de ver, editar o borrar, según la opción elegida nos aparecerá un formulario con los campos bloqueados si has elegido la opción de ver o con la posibilidad de modificar los campos en caso de elegir la opción de editar (Figura \ref{fig:formpr}.
+ 		\item Persona relacionada: Este objeto esta relacionado con el paciente. A partir del navegador de la cabecera, en la parte de historias de vida se accede a la sección de personas relacionadas, una vez allí se nos muestra un listado con las personas relacionadas del paciente que tiene seleccionado el terapeuta (Figura \ref{fig:listpr}). Cada persona en el listado contiene el nombre, apellido, tipo de relación, correo electrónico y la posibilidad de ver, editar o borrar, según la opción elegida nos aparecerá un formulario con los campos bloqueados si has elegido la opción de ver o con la posibilidad de modificar los campos en caso de elegir la opción de editar (Figura \ref{fig:formpr}).
  		\begin{figure}[!ht]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/listPersRel.png}
@@ -96,7 +96,7 @@ Para el desarrollo de la lógica de la aplicación hemos aplicado programación ori
   	
 	\label{fig:formpr}
 \end{figure}
- 		\item Recuerdo: Este objeto esta relacionado con el paciente y con las personas relacionadas. A partir del navegador de la cabecera, en la parte de historias de vida se accede a la sección de recuerdos, una vez allí se nos muestra un listado con los recuerdos  del paciente que tiene seleccionado el terapeuta (Figura \ref{fig:rec}). Cada recuerdo en el listado contiene el nombre, fecha, etapa de la vida , categoría, estado, etiqueta(positivo, neutro, negativo), categoría y unos botones con la posibilidad de ver, editar o borrar, según la opción elegida nos aparecerá un formulario con los campos bloqueados si has elegido la opción de ver o con la posibilidad de modificar los campos en caso de elegir la opción de editar (Figura \ref{fig:formRec}. Además de la información nombrada anteriormente una vez seleccionado el botón de ver o editar, también mostrará el formulario anteriormente comentado con esos campos y además con los campos de puntuación, descripción, emoción, categoría, localización; también un listado de personas relacionadas, con la posibilidad de añadir más; y la opción de añadir archivos multimedia relacionados con este recuerdo.
+ 		\item Recuerdo: Este objeto esta relacionado con el paciente y con las personas relacionadas. A partir del navegador de la cabecera, en la parte de historias de vida se accede a la sección de recuerdos, una vez allí se nos muestra un listado con los recuerdos  del paciente que tiene seleccionado el terapeuta (Figura \ref{fig:rec}). Cada recuerdo en el listado contiene el nombre, fecha, etapa de la vida , categoría, estado, etiqueta(positivo, neutro, negativo), categoría y unos botones con la posibilidad de ver, editar o borrar, según la opción elegida nos aparecerá un formulario con los campos bloqueados si has elegido la opción de ver o con la posibilidad de modificar los campos en caso de elegir la opción de editar (Figura \ref{fig:formRec}). Además de la información nombrada anteriormente una vez seleccionado el botón de ver o editar, también mostrará el formulario anteriormente comentado con esos campos y además con los campos de puntuación, descripción, emoción, categoría, localización; también un listado de personas relacionadas, con la posibilidad de añadir más; y la opción de añadir archivos multimedia relacionados con este recuerdo.
  			\begin{figure}[!ht]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/listRecuerdos.png}
@@ -111,7 +111,7 @@ Para el desarrollo de la lógica de la aplicación hemos aplicado programación ori
   	\label{fig:formRec}
 \end{figure}
   	
- 		\item Sesión: Este objeto se encarga de la lógica del tratamiento de sesiones. A través de la cabecera de la aplicación en el apartado de sesiones, accedemos al listado de las sesiones de un paciente(Figura \ref{fig:listses}). De cada sesión, en el listado aparece, su fecha, la descripción y si esta finalizada o no, y como en los anteriores listados las opciones de editar, ver y eliminar. una vez seleccionado el botón de ver o editar, nos aparece un formulario con los datos de la sesión, como son la fecha, etapa, terapeuta que realiza la sesión, objetivo, descripción, barreras, facilitadores, con el material a utilizar, como pueden ser recuerdos o archivos multimedia (como podemos ver en las figuras \ref{fig:ses} y \ref{fig:ses2}.
+ 		\item Sesión: Este objeto se encarga de la lógica del tratamiento de sesiones. A través de la cabecera de la aplicación en el apartado de sesiones, accedemos al listado de las sesiones de un paciente(Figura \ref{fig:listses}). De cada sesión, en el listado aparece, su fecha, la descripción y si esta finalizada o no, y como en los anteriores listados las opciones de editar, ver y eliminar. una vez seleccionado el botón de ver o editar, nos aparece un formulario con los datos de la sesión, como son la fecha, etapa, terapeuta que realiza la sesión, objetivo, descripción, barreras, facilitadores, con el material a utilizar, como pueden ser recuerdos o archivos multimedia (como podemos ver en las figuras \ref{fig:ses} y \ref{fig:ses2}).
  		
  		
  \begin{figure}[!ht]
@@ -133,7 +133,7 @@ Para el desarrollo de la lógica de la aplicación hemos aplicado programación ori
   	\caption{Información de la sesión.}
   	\label{fig:ses2}
 \end{figure}
- 		\item Actividad: Este objeto está directamente relacionado con el calendario, estas actividades son una especie de tareas que el terapeuta manda al cuidador del paciente y son registradas en el calendario. Con ayuda del plugin FullCalendar de JavaScript, hemos implementado un calendario donde se guardan estas actividades que están almacenadas en la base de datos (Figura .
+ 		\item Actividad: Este objeto está directamente relacionado con el calendario, estas actividades son una especie de tareas que el terapeuta manda al cuidador del paciente y son registradas en el calendario. Con ayuda del plugin FullCalendar de JavaScript, hemos implementado un calendario donde se guardan estas actividades que están almacenadas en la base de datos.
  		Estas actividades se añaden a través del botón del "+" que sale en la cabecera del calendario o haciendo click en el día que quieres establecer esa actividad, una vez elegida una de estas opciones, aparecerá un formulario para rellenar con los datos de la actividad (Figura: \ref{fig:formCal}). 
  		\begin{figure}[!ht]
   	\centering
@@ -148,7 +148,7 @@ Para el desarrollo de la lógica de la aplicación hemos aplicado programación ori
   	\caption{Calendario.}
 	\label{fig:Cal}
 	\end{figure}
-	Para modificar o eliminar una actividad hay que hacer click sobre esta y nos aparecerá el formulario anteriormente vacío con todos los datos rellenos y con los botones de eliminar y modificar que son mandados a un documento PHP para tratar la información según la opción elegida (Figura: .
+	Para modificar o eliminar una actividad hay que hacer click sobre esta y nos aparecerá el formulario anteriormente vacío con todos los datos rellenos y con los botones de eliminar y modificar que son mandados a un documento PHP para tratar la información según la opción elegida (Figura \ref{fig:modCal}).
  	\end{itemize}
 \begin{figure}[!ht]
   	\centering
