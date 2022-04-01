@@ -103,8 +103,9 @@ class SesionDAO{
 
     public function eliminarSesion($idSesion) {
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("DELETE * FROM sesion WHERE id_sesion = '$idSesion'")
+        $row = $conexion->query("DELETE FROM sesion WHERE id_sesion = '$idSesion'")
             or die ($conexion->error);
+    
     }
 
 }
