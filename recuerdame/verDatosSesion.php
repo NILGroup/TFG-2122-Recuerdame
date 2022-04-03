@@ -144,6 +144,7 @@
 
         <div>
             <button type="button" class="btn btn-primary btn-sm">Atrás</button>
+            <a href="modificarDatosInformeSesion.php?idInforme=<?php echo ($sesion->getIdSesion())?>"><button type="button" class="btn btn-primary btn-sm">Finalizar la sesion</button></a>
         </div>
     </div>
     <?php include "layout/footer.php" ?>
