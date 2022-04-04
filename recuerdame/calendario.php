@@ -2,20 +2,20 @@
     
 <head>
 <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
-  <script src="https://kit.fontawesome.com/d1ab37e54e.js" crossorigin="anonymous"></script>
+<link href="public/fontawesome6/css/all.css" rel="stylesheet">
   <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
-  <link rel="stylesheet" href="calendario/fullcalendar/main.css"> 
+  <link rel="stylesheet" href="public/fullcalendar/main.css"> 
   <link rel="stylesheet" href="public/css/styles.css">
   <meta charset="utf-8" />
   <title>Recuerdame</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "layout/footer.php" ?>
-    <?php include "controllers/CalendarioController.php" ?>
+    
+ <?php include "controllers/CalendarioController.php" ?>
    
    
     <div class="container-fluid">
@@ -25,25 +25,9 @@
             </div>
 
            
-     </div>
+     
      <div id="calendar"></div>
-     <div class="modal modal-sheet" id="modalSheet" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalSheet" aria-hidden="true">
-     <div class="modal-dialog">
-         <div class="modal-content">
-           <div class="modal-header bg-info">
-             <h5 class="modal-title" id="evento"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body py-0">
-        <p id="description"></p>
-      </div>
-      <div class="modal-footer flex-column border-top-0">
-    
-      </div>
-    </div>
-  </div>
-</div>
-     <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+      <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
        <div class="modal-dialog">
          <div class="modal-content">
            <div class="modal-header bg-info">
@@ -78,17 +62,17 @@
             
          </div>
        </div>
-    
+       
      </div>
-  
-     
+</div>
+</div>
     <script src="calendario/fullcalendar/main.js"></script>
     <!-- antes del script de nuestro calendario añadimos el archivo traductor: -->
     <script src="calendario/fullcalendar/locales/es.js"></script>
     <!-- Script para trabajar nuestro calendario -->
     <script src="public/js/calendar.js"></script>
-  
-    
+    <?php include "layout/footer.php" ?>
+      
 </body>
 
 </html>
