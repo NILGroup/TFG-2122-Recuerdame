@@ -51,7 +51,7 @@
                     <label for="color" class="form-label">Color</label>
                 </div>
                 <div class= "form-floating mb-3">
-                    <input type="textarea" class="form-control" id="obs" name="obs" required>
+                    <textarea maxlength="255" class="form-control form-control-sm" id="obs" name="obs" rows="3"></textarea>
                     <label for="obs" class="form-label">Observaciones</label>
                 </div>
                     <div class="modal-footer">
