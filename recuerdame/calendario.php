@@ -66,9 +66,9 @@
      </div>
 </div>
 </div>
-    <script src="calendario/fullcalendar/main.js"></script>
+    <script src="public/fullcalendar/main.js"></script>
     <!-- antes del script de nuestro calendario añadimos el archivo traductor: -->
-    <script src="calendario/fullcalendar/locales/es.js"></script>
+    <script src="public/fullcalendar/locales/es.js"></script>
     <!-- Script para trabajar nuestro calendario -->
     <script src="public/js/calendar.js"></script>
     <?php include "layout/footer.php" ?>
