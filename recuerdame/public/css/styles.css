@@ -171,3 +171,10 @@ border-color: rgb(9, 146, 135);
     height: 200px;
     width: auto;
 }
+
+.dataTables_filter {
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-bottom: 10px;
+ }

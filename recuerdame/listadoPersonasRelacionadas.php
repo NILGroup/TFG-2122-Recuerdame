@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="public/css/styles.css">
     <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <script src="public/jquery/jquery-3.6.0.min.js"></script>
+    <script src="public/datatable/datatables.min.js"></script>
+    <link rel="stylesheet" href="public/datatable/datatables.min.css">
+    <script src="public/js/table.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Recuerdame</title>
@@ -21,14 +25,8 @@
             <hr class="lineaTitulo">
         </div>
 
-        <div class="row p-2">
+        <div class="row mb-2">
             <div class="col-12 justify-content-end d-flex">
-                <div>
-                    <input type="text" class="form-control form-control-sm" placeholder="Buscar..." aria-label="Buscar" aria-describedby="basic-addon1">
-                </div>
-                <span class="input-group-text border-0" id="search-addon">
-                    <i class="fas fa-search"></i>
-                </span>
                 <?php
                 if (isset($recuerdo) && $recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
                 ?>
@@ -44,7 +42,7 @@
         </div>
 
         <div>
-            <table class="table table-bordered">
+            <table class="table table-bordered recuerdameTable">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
