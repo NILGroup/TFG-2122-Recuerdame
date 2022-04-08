@@ -10,14 +10,23 @@ class RecuerdosController{
         $this->recuerdoDao = new RecuerdoDAO();
     }
 
+    /**
+     * Listado de recuerdos de un paciente
+     */
     public function getListaRecuerdos() {
         return $this->listaRecuerdos = $this->recuerdoDao->getListaRecuerdos(1);
     }
 
+    /**
+     * Datos de un recuerdo
+     */
     public function verRecuerdo($idRecuerdo) {
         return $this->recuerdoDao->getRecuerdo($idRecuerdo);
     }
 
+    /**
+     * Crea o modifica un recuerdo
+     */
     public function guardarRecuerdo($recuerdo) {
         $idRecuerdo = null;
         if ($recuerdo->getIdRecuerdo() == null) {
@@ -29,10 +38,16 @@ class RecuerdosController{
         return $idRecuerdo;
     }
 
+    /**
+     * Elimina el registro de un recuerdo
+     */
     public function eliminarRecuerdo($idRecuerdo) {
         $this->recuerdoDao->eliminarRecuerdo($idRecuerdo);
     }
 
+    /**
+     * Lista de recuerdos de una sesión
+     */
     public function getListaRecuerdosSesion($idSesion) {
         $listaSesiones = array();
         if ($idSesion != null) {
@@ -42,8 +57,41 @@ class RecuerdosController{
         return $listaSesiones;
     }
 
+    /**
+     * Lista de archivos multimedia de un recuerdo
+     */
     public function getListaMultimediaRecuerdo($idRecuerdo) {
         return $this->recuerdoDao->getListaMultimediaRecuerdo($idRecuerdo);
+    }
+
+    /**
+     * Registra una nueva persona relacionada y la asigna a un recuerdo
+     */
+    public function guardarPersonaRelacionada($idRecuerdo, $personaRelacionada) {
+        $idPersonaRelacionada = null;
+        if ($personaRelacionada->getIdPersonaRelacionada() == null) {
+            $idPersonaRelacionada = $this->recuerdoDao->nuevaPersonaRelacionada($idRecuerdo, $personaRelacionada);
+        } else {
+            $this->personaRelacionadaDao = new PersonaRelacionadaDAO();
+            $idPersonaRelacionada = $this->personaRelacionadaDao->modificarPersonaRelacionada($personaRelacionada);
+        }
+
+        return $idPersonaRelacionada;
+    }
+
+    /**
+     * Actualiza la lista de personas relacionadas que están asignadas al recuerdo.
+     * Asigna la lista de personas relacionadas que se pasa por parámetro y se borran las demás relaciones
+     */
+    public function anadirPersonasRelacionadas($idRecuerdo, $listaPersonasRelacionadas) {
+        $this->recuerdoDao->anadirPersonasRelacionadas($idRecuerdo, $listaPersonasRelacionadas);
+    }
+
+    /**
+     * Elimina la relación entre el recuerdo y una persona relacionada
+     */
+    public function eliminarPersonarelacionada($idRecuerdo, $idPersonaRelacionada) {
+        $this->recuerdoDao->eliminarPersonaRelacionada($idRecuerdo, $idPersonaRelacionada);
     }
 }
 

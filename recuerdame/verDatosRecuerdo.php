@@ -20,7 +20,7 @@
     <div class="container-fluid">
         <?php
         $idRecuerdo = null;
-        if (!empty($_GET['idRecuerdo'])) {
+        if (isset($_GET['idRecuerdo'])) {
             $idRecuerdo = $_GET['idRecuerdo'];
             $recuerdosController = new RecuerdosController();
             $recuerdo = $recuerdosController->verRecuerdo($idRecuerdo);
@@ -177,11 +177,11 @@
                     ?>
                         <tr>
                             <th scope="row"><?php echo $i ?></th>
-                            <td><a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&ventanaAtras=verDatosRecuerdo.php?idRecuerdo=<?php echo($idRecuerdo) ?>"><?php echo ($row['nombre']) ?></a></td>
+                            <td><a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&idRecuerdo=<?php echo($idRecuerdo) ?>"><?php echo ($row['nombre']) ?></a></td>
                             <td><?php echo ($row["apellidos"]) ?></td>
                             <td><?php echo ($row["nombreTipoRelacion"]) ?></td>
                             <td class="tableActions">
-                                <a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&ventanaAtras=verDatosRecuerdo.php?idRecuerdo=<?php echo($idRecuerdo) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
+                                <a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&idRecuerdo=<?php echo($idRecuerdo) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
                             </td>
                         </tr>
                     <?php

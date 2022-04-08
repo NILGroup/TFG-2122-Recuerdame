@@ -22,14 +22,17 @@
             $personasRelacionadasController = new PersonasRelacionadasController();
             $personaRelacionada = $personasRelacionadasController->verPersonaRelacionada($_GET['idPersonaRelacionada']);
         }
-        // Ventana a la que volver con el botón Atrás
-        // Si se indica en la variable from es porque viene de modificar o ver recuerdo
-        // Si no viene la variable es porque se utiliza en el listado de personas relacionadas
-        /*if (isset($_GET['ventanaAtras']) && !empty($_GET['ventanaAtras'])) {
-            $ventanaAtras = $_GET['ventanaAtras'];
-        } else {
-            $ventanaAtras = 'listadoPersonasRelacionadas.php';    
-        }*/
+
+        $idRecuerdo = null;
+        if (isset($_GET['idRecuerdo'])) {
+            $idRecuerdo = $_GET['idRecuerdo'];
+        }
+
+        $ventanaDesde = null;
+        if (isset($_GET['ventanaDesde'])) {
+            $ventanaDesde = $_GET['ventanaDesde'];
+        }
+
         $comunesController = new ComunesController();
         $listaTiposRelacion = $comunesController->getListaTiposRelacion();
         ?>
@@ -97,8 +100,21 @@
         </div>
 
         <div>
-            <!--<a href="<?php echo($ventanaAtras) ?>"><button type="button" onclick="history.back();" class="btn btn-primary btn-sm">Atrás</button></a>-->
-            <a href="<?php echo($ventanaAtras) ?>"><button type="button" onclick="history.back();" class="btn btn-primary btn-sm">Atrás</button></a>
+            <?php
+            if ($ventanaDesde != null) {
+            ?>
+            <a href="<?php echo ($ventanaDesde) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+            <?php
+            } else if ($idRecuerdo != null) {
+            ?>
+                <a href="verDatosRecuerdo.php?idRecuerdo=<?php echo ($idRecuerdo) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+            <?php
+            } else {
+            ?>
+                <a href="listadoPersonasRelacionadas.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+            <?php
+            }
+            ?>
         </div>
     </div>
     <?php include "layout/footer.php" ?>

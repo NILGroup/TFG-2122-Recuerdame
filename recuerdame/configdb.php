@@ -2,10 +2,10 @@
 
 class Configdb {
     // Atributos para la conexión
-    private $host="localhost";
-    private $user="root";
-    private $pass="";
-    private $db_name="recuerdame";
+    private $host = "localhost";
+    private $user = "root";
+    private $pass = "";
+    private $db_name = "recuerdame";
 
     // Conector
     private $conexion;

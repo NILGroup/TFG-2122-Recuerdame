@@ -25,15 +25,36 @@
         } else {
             $personaRelacionada = new PersonaRelacionada();
         }
+
+        $idRecuerdo = null;
+        if (isset($_GET['idRecuerdo'])) {
+            $idRecuerdo = $_GET['idRecuerdo'];
+        }
+
+        $idPersonaRelacionada = $personaRelacionada->getIdPersonaRelacionada();
+        $action = "gestor.php?idPersonaRelacionada=" . $idPersonaRelacionada;
+        if (isset($_GET['idRecuerdo'])) {
+            $action = "gestor.php?idPersonaRelacionada=" . $idPersonaRelacionada . "&idRecuerdo=" . $_GET['idRecuerdo'] . "&" . $ventanaDesde;
+        }
+
+        $ventanaDesde = null;
+        if (isset($_GET['ventanaDesde'])) {
+            $ventanaDesde = $_GET['ventanaDesde'];
+            $action = "gestor.php?idPersonaRelacionada=" . $idPersonaRelacionada . "&ventanaDesde=" . $ventanaDesde;
+        }
+
+        echo $ventanaDesde;
+
         $comunesController = new ComunesController();
         $listaTiposRelacion = $comunesController->getListaTiposRelacion();
+        
         ?>
         <div class="pt-4 pb-2">
             <h5 class="text-muted">Datos de la persona relacionada</h5>
             <hr class="lineaTitulo">
         </div>
 
-        <form action="gestor.php?idPersonaRelacionada=<?php echo ($personaRelacionada->getIdPersonaRelacionada()) ?>" method="POST">
+        <form action="<?php echo ($action) ?>" method="POST">
             <div>
                 <div>
                     <div class="row form-group justify-content-between">
@@ -95,7 +116,21 @@
 
                 <div>
                     <button type="submit" name="guardarPersonaRelacionada" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
-                    <button type="button" onclick="history.back();" class="btn btn-primary btn-sm">Atrás</button>
+                    <?php
+                    if ($ventanaDesde != null) {
+                    ?>
+                        <a href="<?php echo ($ventanaDesde) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <?php
+                    } else if ($idRecuerdo != null) {
+                    ?>
+                        <a href="modificarDatosRecuerdo.php?idRecuerdo=<?php echo ($idRecuerdo) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <?php
+                    } else {
+                    ?>
+                        <a href="listadoPersonasRelacionadas.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </form>

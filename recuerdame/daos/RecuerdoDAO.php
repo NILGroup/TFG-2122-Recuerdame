@@ -13,6 +13,9 @@ class RecuerdoDAO
         $this->db = new Configdb();
     }
 
+    /**
+     * Datos de un recuerdo.
+     */
     public function getRecuerdo($idRecuerdo)
     {
         $conexion = $this->db->getConexion();
@@ -38,6 +41,9 @@ class RecuerdoDAO
         return $recuerdo;
     }
 
+    /**
+     * Lista de recuerdos de un paciente.
+     */
     public function getListaRecuerdos($idPaciente)
     {
         $conexion = $this->db->getConexion();
@@ -61,6 +67,9 @@ class RecuerdoDAO
         return $listaRecuerdos;
     }
 
+    /**
+     * Crea un nuevo recuerdo.
+     */
     public function nuevoRecuerdo($recuerdo)
     {
         $conexion = $this->db->getConexion();
@@ -88,6 +97,9 @@ class RecuerdoDAO
         return $conexion->insert_id;
     }
 
+    /**
+     * Modifica los datos de un recuerdo.
+     */
     public function modificarRecuerdo($recuerdo)
     {
         $conexion = $this->db->getConexion();
@@ -116,6 +128,9 @@ class RecuerdoDAO
         return $recuerdo->getIdRecuerdo();
     }
 
+    /**
+     * Elimina el registro de una sesión.
+     */
     public function eliminarRecuerdo($idRecuerdo)
     {
         $conexion = $this->db->getConexion();
@@ -123,6 +138,9 @@ class RecuerdoDAO
             or die($conexion->error);
     }
 
+    /**
+     * Lista de los recuerdos de una sesión.
+     */
     public function getListaRecuerdosSesion($idSesion)
     {
         $conexion = $this->db->getConexion();
@@ -147,6 +165,9 @@ class RecuerdoDAO
         return $listaRecuerdosSesion;
     }
 
+    /**
+     * Lista de recuerdos de un paciente para mostrar la Historia de Vida.
+     */
     public function getListaRecuerdosHistoriaVida($idPaciente)
     {
         $conexion = $this->db->getConexion();
@@ -164,6 +185,9 @@ class RecuerdoDAO
         return $listaRecuerdosHistoriaVida;
     }
 
+    /**
+     * Lista de los archivos multimedia de un recuerdo.
+     */
     public function getListaMultimediaRecuerdo($idRecuerdo)
     {
         $conexion = $this->db->getConexion();
@@ -179,5 +203,93 @@ class RecuerdoDAO
         };
 
         return $listaMultimedia;
+    }
+
+    /**
+     * Crea una nueva persona relacionada y la asigna a un recuerdo.
+     */
+    public function nuevaPersonaRelacionada($idRecuerdo, $personaRelacionada)
+    {
+        try {
+            $conexion = $this->db->getConexion();
+            $conexion->begin_transaction();
+            $consultaSQL = "INSERT INTO persona_relacionada (id_persona_relacionada, nombre, apellidos, telefono, ocupacion,
+                            email, id_tipo_relacion, id_paciente) 
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
+            $stmt = $conexion->prepare($consultaSQL);
+            $stmt->execute(array(
+                NULL,
+                $personaRelacionada->getNombre(),
+                $personaRelacionada->getApellidos(),
+                $personaRelacionada->getTelefono(),
+                $personaRelacionada->getOcupacion(),
+                $personaRelacionada->getEmail(),
+                $personaRelacionada->getIdTipoRelacion(),
+                1
+            ));
+
+            $idPersonaRelacionada = $conexion->insert_id;
+
+            $consultaSQL = "INSERT INTO recuerdo_persona_relacionada (id_recuerdo, id_persona_relacionada) 
+                        VALUES (?, ?);";
+            $stmtr = $conexion->prepare($consultaSQL);
+            $stmtr->execute(array(
+                $idRecuerdo,
+                $idPersonaRelacionada
+            ));
+
+            $conexion->commit();
+            $stmt->close();
+            $stmtr->close();
+
+        } catch (Exception $e) {
+            $conexion->rollback();
+        }
+
+        return $idPersonaRelacionada;
+    }
+
+    /**
+     * Asigna una lista de personas relacionadas existentes al recuerdo.
+     */
+    public function anadirPersonasRelacionadas($idRecuerdo, $listaPersonasRelacionadas) 
+    {
+        try {
+            $conexion = $this->db->getConexion();
+            $conexion->begin_transaction();
+
+            // Se borran todas las personas relacionadas del recuerdo para después actualizarlas
+            $conexion->query("DELETE FROM recuerdo_persona_relacionada WHERE id_recuerdo = $idRecuerdo")
+            or die($conexion->error);
+
+            foreach ($listaPersonasRelacionadas as $idPersonaRelacionada) {
+                // Se busca si ya existe la relación entre la persona relacionada y el recuerdo
+                $row = $conexion->query("SELECT * FROM recuerdo_persona_relacionada WHERE id_recuerdo = $idRecuerdo AND id_persona_relacionada = $idPersonaRelacionada")
+                             or die($conexion->error);
+                
+                // Si no existe, se crea
+                if ($row->num_rows == 0){
+                    $consultaSQL = "INSERT INTO recuerdo_persona_relacionada (id_recuerdo, id_persona_relacionada) 
+                    VALUES (".$idRecuerdo.", ".$idPersonaRelacionada.");";
+
+                    $conexion->query($consultaSQL) or die($conexion->error);
+                }
+            }
+
+            $conexion->commit();
+
+        } catch (Exception $e) {
+            $conexion->rollback();
+        }
+    }
+
+    /**
+     * Elimina la relación de una persona relacionada con un recuerdo.
+     */
+    public function eliminarPersonaRelacionada($idRecuerdo, $idPersonaRelacionada)
+    {
+        $conexion = $this->db->getConexion();
+        $conexion->query("DELETE FROM recuerdo_persona_relacionada WHERE id_recuerdo = $idRecuerdo AND id_persona_relacionada = $idPersonaRelacionada")
+            or die($conexion->error);
     }
 }

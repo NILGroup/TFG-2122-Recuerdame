@@ -20,12 +20,18 @@
 
     <div class="container-fluid">
         <?php
-        if (!empty($_GET['idRecuerdo'])) {
+        if (isset($_GET['idRecuerdo'])) {
             $recuerdosController = new RecuerdosController();
             $recuerdo = $recuerdosController->verRecuerdo($_GET['idRecuerdo']);
         } else {
             $recuerdo = new Recuerdo();
             $recuerdo->setFecha(date('Y-m-d'));
+        }
+
+        $idRecuerdo = null;
+        if ($recuerdo->getIdRecuerdo() != null) {
+            $idRecuerdo = $recuerdo->getIdRecuerdo();
+            $desdeModificar = "modificarDatosRecuerdo.php?idRecuerdo=".$idRecuerdo;
         }
         $comunesController = new ComunesController();
         $listaEstados = $comunesController->getListaEstados();
@@ -160,13 +166,13 @@
                 </div>
                 <div class="row">
                     <div class="col-12 justify-content-end d-flex p-2">
-                        <a href="modificarDatosPersonaRelacionada.php" class="pe-2"><button type="button" class="btn btn-success btn-sm">+</button></a>
+                        <a aria-disabled="true" href="modificarDatosPersonaRelacionada.php?ventanaDesde=<?php echo($desdeModificar) ?>" class="pe-2"><button type="button" class="btn btn-success btn-sm" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>>+</button></a>
                         <?php
                         if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
                         ?>
-                            <a href="listadoPersonasRelacionadasRecuerdo.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>" class="pe-2"><button type="button" class="btn btn-success btn-sm">Añadir existente</button></a>
+                            <a href="listadoPersonasRelacionadasRecuerdo.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>" class="pe-2" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>><button type="button" class="btn btn-success btn-sm">Añadir existente</button></a>
                         <?php } else { ?>
-                            <a href="listadoPersonasRelacionadasRecuerdo.php" class="pe-2"><button type="button" class="btn btn-success btn-sm">Añadir existente</button></a>
+                            <a href="listadoPersonasRelacionadasRecuerdo.php" class="pe-2"><button type="button" class="btn btn-success btn-sm" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>>Añadir existente</button></a>
                         <?php } ?>
                     </div>
                 </div>
@@ -186,10 +192,7 @@
                             <?php
                             $personasRelacionadasController = new PersonasRelacionadasController();
                             $lista = array();
-                            $verDatosPersonaRelacionada = '';
                             if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
-                                $idRecuerdo = $recuerdo->getIdRecuerdo();
-                                $verDatosPersonaRelacionada = "&ventanaAtras=modificarDatosRecuerdo.php?idRecuerdo=".$idRecuerdo."";
                                 $lista = $personasRelacionadasController->getListaPersonasRelacionadasRecuerdo($idRecuerdo);
                             }
                             $i = 1;
@@ -197,13 +200,13 @@
                             ?>
                                 <tr>
                                     <th scope="row"><?php echo $i ?></th>
-                                    <td><a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) . $verDatosPersonaRelacionada ?>"><?php echo ($row['nombre']) ?></a></td>
+                                    <td><a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada'])?>&ventanaDesde=<?php echo($desdeModificar) ?>"><?php echo ($row['nombre']) ?></a></td>
                                     <td><?php echo ($row["apellidos"]) ?></td>
                                     <td><?php echo ($row["nombreTipoRelacion"]) ?></td>
                                     <td class="tableActions">
-                                        <a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) . $verDatosPersonaRelacionada ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
-                                        <a href="modificarDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
-                                        <a href="gestor.php?accion=eliminarPersonaRelacionada&idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
+                                        <a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada'])?>&ventanaDesde=<?php echo($desdeModificar) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
+                                        <a href="modificarDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&ventanaDesde=<?php echo($desdeModificar) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
+                                        <a ref="#" data-href="gestor.php?accion=eliminarPersonaRelacionadaRecuerdo&idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&idRecuerdo=<?php echo ($idRecuerdo) ?>" data-toggle="modal" data-target="#confirm-delete"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
                                     </td>
                                 </tr>
                             <?php
