@@ -30,11 +30,11 @@
                 <?php
                 if (isset($recuerdo) && $recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
                 ?>
-                    <a href="modificarDatosPersonaRelacionada.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>"><button type="button" class="btn btn-success btn-sm">+</button></a>
+                    <a href="modificarDatosPersonaRelacionada.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>"><button type="button" class="btn btn-success btn-sm btn-icon"><i class="fa-solid fa-plus"></i></button></a>
                 <?php
                 } else {
                 ?>
-                    <a href="modificarDatosPersonaRelacionada.php"><button type="button" class="btn btn-success btn-sm">+</button></a>
+                    <a href="modificarDatosPersonaRelacionada.php"><button type="button" class="btn btn-success btn-sm btn-icon"><i class="fa-solid fa-plus"></i></button></a>
                 <?php
                 }
                 ?>

@@ -27,7 +27,7 @@
 
         <div class="row mb-2">
             <div class="col-12 justify-content-end d-flex">
-                <a href="modificarDatosRecuerdo.php"><button type="button" class="btn btn-success btn-sm">+</button></a>
+                <a href="modificarDatosRecuerdo.php"><button type="button" class="btn btn-success btn-sm btn-icon"><i class="fa-solid fa-plus"></i></button></a>
             </div>
         </div>
 

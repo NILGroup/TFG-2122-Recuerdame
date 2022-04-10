@@ -45,7 +45,7 @@
             <hr class="lineaTitulo">
         </div>
 
-        <form action="gestor.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>" method="POST">
+        <form action="gestor.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>" method="POST" enctype="multipart/form-data">
             <div>
                 <div class="row form-group justify-content-between">
                     <div class="row col-sm-6 col-md-6 col-lg-6">
@@ -166,7 +166,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 justify-content-end d-flex p-2">
-                        <a aria-disabled="true" href="modificarDatosPersonaRelacionada.php?ventanaDesde=<?php echo($desdeModificar) ?>" class="pe-2"><button type="button" class="btn btn-success btn-sm" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>>+</button></a>
+                        <a aria-disabled="true" href="modificarDatosPersonaRelacionada.php?ventanaDesde=<?php echo($desdeModificar) ?>" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
                         <?php
                         if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
                         ?>
@@ -222,10 +222,27 @@
                     <hr class="lineaTitulo">
                 </div>
 
-                <section class="droparea">
-                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                    <p><small>Arrastrar y soltar</small></p>
-                </section>
+                <div class="row">
+                    <div class="col-12 justify-content-end d-flex p-2 image-upload">
+                        <label for="browse" class="pe-2">
+                            <button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled'; ?>>
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                            </button>
+                        </label>
+                        <input type="file" id="browse" name="browse" style="display: none">
+                        <?php
+                        if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
+                        ?>
+                            <a href="" class="pe-2" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>><button type="button" class="btn btn-success btn-sm">Añadir existente</button></a>
+                        <?php } else { ?>
+                            <a href="" class="pe-2"><button type="button" class="btn btn-success btn-sm" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>>Añadir existente</button></a>
+                        <?php } ?>
+                    </div>
+                </div>
+
+                <div class="form-group files">
+                    <input type="file" name="file" class="form-control" multiple>
+                </div>
 
                 <div>
                     <button type="submit" name="guardarRecuerdo" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>

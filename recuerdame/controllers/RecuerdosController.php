@@ -27,16 +27,17 @@ class RecuerdosController{
     /**
      * Crea o modifica un recuerdo
      */
-    public function guardarRecuerdo($recuerdo) {
+    public function guardarRecuerdo($recuerdo, $listaFicheros) {
         $idRecuerdo = null;
         if ($recuerdo->getIdRecuerdo() == null) {
-            $idRecuerdo = $this->recuerdoDao->nuevoRecuerdo($recuerdo);
+            $idRecuerdo = $this->recuerdoDao->nuevoRecuerdo($recuerdo, $listaFicheros);
         } else {
             $idRecuerdo = $this->recuerdoDao->modificarRecuerdo($recuerdo);
         }
 
         return $idRecuerdo;
     }
+
 
     /**
      * Elimina el registro de un recuerdo
@@ -62,6 +63,13 @@ class RecuerdosController{
      */
     public function getListaMultimediaRecuerdo($idRecuerdo) {
         return $this->recuerdoDao->getListaMultimediaRecuerdo($idRecuerdo);
+    }
+
+    /**
+     * Registra un nuevo fichero multimedia y lo asigna a un recuerdo
+     */
+    public function guardarMultimedia($idRecuerdo, $listaFicheros) {
+        $this->recuerdoDao->nuevoMultimedia($idRecuerdo, $listaFicheros);
     }
 
     /**

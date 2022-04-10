@@ -96,9 +96,9 @@
             </div>
 
             <div class="row">
-                <div class="col-12 justify-content-end d-flex"> 
-                        <a href="modificarDatosRecuerdo.php"><button type="button" class="btn btn-outline-dark">+</button>
-                        <a href="modificarDatosRecuerdo.php"><button type="button" class="btn btn-outline-dark">Añadir existente</button>
+                <div class="col-12 justify-content-end d-flex p-2"> 
+                        <a href="modificarDatosRecuerdo.php" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon"><i class="fa-solid fa-plus"></i></button>
+                        <a href="modificarDatosRecuerdo.php" class="pe-2"><button type="button" class="btn btn-success btn-sm">Añadir existente</button>
                     </a>   
                 </div>
             </div>
@@ -152,8 +152,8 @@
 
             <div class="row">
                 <div class="col-12 justify-content-end d-flex">
-                        <a href=""><i class="fa-solid fa-cloud-arrow-up"></i>
-                        <a href=""><button type="button" class="btn btn-outline-dark">Añadir existente</button>
+                        <a href="" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon"><i class="fa-solid fa-cloud-arrow-up"></i></button></a>
+                        <a href="" class="pe-2"><button type="button" class="btn btn-success btn-sm">Añadir existente</button>
                     </a>   
                 </div>
             </div>

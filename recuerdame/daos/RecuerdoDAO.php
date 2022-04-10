@@ -206,6 +206,46 @@ class RecuerdoDAO
     }
 
     /**
+     * Crea un nuevo archivo multimedia y lo asigna a un recuerdo.
+     */
+    public function nuevoMultimedia($idRecuerdo, $listaFicheros)
+    {
+        try {
+            $conexion = $this->db->getConexion();
+            $conexion->begin_transaction();
+
+            foreach ($listaFicheros as $fichero) {
+                $consultaSQL = "INSERT INTO multimedia (id_multimedia, nombre, fichero) 
+                            VALUES (?, ?, ?);";
+                $stmt = $conexion->prepare($consultaSQL);
+                $stmt->execute(array(
+                    NULL,
+                    $fichero,
+                    $fichero
+                ));
+
+                $idMultimedia = $conexion->insert_id;
+
+                $consultaSQL = "INSERT INTO recuerdo_multimedia (id_recuerdo, id_multimedia) 
+                            VALUES (?, ?);";
+                $stmtr = $conexion->prepare($consultaSQL);
+                $stmtr->execute(array(
+                    $idRecuerdo,
+                    $idMultimedia
+                ));
+            }
+            $conexion->commit();
+            $stmt->close();
+            $stmtr->close();
+
+        } catch (Exception $e) {
+            $conexion->rollback();
+        }
+
+        return $idMultimedia;
+    }
+
+    /**
      * Crea una nueva persona relacionada y la asigna a un recuerdo.
      */
     public function nuevaPersonaRelacionada($idRecuerdo, $personaRelacionada)
