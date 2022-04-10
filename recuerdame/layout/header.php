@@ -25,7 +25,7 @@
             <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+            <a class="nav-link" href="login.php"><i class="fa-solid fa-right-from-bracket"></i></a>
           </li>
         </ul>
       </div>

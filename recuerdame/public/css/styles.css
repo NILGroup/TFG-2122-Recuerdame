@@ -28,12 +28,12 @@
     padding: 0px 20px;
     margin-bottom: 3%;
 }
-.header{
-    background-color: #fef9e7 !important;
+.header {
+    background-color: #0e1b2c !important;
 }
 
-.footer{
-    background-color: #fef9e7 !important;
+.footer {
+    background-color: #0e1b2c !important;
     bottom: 0;
     width: 100%;
 }
@@ -178,3 +178,11 @@ border-color: rgb(9, 146, 135);
     text-align: right;
     margin-bottom: 10px;
  }
+
+.navbar-light .navbar-nav .nav-link {
+    color: #7AB5C6;
+}
+
+.p-2 {
+    color: #7AB5C6;
+}
