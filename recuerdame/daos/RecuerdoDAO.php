@@ -246,6 +246,16 @@ class RecuerdoDAO
     }
 
     /**
+     * Elimina la relación de un archivo multimedia con un recuerdo.
+     */
+    public function eliminarMultimedia($idRecuerdo, $idMultimedia)
+    {
+        $conexion = $this->db->getConexion();
+        $conexion->query("DELETE FROM recuerdo_multimedia WHERE id_recuerdo = $idRecuerdo AND id_multimedia = $idMultimedia")
+            or die($conexion->error);
+    }
+
+    /**
      * Crea una nueva persona relacionada y la asigna a un recuerdo.
      */
     public function nuevaPersonaRelacionada($idRecuerdo, $personaRelacionada)

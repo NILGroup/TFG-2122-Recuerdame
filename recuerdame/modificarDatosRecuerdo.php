@@ -2,11 +2,14 @@
 
 <head>
     <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <link rel="stylesheet" type="text/css" href="public/css/styles.css">
-    <script src="public/js/general.js" defer></script>
+
+    <link rel="stylesheet" href="public/dropzone/dropzone.min.css">
+
     <meta charset="utf-8" />
     <title>Recuerdame</title>
 </head>
@@ -17,6 +20,7 @@
     <?php include "controllers/RecuerdosController.php" ?>
     <?php include "controllers/ComunesController.php" ?>
     <?php include "controllers/PersonasRelacionadasController.php" ?>
+    <?php include "modalImagen.php" ?>
 
     <div class="container-fluid">
         <?php
@@ -31,7 +35,7 @@
         $idRecuerdo = null;
         if ($recuerdo->getIdRecuerdo() != null) {
             $idRecuerdo = $recuerdo->getIdRecuerdo();
-            $desdeModificar = "modificarDatosRecuerdo.php?idRecuerdo=".$idRecuerdo;
+            $desdeModificar = "modificarDatosRecuerdo.php?idRecuerdo=" . $idRecuerdo;
         }
         $comunesController = new ComunesController();
         $listaEstados = $comunesController->getListaEstados();
@@ -45,7 +49,9 @@
             <hr class="lineaTitulo">
         </div>
 
-        <form action="gestor.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>" method="POST" enctype="multipart/form-data">
+        <form action="gestor.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>" method="POST">
+            <!--<form id="dropzoneForm" class="dropzone" action="upload.php">-->
+            <input hidden id="idDropzone" value="<?php echo $idRecuerdo ?>">
             <div>
                 <div class="row form-group justify-content-between">
                     <div class="row col-sm-6 col-md-6 col-lg-6">
@@ -166,7 +172,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 justify-content-end d-flex p-2">
-                        <a aria-disabled="true" href="modificarDatosPersonaRelacionada.php?ventanaDesde=<?php echo($desdeModificar) ?>" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
+                        <a aria-disabled="true" href="modificarDatosPersonaRelacionada.php?ventanaDesde=<?php echo ($desdeModificar) ?>" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
                         <?php
                         if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
                         ?>
@@ -200,12 +206,12 @@
                             ?>
                                 <tr>
                                     <th scope="row"><?php echo $i ?></th>
-                                    <td><a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada'])?>&ventanaDesde=<?php echo($desdeModificar) ?>"><?php echo ($row['nombre']) ?></a></td>
+                                    <td><a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&ventanaDesde=<?php echo ($desdeModificar) ?>"><?php echo ($row['nombre']) ?></a></td>
                                     <td><?php echo ($row["apellidos"]) ?></td>
                                     <td><?php echo ($row["nombreTipoRelacion"]) ?></td>
                                     <td class="tableActions">
-                                        <a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada'])?>&ventanaDesde=<?php echo($desdeModificar) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
-                                        <a href="modificarDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&ventanaDesde=<?php echo($desdeModificar) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
+                                        <a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&ventanaDesde=<?php echo ($desdeModificar) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
+                                        <a href="modificarDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&ventanaDesde=<?php echo ($desdeModificar) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
                                         <a ref="#" data-href="gestor.php?accion=eliminarPersonaRelacionadaRecuerdo&idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&idRecuerdo=<?php echo ($idRecuerdo) ?>" data-toggle="modal" data-target="#confirm-delete"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
                                     </td>
                                 </tr>
@@ -222,30 +228,38 @@
                     <hr class="lineaTitulo">
                 </div>
 
-                <div class="row">
-                    <div class="col-12 justify-content-end d-flex p-2 image-upload">
-                        <label for="browse" class="pe-2">
-                            <button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled'; ?>>
-                                <i class="fa-solid fa-cloud-arrow-up"></i>
-                            </button>
-                        </label>
-                        <input type="file" id="browse" name="browse" style="display: none">
-                        <?php
-                        if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
-                        ?>
-                            <a href="" class="pe-2" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>><button type="button" class="btn btn-success btn-sm">Añadir existente</button></a>
-                        <?php } else { ?>
-                            <a href="" class="pe-2"><button type="button" class="btn btn-success btn-sm" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>>Añadir existente</button></a>
-                        <?php } ?>
+                <div class="dropzone dropzone-previews dropzone-custom" id="mydropzone">
+                    <div class="dz-message text-muted" data-dz-message>
+                        <span>Click aquí o arrastrar y soltar</span>
                     </div>
+                    <!--<h3 class="dz-drop-title"> Drop files here or </h3>
+                    <p class="dz-clicker"> <span> Browse File </span> </p>
+                    <div class="fallback">
+                        <input name="file[]" type="file" multiple />
+                    </div>-->
                 </div>
 
-                <div class="form-group files">
-                    <input type="file" name="file" class="form-control" multiple>
+                <div id="showMultimedia" class="row pb-2">
+                    <?php
+                    $listaMultimedia = array();
+                    if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
+                        $listaMultimedia = $recuerdosController->getListaMultimediaRecuerdo($idRecuerdo);
+                    }
+                    foreach ($listaMultimedia as $multimedia) {
+                    ?>
+                        <div class="col-sm-4 p-2">
+                            <div class="img-wrap">
+                                <a href="gestor.php?eliminarMultimediaRecuerdo&idRecuerdo=<?php echo $idRecuerdo ?>&idMultimedia=<?php echo $multimedia['id_multimedia'] ?>" id="clear"><i class="fa-solid fa-circle-xmark text-danger fa-lg"></i></a>
+                                <a href="#" class="visualizarImagen"><img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive-sm card-img-top img-thumbnail multimedia-icon"></a>
+                            </div>
+                        </div>
+                    <?php
+                    }
+                    ?>
                 </div>
 
                 <div>
-                    <button type="submit" name="guardarRecuerdo" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
+                    <button type="submit" id="submit-all" name="guardarRecuerdo" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
                     <a href="listadoRecuerdos.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
                 </div>
             </div>
@@ -254,5 +268,7 @@
     <?php include "layout/footer.php" ?>
 
 </body>
+<script src="public/dropzone/dropzone.min.js"></script>
+<script src="public/js/general.js"></script>
 
 </html>

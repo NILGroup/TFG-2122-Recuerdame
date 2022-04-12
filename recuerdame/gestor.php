@@ -28,36 +28,41 @@ if (isset($_POST['guardarRecuerdo'])) {
     $recuerdo->setPuntuacion($puntuacion);
 
     $recuerdosController = new RecuerdosController();
-    $idRecuerdo = $recuerdosController->guardarRecuerdo($recuerdo, $listaFicheros);
-
+    $idRecuerdo = $recuerdosController->guardarRecuerdo($recuerdo);
+    /*
     // Procesado de ficheros multimedia
     $listaFicheros = array();
-    if (isset($_FILES['file'])) {
+    if (!empty($_FILES)) {
         $errors = array();
+        
         $file_name = $_FILES['file']['name'];
-        $file_size = $_FILES['file']['size'];
         $file_tmp = $_FILES['file']['tmp_name'];
-        $file_type = $_FILES['file']['type'];
-        $file_ext = strtolower(end(explode('.', $file_name)));
-
-        $extensions = array("jpeg", "jpg", "png");
-
-        if (in_array($file_ext, $extensions) === false) {
-            $errors[] = "extension not allowed, please choose a JPEG or PNG file.";
-        }
-
-        if ($file_size > 2097152) {
-            $errors[] = 'File size must be excately 2 MB';
-        }
+        $location = $_FILES['file']['tmp_name'];
+        $folder_name = 'archivos/' . $file_name;
 
         if (empty($errors) == true) {
             array_push($listaFicheros, $file_name);
             $recuerdosController->guardarMultimedia($idRecuerdo, $listaFicheros);
-            move_uploaded_file($file_tmp, "archivos/" . $file_name);
+            move_uploaded_file($file_tmp, $folder_name);
         }
-    }
+    }*/
 
     header("Location: verDatosRecuerdo.php?idRecuerdo=$idRecuerdo");
+} else if (isset($_GET['getMultimediaRecuerdoList'])) {
+    $idRecuerdo = $_GET['idRecuerdo'];
+
+    $recuerdosController = new RecuerdosController();
+    $recuerdosController->getListaMultimediaRecuerdo($idRecuerdo);
+
+} else if (isset($_GET['eliminarMultimediaRecuerdo'])) {
+    include("controllers/RecuerdosController.php");
+    $idRecuerdo = $_GET['idRecuerdo'];
+    $idMultimedia = $_GET['idMultimedia'];
+
+    $recuerdosController = new RecuerdosController();
+    $recuerdosController->eliminarMultimedia($idRecuerdo, $idMultimedia);
+
+    header("Location: modificarDatosRecuerdo.php?idRecuerdo=$idRecuerdo");
 } else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarRecuerdo') {
     include("controllers/RecuerdosController.php");
 
@@ -235,8 +240,6 @@ if (isset($_POST['guardarRecuerdo'])) {
     $barreras = $_POST['barreras'];
     $facilitadores = $_POST['facilitadores'];
     $idUsuario = $_GET['idUsuario'];
-    echo "<script> console.log('Usuario: " . $idUsuario . "'); </script>";
-    echo "<script> console.log('Usuario: " . $_GET['idUsuario'] . "'); </script>";
 
     $sesion = new Sesion();
     $sesion->setIdSesion($idSesion);
