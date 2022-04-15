@@ -17,7 +17,7 @@
 <body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "controllers/PersonasRelacionadasController.php" ?>
+    <?php include "controllers/MultimediaController.php" ?>
 
     <div class="container-fluid">
         <?php
@@ -27,28 +27,26 @@
         }
         ?>
         <div class="pt-4 pb-2">
-            <h5 class="text-muted">Listado de personas relacionadas</h5>
+            <h5 class="text-muted">Listado de archivos multimedia</h5>
             <hr class="lineaTitulo">
         </div>
-        <form action="gestor.php?accion=guardarPersonaRelacionadaRecuerdo&idRecuerdo=<?php echo ($idRecuerdo) ?>" method="POST">
+        <form action="gestor.php?accion=guardarMultimediaRecuerdo&idRecuerdo=<?php echo ($idRecuerdo) ?>" method="POST">
             <div>
                 <table class="table table-bordered recuerdameTable">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Nombre</th>
-                            <th scope="col">Apellidos</th>
-                            <th scope="col">Tipo de relación/parentesco</th>
+                            <th scope="col">Fichero</th>
                             <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                        $personasRelacionadasController = new PersonasRelacionadasController();
+                        $multimediaController = new MultimediaController();
+                        $lista = array();
                         if (isset($idRecuerdo) && $idRecuerdo != null) {
-                            $lista = $personasRelacionadasController->getListaPersonasRelacionadasRecuerdoAnadir($idRecuerdo);
-                        } else {
-                            $lista = $personasRelacionadasController->getListaPersonasRelacionadas();
+                            $lista = $multimediaController->getListaMultimediaRecuerdoAnadir($idRecuerdo);
                         }
 
                         $i = 1;
@@ -57,10 +55,9 @@
                             <tr>
                                 <th scope="row"><?php echo $i ?></th>
                                 <td><?php echo ($row['nombre']) ?></td>
-                                <td><?php echo ($row["apellidos"]) ?></td>
-                                <td><?php echo ($row["nombreTipoRelacion"]) ?></td>
+                                <td><?php echo ($row["fichero"]) ?></td>
                                 <td class="tableActions">
-                                    <input class="form-check-input" type="checkbox" value="<?php echo ($row['idPersonaRelacionada']) ?>" name="checkPersonaRelacionada[]" id="checkPersonaRelacionada<?php echo ($row['idPersonaRelacionada']) ?>" <?php if (isset($row['id_recuerdo']) && $row['id_recuerdo'] == $idRecuerdo) echo 'checked="checked" '; ?>>
+                                    <input class="form-check-input" type="checkbox" value="<?php echo ($row['idMultimedia']) ?>" name="checkMultimedia[]" id="checkMultimedia<?php echo ($row['idMultimedia']) ?>" <?php if (isset($row['id_recuerdo']) && $row['id_recuerdo'] != null) echo 'checked="checked" '; ?>>
                                 </td>
                             </tr>
                         <?php

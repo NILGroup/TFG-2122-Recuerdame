@@ -23,7 +23,6 @@
             if (!empty($_GET['idSesion'])) {
                 $sesionesController = new SesionesController();
                 $sesion = $sesionesController->verSesion($_GET['idSesion']);
-                echo "<script> console.log('Usuario: " . $sesion->getIdUsuario() . "'); </script>";
             } else {
                 $sesion = new Sesion();
                 $sesion->setIdUsuario(1);

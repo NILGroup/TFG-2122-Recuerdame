@@ -246,6 +246,40 @@ class RecuerdoDAO
     }
 
     /**
+     * Asigna una lista de archivos multimedia existentes al recuerdo.
+     */
+    public function anadirMultimedia($idRecuerdo, $listaMultimedia) 
+    {
+        try {
+            $conexion = $this->db->getConexion();
+            $conexion->begin_transaction();
+
+            // Se borran todos los archivos multimedia del recuerdo para después actualizarlas
+            $conexion->query("DELETE FROM recuerdo_multimedia WHERE id_recuerdo = $idRecuerdo")
+            or die($conexion->error);
+
+            foreach ($listaMultimedia as $idMultimedia) {
+                // Se busca si ya existe la relación entre el archivo y el recuerdo
+                $row = $conexion->query("SELECT * FROM recuerdo_multimedia WHERE id_recuerdo = $idRecuerdo AND id_multimedia = $idMultimedia")
+                             or die($conexion->error);
+                
+                // Si no existe, se crea
+                if ($row->num_rows == 0){
+                    $consultaSQL = "INSERT INTO recuerdo_multimedia (id_recuerdo, id_multimedia) 
+                    VALUES (".$idRecuerdo.", ".$idMultimedia.");";
+
+                    $conexion->query($consultaSQL) or die($conexion->error);
+                }
+            }
+
+            $conexion->commit();
+
+        } catch (Exception $e) {
+            $conexion->rollback();
+        }
+    }
+
+    /**
      * Elimina la relación de un archivo multimedia con un recuerdo.
      */
     public function eliminarMultimedia($idRecuerdo, $idMultimedia)

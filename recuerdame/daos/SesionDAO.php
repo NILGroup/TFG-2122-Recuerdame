@@ -78,7 +78,6 @@ class SesionDAO{
 
     public function modificarSesion($sesion) 
     {
-        echo "<script> console.log('Usuario: " . $sesion->getIdUsuario() . "'); </script>";
         $conexion = $this->db->getConexion();
         $consultaSQL = "UPDATE sesion 
                         SET fecha = ?, id_etapa = ?, objetivo = ?, descripcion = ?, barreras = ?, 

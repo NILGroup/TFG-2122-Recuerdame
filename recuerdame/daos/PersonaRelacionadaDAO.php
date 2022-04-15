@@ -90,12 +90,12 @@ class PersonaRelacionadaDAO
     {
         $conexion = $this->db->getConexion();
         $row = $conexion->query("SELECT p.id_persona_relacionada AS idPersonaRelacionada,
-                p.nombre, p.apellidos, t.nombre AS nombreTipoRelacion, rp.id_recuerdo
-                FROM persona_relacionada p
-                LEFT JOIN recuerdo_persona_relacionada rp ON rp.id_persona_relacionada = p.id_persona_relacionada
-                LEFT JOIN tipo_relacion t ON t.id_tipo_relacion = p.id_tipo_relacion
-                WHERE p.id_paciente = $idPaciente
-                AND (rp.id_recuerdo = $idRecuerdo OR rp.id_recuerdo IS NULL)")
+        p.nombre, p.apellidos, t.nombre AS nombreTipoRelacion,
+        (SELECT rp.id_recuerdo FROM recuerdo_persona_relacionada rp 
+        WHERE rp.id_persona_relacionada = p.id_persona_relacionada AND rp.id_recuerdo = $idRecuerdo) AS id_recuerdo
+        FROM persona_relacionada p
+        LEFT JOIN tipo_relacion t ON t.id_tipo_relacion = p.id_tipo_relacion
+        AND p.id_paciente = $idPaciente")
             or die($conexion->error);
 
         $listaPersonasRelacionadas = array();

@@ -73,6 +73,14 @@ class RecuerdosController{
     }
 
     /**
+     * Actualiza la lista de archivos multimedia que están asignados al recuerdo.
+     * Asigna la lista de archivos multimedia que se pasa por parámetro y se borran los demás archivos
+     */
+    public function anadirMultimedia($idRecuerdo, $listaMultimedia) {
+        $this->recuerdoDao->anadirMultimedia($idRecuerdo, $listaMultimedia);
+    }
+
+    /**
      * Elimina un archivo multimedia de un recuerdo
      */
     public function eliminarMultimedia($idRecuerdo, $listaFicheros) {

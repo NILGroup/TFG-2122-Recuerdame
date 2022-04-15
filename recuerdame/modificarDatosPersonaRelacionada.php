@@ -43,8 +43,6 @@
             $action = "gestor.php?idPersonaRelacionada=" . $idPersonaRelacionada . "&ventanaDesde=" . $ventanaDesde;
         }
 
-        echo $ventanaDesde;
-
         $comunesController = new ComunesController();
         $listaTiposRelacion = $comunesController->getListaTiposRelacion();
         

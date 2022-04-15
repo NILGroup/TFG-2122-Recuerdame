@@ -224,7 +224,7 @@ border-color: rgb(9, 146, 135);
     float:left;
 }
     
-.img-wrap #clear {
+.img-wrap .clear {
     position: absolute;
     top: 4px;
     right: -6px;

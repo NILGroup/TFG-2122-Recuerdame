@@ -50,8 +50,7 @@
         </div>
 
         <form action="gestor.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>" method="POST">
-            <!--<form id="dropzoneForm" class="dropzone" action="upload.php">-->
-            <input hidden id="idDropzone" value="<?php echo $idRecuerdo ?>">
+            <input hidden id="idRecuerdo" value="<?php echo $idRecuerdo ?>">
             <div>
                 <div class="row form-group justify-content-between">
                     <div class="row col-sm-6 col-md-6 col-lg-6">
@@ -212,7 +211,7 @@
                                     <td class="tableActions">
                                         <a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&ventanaDesde=<?php echo ($desdeModificar) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
                                         <a href="modificarDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&ventanaDesde=<?php echo ($desdeModificar) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
-                                        <a ref="#" data-href="gestor.php?accion=eliminarPersonaRelacionadaRecuerdo&idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&idRecuerdo=<?php echo ($idRecuerdo) ?>" data-toggle="modal" data-target="#confirm-delete"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
+                                        <a href="gestor.php?accion=eliminarPersonaRelacionadaRecuerdo&idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>&idRecuerdo=<?php echo ($idRecuerdo) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
                                     </td>
                                 </tr>
                             <?php
@@ -228,15 +227,20 @@
                     <hr class="lineaTitulo">
                 </div>
 
+                <div class="row">
+                    <div class="col-12 justify-content-end d-flex p-2">
+                        <?php
+                        if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
+                        ?>
+                            <a href="listadoMultimediaRecuerdo.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>" class="pe-2" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>><button type="button" class="btn btn-success btn-sm">Añadir existente</button></a>
+                        <?php } ?>
+                    </div>
+                </div>
+
                 <div class="dropzone dropzone-previews dropzone-custom" id="mydropzone">
                     <div class="dz-message text-muted" data-dz-message>
                         <span>Click aquí o arrastrar y soltar</span>
                     </div>
-                    <!--<h3 class="dz-drop-title"> Drop files here or </h3>
-                    <p class="dz-clicker"> <span> Browse File </span> </p>
-                    <div class="fallback">
-                        <input name="file[]" type="file" multiple />
-                    </div>-->
                 </div>
 
                 <div id="showMultimedia" class="row pb-2">
@@ -249,7 +253,7 @@
                     ?>
                         <div class="col-sm-4 p-2">
                             <div class="img-wrap">
-                                <a href="gestor.php?eliminarMultimediaRecuerdo&idRecuerdo=<?php echo $idRecuerdo ?>&idMultimedia=<?php echo $multimedia['id_multimedia'] ?>" id="clear"><i class="fa-solid fa-circle-xmark text-danger fa-lg"></i></a>
+                                <a href="gestor.php?eliminarMultimediaRecuerdo&idRecuerdo=<?php echo $idRecuerdo ?>&idMultimedia=<?php echo $multimedia['id_multimedia'] ?>" class="clear"><i class="fa-solid fa-circle-xmark text-danger fa-lg"></i></a>
                                 <a href="#" class="visualizarImagen"><img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive-sm card-img-top img-thumbnail multimedia-icon"></a>
                             </div>
                         </div>
@@ -269,6 +273,6 @@
 
 </body>
 <script src="public/dropzone/dropzone.min.js"></script>
-<script src="public/js/general.js"></script>
+<script src="public/js/dropzoneImagenes.js"></script>
 
 </html>
