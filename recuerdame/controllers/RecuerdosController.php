@@ -58,6 +58,14 @@ class RecuerdosController{
         return $listaSesiones;
     }
 
+     /**
+     * Lista de las recuerdos relacionados con una sesion. Se buscan las que están relacionadas con el recuerdo
+     * para indicarlo en la pantalla
+     */
+    public function getListaRecuerdosRelacionadosSesionAnadir($idRecuerdo) {
+        return $this->recuerdoDao->getListaRecuerdosRelacionadasSesionAnadir(1, $idRecuerdo);
+    }
+
     /**
      * Lista de archivos multimedia de un recuerdo
      */

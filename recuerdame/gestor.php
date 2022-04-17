@@ -264,4 +264,26 @@ if (isset($_POST['guardarRecuerdo'])) {
     $sesionesController->eliminarSesion($idSesion);
 
     header("Location: listadoSesiones.php");
+
+
+
+
+
+    
+}else if (isset($_GET['accion']) && $_GET['accion'] == 'guardarRecuerdoRelacionadoSesion') {
+    include("controllers/RecuerdosController.php");
+
+    $idRecuerdo = $_GET['idRecuerdo'];
+
+    $listaRecuerdos = array();
+    if (isset($_POST['checkRecuerdoRelacionado']) && isset($idRecuerdo)) {
+        foreach ($_POST['checkRecuerdoRelacionado'] as $value) {
+            array_push($listaRecuerdos, $value);
+        }
+    }
+
+    $recuerdosController = new RecuerdosController();
+    $recuerdosController->anadirRecuerdoRelacionado($idRecuerdo, $listaRecuerdos);
+
+    header("Location: modificarDatosRecuerdo.php?idRecuerdo=$idRecuerdo");
 }

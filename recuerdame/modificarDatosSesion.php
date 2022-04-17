@@ -96,8 +96,8 @@
 
             <div class="row">
                 <div class="col-12 justify-content-end d-flex p-2"> 
-                        <a href="modificarDatosRecuerdo.php" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon"><i class="fa-solid fa-plus"></i></button>
-                        <a href="modificarDatosRecuerdo.php" class="pe-2"><button type="button" class="btn btn-success btn-sm">Añadir existente</button>
+                        <a href="listadoRecuerdosRelacionadosSesion.php" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon"><i class="fa-solid fa-plus"></i></button>
+                        <a href="listadoRecuerdosRelacionadosSesion.php" class="pe-2"><button type="button" class="btn btn-success btn-sm">Añadir existente</button>
                     </a>   
                 </div>
             </div>
