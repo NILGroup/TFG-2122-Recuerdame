@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\controllers",
+    "\\daos",
     "\\models",
-    "\\public"
+    "\\public",
+    "\\public\\js"
   ],
-  "SelectedNode": "\\models\\sesion.php",
+  "SelectedNode": "\\public\\js\\general.js",
   "PreviewInSolutionExplorer": false
 }
