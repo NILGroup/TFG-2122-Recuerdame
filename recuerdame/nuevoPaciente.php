@@ -42,11 +42,11 @@
         <form class="row g-3" action="gestor.php?accion=guardarPaciente&idPaciente=<?php echo ($paciente->getIdPaciente()) ?>" method="POST">
                 <div class="col-md-3">
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name= "nombre" required>
+                    <input type="text" class="form-control" id="nombre" name= "nombre" placeholder= "Nombre..."required>
                 </div>
                 <div class="col-md-3">
                     <label for="apellidos" class="form-label">Apellidos</label>
-                    <input type="apellidos" class="form-control" id="apellidos" name= "apellidos" required>
+                    <input type="apellidos" class="form-control" id="apellidos" name= "apellidos"  placeholder="Apellidos..."required>
                 </div>
                 <div class="col-md-3">
                     <label for="genero" class="form-label">Género</label>
@@ -71,11 +71,11 @@
                 </div>
                 <div class="col-3">
                     <label for="residencia" class="form-label">Tipo de residencia</label>
-                    <input type="text" class="form-control" id="residencia" name = "residencia"  required>
+                    <input type="text" class="form-control" id="residencia" name = "residencia"  placeholder= "Tipo de residencia..."required>
                 </div>
                 <div class="col-3">
                     <label for="casa" class="form-label">Residencia actual</label>
-                    <input type="text" class="form-control" id="casa" name = "casa"  required>
+                    <input type="text" class="form-control" id="casa" name = "casa" placeholder="Residencia actual..." required>
                 </div>
                 </div>
                 <div class= "col-12">

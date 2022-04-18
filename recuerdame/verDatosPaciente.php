@@ -100,6 +100,8 @@
                         <input type="text" disabled class="form-control form-control-sm" id="nombre" value="<?php echo ($paciente->getResidenciaActual()) ?>">
                     </div>
                 </div>
+
+                <a href="listadoPacientes.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
             </div>
         </div>
     </div>

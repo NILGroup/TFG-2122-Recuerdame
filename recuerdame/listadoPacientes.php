@@ -65,7 +65,11 @@
                             <th scope="row"><?php echo $i ?></th>
                             <td><a href="verDatosPaciente.php?idPaciente=<?php echo ($row['id_paciente']) ?>"> <?php echo ($row['nombre']) ?></a></td>
                             <td><?php echo ($row['apellidos']) ?></td>
-                            <td><?php echo ($row["genero"]) ?></td>
+                            <td><?php 
+                                if($row["genero"] == 'H') echo 'Hombre';
+                                else if($row["genero"] == 'M')) echo 'Mujer'; 
+                                else echo '-----------';
+                            ?></td>
                             <td><?php 
                                 $fecha_nacimiento = new DateTime ($row['fecha_nacimiento']);
                                 $hoy = new DateTime();
