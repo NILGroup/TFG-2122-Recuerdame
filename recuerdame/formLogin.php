@@ -1,13 +1,14 @@
 <?php
 	require_once ('configdb.php');
 	require_once ('controllers/UsuarioController.php');
-	/*require_once '/../ModelScripts/GestorUsuarios.php';*/
-	use \controllers\UsuarioController as UC;
-		
-	//$lista = GU::GestorUsuarios();
-	$correo = $_POST['correo'];
-	$pass = $_POST['contrasenia'];
-	$login = UC::comprobarLogin($correo, $contrasenia);
+
+	$lista = new UsuarioController();
+
+	$correo = $_REQUEST['correo'];
+	$pass = $_REQUEST['contrasenia'];
+
+	$login = $lista->comprobarLogin($correo, $pass);
+
 	if($login){
 		echo "true";
 	}
