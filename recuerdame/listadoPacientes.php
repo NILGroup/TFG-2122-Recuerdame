@@ -67,7 +67,7 @@
                             <td><?php echo ($row['apellidos']) ?></td>
                             <td><?php 
                                 if($row["genero"] == 'H') echo 'Hombre';
-                                else if($row["genero"] == 'M')) echo 'Mujer'; 
+                                else if($row["genero"] == 'M') echo 'Mujer'; 
                                 else echo '-----------';
                             ?></td>
                             <td><?php 
