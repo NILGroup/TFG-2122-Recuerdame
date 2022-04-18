@@ -6,8 +6,8 @@ if (isset($_POST['title'])) {
         $titulo = $_POST['title'];
         $descripcion = $_POST['obs'];
         $color = $_POST['color'];
-        $del = $_POST['btnEliminar'];
-        $add = $_POST['btnAccion'];
+    
+        
        
 
         $actividad = new CalendarioModel();
@@ -20,11 +20,11 @@ if (isset($_POST['title'])) {
         
         $calendarioController = new CalendarioController();
         
-        if(isset($add)){
+        if(isset($_POST['btnAccion'])){
             $calendarioController->guardarActividad($actividad);
         }
-        else if(isset($del)){
-         $calendarioController->eliminarActividad($id);
+        else if(isset($_POST['btnEliminar'])){
+            $calendarioController->eliminarActividad($id);
         }
             
         

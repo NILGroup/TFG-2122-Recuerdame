@@ -1,3 +1,4 @@
+
 <html>
 
 <head>
@@ -12,7 +13,7 @@
     <?php include "controllers/PacientesController.php" ?>
     <?php
     $pacientesController = new PacientesController();
-    $paciente = $pacientesController->verPaciente(1);
+    $paciente = $pacientesController->verPaciente($_SESSION['idPaciente']);
     $cumpleanos = new DateTime($paciente->getFechaNacimiento());
     $hoy = new DateTime();
     $edad = $hoy->diff($cumpleanos);
@@ -68,7 +69,7 @@
             </div>
             <div class="row align-items-center pe-4">
                 <div class="col-12">
-                    <?php echo ($paciente->getNombre()) . " " . ($paciente->getApelliods()) ?>
+                    <?php echo ($paciente->getNombre()) . " " . ($paciente->getApellidos()) ?>
                 </div>
             </div>
             <div class="row align-items-center pe-4">

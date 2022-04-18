@@ -4,7 +4,7 @@ class Paciente {
 
     private $idPaciente;
     private $nombre;
-    private $apelliods;
+    private $apellidos;
     private $genero;
     private $lugarNacimiento;
     private $nacionalidad;
@@ -34,13 +34,13 @@ class Paciente {
 
         return $this;
     }
-    public function getApelliods()
+    public function getApellidos()
     {
-        return $this->apelliods;
+        return $this->apellidos;
     }
-    public function setApelliods($apelliods)
+    public function setApellidos($apellidos)
     {
-        $this->apelliods = $apelliods;
+        $this->apellidos = $apellidos;
 
         return $this;
     }

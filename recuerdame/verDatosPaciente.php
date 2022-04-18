@@ -1,3 +1,10 @@
+<?php
+    session_start();
+
+?>
+
+
+
 <html>
 
 <head>
@@ -9,11 +16,12 @@
     <title>Recuerdame</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
+    
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
     <div class="container-fluid row align-items-center h-75">
         <?php
-        $paciente = $pacientesController->verPaciente(1);
+        $paciente = $pacientesController->verPaciente($_GET['idPaciente']);
         ?>
 
         <div class="card p-4 h-75">
@@ -41,7 +49,7 @@
                 <div class="row col-sm-12 col-md-6 col-lg-7">
                     <label for="estado" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-4">Apellidos</label>
                     <div class="col-sm-12 col-md-12 col-lg-8">
-                        <input type="text" disabled class="form-control form-control-sm" id="nombre" value="<?php echo ($paciente->getApelliods()) ?>">
+                        <input type="text" disabled class="form-control form-control-sm" id="nombre" value="<?php echo ($paciente->getApellidos()) ?>">
                     </div>
                 </div>
             </div>

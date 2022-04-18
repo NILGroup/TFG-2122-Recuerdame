@@ -1,5 +1,5 @@
 <?php
-
+    
     require_once('models/CalendarioModel.php');
     require_once('configdb.php');
  
@@ -24,12 +24,12 @@ class ActividadDAO{
         $actividad->setTitulo($i['title']);
         $actividad->setObservaciones($i['description']);
         $actividad->setColor($i['color']);
-       
 
         return $actividad;
     }
 
     public function nuevaActividad($actividad){
+        session_start();
         $conexion = $this->db->getConexion();
         $consultaSQL = "INSERT INTO actividad (id, title, start, description, id_paciente, color)
                         VALUES (?, ?, ?, ?, ?, ?);";       
@@ -39,7 +39,7 @@ class ActividadDAO{
             $actividad->getTitulo(), 
             $actividad->getFecha(),
             $actividad->getObservaciones(),
-            1,
+            $_SESSION['idPaciente'],
             $actividad->getColor()
            ));
 

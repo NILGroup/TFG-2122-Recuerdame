@@ -7,7 +7,8 @@ class CalendarioModel{
     private $fecha;
     private $observaciones;
     private $color;
-    
+    private $idPaciente;
+
     public function __construct(){
     }
     
@@ -45,6 +46,14 @@ class CalendarioModel{
     }
     public function setColor( $color){
         $this->color = $color;
+        return $this;
+    }
+
+    public function getIdPaciente(){
+        return $this->idPaciente;
+    }
+    public function setIdPaciente( $idPaciente){
+        $this->$idPaciente = $idPaciente;
         return $this;
     }
 
