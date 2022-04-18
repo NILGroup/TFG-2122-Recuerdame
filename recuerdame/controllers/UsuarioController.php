@@ -1,8 +1,9 @@
 <?php
-
+	
     require_once('daos/UsuarioDAO.php');
+	use \daos\UsuarioDAO as DU;
 
-class usuarioController{
+class UsuarioController{
     
     private $usuarioDao;
     private $usuario;
@@ -12,19 +13,20 @@ class usuarioController{
 
    
     }
-    public function loginUsuario($correo, $contraseña){
-    $this->usuario = $this->usuarioDao->getUsuarioForLogin($correo);
-        if(usuario != null){
-            if($this->usuario->getContrasenia() == $contrasenia){
-                return true;
-            }
-            else{
-                return false;
-            }
-        }
-        else{
-            return false;
-        }
+    
+	public static function comprobarLogin($correo, $pass){
+		$correoN = htmlspecialchars(trim(strip_tags($correo)));
+	    $passN = htmlspecialchars(trim(strip_tags($pass)));
+	      
+	    //if($this->$dao->usuarioCorrecto($dniN) == 0){
+	    if(DU::usuarioCorrecto($correoN) == 0){
+	        //usuario no correcto, no existe
+	        return false;
+	    }else{
+	        //$login = $this->$dao->compruebaLogin($dniN, $passN);
+	        $login = DU::compruebaLogin($correoN, $passN);
+	        return $login;
+	    }
     }
 }
 

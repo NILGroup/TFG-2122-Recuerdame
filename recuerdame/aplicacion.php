@@ -35,45 +35,45 @@ class Aplicacion {
     }
 
     public function resuelve($path = '') {
-      if (strlen($path) > 0 && $path[0] == '/') {
-        $path = mb_substr($path, 1);
-      }
-      return $this->rutaRaizApp . $path;
+        if (strlen($path) > 0 && $path[0] == '/') {
+            $path = mb_substr($path, 1);
+        }
+        return $this->rutaRaizApp . $path;
     }
 
     public function doInclude($path = '') {
-      if (strlen($path) > 0 && $path[0] == '/') {
-        $path = mb_substr($path, 1);
-      }
-      include($this->dirInstalacion . '/'.$path);
+        if (strlen($path) > 0 && $path[0] == '/') {
+            $path = mb_substr($path, 1);
+        }
+        include($this->dirInstalacion . '/'.$path);
     }
 
-    public function login($user, $nombre, $sexo) {
-      $_SESSION['login'] = true;
-      $_SESSION['correo'] = $user->getCorreo();
-      $_SESSION['contrasenia'] = $user->getContrasenia();
-      //$_SESSION['rol'] = $user->getRol();
+    public function login($user) {
+        $_SESSION['login'] = true;
+        $_SESSION['correo'] = $user->getCorreo();
+        $_SESSION['contrasenia'] = $user->getContrasenia();
+        //$_SESSION['rol'] = $user->getRol();
    
-  }
+    }
 
-  public function logout() {
-    //Doble seguridad: unset + destroy
-    unset($_SESSION["login"]);
-    unset($_SESSION["correo"]);
-    unset($_SESSION["contrasenia"]);
-    //unset($_SESSION["rol"]);
+    public function logout() {
+        //Doble seguridad: unset + destroy
+        unset($_SESSION["login"]);
+        unset($_SESSION["correo"]);
+        unset($_SESSION["contrasenia"]);
+        //unset($_SESSION["rol"]);
   
-    session_destroy();
-    session_start();
-  }
+        session_destroy();
+        session_start();
+    }
 
-  public function usuarioLogueado() {
-    return isset($_SESSION["login"]) && ($_SESSION["login"]===true);
-  }
+    public function usuarioLogueado() {
+        return isset($_SESSION["login"]) && ($_SESSION["login"]===true);
+    }
 
-  public function nombreUsuario() {
-    return isset($_SESSION['nombre']) ? $_SESSION['nombre'] : '';
-  }
+    public function nombreUsuario() {
+        return isset($_SESSION['nombre']) ? $_SESSION['nombre'] : '';
+    }
 /*
   public function tieneRol($rol, $cabeceraError=NULL, $mensajeError=NULL) {
     if (!isset($_SESSION['rol']) || $rol != $_SESSION['rol']) {
@@ -112,4 +112,3 @@ EOF;
     }
 
   }
-?

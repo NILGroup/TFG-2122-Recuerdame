@@ -29,17 +29,19 @@
 		    echo "<script language='JavaScript'>alert('El usuario o la contraseña no son correctos');</script>"; 
 		}
     ?>
-    <section class="form-login">
-        <h5>Login</h5>
-        <input class="controls" type="text" name="correo" value="" placeholder="Correo">
-        <input class="controls" type="password" name="contrasenia" value="" placeholder="Contraseña">
+    <form action="formLogin.php" method="post">
+
+        <section class="form-login">
+            <h5>Login</h5>
+            <input class="controls" type="text" name="correo" value="" placeholder="Correo">
+            <input class="controls" type="password" name="contrasenia" value="" placeholder="Contraseña">
         
-        <div class="center-button">
-            <a href="listadoPacientes.php"><button type="button" class="btn btn-primary btn-sm">Iniciar sesión</button></a>
-        
-        </div>
-        
+            <div class="center-button">
+                <input type="submit" value = "Iniciar sesión" class="btn btn-primary btn-sm"/>
+            </div>
         </section>
+    </form>
+    
     <?php include "layout/footer.php" ?>
 
 </body>

@@ -2,7 +2,7 @@
 
     require_once('configdb.php');
     require_once('models/Usuario.php');
-	use \..\Aplicacion as App;
+	use Aplicacion as App;
 
 class UsuarioDAO{
 
@@ -44,7 +44,7 @@ class UsuarioDAO{
         $usuario->setCorreo($u['correo']);
         $usuario->setContrasenia($u['contrasenia']);
 
-        return $usuario
+        return $usuario;
     }
 
     public static function compruebaLogin($correo, $pass){
@@ -81,12 +81,25 @@ class UsuarioDAO{
 							$sexo = '';
 						}
 						*/
-						$app->login($usuario, $nombre, $sexo);
+						$app->login($usuario);
 						$login=true;
 					}
 				}
 			}
 			return $login;
 		}
+
+    public static function usuarioCorrecto($correo){
+		$app = App::getSingleton();
+		$con = $app->conexionBd();
+		$sql = sprintf("SELECT * FROM usuarios WHERE correo = '$correo'", $con->real_escape_string($correo));
+		    
+		$rs = $con->query($sql) or die ($con->error);
+		if($rs != NULL){
+		    $num_cols = $rs->num_rows;
+		    $rs->free();
+		    return $num_cols;
+		}
+	}
 
 }
