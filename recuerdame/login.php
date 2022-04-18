@@ -22,7 +22,7 @@
         <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
        
         <div class="center-button">
-            <a href="verDatosPaciente.php"><button type="button" class="btn btn-primary btn-sm">Iniciar sesión</button></a>
+            <a href="listadoPacientes.php"><button type="button" class="btn btn-primary btn-sm">Iniciar sesión</button></a>
         
         </div>
         
