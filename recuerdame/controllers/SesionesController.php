@@ -34,6 +34,21 @@ class SesionesController{
     public function eliminarSesion($idSesion) {
         $this->sesionDao->eliminarSesion($idSesion);
     }
+
+    /**
+     * Actualiza la lista de recuerdos que están asignados a la sesión.
+     * Asigna la lista de recuerdos que se pasa por parámetro y se borran las demás relaciones
+     */
+    public function anadirRecuerdos($idSesion, $listaRecuerdos) {
+        $this->sesionDao->anadirRecuerdos($idSesion, $listaRecuerdos);
+    }
+
+    /**
+     * Elimina la relación entre la sesión y un recuerdo
+     */
+    public function eliminarRecuerdo($idSesion, $idRecuerdo) {
+        $this->sesionDao->eliminarRecuerdo($idSesion, $idRecuerdo);
+    }
 }
 
 ?>

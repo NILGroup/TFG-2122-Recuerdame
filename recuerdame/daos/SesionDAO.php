@@ -107,4 +107,48 @@ class SesionDAO{
     
     }
 
+    /**
+     * Asigna una lista de recuerdos existentes a la sesión.
+     */
+    public function anadirRecuerdos($idSesion, $listaRecuerdos) 
+    {
+        try {
+            $conexion = $this->db->getConexion();
+            $conexion->begin_transaction();
+
+            // Se borran todos los recuerdos de la sesió para después actualizarlas
+            $conexion->query("DELETE FROM sesion_recuerdo WHERE id_sesion = $idSesion")
+            or die($conexion->error);
+
+            foreach ($listaRecuerdos as $idRecuerdo) {
+                // Se busca si ya existe la relación entre el recuerdo y la sesión
+                $row = $conexion->query("SELECT * FROM sesion_recuerdo WHERE id_recuerdo = $idRecuerdo AND id_sesion = $idSesion")
+                             or die($conexion->error);
+                
+                // Si no existe, se crea
+                if ($row->num_rows == 0){
+                    $consultaSQL = "INSERT INTO sesion_recuerdo (id_sesion, id_recuerdo) 
+                    VALUES (".$idSesion.", ".$idRecuerdo.");";
+
+                    $conexion->query($consultaSQL) or die($conexion->error);
+                }
+            }
+
+            $conexion->commit();
+
+        } catch (Exception $e) {
+            $conexion->rollback();
+        }
+    }
+
+    /**
+     * Elimina la relación de un recuerdo con una sesión
+     */
+    public function eliminarRecuerdo($idSesion, $idRecuerdo)
+    {
+        $conexion = $this->db->getConexion();
+        $conexion->query("DELETE FROM sesion_recuerdo WHERE id_sesion = $idSesion AND id_recuerdo = $idRecuerdo")
+            or die($conexion->error);
+    }
+
 }

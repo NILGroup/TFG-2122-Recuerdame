@@ -32,23 +32,6 @@ if (isset($_POST['guardarRecuerdo'])) {
 
     $recuerdosController = new RecuerdosController();
     $idRecuerdo = $recuerdosController->guardarRecuerdo($recuerdo);
-    /*
-    // Procesado de ficheros multimedia
-    $listaFicheros = array();
-    if (!empty($_FILES)) {
-        $errors = array();
-        
-        $file_name = $_FILES['file']['name'];
-        $file_tmp = $_FILES['file']['tmp_name'];
-        $location = $_FILES['file']['tmp_name'];
-        $folder_name = 'archivos/' . $file_name;
-
-        if (empty($errors) == true) {
-            array_push($listaFicheros, $file_name);
-            $recuerdosController->guardarMultimedia($idRecuerdo, $listaFicheros);
-            move_uploaded_file($file_tmp, $folder_name);
-        }
-    }*/
 
     header("Location: verDatosRecuerdo.php?idRecuerdo=$idRecuerdo");
 } else if (isset($_GET['getMultimediaRecuerdoList'])) {
@@ -56,6 +39,23 @@ if (isset($_POST['guardarRecuerdo'])) {
 
     $recuerdosController = new RecuerdosController();
     $recuerdosController->getListaMultimediaRecuerdo($idRecuerdo);
+
+} else if (isset($_GET['accion']) && $_GET['accion'] == 'guardarMultimediaRecuerdo') {
+    include("controllers/RecuerdosController.php");
+
+    $idRecuerdo = $_GET['idRecuerdo'];
+    $listaMultimedia = array();
+
+    if (isset($_POST['checkMultimedia']) && isset($idRecuerdo)) {        
+        foreach ($_POST['checkMultimedia'] as $value) {
+            array_push($listaMultimedia, $value);
+        }
+    }
+
+    $recuerdosController = new RecuerdosController();
+    $recuerdosController->anadirMultimedia($idRecuerdo, $listaMultimedia);
+
+    header("Location: modificarDatosRecuerdo.php?idRecuerdo=$idRecuerdo");
 
 } else if (isset($_GET['eliminarMultimediaRecuerdo'])) {
     include("controllers/RecuerdosController.php");
@@ -75,6 +75,18 @@ if (isset($_POST['guardarRecuerdo'])) {
     $recuerdosController->eliminarRecuerdo($idRecuerdo);
 
     header("Location: listadoRecuerdos.php");
+
+} else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarRecuerdoSesion') {
+    include("controllers/SesionesController.php");
+
+    $idRecuerdo = $_GET['idRecuerdo'];
+    $idSesion = $_GET['idSesion'];
+
+    $sesionesController = new SesionesController();
+    $sesionesController->eliminarRecuerdo($idSesion, $idRecuerdo);
+
+    header("Location: modificarDatosSesion.php?idSesion=$idSesion");
+
 } else if (isset($_POST['guardarPersonaRelacionada'])) {
     include("controllers/PersonasRelacionadasController.php");
 
@@ -140,16 +152,16 @@ if (isset($_POST['guardarRecuerdo'])) {
     include("controllers/RecuerdosController.php");
 
     $idRecuerdo = $_GET['idRecuerdo'];
+    $listaPersonasRelacionadas = array();
 
-    if (isset($_POST['checkPersonaRelacionada'])) {
-        $listaPersonasRelacionadas = array();
+    if (isset($_POST['checkPersonaRelacionada']) && isset($idRecuerdo)) {
         foreach ($_POST['checkPersonaRelacionada'] as $value) {
             array_push($listaPersonasRelacionadas, $value);
         }
-
-        $recuerdosController = new RecuerdosController();
-        $recuerdosController->anadirPersonasRelacionadas($idRecuerdo, $listaPersonasRelacionadas);
     }
+
+    $recuerdosController = new RecuerdosController();
+    $recuerdosController->anadirMultimedia($idRecuerdo, $listaMultimedia);
 
     header("Location: modificarDatosRecuerdo.php?idRecuerdo=$idRecuerdo");
 } else if (isset($_POST['guardarInformeSeguimiento'])) {
@@ -258,6 +270,24 @@ if (isset($_POST['guardarRecuerdo'])) {
     $idSesion = $sesionesController->guardarSesion($sesion);
 
     header("Location: verDatosSesion.php?idSesion=$idSesion");
+
+} else if (isset($_GET['accion']) && $_GET['accion'] == 'guardarRecuerdoRelacionadoSesion') {
+    include("controllers/SesionesController.php");
+
+    $idSesion = $_GET['idSesion'];
+    $listaRecuerdos = array();
+
+    if (isset($_POST['checkRecuerdo']) && isset($idSesion)) {
+        foreach ($_POST['checkRecuerdo'] as $value) {
+            array_push($listaRecuerdos, $value);
+        }
+    }
+
+    $sesionesController = new SesionesController();
+    $sesionesController->anadirRecuerdos($idSesion, $listaRecuerdos);
+
+    header("Location: modificarDatosSesion.php?idSesion=$idSesion");
+
 } else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarSesion') {
     include("controllers/SesionesController.php");
 

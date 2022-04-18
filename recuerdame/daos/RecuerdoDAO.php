@@ -186,6 +186,38 @@ class RecuerdoDAO
     }
 
     /**
+     * Listado de las sesiones de un paciente con o sin recuerdo.
+     * Se utiliza en la pantalla de añadir personas relacionadas a un recuerdo
+     * y tiene que mostrar todas las personas relacionadas de un paciente e indicar cuales pertenecen al recuerdo.
+     */
+    public function getListaRecuerdosRelacionadasSesionAnadir($idPaciente, $idSesion)
+    {
+        $conexion = $this->db->getConexion();
+
+        $row = $conexion->query("SELECT r.id_recuerdo AS idRecuerdo,
+        r.fecha, r.nombre, e.nombre AS nombreEtapa,
+        c.nombre AS nombreCategoria, em.nombre AS nombreEmocion, es.nombre AS nombreEstado,
+        et.nombre AS nombreEtiqueta,
+        (SELECT sr.id_sesion FROM sesion_recuerdo sr 
+        WHERE sr.id_recuerdo = r.id_recuerdo AND sr.id_sesion = $idSesion) AS id_sesion
+        FROM recuerdo r
+        LEFT JOIN etapa e ON e.id_etapa = r.id_etapa
+        LEFT JOIN categoria c ON c.id_categoria = r.id_categoria
+        LEFT JOIN emocion em ON em.id_emocion = r.id_emocion
+        LEFT JOIN estado es ON es.id_estado = r.id_estado
+        LEFT JOIN etiqueta et ON et.id_etiqueta = r.id_etiqueta
+        AND r.id_paciente = $idPaciente")
+            or die($conexion->error);
+
+        $listaRecuerdos = array();
+        while ($rows = $row->fetch_assoc()) {
+            $listaRecuerdos[] = $rows;
+        };
+
+        return $listaRecuerdos;
+    }
+
+    /**
      * Lista de los archivos multimedia de un recuerdo.
      */
     public function getListaMultimediaRecuerdo($idRecuerdo)

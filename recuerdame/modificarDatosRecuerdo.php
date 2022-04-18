@@ -39,10 +39,23 @@
         }
 
         $idRecuerdo = null;
+        $desdeModificar = null;
         if ($recuerdo->getIdRecuerdo() != null) {
             $idRecuerdo = $recuerdo->getIdRecuerdo();
             $desdeModificar = "modificarDatosRecuerdo.php?idRecuerdo=" . $idRecuerdo;
         }
+
+        $ventanaDesde = null;
+        if (isset($_GET['ventanaDesde'])) {
+            $ventanaDesde = $_GET['ventanaDesde'];
+            $action = "gestor.php?idRecuerdo=" . $idRecuerdo . "&ventanaDesde=" . $ventanaDesde;
+        }
+
+        $idSesion = null;
+        if (isset($_GET['idSesion'])) {
+            $idSesion = $_GET['idSesion'];
+        }
+
         $comunesController = new ComunesController();
         $listaEstados = $comunesController->getListaEstados();
         $listaEtiquetas = $comunesController->getListaEtiquetas();
@@ -270,7 +283,21 @@
 
                 <div>
                     <button type="submit" id="submit-all" name="guardarRecuerdo" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
-                    <a href="listadoRecuerdos.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <?php
+                    if ($ventanaDesde != null) {
+                    ?>
+                        <a href="<?php echo ($ventanaDesde) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <?php
+                    } else if ($idSesion != null) {
+                    ?>
+                        <a href="modificarDatosSesion.php?idSesion=<?php echo ($idSesion) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <?php
+                    } else {
+                    ?>
+                        <a href="listadoRecuerdos.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </form>

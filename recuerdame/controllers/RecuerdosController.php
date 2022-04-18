@@ -65,6 +65,7 @@ class RecuerdosController{
     public function getListaRecuerdosRelacionadosSesionAnadir($idRecuerdo) {
         return $this->recuerdoDao->getListaRecuerdosRelacionadasSesionAnadir(1, $idRecuerdo);
     }
+    
 
     /**
      * Lista de archivos multimedia de un recuerdo

@@ -26,11 +26,22 @@
     <div class="container-fluid">
         <?php
         $idRecuerdo = null;
-        if (isset($_GET['idRecuerdo'])) {
+        if (isset($_GET['idRecuerdo']) && !empty($_GET['idRecuerdo'])) {
             $idRecuerdo = $_GET['idRecuerdo'];
             $recuerdosController = new RecuerdosController();
             $recuerdo = $recuerdosController->verRecuerdo($idRecuerdo);
         }
+
+        $idSesion = null;
+        if (isset($_GET['idSesion'])) {
+            $idSesion = $_GET['idSesion'];
+        }
+
+        $ventanaDesde = null;
+        if (isset($_GET['ventanaDesde'])) {
+            $ventanaDesde = $_GET['ventanaDesde'];
+        }
+
         $comunesController = new ComunesController();
         $listaEstados = $comunesController->getListaEstados();
         $listaEtiquetas = $comunesController->getListaEtiquetas();
@@ -222,7 +233,21 @@
         </div>
 
         <div>
-            <a href="listadoRecuerdos.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+            <?php
+            if ($ventanaDesde != null) {
+            ?>
+            <a href="<?php echo ($ventanaDesde) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+            <?php
+            } else if ($idSesion != null) {
+            ?>
+                <a href="verDatosSesion.php?idSesion=<?php echo ($idSesion) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+            <?php
+            } else {
+            ?>
+                <a href="listadoRecuerdos.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+            <?php
+            }
+            ?>
         </div>
     </div>
     <?php include "layout/footer.php" ?>
