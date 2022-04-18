@@ -2,6 +2,7 @@
 
     require_once('configdb.php');
     require_once('models/Usuario.php');
+	use \..\Aplicacion as App;
 
 class UsuarioDAO{
 
@@ -45,5 +46,47 @@ class UsuarioDAO{
 
         return $usuario
     }
+
+    public static function compruebaLogin($correo, $pass){
+			$app = App::getSingleton();
+            $con = $app->conexionBd();
+			$sql = sprintf("SELECT * FROM usuario WHERE correo = '$correo'");
+			$rs = $con->query($sql); //or die ($con->error);
+			$login =false;
+			if($rs){
+				while($row = $rs->fetch_assoc()){    
+					//$hash = $row['Pass'];
+					//$key='';  
+				    //$passBd = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, md5($key), base64_decode($hash), MCRYPT_MODE_CBC, md5(md5($key))), "\0");
+
+                    $passBd = $row['contrasenia'];
+
+					if ($pass == $passBd) { 
+						//$usuario = new Usuario($row['IdUsuario'], $row['DNI'], $pass, $row['Rol']);
+						$usuario = new Usuario();
+                        $usuario->setIdUsuario($row['id_usuario']);
+                        $usuario->setNombre($row['nombre']);
+                        $usuario->setApellidos($row['apellidos']);
+                        $usuario->setCorreo($row['correo']);
+                        $usuario->setContrasenia($pass);
+
+                        /*
+						if($row['Rol'] == 'Paciente'){
+							$daoP = new DaoPacientes();
+							$nombre = $daoP->buscaNombrePaciente($row['DNI']);
+							$sexo = $daoP->buscaSexoPaciente($row['DNI']);
+						}elseif ($row['Rol'] == 'Medico') {
+							$daoM = new DaoMedicos();
+							$nombre = $daoM->buscaNombreMedico($row['DNI']);
+							$sexo = '';
+						}
+						*/
+						$app->login($usuario, $nombre, $sexo);
+						$login=true;
+					}
+				}
+			}
+			return $login;
+		}
 
 }

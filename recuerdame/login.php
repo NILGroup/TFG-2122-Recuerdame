@@ -1,4 +1,10 @@
-﻿<html>
+﻿<?php
+	require_once('configdb.php');
+    include "aplicacion.php";
+	use Aplicacion as App;
+?>
+
+<html>
 
 <head>
     <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
@@ -15,12 +21,19 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <?php include "layout/header.php" ?>
+
+    <?php    	
+		$app = App::getSingleton();
+		@$logueado = $_REQUEST['ok'];
+		if($logueado == 'false'){
+		    echo "<script language='JavaScript'>alert('El usuario o la contraseña no son correctos');</script>"; 
+		}
+    ?>
     <section class="form-login">
         <h5>Login</h5>
-        <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
-        <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
-       
+        <input class="controls" type="text" name="correo" value="" placeholder="Correo">
+        <input class="controls" type="password" name="contrasenia" value="" placeholder="Contraseña">
+        
         <div class="center-button">
             <a href="listadoPacientes.php"><button type="button" class="btn btn-primary btn-sm">Iniciar sesión</button></a>
         
