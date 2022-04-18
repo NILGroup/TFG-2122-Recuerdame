@@ -1,4 +1,10 @@
-﻿<html>
+﻿<?php
+    session_start();
+    if(!isset($_SESSION['idPaciente'])){
+        $_SESSION['idPaciente'] = 1;
+    }
+?>
+<html>
 
 <head>
     <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
