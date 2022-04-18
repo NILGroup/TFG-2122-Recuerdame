@@ -1,10 +1,11 @@
 <?php
+    
+ 
     session_start();
+    
+    $_SESSION['idPaciente'] = $_GET['idPaciente'];
 
 ?>
-
-
-
 <html>
 
 <head>
