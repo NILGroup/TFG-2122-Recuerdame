@@ -56,7 +56,8 @@ class RecuerdoDAO
                 LEFT JOIN emocion em ON em.id_emocion = r.id_emocion
                 LEFT JOIN estado es ON es.id_estado = r.id_estado
                 LEFT JOIN etiqueta et ON et.id_etiqueta = r.id_etiqueta
-                WHERE r.id_paciente = '$idPaciente'")
+                WHERE r.id_paciente = '$idPaciente'
+                ORDER BY r.fecha ASC")
             or die($conexion->error);
 
         $listaRecuerdos = array();
@@ -70,15 +71,14 @@ class RecuerdoDAO
     /**
      * Crea un nuevo recuerdo.
      */
-    public function nuevoRecuerdo($recuerdo)
+    public function nuevoRecuerdo($idPaciente, $recuerdo)
     {
         $conexion = $this->db->getConexion();
-        $consultaSQL = "INSERT INTO recuerdo (id_recuerdo, nombre, fecha, descripcion, localizacion,
+        $consultaSQL = "INSERT INTO recuerdo (nombre, fecha, descripcion, localizacion,
                             id_etapa, id_categoria, id_emocion, id_estado, id_etiqueta, puntuacion, id_paciente) 
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
-            NULL,
             $recuerdo->getNombre(),
             $recuerdo->getFecha(),
             $recuerdo->getDescripcion(),
@@ -89,7 +89,7 @@ class RecuerdoDAO
             $recuerdo->getIdEstado(),
             $recuerdo->getIdEtiqueta(),
             $recuerdo->getPuntuacion(),
-            1
+            $idPaciente
         ));
 
         $stmt->close();
@@ -168,14 +168,38 @@ class RecuerdoDAO
     /**
      * Lista de recuerdos de un paciente para mostrar la Historia de Vida.
      */
-    public function getListaRecuerdosHistoriaVida($idPaciente)
+    public function getListaRecuerdosHistoriaVida($idPaciente, $fechaInicio, $fechaFin, $idEtapa, $idCategoria, $idEtiqueta)
     {
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("SELECT *
-                FROM recuerdo r
-                WHERE r.id_paciente = '$idPaciente'
-                ORDER BY r.fecha")
-            or die($conexion->error);
+        $consultaSQL = "SELECT *
+        FROM recuerdo r
+        WHERE r.id_paciente = '$idPaciente'";
+
+        if ($fechaInicio != NULL && !empty($fechaInicio)) {
+            $consultaSQL = $consultaSQL . "AND r.fecha >= '$fechaInicio'";
+        }
+
+        if ($fechaFin != NULL && !empty($fechaFin)) {
+            $consultaSQL = $consultaSQL . "AND r.fecha <= '$fechaFin'";
+        }
+
+        if ($idEtapa != NULL && !empty($idEtapa)) {
+            $consultaSQL = $consultaSQL . "AND r.id_etapa = '$idEtapa'";
+        }
+
+        if ($idCategoria != NULL && !empty($idCategoria)) {
+            $consultaSQL = $consultaSQL . "AND r.id_categoria = '$idCategoria'";
+        }
+
+        if ($idEtiqueta != NULL && !empty($idEtiqueta)) {
+            $consultaSQL = $consultaSQL . "AND r.id_etiqueta = '$idEtiqueta'";
+        }
+
+        if ($idEtiqueta != NULL && !empty($idEtiqueta)) {
+            $consultaSQL = $consultaSQL . "ORDER BY r.fecha";
+        }
+
+        $row = $conexion->query($consultaSQL) or die($conexion->error);
 
         $listaRecuerdosHistoriaVida = array();
         while ($rows = $row->fetch_assoc()) {
@@ -324,7 +348,7 @@ class RecuerdoDAO
     /**
      * Crea una nueva persona relacionada y la asigna a un recuerdo.
      */
-    public function nuevaPersonaRelacionada($idRecuerdo, $personaRelacionada)
+    public function nuevaPersonaRelacionada($idPaciente, $idRecuerdo, $personaRelacionada)
     {
         try {
             $conexion = $this->db->getConexion();
@@ -341,7 +365,7 @@ class RecuerdoDAO
                 $personaRelacionada->getOcupacion(),
                 $personaRelacionada->getEmail(),
                 $personaRelacionada->getIdTipoRelacion(),
-                1
+                $idPaciente
             ));
 
             $idPersonaRelacionada = $conexion->insert_id;

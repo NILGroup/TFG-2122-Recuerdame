@@ -102,4 +102,46 @@ class ComunesDAO
         };
         return $listaTerapeutas;
     }
+
+    public function getEtapa($idEtapa)
+    {
+        $etapa = null;
+        if ($idEtapa != NULL && !empty($idEtapa)) {
+            $conexion = $this->db->getConexion();
+            $row = $conexion->query("SELECT * FROM etapa WHERE id_etapa = $idEtapa")
+                or die($conexion->error);
+
+            $etapa = $row->fetch_assoc();
+        }
+
+        return $etapa;
+    }
+
+    public function getCategoria($idCategoria)
+    {
+        $categoria = null;
+        if ($idCategoria != NULL && !empty($idCategoria)) {
+            $conexion = $this->db->getConexion();
+            $row = $conexion->query("SELECT * FROM categoria WHERE id_categoria = $idCategoria")
+                or die($conexion->error);
+
+            $categoria = $row->fetch_assoc();
+        }
+
+        return $categoria;
+    }
+
+    public function getEtiqueta($idEtiqueta)
+    {
+        $etiqueta = null;
+        if ($idEtiqueta != NULL && !empty($idEtiqueta)) {
+            $conexion = $this->db->getConexion();
+            $row = $conexion->query("SELECT * FROM etiqueta WHERE id_etiqueta = $idEtiqueta")
+                or die($conexion->error);
+
+            $etiqueta = $row->fetch_assoc();
+        }
+
+        return $etiqueta;
+    }
 }

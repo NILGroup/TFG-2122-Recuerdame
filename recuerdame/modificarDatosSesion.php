@@ -8,12 +8,13 @@ if (!isset($_SESSION['idPaciente'])) {
 
 <head>
     <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <link rel="stylesheet" type="text/css" href="public/css/styles.css">
     <meta charset="utf-8" />
-    <script src="public/js/general.js" defer></script>
+    <link rel="stylesheet" href="public/dropzone/dropzone.min.css">
     <title>Recuerdame</title>
 </head>
 
@@ -23,6 +24,7 @@ if (!isset($_SESSION['idPaciente'])) {
     <?php include "controllers/SesionesController.php" ?>
     <?php include "controllers/ComunesController.php" ?>
     <?php include "controllers/RecuerdosController.php" ?>
+    <?php include "modalImagen.php" ?>
 
     <div class="container-fluid">
         <?php
@@ -53,6 +55,7 @@ if (!isset($_SESSION['idPaciente'])) {
         </div>
 
         <form action="gestor.php?idSesion=<?php echo ($sesion->getIdSesion()) ?>&idUsuario=<?php echo ($sesion->getIdUsuario()) ?>" method="POST">
+            <input hidden id="idSesion" value="<?php echo $idSesion ?>">
             <div class="row">
                 <div class="row">
                     <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha<span class="asterisco">*</span></label>
@@ -112,8 +115,10 @@ if (!isset($_SESSION['idPaciente'])) {
                     <?php
                     if ($sesion != null && $sesion->getIdSesion() != null) {
                     ?>
+                        <a aria-disabled="true" href="modificarDatosRecuerdo.php?ventanaDesde=modificarDatosSesion.php&idSesion=<?php echo ($sesion->getIdSesion()) ?>" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($sesion->getIdSesion() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
                         <a href="listadoRecuerdosRelacionadosSesion.php?idSesion=<?php echo ($sesion->getIdSesion()) ?>" class="pe-2" <?php if ($sesion->getIdSesion() == null) echo 'disabled '; ?>><button type="button" class="btn btn-success btn-sm">Añadir existente</button></a>
                     <?php } else { ?>
+                        <a aria-disabled="true" href="modificarDatosRecuerdo.php?ventanaDesde=modificarDatosSesion.php?" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($sesion->getIdSesion() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
                         <a href="listadoRecuerdosRelacionadosSesion.php" class="pe-2"><button type="button" class="btn btn-success btn-sm" <?php if ($sesion->getIdSesion() == null) echo 'disabled '; ?>>Añadir existente</button></a>
                     <?php } ?>
                 </div>
@@ -169,17 +174,39 @@ if (!isset($_SESSION['idPaciente'])) {
             </div>
 
             <div class="row">
-                <div class="col-12 justify-content-end d-flex">
-                    <a href="" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon"><i class="fa-solid fa-cloud-arrow-up"></i></button></a>
-                    <a href="" class="pe-2"><button type="button" class="btn btn-success btn-sm">Añadir existente</button>
-                    </a>
+                <div class="col-12 justify-content-end d-flex p-2">
+                    <?php
+                    if ($sesion != null && $sesion->getIdSesion() != null) {
+                    ?>
+                        <a href="listadoMultimediaSesion.php?idSesion=<?php echo ($sesion->getIdSesion()) ?>" class="pe-2" <?php if ($sesion->getIdSesion() == null) echo 'disabled '; ?>><button type="button" class="btn btn-success btn-sm">Añadir existente</button></a>
+                    <?php } ?>
                 </div>
             </div>
 
-            <section class="droparea">
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-                <p><small>Arrastrar y soltar</small></p>
-            </section>
+            <div class="dropzone dropzone-previews dropzone-custom" id="mydropzone">
+                <div class="dz-message text-muted" data-dz-message>
+                    <span>Click aquí o arrastrar y soltar</span>
+                </div>
+            </div>
+
+            <div id="showMultimedia" class="row pb-2">
+                <?php
+                $listaMultimedia = array();
+                if ($sesion != null && $sesion->getIdSesion() != null) {
+                    $listaMultimedia = $sesionesController->getListaMultimediaSesion($idSesion);
+                }
+                foreach ($listaMultimedia as $multimedia) {
+                ?>
+                    <div class="col-sm-4 p-2">
+                        <div class="img-wrap">
+                            <a href="gestor.php?eliminarMultimediaSesion&idSesion=<?php echo $idSesion ?>&idMultimedia=<?php echo $multimedia['id_multimedia'] ?>" class="clear"><i class="fa-solid fa-circle-xmark text-danger fa-lg"></i></a>
+                            <a href="#" class="visualizarImagen"><img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive-sm card-img-top img-thumbnail multimedia-icon"></a>
+                        </div>
+                    </div>
+                <?php
+                }
+                ?>
+            </div>
 
             <div>
                 <button type="submit" name="guardarSesion" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
@@ -189,5 +216,6 @@ if (!isset($_SESSION['idPaciente'])) {
     </div>
     <?php include "layout/footer.php" ?>
 </body>
-
+<script src="public/dropzone/dropzone.min.js"></script>
+<script src="public/js/sesion.js"></script>
 </html>

@@ -2,6 +2,10 @@
 
     require_once('daos/ComunesDAO.php');
 
+    if (!isset($_SESSION['idPaciente'])) {
+        session_start();
+    }
+
 class ComunesController{
     
     private $comunesDao;
@@ -36,6 +40,18 @@ class ComunesController{
 
     public function getListaTerapeutas() {
         return $this->listaTerapeutas = $this->comunesDao->getListaTerapeutas();
+    }
+
+    public function getEtapa($idEtapa) {
+        return $this->comunesDao->getEtapa($idEtapa);
+    }
+
+    public function getCategoria($idCategoria) {
+        return $this->comunesDao->getCategoria($idCategoria);
+    }
+
+    public function getEtiqueta($idEtiqueta) {
+        return $this->comunesDao->getEtiqueta($idEtiqueta);
     }
 }
 

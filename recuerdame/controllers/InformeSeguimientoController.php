@@ -2,18 +2,21 @@
 
     require_once('daos/InformeSeguimientoDAO.php');
 
+    if (!isset($_SESSION['idPaciente'])) {
+        session_start();
+    }
+
 class InformeSeguimientoController{
 
-    private $listaInformeSeguimiento;
     private $informeSeguimientoDao;
     
     public function __construct() {
         $this->informeSeguimientoDao = new InformeSeguimientoDAO();
-        $this->listaInformeSeguimiento = $this->informeSeguimientoDao->getListaInformeSeguimiento(1);
     }
     
     public function getListaInformeSeguimiento() {
-        return $this->listaInformeSeguimiento;
+        $idPaciente = $_SESSION['idPaciente'];
+        return $this->informeSeguimientoDao->getListaInformeSeguimiento($idPaciente);
     }
 
     public function verInformeSeguimiento($idInforme) {
@@ -21,9 +24,10 @@ class InformeSeguimientoController{
     }
 
     public function guardarInformeSeguimiento($informe) {
+        $idPaciente = $_SESSION['idPaciente'];
         $idInforme = null;
         if ($informe->getIdEvaluacion() == null) {
-            $idInforme = $this->informeSeguimientoDao->nuevoInformeSeguimiento($informe);
+            $idInforme = $this->informeSeguimientoDao->nuevoInformeSeguimiento($idPaciente, $informe);
         } else {
             $idInforme = $this->informeSeguimientoDao->modificarInformeSeguimiento($informe);
         }

@@ -40,7 +40,7 @@ class InformeSeguimientoDAO
         return $informe;
     }
 
-    public function nuevoInformeSeguimiento($informe)
+    public function nuevoInformeSeguimiento($idPaciente, $informe)
     {
         $conexion = $this->db->getConexion();
         $consultaSQL = "INSERT INTO evaluacion (id_evaluacion, fecha, gds, gds_fecha, mental, mental_fecha, cdr, cdr_fecha,
@@ -61,7 +61,7 @@ class InformeSeguimientoDAO
             $informe->getNombreEscala(),
             $informe->getEscala(),
             $informe->getFechaEscala(),
-            1
+            $idPaciente
         ));
 
         $stmt->close();
@@ -107,7 +107,8 @@ class InformeSeguimientoDAO
         $conexion = $this->db->getConexion();
         $row = $conexion->query("SELECT i.id_evaluacion AS idInforme, i.fecha, i.diagnostico
             FROM evaluacion i
-            WHERE i.id_paciente = '$idPaciente'")
+            WHERE i.id_paciente = '$idPaciente'
+            ORDER BY i.fecha ASC")
             or die($conexion->error);
 
         $listaInformes = array();

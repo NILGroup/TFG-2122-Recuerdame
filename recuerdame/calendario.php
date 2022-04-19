@@ -59,8 +59,8 @@
                     <label for="obs" class="form-label">Observaciones</label>
                 </div>
                     <div class="modal-footer">
-                        <input type="submit" id="btnEliminar" name="btnEliminar" value="Eliminar actividad">
-                        <input type="submit"  id="btnAccion" name="btnAccion">
+                        <input type="submit" id="btnEliminar" name="btnEliminar" value="Eliminar actividad" class="btn btn-outline-primary btn-sm">
+                        <input type="submit"  id="btnAccion" name="btnAccion" class="btn btn-outline-primary btn-sm">
                     </div>
            </form>
             

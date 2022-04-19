@@ -33,19 +33,19 @@
             <hr class="lineaTitulo">
         </div>
 
-        <form action="gestor.php?historiaVida=libro" method="POST">
+        <form action="historiaVidaLibro.php" method="POST">
             <div class="row p-2">
                 <div class="row col-sm-6 col-md-6 col-lg-6">
                     <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha de inicio</label>
                     <div class="col-sm-9 col-md-6 col-lg-4">
-                        <input type="date" class="form-control form-control-sm" id="fecha" value="<?php echo (date('Y-m-d')) ?>">
+                        <input type="date" class="form-control form-control-sm" id="fechaInicio" name="fechaInicio" value="<?php echo (date('Y-m-d')) ?>">
                     </div>
                 </div>
 
                 <div class="row col-sm-6 col-md-6 col-lg-6">
                     <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha de fin</label>
                     <div class="col-sm-9 col-md-6 col-lg-4">
-                        <input type="date" class="form-control form-control-sm" id="fecha" value="<?php echo (date('Y-m-d')) ?>">
+                        <input type="date" class="form-control form-control-sm" id="fechaFin" name="fechaFin" value="<?php echo (date('Y-m-d')) ?>">
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
             <div class="row">
                 <label for="etapa" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Etapa de la vida</label>
                 <div class="col-sm-3 col-md-3 col-lg-2">
-                    <select class="form-select form-select-sm" id="id_etapa" name="id_etapa">
+                    <select class="form-select form-select-sm" id="idEtapa" name="idEtapa">
                         <option></option>
                         <?php
                         foreach ($listaEtapas as $row) {
@@ -69,7 +69,7 @@
             <div class="row">
                 <label for="etapa" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Categoría</label>
                 <div class="col-sm-3 col-md-3 col-lg-2">
-                    <select class="form-select form-select-sm" id="id_categoria" name="id_categoria">
+                    <select class="form-select form-select-sm" id="idCategoria" name="idCategoria">
                         <option></option>
                         <?php
                         foreach ($listaCategorias as $row) {
@@ -100,7 +100,7 @@
 
             <div>
                 <button type="submit" name="generarLibro" value="Generar libro" class="btn btn-outline-primary btn-sm">Generar libro</button>
-                <button type="submit" name="generarPdf" formaction="gestor.php?historiaVida=pdf&idPaciente=1" value="Generar PDF" class="btn btn-outline-primary btn-sm">Generar PDF</button>
+                <button type="submit" name="generarPdf" formaction="generarPDFHistoriaVida.php" value="Generar PDF" class="btn btn-outline-primary btn-sm">Generar PDF</button>
             </div>
         </form>
     </div>

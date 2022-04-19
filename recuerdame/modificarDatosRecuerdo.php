@@ -13,9 +13,7 @@
     <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <link rel="stylesheet" type="text/css" href="public/css/styles.css">
-
     <link rel="stylesheet" href="public/dropzone/dropzone.min.css">
-
     <meta charset="utf-8" />
     <title>Recuerdame</title>
 </head>
@@ -45,15 +43,22 @@
             $desdeModificar = "modificarDatosRecuerdo.php?idRecuerdo=" . $idRecuerdo;
         }
 
+        $idRecuerdo = $recuerdo->getIdRecuerdo();
+        $action = "gestor.php?idRecuerdo=" . $idRecuerdo;
+        if (isset($_GET['idSesion'])) {
+            $action = "gestor.php?idRecuerdo=" . $idRecuerdo . "&idSesion=" . $_GET['idSesion'];
+        }
+
         $ventanaDesde = null;
         if (isset($_GET['ventanaDesde'])) {
             $ventanaDesde = $_GET['ventanaDesde'];
-            $action = "gestor.php?idRecuerdo=" . $idRecuerdo . "&ventanaDesde=" . $ventanaDesde;
+            $action = $action . "&ventanaDesde=" . $ventanaDesde;
         }
 
         $idSesion = null;
         if (isset($_GET['idSesion'])) {
             $idSesion = $_GET['idSesion'];
+            $action = $action . "&idSesion=" . $idSesion;
         }
 
         $comunesController = new ComunesController();
@@ -68,7 +73,7 @@
             <hr class="lineaTitulo">
         </div>
 
-        <form action="gestor.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>" method="POST">
+        <form action="<?php echo ($action) ?>" method="POST">
             <input hidden id="idRecuerdo" value="<?php echo $idRecuerdo ?>">
             <div>
                 <div class="row form-group justify-content-between">
@@ -190,12 +195,13 @@
                 </div>
                 <div class="row">
                     <div class="col-12 justify-content-end d-flex p-2">
-                        <a aria-disabled="true" href="modificarDatosPersonaRelacionada.php?ventanaDesde=<?php echo ($desdeModificar) ?>" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
                         <?php
                         if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
                         ?>
+                            <a aria-disabled="true" href="modificarDatosPersonaRelacionada.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>&ventanaDesde=modificarDatosRecuerdo.php" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
                             <a href="listadoPersonasRelacionadasRecuerdo.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>" class="pe-2" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>><button type="button" class="btn btn-success btn-sm">Añadir existente</button></a>
                         <?php } else { ?>
+                            <a aria-disabled="true" href="modificarDatosPersonaRelacionada.php?ventanaDesde=modificarDatosRecuerdos.php" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
                             <a href="listadoPersonasRelacionadasRecuerdo.php" class="pe-2"><button type="button" class="btn btn-success btn-sm" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>>Añadir existente</button></a>
                         <?php } ?>
                     </div>
@@ -306,6 +312,6 @@
 
 </body>
 <script src="public/dropzone/dropzone.min.js"></script>
-<script src="public/js/dropzoneImagenes.js"></script>
+<script src="public/js/recuerdo.js"></script>
 
 </html>

@@ -35,7 +35,7 @@ class MultimediaDAO
     /**
      * Listado de todos los ficheros multimedia.
      */
-    public function getListaMultimedia($idMultimedia)
+    public function getListaMultimedia()
     {
         $conexion = $this->db->getConexion();
         $row = $conexion->query("SELECT * FROM multimedia") or die($conexion->error);
@@ -60,6 +60,29 @@ class MultimediaDAO
                 m.nombre, m.fichero,
                 (SELECT rm.id_recuerdo FROM recuerdo_multimedia rm
                 WHERE rm.id_multimedia = m.id_multimedia AND rm.id_recuerdo = $idRecuerdo) AS id_recuerdo
+                FROM multimedia m")
+            or die($conexion->error);
+
+        $listaMultimedia = array();
+        while ($rows = $row->fetch_assoc()) {
+            $listaMultimedia[] = $rows;
+        };
+
+        return $listaMultimedia;
+    }
+
+    /**
+     * Listado de los archivos multimedia de la aplicación con o sin sesión.
+     * Se utiliza en la pantalla de añadir archivos multimedia a una sesión
+     * y tiene que mostrar todos los archivos de la aplicación e indicar cuales pertenecen a la sesión.
+     */
+    public function getListaMultimediaSesionAnadir($idSesion)
+    {
+        $conexion = $this->db->getConexion();
+        $row = $conexion->query("SELECT m.id_multimedia AS idMultimedia,
+                m.nombre, m.fichero,
+                (SELECT sm.id_sesion FROM sesion_multimedia sm
+                WHERE sm.id_multimedia = m.id_multimedia AND sm.id_sesion = $idSesion) AS id_sesion
                 FROM multimedia m")
             or die($conexion->error);
 

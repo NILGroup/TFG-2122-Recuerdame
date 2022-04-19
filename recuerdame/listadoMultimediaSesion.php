@@ -27,16 +27,16 @@ if (!isset($_SESSION['idPaciente'])) {
 
     <div class="container-fluid">
         <?php
-        $idRecuerdo = null;
-        if (isset($_GET['idRecuerdo']) && !empty($_GET['idRecuerdo'])) {
-            $idRecuerdo = $_GET['idRecuerdo'];
+        $idSesion = null;
+        if (isset($_GET['idSesion']) && !empty($_GET['idSesion'])) {
+            $idSesion = $_GET['idSesion'];
         }
         ?>
         <div class="pt-4 pb-2">
             <h5 class="text-muted">Listado de archivos multimedia</h5>
             <hr class="lineaTitulo">
         </div>
-        <form action="gestor.php?accion=guardarMultimediaRecuerdo&idRecuerdo=<?php echo ($idRecuerdo) ?>" method="POST">
+        <form action="gestor.php?accion=guardarMultimediaSesion&idSesion=<?php echo ($idSesion) ?>" method="POST">
             <div>
                 <table class="table table-bordered recuerdameTable">
                     <thead>
@@ -51,8 +51,8 @@ if (!isset($_SESSION['idPaciente'])) {
                         <?php
                         $multimediaController = new MultimediaController();
                         $lista = array();
-                        if (isset($idRecuerdo) && $idRecuerdo != null) {
-                            $lista = $multimediaController->getListaMultimediaRecuerdoAnadir($idRecuerdo);
+                        if (isset($idSesion) && $idSesion != null) {
+                            $lista = $multimediaController->getListaMultimediaSesionAnadir($idSesion);
                         }
 
                         $i = 1;
@@ -63,7 +63,7 @@ if (!isset($_SESSION['idPaciente'])) {
                                 <td><?php echo ($row['nombre']) ?></td>
                                 <td><?php echo ($row["fichero"]) ?></td>
                                 <td class="tableActions">
-                                    <input class="form-check-input" type="checkbox" value="<?php echo ($row['idMultimedia']) ?>" name="checkMultimedia[]" id="checkMultimedia<?php echo ($row['idMultimedia']) ?>" <?php if (isset($row['id_recuerdo']) && $row['id_recuerdo'] != null) echo 'checked="checked" '; ?>>
+                                    <input class="form-check-input" type="checkbox" value="<?php echo ($row['idMultimedia']) ?>" name="checkMultimedia[]" id="checkMultimedia<?php echo ($row['idMultimedia']) ?>" <?php if (isset($row['id_sesion']) && $row['id_sesion'] != null) echo 'checked="checked" '; ?>>
                                 </td>
                             </tr>
                         <?php
@@ -77,13 +77,13 @@ if (!isset($_SESSION['idPaciente'])) {
             <div>
                 <button type="submit" name="guardar" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
                 <?php
-                if ($idRecuerdo != null) {
+                if ($idSesion != null) {
                 ?>
-                    <a href="modificarDatosRecuerdo.php?idRecuerdo=<?php echo ($idRecuerdo) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <a href="modificarDatosSesion.php?idSesion=<?php echo ($idSesion) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
                 <?php
                 } else {
                 ?>
-                    <a href="modificarDatosRecuerdo.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <a href="modificarDatosSesion.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
                 <?php
                 }
                 ?>

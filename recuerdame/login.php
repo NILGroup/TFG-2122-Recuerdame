@@ -15,20 +15,25 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <?php include "layout/header.php" ?>
-    <section class="form-login">
-        <h5>Login</h5>
-        <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
-        <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
-       
-        <div class="center-button">
-            <a href="listadoPacientes.php"><button type="button" class="btn btn-primary btn-sm">Iniciar sesión</button></a>
-        
-        </div>
-        
-        </section>
-    <?php include "layout/footer.php" ?>
+    <form action="gestor.php" method="POST">
+        <div class="card form-login">
+            <img src="public/img/Marca_recuerdame.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Login</h5>
+                <div class="row mb-3">
+                    <input class="form-control" type="text" name="usuario" value="" placeholder="Usuario">
+                </div>
 
+                <div class="row mb-3">
+                    <input class="form-control" type="password" name="contrasena" value="" placeholder="Contraseña">
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="submit" name="login" class="btn btn-primary btn-sm">Iniciar sesión</button>
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 
 </html>

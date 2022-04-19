@@ -103,7 +103,7 @@ class PacienteDAO
 
         $stmt->close();
 
-        return $recuerdo->getIdPaciente();
+        return $paciente->getIdPaciente();
     }
 
     /**

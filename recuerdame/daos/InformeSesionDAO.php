@@ -74,7 +74,9 @@ class InformeSesionDAO
         $conexion = $this->db->getConexion();
         $row = $conexion->query("SELECT s.id_sesion AS idInforme, s.respuesta, s.observaciones,  s.fecha_finalizada
             FROM sesion s
-            WHERE s.fecha_finalizada IS NOT NULL")
+            WHERE s.fecha_finalizada IS NOT NULL
+            AND id_paciente = $idPaciente
+            ORDER BY s.fecha ASC")
             or die($conexion->error);
 
         $listaInformes = array();

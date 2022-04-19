@@ -11,7 +11,7 @@ class ActividadDAO{
         $this->db = new Configdb();
     }
     
-    public function getActividad($idIActividad) {
+    public function getActividad($idActividad) {
         $conexion = $this->db->getConexion();
         $row = $conexion->query("SELECT * FROM actividad WHERE id = '$idActividad'")
             or die ($conexion->error);

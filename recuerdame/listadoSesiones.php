@@ -63,6 +63,13 @@
                             <td class="tableActions">
                                 <a href="verDatosSesion.php?idSesion=<?php echo ($row['idSesion']) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
                                 <a href="modificarDatosSesion.php?idSesion=<?php echo ($row['idSesion']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
+
+                                <?php if ($row['fecha_finalizada'] != null) { ?>
+                                    <a href="verDatosInformeSesion.php?idInforme=<?php echo ($row['idSesion']) ?>"><i class="fa-solid fa-file-circle-check text-success tableIcon"></i></a>
+                                <?php } else { ?>
+                                    <a href="modificarDatosInformeSesion.php?idInforme=<?php echo ($row['idSesion']) ?>"><i class="fa-solid fa-file-circle-check text-success tableIcon"></i></a>
+                                <?php } ?>
+
                                 <a href="gestor.php?accion=eliminarSesion&idSesion=<?php echo ($row['idSesion']) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
                             </td>
                         </tr>

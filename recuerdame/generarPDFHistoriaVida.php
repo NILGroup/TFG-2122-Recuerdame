@@ -1,5 +1,6 @@
 <?php
 require('./public/fpdf184/fpdf.php');
+include "controllers/HistoriaVidaController.php";
 include "controllers/RecuerdosController.php";
 include "controllers/PacientesController.php";
 
@@ -34,6 +35,7 @@ class PDF extends FPDF{
 }
 
 function writeRecuerdos($pdf, $listadoRecuerdos){
+    $recuerdosController = new RecuerdosController();
 
     foreach($listadoRecuerdos as $row) {
         $pdf->SetFont('Times','B',12);
@@ -43,6 +45,13 @@ function writeRecuerdos($pdf, $listadoRecuerdos){
         $pdf->SetFont('Times','',12);
         $pdf->MultiCell(0,7,iconv('UTF-8', 'windows-1252', $row['descripcion']));
         $pdf->Ln();
+
+        $listaMultimedia = $recuerdosController->getListaMultimediaRecuerdo($row['id_recuerdo']);
+        foreach ($listaMultimedia as $multimedia) {
+            $image = "archivos/" . $multimedia['fichero'];
+            $pdf->MultiCell(0,35,$pdf->Image($image, $pdf->GetX(), $pdf->GetY(), 40));
+            $pdf->Ln();
+        }
     }
 }
 
@@ -89,9 +98,16 @@ function pdfBody($pdf, $paciente, $listadoRecuerdos){
 }
 
 $pacientesController = new PacientesController();
-$paciente = $pacientesController->verPaciente(1);
-$recuerdosController = new RecuerdosController();
-$listadoRecuerdos = $recuerdosController->getListaRecuerdos(1);
+$idPaciente = $_SESSION['idPaciente'];
+$paciente = $pacientesController->verPaciente($idPaciente);
+$fechaInicio = $_POST['fechaInicio'];
+$fechaFin = $_POST['fechaFin'];
+$idEtapa = $_POST['idEtapa'];
+$idCategoria = $_POST['idCategoria'];
+$idEtiqueta = $_POST['idEtiqueta'];
+
+$historiaVidaController = new HistoriaVidaController();
+$listadoRecuerdos = $historiaVidaController->generarLibro($fechaInicio, $fechaFin, $idEtapa, $idCategoria, $idEtiqueta);
 
 $pdf = new PDF();
 $pdf->AliasNbPages();

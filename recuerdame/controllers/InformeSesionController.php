@@ -2,19 +2,21 @@
 
     require_once('daos/InformeSesionDAO.php');
 
+    if (!isset($_SESSION['idPaciente'])) {
+        session_start();
+    }
+
 class InformeSesionController{
     
-    private $listaInformeSesion;
     private $informeSesionDao;
     
     public function __construct() {
         $this->informeSesionDao = new InformeSesionDAO();
-        $this->listaInformeSesion = $this->informeSesionDao->getListaInformeSesion(1);
-        
     }
 
     public function getListaInformeSesion() {
-        return $this->listaInformeSesion;
+        $idPaciente = $_SESSION['idPaciente'];
+        return $this->informeSesionDao->getListaInformeSesion($idPaciente);
     }
 
     public function verInformeSesion($idInforme) {

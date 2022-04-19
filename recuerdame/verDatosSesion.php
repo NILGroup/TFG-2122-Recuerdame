@@ -8,12 +8,13 @@ if (!isset($_SESSION['idPaciente'])) {
 
 <head>
     <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <link rel="stylesheet" type="text/css" href="public/css/styles.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script src="public/js/general.js" defer></script>
+    <link rel="stylesheet" href="public/dropzone/dropzone.min.css">
     <title>Recuerdame</title>
 </head>
 
@@ -23,6 +24,7 @@ if (!isset($_SESSION['idPaciente'])) {
     <?php include "controllers/SesionesController.php" ?>
     <?php include "controllers/ComunesController.php" ?>
     <?php include "controllers/RecuerdosController.php" ?>
+    <?php include "modalImagen.php" ?>
 
     <div class="container-fluid">
         <?php
@@ -42,6 +44,7 @@ if (!isset($_SESSION['idPaciente'])) {
         </div>
 
         <div class="row">
+        <input hidden id="idSesion" value="<?php echo $idSesion ?>">
             <div class="row">
                 <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha:</label>
                 <div class="col-sm-9 col-md-6 col-lg-2">
@@ -144,18 +147,31 @@ if (!isset($_SESSION['idPaciente'])) {
             <hr class="lineaTitulo">
         </div>
 
-        <section class="droparea">
-            <i class="fa-solid fa-cloud-arrow-up"></i>
-            <p><small>Arrastrar y soltar</small></p>
-        </section>
+        <div class="row pb-2">
+            <?php
+            $listaMultimedia = array();
+            if ($sesion != null && $sesion->getIdSesion() != null) {
+                $listaMultimedia = $sesionesController->getListaMultimediaSesion($idSesion);
+            }
+            foreach ($listaMultimedia as $multimedia) {
+            ?>
+
+                <div class="col-sm-4">
+                    <a href="#" class="visualizarImagen"><img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive-sm card-img-top img-thumbnail multimedia-icon"></a>
+                </div>
+
+            <?php
+            }
+            ?>
+        </div>
 
         <div>
             <a href="listadoSesiones.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
-            <a href="modificarDatosInformeSesion.php?idInforme=<?php echo ($sesion->getIdSesion()) ?>"><button type="button" class="btn btn-primary btn-sm">Finalizar la sesion</button></a>
         </div>
     </div>
     <?php include "layout/footer.php" ?>
 
 </body>
-
+<script src="public/dropzone/dropzone.min.js"></script>
+<script src="public/js/sesion.js"></script>
 </html>

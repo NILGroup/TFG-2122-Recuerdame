@@ -2,6 +2,10 @@
 
     require_once('daos/MultimediaDAO.php');
 
+    if (!isset($_SESSION['idPaciente'])) {
+        session_start();
+    }
+
 class MultimediaController{
 
     private $multimediaDao;
@@ -16,6 +20,14 @@ class MultimediaController{
      */
     public function getListaMultimediaRecuerdoAnadir($idRecuerdo) {
         return $this->multimediaDao->getListaMultimediaRecuerdoAnadir($idRecuerdo);
+    }
+
+    /**
+     * Lista de los ficheros multimedia de toda la aplicación. Se buscan las que están relacionadas con la sesión
+     * para indicarlo en la pantalla
+     */
+    public function getListaMultimediaSesionAnadir($idSesion) {
+        return $this->multimediaDao->getListaMultimediaSesionAnadir($idSesion);
     }
 }
 

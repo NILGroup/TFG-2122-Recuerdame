@@ -1,8 +1,8 @@
 <?php
-    session_start();
-    if(!isset($_SESSION['idPaciente'])){
-        $_SESSION['idPaciente'] = 1;
-    }
+session_start();
+if (!isset($_SESSION['idPaciente'])) {
+    $_SESSION['idPaciente'] = 1;
+}
 ?>
 <html>
 
@@ -21,64 +21,104 @@
     <?php include "layout/nav.php" ?>
     <?php include "controllers/historiaVidacontroller.php" ?>
     <?php include "controllers/recuerdosController.php" ?>
+    <?php include "controllers/comunesController.php" ?>
 
     <div class="container-fluid vh-100">
         <?php
         $recuerdosController = new RecuerdosController();
+        $comunesController = new ComunesController();
+
+        $fechaInicio = $_POST['fechaInicio'];
+        $fechaFin = $_POST['fechaFin'];
+        $idEtapa = $_POST['idEtapa'];
+        $idCategoria = $_POST['idCategoria'];
+        $idEtiqueta = $_POST['idEtiqueta'];
+
         $historiaVidaController = new HistoriaVidaController();
-        $listaRecuerdos = $historiaVidaController->generarLibro();
+        $listaRecuerdos = $historiaVidaController->generarLibro($fechaInicio, $fechaFin, $idEtapa, $idCategoria, $idEtiqueta);
+        $etapa = $comunesController->getEtapa($idEtapa);
+        $categoria = $comunesController->getCategoria($idCategoria);
+        $etiqueta = $comunesController->getEtiqueta($idEtiqueta);
         ?>
 
-        <div id="carouselPrincipal" class="carousel carousel-dark slide" data-bs-interval="false" data-bs-ride="carousel">
-
+        <?php
+        if ($listaRecuerdos == null || empty($listaRecuerdos)) {
+        ?>
             <div class="carousel-inner container pt-4 pb-4">
                 <div class="hv-box p-4">
+                    <span class="align-middle text-muted">No se han encontrado recuerdos para esos filtros.</span>
+                </div>
+            </div>
+        <?php
+        } else {
+        ?>
+            <div id="carouselPrincipal" class="carousel carousel-dark slide" data-bs-interval="false" data-bs-ride="carousel">
 
-                    <?php
-                    $i = 1;
-                    foreach ($listaRecuerdos as $recuerdo) {
-                    ?>
-                        <?php $item_class = ($i == 1) ? 'carousel-item active' : 'carousel-item'; ?>
-                        <div class="<?php echo $item_class; ?>">
-                            <div class="d-block w-100">
-                                <div class="">
-                                    <h5 class="text-center text-muted"><?php echo $recuerdo['nombre'] ?></h5>
-                                    <p><?php echo nl2br($recuerdo['descripcion']) ?></p>
+                <div class="carousel-inner container pt-4 pb-4">
+                    <div class="hv-box p-4">
 
-                                    <div class="testimonial-group">
-                                        <div class="row text-center flex-nowrap">
-                                            <?php
-                                            $listaMultimedia = $recuerdosController->getListaMultimediaRecuerdo($recuerdo['id_recuerdo']);
-                                            foreach ($listaMultimedia as $multimedia) {
-                                            ?>
-                                                <div class="col-sm-4">
-                                                    <img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive card-img-top img-thumbnail" alt="<?php $multimedia['nombre'] ?>" />
-                                                    <div>
-                                                        <h5><?php echo $multimedia['nombre'] ?></h5>
+                        <?php
+                        $i = 1;
+                        foreach ($listaRecuerdos as $recuerdo) {
+                        ?>
+                            <?php $item_class = ($i == 1) ? 'carousel-item active' : 'carousel-item'; ?>
+                            <div class="<?php echo $item_class; ?>">
+                                <div class="d-block w-100">
+                                    <div class="">
+                                        <h5 class="text-center text-muted"><?php echo $recuerdo['nombre'] ?></h5>
+                                        <p><?php echo nl2br($recuerdo['descripcion']) ?></p>
+
+                                        <div class="testimonial-group">
+                                            <div class="row text-center flex-nowrap">
+                                                <?php
+                                                $listaMultimedia = $recuerdosController->getListaMultimediaRecuerdo($recuerdo['id_recuerdo']);
+                                                foreach ($listaMultimedia as $multimedia) {
+                                                ?>
+                                                    <div class="col-sm-4">
+                                                        <img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive card-img-top img-thumbnail" alt="<?php $multimedia['nombre'] ?>" />
+                                                        <div>
+                                                            <h5><?php echo $multimedia['nombre'] ?></h5>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            <?php
-                                            }
-                                            ?>
+                                                <?php
+                                                }
+                                                ?>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php
-                        $i++;
-                    }
-                    ?>
+                        <?php
+                            $i++;
+                        }
+                        ?>
+                    </div>
                 </div>
+                <button class="carousel-control-prev hv-control" data-bs-target="#carouselPrincipal" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next hv-control" data-bs-target="#carouselPrincipal" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev hv-control" data-bs-target="#carouselPrincipal" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next hv-control" data-bs-target="#carouselPrincipal" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </button>
+        <?php
+        }
+        ?>
+
+        <div class="text-center pb-2">
+            <span class="text-muted">Fecha: <?php echo (date("d/m/Y", strtotime($fechaInicio))) ?> - <?php echo (date("d/m/Y", strtotime($fechaFin))) ?>
+                <?php if (isset($etapa)) { ?>
+                    , Etapa: <?php echo ($etapa['nombre']) ?>
+                <?php } ?>
+                <?php if (isset($categoria)) { ?>
+                    , Categoría: <?php echo ($categoria['nombre']) ?>
+                <?php } ?>
+                <?php if (isset($etiqueta)) { ?>
+                    , Etiqueta: <?php echo ($etiqueta['nombre']) ?>
+                <?php } ?>
+            </span>
         </div>
         <div class="text-center">
             <a href="historiaVida.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>

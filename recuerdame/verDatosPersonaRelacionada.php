@@ -109,7 +109,7 @@
             <?php
             if ($ventanaDesde != null) {
             ?>
-            <a href="<?php echo ($ventanaDesde) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+            <a href="<?php echo ($ventanaDesde) ?>?idRecuerdo=<?php echo($idRecuerdo) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
             <?php
             } else if ($idRecuerdo != null) {
             ?>

@@ -32,21 +32,22 @@
             $personaRelacionada = new PersonaRelacionada();
         }
 
+        $idPersonaRelacionada = $personaRelacionada->getIdPersonaRelacionada();
+
         $idRecuerdo = null;
         if (isset($_GET['idRecuerdo'])) {
             $idRecuerdo = $_GET['idRecuerdo'];
         }
 
-        $idPersonaRelacionada = $personaRelacionada->getIdPersonaRelacionada();
         $action = "gestor.php?idPersonaRelacionada=" . $idPersonaRelacionada;
         if (isset($_GET['idRecuerdo'])) {
-            $action = "gestor.php?idPersonaRelacionada=" . $idPersonaRelacionada . "&idRecuerdo=" . $_GET['idRecuerdo'] . "&" . $ventanaDesde;
+            $action = "gestor.php?idPersonaRelacionada=" . $idPersonaRelacionada . "&idRecuerdo=" . $_GET['idRecuerdo'];
         }
 
         $ventanaDesde = null;
         if (isset($_GET['ventanaDesde'])) {
-            $ventanaDesde = $_GET['ventanaDesde'];
-            $action = "gestor.php?idPersonaRelacionada=" . $idPersonaRelacionada . "&ventanaDesde=" . $ventanaDesde;
+            $ventanaDesde = $_GET['ventanaDesde'] . "?idRecuerdo=" . $_GET['idRecuerdo'];
+            $action = $action . "&ventanaDesde=" . $ventanaDesde;
         }
 
         $comunesController = new ComunesController();

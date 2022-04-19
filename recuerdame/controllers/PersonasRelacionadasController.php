@@ -2,6 +2,10 @@
 
     require_once('daos/PersonaRelacionadaDAO.php');
 
+    if (!isset($_SESSION['idPaciente'])) {
+        session_start();
+    }
+
 class PersonasRelacionadasController{
 
     private $personaRelacionadaDao;
@@ -14,14 +18,16 @@ class PersonasRelacionadasController{
      * Lista de personas relacionadas
      */
     public function getListaPersonasRelacionadas() {
-        return $this->personaRelacionadaDao->getListaPersonasRelacionadas(1);
+        $idPaciente = $_SESSION['idPaciente'];
+        return $this->personaRelacionadaDao->getListaPersonasRelacionadas($idPaciente);
     }
 
     /**
      * Lista de personas relacionadas que están asignadas a un recuerdo
      */
     public function getListaPersonasRelacionadasRecuerdo($idRecuerdo) {
-        return $this->personaRelacionadaDao->getListaPersonasRelacionadasRecuerdo(1, $idRecuerdo);
+        $idPaciente = $_SESSION['idPaciente'];
+        return $this->personaRelacionadaDao->getListaPersonasRelacionadasRecuerdo($idPaciente, $idRecuerdo);
     }
 
     /**
@@ -29,7 +35,8 @@ class PersonasRelacionadasController{
      * para indicarlo en la pantalla
      */
     public function getListaPersonasRelacionadasRecuerdoAnadir($idRecuerdo) {
-        return $this->personaRelacionadaDao->getListaPersonasRelacionadasRecuerdoAnadir(1, $idRecuerdo);
+        $idPaciente = $_SESSION['idPaciente'];
+        return $this->personaRelacionadaDao->getListaPersonasRelacionadasRecuerdoAnadir($idPaciente, $idRecuerdo);
     }
 
     /**
@@ -43,9 +50,10 @@ class PersonasRelacionadasController{
      * Crea o modifica una persona relacionada
      */
     public function guardarPersonaRelacionada($personaRelacionada) {
+        $idPaciente = $_SESSION['idPaciente'];
         $idPersonaRelacionada = null;
         if ($personaRelacionada->getIdPersonaRelacionada() == null) {
-            $idPersonaRelacionada = $this->personaRelacionadaDao->nuevaPersonaRelacionada($personaRelacionada);
+            $idPersonaRelacionada = $this->personaRelacionadaDao->nuevaPersonaRelacionada($idPaciente, $personaRelacionada);
         } else {
             $idPersonaRelacionada = $this->personaRelacionadaDao->modificarPersonaRelacionada($personaRelacionada);
         }

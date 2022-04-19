@@ -1,17 +1,19 @@
 <?php
-    session_start();
-    if(!isset($_SESSION['idPaciente'])){
-        $_SESSION['idPaciente'] = 1;
-    }
+session_start();
+if (!isset($_SESSION['idPaciente'])) {
+    $_SESSION['idPaciente'] = 1;
+}
 ?>
 <html>
 
 <head>
-    <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
-    <link href="public/fontawesome6/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <link rel="stylesheet" type="text/css" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/dropzone/dropzone.min.css">
     <meta charset="utf-8" />
     <title>Recuerdame</title>
 </head>
@@ -22,6 +24,7 @@
     <?php include "controllers/RecuerdosController.php" ?>
     <?php include "controllers/ComunesController.php" ?>
     <?php include "controllers/PersonasRelacionadasController.php" ?>
+    <?php include "modalImagen.php" ?>
 
     <div class="container-fluid">
         <?php
@@ -55,6 +58,7 @@
         </div>
 
         <div>
+        <input hidden id="idRecuerdo" value="<?php echo $idRecuerdo ?>">
             <div class="row form-group justify-content-between">
                 <div class="row col-sm-6 col-md-6 col-lg-6">
                     <label for="nombre" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Nombre</label>
@@ -214,7 +218,7 @@
             <hr class="lineaTitulo">
         </div>
 
-        <div class="row pb-2">
+        <div id="showMultimedia" class="row pb-2">
             <?php
             $listaMultimedia = array();
             if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
@@ -223,8 +227,10 @@
             foreach ($listaMultimedia as $multimedia) {
             ?>
 
-                <div class="col-sm-4">
-                    <img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive-sm card-img-top img-thumbnail multimedia-icon">
+                <div class="col-sm-4 p-2">
+                    <div class="img-wrap">
+                        <a href="#" class="visualizarImagen"><img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive-sm card-img-top img-thumbnail multimedia-icon"></a>
+                    </div>
                 </div>
 
             <?php
@@ -236,7 +242,7 @@
             <?php
             if ($ventanaDesde != null) {
             ?>
-            <a href="<?php echo ($ventanaDesde) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                <a href="<?php echo ($ventanaDesde) ?>"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
             <?php
             } else if ($idSesion != null) {
             ?>
@@ -252,5 +258,6 @@
     </div>
     <?php include "layout/footer.php" ?>
 </body>
-
+<script src="public/dropzone/dropzone.min.js"></script>
+<script src="public/js/recuerdo.js"></script>
 </html>

@@ -3,7 +3,7 @@ $(document).ready(function () {
         paging: false,
         info: false,
         language: { search: "_INPUT_",
-        searchPlaceholder: "Buscar..."}
-
+        searchPlaceholder: "Buscar...",
+        emptyTable: "No hay datos disponibles"}
     });
 });

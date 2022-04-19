@@ -29,11 +29,11 @@
     margin-bottom: 3%;
 }
 .header {
-    background-color: #0e1b2c !important;
+    background-color: #fef9e7 !important;
 }
 
 .footer {
-    background-color: #0e1b2c !important;
+    background-color: #fef9e7 !important;
     bottom: 0;
     width: 100%;
 }
@@ -124,7 +124,7 @@ border-color: rgb(9, 146, 135);
 }
 
 .hv-box{
-    height: 70%;
+    height: 65%;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     background-color: #fff;
@@ -183,10 +183,6 @@ border-color: rgb(9, 146, 135);
     text-align: right;
     margin-bottom: 10px;
  }
-
-.navbar-light .navbar-nav .nav-link {
-    color: #7AB5C6;
-}
 
 .btn-icon{
     height: 31px;

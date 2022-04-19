@@ -109,7 +109,7 @@ class PersonaRelacionadaDAO
     /**
      * Añade una nueva persona relacionada al paciente.
      */
-    public function nuevaPersonaRelacionada($personaRelacionada)
+    public function nuevaPersonaRelacionada($idPaciente, $personaRelacionada)
     {
         $conexion = $this->db->getConexion();
         $consultaSQL = "INSERT INTO persona_relacionada (id_persona_relacionada, nombre, apellidos, telefono, ocupacion,
@@ -124,7 +124,7 @@ class PersonaRelacionadaDAO
             $personaRelacionada->getOcupacion(),
             $personaRelacionada->getEmail(),
             $personaRelacionada->getIdTipoRelacion(),
-            1
+            $idPaciente
         ));
 
         $stmt->close();
