@@ -30,6 +30,7 @@
                 $paciente = $pacientesController->verPaciente($_GET['idPaciente']);
             }  else {
                 $pacientesController = new PacientesController();
+                $paciente->setFechaNacimiento(date('Y-m-d'));
 
             }
         ?>
@@ -67,7 +68,7 @@
                 </div>
                 <div class="col-md-3">
                     <label for="fecha" class="form-label">Fecha de nacimiento</label>
-                    <input type="date" class="form-control" id="fecha" value="<?php echo (date("d/m/Y", strtotime($paciente->getFechaNacimiento()))) ?>">
+                    <input type="date" class="form-control" id="fecha"  value="<?php echo ($paciente->getFechaNacimiento()) ?>">
                 </div>
                 <div class="col-3">
                     <label for="residencia" class="form-label">Tipo de residencia</label>
