@@ -177,11 +177,12 @@ function pdfBody($pdf, $paciente, $sesion, $informeSesion){
 }
 
 if (!empty($_GET['idSesion'])){
-    $pacienteController = new PacientesController();
-    $paciente = $pacienteController->verPaciente(1);
-
+    
     $sesionController = new SesionesController();
     $sesion = $sesionController->verSesion($_GET['idSesion']);
+
+    $pacienteController = new PacientesController();
+    $paciente = $pacienteController->verPaciente($sesion->getIdUsuario());
 
     $informeSesionController = new InformeSesionController();
     $informeSesion = $informeSesionController->verInformeSesion($_GET['idSesion']);

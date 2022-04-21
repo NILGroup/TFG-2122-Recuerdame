@@ -75,7 +75,7 @@ function writePatient($pdf, $paciente){
     $pdf->SetFont('Times','B',12);
     $pdf->Cell(30,7,'Nombre: ',1,0,'L',true);
     $pdf->SetFont('Times','',12);
-    $s = utf8_decode(' ' . $paciente->getNombre() . ' ' . $paciente->getApelliods());
+    $s = utf8_decode(' ' . $paciente->getNombre() . ' ' . $paciente->getApellidos());
     $pdf->Cell(160,7, $s ,1);
     $pdf->Ln();
     $pdf->SetFont('Times','B',12);
@@ -135,8 +135,9 @@ function pdfBody($pdf, $informeSeguimiento, $paciente){
 if (!empty($_GET['idInforme'])){
     $informeSeguimientoController = new InformeSeguimientoController();
     $informeSeguimiento = $informeSeguimientoController->verInformeSeguimiento($_GET['idInforme']);
+
     $pacienteController = new PacientesController();
-    $paciente = $pacienteController->verPaciente(1);
+    $paciente = $pacienteController->verPaciente($informeSeguimiento->getIdPacientes());
 
     $pdf = new PDF();
     $pdf->LoadData($informeSeguimiento->getIdEvaluacion());

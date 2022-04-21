@@ -58,7 +58,8 @@
         </div>
 
         <a href="generarPDFInformeSesion.php?idSesion=<?php echo ($informeSesion->getIdSesion())?>"><button type="button" class="btn btn-outline-primary btn-sm">Generar PDF</button></a>
-        <a href="listadoInformesSesion.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+        <button type="button" onclick="history.go(-1)" class="btn btn-primary btn-sm">Atrás</button></a>
+        
     </div>
     <?php include "layout/footer.php" ?>
 </body>
