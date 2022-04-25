@@ -64,7 +64,7 @@ if (!isset($_SESSION['idPaciente'])) {
 
                 <div>
                     <button type="submit" name="guardarInformeSesion" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
-                    <a href="listadoInformesSesion.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <button type="button" onclick="history.go(-1)" class="btn btn-primary btn-sm">Atrás</button></a>
                 </div>
 
             </div>
