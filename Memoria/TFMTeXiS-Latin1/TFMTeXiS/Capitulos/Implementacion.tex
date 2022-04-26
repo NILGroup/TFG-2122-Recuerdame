@@ -20,13 +20,25 @@ La implementación de esta aplicación se ha llevado a cabo con la siguientes herr
 
 A continuación, se describirá la interfaz gráfica de la aplicación, así como los objetos relacionados con cada parte de esta interfaz gráfica.
 
-En primer lugar, comentar la pagina de index.php, que esta compuesta por la cabecera de la aplicación que se verá en todas las pantallas de nuestra aplicación,así como la barra de navegación y el pie de página; con el logo de la aplicación en la parte superior izquierda, y en la otra esquina los iconos de cerrar, mensajería y otros pacientes. Luego nos encontramos la barra de navegación que nos permitirá acceder por todas las secciones de la aplicación que comentaremos a continuación, con la foto e información del paciente; después el pie de página que constará del sello de copyright. EN esta página de index se nos mostrará toda la información del paciente seleccionado( Figura \ref{fig:index}).
+En primer lugar, al entrar en la aplicación aparece la página de login.php, donde el terapeuta o cuidador entrará en la aplicación. Aparece un cuadro para introducir las credenciales e iniciar sesión y luego una opción para que se registre un terapeuta (figura \ref{fig:login}). 
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/index.png}
-  	\caption{Pagina de index.}
-	\label{fig:index}
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/login.png}
+  	\caption{Pagina de login.}
+	\label{fig:login}
 \end{figure}
+
+A continuación, una vez logueado como terapeuta nos aparecerá la página donde se muestran todos los pacientes del terapeuta, que esta compuesta por la cabecera de la aplicación que se verá en todas las pantallas de nuestra aplicación,así como la barra de navegación y el pie de página; con el logo de la aplicación en la parte superior izquierda, y en la otra esquina los iconos de cerrar, mensajería y otros pacientes. Luego nos encontramos la barra de navegación que nos permitirá acceder por todas las secciones (sesiones, evaluaciones, historias de vida y calendario) de la aplicación que comentaremos a continuación, con la foto e información del paciente que se seleccione de la lista; después el pie de página que constará del sello de copyright. En esta página se nos mostrará todos los pacientes que tenga un terapeuta asignado( Figura \ref{fig:listPac}).
+
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/listPacientes.png}
+  	\caption{Listado de pacientes.}
+	\label{fig:listPac}
+\end{figure}
+
+
 Para el desarrollo de la lógica de la aplicación hemos aplicado programación orientada a objetos para tratar los diferentes elementos con los que trabaja el backend de la aplicación. A continuación se muestran los diferentes objetos de los que consta la aplicación, y los cuales cada uno de ellos consta de su clase modelo, clase vista y clase controlador:
  	\begin{itemize}
  		\item Informe de seguimiento: Con este objeto se permite la creación de un resumen de los informes de la sesiones. En la vista aparecerá un listado con todos los informes de seguimiento realizados con la fecha de realización, un enlace para ver los datos del informe, el diagnóstico y las opciones de visualizar, editar y eliminar el informe (Figura \ref{fig:infSegui}).
@@ -37,7 +49,7 @@ Para el desarrollo de la lógica de la aplicación hemos aplicado programación ori
 	\label{fig:infSegui}
 \end{figure}
 
- 		Una vez dentro del informe de seguimiento podemos ver más información detallada de este, mediante un formulario con los campos bloqueados, excepto si ha sido llamado mediante el botón de editar, muestra las diferentes escalas( GDS, minimental/MEC de Lobo y CDR) con su respectivo valor y la fecha en la que se documentó el dato, con la posibilidad de introducir otro dato, también el valor del diagnóstico final y un area de texo con las observaciones(Figura \ref{fig:datInfSegui}. Por último, esta la posibilidad de generas un PDF con la información anteriormente detallada(Figura \ref{fig:pdfInfSegui}.
+ 		Una vez dentro del informe de seguimiento podemos ver más información detallada de este, mediante un formulario con los campos bloqueados, excepto si ha sido llamado mediante el botón de editar, muestra las diferentes escalas( GDS, minimental/MEC de Lobo y CDR) con su respectivo valor y la fecha en la que se documentó el dato, con la posibilidad de introducir otro dato, también el valor del diagnóstico final y un area de texo con las observaciones(Figura \ref{fig:datInfSegui}). Por último, esta la posibilidad de generas un PDF con la información anteriormente detallada(Figura \ref{fig:pdfInfSegui}).
  		
  		\begin{figure}[!ht]
   	\centering
@@ -80,6 +92,34 @@ Para el desarrollo de la lógica de la aplicación hemos aplicado programación ori
   	\caption{Información del paciente.}
   	
 	\label{fig:pac}
+\end{figure}
+		\item Historia de vida: En cuanto a este objeto en la aplicación podemos verlo en el cuadro de navegación anteriormente comentado y dentro de este estarán las opciones de generar historia de vida, recuerdos y persona relacionada. En la opción de generar historia de vida podremos seleccionar un rango de tiempo, una etapa de la vida, una categoría de los recuerdos y una etiqueta, según sea el recuerdo positivo, negativo o neutro,como vemos en la figura \ref{fig:GHV}, y una vez todo lo anterior seleccionado se podrá generar un libro de vida (figura \ref{fig:lv1} y figura \ref{fig:lv2}) con todos esos recuerdos que podremos ver en la página de la aplicación y además podremos generar un pdf de este libro de vida (figura \ref{fig:pdfLV}).
+	\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/genHV.png}
+  	\caption{Generar historia de vida.}
+  	\label{fig:GHV}
+\end{figure}
+		
+	\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/librodevida1.png}
+  	\caption{Pagina libro de vida.}
+  	\label{fig:lv1}
+\end{figure}
+
+	\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/librodevida2.png}
+  	\caption{Pagina libro de vida.}
+  	\label{fig:lv2}
+\end{figure}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/pdfLV.png}
+  	\caption{PDF libro de vida.}
+  	\label{fig:pdfLV}
 \end{figure}
  		\item Persona relacionada: Este objeto esta relacionado con el paciente. A partir del navegador de la cabecera, en la parte de historias de vida se accede a la sección de personas relacionadas, una vez allí se nos muestra un listado con las personas relacionadas del paciente que tiene seleccionado el terapeuta (Figura \ref{fig:listpr}). Cada persona en el listado contiene el nombre, apellido, tipo de relación, correo electrónico y la posibilidad de ver, editar o borrar, según la opción elegida nos aparecerá un formulario con los campos bloqueados si has elegido la opción de ver o con la posibilidad de modificar los campos en caso de elegir la opción de editar (Figura \ref{fig:formpr}).
  		\begin{figure}[!ht]
