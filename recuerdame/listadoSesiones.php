@@ -1,8 +1,6 @@
 <?php
     session_start();
-    if(!isset($_SESSION['idPaciente'])){
-        $_SESSION['idPaciente'] = 1;
-    }
+    $_SESSION['idPaciente'] = $_GET['idPaciente'];
 ?>
 <html>
 

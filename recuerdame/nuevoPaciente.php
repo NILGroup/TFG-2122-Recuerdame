@@ -28,9 +28,9 @@
             if (!empty($_GET['idPaciente'])) {
                 $pacientesController = new PacientesController();
                 $paciente = $pacientesController->verPaciente($_GET['idPaciente']);
+                echo 'hola';
             }  else {
                 $pacientesController = new PacientesController();
-
             }
         ?>
 
@@ -39,7 +39,7 @@
             <hr class="lineaTitulo">
         </div>
         
-        <form class="row g-3" action="gestor.php?accion=guardarPaciente&idPaciente=<?php echo ($paciente->getIdPaciente()) ?>" method="POST">
+        <form class="row g-3" action="gestor.php?accion=guardarPaciente" method="POST">
                 <div class="col-md-3">
                     <label for="nombre" class="form-label">Nombre<span class="asterisco">*</span></label>
                     <input type="text" class="form-control" id="nombre" name= "nombre" required>

@@ -2,9 +2,7 @@
     
  
     session_start();
-    if(!isset($_SESSION['idPaciente'])){
-        $_SESSION['idPaciente'] = 1;
-    }
+    
 
 ?>
 <html>
@@ -63,7 +61,7 @@
                         ?>
                         <tr>
                             <th scope="row"><?php echo $i ?></th>
-                            <td><a href="verDatosPaciente.php?idPaciente=<?php echo ($row['id_paciente']) ?>"> <?php echo ($row['nombre']) ?></a></td>
+                            <td><a href="listadoSesiones.php?idPaciente=<?php echo ($row['id_paciente']) ?>"> <?php echo ($row['nombre']) ?></a></td>
                             <td><?php echo ($row['apellidos']) ?></td>
                             <td><?php 
                                 if($row["genero"] == 'H') echo 'Hombre';

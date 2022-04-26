@@ -13,20 +13,25 @@
     <?php include "controllers/PacientesController.php" ?>
     <?php
     $pacientesController = new PacientesController();
-    $paciente = $pacientesController->verPaciente($_SESSION['idPaciente']);
-    $cumpleanos = new DateTime($paciente->getFechaNacimiento());
-    $hoy = new DateTime();
-    $edad = $hoy->diff($cumpleanos);
+    if(isset($_SESSION['idPaciente'])){
+        $paciente = $pacientesController->verPaciente($_SESSION['idPaciente']);
+        $cumpleanos = new DateTime($paciente->getFechaNacimiento());
+        $hoy = new DateTime();
+        $edad = $hoy->diff($cumpleanos);
 
-    $genero = '';
-    if ($paciente->getGenero() == 'H') $genero = 'Hombre';
-    else if ($paciente->getGenero() == 'M') $genero = 'Mujer';
+        $genero = '';
+        if ($paciente->getGenero() == 'H') $genero = 'Hombre';
+        else if ($paciente->getGenero() == 'M') $genero = 'Mujer';
+    }
     ?>
+    
     <nav class="navbar navbar-expand-lg justify-content-left nav-menu">
+        <?php if(isset($_SESSION['idPaciente'])){ ?>
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse justify-content-left" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -35,7 +40,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle letra-primary-color" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Evaluaciones</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="listadoInformesSesion.php">Informes de las sesiones</a></li>
+                            <li><a class="dropdown-item" href="listadoInformesSesion.php" >Informes de las sesiones</a></li>
                             <li><a class="dropdown-item" href="listadoInformesSeguimiento.php">Informes de seguimiento</a></li>
                         </ul>
                     </li>
@@ -52,6 +57,9 @@
                     </li>
                 </ul>
             </div>
+            <?php } ?>
+
+            <?php if(isset($_SESSION['idPaciente'])){ ?>
             <div class="row align-items-center pe-4">
                 <div class="col-12">
                     <?php
@@ -82,6 +90,8 @@
                     Edad: <?php echo ($edad->format('%y')) ?>
                 </div>
             </div>
+            <?php } ?>
+            
     </nav>
 </body>
 

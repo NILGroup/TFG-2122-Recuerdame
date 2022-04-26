@@ -396,7 +396,11 @@ if (isset($_POST['login'])){
 
 }else if (isset($_GET['accion']) && $_GET['accion'] == 'guardarPaciente'){
     include("controllers/PacientesController.php");
-    $idPaciente = $_GET['idPaciente'];
+    if(isset($_GET['idPaciente'])){
+        $idPaciente = $_GET['idPaciente'];
+    }else {
+        $idPaciente = NULL;
+    }
 
     $pacientesController = new PacientesController();
     $paciente = new Paciente();

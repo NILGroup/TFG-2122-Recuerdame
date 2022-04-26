@@ -3,7 +3,7 @@
  
     session_start();
     
-    $_SESSION['idPaciente'] = $_GET['idPaciente'];
+   
 
 ?>
 <html>
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="row col-sm-12 col-md-6 col-lg-7">
-                    <label for="estado" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-4">Lujar de nacimiento</label>
+                    <label for="estado" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-4">Lugar de nacimiento</label>
                     <div class="col-sm-12 col-md-12 col-lg-8">
                         <input type="text" disabled class="form-control form-control-sm" id="nombre" value="<?php echo ($paciente->getLugarNacimiento()) ?>">
                     </div>
