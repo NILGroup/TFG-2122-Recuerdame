@@ -2,10 +2,6 @@
 
     require_once('daos/SesionDAO.php');
 
-    if (!isset($_SESSION['idPaciente'])) {
-        session_start();
-    }
-
 class SesionesController{
     
     private $sesionDao;
@@ -14,17 +10,15 @@ class SesionesController{
         $this->sesionDao = new SesionDAO();
     }
 
-    public function getListaSesiones() {
-        $idPaciente = $_SESSION['idPaciente'];
-        return $this->listaSesiones = $this->sesionDao->getListaSesiones($idPaciente);
+    public function getListaSesiones($idPaciente) {
+        return $this->sesionDao->getListaSesiones($idPaciente);
     }
 
     public function verSesion($idSesion) {
         return $this->sesionDao->getSesion($idSesion);
     }
 
-    public function guardarSesion($sesion) {
-        $idPaciente = $_SESSION['idPaciente'];
+    public function guardarSesion($idPaciente, $sesion) {
         $idSesion = null;
         if ($sesion->getIdSesion() == null) {
             $idSesion = $this->sesionDao->nuevaSesion($idPaciente, $sesion);
@@ -42,8 +36,7 @@ class SesionesController{
     /**
      * Crea o modifica un recuerdo
      */
-    public function guardarRecuerdo($idSesion, $recuerdo) {
-        $idPaciente = $_SESSION['idPaciente'];
+    public function guardarRecuerdo($idPaciente, $idSesion, $recuerdo) {
         $idRecuerdo = null;
         if ($recuerdo->getIdRecuerdo() == null) {
             $idRecuerdo = $this->sesionDao->nuevoRecuerdo($idPaciente, $idSesion, $recuerdo);

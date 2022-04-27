@@ -1,10 +1,4 @@
-﻿<?php
-    session_start();
-    if(!isset($_SESSION['idPaciente'])){
-        $_SESSION['idPaciente'] = 1;
-    }
-?>
-<html>
+﻿<html>
 
 <head>
     <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
@@ -17,7 +11,7 @@
     <link rel="stylesheet" href="public/datatable/datatables.min.css">
     <script src="public/js/table.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
-    <title>Recuerdame</title>
+    <title>Recuérdame</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -31,7 +25,7 @@
             <hr class="lineaTitulo">
         </div>
 
-        <div >
+        <div>
             <table class="table table-bordered recuerdameTable">
                 <thead>
                     <tr>
@@ -42,28 +36,29 @@
                     </tr>
                 </thead>
                 <tbody>
-                <?php
+                    <?php
                     $informeController = new InformeSesionController();
-                    $informes = $informeController->getListaInformeSesion();
+                    $informes = array();
+                    if (Session::getIdPaciente() != null) {
+                        $informes = $informeController->getListaInformeSesion(Session::getIdPaciente());
+                    }
                     $i = 1;
-                    if($informes != null){ //Si los resultados devueltos son mayor a 0
-                        foreach ($informes as $row) {
-                        ?>                                              
-                            <tr>
-                                <th scope="row"><?php echo $i ?></th>
-                                <td><a href="verDatosInformeSesion.php?idInforme=<?php echo ($row['idInforme']) ?>"><?php echo "Informe de la sesión Nº {$row["idInforme"]}" ?></td>
-                                <td><?php echo (date("d/m/Y", strtotime($row["fecha_finalizada"]))) ?></td>
-                                <td class="tableActions">
+                    foreach ($informes as $row) {
+                    ?>
+                        <tr>
+                            <th scope="row"><?php echo $i ?></th>
+                            <td><a href="verDatosInformeSesion.php?idInforme=<?php echo ($row['idInforme']) ?>"><?php echo "Informe de la sesión Nº {$row["idInforme"]}" ?></td>
+                            <td><?php echo (date("d/m/Y", strtotime($row["fecha_finalizada"]))) ?></td>
+                            <td class="tableActions">
                                 <a href="verDatosInformeSesion.php?idInforme=<?php echo ($row['idInforme']) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
                                 <a href="modificarDatosInformeSesion.php?idInforme=<?php echo ($row['idInforme']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
                                 <a href="gestor.php?accion=eliminarInformeSesion&idInforme=<?php echo ($row['idInforme']) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
-                                </td>
-                            </tr> 
-                        <?php
-                            $i++;
-                        }
+                            </td>
+                        </tr>
+                    <?php
+                        $i++;
                     }
-                ?>
+                    ?>
                 </tbody>
             </table>
         </div>

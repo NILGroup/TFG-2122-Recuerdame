@@ -1,11 +1,6 @@
 <?php
 
     require_once('daos/MultimediaDAO.php');
-
-    if (!isset($_SESSION['idPaciente'])) {
-        session_start();
-    }
-
 class MultimediaController{
 
     private $multimediaDao;

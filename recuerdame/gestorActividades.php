@@ -1,4 +1,5 @@
 <?php
+require_once('models/Session.php');
 if (isset($_POST['title'])) {
         include("controllers/CalendarioController.php");
         $id = $_POST['id'];
@@ -21,7 +22,13 @@ if (isset($_POST['title'])) {
         $calendarioController = new CalendarioController();
         
         if(isset($_POST['btnAccion'])){
-            $calendarioController->guardarActividad($actividad);
+
+            $idPaciente = Session::getIdPaciente();
+            if ($idPaciente == null) {
+                // Error
+            }
+
+            $calendarioController->guardarActividad($idPaciente, $actividad);
         }
         else if(isset($_POST['btnEliminar'])){
             $calendarioController->eliminarActividad($id);

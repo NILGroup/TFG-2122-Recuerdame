@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="public/css/styles.css">
     <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
-    <title>Recuerdame</title>
+    <title>Recuérdame</title>
 </head>
 
 <body>
     <?php include "controllers/PacientesController.php" ?>
     <?php
     $pacientesController = new PacientesController();
-    if(isset($_SESSION['idPaciente'])){
-        $paciente = $pacientesController->verPaciente($_SESSION['idPaciente']);
+    if(Session::getIdPaciente()){
+        $paciente = $pacientesController->verPaciente(Session::getIdPaciente());
         $cumpleanos = new DateTime($paciente->getFechaNacimiento());
         $hoy = new DateTime();
         $edad = $hoy->diff($cumpleanos);
@@ -26,7 +26,7 @@
     ?>
     
     <nav class="navbar navbar-expand-lg justify-content-left nav-menu">
-        <?php if(isset($_SESSION['idPaciente'])){ ?>
+        <?php if(Session::getIdPaciente() != null){ ?>
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,7 +59,7 @@
             </div>
             <?php } ?>
 
-            <?php if(isset($_SESSION['idPaciente'])){ ?>
+            <?php if(Session::getIdPaciente() != null){ ?>
             <div class="row align-items-center pe-4">
                 <div class="col-12">
                     <?php

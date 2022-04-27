@@ -4,23 +4,20 @@
 
 class CalendarioController{
     
-    private $listaActividades;
     private $actividadDao;
     
     public function __construct() {
         $this->actividadDao = new ActividadDAO();
-        $this->listaActividades = $this->actividadDao->getListaActividades(1);
     }
 
-    
-    public function getListaActividades() {
-        return $this->listaActividades;
+    public function getListaActividades($idPaciente) {
+        return $this->actividadDao->getListaActividades($idPaciente);
     }
 
-    public function guardarActividad($actividad) {
+    public function guardarActividad($idPaciente, $actividad) {
         $idActividad = null;
         if ($actividad->getIdActividad() == null) {
-            $idActividad = $this->actividadDao->nuevaActividad($actividad);
+            $idActividad = $this->actividadDao->nuevaActividad($idPaciente, $actividad);
         } else {
             $idActividad = $this->actividadDao->modificarActividad($actividad);
         }
@@ -33,7 +30,7 @@ class CalendarioController{
 
     public function eliminarActividad($idActividad) {
         $this->actividadDao->eliminarActividad($idActividad);
-        return $this->listaActividades = $this->actividadDao->getListaActividades(1);;
+        return $this->listaActividades = $this->actividadDao->getListaActividades(1);
     }
 }
 

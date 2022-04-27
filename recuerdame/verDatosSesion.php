@@ -1,9 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION['idPaciente'])) {
-    $_SESSION['idPaciente'] = 1;
-}
-?>
 <html>
 
 <head>
@@ -15,7 +9,7 @@ if (!isset($_SESSION['idPaciente'])) {
     <link rel="stylesheet" type="text/css" href="public/css/styles.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="public/dropzone/dropzone.min.css">
-    <title>Recuerdame</title>
+    <title>Recuérdame</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">

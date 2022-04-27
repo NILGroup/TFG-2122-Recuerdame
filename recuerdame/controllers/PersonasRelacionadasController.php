@@ -2,10 +2,6 @@
 
     require_once('daos/PersonaRelacionadaDAO.php');
 
-    if (!isset($_SESSION['idPaciente'])) {
-        session_start();
-    }
-
 class PersonasRelacionadasController{
 
     private $personaRelacionadaDao;

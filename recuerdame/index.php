@@ -7,7 +7,7 @@
   <link rel="icon" href="public/img/Logo_recuerdame_V2.png" type="image/ico">
   <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Recuerdame</title>
+  <title>Recuérdame</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">

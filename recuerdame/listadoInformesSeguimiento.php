@@ -1,9 +1,3 @@
-<?php
-    session_start();
-    if(!isset($_SESSION['idPaciente'])){
-        $_SESSION['idPaciente'] = 1;
-    }
-?>
 <html>
 
 <head>
@@ -17,7 +11,7 @@
     <script src="public/js/table.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Recuerdame</title>
+    <title>Recuérdame</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -49,13 +43,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                <?php
+                    <?php
                     $informeController = new InformeSeguimientoController();
-                    $informes = $informeController->getListaInformeSeguimiento();
+                    $informes = array();
+                    if (Session::getIdPaciente() != null) {
+                        $informes = $informeController->getListaInformeSeguimiento(Session::getIdPaciente());
+                    }
                     $i = 1;
-                    if($informes != null){ //Si los resultados devueltos son mayor a 0
-                        foreach ($informes as $row) {
-                        ?>
+                    foreach ($informes as $row) {
+                    ?>
                         <tr>
                             <th scope="row"><?php echo $i ?></th>
                             <td><a href="verDatosInformeSeguimiento.php?idInforme=<?php echo ($row['idInforme']) ?>"><?php echo ("Informe Nº {$row["idInforme"]}") ?></td>
@@ -67,11 +63,10 @@
                                 <a href="gestor.php?accion=eliminarInformeSeguimiento&idInforme=<?php echo ($row['idInforme']) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
                             </td>
                         </tr>
-                        <?php 
-                            $i++;
-                        }
+                    <?php
+                        $i++;
                     }
-                ?>
+                    ?>
                 </tbody>
             </table>
         </div>

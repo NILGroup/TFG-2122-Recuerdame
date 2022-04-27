@@ -1,5 +1,6 @@
 <?php
 require('./public/fpdf184/fpdf.php');
+include "models/Session.php";
 include "controllers/HistoriaVidaController.php";
 include "controllers/RecuerdosController.php";
 include "controllers/PacientesController.php";
@@ -97,17 +98,22 @@ function pdfBody($pdf, $paciente, $listadoRecuerdos){
     writeRecuerdos($pdf, $listadoRecuerdos);
 }
 
-$pacientesController = new PacientesController();
-$idPaciente = $_SESSION['idPaciente'];
-$paciente = $pacientesController->verPaciente($idPaciente);
 $fechaInicio = $_POST['fechaInicio'];
 $fechaFin = $_POST['fechaFin'];
 $idEtapa = $_POST['idEtapa'];
 $idCategoria = $_POST['idCategoria'];
 $idEtiqueta = $_POST['idEtiqueta'];
 
-$historiaVidaController = new HistoriaVidaController();
-$listadoRecuerdos = $historiaVidaController->generarLibro($fechaInicio, $fechaFin, $idEtapa, $idCategoria, $idEtiqueta);
+$pacientesController = new PacientesController();
+$paciente = new Paciente();
+$listadoRecuerdos = array();
+if (Session::getIdPaciente() != null) {
+    $idPaciente = Session::getIdPaciente();
+    $paciente = $pacientesController->verPaciente($idPaciente);
+
+    $historiaVidaController = new HistoriaVidaController();
+    $listadoRecuerdos = $historiaVidaController->generarLibro($idPaciente, $fechaInicio, $fechaFin, $idEtapa, $idCategoria, $idEtiqueta);
+}
 
 $pdf = new PDF();
 $pdf->AliasNbPages();

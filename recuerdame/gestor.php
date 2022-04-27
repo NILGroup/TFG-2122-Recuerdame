@@ -1,4 +1,9 @@
 <?php
+require_once('models/Session.php');
+
+if (!isset($_SESSION)) { 
+    session_start(); 
+}
 
 if (isset($_POST['login'])) {
     include("daos/UsuarioDAO.php");
@@ -28,15 +33,20 @@ if (isset($_POST['login'])) {
         $us = new UsuarioLogin();
         $us->setIdUsuario($usuario->getIdUsuario());
         $us->setIniciales($iniciales);
-        
-        session_start();
+        $us->setEsTerapeuta(true);
+        $us->setEsCuidador(false);
+
         $_SESSION['usuario'] = serialize($us);
         header("Location: listadoPacientes.php");
     } else {
         // Error
         header("Location: login.php");
     }
+} else if (isset($_GET['logout'])) {
+    unset($_SESSION["usuario"]);
+    unset($_SESSION["idPaciente"]);
 
+    header("Location: login.php");
 } else if (isset($_POST['guardarRecuerdo'])) {
     include("controllers/RecuerdosController.php");
     include("controllers/SesionesController.php");
@@ -68,6 +78,11 @@ if (isset($_POST['login'])) {
         $idSesion = $_GET['idSesion'];
     }
 
+    $idPaciente = Session::getIdPaciente();
+    if ($idPaciente == null) {
+        // Error
+    }
+
     $recuerdo = new Recuerdo();
     $recuerdo->setIdRecuerdo($idRecuerdo);
     $recuerdo->setFecha($fecha);
@@ -86,7 +101,7 @@ if (isset($_POST['login'])) {
     // Se guardan los datos del recuerdo
     if (isset($idSesion) && !empty($idSesion)) {
         $sesionesController = new SesionesController();
-        $idRecuerdo = $sesionesController->guardarRecuerdo($idSesion, $recuerdo);
+        $idRecuerdo = $sesionesController->guardarRecuerdo($idPaciente, $idSesion, $recuerdo);
 
         if (isset($ventanaDesde) && !empty($ventanaDesde)) {
             header("Location: verDatosRecuerdo.php?idRecuerdo=$idRecuerdo&idSesion=$idSesion&ventanaDesde=$ventanaDesde");
@@ -95,7 +110,7 @@ if (isset($_POST['login'])) {
         }
     } else {
         $recuerdosController = new RecuerdosController();
-        $idRecuerdo = $recuerdosController->guardarRecuerdo($recuerdo);
+        $idRecuerdo = $recuerdosController->guardarRecuerdo($idPaciente, $recuerdo);
 
         if ($ventanaHacia != null) {
 
@@ -177,6 +192,11 @@ if (isset($_POST['login'])) {
         $ventanaDesde = $_GET['ventanaDesde'];
     }
 
+    $idPaciente = Session::getIdPaciente();
+    if ($idPaciente == null) {
+        // Error
+    }
+
     $personaRelacionada = new PersonaRelacionada();
     $personaRelacionada->setIdPersonaRelacionada($idPersonaRelacionada);
     $personaRelacionada->setNombre($nombre);
@@ -189,7 +209,7 @@ if (isset($_POST['login'])) {
     // Se guardan los datos de la persona relacionada
     if (isset($idRecuerdo)) {
         $recuerdosController = new RecuerdosController();
-        $idPersonaRelacionada = $recuerdosController->guardarPersonaRelacionada($idRecuerdo, $personaRelacionada);
+        $idPersonaRelacionada = $recuerdosController->guardarPersonaRelacionada($idPaciente, $idRecuerdo, $personaRelacionada);
 
         if ($ventanaDesde != null) {
             header("Location: verDatosPersonaRelacionada.php?idPersonaRelacionada=$idPersonaRelacionada&idRecuerdo=$idRecuerdo&ventanaDesde=$ventanaDesde");
@@ -273,8 +293,13 @@ if (isset($_POST['login'])) {
     $informe->setEscala($escala);
     $informe->setFechaEscala($fechaEscala);
 
+    $idPaciente = Session::getIdPaciente();
+    if ($idPaciente == null) {
+        // Error
+    }
+
     $informeSeguimientoController = new InformeSeguimientoController();
-    $idInforme = $informeSeguimientoController->guardarInformeSeguimiento($informe);
+    $idInforme = $informeSeguimientoController->guardarInformeSeguimiento($idPaciente, $informe);
 
     header("Location: verDatosInformeSeguimiento.php?idInforme=$idInforme");
 } else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarInformeSeguimiento') {
@@ -331,6 +356,11 @@ if (isset($_POST['login'])) {
     $facilitadores = $_POST['facilitadores'];
     $idUsuario = $_GET['idUsuario'];
 
+    $idPaciente = Session::getIdPaciente();
+    if ($idPaciente == null) {
+        // Error
+    }
+
     $sesion = new Sesion();
     $sesion->setIdSesion($idSesion);
     $sesion->setFecha($fecha);
@@ -342,7 +372,7 @@ if (isset($_POST['login'])) {
     $sesion->setIdUsuario($idUsuario);
 
     $sesionesController = new SesionesController();
-    $idSesion = $sesionesController->guardarSesion($sesion);
+    $idSesion = $sesionesController->guardarSesion($idPaciente, $sesion);
 
     header("Location: verDatosSesion.php?idSesion=$idSesion");
 } else if (isset($_GET['getMultimediaSesionList'])) {

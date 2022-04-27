@@ -1,9 +1,3 @@
-<?php
-    session_start();
-    if(!isset($_SESSION['idPaciente'])){
-        $_SESSION['idPaciente'] = 1;
-    }
-?>
 <html>
 
 <head>
@@ -13,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <link rel="stylesheet" type="text/css" href="public/css/styles.css">
     <meta charset="utf-8" />
-    <title>Recuerdame</title>
+    <title>Recuérdame</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">

@@ -28,7 +28,7 @@ class ActividadDAO{
         return $actividad;
     }
 
-    public function nuevaActividad($actividad){
+    public function nuevaActividad($idPaciente, $actividad){
         session_start();
         $conexion = $this->db->getConexion();
         $consultaSQL = "INSERT INTO actividad (id, title, start, description, id_paciente, color)
@@ -39,7 +39,7 @@ class ActividadDAO{
             $actividad->getTitulo(), 
             $actividad->getFecha(),
             $actividad->getObservaciones(),
-            $_SESSION['idPaciente'],
+            $idPaciente,
             $actividad->getColor()
            ));
 

@@ -2,10 +2,6 @@
 
     require_once('daos/ComunesDAO.php');
 
-    if (!isset($_SESSION['idPaciente'])) {
-        session_start();
-    }
-
 class ComunesController{
     
     private $comunesDao;

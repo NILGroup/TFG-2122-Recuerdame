@@ -1,9 +1,3 @@
-<?php
-    session_start();
-    if(!isset($_SESSION['idPaciente'])){
-        $_SESSION['idPaciente'] = 1;
-    }
-?>
 <html>
 
 <head>
@@ -17,7 +11,7 @@
     <script src="public/js/table.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Recuerdame</title>
+    <title>Recuérdame</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -54,7 +48,10 @@
                 <tbody>
                     <?php
                     $recuerdosController = new RecuerdosController();
-                    $lista = $recuerdosController->getListaRecuerdos();
+                    $lista = array();
+                    if (Session::getIdPaciente() != null) {
+                        $lista = $recuerdosController->getListaRecuerdos(Session::getIdPaciente());
+                    }
                     $i = 1;
                     foreach ($lista as $row) {
                     ?>

@@ -1,6 +1,10 @@
 <?php
-     session_start();
-     $idPaciente = $_SESSION['idPaciente'];
+    require_once('models/Session.php');
+    $idPaciente = Session::getIdPaciente();
+    if ($idPaciente == null) {
+        // Error
+    }
+
      require_once('configdb.php');
      $db = new Configdb();
      $conexion = $db->getConexion();

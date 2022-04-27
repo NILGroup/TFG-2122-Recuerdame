@@ -2,10 +2,6 @@
 
     require_once('daos/RecuerdoDAO.php');
 
-    if (!isset($_SESSION['idPaciente'])) {
-        session_start();
-    }
-
 class RecuerdosController{
 
     private $recuerdoDao;
@@ -17,9 +13,8 @@ class RecuerdosController{
     /**
      * Listado de recuerdos de un paciente
      */
-    public function getListaRecuerdos() {
-        $idPaciente = $_SESSION['idPaciente'];
-        return $this->listaRecuerdos = $this->recuerdoDao->getListaRecuerdos($idPaciente);
+    public function getListaRecuerdos($idPaciente) {
+        return $this->recuerdoDao->getListaRecuerdos($idPaciente);
     }
 
     /**
@@ -32,8 +27,7 @@ class RecuerdosController{
     /**
      * Crea o modifica un recuerdo
      */
-    public function guardarRecuerdo($recuerdo) {
-        $idPaciente = $_SESSION['idPaciente'];
+    public function guardarRecuerdo($idPaciente, $recuerdo) {
         $idRecuerdo = null;
         
         if ($recuerdo->getIdRecuerdo() == null) {
@@ -69,8 +63,7 @@ class RecuerdosController{
      * Lista de las recuerdos relacionados con una sesion. Se buscan las que están relacionadas con el recuerdo
      * para indicarlo en la pantalla
      */
-    public function getListaRecuerdosRelacionadosSesionAnadir($idRecuerdo) {
-        $idPaciente = $_SESSION['idPaciente'];
+    public function getListaRecuerdosRelacionadosSesionAnadir($idPaciente, $idRecuerdo) {
         return $this->recuerdoDao->getListaRecuerdosRelacionadasSesionAnadir($idPaciente, $idRecuerdo);
     }
     
@@ -107,8 +100,7 @@ class RecuerdosController{
     /**
      * Registra una nueva persona relacionada y la asigna a un recuerdo
      */
-    public function guardarPersonaRelacionada($idRecuerdo, $personaRelacionada) {
-        $idPaciente = $_SESSION['idPaciente'];
+    public function guardarPersonaRelacionada($idPaciente, $idRecuerdo, $personaRelacionada) {
         $idPersonaRelacionada = null;
         if ($personaRelacionada->getIdPersonaRelacionada() == null) {
             $idPersonaRelacionada = $this->recuerdoDao->nuevaPersonaRelacionada($idPaciente, $idRecuerdo, $personaRelacionada);
@@ -135,5 +127,3 @@ class RecuerdosController{
         $this->recuerdoDao->eliminarPersonaRelacionada($idRecuerdo, $idPersonaRelacionada);
     }
 }
-
-?>

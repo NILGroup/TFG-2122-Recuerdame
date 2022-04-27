@@ -1,6 +1,10 @@
 <?php
-    session_start();
-    $_SESSION['idPaciente'] = $_GET['idPaciente'];
+    if (!isset($_SESSION)) { 
+        session_start(); 
+    }
+    if (isset($_GET['idPaciente'])) {
+        $_SESSION['idPaciente'] = $_GET['idPaciente'];
+    }
 ?>
 <html>
 
@@ -15,7 +19,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <link rel="stylesheet" type="text/css" href="public/css/styles.css">
     <meta charset="utf-8" />
-    <title>Recuerdame</title>
+    <title>Recuérdame</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -49,7 +53,11 @@
                 <tbody>
                     <?php
                     $sesionesController = new SesionesController();
-                    $lista = $sesionesController->getListaSesiones();
+                    $lista = array();
+                    if (Session::getIdPaciente() != null) {
+                        $lista = $sesionesController->getListaSesiones(Session::getIdPaciente());
+                    }
+                    
                     $i = 1;
                     foreach ($lista as $row) {
                     ?>
