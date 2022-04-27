@@ -2,6 +2,7 @@
 
 if (isset($_POST['login'])) {
     include("daos/UsuarioDAO.php");
+    require('models/UsuarioLogin.php');
 
     $username = $_POST['usuario'];
     $password = $_POST['contrasena'];
@@ -15,12 +16,27 @@ if (isset($_POST['login'])) {
     }
 
     if (password_verify($password, $usuario->getContrasenia())) {
-        $_SESSION['id_usuario'] = $usuario->getIdUsuario();
+        $iniciales = '';
+        if ($usuario->getNombre() != null) {
+            $iniciales = substr($usuario->getNombre(), 0, 1);
+        }
+
+        if ($usuario->getNombre() != null) {
+            $iniciales .= substr($usuario->getApellidos(), 0, 1);
+        }
+
+        $us = new UsuarioLogin();
+        $us->setIdUsuario($usuario->getIdUsuario());
+        $us->setIniciales($iniciales);
+        
+        session_start();
+        $_SESSION['usuario'] = serialize($us);
         header("Location: listadoPacientes.php");
     } else {
         // Error
         header("Location: login.php");
     }
+
 } else if (isset($_POST['guardarRecuerdo'])) {
     include("controllers/RecuerdosController.php");
     include("controllers/SesionesController.php");

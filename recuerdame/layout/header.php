@@ -11,9 +11,8 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light header">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.php"><img class="logotipoMarca" src="public/img/Marca_recuerdame.png"/></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.php"><img class="logotipoMarca" src="public/img/Marca_recuerdame.png" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -28,6 +27,15 @@
             <a class="nav-link" href="login.php"><i class="fa-solid fa-right-from-bracket"></i></a>
           </li>
         </ul>
+        <div class="row align-items-center">
+          <div class="col-12">
+            <?php
+            require('models/UsuarioLogin.php');
+            $usuario = unserialize($_SESSION['usuario'])
+            ?>
+            <div data-letters="<?php echo (isset($usuario) ? $usuario->getIniciales() : '') ?>"></div>
+          </div>
+        </div>
       </div>
   </nav>
 </body>
