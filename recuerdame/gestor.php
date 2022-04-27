@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['login'])){
+if (isset($_POST['login'])) {
     include("daos/UsuarioDAO.php");
 
     $username = $_POST['usuario'];
@@ -21,7 +21,6 @@ if (isset($_POST['login'])){
         // Error
         header("Location: login.php");
     }
-
 } else if (isset($_POST['guardarRecuerdo'])) {
     include("controllers/RecuerdosController.php");
     include("controllers/SesionesController.php");
@@ -41,6 +40,11 @@ if (isset($_POST['login'])){
     $ventanaDesde = null;
     if (isset($_GET['ventanaDesde'])) {
         $ventanaDesde = $_GET['ventanaDesde'];
+    }
+
+    $ventanaHacia = null;
+    if (isset($_GET['ventanaHacia'])) {
+        $ventanaHacia = $_GET['ventanaHacia'];
     }
 
     $idSesion = null;
@@ -76,27 +80,32 @@ if (isset($_POST['login'])){
     } else {
         $recuerdosController = new RecuerdosController();
         $idRecuerdo = $recuerdosController->guardarRecuerdo($recuerdo);
-        
-        if (isset($ventanaDesde) && !empty($ventanaDesde)) {
+
+        if ($ventanaHacia != null) {
+
+            if ($ventanaDesde != null) {
+                header("Location: $ventanaHacia?idRecuerdo=$idRecuerdo&ventanaDesde=$ventanaDesde");
+            } else {
+                header("Location: $ventanaHacia?idRecuerdo=$idRecuerdo");
+            }
+        } else if (isset($ventanaDesde) && !empty($ventanaDesde)) {
             header("Location: verDatosRecuerdo.php?idRecuerdo=$idRecuerdo&ventanaDesde=$ventanaDesde");
         } else {
             header("Location: verDatosRecuerdo.php?idRecuerdo=$idRecuerdo");
         }
     }
-
 } else if (isset($_GET['getMultimediaRecuerdoList'])) {
     $idRecuerdo = $_GET['idRecuerdo'];
 
     $recuerdosController = new RecuerdosController();
     $recuerdosController->getListaMultimediaRecuerdo($idRecuerdo);
-
 } else if (isset($_GET['accion']) && $_GET['accion'] == 'guardarMultimediaRecuerdo') {
     include("controllers/RecuerdosController.php");
 
     $idRecuerdo = $_GET['idRecuerdo'];
     $listaMultimedia = array();
 
-    if (isset($_POST['checkMultimedia']) && isset($idRecuerdo)) {        
+    if (isset($_POST['checkMultimedia']) && isset($idRecuerdo)) {
         foreach ($_POST['checkMultimedia'] as $value) {
             array_push($listaMultimedia, $value);
         }
@@ -106,7 +115,6 @@ if (isset($_POST['login'])){
     $recuerdosController->anadirMultimedia($idRecuerdo, $listaMultimedia);
 
     header("Location: modificarDatosRecuerdo.php?idRecuerdo=$idRecuerdo");
-
 } else if (isset($_GET['eliminarMultimediaRecuerdo'])) {
     include("controllers/RecuerdosController.php");
     $idRecuerdo = $_GET['idRecuerdo'];
@@ -125,7 +133,6 @@ if (isset($_POST['login'])){
     $recuerdosController->eliminarRecuerdo($idRecuerdo);
 
     header("Location: listadoRecuerdos.php");
-
 } else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarRecuerdoSesion') {
     include("controllers/SesionesController.php");
 
@@ -136,7 +143,6 @@ if (isset($_POST['login'])){
     $sesionesController->eliminarRecuerdo($idSesion, $idRecuerdo);
 
     header("Location: modificarDatosSesion.php?idSesion=$idSesion");
-
 } else if (isset($_POST['guardarPersonaRelacionada'])) {
     include("controllers/PersonasRelacionadasController.php");
     include("controllers/RecuerdosController.php");
@@ -323,20 +329,18 @@ if (isset($_POST['login'])){
     $idSesion = $sesionesController->guardarSesion($sesion);
 
     header("Location: verDatosSesion.php?idSesion=$idSesion");
-
 } else if (isset($_GET['getMultimediaSesionList'])) {
     $idSesion = $_GET['idSesion'];
 
     $sesionesController = new SesionesController();
     $idSesion->getListaMultimediaSesion($idSesion);
-
 } else if (isset($_GET['accion']) && $_GET['accion'] == 'guardarMultimediaSesion') {
     include("controllers/SesionesController.php");
 
     $idSesion = $_GET['idSesion'];
     $listaMultimedia = array();
 
-    if (isset($_POST['checkMultimedia']) && isset($idSesion)) {        
+    if (isset($_POST['checkMultimedia']) && isset($idSesion)) {
         foreach ($_POST['checkMultimedia'] as $value) {
             array_push($listaMultimedia, $value);
         }
@@ -346,7 +350,6 @@ if (isset($_POST['login'])){
     $sesionesController->anadirMultimedia($idSesion, $listaMultimedia);
 
     header("Location: modificarDatosSesion.php?idSesion=$idSesion");
-
 } else if (isset($_GET['eliminarMultimediaSesion'])) {
     include("controllers/SesionesController.php");
     $idSesion = $_GET['idSesion'];
@@ -356,7 +359,6 @@ if (isset($_POST['login'])){
     $sesionesController->eliminarMultimedia($idSesion, $idMultimedia);
 
     header("Location: modificarDatosSesion.php?idSesion=$idSesion");
-
 } else if (isset($_GET['accion']) && $_GET['accion'] == 'guardarRecuerdoRelacionadoSesion') {
     include("controllers/SesionesController.php");
 
@@ -373,7 +375,6 @@ if (isset($_POST['login'])){
     $sesionesController->anadirRecuerdos($idSesion, $listaRecuerdos);
 
     header("Location: modificarDatosSesion.php?idSesion=$idSesion");
-
 } else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarSesion') {
     include("controllers/SesionesController.php");
 
@@ -383,7 +384,7 @@ if (isset($_POST['login'])){
     $sesionesController->eliminarSesion($idSesion);
 
     header("Location: listadoSesiones.php");
-} else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarPaciente'){
+} else if (isset($_GET['accion']) && $_GET['accion'] == 'eliminarPaciente') {
     include("controllers/PacientesController.php");
     $idPaciente = $_GET['idPaciente'];
 
@@ -392,13 +393,11 @@ if (isset($_POST['login'])){
 
 
     header("Location: listadoPacientes.php");
-
-
-}else if (isset($_GET['accion']) && $_GET['accion'] == 'guardarPaciente'){
+} else if (isset($_GET['accion']) && $_GET['accion'] == 'guardarPaciente') {
     include("controllers/PacientesController.php");
-    if(isset($_GET['idPaciente'])){
+    if (isset($_GET['idPaciente'])) {
         $idPaciente = $_GET['idPaciente'];
-    }else {
+    } else {
         $idPaciente = NULL;
     }
 
@@ -406,9 +405,9 @@ if (isset($_POST['login'])){
     $paciente = new Paciente();
     $paciente->setNombre($_POST['nombre']);
     $paciente->setApellidos($_POST['apellidos']);
-    if($_POST['genero'] == 'hombre') {
-         $paciente->setGenero('H');
-    }else {
+    if ($_POST['genero'] == 'hombre') {
+        $paciente->setGenero('H');
+    } else {
         $paciente->setGenero('M');
     }
     $paciente->setLugarNacimiento($_POST['lugarNac']);
@@ -416,24 +415,20 @@ if (isset($_POST['login'])){
     $paciente->setTipoResidencia($_POST['casa']);
     $paciente->setResidenciaActual($_POST['residencia']);
     $paciente->setFechaNacimiento($_POST['fecha']);
-   
+
     $pacientesController->guardarPaciente($paciente);
 
 
     header("Location: listadoPacientes.php");
+} else if (isset($_GET['accion']) && $_GET['accion'] == 'cambiarPaciente') {
 
-
-}else if(isset($_GET['accion']) && $_GET['accion'] == 'cambiarPaciente' ){
-   
     session_start();
-    
-   
+
+
     $_SESSION['idPaciente'] =  $_GET['idPaciente'];
 
 
-    
-// Se inicia una actualizacion transcurrido 5 segundos.
-    header( "Location: listadoPacientes.php" ); 
 
+    // Se inicia una actualizacion transcurrido 5 segundos.
+    header("Location: listadoPacientes.php");
 }
-?>

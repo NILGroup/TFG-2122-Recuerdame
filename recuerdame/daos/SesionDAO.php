@@ -150,7 +150,6 @@ class SesionDAO
      */
     public function nuevoRecuerdo($idPaciente, $idSesion, $recuerdo)
     {
-        echo "<script>console.log('Debug Objects: ' );</script>";
         try {
             $conexion = $this->db->getConexion();
             $conexion->begin_transaction();
@@ -177,8 +176,6 @@ class SesionDAO
             ));
 
             $idRecuerdo = $conexion->insert_id;
-
-            echo "<script>console.log('Debug Objects: " . $idRecuerdo . "' );</script>";
 
             $consultaSQL = "INSERT INTO sesion_recuerdo (id_sesion, id_recuerdo) 
                             VALUES (?, ?);";

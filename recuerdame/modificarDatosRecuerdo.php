@@ -195,15 +195,8 @@
                 </div>
                 <div class="row">
                     <div class="col-12 justify-content-end d-flex p-2">
-                        <?php
-                        if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
-                        ?>
-                            <a aria-disabled="true" href="modificarDatosPersonaRelacionada.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>&ventanaDesde=modificarDatosRecuerdo.php" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
-                            <a href="listadoPersonasRelacionadasRecuerdo.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>" class="pe-2" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>><button type="button" class="btn btn-success btn-sm">Añadir existente</button></a>
-                        <?php } else { ?>
-                            <a aria-disabled="true" href="modificarDatosPersonaRelacionada.php?ventanaDesde=modificarDatosRecuerdos.php" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
-                            <a href="listadoPersonasRelacionadasRecuerdo.php" class="pe-2"><button type="button" class="btn btn-success btn-sm" <?php if ($recuerdo->getIdRecuerdo() == null) echo 'disabled '; ?>>Añadir existente</button></a>
-                        <?php } ?>
+                        <button type="submit" name="guardarRecuerdo" formaction="gestor.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>&ventanaDesde=modificarDatosRecuerdo.php&ventanaHacia=modificarDatosPersonaRelacionada.php" class="btn btn-success btn-sm btn-icon me-2"><i class="fa-solid fa-plus"></i></button>
+                        <button type="submit" name="guardarRecuerdo" formaction="gestor.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>&ventanaDesde=modificarDatosRecuerdos.php&ventanaHacia=listadoPersonasRelacionadasRecuerdo.php" class="btn btn-success btn-sm me-2">Añadir existente</button>
                     </div>
                 </div>
 

@@ -17,7 +17,7 @@
 <body class="d-flex flex-column min-vh-100">
     <form action="gestor.php" method="POST">
         <div class="card form-login">
-            <img src="public/img/Marca_recuerdame.png" class="card-img-top" alt="...">
+            <img src="public/img/Marca_recuerdame.png" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">Login</h5>
                 <div class="row mb-3">
