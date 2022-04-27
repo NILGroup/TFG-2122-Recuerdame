@@ -47,7 +47,11 @@ Como resultado, cada modulo tendrá: por una parte distintas vistas para sus dist
 
 \section{Modelo de datos}
 
-Por las necesidades del proyecto y tras un estudio cerciorado, decidimos que la mejor forma de guardar la base de datos de nuestra aplicación sería MySQL. Por varias razones:
+Tras realizar un estudio cerciorado de las necesidades del proyecto. Observamos que para el modelo de datos de la aplicación, teníamos que decidir entre dos opciones: coger una base de datos relacional o una base de datos no relacional.
+
+Las bases de datos no relacionales están pensadas para ser utilizadas cuando: la estructura de la base datos no tiene esquemas específicos, se guardan grandes cantidades de información o se realizan grandes movimientos de datos en momentos puntuales. Lo cual no es el caso de nuestra aplicación. Ademas su compatibilidad con servidores y distintos sistemas operativos es mas complicada.
+
+Por lo mencionado anteriormente, decidimos que la mejor forma de guardar la base de datos de nuestra aplicación sería una base de datos relacional, y entre ellas escogimos MySQL. Por varias razones:
 \begin{itemize}
 	\item Su portabilidad: puede ser usado en distintos dispositivos como ordenadores, tablets y moviles.
 	\item Su gratuidad, al ser código abierto no requiere de ningún coste.
@@ -84,4 +88,3 @@ A continuación, se explicarán algunas de las tablas que se pueden observar en la
 	\caption{Estructura de la base de datos}
 	\label{fig:str_bd}
 \end{figure}
-      
