@@ -14,6 +14,14 @@
     <?php include "layout/nav.php" ?>
     <?php include "controllers/InformeSesionController.php" ?>
 
+    <?php
+    $ventanaDesde = null;
+    if (isset($_GET['ventanaDesde'])) {
+        $ventanaDesde = " ";
+    }
+    
+    ?>
+
     <div class="container-fluid">
         <?php
             if (!empty($_GET['idInforme'])) {
@@ -58,7 +66,18 @@
 
                 <div>
                     <button type="submit" name="guardarInformeSesion" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
-                    <button type="button" onclick="history.go(-1)" class="btn btn-primary btn-sm">Atrás</button></a>
+                    <?php
+                        if ($ventanaDesde != null) {
+                        ?>
+                            <a href="listadoInformesSesion.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                        <?php
+                        } else {
+                        ?>
+                            <a href="listadoSesiones.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+                        <?php
+                        }
+                    ?>
+                   
                 </div>
 
             </div>
