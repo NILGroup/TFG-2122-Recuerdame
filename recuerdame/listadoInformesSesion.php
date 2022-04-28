@@ -51,7 +51,7 @@
                             <td><?php echo (date("d/m/Y", strtotime($row["fecha_finalizada"]))) ?></td>
                             <td class="tableActions">
                                 <a href="verDatosInformeSesion.php?idInforme=<?php echo ($row['idInforme']) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
-                                <a href="modificarDatosInformeSesion.php?idInforme=<?php echo ($row['idInforme']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
+                                <a href="modificarDatosInformeSesion.php?ventanaDesde&idInforme=<?php echo ($row['idInforme']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
                                 <a href="gestor.php?accion=eliminarInformeSesion&idInforme=<?php echo ($row['idInforme']) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
                             </td>
                         </tr>
