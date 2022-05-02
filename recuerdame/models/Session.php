@@ -68,6 +68,26 @@ class Session
         $_SESSION['paciente'] = serialize($paciente);
     }
 
+    public static function getError()
+    {
+        $error = null;
+        if (isset($_SESSION) && isset($_SESSION['error'])) {
+            $error = $_SESSION['error'];
+        }
+
+        return $error;
+    }
+
+    public static function setError($error)
+    {
+        $_SESSION['error'] = $error;
+    }
+
+    public static function cleanError()
+    {
+        unset($_SESSION["error"]);
+    }
+
     public static function usuarioLogado()
     {
         return isset($_SESSION) && isset($_SESSION['usuario']);

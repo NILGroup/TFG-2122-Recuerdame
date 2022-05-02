@@ -7,6 +7,7 @@ if (!isset($_SESSION)) {
 
 if (isset($_POST['login'])) {
     include("controllers/LoginController.php");
+    Session::cleanError();
 
     $username = $_POST['usuario'];
     $password = $_POST['contrasena'];
@@ -15,7 +16,7 @@ if (isset($_POST['login'])) {
     $ok = $loginController->login($username, $password);
 
     if (!$ok) {
-        // Error
+        Session::setError('Usuario o contraseña incorrectos.');
         header("Location: login.php");
     }
 
