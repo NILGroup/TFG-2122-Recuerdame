@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="public/css/styles.css">
     <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
@@ -16,6 +17,7 @@
     <?php include "controllers/historiaVidacontroller.php" ?>
     <?php include "controllers/recuerdosController.php" ?>
     <?php include "controllers/comunesController.php" ?>
+    <?php include "modalImagen.php" ?>
 
     <div class="container-fluid vh-100">
         <?php
@@ -55,32 +57,49 @@
 
                         <?php
                         $i = 1;
+                        $totalRecuerdos = count($listaRecuerdos);
                         foreach ($listaRecuerdos as $recuerdo) {
                         ?>
                             <?php $item_class = ($i == 1) ? 'carousel-item active' : 'carousel-item'; ?>
                             <div class="<?php echo $item_class; ?>">
                                 <div class="d-block w-100">
-                                    <div class="">
-                                        <h5 class="text-center text-muted"><?php echo $recuerdo['nombre'] ?></h5>
-                                        <p><?php echo nl2br($recuerdo['descripcion']) ?></p>
+                                    <div>
+                                        <h4 class="text-center hv-title"><?php echo $recuerdo['nombre'] ?></h5>
+                                            <div class="row hv-des">
+                                                <p><?php echo nl2br($recuerdo['descripcion']) ?></p>
+                                            </div>
 
-                                        <div class="testimonial-group">
-                                            <div class="row text-center flex-nowrap">
-                                                <?php
-                                                $listaMultimedia = $recuerdosController->getListaMultimediaRecuerdo($recuerdo['id_recuerdo']);
-                                                foreach ($listaMultimedia as $multimedia) {
-                                                ?>
-                                                    <div class="col-sm-4">
-                                                        <img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive card-img-top img-thumbnail" alt="<?php $multimedia['nombre'] ?>" />
-                                                        <div>
-                                                            <h5><?php echo $multimedia['nombre'] ?></h5>
+                                            <div class="row">
+                                                <h4 class="text-center hv-title">Imágenes</h5>
+                                                    <div class="testimonial-group justify-content-center">
+                                                        <div class="row text-center flex-nowrap">
+                                                            <?php
+                                                            $listaMultimedia = $recuerdosController->getListaMultimediaRecuerdo($recuerdo['id_recuerdo']);
+                                                            ?>
+
+                                                            <?php
+                                                            if ($listaMultimedia == null || empty($listaMultimedia)) {
+                                                            ?>
+                                                                <span class="align-middle text-muted">Este recuerdo no tiene imágenes.</span>
+                                                            <?php
+                                                            }
+                                                            ?>
+
+                                                            <?php
+                                                            foreach ($listaMultimedia as $multimedia) {
+                                                            ?>
+                                                                <div class="col-sm-5 col-md-4 col-lg-3">
+                                                                    <a href="#" class="visualizarImagen"><img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive card-img-top img-thumbnail" alt="<?php $multimedia['nombre'] ?>" /></a>
+                                                                    <div>
+                                                                        <h6 class="text-muted"><?php echo $multimedia['nombre'] ?></h6>
+                                                                    </div>
+                                                                </div>
+                                                            <?php
+                                                            }
+                                                            ?>
                                                         </div>
                                                     </div>
-                                                <?php
-                                                }
-                                                ?>
                                             </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -122,5 +141,6 @@
     </div>
     <?php include "layout/footer.php" ?>
 </body>
+<script src="public/js/imagen.js"></script>
 
 </html>

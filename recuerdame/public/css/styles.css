@@ -116,7 +116,7 @@
 
 .img-responsive {
     width: auto;
-    height: 250px;
+    height: 170px;
 }
 
 .img-responsive-sm {
@@ -130,12 +130,24 @@
     border-radius: 0.25rem;
     background-color: #fff;
     background-clip: border-box;
-    overflow-y: auto;
 }
 
 .hv-box::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 2px;
+}
+
+.hv-des {
+    height: 12rem; 
+    font-family: monospace;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+}
+
+.hv-title {
+    color: #4F7BC5;
 }
 
 .hv-box::-webkit-scrollbar-thumb {
