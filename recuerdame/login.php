@@ -21,11 +21,11 @@
             <div class="card-body">
                 <h5 class="card-title">Login</h5>
                 <div class="row mb-3">
-                    <input class="form-control" type="text" name="usuario" value="" placeholder="Usuario">
+                    <input class="form-control" type="text" name="usuario" value="" placeholder="Usuario" required>
                 </div>
 
                 <div class="row mb-3">
-                    <input class="form-control" type="password" name="contrasena" value="" placeholder="Contraseña">
+                    <input class="form-control" type="password" name="contrasena" value="" placeholder="Contraseña" required>
                 </div>
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">

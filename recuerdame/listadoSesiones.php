@@ -1,11 +1,3 @@
-<?php
-    if (!isset($_SESSION)) { 
-        session_start(); 
-    }
-    if (isset($_GET['idPaciente'])) {
-        $_SESSION['idPaciente'] = $_GET['idPaciente'];
-    }
-?>
 <html>
 
 <head>

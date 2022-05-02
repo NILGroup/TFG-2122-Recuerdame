@@ -1,50 +1,34 @@
 <?php
 require_once('models/Session.php');
 
-if (!isset($_SESSION)) { 
-    session_start(); 
+if (!isset($_SESSION)) {
+    session_start();
 }
 
 if (isset($_POST['login'])) {
-    include("daos/UsuarioDAO.php");
-    require('models/UsuarioLogin.php');
+    include("controllers/LoginController.php");
 
     $username = $_POST['usuario'];
     $password = $_POST['contrasena'];
 
-    $usuarioDAO = new UsuarioDAO();
-    $usuario = $usuarioDAO->login($username);
+    $loginController = new LoginController();
+    $ok = $loginController->login($username, $password);
 
-    if ($usuario == null) {
+    if (!$ok) {
         // Error
         header("Location: login.php");
     }
 
-    if (password_verify($password, $usuario->getContrasenia())) {
-        $iniciales = '';
-        if ($usuario->getNombre() != null) {
-            $iniciales = substr($usuario->getNombre(), 0, 1);
-        }
-
-        if ($usuario->getNombre() != null) {
-            $iniciales .= substr($usuario->getApellidos(), 0, 1);
-        }
-
-        $us = new UsuarioLogin();
-        $us->setIdUsuario($usuario->getIdUsuario());
-        $us->setIniciales($iniciales);
-        $us->setEsTerapeuta(true);
-        $us->setEsCuidador(false);
-
-        $_SESSION['usuario'] = serialize($us);
+    if (Session::esTerapeuta()){
         header("Location: listadoPacientes.php");
-    } else {
-        // Error
-        header("Location: login.php");
     }
+
+    if (Session::esCuidador()){
+        header("Location: verDatosPaciente.php");
+    }
+
 } else if (isset($_GET['logout'])) {
-    unset($_SESSION["usuario"]);
-    unset($_SESSION["idPaciente"]);
+    Session::cleanSession();
 
     header("Location: login.php");
 } else if (isset($_POST['guardarRecuerdo'])) {
@@ -218,7 +202,7 @@ if (isset($_POST['login'])) {
         }
     } else {
         $personasRelacionadasController = new PersonasRelacionadasController();
-        $idPersonaRelacionada = $personasRelacionadasController->guardarPersonaRelacionada($personaRelacionada);
+        $idPersonaRelacionada = $personasRelacionadasController->guardarPersonaRelacionada($idPaciente, $personaRelacionada);
 
         if ($ventanaDesde != null) {
             header("Location: verDatosPersonaRelacionada.php?idPersonaRelacionada=$idPersonaRelacionada&ventanaDesde=$ventanaDesde");
@@ -466,15 +450,35 @@ if (isset($_POST['login'])) {
 
 
     header("Location: listadoPacientes.php");
-} else if (isset($_GET['accion']) && $_GET['accion'] == 'cambiarPaciente') {
+} else if (isset($_GET['cambiarPaciente'])) {
+    include("controllers/PacientesController.php");
+    require_once('models/PacienteCabecera.php');
+    $pacientesController = new PacientesController();
 
-    session_start();
+    if (isset($_GET['idPaciente'])) {
+        $idPaciente = $_GET['idPaciente'];
 
+        $paciente = $pacientesController->verPaciente($idPaciente);
+        $cumpleanos = new DateTime($paciente->getFechaNacimiento());
+        $hoy = new DateTime();
+        $edad = $hoy->diff($cumpleanos);
 
-    $_SESSION['idPaciente'] =  $_GET['idPaciente'];
+        $genero = '';
+        if ($paciente->getGenero() == 'H'){
+            $genero = 'Hombre';
+        }  else if ($paciente->getGenero() == 'M') {
+            $genero = 'Mujer';
+        }
 
+        $nombre = ($paciente->getNombre()) . " " . ($paciente->getApellidos());
+        $p = new PacienteCabecera();
+        $p->setIdPaciente($paciente->getIdPaciente());
+        $p->setNombre($nombre);
+        $p->setEdad($edad);
+        $p->setGenero($genero);
+        $p->setCodigoGenero($paciente->getGenero());
 
-
-    // Se inicia una actualizacion transcurrido 5 segundos.
-    header("Location: listadoPacientes.php");
+        Session::setPaciente($p);
+        header("Location: listadoSesiones.php");
+    }
 }

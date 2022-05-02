@@ -45,10 +45,13 @@
                     <tbody>
                         <?php
                         $personasRelacionadasController = new PersonasRelacionadasController();
-                        if (isset($idRecuerdo) && $idRecuerdo != null) {
-                            $lista = $personasRelacionadasController->getListaPersonasRelacionadasRecuerdoAnadir($idRecuerdo);
-                        } else {
-                            $lista = $personasRelacionadasController->getListaPersonasRelacionadas();
+                        if (Session::getIdPaciente() != null){
+                            $idPaciente = Session::getIdPaciente();
+                            if (isset($idRecuerdo) && $idRecuerdo != null) {
+                                $lista = $personasRelacionadasController->getListaPersonasRelacionadasRecuerdoAnadir($idPaciente, $idRecuerdo);
+                            } else {
+                                $lista = $personasRelacionadasController->getListaPersonasRelacionadas($idPaciente);
+                            }
                         }
 
                         $i = 1;

@@ -4,7 +4,6 @@
     if ($idPaciente == null) {
         // Error
     }
-
      require_once('configdb.php');
      $db = new Configdb();
      $conexion = $db->getConexion();

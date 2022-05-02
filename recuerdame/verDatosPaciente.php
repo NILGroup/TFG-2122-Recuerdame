@@ -6,15 +6,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <title>Recuérdame</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
     
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
+    <?php include "controllers/PacientesController.php" ?>
     <div class="container-fluid row align-items-center h-75">
         <?php
-        $paciente = $pacientesController->verPaciente($_GET['idPaciente']);
+        $pacientesController = new PacientesController();
+        $paciente = $pacientesController->verPaciente(Session::getIdPaciente());
         ?>
 
         <div class="card p-4 h-75">

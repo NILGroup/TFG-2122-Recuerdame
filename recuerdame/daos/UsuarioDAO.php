@@ -33,7 +33,8 @@ class UsuarioDAO
             $usuario->setNombreUsuario($u['nombre_usuario']);
             $usuario->setContrasenia($u['contrasenia']);
             $usuario->setNombre($u['nombre']);
-            $usuario->setApellidos($u['apellidos']);    
+            $usuario->setApellidos($u['apellidos']);
+            $usuario->setRol($u['rol']); 
             return $usuario;
         }
     }
@@ -45,8 +46,8 @@ class UsuarioDAO
     {
 
         $conexion = $this->db->getConexion();
-        $pass = password_hash("francisco", PASSWORD_DEFAULT);
-        $row = $conexion->query("UPDATE usuario SET contrasenia = '$pass' WHERE id_usuario = 1")
+        $pass = password_hash("valeria", PASSWORD_DEFAULT);
+        $row = $conexion->query("UPDATE usuario SET contrasenia = '$pass' WHERE id_usuario = 2")
             or die($conexion->error);
 
         $u = $row->fetch_assoc();

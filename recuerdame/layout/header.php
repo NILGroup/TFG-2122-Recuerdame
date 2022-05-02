@@ -10,7 +10,7 @@
 
 <body>
   <?php include "models/Session.php" ?>
-  <?php include "loginCheck.php"; ?>
+  <?php include "loginCheck.php" ?>
   <nav class="navbar navbar-expand-lg navbar-light bg-light header">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php"><img class="logotipoMarca" src="public/img/Marca_recuerdame.png" /></a>

@@ -13,13 +13,13 @@
 
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    
+    <?php include "controllers/PacientesController.php" ?>
 
     <div class="container-fluid">
         <?php
-            if (!empty($_GET['idPaciente'])) {
+            if (Session::getIdPaciente() != null) {
                 $pacientesController = new PacientesController();
-                $paciente = $pacientesController->verPaciente($_GET['idPaciente']);
+                $paciente = $pacientesController->verPaciente(Session::getIdPaciente());
             }  else {
                 $pacientesController = new PacientesController();
             }

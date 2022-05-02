@@ -40,12 +40,12 @@
         <div class="row">
         <input hidden id="idSesion" value="<?php echo $idSesion ?>">
             <div class="row">
-                <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha:</label>
+                <label for="fecha" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Fecha</label>
                 <div class="col-sm-9 col-md-6 col-lg-2">
                     <input disabled type="date" class="form-control form-control-sm" id="fecha" value="<?php echo ($sesion->getFecha()) ?>">
                 </div>
 
-                <label for="etapa" class="form-label col-form-label-sm col-sm-2 col-md-12col-lg-1">Etapa:</label>
+                <label for="etapa" class="form-label col-form-label-sm col-sm-2 col-md-12col-lg-1">Etapa</label>
                 <div class="col-sm-3 col-md-3 col-lg-2">
                     <select disabled class="form-select form-select-sm" name="etapa">
                         <?php
@@ -66,23 +66,23 @@
         </div>
 
         <div class="mb-3">
-            <label for="objetivo" class="form-label col-form-label-sm">Objetivo:</label>
+            <label for="objetivo" class="form-label col-form-label-sm">Objetivo</label>
             <textarea disabled class="form-control form-control-sm" id="objetivo" name="objetivo" rows="3"><?php echo ($sesion->getObjetivo()) ?></textarea>
         </div>
 
         <div class="mb-3">
-            <label for="descripcion" class="form-label col-form-label-sm">Descripción:</label>
+            <label for="descripcion" class="form-label col-form-label-sm">Descripción</label>
             <textarea disabled class="form-control form-control-sm" id="descripcion" name="descripcion" rows="3"><?php echo ($sesion->getDescripcion()) ?></textarea>
         </div>
 
         <div>
             <div class="mb-3">
-                <label for="barreras" class="form-label col-form-label-sm">Barreras:</label>
+                <label for="barreras" class="form-label col-form-label-sm">Barreras</label>
                 <textarea disabled class="form-control form-control-sm" id="barreras" name="barreras" rows="3"><?php echo ($sesion->getBarreras()) ?></textarea>
             </div>
 
             <div class="mb-3">
-                <label for="facilitadores" class="form-label col-form-label-sm">Facilitadores:</label>
+                <label for="facilitadores" class="form-label col-form-label-sm">Facilitadores</label>
                 <textarea disabled class="form-control form-control-sm" id="facilitadores" name="facilitadores" rows="3"><?php echo ($sesion->getFacilitadores()) ?></textarea>
             </div>
         </div>

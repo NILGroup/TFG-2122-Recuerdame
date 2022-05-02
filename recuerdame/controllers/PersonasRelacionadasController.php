@@ -13,16 +13,14 @@ class PersonasRelacionadasController{
     /**
      * Lista de personas relacionadas
      */
-    public function getListaPersonasRelacionadas() {
-        $idPaciente = $_SESSION['idPaciente'];
+    public function getListaPersonasRelacionadas($idPaciente) {
         return $this->personaRelacionadaDao->getListaPersonasRelacionadas($idPaciente);
     }
 
     /**
      * Lista de personas relacionadas que están asignadas a un recuerdo
      */
-    public function getListaPersonasRelacionadasRecuerdo($idRecuerdo) {
-        $idPaciente = $_SESSION['idPaciente'];
+    public function getListaPersonasRelacionadasRecuerdo($idPaciente, $idRecuerdo) {
         return $this->personaRelacionadaDao->getListaPersonasRelacionadasRecuerdo($idPaciente, $idRecuerdo);
     }
 
@@ -30,8 +28,7 @@ class PersonasRelacionadasController{
      * Lista de las personas relacionadas de un paciente. Se buscan las que están relacionadas con el recuerdo
      * para indicarlo en la pantalla
      */
-    public function getListaPersonasRelacionadasRecuerdoAnadir($idRecuerdo) {
-        $idPaciente = $_SESSION['idPaciente'];
+    public function getListaPersonasRelacionadasRecuerdoAnadir($idPaciente, $idRecuerdo) {
         return $this->personaRelacionadaDao->getListaPersonasRelacionadasRecuerdoAnadir($idPaciente, $idRecuerdo);
     }
 
@@ -45,8 +42,7 @@ class PersonasRelacionadasController{
     /**
      * Crea o modifica una persona relacionada
      */
-    public function guardarPersonaRelacionada($personaRelacionada) {
-        $idPaciente = $_SESSION['idPaciente'];
+    public function guardarPersonaRelacionada($idPaciente, $personaRelacionada) {
         $idPersonaRelacionada = null;
         if ($personaRelacionada->getIdPersonaRelacionada() == null) {
             $idPersonaRelacionada = $this->personaRelacionadaDao->nuevaPersonaRelacionada($idPaciente, $personaRelacionada);

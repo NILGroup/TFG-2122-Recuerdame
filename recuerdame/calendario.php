@@ -2,7 +2,6 @@
 
 <head>
     <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
-    <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <link rel="stylesheet" href="public/fullcalendar/main.css">
@@ -14,17 +13,13 @@
 <body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-
     <?php include "controllers/CalendarioController.php" ?>
-
 
     <div class="container-fluid">
         <div class="pt-4 pb-2">
             <h5 class="text-muted">Calendario</h5>
             <hr class="lineaTitulo">
         </div>
-
-
 
         <div id="calendar"></div>
         <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
@@ -58,14 +53,13 @@
                                 <input type="submit" id="btnEliminar" name="btnEliminar" value="Eliminar actividad" class="btn btn-outline-primary btn-sm">
                                 <input type="submit" id="btnAccion" name="btnAccion" class="btn btn-outline-primary btn-sm">
                             </div>
+                        </div>
                     </form>
-
                 </div>
             </div>
-
         </div>
     </div>
-    </div>
+
     <script src="public/fullcalendar/main.js"></script>
     <!-- antes del script de nuestro calendario añadimos el archivo traductor: -->
     <script src="public/fullcalendar/locales/es.js"></script>

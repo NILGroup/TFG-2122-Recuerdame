@@ -15,11 +15,9 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-   
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    
-
+    <?php include "controllers/PacientesController.php" ?>
     <div class="contenedor">
         <div class="pt-4 pb-2">
             <h5 class="text-muted">Listado de pacientes</h5>
@@ -46,7 +44,7 @@
                 </thead>
                 <tbody>
                 <?php
-                    
+                    $pacientesController = new PacientesController();
                     $pacientes = $pacientesController->getListaPacientes();
                     $i = 1;
                     if($pacientes != null){ //Si los resultados devueltos son mayor a 0
@@ -54,7 +52,7 @@
                         ?>
                         <tr>
                             <th scope="row"><?php echo $i ?></th>
-                            <td><a href="listadoSesiones.php?idPaciente=<?php echo ($row['id_paciente']) ?>"> <?php echo ($row['nombre']) ?></a></td>
+                            <td><a href="gestor.php?cambiarPaciente&idPaciente=<?php echo ($row['id_paciente']) ?>"> <?php echo ($row['nombre']) ?></a></td>
                             <td><?php echo ($row['apellidos']) ?></td>
                             <td><?php 
                                 if($row["genero"] == 'H') echo 'Hombre';

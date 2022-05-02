@@ -209,8 +209,8 @@
                             <?php
                             $personasRelacionadasController = new PersonasRelacionadasController();
                             $lista = array();
-                            if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null) {
-                                $lista = $personasRelacionadasController->getListaPersonasRelacionadasRecuerdo($idRecuerdo);
+                            if ($recuerdo != null && $recuerdo->getIdRecuerdo() != null && Session::getIdPaciente() != null) {
+                                $lista = $personasRelacionadasController->getListaPersonasRelacionadasRecuerdo(Session::getIdPaciente(), $idRecuerdo);
                             }
                             $i = 1;
                             foreach ($lista as $row) {

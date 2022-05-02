@@ -186,7 +186,10 @@
                 <tbody>
                     <?php
                     $personasRelacionadasController = new PersonasRelacionadasController();
-                    $lista = $personasRelacionadasController->getListaPersonasRelacionadasRecuerdo($idRecuerdo);
+                    $lista = array();
+                    if (Session::getIdPaciente() != null){
+                        $lista = $personasRelacionadasController->getListaPersonasRelacionadasRecuerdo(Session::getIdPaciente(), $idRecuerdo);
+                    }
                     $i = 1;
                     foreach ($lista as $row) {
                     ?>

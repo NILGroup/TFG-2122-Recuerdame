@@ -55,7 +55,11 @@
                 <tbody>
                     <?php
                     $personasRelacionadasController = new PersonasRelacionadasController();
-                    $lista = $personasRelacionadasController->getListaPersonasRelacionadas();
+                    $lista = array();
+                    if (Session::getIdPaciente() != null)
+                    {
+                        $lista = $personasRelacionadasController->getListaPersonasRelacionadas(Session::getIdPaciente());
+                    }
                     $i = 1;
                     foreach ($lista as $row) {
                     ?>
