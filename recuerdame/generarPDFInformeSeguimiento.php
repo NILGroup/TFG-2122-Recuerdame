@@ -86,7 +86,12 @@ function writePatient($pdf, $paciente){
     $pdf->SetFont('Times','B',12);
     $pdf->Cell(30,7,'Genero: ',1,0,'L',true);
     $pdf->SetFont('Times','',12);
-    $pdf->Cell(160,7,' '. $paciente->getGenero(),1);
+    if($paciente->getGenero() == 'H'){
+        $pdf->Cell(160,7,' '. 'Hombre',1);
+    }
+    else{
+        $pdf->Cell(160,7,' '. 'Mujer',1);
+    }
     $pdf->Ln(12);
 }
 

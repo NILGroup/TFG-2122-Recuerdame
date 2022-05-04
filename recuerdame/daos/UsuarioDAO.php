@@ -13,6 +13,26 @@ class UsuarioDAO
         $this->db = new Configdb();
     }
 
+    public function getUsuario($id){
+        $conexion = $this->db->getConexion();
+        $row = $conexion->query("SELECT * FROM usuario WHERE id_usuario = '$id'")
+            or die($conexion->error);
+
+        $u = $row->fetch_assoc();
+
+        if ($u == null){
+            return null;
+        } else {
+            $usuario = new Usuario();
+            $usuario->setIdUsuario($u['id_usuario']);
+            $usuario->setNombreUsuario($u['nombre_usuario']);
+            $usuario->setContrasenia($u['contrasenia']);
+            $usuario->setNombre($u['nombre']);
+            $usuario->setApellidos($u['apellidos']);
+            $usuario->setRol($u['rol']); 
+            return $usuario;
+        }
+    }
     /**
      * Login.
      */

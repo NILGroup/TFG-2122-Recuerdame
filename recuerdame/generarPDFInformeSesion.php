@@ -3,7 +3,9 @@ require('./public/fpdf184/fpdf.php');
 include "controllers/InformeSesionController.php";
 include "controllers/PacientesController.php";
 include "controllers/SesionesController.php";
-
+include "controllers/LoginController.php";
+require_once('models/Session.php');
+    
 class PDF extends FPDF{
 
     private $numInforme;
@@ -56,16 +58,26 @@ function writePatient($pdf, $paciente){
     $pdf->SetFont('Times','B',12);
     $pdf->Cell(30,7,'Genero: ',1,0,'L',true);
     $pdf->SetFont('Times','',12);
-    $pdf->Cell(160,7,' '. $paciente->getGenero(),1);
+    if($paciente->getGenero() == 'H'){
+        $pdf->Cell(160,7,' '. 'Hombre',1);
+    }
+    else{
+        $pdf->Cell(160,7,' '. 'Mujer',1);
+    }
     $pdf->Ln(12);
 }
 
-function writeSesion($pdf, $sesion){
-$pdf->SetFont('Times','B',12);
+function writeTerapeuta($pdf, $usuario){
+    $pdf->SetFont('Times','B',12);
     $pdf->Cell(50,7,"Terapeuta:",1,0,'L',true);
     $pdf->SetFont('Times','',12);
-    $pdf->Cell(140,7,'Cris',1,0,'C');
+    $nombreCompleto = utf8_decode($usuario->getNombre() . " " . $usuario->getApellidos());
+    $pdf->Cell(140,7,  $nombreCompleto,1,0,'C');
     $pdf->Ln();
+}
+
+function writeSesion($pdf, $sesion){
+
     $pdf->SetFont('Times','B',12);
     $pdf->Cell(50,7,"Fecha de la sesion:",1,0,'L',true);
     $pdf->SetFont('Times','',12);
@@ -134,7 +146,7 @@ function writeInformeSesion($pdf, $informeSesion){
 
 }
 
-function pdfBody($pdf, $paciente, $sesion, $informeSesion){
+function pdfBody($pdf, $paciente, $sesion, $informeSesion, $usuario){
     
     $pdf->SetFillColor(220);
 
@@ -148,6 +160,7 @@ function pdfBody($pdf, $paciente, $sesion, $informeSesion){
     $pdf->Cell(0,7,'Datos de la sesion ');
     $pdf->Ln(9);
 
+    writeTerapeuta($pdf,$usuario);
     writeSesion($pdf,$sesion);
 
     $pdf->SetFont('Times','B',15);
@@ -187,13 +200,16 @@ if (!empty($_GET['idSesion'])){
     $informeSesionController = new InformeSesionController();
     $informeSesion = $informeSesionController->verInformeSesion($_GET['idSesion']);
     
+    $loginController = new LoginController();
+    $usuario = $loginController->verUsuario($sesion->getIdUsuario());
+
     $pdf = new PDF();
     $pdf->LoadData($informeSesion->getIdSesion());
     $pdf->AliasNbPages();
     $pdf->AddPage();
     $pdf->SetFont('Times','',12);
 
-    pdfBody($pdf, $paciente, $sesion, $informeSesion);
+    pdfBody($pdf, $paciente, $sesion, $informeSesion, $usuario);
 
     $pdf->Output();
 }

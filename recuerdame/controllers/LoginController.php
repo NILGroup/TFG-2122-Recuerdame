@@ -15,6 +15,10 @@ class LoginController
         $this->usuarioDAO = new UsuarioDAO();
     }
 
+    public function verUsuario($id){
+        return $this->usuarioDAO->getUsuario($id);
+    }
+
     public function login($username, $password)
     {
         $login = true;

@@ -48,7 +48,7 @@
             
                 </div>
                 <div class="row">
-                    <label for="GDS" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">GDS</label>
+                    <label for="GDS" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">GDS<span class="asterisco">*</span></label>
                     <div class="col-sm-9 col-md-6 col-lg-2">
                          <input type="number" min="1" max="7" class="form-control form-control-sm" id="gds" name="gds" value="<?php echo ($informeSeguimiento->getGds()) ?>">
             
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <label for="Mental" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Mini mental/MEC de Lobo</label>
+                    <label for="Mental" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Mini mental/MEC de Lobo<span class="asterisco">*</span></label>
                     <div class="col-sm-9 col-md-6 col-lg-2">
                          <input type="number" min="0" max="25" class="form-control form-control-sm" id="mental" name="mental" value="<?php echo ($informeSeguimiento->getMental()) ?>">
                     </div>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <label for="CDR" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">CDR</label>
+                    <label for="CDR" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">CDR<span class="asterisco">*</span></label>
                     <div class="col-sm-9 col-md-6 col-lg-2">
                          <input type="number" min="0" max="3" class="form-control form-control-sm" id="cdr" name="cdr" value="<?php echo ($informeSeguimiento->getCdr()) ?>">
                     </div>
