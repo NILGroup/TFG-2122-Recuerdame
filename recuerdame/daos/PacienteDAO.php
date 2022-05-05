@@ -36,11 +36,10 @@ class PacienteDAO
     /**
      * Lista de pacientes
      */
-    public function getListaPacientes()
+    public function getListaPacientes($idTerapeuta)
     {
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("SELECT * FROM paciente
-               ")
+        $row = $conexion->query("SELECT * FROM paciente WHERE id_terapeuta = '$idTerapeuta' ")
             or die($conexion->error);
 
         $listaPacientes = array();
@@ -59,7 +58,7 @@ class PacienteDAO
         $conexion = $this->db->getConexion();
         $consultaSQL = "INSERT INTO paciente (id_paciente, nombre, apellidos,
          genero, lugar_nacimiento, nacionalidad, fecha_nacimiento, 
-         tipo_residencia, residencia_actual) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
+         tipo_residencia, residencia_actual, id_terapeuta, id_cuidador) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
             NULL,
@@ -70,7 +69,9 @@ class PacienteDAO
             $paciente->getNacionalidad(),
             $paciente->getFechaNacimiento(),
             $paciente->getTipoResidencia(),
-            $paciente->getResidenciaActual()
+            $paciente->getResidenciaActual(),
+            $paciente->getIdTerapeuta(),
+            $paciente->getIdCuidador()
         ));
 
         $stmt->close();
@@ -79,15 +80,18 @@ class PacienteDAO
     }
 
     /**
-     * Modifica los datos de un paciente
+     * Modifica los datos de un paciente // COOOOORREGIRRR
      */
     public function modificarPaciente($paciente)
-    {
+    { 
+
+        
         $conexion = $this->db->getConexion();
         $consultaSQL = "UPDATE paciente
                         SET nombre = ?, apellidos = ?, genero = ?, lugar_nacimiento = ?,
-                            nacionalidad = ?, fecha_nacimiento = ?, tipo_residencia = ?, residencia_actual = ?
+                            nacionalidad = ?, fecha_nacimiento = ?, tipo_residencia = ?, residencia_actual = ?, id_terapeuta = ?
                         WHERE id_paciente = ?;";
+                        
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
             $paciente->getNombre(),
@@ -98,12 +102,13 @@ class PacienteDAO
             $paciente->getFechaNacimiento(),
             $paciente->getTipoResidencia(),
             $paciente->getResidenciaActual(),
+            $paciente->getIdUsuario(),
             $paciente->getIdPaciente()
         ));
 
         $stmt->close();
 
-        return $paciente->getIdPaciente();
+        return ;
     }
 
     /**

@@ -7,6 +7,7 @@ class Usuario {
     private $nombre;
     private $apellidos;
     private $contrasenia;
+    private $correo;
     private $rol;
 
     function __construct() {
@@ -71,6 +72,20 @@ class Usuario {
 
         return $this;
     }
+
+    
+    public function getCorreo()
+    {
+        return $this->correo;
+    }
+
+    public function setCorreo($correo)
+    {
+        $this->correo = $correo;
+
+        return $this;
+    }
+
 
     public function getRol()
     {

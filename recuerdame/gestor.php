@@ -446,7 +446,7 @@ if (isset($_POST['login'])) {
     $paciente->setTipoResidencia($_POST['casa']);
     $paciente->setResidenciaActual($_POST['residencia']);
     $paciente->setFechaNacimiento($_POST['fecha']);
-
+    $paciente->setIdTerapeuta($_GET['idUsuario']);
     $pacientesController->guardarPaciente($paciente);
 
 

@@ -26,8 +26,8 @@ class PacientesController{
         return $idPaciente;
     }
      
-    public function getListaPacientes() {
-        return $this->pacienteDao->getListaPacientes();
+    public function getListaPacientes($idTerapeuta) {
+        return $this->pacienteDao->getListaPacientes($idTerapeuta);
     }
     public function eliminarPaciente($idPaciente) {
         return $this->pacienteDao->eliminarPaciente($idPaciente);

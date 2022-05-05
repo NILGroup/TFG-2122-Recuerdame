@@ -17,9 +17,9 @@
 
     <div class="container-fluid">
         <?php
-            if (Session::getIdPaciente() != null) {
+            if ($_GET['idPaciente'] != null) {
                 $pacientesController = new PacientesController();
-                $paciente = $pacientesController->verPaciente(Session::getIdPaciente());
+                $paciente = $pacientesController->verPaciente($_GET['idPaciente']);
             }  else {
                 $pacientesController = new PacientesController();
                 $paciente->setFechaNacimiento(date('Y-m-d'));

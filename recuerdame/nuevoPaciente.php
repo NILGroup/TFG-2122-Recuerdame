@@ -30,7 +30,7 @@
             <hr class="lineaTitulo">
         </div>
         
-        <form class="row g-3" action="gestor.php?accion=guardarPaciente" method="POST">
+        <form class="row g-3" action="gestor.php?accion=guardarPaciente&idUsuario=<?php echo $usuario->getIdUsuario() ?>" method="POST">
                 <div class="col-md-3">
                     <label for="nombre" class="form-label">Nombre<span class="asterisco">*</span></label>
                     <input type="text" class="form-control" id="nombre" name= "nombre" required>

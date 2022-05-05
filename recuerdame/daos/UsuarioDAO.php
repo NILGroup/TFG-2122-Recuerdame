@@ -59,6 +59,49 @@ class UsuarioDAO
         }
     }
 
+    /*comprobar que no se ingresan dos usuarios con el mismo correo o nombre de usuario*/
+    public function comprobarUsuario($usuario){
+
+        $conexion = $this->db->getConexion();
+        $nombreUsuario = $usuario->getNombreUsuario();
+        $correo = $usuario->getCorreo();
+        $row = $conexion->query("SELECT * FROM usuario WHERE nombre_usuario = '$nombreUsuario' or correo = '$correo'")
+            or die($conexion->error);
+
+        $u = $row->fetch_assoc();
+
+        if ($u == null){
+            return null;
+        } else {
+            return 1;
+        }
+
+    }
+
+    public function nuevoUsuario($usuario)
+    {
+        $conexion = $this->db->getConexion();
+        $password = password_hash($usuario->getContrasenia(), PASSWORD_DEFAULT);
+        $consultaSQL = "INSERT INTO usuario (id_usuario, nombre_usuario, correo, contrasenia, nombre, apellidos,
+        rol 
+         ) VALUES (?, ?, ?, ?, ?, ?, ?);";
+        $stmt = $conexion->prepare($consultaSQL);
+        $stmt->execute(array(
+            NULL,
+            $usuario->getNombreUsuario(),
+            $usuario->getCorreo(),
+            $password,
+            $usuario->getNombre(),
+            $usuario->getApellidos(),
+            $usuario->getRol()
+        ));
+
+        $stmt->close();
+
+        return $conexion->insert_id;
+    }
+
+
     /**
      * Modificar.
      */

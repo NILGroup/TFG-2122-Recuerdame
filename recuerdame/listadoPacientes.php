@@ -45,7 +45,8 @@
                 <tbody>
                 <?php
                     $pacientesController = new PacientesController();
-                    $pacientes = $pacientesController->getListaPacientes();
+                    $idUsuario = $usuario->getIdUsuario();
+                    $pacientes = $pacientesController->getListaPacientes($idUsuario);
                     $i = 1;
                     if($pacientes != null){ //Si los resultados devueltos son mayor a 0
                         foreach ($pacientes as $row) {

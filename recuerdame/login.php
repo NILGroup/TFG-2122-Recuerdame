@@ -21,6 +21,11 @@
         <div class="card form-login">
             <img src="public/img/Marca_recuerdame.png" class="card-img-top">
             <div class="card-body">
+            <?php if (isset($_GET['mensajeExito'])){ ?>
+                        <p text-align = "center" style="color:green;">Se ha registrado correctamente, pruebe a iniciar sesión</p>
+                       <?php
+                        }
+                      ?>
                 <div class="row mb-3">
                     <input class="form-control" type="text" name="usuario" value="" placeholder="Correo electrónico" required>
                 </div>
@@ -38,6 +43,9 @@
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button type="submit" name="login" class="btn btn-primary btn-sm">Iniciar sesión</button>
                 </div>
+                <?php if (!isset($_GET['mensajeExito'])){ ?>
+                    <a href="registroTerapeuta.php">Registro terapeuta</a>
+                <?php } ?>
             </div>
         </div>
     </form>

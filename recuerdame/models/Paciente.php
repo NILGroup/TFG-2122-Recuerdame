@@ -11,6 +11,7 @@ class Paciente {
     private $fechaNacimiento;
     private $tipoResidencia;
     private $residenciaActual;
+    private $idTerapeuta;
 
     function __construct() {
     }
@@ -101,6 +102,26 @@ class Paciente {
     public function setResidenciaActual($residenciaActual)
     {
         $this->residenciaActual = $residenciaActual;
+
+        return $this;
+    }
+    public function getIdTerapeuta()
+    {
+        return $this->idTerapeuta;
+    }
+    public function setidTerapeuta($idTerapeuta)
+    {
+        $this->idTerapeuta = $idTerapeuta;
+
+        return $this;
+    }
+    public function getIdCuidador()
+    {
+        return $this->idCuidador;
+    }
+    public function setidCuidador($idCuidador)
+    {
+        $this->idCuidador = $idCuidador;
 
         return $this;
     }
