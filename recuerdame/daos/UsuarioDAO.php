@@ -40,7 +40,7 @@ class UsuarioDAO
     {
 
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("SELECT * FROM usuario WHERE nombre_usuario = '$nombreUsuario'")
+        $row = $conexion->query("SELECT * FROM usuario WHERE correo = '$nombreUsuario'")
             or die($conexion->error);
 
         $u = $row->fetch_assoc();

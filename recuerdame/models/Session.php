@@ -107,5 +107,6 @@ class Session
     {
         unset($_SESSION["usuario"]);
         unset($_SESSION["paciente"]);
+        unset($_SESSION["error"]);
     }
 }

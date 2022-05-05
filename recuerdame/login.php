@@ -22,17 +22,17 @@
             <img src="public/img/Marca_recuerdame.png" class="card-img-top">
             <div class="card-body">
                 <div class="row mb-3">
-                    <input class="form-control" type="text" name="usuario" value="" placeholder="Usuario" required>
+                    <input class="form-control" type="text" name="usuario" value="" placeholder="Correo electrónico" required>
                 </div>
 
-                <div class="row">
+                <div class="row mb-3">
                     <input class="form-control" type="password" name="contrasena" value="" placeholder="Contraseña" required>
                 </div>
 
                 <?php if (Session::getError() != null) { ?>
-                <div class="row error">
+                <span class="error">
                     <?php echo Session::getError() ?>
-                </div>
+                </span>
                 <?php } ?>
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
