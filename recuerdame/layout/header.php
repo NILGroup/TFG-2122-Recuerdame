@@ -11,19 +11,26 @@
 <body>
   <?php include "models/Session.php" ?>
   <?php include "loginCheck.php" ?>
+  <?php require_once('models/UsuarioLogin.php'); ?>
   <nav class="navbar navbar-expand-lg navbar-light bg-light header">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.php"><img class="logotipoMarca" src="public/img/Marca_recuerdame.png" /></a>
+      <?php if (Session::esTerapeuta()) { ?>
+        <a class="navbar-brand" href="listadoPacientes.php"><img class="logotipoMarca" src="public/img/Marca_recuerdame.png" /></a>
+      <?php } ?>
+
+      <?php if (Session::esCuidador() && Session::getIdPaciente() != null) { ?>
+        <a class="navbar-brand" href="verDatosPaciente.php?idPaciente=<?php echo Session::getIdPaciente() ?>"><img class="logotipoMarca" src="public/img/Marca_recuerdame.png" /></a>
+      <?php } ?>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
-        <?php 
-          require('models/UsuarioLogin.php');
-          if(Session::esTerapeuta()) { ?>                      
+          <?php
+          if (Session::esTerapeuta()) { ?>
             <li class="nav-item">
-                <a class="nav-link" href="listadoPacientes.php"><i class="fa-solid fa-users"></i></a>
+              <a class="nav-link" href="listadoPacientes.php"><i class="fa-solid fa-users"></i></a>
             </li>
           <?php } ?>
           <li class="nav-item">
@@ -33,7 +40,7 @@
         <div class="row align-items-center">
           <div class="col-12">
             <?php
-            
+
             if (isset($_SESSION['usuario'])) {
               $usuario = unserialize($_SESSION['usuario']);
               if ($usuario->getIniciales() != '') {

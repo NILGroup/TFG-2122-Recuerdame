@@ -8,7 +8,6 @@
     <script src="public/jquery/jquery-3.6.0.min.js"></script>
     <script src="public/datatable/datatables.min.js"></script>
     <link rel="stylesheet" href="public/datatable/datatables.min.css">
-    <script src="public/js/table.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Recuérdame</title>
