@@ -97,8 +97,9 @@
                 </div>
             </div>
         </div>
-
-        <a href="listadoPacientes.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+        <?php if(Session::esTerapeuta()) { ?> 
+            <a href="listadoPacientes.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
+        <?php } ?>
     </div>
 
 </body>

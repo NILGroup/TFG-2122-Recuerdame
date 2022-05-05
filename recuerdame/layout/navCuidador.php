@@ -14,8 +14,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle letra-primary-color" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Historia de Vida</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="historiaVida.php">Generar Historia de Vida</a></li>
-                    <li><a class="dropdown-item" href="listadoRecuerdos.php">Recuerdos</a></li>
+                    <li><a class="dropdown-item" href="historiaVida.php">Ver Historia de Vida</a></li>
+                    <li><a class="dropdown-item" href="listadoRecuerdos.php">Ver recuerdos</a></li>
                 </ul>
             </li>
         </ul>

@@ -20,7 +20,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="listadoPacientes.php"><i class="fa-solid fa-users"></i></a>
+              <a class="nav-link" href="listadoPacientes.php"><i class="fa-solid fa-users"></i></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i></a>
