@@ -79,7 +79,7 @@ class RecuerdosController{
      * Registra un nuevo fichero multimedia y lo asigna a un recuerdo
      */
     public function guardarMultimedia($idRecuerdo, $listaFicheros) {
-        $this->recuerdoDao->nuevoMultimedia($idRecuerdo, $listaFicheros);
+        return $this->recuerdoDao->nuevoMultimedia($idRecuerdo, $listaFicheros);
     }
 
     /**

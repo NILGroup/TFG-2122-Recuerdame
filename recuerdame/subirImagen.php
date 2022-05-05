@@ -11,15 +11,17 @@ if (!empty($_FILES)) {
         $listaFicheros = array();
         array_push($listaFicheros, $file_name);
         $recuerdosController = new RecuerdosController();
-        $recuerdosController->guardarMultimedia($_GET['idRecuerdo'], $listaFicheros);
+        $idMultimedia = $recuerdosController->guardarMultimedia($_GET['idRecuerdo'], $listaFicheros);
         move_uploaded_file($file_tmp, $folder_name);
+        echo $idMultimedia;
     } else if (isset($_GET['idSesion'])) {
         include("controllers/SesionesController.php");
         $listaFicheros = array();
         array_push($listaFicheros, $file_name);
         $sesionesController = new SesionesController();
-        $sesionesController->guardarMultimedia($_GET['idSesion'], $listaFicheros);
+        $idMultimedia = $sesionesController->guardarMultimedia($_GET['idSesion'], $listaFicheros);
         move_uploaded_file($file_tmp, $folder_name);
+        echo $idMultimedia;
     }
 }
 

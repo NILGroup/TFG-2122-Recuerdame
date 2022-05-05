@@ -74,7 +74,7 @@ class SesionesController{
      * Registra un nuevo fichero multimedia y lo asigna a una sesión
      */
     public function guardarMultimedia($idSesion, $listaFicheros) {
-        $this->sesionDao->nuevoMultimedia($idSesion, $listaFicheros);
+        return $this->sesionDao->nuevoMultimedia($idSesion, $listaFicheros);
     }
 
     /**

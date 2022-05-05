@@ -108,7 +108,7 @@
                 <div class="row col-sm-12 col-md-12 col-lg-12">
                     <label for="puntuacion" class="form-label col-form-label-sm col-sm-2 col-md-2 col-lg-1">Puntuación</label>
                     <div class="col-sm-5 col-md-5 col-lg-3">
-                        <input disabled type="range" class="form-range puntuacion" id="puntuacion" name="puntuacion" min="0" max="10" step="1">
+                        <input disabled type="range" class="form-range puntuacion" id="puntuacion" name="puntuacion" min="0" max="10" step="1" value="<?php echo ($recuerdo->getPuntuacion()) ?>">
                     </div>
                     <label id="valorPuntuacion" class="form-label col-sm-2 col-md-2 col-lg-2"><?php echo ($recuerdo->getPuntuacion()) ?></label>
                 </div>
