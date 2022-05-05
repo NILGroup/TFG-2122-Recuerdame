@@ -65,7 +65,7 @@
                     ?>
                         <tr>
                             <th scope="row"><?php echo $i ?></th>
-                            <td><a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>"><?php echo ($row['nombre']) ?></a><a href="#"><i class="fa-solid fa-envelope text-black tableIcon"></i></a></td>
+                            <td><a href="verDatosPersonaRelacionada.php?idPersonaRelacionada=<?php echo ($row['idPersonaRelacionada']) ?>"><?php echo ($row['nombre']) ?></a><a href="#"></a></td>
                             <td><?php echo ($row["apellidos"]) ?></td>
                             <td><?php echo ($row["nombreTipoRelacion"]) ?></td>
                             <td class="tableActions">

@@ -18,13 +18,6 @@
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
     <?php include "controllers/RecuerdosController.php" ?>
-    <?php include "controllers/ComunesController.php" ?>
-
-    <?php
-    $comunesController = new ComunesController();
-    $listaEtapas = $comunesController->getListaEtapas();
-    $listaCategorias = $comunesController->getListaCategorias();
-    ?>
 
     <div class="container-fluid">
         <div class="pt-4 pb-2">
@@ -33,33 +26,7 @@
         </div>
 
         <div class="row mb-2">
-            <div class="row col-sm-10 col-md-10 col-lg-10">
-                <div class="col-sm-9 col-md-6 col-lg-3">
-                    <select class="form-select form-select-sm" id="nombreEtapa" name="nombreEtapa">
-                        <option value="" selected>Etapa</option>
-                        <?php
-                        foreach ($listaEtapas as $row) {
-                        ?>
-                            <option value="<?php echo ($row["nombre"]) ?>"><?php echo ($row["nombre"]) ?></option>
-                        <?php
-                        }
-                        ?>
-                    </select>
-                </div>
-                <div class="col-sm-9 col-md-6 col-lg-3">
-                    <select class="form-select form-select-sm" id="nombreCategoria" name="nombreCategoria">
-                        <option value="" selected>Categoría</option>
-                        <?php
-                        foreach ($listaCategorias as $row) {
-                        ?>
-                            <option value="<?php echo ($row["nombre"]) ?>"><?php echo ($row["nombre"]) ?></option>
-                        <?php
-                        }
-                        ?>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-9 col-md-6 col-lg-2 justify-content-end d-flex">
+            <div class="col-12 justify-content-end d-flex">
                 <a href="modificarDatosRecuerdo.php"><button type="button" class="btn btn-success btn-sm btn-icon"><i class="fa-solid fa-plus"></i></button></a>
             </div>
         </div>
@@ -98,10 +65,10 @@
                             <td><?php echo ($row["nombreEtiqueta"]) ?></td>
                             <td class="tableActions">
                                 <a href="verDatosRecuerdo.php?idRecuerdo=<?php echo ($row['idRecuerdo']) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
-                                    <?php if(Session::esTerapeuta()) { ?> 
-                                        <a href="modificarDatosRecuerdo.php?idRecuerdo=<?php echo ($row['idRecuerdo']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
-                                        <a href="gestor.php?accion=eliminarRecuerdo&idRecuerdo=<?php echo ($row['idRecuerdo']) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
-                                    <?php } ?>
+                                <?php if (Session::esTerapeuta()) { ?>
+                                    <a href="modificarDatosRecuerdo.php?idRecuerdo=<?php echo ($row['idRecuerdo']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
+                                    <a href="gestor.php?accion=eliminarRecuerdo&idRecuerdo=<?php echo ($row['idRecuerdo']) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
+                                <?php } ?>
                             </td>
                         </tr>
                     <?php
