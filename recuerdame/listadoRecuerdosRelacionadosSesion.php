@@ -18,6 +18,13 @@
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
     <?php include "controllers/RecuerdosController.php" ?>
+    <?php include "controllers/ComunesController.php" ?>
+
+    <?php
+    $comunesController = new ComunesController();
+    $listaEtapas = $comunesController->getListaEtapas();
+    $listaCategorias = $comunesController->getListaCategorias();
+    ?>
 
     <div class="container-fluid">
         <?php
@@ -31,7 +38,36 @@
             <hr class="lineaTitulo">
         </div>
 
-        <form action="gestor.php?accion=guardarRecuerdoRelacionadoSesion&idSesion=<?php echo ($idSesion) ?>" method="POST">
+        <div class="row mb-2">
+            <div class="row col-sm-10 col-md-10 col-lg-10">
+                <div class="col-sm-9 col-md-6 col-lg-3">
+                    <select class="form-select form-select-sm" id="nombreEtapa" name="nombreEtapa">
+                        <option value="" selected>Etapa</option>
+                        <?php
+                        foreach ($listaEtapas as $row) {
+                        ?>
+                            <option value="<?php echo ($row["nombre"]) ?>"><?php echo ($row["nombre"]) ?></option>
+                        <?php
+                        }
+                        ?>
+                    </select>
+                </div>
+                <div class="col-sm-9 col-md-6 col-lg-3">
+                    <select class="form-select form-select-sm" id="nombreCategoria" name="nombreCategoria">
+                        <option value="" selected>Categoría</option>
+                        <?php
+                        foreach ($listaCategorias as $row) {
+                        ?>
+                            <option value="<?php echo ($row["nombre"]) ?>"><?php echo ($row["nombre"]) ?></option>
+                        <?php
+                        }
+                        ?>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <form id="formulario" action="gestor.php?accion=guardarRecuerdoRelacionadoSesion&idSesion=<?php echo ($idSesion) ?>" method="POST">
 
             <div>
                 <table class="table table-bordered recuerdameTable">
@@ -87,7 +123,7 @@
             </div>
 
             <div>
-                <button type="submit" name="guardar" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
+                <button type="button" name="guardar" id="guardar" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
                 <?php
                 if ($idSesion != null) {
                 ?>

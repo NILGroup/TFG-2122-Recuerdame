@@ -1,3 +1,4 @@
+// Componente para soltar y arrastrar imágenes
 Dropzone.autoDiscover = false;
 var idRecuerdo = document.getElementById('idRecuerdo').value;
 
@@ -10,7 +11,21 @@ $("#mydropzone").dropzone({
   },
 });
 
+// Inicializa la imagen para poder visualizarla
 $('.visualizarImagen').on('click', function () {
   $('.imagepreview').attr('src', $(this).find('img').attr('src'));
   $('#imagemodal').modal('show');
+});
+
+$(document).ready(function () {
+  // Inicializa el componente de la puntuación del recuerdo
+  $('input[type="range"]').rangeslider({
+    polyfill: false,
+    onInit: function () {
+      $("#valorPuntuacion").text(this.$element.val());
+    },
+    onSlide: function (position, value) {
+      $("#valorPuntuacion").text(value);
+    }
+  });
 });

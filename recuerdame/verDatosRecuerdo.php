@@ -1,8 +1,10 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link href="public/rangeslider/rangeslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="public/rangeslider/rangeslider.js"></script>
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <link href="public/fontawesome6/css/all.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
@@ -52,7 +54,7 @@
         </div>
 
         <div>
-        <input hidden id="idRecuerdo" value="<?php echo $idRecuerdo ?>">
+            <input hidden id="idRecuerdo" value="<?php echo $idRecuerdo ?>">
             <div class="row form-group justify-content-between">
                 <div class="row col-sm-6 col-md-6 col-lg-6">
                     <label for="nombre" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-2">Nombre</label>
@@ -105,9 +107,10 @@
             <div class="row">
                 <div class="row col-sm-12 col-md-12 col-lg-12">
                     <label for="puntuacion" class="form-label col-form-label-sm col-sm-2 col-md-2 col-lg-1">Puntuación</label>
-                    <div class="col-sm-5 col-md-5 col-lg-2">
-                        <input disabled type="range" class="form-range" id="puntuacion" name="puntuacion" min="0" max="5" step="0.5" value="<?php echo ($recuerdo->getPuntuacion()) ?>">
+                    <div class="col-sm-5 col-md-5 col-lg-3">
+                        <input disabled type="range" class="form-range puntuacion" id="puntuacion" name="puntuacion" min="0" max="10" step="1">
                     </div>
+                    <label id="valorPuntuacion" class="form-label col-sm-2 col-md-2 col-lg-2"><?php echo ($recuerdo->getPuntuacion()) ?></label>
                 </div>
             </div>
 
@@ -187,7 +190,7 @@
                     <?php
                     $personasRelacionadasController = new PersonasRelacionadasController();
                     $lista = array();
-                    if (Session::getIdPaciente() != null){
+                    if (Session::getIdPaciente() != null) {
                         $lista = $personasRelacionadasController->getListaPersonasRelacionadasRecuerdo(Session::getIdPaciente(), $idRecuerdo);
                     }
                     $i = 1;
@@ -257,4 +260,5 @@
 </body>
 <script src="public/dropzone/dropzone.min.js"></script>
 <script src="public/js/recuerdo.js"></script>
+
 </html>
