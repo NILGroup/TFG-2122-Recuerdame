@@ -28,7 +28,7 @@
 
                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Registro terapeuta</p>
 
-                <form action="gestorRegistroTerapeuta.php" method= "POST" class="mx-1 mx-md-4">
+                <form action="gestorRegistroUsuario.php?rol=TERAPEUTA" method= "POST" class="mx-1 mx-md-4">
                       <?php if (isset($_GET['mensajeError'])){ ?>
                         <p style="color:red;";>El usuario o correo ya existe, pruebe otro</p>
                        <?php

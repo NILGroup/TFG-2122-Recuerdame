@@ -29,8 +29,14 @@ class PacientesController{
     public function getListaPacientes($idTerapeuta) {
         return $this->pacienteDao->getListaPacientes($idTerapeuta);
     }
+    public function getListaPacientesSinCuidador($idTerapeuta) {
+        return $this->pacienteDao->getListaPacientesSinCuidador($idTerapeuta);
+    }
     public function eliminarPaciente($idPaciente) {
         return $this->pacienteDao->eliminarPaciente($idPaciente);
+    }
+    public function asignarCuidador($idCuidador,$idPaciente){
+        return $this->pacienteDao->asignarCuidador($idCuidador,$idPaciente);
     }
 }
 

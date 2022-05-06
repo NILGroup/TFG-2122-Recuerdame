@@ -21,7 +21,7 @@ class UsuarioController{
             $idUsuario = $this->usuarioDao->modificarUsuario($usuario);
         }
 
-        return $idPaciente;
+        return $idUsuario;
     }
     
     public function comprobarUsuario($usuario){

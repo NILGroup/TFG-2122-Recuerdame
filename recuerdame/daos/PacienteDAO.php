@@ -49,6 +49,20 @@ class PacienteDAO
 
         return $listaPacientes;
     }
+    //lista de pacientes sin cuidador asignado
+    public function getListaPacientesSinCuidador($idTerapeuta)
+    {
+        $conexion = $this->db->getConexion();
+        $row = $conexion->query("SELECT * FROM paciente WHERE id_cuidador IS NULL and id_terapeuta = '$idTerapeuta'")
+            or die($conexion->error);
+
+        $listaPacientes = array();
+        while ($rows = $row->fetch_assoc()) {
+            $listaPacientes[] = $rows;
+        };
+
+        return $listaPacientes;
+    }
 
     /**
      * Crea un nuevo paciente
@@ -121,4 +135,24 @@ class PacienteDAO
             or die($conexion->error);
     }
 
+    //asignar id_cuidador al paciente
+
+    public function asignarCuidador($idCuidador,$idPaciente){
+        $conexion = $this->db->getConexion();
+        $consultaSQL = "UPDATE paciente
+                        SET id_cuidador = ?
+                        WHERE id_paciente = ?;";
+        $stmt = $conexion->prepare($consultaSQL);
+        $stmt->execute(array(
+            $idCuidador,
+            $idPaciente
+        ));
+
+        $stmt->close();
+
+        return 1;
+                        
+    }
+
+    
 }
