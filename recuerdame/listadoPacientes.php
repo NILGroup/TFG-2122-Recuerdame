@@ -27,8 +27,9 @@
 
         <div class="row mb-2">
             <div class="col-12 justify-content-end d-flex">
-                <button type="button" id="mybutton" class="btn btn-info btn-sm btn-icon"><i class="fa-solid fa-plus"></i></button></a>
-                <a href="nuevoPaciente.php"><button type="button" class="btn btn-success btn-sm btn-icon"><i class="fa-solid fa-plus"></i></button></a>
+           
+            <button type="button" style="background: transparent; border: 2px solid #0099CC; border-radius: 6px;" id="mybutton" class="btn-registro">Registro cuidador</button></a>
+                <a href="nuevoPaciente.php"><button type="button" style="background: transparent; border: 2px solid #0099CC; border-radius: 6px; border-color:green;" class="btn-newpaciente">Nuevo paciente</i></button></a>
             </div>
         </div>
 
@@ -46,13 +47,16 @@
                 </thead>
                 <tbody>
                 <?php
-                    $load = 1;
-                    if(isset($_GET['mensajeError']) && $load != 0 && !isset($cargar)) {
-                        $error = $_GET['mensajeError'];
-                            echo '<script> alert("NO SE AGREGO CORRECTAMENTE EL CUIDADOR");</script>';
-                        $load = 0;
-                        $cargar = 1;
+                  
+                    if((isset($_GET['mensajeError']))) {
+                        
+
+                        echo '<script> alert("NO SE AGREGO CORRECTAMENTE EL CUIDADOR");</script>';
+                        
                     }
+                    
+                   
+                    
                     $error = 0;
                     $pacientesController = new PacientesController();
                     $idUsuario = $usuario->getIdUsuario();
