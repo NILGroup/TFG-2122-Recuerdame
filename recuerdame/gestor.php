@@ -436,7 +436,7 @@ if (isset($_POST['login'])) {
     $paciente = new Paciente();
     $paciente->setNombre($_POST['nombre']);
     $paciente->setApellidos($_POST['apellidos']);
-    if ($_POST['genero'] == 'hombre') {
+    if ($_POST['genero'] == 'Hombre') {
         $paciente->setGenero('H');
     } else {
         $paciente->setGenero('M');
@@ -447,6 +447,9 @@ if (isset($_POST['login'])) {
     $paciente->setResidenciaActual($_POST['residencia']);
     $paciente->setFechaNacimiento($_POST['fecha']);
     $paciente->setIdTerapeuta($_GET['idUsuario']);
+    if(isset($_POST['terapeuta'])){
+        $paciente->setIdTerapeuta($_POST['terapeuta']);
+    }
     $pacientesController->guardarPaciente($paciente);
 
 
