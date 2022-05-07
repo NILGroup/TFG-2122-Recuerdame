@@ -38,6 +38,9 @@ class PacientesController{
     public function asignarCuidador($idCuidador,$idPaciente){
         return $this->pacienteDao->asignarCuidador($idCuidador,$idPaciente);
     }
+    public function cambiarTerapeuta($idTerapeuta,$idPaciente){
+        return $this->pacienteDao->cambiarTerapeuta($idTerapeuta,$idPaciente);
+    }
 }
 
 ?>

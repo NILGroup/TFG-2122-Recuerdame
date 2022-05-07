@@ -435,6 +435,12 @@ if (isset($_POST['login'])) {
 
     $pacientesController = new PacientesController();
     $paciente = new Paciente();
+    if (isset($_GET['idPaciente'])) {
+        $idPaciente = $_GET['idPaciente'];
+        $paciente->setIdPaciente($idPaciente);
+    } else {
+        $idPaciente = NULL;
+    }
     $paciente->setNombre($_POST['nombre']);
     $paciente->setApellidos($_POST['apellidos']);
     if ($_POST['genero'] == 'Hombre') {
@@ -448,11 +454,12 @@ if (isset($_POST['login'])) {
     $paciente->setResidenciaActual($_POST['residencia']);
     $paciente->setFechaNacimiento($_POST['fecha']);
     $paciente->setIdTerapeuta($_GET['idUsuario']);
-    if(isset($_POST['terapeuta'])){
+    if(isset($_POST['terapeuta']) && $_POST['terapeuta']!=""){
         $paciente->setIdTerapeuta($_POST['terapeuta']);
+        $pacientesController->cambiarTerapeuta($paciente->getIdTerapeuta(),$paciente->getIdPaciente());
     }
     $pacientesController->guardarPaciente($paciente);
-
+    
 
     header("Location: listadoPacientes.php");
 } else if (isset($_GET['cambiarPaciente'])) {

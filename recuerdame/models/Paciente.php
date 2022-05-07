@@ -12,6 +12,7 @@ class Paciente {
     private $tipoResidencia;
     private $residenciaActual;
     private $idTerapeuta;
+    private $idCuidador;
 
     function __construct() {
     }

@@ -103,7 +103,7 @@ class PacienteDAO
         $conexion = $this->db->getConexion();
         $consultaSQL = "UPDATE paciente
                         SET nombre = ?, apellidos = ?, genero = ?, lugar_nacimiento = ?,
-                            nacionalidad = ?, fecha_nacimiento = ?, tipo_residencia = ?, residencia_actual = ?, id_terapeuta = ?
+                            nacionalidad = ?, fecha_nacimiento = ?, tipo_residencia = ?, residencia_actual = ?
                         WHERE id_paciente = ?;";
                         
         $stmt = $conexion->prepare($consultaSQL);
@@ -116,7 +116,6 @@ class PacienteDAO
             $paciente->getFechaNacimiento(),
             $paciente->getTipoResidencia(),
             $paciente->getResidenciaActual(),
-            $paciente->getIdUsuario(),
             $paciente->getIdPaciente()
         ));
 
@@ -153,6 +152,23 @@ class PacienteDAO
         return 1;
                         
     }
+    public function cambiarTerapeuta($idTerapeuta,$idPaciente){
+        $conexion = $this->db->getConexion();
+        $consultaSQL = "UPDATE paciente
+                        SET id_terapeuta = ?
+                        WHERE id_paciente = ?;";
+        $stmt = $conexion->prepare($consultaSQL);
+        $stmt->execute(array(
+            $idTerapeuta,
+            $idPaciente
+        ));
+
+        $stmt->close();
+
+        return 1;
+                        
+    }
+
 
     
 }

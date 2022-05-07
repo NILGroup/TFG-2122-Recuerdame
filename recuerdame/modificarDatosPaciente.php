@@ -14,7 +14,7 @@
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
     <?php include "controllers/PacientesController.php" ?>
-
+    <?php include "controllers/UsuarioController.php" ?>
     <div class="container-fluid">
         <?php
             if ($_GET['idPaciente'] != null) {
@@ -32,18 +32,18 @@
             <hr class="lineaTitulo">
         </div>
         
-        <form class="row g-3" action="gestor.php?accion=guardarPaciente&idPaciente=<?php echo ($row['id_paciente']) ?>" method="POST">
+        <form class="row g-3" action="gestor.php?accion=guardarPaciente&idPaciente=<?php echo ($paciente->getIdPaciente()) ?>&idUsuario=<?php echo ($usuario->getIdUsuario()) ?>" method="POST">
                 <div class="col-md-3">
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" value="<?php echo ($paciente->getNombre()) ?>">
+                    <input type="text" name="nombre" class="form-control" id="nombre" value="<?php echo ($paciente->getNombre()) ?>">
                 </div>
                 <div class="col-md-3">
                     <label for="apellidos" class="form-label">Apellidos</label>
-                    <input type="apellidos" class="form-control" id="apellidos" value="<?php echo ($paciente->getApellidos()) ?>">
+                    <input type="apellidos" name="apellidos" class="form-control" id="apellidos" value="<?php echo ($paciente->getApellidos()) ?>">
                 </div>
                 <div class="col-md-3">
                     <label for="genero" class="form-label">Género</label>
-                    <select id="genero" class="form-select" value="<?php echo ($paciente->getGenero()) ?>">
+                    <select id="genero" name="genero" class="form-select" value="<?php echo ($paciente->getGenero()) ?>">
                         <option>Hombre</option>
                         <option>Mujer</option>
                         <option>Prefiero no decirlo</option>
@@ -52,27 +52,54 @@
                 </div>
                 <div class="col-4">
                     <label for="lugarNacimiento" class="form-label">Lugar de nacimiento</label>
-                    <input type="text" class="form-control" id="lugarNacimiento" placeholder="Ciudad..."  value="<?php echo ($paciente->getLugarNacimiento()) ?>">
+                    <input type="text" name="lugarNac" class="form-control" id="lugarNacimiento" placeholder="Ciudad..."  value="<?php echo ($paciente->getLugarNacimiento()) ?>">
                 </div>
+              
                 <div class="col-4">
                     <label for="pais" class="form-label">País</label>
-                    <input type="text" class="form-control" id="pais" placeholder="País..."  value="<?php echo ($paciente->getNacionalidad()) ?>">
+                    <input type="text" name="nacionalidad" class="form-control" id="pais" placeholder="País..."  value="<?php echo ($paciente->getNacionalidad()) ?>">
                 </div>
                 <div class="col-md-3">
                     <label for="fecha" class="form-label">Fecha de nacimiento</label>
-                    <input type="date" class="form-control" id="fecha"  value="<?php echo ($paciente->getFechaNacimiento()) ?>">
+                    <input type="date" name="fecha" class="form-control" id="fecha"  value="<?php echo ($paciente->getFechaNacimiento()) ?>">
                 </div>
                 <div class="col-3">
                     <label for="residencia" class="form-label">Tipo de residencia</label>
-                    <input type="text" class="form-control" id="residencia" value="<?php echo ($paciente->getTipoResidencia()) ?>">
+                    <input type="text" name="casa" class="form-control" id="residencia" value="<?php echo ($paciente->getTipoResidencia()) ?>">
                 </div>
                 <div class="col-3">
                     <label for="casa" class="form-label">Residencia actual</label>
-                    <input type="text" class="form-control" id="casa"  value="<?php echo ($paciente->getResidenciaActual()) ?>">
+                    <input type="text" name="residencia" class="form-control" id="casa"  value="<?php echo ($paciente->getResidenciaActual()) ?>">
                 </div>
                 </div>
+                <div class="col-3">
+                                <select  class="form-control" id="terapeuta" name="terapeuta" >
+                                <option value="" selected="selected"><b>--Cambiar terapeuta--</b></option>
+                                <?php
+                                    
+                                    $usuarioController = new UsuarioController();
+                                    $terapeutas = $usuarioController->getListaTerapeutas();
+                                     if($terapeutas != null){
+                                        foreach ($terapeutas as $fila) {
+                                           
+                                            $id = $fila['id_usuario'];
+                                            $nombre = $fila['nombre'];
+                                            $apellido = $fila['apellidos'];
+
+                                        ?>
+                                       <option value=" <?php echo $id;?>"> <?php echo $nombre." ". $apellido; ?></option>
+                                       <?php
+                                       }
+                                    }
+                                        ?>
+                                
+                                </select>
+                                </div>
+                            
+                        <p></p>
+                                
                 <div class= "col-12">
-                 <button type="submit" name="guardarInformeSesion" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
+                 <button type="submit" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
                  <a href="listadoPacientes.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>
                 </div>
             </div>
