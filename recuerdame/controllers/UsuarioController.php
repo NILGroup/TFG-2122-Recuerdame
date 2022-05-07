@@ -31,6 +31,11 @@ class UsuarioController{
     public function getListaUsuarios($rol) {
         return $this->usuarioDao->getListaUsuarios($rol);
     }
-    
+    public function getListaTerapeutas(){
+        return $this->usuarioDao->getListaTerapeutas();
+    }
+    public function modificarContrasenia($pass,$mail){
+        return $this->usuarioDao->modificarUsuario($pass,$mail);
+    }
 }
 ?>

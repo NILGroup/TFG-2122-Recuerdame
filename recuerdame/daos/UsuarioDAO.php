@@ -102,17 +102,35 @@ class UsuarioDAO
     }
 
 
+    //recoger los terapeutas
+
+
+    public function getListaTerapeutas()
+    {
+        $conexion = $this->db->getConexion();
+        $row = $conexion->query("SELECT * FROM usuario WHERE rol = 'TERAPEUTA'")
+            or die($conexion->error);
+
+        $listaTerapeutas = array();
+        while ($rows = $row->fetch_assoc()) {
+            $listaTerapeutas[] = $rows;
+        };
+
+        return $listaTerapeutas;
+    }
+
     /**
      * Modificar.
      */
-    public function modificarUsuario()
+    public function modificarUsuario($password,$mail)
     {
 
         $conexion = $this->db->getConexion();
-        $pass = password_hash("valeria", PASSWORD_DEFAULT);
-        $row = $conexion->query("UPDATE usuario SET contrasenia = '$pass' WHERE id_usuario = 2")
+
+        $pass = password_hash($password, PASSWORD_DEFAULT);
+        $row = $conexion->query("UPDATE usuario SET contrasenia = '$pass' WHERE correo = '$mail'")
             or die($conexion->error);
 
-        $u = $row->fetch_assoc();
+       
     }
 }

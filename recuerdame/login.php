@@ -40,12 +40,18 @@
                 </span>
                 <?php } ?>
 
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button type="submit" name="login" class="btn btn-primary btn-sm">Iniciar sesión</button>
+                <div class="d-grid gap-2  justify-content-md-end">
+                    <div class="btn-group">
+                       
+                         <a href="registroTerapeuta.php" class="btn btn-outline-primary btn-sm">Registro terapeuta</a>
+                         <button type="submit" name="login" style="border-color:green;" class="btn btn-primary btn-sm">Iniciar sesión</button>
+                        
+                    </div>
                 </div>
-                <?php if (!isset($_GET['mensajeExito'])){ ?>
-                    <a href="registroTerapeuta.php">Registro terapeuta</a>
-                <?php } ?>
+                <p></p>
+                <p></p>
+               
+                <a href="recuperarContrasenia.php" >¿Has olvidado la contraseña?</a>
             </div>
         </div>
     </form>

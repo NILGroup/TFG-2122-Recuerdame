@@ -3,6 +3,7 @@ require_once('models/Session.php');
 
 if (!isset($_SESSION)) {
     session_start();
+
 }
 
 if (isset($_POST['login'])) {
@@ -484,5 +485,9 @@ if (isset($_POST['login'])) {
 
         Session::setPaciente($p);
         header("Location: listadoSesiones.php");
+
     }
+       
+
+    
 }

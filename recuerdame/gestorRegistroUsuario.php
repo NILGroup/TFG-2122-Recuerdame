@@ -25,17 +25,17 @@
                
                 $idCuidador = $usuarioController->guardarUsuario($usuario);
                 if($_GET['rol']=='CUIDADOR') {
+                        
                         $pacienteController->asignarCuidador($idCuidador,$idPaciente);
-                        header("Location: listadoPacientes.php");   
-                        
-                        
+                        echo "<script> alert('Usuario creado.'); window.location='listadoPacientes.php'</script>";
+ 
                 }else{
                         header("Location: login.php?mensajeExito='Se ha registrado correctamente'");
                 }
                 
         }else{
                 if($_GET['rol']=='CUIDADOR') {
-                        header("Location: listadoPacientes.php?mensajeError=1");
+                        echo "<script> alert('No se pudo crear el cuidador.'); window.location='listadoPacientes.php'</script>";
                 }else{
                         
                         header("Location: registroTerapeuta.php?mensajeError='el usuario o el correo ya esta registrado'");
