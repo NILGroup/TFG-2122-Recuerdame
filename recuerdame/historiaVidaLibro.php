@@ -14,9 +14,9 @@
 <body class="d-flex flex-column min-vh-100">
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
-    <?php include "controllers/historiaVidacontroller.php" ?>
-    <?php include "controllers/recuerdosController.php" ?>
-    <?php include "controllers/comunesController.php" ?>
+    <?php include "controllers/HistoriaVidaController.php" ?>
+    <?php include "controllers/RecuerdosController.php" ?>
+    <?php include "controllers/ComunesController.php" ?>
     <?php include "modalImagen.php" ?>
 
     <div class="container-fluid vh-100">

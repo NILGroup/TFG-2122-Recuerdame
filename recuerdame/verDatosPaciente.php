@@ -20,7 +20,7 @@
     <div class="container-fluid row align-items-center h-75">
         <?php
         $pacientesController = new PacientesController();
-        $paciente = $pacientesController->verPaciente($_GET['idPaciente']);
+        $paciente = $pacientesController->verPaciente(Session::getIdPaciente());
         ?>
 
         <div class="card p-4 h-80">
