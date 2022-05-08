@@ -3,7 +3,6 @@ require_once('models/Session.php');
 
 if (!isset($_SESSION)) {
     session_start();
-
 }
 
 if (isset($_POST['login'])) {
@@ -14,21 +13,45 @@ if (isset($_POST['login'])) {
     $password = $_POST['contrasena'];
 
     $loginController = new LoginController();
-    $ok = $loginController->login($username, $password);
+    $usuario = $loginController->login($username, $password);
 
-    if (!$ok) {
+    if ($usuario == null) {
         Session::setError('Usuario o contraseña incorrectos.');
         header("Location: login.php");
     }
 
-    if (Session::esTerapeuta()){
+    if (Session::esTerapeuta()) {
         header("Location: listadoPacientes.php");
     }
 
-    if (Session::esCuidador()){
-        header("Location: verDatosPaciente.php");
-    }
+    if (Session::esCuidador()) {
+        $pacientesController = new PacientesController();
+        $paciente = $pacientesController->getPacienteCuidador($usuario->getIdUsuario());
 
+        if ($paciente != null) {
+            $cumpleanos = new DateTime($paciente->getFechaNacimiento());
+            $hoy = new DateTime();
+            $edad = $hoy->diff($cumpleanos);
+
+            $genero = '';
+            if ($paciente->getGenero() == 'H') {
+                $genero = 'Hombre';
+            } else if ($paciente->getGenero() == 'M') {
+                $genero = 'Mujer';
+            }
+
+            $nombre = ($paciente->getNombre()) . " " . ($paciente->getApellidos());
+            $p = new PacienteCabecera();
+            $p->setIdPaciente($paciente->getIdPaciente());
+            $p->setNombre($nombre);
+            $p->setEdad($edad);
+            $p->setGenero($genero);
+            $p->setCodigoGenero($paciente->getGenero());
+
+            Session::setPaciente($p);
+            header("Location: verDatosPaciente.php?idPaciente=" . $paciente->getIdPaciente());
+        }
+    }
 } else if (isset($_GET['logout'])) {
     Session::cleanSession();
 
@@ -454,12 +477,12 @@ if (isset($_POST['login'])) {
     $paciente->setResidenciaActual($_POST['residencia']);
     $paciente->setFechaNacimiento($_POST['fecha']);
     $paciente->setIdTerapeuta($_GET['idUsuario']);
-    if(isset($_POST['terapeuta']) && $_POST['terapeuta']!=""){
+    if (isset($_POST['terapeuta']) && $_POST['terapeuta'] != "") {
         $paciente->setIdTerapeuta($_POST['terapeuta']);
-        $pacientesController->cambiarTerapeuta($paciente->getIdTerapeuta(),$paciente->getIdPaciente());
+        $pacientesController->cambiarTerapeuta($paciente->getIdTerapeuta(), $paciente->getIdPaciente());
     }
     $pacientesController->guardarPaciente($paciente);
-    
+
 
     header("Location: listadoPacientes.php");
 } else if (isset($_GET['cambiarPaciente'])) {
@@ -476,9 +499,9 @@ if (isset($_POST['login'])) {
         $edad = $hoy->diff($cumpleanos);
 
         $genero = '';
-        if ($paciente->getGenero() == 'H'){
+        if ($paciente->getGenero() == 'H') {
             $genero = 'Hombre';
-        }  else if ($paciente->getGenero() == 'M') {
+        } else if ($paciente->getGenero() == 'M') {
             $genero = 'Mujer';
         }
 
@@ -492,9 +515,5 @@ if (isset($_POST['login'])) {
 
         Session::setPaciente($p);
         header("Location: listadoSesiones.php");
-
     }
-       
-
-    
 }

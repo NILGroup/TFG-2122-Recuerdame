@@ -97,15 +97,15 @@ class PacienteDAO
      * Modifica los datos de un paciente // COOOOORREGIRRR
      */
     public function modificarPaciente($paciente)
-    { 
+    {
 
-        
+
         $conexion = $this->db->getConexion();
         $consultaSQL = "UPDATE paciente
                         SET nombre = ?, apellidos = ?, genero = ?, lugar_nacimiento = ?,
                             nacionalidad = ?, fecha_nacimiento = ?, tipo_residencia = ?, residencia_actual = ?
                         WHERE id_paciente = ?;";
-                        
+
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
             $paciente->getNombre(),
@@ -121,7 +121,7 @@ class PacienteDAO
 
         $stmt->close();
 
-        return ;
+        return;
     }
 
     /**
@@ -134,9 +134,11 @@ class PacienteDAO
             or die($conexion->error);
     }
 
-    //asignar id_cuidador al paciente
-
-    public function asignarCuidador($idCuidador,$idPaciente){
+    /**
+     * Asignar id_cuidador al paciente
+     */
+    public function asignarCuidador($idCuidador, $idPaciente)
+    {
         $conexion = $this->db->getConexion();
         $consultaSQL = "UPDATE paciente
                         SET id_cuidador = ?
@@ -150,9 +152,9 @@ class PacienteDAO
         $stmt->close();
 
         return 1;
-                        
     }
-    public function cambiarTerapeuta($idTerapeuta,$idPaciente){
+    public function cambiarTerapeuta($idTerapeuta, $idPaciente)
+    {
         $conexion = $this->db->getConexion();
         $consultaSQL = "UPDATE paciente
                         SET id_terapeuta = ?
@@ -166,9 +168,30 @@ class PacienteDAO
         $stmt->close();
 
         return 1;
-                        
     }
 
+    /**
+     * Recupera el paciente asociado al cuidador logado
+     */
+    public function getPacienteCuidador($idCuidador)
+    {
+        $conexion = $this->db->getConexion();
+        $row = $conexion->query("SELECT * FROM paciente WHERE id_cuidador = '$idCuidador'")
+            or die($conexion->error);
 
-    
+        $p = $row->fetch_assoc();
+
+        $paciente = new Paciente();
+        $paciente->setIdPaciente($p['id_paciente']);
+        $paciente->setNombre($p['nombre']);
+        $paciente->setApellidos($p['apellidos']);
+        $paciente->setGenero($p['genero']);
+        $paciente->setLugarNacimiento($p['lugar_nacimiento']);
+        $paciente->setNacionalidad($p['nacionalidad']);
+        $paciente->setFechaNacimiento($p['fecha_nacimiento']);
+        $paciente->setTipoResidencia($p['tipo_residencia']);
+        $paciente->setResidenciaActual($p['residencia_actual']);
+
+        return $paciente;
+    }
 }

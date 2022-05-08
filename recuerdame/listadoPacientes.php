@@ -4,12 +4,10 @@
     <link rel="stylesheet" href="public/bootstrap-5.1.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="public/css/styles.css">
     <link href="public/fontawesome6/css/all.css" rel="stylesheet">
-    <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <script src="public/jquery/jquery-3.6.0.min.js"></script>
+    <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <script src="public/datatable/datatables.min.js"></script>
-   
     <link rel="stylesheet" href="public/datatable/datatables.min.css">
-    <script src="public/js/table.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="public/img/Logo_recuerdame_v2.ico" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Recuérdame</title>
@@ -107,15 +105,15 @@
                     <form id="formulario" action="gestorRegistroUsuario.php?rol=CUIDADOR" method="POST">
                         <div class="modal-body">
                             <div class="form-floating mb-3">
-                               <input type="text" class="form-control" id="title" name="name" required>
+                               <input type="text" class="form-control" id="nombre" name="name" required>
                                 <label for="name" class="form-label">Nombre</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="title" name="apellidos" required>
+                                <input type="text" class="form-control" id="apellidos" name="apellidos" required>
                                 <label for="apellidos" class="form-label">Apellidos</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="title" name="nick" required>
+                                <input type="text" class="form-control" id="nick" name="nick" required>
                                 <label for="nick" class="form-label">Nombre Usuario</label>
                             </div>
                             <div class="form-floating mb-3">
@@ -141,7 +139,7 @@
                                 </select>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="title" name="mail" required>
+                                <input type="email" class="form-control" id="mail" name="mail" required>
                                 <label for="mail" class="form-label">Correo</label>
                             </div>
                             <div class="form-floating mb-3">

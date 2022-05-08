@@ -5,7 +5,7 @@
     <div class="collapse navbar-collapse justify-content-left" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link letra-primary-color menu" aria-current="page" href="verDatosPaciente.php">Paciente</a>
+                <a class="nav-link letra-primary-color menu" aria-current="page" href="verDatosPaciente.php?idPaciente=<?php echo Session::getIdPaciente() ?>">Paciente</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link letra-primary-color menu" href="calendario.php">Calendario</a>

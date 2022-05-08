@@ -21,16 +21,14 @@ class LoginController
 
     public function login($username, $password)
     {
-        $login = true;
         $usuario = $this->usuarioDAO->login($username);
 
         if ($usuario == null) {
-            $login = false;
             return;
         }
 
         if (!password_verify($password, $usuario->getContrasenia())) {
-            $login = false;
+            $usuario = null;
             return;
         }
         $iniciales = '';
@@ -86,6 +84,6 @@ class LoginController
             header("Location: verDatosPaciente.php");
         }
 
-        return $login;
+        return $usuario;
     }
 }

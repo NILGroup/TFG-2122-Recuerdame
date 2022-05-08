@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="public/css/styles.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="public/fontawesome6/css/all.css" rel="stylesheet">
+    <script src="public/jquery/jquery-3.6.0.min.js"></script>
     <script src="public/bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <title>Recuérdame</title>
 </head>

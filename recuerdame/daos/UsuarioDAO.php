@@ -14,6 +14,7 @@ class UsuarioDAO
     }
 
     public function getUsuario($id){
+        echo "<script>console.log('Debug Objects: " . $id . "' );</script>";
         $conexion = $this->db->getConexion();
         $row = $conexion->query("SELECT * FROM usuario WHERE id_usuario = '$id'")
             or die($conexion->error);
