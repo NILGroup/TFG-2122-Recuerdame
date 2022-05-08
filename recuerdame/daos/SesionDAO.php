@@ -1,7 +1,7 @@
 <?php
 
 require_once('configdb.php');
-require_once('models/Sesion.php');
+require_once('models/sesion.php');
 
 class SesionDAO
 {

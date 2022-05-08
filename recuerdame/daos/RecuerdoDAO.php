@@ -1,7 +1,7 @@
 <?php
 
 require_once('configdb.php');
-require_once('models/Recuerdo.php');
+require_once('models/recuerdo.php');
 
 class RecuerdoDAO
 {
