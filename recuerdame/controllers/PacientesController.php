@@ -50,7 +50,8 @@ class PacientesController
         return $this->pacienteDao->cambiarTerapeuta($idTerapeuta, $idPaciente);
     }
 
-    public function getPacienteCuidador($idCuidador) {
+    public function getPacienteCuidador($idCuidador)
+    {
         return $this->pacienteDao->getPacienteCuidador($idCuidador);
     }
 }

@@ -466,11 +466,7 @@ if (isset($_POST['login'])) {
     }
     $paciente->setNombre($_POST['nombre']);
     $paciente->setApellidos($_POST['apellidos']);
-    if ($_POST['genero'] == 'Hombre') {
-        $paciente->setGenero('H');
-    } else {
-        $paciente->setGenero('M');
-    }
+    $paciente->setGenero($_POST['genero']);
     $paciente->setLugarNacimiento($_POST['lugarNac']);
     $paciente->setNacionalidad($_POST['nacionalidad']);
     $paciente->setTipoResidencia($_POST['casa']);

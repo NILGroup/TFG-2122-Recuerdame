@@ -94,7 +94,7 @@ class PacienteDAO
     }
 
     /**
-     * Modifica los datos de un paciente // COOOOORREGIRRR
+     * Modifica los datos de un paciente
      */
     public function modificarPaciente($paciente)
     {
@@ -121,7 +121,7 @@ class PacienteDAO
 
         $stmt->close();
 
-        return;
+        return $paciente->getIdPaciente();
     }
 
     /**

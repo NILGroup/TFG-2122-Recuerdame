@@ -52,10 +52,9 @@
                 <div class="row col-sm-12 col-md-6 col-lg-5">
                     <label for="genero" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-6">Género<span class="asterisco">*</span></label>
                     <div class="col-sm-12 col-md-12 col-lg-6">
-                        <select id="genero" name="genero" class="form-select form-select-sm" value="<?php echo ($paciente->getGenero()) ?>">
-                            <option>Hombre</option>
-                            <option>Mujer</option>
-                            <option>Prefiero no decirlo</option>
+                        <select id="genero" name="genero" class="form-select form-select-sm">
+                            <option <?php if ($paciente->getGenero() == 'H') echo 'selected="selected" '; ?> value="H">Hombre</option>
+                            <option <?php if ($paciente->getGenero() == 'M') echo 'selected="selected" '; ?> value="M">Mujer</option>
                         </select>
                     </div>
                 </div>
@@ -104,7 +103,7 @@
                 <div class="row col-sm-12 col-md-6 col-lg-5">
                     <label for="terapeuta" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-6">Teapeuta<span class="asterisco">*</span></label>
                     <div class="col-sm-12 col-md-12 col-lg-6">
-                        <select class="form-select form-select-sm" id="terapeuta" name="terapeuta">
+                        <select class="form-select form-select-sm" id="terapeuta" name="terapeuta" required>
                             <option value="" selected="selected"></option>
                             <?php
 
