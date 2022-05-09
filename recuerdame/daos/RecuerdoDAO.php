@@ -42,6 +42,23 @@ class RecuerdoDAO
     }
 
     /**
+     * Recupera la fecha del recuerdo más antiguo de un paciente
+     */
+    public function getFechaRecuerdo($idPaciente)
+    {
+        $conexion = $this->db->getConexion();
+        $row = $conexion->query("SELECT min(fecha) AS fecha FROM recuerdo WHERE id_paciente = '$idPaciente'")
+            or die($conexion->error);
+
+        $fecha = null;
+        if ($rows = $row->fetch_column()) {
+            $fecha = $rows;
+        };
+
+        return $fecha;
+    }
+
+    /**
      * Lista de recuerdos de un paciente.
      */
     public function getListaRecuerdos($idPaciente)
@@ -293,7 +310,6 @@ class RecuerdoDAO
             $conexion->commit();
             $stmt->close();
             $stmtr->close();
-
         } catch (Exception $e) {
             $conexion->rollback();
         }
@@ -304,7 +320,7 @@ class RecuerdoDAO
     /**
      * Asigna una lista de archivos multimedia existentes al recuerdo.
      */
-    public function anadirMultimedia($idRecuerdo, $listaMultimedia) 
+    public function anadirMultimedia($idRecuerdo, $listaMultimedia)
     {
         try {
             $conexion = $this->db->getConexion();
@@ -312,24 +328,23 @@ class RecuerdoDAO
 
             // Se borran todos los archivos multimedia del recuerdo para después actualizarlas
             $conexion->query("DELETE FROM recuerdo_multimedia WHERE id_recuerdo = $idRecuerdo")
-            or die($conexion->error);
+                or die($conexion->error);
 
             foreach ($listaMultimedia as $idMultimedia) {
                 // Se busca si ya existe la relación entre el archivo y el recuerdo
                 $row = $conexion->query("SELECT * FROM recuerdo_multimedia WHERE id_recuerdo = $idRecuerdo AND id_multimedia = $idMultimedia")
-                             or die($conexion->error);
-                
+                    or die($conexion->error);
+
                 // Si no existe, se crea
-                if ($row->num_rows == 0){
+                if ($row->num_rows == 0) {
                     $consultaSQL = "INSERT INTO recuerdo_multimedia (id_recuerdo, id_multimedia) 
-                    VALUES (".$idRecuerdo.", ".$idMultimedia.");";
+                    VALUES (" . $idRecuerdo . ", " . $idMultimedia . ");";
 
                     $conexion->query($consultaSQL) or die($conexion->error);
                 }
             }
 
             $conexion->commit();
-
         } catch (Exception $e) {
             $conexion->rollback();
         }
@@ -381,7 +396,6 @@ class RecuerdoDAO
             $conexion->commit();
             $stmt->close();
             $stmtr->close();
-
         } catch (Exception $e) {
             $conexion->rollback();
         }
@@ -392,7 +406,7 @@ class RecuerdoDAO
     /**
      * Asigna una lista de personas relacionadas existentes al recuerdo.
      */
-    public function anadirPersonasRelacionadas($idRecuerdo, $listaPersonasRelacionadas) 
+    public function anadirPersonasRelacionadas($idRecuerdo, $listaPersonasRelacionadas)
     {
         try {
             $conexion = $this->db->getConexion();
@@ -400,24 +414,23 @@ class RecuerdoDAO
 
             // Se borran todas las personas relacionadas del recuerdo para después actualizarlas
             $conexion->query("DELETE FROM recuerdo_persona_relacionada WHERE id_recuerdo = $idRecuerdo")
-            or die($conexion->error);
+                or die($conexion->error);
 
             foreach ($listaPersonasRelacionadas as $idPersonaRelacionada) {
                 // Se busca si ya existe la relación entre la persona relacionada y el recuerdo
                 $row = $conexion->query("SELECT * FROM recuerdo_persona_relacionada WHERE id_recuerdo = $idRecuerdo AND id_persona_relacionada = $idPersonaRelacionada")
-                             or die($conexion->error);
-                
+                    or die($conexion->error);
+
                 // Si no existe, se crea
-                if ($row->num_rows == 0){
+                if ($row->num_rows == 0) {
                     $consultaSQL = "INSERT INTO recuerdo_persona_relacionada (id_recuerdo, id_persona_relacionada) 
-                    VALUES (".$idRecuerdo.", ".$idPersonaRelacionada.");";
+                    VALUES (" . $idRecuerdo . ", " . $idPersonaRelacionada . ");";
 
                     $conexion->query($consultaSQL) or die($conexion->error);
                 }
             }
 
             $conexion->commit();
-
         } catch (Exception $e) {
             $conexion->rollback();
         }

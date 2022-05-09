@@ -126,4 +126,11 @@ class RecuerdosController{
     public function eliminarPersonarelacionada($idRecuerdo, $idPersonaRelacionada) {
         $this->recuerdoDao->eliminarPersonaRelacionada($idRecuerdo, $idPersonaRelacionada);
     }
+
+    /**
+     * Recupera la fecha del recuerdo más antiguo de un paciente
+     */
+    public function getFechaRecuerdo($idPaciente) {
+        return $this->recuerdoDao->getFechaRecuerdo($idPaciente);
+    }
 }

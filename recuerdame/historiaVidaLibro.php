@@ -19,7 +19,7 @@
     <?php include "controllers/ComunesController.php" ?>
     <?php include "modalImagen.php" ?>
 
-    <div class="container-fluid vh-100">
+    <div class="container-fluid" style="height: 75%">
         <?php
         $recuerdosController = new RecuerdosController();
         $comunesController = new ComunesController();
@@ -50,7 +50,7 @@
         <?php
         } else {
         ?>
-            <div id="carouselPrincipal" class="carousel carousel-dark slide" data-bs-interval="false" data-bs-ride="carousel">
+            <div id="carouselPrincipal" style="height: 90%" class="carousel carousel-dark slide" data-bs-interval="false" data-bs-ride="carousel">
 
                 <div class="carousel-inner container pt-4 pb-4">
                     <div class="hv-box p-4">
@@ -70,35 +70,26 @@
                                             </div>
 
                                             <div class="row">
-                                                <h4 class="text-center hv-title">Imágenes</h5>
-                                                    <div class="testimonial-group justify-content-center">
-                                                        <div class="row text-center flex-nowrap">
-                                                            <?php
-                                                            $listaMultimedia = $recuerdosController->getListaMultimediaRecuerdo($recuerdo['id_recuerdo']);
-                                                            ?>
+                                                <div class="testimonial-group justify-content-center">
+                                                    <div class="row text-center flex-nowrap">
+                                                        <?php
+                                                        $listaMultimedia = $recuerdosController->getListaMultimediaRecuerdo($recuerdo['id_recuerdo']);
+                                                        ?>
 
-                                                            <?php
-                                                            if ($listaMultimedia == null || empty($listaMultimedia)) {
-                                                            ?>
-                                                                <span class="align-middle text-muted">Este recuerdo no tiene imágenes.</span>
-                                                            <?php
-                                                            }
-                                                            ?>
-
-                                                            <?php
-                                                            foreach ($listaMultimedia as $multimedia) {
-                                                            ?>
-                                                                <div class="col-sm-5 col-md-4 col-lg-3">
-                                                                    <a href="#" class="visualizarImagen"><img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive card-img-top img-thumbnail" alt="<?php $multimedia['nombre'] ?>" /></a>
-                                                                    <div>
-                                                                        <h6 class="text-muted"><?php echo $multimedia['nombre'] ?></h6>
-                                                                    </div>
+                                                        <?php
+                                                        foreach ($listaMultimedia as $multimedia) {
+                                                        ?>
+                                                            <div class="col-sm-5 col-md-4 col-lg-3">
+                                                                <a href="#" class="visualizarImagen"><img src="archivos/<?php echo $multimedia['fichero'] ?>" class="img-responsive card-img-top img-thumbnail" alt="<?php $multimedia['nombre'] ?>" /></a>
+                                                                <div>
+                                                                    <h6 class="text-muted"><?php echo $multimedia['nombre'] ?></h6>
                                                                 </div>
-                                                            <?php
-                                                            }
-                                                            ?>
-                                                        </div>
+                                                            </div>
+                                                        <?php
+                                                        }
+                                                        ?>
                                                     </div>
+                                                </div>
                                             </div>
                                     </div>
                                 </div>
