@@ -39,7 +39,7 @@ class PacienteDAO
     public function getListaPacientes($idTerapeuta)
     {
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("SELECT * FROM paciente WHERE id_terapeuta = '$idTerapeuta' ")
+        $row = $conexion->query("SELECT * FROM paciente p join terapeuta t on p.id_paciente = t.id_paciente WHERE id_terapeuta = '$idTerapeuta'")
             or die($conexion->error);
 
         $listaPacientes = array();
@@ -153,23 +153,60 @@ class PacienteDAO
 
         return 1;
     }
-    public function cambiarTerapeuta($idTerapeuta, $idPaciente)
-    {
+
+    public function asignarTerapeuta($idTerapeuta, $idPaciente){
+
         $conexion = $this->db->getConexion();
-        $consultaSQL = "UPDATE paciente
-                        SET id_terapeuta = ?
-                        WHERE id_paciente = ?;";
-        $stmt = $conexion->prepare($consultaSQL);
-        $stmt->execute(array(
-            $idTerapeuta,
-            $idPaciente
-        ));
+        $row = $conexion->query("SELECT * FROM terapeuta WHERE id_paciente = '$idPaciente' and id_terapeuta = '$idTerapeuta'")
+            or die($conexion->error);
 
-        $stmt->close();
+        $u = $row->fetch_assoc();
 
-        return 1;
+        if ($u == null){
+
+            $consultaSQL = "INSERT INTO terapeuta (id_paciente, id_terapeuta)
+                    VALUES (?,?)";
+            $stmt = $conexion->prepare($consultaSQL);
+            $stmt->execute(array(
+                $idPaciente,
+                $idTerapeuta
+            ));
+
+            $stmt->close();
+            return 1;
+        } else {
+            return NULL;
+        }
+
     }
 
+
+    public function comprobarTerapeuta($idTerapeuta, $idPaciente)
+    {
+       
+        $conexion = $this->db->getConexion();
+        $row = $conexion->query("SELECT * FROM terapeuta WHERE id_paciente = '$idPaciente' and id_terapeuta = '$idTerapeuta'")
+            or die($conexion->error);
+
+        $u = $row->fetch_assoc();
+
+        if ($u == null){
+            return NULL;
+        } else {
+            return 1;
+        }
+    }
+
+
+    public function eliminarTerapeuta($idTerapeuta, $idPaciente){
+       
+
+        $conexion = $this->db->getConexion();
+        $conexion->query("DELETE FROM terapeuta WHERE id_terapeuta = $idTerapeuta AND id_paciente = $idPaciente")
+            or die($conexion->error);
+    
+        return 1;
+    }
     /**
      * Recupera el paciente asociado al cuidador logado
      */

@@ -28,11 +28,11 @@
         ?>
 
         <div class="pt-4 pb-2">
-            <h5 class="text-muted">Datos paciente</h5>
+            <h5 class="text-muted">Registro cuidador</h5>
             <hr class="lineaTitulo">
         </div>
 
-        <form action="gestor.php?accion=guardarPaciente&idUsuario=<?php echo $usuario->getIdUsuario() ?>" method="POST">
+        <form action="gestorRegistroUsuario.php?rol=CUIDADOR" method="POST">
             <div class="row form-group justify-content-between">
                 <div class="row col-sm-12 col-md-6 col-lg-5">
                     <label for="nombre" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-6">Nombre<span class="asterisco">*</span></label>
@@ -48,54 +48,54 @@
                     </div>
                 </div>
             </div>
+            <div class="row form-group justify-content-between">
+                <div class="row col-sm-12 col-md-6 col-lg-5">
+                    <label for="nick" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-6">Nombre de usuario<span class="asterisco">*</span></label>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <input type="text" class="form-control form-control-sm" id="nick" name="nick" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group justify-content-between">
+                <div class="row col-sm-12 col-md-6 col-lg-5">
+                    <label for="fecha" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-6">Correo<span class="asterisco">*</span></label>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <input type="mail" class="form-control form-control-sm" id="mail" name="mail" required>
+                    </div>
+                </div>
+
+                <div class="row col-sm-12 col-md-6 col-lg-7">
+                    <label for="pais" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-4">Contraseña<span class="asterisco">*</span></label>
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+                        <input type="password" class="form-control form-control-sm" id="password" name="password" required>
+                    </div>
+                </div>
+            </div>
 
             <div class="row form-group justify-content-between">
                 <div class="row col-sm-12 col-md-6 col-lg-5">
-                    <label for="genero" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-6">Género<span class="asterisco">*</span></label>
+                    <label for="terapeuta" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-6">Terapeuta<span class="asterisco">*</span></label>
                     <div class="col-sm-12 col-md-12 col-lg-6">
-                        <select id="genero" class="form-select form-select-sm" name="genero">
-                            <option value="H">Hombre</option>
-                            <option value="M">Mujer</option>
+                        <select class="form-select form-select-sm" id="paciente" name="paciente" required>
+                            <option value="" selected="selected"></option>
+                            <?php
+                                    
+                                    $pacientesCuidador = $pacientesController->getListaPacientesSinCuidador($usuario->getIdUsuario());
+                                     if($pacientesCuidador != null){
+                                        foreach ($pacientesCuidador as $fila) {
+                                           
+                                            $id = $fila['id_paciente'];
+                                            $nombre = $fila['nombre'];
+                                            $apellido = $fila['apellidos'];
+
+                                        ?>
+                                    <option value=" <?php echo $id; ?>"> <?php echo $nombre . " " . $apellido; ?></option>
+                            <?php
+                                }
+                            }
+                            ?>
+
                         </select>
-                    </div>
-                </div>
-
-                <div class="row col-sm-12 col-md-6 col-lg-7">
-                    <label for="lugarNacimiento" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-4">Lugar de nacimiento<span class="asterisco">*</span></label>
-                    <div class="col-sm-12 col-md-12 col-lg-8">
-                        <input type="text" class="form-control form-control-sm" id="lugarNacimiento" name="lugarNac" required>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row form-group justify-content-between">
-                <div class="row col-sm-12 col-md-6 col-lg-5">
-                    <label for="fecha" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-6">Fecha de nacimiento<span class="asterisco">*</span></label>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <input type="date" class="form-control form-control-sm" id="fecha" name="fecha" required>
-                    </div>
-                </div>
-
-                <div class="row col-sm-12 col-md-6 col-lg-7">
-                    <label for="pais" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-4">País<span class="asterisco">*</span></label>
-                    <div class="col-sm-12 col-md-12 col-lg-8">
-                        <input type="text" class="form-control form-control-sm" id="pais" name="nacionalidad" required>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row form-group justify-content-between">
-                <div class="row col-sm-12 col-md-6 col-lg-5">
-                    <label for="residencia" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-6">Tipo de residencia<span class="asterisco">*</span></label>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <input type="text" class="form-control form-control-sm" id="residencia" name="residencia" required>
-                    </div>
-                </div>
-
-                <div class="row col-sm-12 col-md-6 col-lg-7">
-                    <label for="casa" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-4">Residencia actual<span class="asterisco">*</span></label>
-                    <div class="col-sm-12 col-md-12 col-lg-8">
-                        <input type="text" class="form-control form-control-sm" id="casa" name="casa" required>
                     </div>
                 </div>
             </div>

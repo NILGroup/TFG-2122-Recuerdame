@@ -100,35 +100,6 @@
                 </div>
             </div>
 
-            <div class="row form-group justify-content-between">
-                <div class="row col-sm-12 col-md-6 col-lg-5">
-                    <label for="terapeuta" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-6">Teapeuta<span class="asterisco">*</span></label>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <select class="form-select form-select-sm" id="terapeuta" name="terapeuta" required>
-                            <option value="" selected="selected"></option>
-                            <?php
-
-                            $usuarioController = new UsuarioController();
-                            $terapeutas = $usuarioController->getListaTerapeutas();
-                            if ($terapeutas != null) {
-                                foreach ($terapeutas as $fila) {
-
-                                    $id = $fila['id_usuario'];
-                                    $nombre = $fila['nombre'];
-                                    $apellido = $fila['apellidos'];
-
-                            ?>
-                                    <option value=" <?php echo $id; ?>"> <?php echo $nombre . " " . $apellido; ?></option>
-                            <?php
-                                }
-                            }
-                            ?>
-
-                        </select>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-12">
                 <button type="submit" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
                 <a href="listadoPacientes.php"><button type="button" class="btn btn-primary btn-sm">Atrás</button></a>

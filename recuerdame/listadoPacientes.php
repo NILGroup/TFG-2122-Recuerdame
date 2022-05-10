@@ -26,7 +26,7 @@
         <div class="row mb-2">
             <div class="col-12 justify-content-end d-flex">
            
-            <button type="button" style="background: transparent; border: 2px solid #0099CC; border-radius: 6px;" id="mybutton" class="btn-registro">Registro cuidador</button></a>
+            <a href="nuevoCuidador.php"><button type="button" style="background: transparent; border: 2px solid #0099CC; border-radius: 6px;" id="mybutton" class="btn-registro">Registro cuidador</button></a>
                 <a href="nuevoPaciente.php"><button type="button" style="background: transparent; border: 2px solid #0099CC; border-radius: 6px; border-color:green;" class="btn-newpaciente">Nuevo paciente</i></button></a>
             </div>
         </div>
@@ -46,13 +46,6 @@
                 <tbody>
                 <?php
                   
-                    if((isset($_GET['mensajeError']))) {
-                        
-
-                        echo '<script> alert("NO SE AGREGO CORRECTAMENTE EL CUIDADOR");</script>';
-                        
-                    }
-                    
                    
                     
                     $error = 0;
@@ -80,8 +73,9 @@
                             <td class="tableActions">
                                 <a href="verDatosPaciente.php?idPaciente=<?php echo ($row['id_paciente']) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
                                 <a href="modificarDatosPaciente.php?idPaciente=<?php echo ($row['id_paciente']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
+                                <a href="asignarTerapeuta.php?idPaciente=<?php echo ($row['id_paciente']) ?>"><i class="fa-solid fa-plus text-success tableIcon"></i></a>
                                 <a href="gestor.php?accion=eliminarPaciente&idPaciente=<?php echo ($row['id_paciente']) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
-            
+                               
                             </td>
                         </tr>
                         <?php 
@@ -94,67 +88,7 @@
         </div>
 
     </div>
-    <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header bg-info">
-                        <h5 class="modal-title" id="titulo">Nuevo cuidador</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        </button>
-                    </div>
-                    <form id="formulario" action="gestorRegistroUsuario.php?rol=CUIDADOR" method="POST">
-                        <div class="modal-body">
-                            <div class="form-floating mb-3">
-                               <input type="text" class="form-control" id="nombre" name="name" required>
-                                <label for="name" class="form-label">Nombre</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="apellidos" name="apellidos" required>
-                                <label for="apellidos" class="form-label">Apellidos</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="nick" name="nick" required>
-                                <label for="nick" class="form-label">Nombre Usuario</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <select  class="form-control" id="paciente" name="paciente" required>
-                                <option value="" selected="selected"><b>--Escoja el paciente--</b></option>
-                                <?php
-                                    
-                                    $pacientesCuidador = $pacientesController->getListaPacientesSinCuidador($idUsuario);
-                                     if($pacientesCuidador != null){
-                                        foreach ($pacientesCuidador as $fila) {
-                                           
-                                            $id = $fila['id_paciente'];
-                                            $nombre = $fila['nombre'];
-                                            $apellido = $fila['apellidos'];
-
-                                        ?>
-                                       <option value=" <?php echo $id;?>"> <?php echo $nombre." ". $apellido; ?></option>
-                                       <?php
-                                       }
-                                    }
-                                        ?>
-                                
-                                </select>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="mail" name="mail" required>
-                                <label for="mail" class="form-label">Correo</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="start" name="password" required>
-                                <label for="password" class="form-label">Contraseña</label>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="submit" id="btnAccion" name="btnAccion" value="Registrar" class="btn btn-outline-primary btn-sm">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    <script src="public/js/cuidador.js"></script>
+    
     <?php include "layout/footer.php" ?>
 </body>
 

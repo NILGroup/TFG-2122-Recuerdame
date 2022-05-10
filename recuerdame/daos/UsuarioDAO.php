@@ -106,10 +106,10 @@ class UsuarioDAO
     //recoger los terapeutas
 
 
-    public function getListaTerapeutas()
+    public function getListaTerapeutas($idUsuario)
     {
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("SELECT * FROM usuario WHERE rol = 'TERAPEUTA'")
+        $row = $conexion->query("SELECT * FROM usuario  WHERE rol = 'TERAPEUTA' and id_usuario != '$idUsuario'")
             or die($conexion->error);
 
         $listaTerapeutas = array();

@@ -45,9 +45,19 @@ class PacientesController
     {
         return $this->pacienteDao->asignarCuidador($idCuidador, $idPaciente);
     }
-    public function cambiarTerapeuta($idTerapeuta, $idPaciente)
+    public function asignarTerapeuta($idTerapeuta, $idPaciente)
     {
-        return $this->pacienteDao->cambiarTerapeuta($idTerapeuta, $idPaciente);
+        return $this->pacienteDao->asignarTerapeuta($idTerapeuta, $idPaciente);
+    }
+
+    public function eliminarTerapeuta($idTerapeuta, $idPaciente)
+    {
+        return $this->pacienteDao->eliminarTerapeuta($idTerapeuta, $idPaciente);
+    }
+
+    public function comprobarTerapeuta($idTerapeuta, $idPaciente)
+    {
+        return $this->pacienteDao->comprobarTerapeuta($idTerapeuta, $idPaciente);
     }
 
     public function getPacienteCuidador($idCuidador)
