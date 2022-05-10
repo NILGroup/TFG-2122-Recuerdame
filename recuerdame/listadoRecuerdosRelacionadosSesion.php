@@ -38,35 +38,6 @@
             <hr class="lineaTitulo">
         </div>
 
-        <div class="row mb-2">
-            <div class="row col-sm-10 col-md-10 col-lg-10">
-                <div class="col-sm-9 col-md-6 col-lg-3">
-                    <select class="form-select form-select-sm" id="nombreEtapa" name="nombreEtapa">
-                        <option value="" selected>Etapa</option>
-                        <?php
-                        foreach ($listaEtapas as $row) {
-                        ?>
-                            <option value="<?php echo ($row["nombre"]) ?>"><?php echo ($row["nombre"]) ?></option>
-                        <?php
-                        }
-                        ?>
-                    </select>
-                </div>
-                <div class="col-sm-9 col-md-6 col-lg-3">
-                    <select class="form-select form-select-sm" id="nombreCategoria" name="nombreCategoria">
-                        <option value="" selected>Categoría</option>
-                        <?php
-                        foreach ($listaCategorias as $row) {
-                        ?>
-                            <option value="<?php echo ($row["nombre"]) ?>"><?php echo ($row["nombre"]) ?></option>
-                        <?php
-                        }
-                        ?>
-                    </select>
-                </div>
-            </div>
-        </div>
-
         <form id="formulario" action="gestor.php?accion=guardarRecuerdoRelacionadoSesion&idSesion=<?php echo ($idSesion) ?>" method="POST">
 
             <div>
