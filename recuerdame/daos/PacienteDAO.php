@@ -53,7 +53,7 @@ class PacienteDAO
     public function getListaPacientesSinCuidador($idTerapeuta)
     {
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("SELECT * FROM paciente WHERE id_cuidador IS NULL and id_terapeuta = '$idTerapeuta'")
+        $row = $conexion->query("SELECT * FROM paciente p join terapeuta t on p.id_paciente = t.id_paciente WHERE id_cuidador IS NULL and id_terapeuta = '$idTerapeuta'")
             or die($conexion->error);
 
         $listaPacientes = array();
