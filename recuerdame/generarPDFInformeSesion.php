@@ -1,10 +1,10 @@
 <?php
-require('./public/fpdf184/fpdf.php');
-include "controllers/InformeSesionController.php";
-include "controllers/PacientesController.php";
-include "controllers/SesionesController.php";
-include "controllers/LoginController.php";
-require_once('models/Session.php');
+require_once ('./public/fpdf184/fpdf.php');
+require_once ("controllers/InformeSesionController.php");
+require_once ("controllers/PacientesController.php");
+require_once ("controllers/SesionesController.php");
+require_once ("controllers/LoginController.php");
+require_once ('models/Session.php');
     
 class PDF extends FPDF{
 
@@ -23,7 +23,7 @@ class PDF extends FPDF{
         // Move to the right
         //$this->Cell(80);
         // Title
-        $this->Cell(190,11,'Informe de Sesion #'.$this->numInforme,0,1);
+        $this->Cell(190,11,utf8_decode('Informe de Sesión #'.$this->numInforme),0,1);
         $this->Line(10,25,200,25);
         // Line break
         $this->Ln(10);
@@ -56,7 +56,7 @@ function writePatient($pdf, $paciente){
     $pdf->Cell(160,7,' 87',1);
     $pdf->Ln();
     $pdf->SetFont('Times','B',12);
-    $pdf->Cell(30,7,'Genero: ',1,0,'L',true);
+    $pdf->Cell(30,7,utf8_decode('Género: '),1,0,'L',true);
     $pdf->SetFont('Times','',12);
     if($paciente->getGenero() == 'H'){
         $pdf->Cell(160,7,' '. 'Hombre',1);
@@ -79,7 +79,7 @@ function writeTerapeuta($pdf, $usuario){
 function writeSesion($pdf, $sesion){
 
     $pdf->SetFont('Times','B',12);
-    $pdf->Cell(50,7,"Fecha de la sesion:",1,0,'L',true);
+    $pdf->Cell(50,7,utf8_decode("Fecha de la sesión:"),1,0,'L',true);
     $pdf->SetFont('Times','',12);
     $pdf->Cell(140,7,$sesion->getFecha(),1,0,'C');
     $pdf->Ln(12);
@@ -94,7 +94,7 @@ function writeSesion($pdf, $sesion){
 
     $pdf->SetFillColor(170);
     $pdf->SetFont('Times','B',12);
-    $pdf->Cell(0,7,utf8_decode('Descripcion'),1,0,'L',true);
+    $pdf->Cell(0,7,utf8_decode('Descripción'),1,0,'L',true);
     $pdf->Ln();
     $pdf->SetFont('Times','',12);
     $pdf->MultiCell(0,7,utf8_decode($sesion->getDescripcion()),1);
@@ -122,7 +122,7 @@ function writeSesion($pdf, $sesion){
 
 function writeInformeSesion($pdf, $informeSesion){
     $pdf->SetFont('Times','B',12);
-    $pdf->Cell(50,7,"Fecha de finalizacion:",1,0,'L',true);
+    $pdf->Cell(50,7,utf8_decode("Fecha de finalización:"),1,0,'L',true);
     $pdf->SetFont('Times','',12);
     $pdf->Cell(140,7,$informeSesion->getFechaFinalizacion(),1,0,'C');
     $pdf->Ln(12);
@@ -157,14 +157,14 @@ function pdfBody($pdf, $paciente, $sesion, $informeSesion, $usuario){
     writePatient($pdf, $paciente);
 
     $pdf->SetFont('Times','B',15);
-    $pdf->Cell(0,7,'Datos de la sesion ');
+    $pdf->Cell(0,7,utf8_decode('Datos de la sesión '));
     $pdf->Ln(9);
 
     writeTerapeuta($pdf,$usuario);
     writeSesion($pdf,$sesion);
 
     $pdf->SetFont('Times','B',15);
-    $pdf->Cell(0,7,'Informe de la sesion ');
+    $pdf->Cell(0,7,utf8_decode('Informe de la sesión '));
     $pdf->Ln(9);
 
     writeInformeSesion($pdf,$informeSesion);
@@ -204,7 +204,6 @@ if (!empty($_GET['idSesion'])){
     $usuario = $loginController->verUsuario($sesion->getIdUsuario());
 
     $pdf = new PDF();
-    $pdf->LoadData($informeSesion->getIdSesion());
     $pdf->AliasNbPages();
     $pdf->AddPage();
     $pdf->SetFont('Times','',12);
@@ -216,5 +215,3 @@ if (!empty($_GET['idSesion'])){
 else{
     echo("Error: No ID encontrado");
 }
-
-?>

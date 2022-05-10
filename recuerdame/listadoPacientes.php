@@ -73,7 +73,7 @@
                             <td class="tableActions">
                                 <a href="verDatosPaciente.php?idPaciente=<?php echo ($row['id_paciente']) ?>"><i class="fa-solid fa-eye text-black tableIcon"></i></a>
                                 <a href="modificarDatosPaciente.php?idPaciente=<?php echo ($row['id_paciente']) ?>"><i class="fa-solid fa-pencil text-primary tableIcon"></i></a>
-                                <a href="asignarTerapeuta.php?idPaciente=<?php echo ($row['id_paciente']) ?>"><i class="fa-solid fa-plus text-success tableIcon"></i></a>
+                                <a href="asignarTerapeuta.php?idPaciente=<?php echo ($row['id_paciente']) ?>"><i class="fa-solid fa-users-line text-success tableIcon"></i></a>
                                 <a href="gestor.php?accion=eliminarPaciente&idPaciente=<?php echo ($row['id_paciente']) ?>"><i class="fa-solid fa-trash-can text-danger tableIcon"></i></a>
                                
                             </td>
