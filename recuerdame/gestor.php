@@ -494,11 +494,7 @@ if (isset($_POST['login'])) {
     $paciente->setTipoResidencia($_POST['casa']);
     $paciente->setResidenciaActual($_POST['residencia']);
     $paciente->setFechaNacimiento($_POST['fecha']);
-    $paciente->setIdTerapeuta($_GET['idUsuario']);
-    if (isset($_POST['terapeuta']) && $_POST['terapeuta'] != "") {
-        $paciente->setIdTerapeuta($_POST['terapeuta']);
-        $pacientesController->cambiarTerapeuta($paciente->getIdTerapeuta(), $paciente->getIdPaciente());
-    }
+
     $pacientesController->guardarPaciente($paciente, $_GET['idUsuario']);
 
 

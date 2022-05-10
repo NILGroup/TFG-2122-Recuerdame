@@ -106,16 +106,7 @@ class Paciente {
 
         return $this;
     }
-    public function getIdTerapeuta()
-    {
-        return $this->idTerapeuta;
-    }
-    public function setidTerapeuta($idTerapeuta)
-    {
-        $this->idTerapeuta = $idTerapeuta;
-
-        return $this;
-    }
+   
     public function getIdCuidador()
     {
         return $this->idCuidador;
