@@ -18,13 +18,6 @@
     <?php include "layout/header.php" ?>
     <?php include "layout/nav.php" ?>
     <?php include "controllers/RecuerdosController.php" ?>
-    <?php include "controllers/ComunesController.php" ?>
-
-    <?php
-    $comunesController = new ComunesController();
-    $listaEtapas = $comunesController->getListaEtapas();
-    $listaCategorias = $comunesController->getListaCategorias();
-    ?>
 
     <div class="container-fluid">
         <?php
@@ -38,8 +31,7 @@
             <hr class="lineaTitulo">
         </div>
 
-        <form id="formulario" action="gestor.php?accion=guardarRecuerdoRelacionadoSesion&idSesion=<?php echo ($idSesion) ?>" method="POST">
-
+        <form action="gestor.php?accion=guardarRecuerdoRelacionadoSesion&idSesion=<?php echo ($idSesion) ?>" method="POST">
             <div>
                 <table class="table table-bordered recuerdameTable">
                     <thead>
@@ -60,10 +52,6 @@
                         $idPaciente = null;
                         if (Session::getIdPaciente() != null) {
                             $idPaciente = Session::getIdPaciente();
-                        }
-
-                        $lista = array();
-                        if ($idPaciente != null) {
                             if (isset($idSesion) && $idSesion != null) {
                                 $lista = $recuerdosController->getListaRecuerdosRelacionadosSesionAnadir($idPaciente, $idSesion);
                             } else {
@@ -74,16 +62,17 @@
                         $i = 1;
                         foreach ($lista as $row) {
                         ?>
-                            <th scope="row"><?php echo $i ?></th>
-                            <td><?php echo ($row['nombre']) ?></td>
-                            <td><?php echo (date("d/m/Y", strtotime($row["fecha"]))) ?></td>
-                            <td><?php echo ($row["nombreEtapa"]) ?></td>
-                            <td><?php echo ($row["nombreCategoria"]) ?></td>
-                            <td><?php echo ($row["nombreEstado"]) ?></td>
-                            <td><?php echo ($row["nombreEtiqueta"]) ?></td>
-                            <td class="tableActions">
-                                <input class="form-check-input" type="checkbox" value="<?php echo ($row['idRecuerdo']) ?>" name="checkRecuerdo[]" id="checkRecuerdo<?php echo ($row['id_sesion']) ?>" <?php if (isset($row['id_sesion']) && $row['id_sesion'] == $idSesion) echo 'checked="checked" '; ?> />
-                            </td>
+                            <tr>
+                                <th scope="row"><?php echo $i ?></th>
+                                <td><?php echo ($row['nombre']) ?></td>
+                                <td><?php echo (date("d/m/Y", strtotime($row["fecha"]))) ?></td>
+                                <td><?php echo ($row["nombreEtapa"]) ?></td>
+                                <td><?php echo ($row["nombreCategoria"]) ?></td>
+                                <td><?php echo ($row["nombreEstado"]) ?></td>
+                                <td><?php echo ($row["nombreEtiqueta"]) ?></td>
+                                <td class="tableActions">
+                                    <input class="form-check-input" type="checkbox" value="<?php echo ($row['idRecuerdo']) ?>" name="checkRecuerdo[]" id="checkRecuerdo<?php echo ($row['idRecuerdo']) ?>" <?php if (isset($row['id_sesion']) && $row['id_sesion'] == $idSesion) echo 'checked="checked" '; ?>>
+                                </td>
                             </tr>
                         <?php
                             $i++;
@@ -94,7 +83,7 @@
             </div>
 
             <div>
-                <button type="button" name="guardar" id="guardar" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
+                <button type="submit" name="guardar" value="Guardar" class="btn btn-outline-primary btn-sm">Guardar</button>
                 <?php
                 if ($idSesion != null) {
                 ?>
