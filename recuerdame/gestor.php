@@ -370,6 +370,16 @@ if (isset($_POST['login'])) {
         // Error
     }
 
+    $ventanaDesde = null;
+    if (isset($_GET['ventanaDesde'])) {
+        $ventanaDesde = $_GET['ventanaDesde'];
+    }
+
+    $ventanaHacia = null;
+    if (isset($_GET['ventanaHacia'])) {
+        $ventanaHacia = $_GET['ventanaHacia'];
+    }
+
     $sesion = new Sesion();
     $sesion->setIdSesion($idSesion);
     $sesion->setFecha($fecha);
@@ -383,7 +393,19 @@ if (isset($_POST['login'])) {
     $sesionesController = new SesionesController();
     $idSesion = $sesionesController->guardarSesion($idPaciente, $sesion);
 
-    header("Location: verDatosSesion.php?idSesion=$idSesion");
+    if ($ventanaHacia != null) {
+
+        if ($ventanaDesde != null) {
+            header("Location: $ventanaHacia?idSesion=$idSesion&ventanaDesde=$ventanaDesde");
+        } else {
+            header("Location: $ventanaHacia?idSesion=$idSesion");
+        }
+    } else if (isset($ventanaDesde) && !empty($ventanaDesde)) {
+        header("Location: verDatosSesion.php?idSesion=$idSesion&ventanaDesde=$ventanaDesde");
+    } else {
+        header("Location: verDatosSesion.php?idSesion=$idSesion");
+    }
+
 } else if (isset($_GET['getMultimediaSesionList'])) {
     $idSesion = $_GET['idSesion'];
 
@@ -477,7 +499,7 @@ if (isset($_POST['login'])) {
         $paciente->setIdTerapeuta($_POST['terapeuta']);
         $pacientesController->cambiarTerapeuta($paciente->getIdTerapeuta(), $paciente->getIdPaciente());
     }
-    $pacientesController->guardarPaciente($paciente,$_GET['idUsuario']);
+    $pacientesController->guardarPaciente($paciente, $_GET['idUsuario']);
 
 
     header("Location: listadoPacientes.php");

@@ -35,25 +35,25 @@
         $desdeModificar = null;
         if ($recuerdo->getIdRecuerdo() != null) {
             $idRecuerdo = $recuerdo->getIdRecuerdo();
-            $desdeModificar = "modificarDatosRecuerdo.php?idRecuerdo=" . $idRecuerdo;
+            $desdeModificar = "modificarDatosRecuerdo.php&idRecuerdo=" . $idRecuerdo;
         }
 
+        $idSesion = null;
         $idRecuerdo = $recuerdo->getIdRecuerdo();
         $action = "gestor.php?idRecuerdo=" . $idRecuerdo;
         if (isset($_GET['idSesion'])) {
-            $action = "gestor.php?idRecuerdo=" . $idRecuerdo . "&idSesion=" . $_GET['idSesion'];
+            $idSesion = $_GET['idSesion'];
+            $action = "gestor.php?idRecuerdo=" . $idRecuerdo . "&idSesion=" . $idSesion;
         }
 
         $ventanaDesde = null;
         if (isset($_GET['ventanaDesde'])) {
             $ventanaDesde = $_GET['ventanaDesde'];
             $action = $action . "&ventanaDesde=" . $ventanaDesde;
-        }
 
-        $idSesion = null;
-        if (isset($_GET['idSesion'])) {
-            $idSesion = $_GET['idSesion'];
-            $action = $action . "&idSesion=" . $idSesion;
+            if ($idSesion != null) {
+                $ventanaDesde = $_GET['ventanaDesde'] . "?idSesion=" . $idSesion;
+            }
         }
 
         $comunesController = new ComunesController();
@@ -192,7 +192,7 @@
                 <div class="row">
                     <div class="col-12 justify-content-end d-flex p-2">
                         <button type="submit" name="guardarRecuerdo" formaction="gestor.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>&ventanaDesde=modificarDatosRecuerdo.php&ventanaHacia=modificarDatosPersonaRelacionada.php" class="btn btn-success btn-sm btn-icon me-2"><i class="fa-solid fa-plus"></i></button>
-                        <button type="submit" name="guardarRecuerdo" formaction="gestor.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>&ventanaDesde=modificarDatosRecuerdos.php&ventanaHacia=listadoPersonasRelacionadasRecuerdo.php" class="btn btn-success btn-sm me-2">Añadir existente</button>
+                        <button type="submit" name="guardarRecuerdo" formaction="gestor.php?idRecuerdo=<?php echo ($recuerdo->getIdRecuerdo()) ?>&ventanaDesde=modificarDatosRecuerdo.php&ventanaHacia=listadoPersonasRelacionadasRecuerdo.php" class="btn btn-success btn-sm me-2">Añadir existente</button>
                     </div>
                 </div>
 

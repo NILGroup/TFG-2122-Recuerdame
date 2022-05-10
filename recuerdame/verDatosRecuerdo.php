@@ -39,6 +39,10 @@
         $ventanaDesde = null;
         if (isset($_GET['ventanaDesde'])) {
             $ventanaDesde = $_GET['ventanaDesde'];
+
+            if ($idSesion != null) {
+                $ventanaDesde .= "?idSesion=" . $idSesion;
+            }
         }
 
         $comunesController = new ComunesController();

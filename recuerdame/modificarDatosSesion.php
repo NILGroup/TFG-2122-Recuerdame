@@ -107,15 +107,10 @@
 
             <div class="row">
                 <div class="col-12 justify-content-end d-flex p-2">
-                    <?php
-                    if ($sesion != null && $sesion->getIdSesion() != null) {
-                    ?>
-                        <a aria-disabled="true" href="modificarDatosRecuerdo.php?ventanaDesde=modificarDatosSesion.php&idSesion=<?php echo ($sesion->getIdSesion()) ?>" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($sesion->getIdSesion() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
-                        <a href="listadoRecuerdosRelacionadosSesion.php?idSesion=<?php echo ($sesion->getIdSesion()) ?>" class="pe-2" <?php if ($sesion->getIdSesion() == null) echo 'disabled '; ?>><button type="button" class="btn btn-success btn-sm">Añadir existente</button></a>
-                    <?php } else { ?>
-                        <a aria-disabled="true" href="modificarDatosRecuerdo.php?ventanaDesde=modificarDatosSesion.php?" class="pe-2"><button type="button" class="btn btn-success btn-sm btn-icon" <?php if ($sesion->getIdSesion() == null) echo 'disabled'; ?>><i class="fa-solid fa-plus"></i></button></a>
-                        <a href="listadoRecuerdosRelacionadosSesion.php" class="pe-2"><button type="button" class="btn btn-success btn-sm" <?php if ($sesion->getIdSesion() == null) echo 'disabled '; ?>>Añadir existente</button></a>
-                    <?php } ?>
+                    <div class="col-12 justify-content-end d-flex p-2">
+                        <button type="submit" name="guardarSesion" formaction="gestor.php?idSesion=<?php echo ($sesion->getIdSesion()) ?>&idUsuario=<?php echo ($sesion->getIdUsuario()) ?>&ventanaDesde=modificarDatosSesion.php&ventanaHacia=modificarDatosRecuerdo.php" class="btn btn-success btn-sm btn-icon me-2"><i class="fa-solid fa-plus"></i></button>
+                        <button type="submit" name="guardarSesion" formaction="gestor.php?idSesion=<?php echo ($sesion->getIdSesion()) ?>&idUsuario=<?php echo ($sesion->getIdUsuario()) ?>&ventanaDesde=modificarDatosSesion.php&ventanaHacia=listadoRecuerdosRelacionadosSesion.php" class="btn btn-success btn-sm me-2">Añadir existente</button>
+                    </div>
                 </div>
             </div>
 
