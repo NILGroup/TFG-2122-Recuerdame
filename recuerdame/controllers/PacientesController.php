@@ -17,11 +17,12 @@ class PacientesController
     {
         return $this->pacienteDao->getPaciente($idPaciente);
     }
-    public function guardarPaciente($paciente)
+    public function guardarPaciente($paciente,$idTerapeuta)
     {
         $idPaciente = null;
         if ($paciente->getIdPaciente() == null) {
             $idPaciente = $this->pacienteDao->nuevoPaciente($paciente);
+            $this->pacienteDao->asignarTerapeuta($idTerapeuta, $idPaciente);
         } else {
             $idPaciente = $this->pacienteDao->modificarPaciente($paciente);
         }

@@ -72,7 +72,7 @@ class PacienteDAO
         $conexion = $this->db->getConexion();
         $consultaSQL = "INSERT INTO paciente (id_paciente, nombre, apellidos,
          genero, lugar_nacimiento, nacionalidad, fecha_nacimiento, 
-         tipo_residencia, residencia_actual, id_terapeuta, id_cuidador) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+         tipo_residencia, residencia_actual, id_cuidador) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
         $stmt = $conexion->prepare($consultaSQL);
         $stmt->execute(array(
             NULL,
@@ -84,7 +84,6 @@ class PacienteDAO
             $paciente->getFechaNacimiento(),
             $paciente->getTipoResidencia(),
             $paciente->getResidenciaActual(),
-            $paciente->getIdTerapeuta(),
             $paciente->getIdCuidador()
         ));
 

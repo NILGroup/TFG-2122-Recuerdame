@@ -477,7 +477,7 @@ if (isset($_POST['login'])) {
         $paciente->setIdTerapeuta($_POST['terapeuta']);
         $pacientesController->cambiarTerapeuta($paciente->getIdTerapeuta(), $paciente->getIdPaciente());
     }
-    $pacientesController->guardarPaciente($paciente);
+    $pacientesController->guardarPaciente($paciente,$_GET['idUsuario']);
 
 
     header("Location: listadoPacientes.php");
