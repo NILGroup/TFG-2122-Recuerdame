@@ -16,7 +16,7 @@ class SesionDAO
     public function getSesion($idSesion)
     {
         $conexion = $this->db->getConexion();
-        $row = $conexion->query("SELECT s.*, u.nombre as nombreUsuario FROM sesion s join usuario u on u.id_usuario = s.id_usuario WHERE id_sesion = '$idSesion'")
+        $row = $conexion->query("SELECT s.*, u.nombre as nombre, u.apellidos as apellidos FROM sesion s join usuario u on u.id_usuario = s.id_usuario WHERE id_sesion = '$idSesion'")
             or die($conexion->error);
 
         $s = $row->fetch_assoc();
@@ -34,8 +34,17 @@ class SesionDAO
         $sesion->setFechaFinalizada($s['fecha_finalizada']);
         $sesion->setRespuesta($s['respuesta']);
         $sesion->setObservaciones($s['observaciones']);
-        $sesion->setNombreUsuario($s['nombreUsuario']);
 
+        $nombre = '';
+        if ($s['nombre'] != null) {
+            $nombre = $s['nombre'];
+        }
+
+        if ($s['apellidos'] != null) {
+            $nombre .= " " . $s['apellidos'];
+        }
+
+        $sesion->setNombreUsuario($nombre);
 
         return $sesion;
     }

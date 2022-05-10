@@ -4,6 +4,7 @@ class UsuarioLogin {
 
     private $idUsuario;
     private $iniciales;
+    private $nombre;
     private $esTerapeuta;
     private $esCuidador;
 
@@ -54,6 +55,16 @@ class UsuarioLogin {
     public function setEsCuidador($esCuidador)
     {
         $this->esCuidador = $esCuidador;
+
+        return $this;
+    }
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
 
         return $this;
     }

@@ -32,17 +32,21 @@ class LoginController
             return;
         }
         $iniciales = '';
+        $nombre = '';
         if ($usuario->getNombre() != null) {
             $iniciales = substr($usuario->getNombre(), 0, 1);
+            $nombre = $usuario->getNombre();
         }
 
         if ($usuario->getNombre() != null) {
             $iniciales .= substr($usuario->getApellidos(), 0, 1);
+            $nombre .= " " . $usuario->getApellidos();
         }
 
         $us = new UsuarioLogin();
         $us->setIdUsuario($usuario->getIdUsuario());
         $us->setIniciales($iniciales);
+        $us->setNombre($nombre);
 
         $us->setEsTerapeuta(false);
         $us->setEsCuidador(false);

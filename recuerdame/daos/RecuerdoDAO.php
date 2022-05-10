@@ -247,7 +247,7 @@ class RecuerdoDAO
         LEFT JOIN emocion em ON em.id_emocion = r.id_emocion
         LEFT JOIN estado es ON es.id_estado = r.id_estado
         LEFT JOIN etiqueta et ON et.id_etiqueta = r.id_etiqueta
-        AND r.id_paciente = $idPaciente")
+        WHERE r.id_paciente = $idPaciente")
             or die($conexion->error);
 
         $listaRecuerdos = array();

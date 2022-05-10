@@ -60,7 +60,7 @@
 
                 <label for="terapeuta" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-1">Terapeuta:</label>
                 <div class="col-sm-3 col-md-3 col-lg-2">
-                    <label for="terapeuta" class="form-label col-form-label-sm col-sm-3 col-md-2 col-lg-1"><?php echo ($sesion->getNombreUsuario()) ?></label>
+                    <label for="terapeuta" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-12"><?php echo ($sesion->getNombreUsuario()) ?></label>
                 </div>
             </div>
         </div>

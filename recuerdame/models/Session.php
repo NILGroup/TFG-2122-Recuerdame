@@ -103,6 +103,26 @@ class Session
         return isset($_SESSION) && isset($_SESSION['usuario']) && unserialize($_SESSION['usuario'])->getEsCuidador();
     }
 
+    public static function getIdUsuario()
+    {
+        $idUsuario = null;
+        if (isset($_SESSION) && isset($_SESSION['usuario'])) {
+            $idUsuario = unserialize($_SESSION['usuario'])->getIdUsuario();
+        }
+
+        return $idUsuario;
+    }
+
+    public static function getNombreUsuario()
+    {
+        $idUsuario = null;
+        if (isset($_SESSION) && isset($_SESSION['usuario'])) {
+            $idUsuario = unserialize($_SESSION['usuario'])->getNombre();
+        }
+
+        return $idUsuario;
+    }
+
     public static function cleanSession()
     {
         unset($_SESSION["usuario"]);
