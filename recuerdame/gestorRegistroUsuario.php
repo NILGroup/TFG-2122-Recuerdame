@@ -35,7 +35,7 @@
                 
         }else{
                 if($_GET['rol']=='CUIDADOR') {
-                        echo "<script> alert('No se pudo crear el cuidador.'); window.location='listadoPacientes.php'</script>";
+                        echo "<script> alert('No se pudo crear el cuidador (correo o nombre de usuario ya existente).'); window.location='listadoPacientes.php'</script>";
                 }else{
                         
                         header("Location: registroTerapeuta.php?mensajeError='el usuario o el correo ya esta registrado'");

@@ -37,7 +37,7 @@
                 <div class="row col-sm-12 col-md-6 col-lg-5">
                     <label for="nombre" class="form-label col-form-label-sm col-sm-12 col-md-12 col-lg-6">Nombre<span class="asterisco">*</span></label>
                     <div class="col-sm-12 col-md-12 col-lg-6">
-                        <input type="text" class="form-control form-control-sm" id="nombre" name="nombre" required>
+                        <input type="text" class="form-control form-control-sm" id="nombre" name="name" required>
                     </div>
                 </div>
 
