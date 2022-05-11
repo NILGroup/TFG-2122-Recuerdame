@@ -50,9 +50,9 @@
         <?php
         } else {
         ?>
-            <div id="carouselPrincipal" style="height: 90%" class="carousel carousel-dark slide" data-bs-interval="false" data-bs-ride="carousel">
+            <div id="carouselPrincipal" style="height: 85%" class="carousel carousel-dark slide" data-bs-interval="false" data-bs-ride="carousel">
 
-                <div class="carousel-inner container pt-4 pb-4">
+                <div class="carousel-inner container pt-4">
                     <div class="hv-box p-4">
 
                         <?php
@@ -65,11 +65,9 @@
                                 <div class="d-block w-100">
                                     <div>
                                         <h4 class="text-center hv-title"><?php echo $recuerdo['nombre'] ?></h5>
-                                            <div class="row hv-des">
-                                                <p><?php echo nl2br($recuerdo['descripcion']) ?></p>
-                                            </div>
+                                            <div class="row hv-container">
+                                                <p class="hv-des"><?php echo nl2br($recuerdo['descripcion']) ?></p>
 
-                                            <div class="row">
                                                 <div class="testimonial-group justify-content-center">
                                                     <div class="row text-center flex-nowrap">
                                                         <?php

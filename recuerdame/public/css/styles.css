@@ -129,19 +129,22 @@
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     background-color: #fff;
-    background-clip: border-box;
+    overflow: auto;
 }
 
 .hv-box::-webkit-scrollbar {
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;*/
     width: 2px;
 }
 
+.hv-container{
+    height: 8rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .hv-des {
-    height: 12rem; 
     font-family: monospace;
-    margin-left: 10rem;
-    margin-right: 10rem;
     font-family: "Times New Roman", Times, serif;
     font-size: 17px;
 }
@@ -149,12 +152,13 @@
 .hv-title {
     color: #4F7BC5;
 }
-
+/*
 .hv-box::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgba(0, 0, 0, .5);
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
 }
+*/
 
 .testimonial-group>.row {
     overflow-x: auto;
