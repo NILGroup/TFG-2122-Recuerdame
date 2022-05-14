@@ -1,7 +1,9 @@
 \chapter{Diseño}
 \label{cap:disenoDelTFG}
 
-Cada uno de los 4 integrantes del grupo hemos hecho un diseño de la aplicación siguiendo los requisitos que hemos obtenidos de las entrevistas con los expertos. Una vez hemos hecho estos prototipos, nos hemos reunido para que cada uno presentara su diseño al resto del grupo y entre todos hemos elegido cuál es el que más se adapta y cubre las funcionalidades necesarias.
+Cada uno de los 4 integrantes del grupo hemos hecho un diseño de la aplicación siguiendo los requisitos que hemos obtenidos de las entrevistas con los expertos. Una vez hemos hecho estos prototipos, nos hemos reunido para que cada uno presentara su diseño al resto del grupo y entre todos hemos elegido cuál es el que más se adapta y cubre las funcionalidades necesarias. Con el prototipo elegido
+ de base, adaptamos algunos cambios implementados en otros prototipos 
+En los siguientes secciones presentamos
 
 \section{Prototipo de Cristina Barquilla Blanco}
 \label{cap:disenio_cris}
@@ -29,10 +31,12 @@ Al seleccionar un paciente de la lista se puede ver otro menú con varias opcione
 	\label{fig:3.2.1_ver_paciente}
 \end{figure}
 
-\subsection{Pacientes de la sesión del terapeuta}
+\subsection{Vista del terapeuta}
+
+\subsubsection{Pacientes de la sesión del terapeuta}
 Se muestra el listado de pacientes de la Figura \ref{fig:3.2.1_listado_pacientes} y se puede elegir otro paciente.
 
-\subsection{Sesiones de la sesión del terapeuta}
+\subsubsection{Sesiones de la sesión del terapeuta}
 Permite ver un listado de las sesiones de un paciente ordenadas cronológicamente descendente por fecha (ver Figura \ref{fig:3.2.1_listado_sesiones}). De cada sesión: fecha, interés, descripción y el estado (si se ha finalizado la sesión o no). Además, se permite ver, modificar o borrar cada sesión.
 
 \begin{figure}[!ht]
@@ -156,7 +160,7 @@ También, desde la pantalla de datos de un recuerdo, se puede acceder al listado 
 	\label{fig:3.2.1_persona_relacionada}
 \end{figure}	
 
-\subsection{Evaluaciones de la sesión del terapeuta}
+\subsubsection{Evaluaciones de la sesión del terapeuta}
 Se podrán visualizar todos los informes de seguimiento del paciente y descargarlos (ver Figura \ref{fig:3.2.1_listado_informes_seguimiento}).
 \begin{figure}[!ht]
 	\centering
@@ -180,7 +184,7 @@ Se podrá ver un listado de las evaluaciones clínicas del paciente que se realiza
 	\label{fig:3.2.1_evaluacion}
 \end{figure}	
 
-\subsection{Historia de Vida de la sesión del terapeuta}
+\subsubsection{Historia de Vida de la sesión del terapeuta}
 Mediante esta opción se puede generar un ``libro'' de la Historia de Vida del paciente con todos los recuerdos ordenados cronológicamente. La aplicación permite filtrar por fecha, etapa y categoría (ver Figura \ref{fig:3.2.1_historia_vida}). Con estos filtros, se genera una Historia de Vida que mostrará uno a uno los recuerdos y que se podrá pasar de un recuerdo a otro hacia adelante y hacia atrás. El recuerdo mostrará una descripción, la etapa, la categoría y el archivo multimedia si lo tiene (ver Figura \ref{fig:3.2.1_historia_vida_libro}).
 \begin{figure}[!ht]
 	\centering
@@ -195,7 +199,7 @@ Mediante esta opción se puede generar un ``libro'' de la Historia de Vida del pa
 	\label{fig:3.2.1_historia_vida_libro}
 \end{figure}	
 
-\subsection{Calendario de la sesión del terapeuta}
+\subsubsection{Calendario de la sesión del terapeuta}
 La aplicación permite ver un calendario con los actividades que el cuidador puede realizar con el paciente (ver Figura \ref{fig:3.2.1_calendario}). Y también permite añadir estas actividades por parte del terapeuta al calendario tal y como se puede ver en la Figura \ref{fig:3.2.1_actividad}.
 \begin{figure}[!ht]
 	\centering
@@ -210,7 +214,7 @@ La aplicación permite ver un calendario con los actividades que el cuidador pued
 	\label{fig:3.2.1_actividad}
 \end{figure}	
 
-\subsection{Mesajería de la sesión del terapeuta}
+\subsubsection{Mesajería de la sesión del terapeuta}
 Esta opción permite que el terapeuta puedan mandar correos al cuidador del paciente. Los datos que se deben indicar son: fecha, email y mensaje (ver Figura \ref{fig:3.2.1_mensajeria_terapeuta}).
 \begin{figure}[!ht]
 	\centering
@@ -219,7 +223,7 @@ Esta opción permite que el terapeuta puedan mandar correos al cuidador del pacie
 	\label{fig:3.2.1_mensajeria_terapeuta}
 \end{figure}	
 
-\subsection{Asignar pacientes de la sesión del terapeuta}
+\subsubsection{Asignar pacientes de la sesión del terapeuta}
 Mediante esta opción, el terapeuta podrá asignar sus pacientes a otros terapeutas. Para ello, deberá seleccionar el terapeuta al que quiere asignarle uno o varios pacientes y podrá asignar los pacientes seleccionados mediante una lista donde aparecen el nombre y apellidos de cada uno de sus pacientes (ver Figura \ref{fig:3.2.1_asignar_pacientes}).
 \begin{figure}[!ht]
 	\centering
@@ -229,7 +233,9 @@ Mediante esta opción, el terapeuta podrá asignar sus pacientes a otros terapeuta
 \end{figure}
 
 El cuidador del paciente tendrá acceso a la aplicación pero solo a una serie de opciones:
-\subsection{Calendario de la sesión del cuidador}
+
+\subsection{Vista del cuidador}
+\subsubsection{Calendario de la sesión del cuidador}
 Se podrá ver las actividades que ha añadido el terapeuta (ver Figura \ref{fig:3.2.1_calendario_cuidador}).
 \begin{figure}[!ht]
 	\centering
@@ -238,7 +244,7 @@ Se podrá ver las actividades que ha añadido el terapeuta (ver Figura \ref{fig:3.
 	\label{fig:3.2.1_calendario_cuidador}
 \end{figure}
 
-\subsection{Historia de Vida de la sesión del cuidador}
+\subsubsection{Historia de Vida de la sesión del cuidador}
 Para poder realizar las actividades, al cuidador se le permite ver la Historia de Vida del paciente. Y, al igual, que el terapeuta, podrá filtrar por fecha, etapa y categoría (ver Figura \ref{fig:3.2.1_historia_vida_cuidador}) y, se generará un ``libro'' con la Historia de vida del paciente (ver Figura \ref{fig:3.2.1_historia_vida_libro_cuidador}).
 \begin{figure}[!ht]
 	\centering
@@ -254,7 +260,7 @@ Para poder realizar las actividades, al cuidador se le permite ver la Historia d
 	\label{fig:3.2.1_historia_vida_libro_cuidador}
 \end{figure}
 
-\subsection{Mensajería de la sesión del cuidador}
+\subsubsection{Mensajería de la sesión del cuidador}
 El cuidador tiene la opción de enviar un correo al terapeuta mediante esta opción donde podrá indicar la fecha, el email y el mensaje a enviar tal y como se muestra en la Figura \ref{fig:3.2.1_mensajeria_cuidador}.
 \begin{figure}[!ht]
 	\centering
@@ -267,59 +273,9 @@ El cuidador tiene la opción de enviar un correo al terapeuta mediante esta opció
 \section{Prototipo de Patricia Díez García}
 El diseño de este prototipo inicial se ha realizado en papel. Además,se ha diseñado diferenciando dos perspectivas, la del cuidador (ver Figura \ref{fig:f.2}) y la del terapeuta (ver Figura \ref{fig:f.1}).
 
-\subsection{Vista cuidador}
-En primer lugar, podemos observar la aplicación desde el punto de vista del cuidador, donde en un principio va a poder iniciar sesión introduciendo su usuario y una contraseña (ver Figura \ref{fig:f.2}).
 
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.2}
-  	\caption{Inicio sesión cuidador del prototipo de Patricia.}
-	\label{fig:f.2}
-\end{figure}
 
-Una vez que el cuidador se registre y pulse en el botón de aceptar será llevado a la pantalla de Sesión Cuidador (ver Figura \ref{fig:f.3}). En la pantalla del cuidador tendrá varias opciones a elegir:
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.3}
-  	\caption{Sesión del cuidador del prototipo de Patricia.}
-	\label{fig:f.3}
-\end{figure}
-
-\begin{itemize}
-	\item Datos cuidador: accede a los datos del cuidador como podemos observar en la Figura \ref{fig:f.4}.
-	
-	\begin{figure}[!ht]
-	  	\centering
-  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.4}
-  		\caption{Datos cuidador del prototipo de Patricia.}
-		\label{fig:f.4}
-	\end{figure}
-	
-	\item Calendario de actividades: son aquellas puestas por el terapeuta, en la pantalla podemos observar la fecha en la que se tiene que realizar la actividad, el nombre de la actividad a realizar y una descripción detallada por parte del terapeuta para poder llevarla a cabo (ver Figura \ref{fig:f.5}).
-
-	\begin{figure}[!ht]
-	  	\centering
-  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.5}
-  		\caption{Calendario de actividades para el cuidador del prototipo de Patricia.}
-		\label{fig:f.5}
-	\end{figure}
-
-	\item Visualizar la historia de vida: en esta pantalla el cuidador podrá observar los datos de su familiar asociado, nombre, apellidos, foto, así como los recuerdos asociados al mismo, los archivos multimedia (imágenes, vídeos y audio) y personas relacionadas (ver Figura \ref{fig:f.9}).
-	
-	\begin{figure}[!ht]
-	  	\centering
-  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.9}
-  		\caption{Historia de vida del paciente del prototipo de Patricia.}
-		\label{fig:f.9}
-	\end{figure}
-	
-	\item Enviar un mensaje al terapeuta.
-	
-	\item Finalizar.
-	
-\end{itemize}
-
-\subsection{Vista terapeuta}
+\subsection{Vista del terapeuta}
 
 El terapeuta tendrá una pantalla de inicio de sesión en ella deberá introducir el usurario, el número de colegiado y una contraseña (ver Figura \ref{fig:f.1}).
 
@@ -499,7 +455,57 @@ Una vez el terapeuta inicie sesión encontrará diversas opciones (ver Figura \ref
 
 \end{itemize}
 
+\subsection{Vista del cuidador}
+En primer lugar, podemos observar la aplicación desde el punto de vista del cuidador, donde en un principio va a poder iniciar sesión introduciendo su usuario y una contraseña (ver Figura \ref{fig:f.2}).
 
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.2}
+  	\caption{Inicio sesión cuidador del prototipo de Patricia.}
+	\label{fig:f.2}
+\end{figure}
+
+Una vez que el cuidador se registre y pulse en el botón de aceptar será llevado a la pantalla de Sesión Cuidador (ver Figura \ref{fig:f.3}). En la pantalla del cuidador tendrá varias opciones a elegir:
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.3}
+  	\caption{Sesión del cuidador del prototipo de Patricia.}
+	\label{fig:f.3}
+\end{figure}
+
+\begin{itemize}
+	\item Datos cuidador: accede a los datos del cuidador como podemos observar en la Figura \ref{fig:f.4}.
+	
+	\begin{figure}[!ht]
+	  	\centering
+  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.4}
+  		\caption{Datos cuidador del prototipo de Patricia.}
+		\label{fig:f.4}
+	\end{figure}
+	
+	\item Calendario de actividades: son aquellas puestas por el terapeuta, en la pantalla podemos observar la fecha en la que se tiene que realizar la actividad, el nombre de la actividad a realizar y una descripción detallada por parte del terapeuta para poder llevarla a cabo (ver Figura \ref{fig:f.5}).
+
+	\begin{figure}[!ht]
+	  	\centering
+  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.5}
+  		\caption{Calendario de actividades para el cuidador del prototipo de Patricia.}
+		\label{fig:f.5}
+	\end{figure}
+
+	\item Visualizar la historia de vida: en esta pantalla el cuidador podrá observar los datos de su familiar asociado, nombre, apellidos, foto, así como los recuerdos asociados al mismo, los archivos multimedia (imágenes, vídeos y audio) y personas relacionadas (ver Figura \ref{fig:f.9}).
+	
+	\begin{figure}[!ht]
+	  	\centering
+  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_Patricia/f.9}
+  		\caption{Historia de vida del paciente del prototipo de Patricia.}
+		\label{fig:f.9}
+	\end{figure}
+	
+	\item Enviar un mensaje al terapeuta.
+	
+	\item Finalizar.
+	
+\end{itemize}
 
 \section{Prototipo de Santiago Marco Mulas López}
 Este prototipo ha sido realizado en papel. El prototipo empieza con una ventana (Figura \ref{fig:login_san}) donde hacer el login tanto para el terapeuta, como para el paciente. En esta ventana habrá un recuadro para introducir las credenciales, en la parte superior aparece el nombre de la aplicación y en la parte superior derecha el logotipo de esta.
@@ -509,6 +515,8 @@ Este prototipo ha sido realizado en papel. El prototipo empieza con una ventana 
 				\caption{Login (terapeuta y paciente) del prototipo de Santiago}
 				\label{fig:login_san}
 			\end{figure}
+
+\subsection{Vista del terapeuta}
 
 A continuación, veremos la página de inicio del terapeuta (figura \ref{fig:ini_san}), donde en la parte central veremos el nombre de la aplicación con el logotipo, luego en la esquina superior derecha, están las opciones de logout, para desconectarte, crear usuario, para crear un nuevo paciente, y de mensajería, para contactar con pacientes. Después veremos en la columna de la izquierda todas las funciones que podrá realizar el terapeuta:
 		\begin{figure}[!ht]
@@ -559,6 +567,7 @@ A continuación, veremos la página de inicio del terapeuta (figura \ref{fig:ini_s
 			\end{figure}
 \end{itemize}
 
+\subsection{Vista del cuidador}
 Luego en la página principal del familiar (Figura \ref{fig:family_ses}) vemos el nombre del paciente con su foto de perfil, y luego tres opciones:
 \begin{figure}[!ht]
 	 			\centering
@@ -598,8 +607,8 @@ Luego en la página principal del familiar (Figura \ref{fig:family_ses}) vemos el
 
 Este diseño fue realizado utilizando la herramienta de dibujo Clip Paint Studio. Este prototipo empieza con una pantalla principal donde el terapeuta o el cuidador puede iniciar sesión. Según quién inicie sesión aparecerán pantallas distintas, en las siguientes secciones se explican cada una de estas pantallas según quien haya iniciado sesión.
 
-\subsection{Sesión Terapeuta}
-En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqueda de paciente (Figura \ref{fig:pro_eva_bus_paciente}) donde tendrá que elegir uno entre los que tenga asignados. Una vez elija uno, se le conducirá a la página de inicio de paciente (Figura \ref{fig:pro_eva_menu_paciente}) donde aparecerán 6 opciones:
+\subsection{Vista del terapeuta}
+En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqueda de paciente (Figura \ref{fig:pro_eva_bus_paciente}) donde tendrá que elegir uno entre los que tenga asignados. Una vez elija un paciente, se le conducirá a la página de inicio de paciente (Figura \ref{fig:pro_eva_menu_paciente}) donde aparecerán 6 opciones:
 
 \begin{figure}[htp]
 	\centering
@@ -617,17 +626,17 @@ En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqu
 
 \begin{enumerate}
 
-	\item \textbf{Preparar sesión:} Al pulsar el botón de ``Preparar sesión'' aparecerá una pantalla con dos opciones (Figura \ref{fig:pro_eva_realizar_ss}):
+	\item \textbf{Preparar sesión:} Al pulsar el botón de ``Preparar sesión'' aparecerá una pantalla con dos opciones (Figura \ref{fig:pro_eva_menu_ss}):
 	 
 	\begin{figure}[htp]
 	  	\centering
 	  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png}
 	  	\caption{Opciones de preparar sesión del prototipo de Eva.}
-		\label{fig:pro_eva_realizar_ss}
+		\label{fig:pro_eva_menu_ss}
 	\end{figure}
 	
 	\begin{itemize}
-		\item Ver el historial de sesiones: donde se podrá ver una lista de las sesiones realizadas y poder ver todos los detalles sobre estas (Figura \ref{fig:pro_eva_historial_ss}).
+		\item Ver el historial de sesiones: donde se podrá ver una lista de las sesiones realizadas y todos los detalles sobre estas (Figura \ref{fig:pro_eva_historial_ss}).
 		
 		\begin{figure}[htp]
 	  		\centering
@@ -663,7 +672,7 @@ En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqu
 		\label{fig:pro_eva_finalizar_ss}
 	\end{figure}
 	
-	\item \textbf{Historia de vida:} La aplicación permitirá ver la historia de vida completa (un PDF con todos los recuerdo ordenados cronológicamente y por etapas) y ver la historia de vida filtrada donde tendrás varias opciones de filtrado y te generará el PDF con los filtros aplicados. Esta opción como la de ``Realizar sesión'' se ven reflejadas en la Figura \ref{fig:pro_eva_hv}.
+	\item \textbf{Historia de vida:} La aplicación permitirá ver la historia de vida completa del paciente (un PDF con todos los recuerdo ordenados cronológicamente y por etapas) y ver la historia de vida filtrada donde tendrás varias opciones de filtrado y te generará el PDF con los filtros aplicados. Esta opción como se ve reflejada en la Figura \ref{fig:pro_eva_hv}.
 	
 	\begin{figure}[htp]
 	  	\centering
@@ -706,7 +715,7 @@ En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqu
 	\item \textbf{Menú:} En el menú del terapeuta (Figura \ref{fig:pro_eva_t_menu}), que se mostrará durante todas las pantallas de la aplicación, hay 5 opciones:
 	\begin{figure}[htp]
   		\centering
-  		\includegraphics[width=0.3\textwidth]{./Imagenes/Figuras/prototipo_eva/menu.png}
+  		\includegraphics[width=0.2\textwidth]{./Imagenes/Figuras/prototipo_eva/menu.png}
   		\caption{Menú del terapeuta del prototipo de Eva.}
 		\label{fig:pro_eva_t_menu}
 	\end{figure}
@@ -716,7 +725,7 @@ En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqu
 		\item Mis pacientes: donde se muestra una lista de pacientes donde si seleccionas alguno, cambiarás de paciente seleccionado y aparecerás en su pantalla de inicio (Figura \ref{fig:pro_eva_lista_paci}).
 		\begin{figure}[htp]
 	  		\centering
-	  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/lista_pacientes.png}
+	  		\includegraphics[width=6cm]{./Imagenes/Figuras/prototipo_eva/lista_pacientes.png}
 	  		\caption{Lista de pacientes del terapeuta del prototipo de Eva.}
 			\label{fig:pro_eva_lista_paci}
 		\end{figure}
@@ -725,7 +734,7 @@ En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqu
 		
 		\begin{figure}[htp]
 	  		\centering
-	  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/mensajeria.png}
+	  		\includegraphics[width=6cm]{./Imagenes/Figuras/prototipo_eva/mensajeria.png}
 	  		\caption{Mensajería del terapeuta del prototipo de Eva.}
 			\label{fig:pro_eva_t_men}
 		\end{figure}
@@ -734,7 +743,7 @@ En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqu
 		
 		\begin{figure}[htp]
 	  		\centering
-	  		\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/mi_perfil.png}
+	  		\includegraphics[width=7cm]{./Imagenes/Figuras/prototipo_eva/mi_perfil.png}
 	  		\caption{Perfil del terapeuta del prototipo de Eva.}
 			\label{fig:pro_eva_t_perfil}
 		\end{figure}
@@ -746,7 +755,7 @@ En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqu
 	 
 	\begin{figure}[htp]
 	  	\centering
-	  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png}
+	  	\includegraphics[width=6cm]{./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png}
 	  	\caption{Opciones de configuración del prototipo de Eva.}
 		\label{fig:pro_eva_opc_config}
 	\end{figure}
@@ -758,7 +767,7 @@ En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqu
 	
 	\begin{figure}[htp]
 	  	\centering
-	  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_eva/calendario.png}
+	  	\includegraphics[width=6cm]{./Imagenes/Figuras/prototipo_eva/calendario.png}
 	  	\caption{Calendario del terapeuta del prototipo de Eva.}
 		\label{fig:pro_eva_calendario}
 	\end{figure}
@@ -772,31 +781,31 @@ En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqu
 	
 \end{enumerate}	
 
-\subsection{Sesión acompañante o cuidador}
-En este caso tanto el menú como la pantalla de inicio cambian. En la pantalla de inicio se visualizará en calendario con las distintas tareas asignadas por el terapeuta. En el menú (Figura \ref{fig:pro_eva_c_menu}) las opciones son:
+\subsection{Vista del cuidador}
+En este caso tanto el menú como la pantalla de inicio cambian. En la pantalla de inicio se visualizará en calendario con las distintas tareas asignadas por el terapeuta al paciente del cuidador. En el menú (Figura \ref{fig:pro_eva_c_menu}) las opciones son:
 
 \begin{figure}[htp]
   	\centering
-  	\includegraphics[width=0.3\textwidth]{./Imagenes/Figuras/prototipo_eva/c_menu.png}
+  	\includegraphics[width=0.2\textwidth]{./Imagenes/Figuras/prototipo_eva/c_menu.png}
   	\caption{Menú del cuidador del prototipo de Eva.}
 	\label{fig:pro_eva_c_menu}
 \end{figure}
 
 \begin{itemize}
-	\item Inicio: que te llevaría a la pantalla de inicio de acompañante con el calendario (Figura \ref{fig:pro_eva_c_calendario}).
+	\item Inicio: te lleva a la pantalla de inicio de acompañante con el calendario (Figura \ref{fig:pro_eva_c_calendario}).
 	
 	\begin{figure}[htp]
   		\centering
-  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/c_calendario.png}
+  		\includegraphics[width=10cm]{./Imagenes/Figuras/prototipo_eva/c_calendario.png}
   		\caption{Pantalla de inicio del cuidador y calendario del prototipo de Eva.}
 		\label{fig:pro_eva_c_calendario}
 	\end{figure}
 	
-	\item Mensajería: donde tanto terapeuta con acompañante o tutor podrán mandarse mensajes para dudas y cuestiones (Figura \ref{fig:pro_eva_c_men}).
+	\item Mensajería: terapeuta y cuidador podrán mandarse mensajes (Figura \ref{fig:pro_eva_c_men}).
 	
 	\begin{figure}[htp]
   		\centering
-  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_eva/c_mensajeria.png}
+  		\includegraphics[width=10cm]{./Imagenes/Figuras/prototipo_eva/c_mensajeria.png}
   		\caption{Mensajería del cuidador del prototipo de Eva.}
 		\label{fig:pro_eva_c_men}
 	\end{figure}
