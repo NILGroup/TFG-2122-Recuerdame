@@ -1,9 +1,100 @@
-\chapter{Implementación}
+\chapter{Implementación de la aplicación}
 \label{cap:implementacionDelTFG}
 
-	Una vez establecida la arquitectura de la base de datos y de la aplicación, se comienza a realizar la implementación de la aplicación siguiendo los patrones definidos en el capítulo anterior.
+	
+Para este TFG se ha desarrollado una aplicación web que será adaptable a dispositivo tablet. En este capitulo mostraremos la arquitectura que se ha decidido para la aplicación así como el diseño de la base de datos implementado. Además se mostrará cuales fueron las herramientas utilizadas y como fue implementada la aplicación
 
-\section{Herramientas utilizadas para la implementación}
+Todas nuestras decisiones fueron tomadas a partir de las requisitos y las especificaciones pedidas por los expertos que utilizaran la aplicación.
+
+\section{Arquitectura}
+
+La arquitectura de la aplicación esta basada en el patrón Modelo-Vista-Controlador (Figura \ref{fig:str_mvc}). Este patrón se basa en separar, el código en tres partes:
+\begin{itemize}
+\item \textbf{Modelo:} Es el encargado de gestionar la base de datos, ya que es el único que se comunica con esta. Además se encarga de la lógica del negocio.
+\item \textbf{Controlador:} Actúa de intermediario entre el Modelo y la Vista, responde a eventos e invocan las peticiones al modelo.
+\item \textbf{Vista:} Es el que se encarga de interactuar con el usuario y de accionar los distintos eventos.
+\end{itemize}  
+			
+Esta decisión fue tomada debido a las grandes ventajas que este modelo impone en el código, algunas de estas son:
+
+\begin{itemize}
+	\item La separación clara de dónde tiene que ir cada tipo de lógica, facilita el mantenimiento y la escalabilidad de la aplicación.
+	\item La facilidad para la realización de pruebas unitarias de los componentes y para el manejo de errores.
+	\item La posibilidad de mostrar múltiples representaciones de los datos.
+	\item La facilidad del control de versiones. 
+	\item Facilita la división de trabajo.
+\end{itemize}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=5cm]{./Imagenes/Figuras/mvc_structure.png}
+	\caption{Estructura de Modelo-Vista-Controlador}
+	\label{fig:str_mvc}
+\end{figure}
+
+Para aplicar este patrón de la manera más ordenada posible aplicamos esta división a cada modulo/acción que la aplicación realiza. Algunas de estas divisiones son:
+\begin{itemize}
+	\item Paciente: Controla la información del paciente a tratar y permite modificar, añadir y eliminar pacientes.
+	\item Usuario: Controla la información del terapeuta y permite modificar, añadir y eliminar terapeutas.
+	\item Sesiones: Controla las sesiones para el usuario, permite modificar, añadir y eliminar sesiones.
+	\item Informes de sesión: Controla los informes de la sesiones realizadas y finalizadas. Permite modificar, añadir y eliminar los distintos informes.
+	\item Informes de seguimiento: Controla los informes de seguimiento del paciente. Permite modificar, añadir y eliminar.
+	\item Historia de vida: Permite mostrar la historia de vida del paciente con distintos filtros y en distintos formatos.
+	\item Recuerdos: Controla los recuerdos del usuario. Permite modificar, añadir y eliminar los recuerdos.
+	\item Personas Relacionadas: Controla los contactos del usuario. Permite modificar, añadir y eliminar las distintas personas.
+	\item Calendario: Muestra el calendario por mes. Permite modificar, añadir y eliminar tareas en el calendario.
+\end{itemize}
+
+Como resultado, cada modulo tendrá: por una parte distintas vistas para sus distintas acciones y, por otra, un controlador y un modelo. Por ejemplo, en el caso del modulo ``Sesiones'', una de sus vistas es ``Modificar Datos de la Sesión'' que se encarga de mostrar la pantalla para modificar los distintos datos de una sesión. Además de eso, tiene un modelo que se encarga de pedir los datos de la sesión a la base de datos y un controlador que comunica la vista con el modelo.
+
+\section{Base de datos}
+
+Tras realizar un estudio cerciorado de las necesidades del proyecto. Observamos que para el modelo de datos de la aplicación, teníamos que decidir entre dos opciones: coger una base de datos relacional o una base de datos no relacional.
+
+Las bases de datos no relacionales están pensadas para ser utilizadas cuando: la estructura de la base datos no tiene esquemas específicos, se guardan grandes cantidades de información o se realizan grandes movimientos de datos en momentos puntuales. Lo cual no es el caso de nuestra aplicación. Ademas su compatibilidad con servidores y distintos sistemas operativos es mas complicada. Por lo mencionado anteriormente, decidimos que la mejor forma de guardar la base de datos de nuestra aplicación sería una base de datos relacional, y entre ellas escogimos MySQL. Por varias razones:
+\begin{itemize}
+	\item Su portabilidad: puede ser usado en distintos dispositivos como ordenadores, tablets y moviles.
+	\item Su gratuidad, al ser código abierto no requiere de ningún coste.
+	\item Su eficiencia: necesita pocos requerimientos y ocupa poca memoria.
+	\item Su experiencia: al ser uno de los mas usados, existe gran cantidad de información.
+	\item Su seguridad: al tratar con datos muy personales de alto riesgo, es muy importante estar seguros de donde se están alojando esos datos. MySQL es altamente seguro, gracias a varias funciones avanzadas de seguridad.
+\end{itemize}	
+
+La estructura de la base de datos (Figura \ref{fig:str_bd}) fue definida, en parte, por toda la información aportada por los terapeutas durante las entrevistas y durante la evaluación del diseño competitivo.
+
+A continuación, se explicarán algunas de las tablas que se pueden observar en la base de datos:
+\begin{itemize}
+	\item Paciente: Información del paciente a tratar.
+	\item Recuerdo: Información de los recuerdos del paciente.
+	\item Para los datos de los recuerdos que necesitaban una lista de opciones como la etapa de vida, se crearon varias tablas con datos pre-definidos y que se pueden añadir, modificar o borrar. Estas tablas son las siguientes:
+	\begin{itemize}
+		\item Categoría: Indica una forma de etiquetar los recuerdos.
+		\item Etiqueta: Indica si el recuerdo es positivo, negativo o neutro.
+		\item Etapa: Indica la etapa de vida en la que sucedió ese recuerdo.
+		\item Emoción: Indica la emoción con la que el usuario recuerda el momento.
+		\item Estado: Indica como el paciente conserva el recuerdo en su memoria.
+	\end{itemize}
+	 \item Sesión: Información sobre las distintas sesiones para el usuario.
+	 \item Usuario: Información del terapeuta.
+	 \item Evaluación: Información sobre el informe de seguimiento del usuario.
+	 \item Persona relacionada: Contactos cercanos del usuario. Al igual que los recuerdos, personas relacionadas guarda una lista de "tipo de relación" que indica la relación que tiene el paciente con su contacto.
+	 \item Actividad: Guarda las actividades puestas en el calendario.
+	 \item Multimedia: Guarda las imágenes, vídeos o audios que se utilizarán durante las funcionalidades de la aplicación.
+\end{itemize}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/estructura_bd.jpeg}
+	\caption{Estructura de la base de datos}
+	\label{fig:str_bd}
+\end{figure}
+
+
+
+\section{Implementación }
+
+Una vez establecida la arquitectura de la base de datos y de la aplicación, se comienza a realizar la implementación de la aplicación siguiendo los patrones definidos en el capítulo anterior.
+
 La implementación de esta aplicación se ha llevado a cabo con la siguientes herramientas:
 \begin{itemize}
 	\item Para el front-end de la aplicación hemos utilizado HTML y CSS por la facilidad de uso y generación de código. También, hemos incorporado Bootstrap para los estilos de la aplicación ya que simplifica la generación de formulario. Además, Bootstrap genera código Responsive que es uno de los requisitos para poder utilizar la aplicación en tablets. Hemos usado una librería de Bootstrap llamada Fontawesome que es un conjunto de herramientas de fuentes e iconos basado en CSS.
@@ -16,14 +107,11 @@ La implementación de esta aplicación se ha llevado a cabo con la siguientes herr
 	\item Para el desarrollo de la lógica de la aplicación hemos aplicado programación orientada a objetos para tratar los diferentes elementos con los que trabaja el backend de la aplicación.
 \end{itemize}
 
-
-\section{Desarrollo interfaz gráfica y objetos}
-
 A continuación, se describirá la interfaz gráfica de la aplicación, así como los objetos relacionados con cada parte de esta interfaz gráfica.
 
 \subsection{Login}
 
-En primer lugar, al entrar en la aplicación aparece la página de login.php, donde el terapeuta o cuidador entrará en la aplicación. Aparece un cuadro para introducir las credenciales e iniciar sesión y luego una opción para que se registre un terapeuta (Figura \ref{fig:login}). 
+En primer lugar, al entrar en la aplicación aparece la página de login.php, donde el terapeuta o cuidador entrará en la aplicación. Aparece un cuadro para introducir las credenciales e iniciar sesión (Figura \ref{fig:login}). 
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/login.png}
