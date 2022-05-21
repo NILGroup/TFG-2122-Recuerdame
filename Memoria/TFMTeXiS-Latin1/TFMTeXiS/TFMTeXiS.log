@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.8)  21 MAY 2022 12:18
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.24)  21 MAY 2022 19:32
+>>>>>>> Stashed changes
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -612,9 +616,22 @@ LaTeX Warning: Label `fig:login' multiply defined.
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
 
+<<<<<<< Updated upstream
 (./Cascaras/bibliografia.aux) (./Apendices/appendixA.aux)
 (./Apendices/appendixB.aux) (./Apendices/appendixC.aux)
 (./Apendices/appendixD.aux) (./Cascaras/fin.aux))
+=======
+(Cascaras/bibliografia.aux) (Apendices/appendixA.aux) (Apendices/appendixB.aux)
+(Apendices/appendixC.aux) (Apendices/appendixD.aux) (Apendices/appendixE.aux
+
+LaTeX Warning: Label `pdf:evalu_fi' multiply defined.
+
+) (Apendices/appendixF.aux
+
+LaTeX Warning: Label `pdf:evalu_fi' multiply defined.
+
+) (Cascaras/fin.aux))
+>>>>>>> Stashed changes
 \openout1 = `TFMTeXiS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
@@ -704,7 +721,11 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \evensidemarginOriginal=\skip85
 \oddsidemarginOriginal=\skip86
 \longTitulo=\skip87
+<<<<<<< Updated upstream
 <Imagenes/Vectorial/escudoUCM.pdf, id=446, 597.23125pt x 844.15375pt>
+=======
+<Imagenes/Vectorial/escudoUCM.pdf, id=447, 597.23125pt x 844.15375pt>
+>>>>>>> Stashed changes
 File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 <use Imagenes/Vectorial/escudoUCM.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/escudoUCM.pdf  used on input line 1
@@ -805,17 +826,26 @@ conocimiento[] [][]
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
 [13] [14]
+<<<<<<< Updated upstream
 LaTeX Info: Redefining \. on input line 90.
 LaTeX Info: Redefining \% on input line 90.
 
 Underfull \vbox (badness 2359) has occurred while \output is active []
 
+=======
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+>>>>>>> Stashed changes
  [15])
 \tf@toc=\write6
 \openout6 = `TFMTeXiS.toc'.
 
+<<<<<<< Updated upstream
 
 [16] (./TFMTeXiS.lof
+=======
+ [16] (TFMTeXiS.lof
+>>>>>>> Stashed changes
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 3.
@@ -900,13 +930,33 @@ Overfull \hbox (2.7858pt too wide) detected at line 136
  []
 
 [20]
+<<<<<<< Updated upstream
 LaTeX Info: Redefining \. on input line 171.
 LaTeX Info: Redefining \% on input line 171.
+=======
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
+>>>>>>> Stashed changes
 )
 \tf@lof=\write7
 \openout7 = `TFMTeXiS.lof'.
 
-) [21] [22
+ [21] [22
+
+] (TFMTeXiS.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+LaTeX Info: Redefining \. on input line 17.
+LaTeX Info: Redefining \% on input line 17.
+)
+\tf@lot=\write8
+\openout8 = `TFMTeXiS.lot'.
+
+ [23]) [24
 
 
 
@@ -991,25 +1041,41 @@ LaTeX Info: Redefining \% on input line 133.
 LaTeX Info: Redefining \. on input line 148.
 LaTeX Info: Redefining \% on input line 148.
  [12]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/figura 2.1.png, id=1121, 426.75893pt x 178.1751pt>
+=======
+<./Imagenes/Figuras/figura 2.1.png, id=1126, 426.75893pt x 178.1751pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/figura 2.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.1.png  used on input line 
 151.
 (pdftex.def)             Requested size: 284.52756pt x 118.79216pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/figura 2.2.png, id=1124, 426.75893pt x 248.62698pt>
+=======
+<./Imagenes/Figuras/figura 2.2.png, id=1129, 426.75893pt x 248.62698pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/figura 2.2.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.2.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.2.png  used on input line 
 159.
 (pdftex.def)             Requested size: 341.43306pt x 198.91702pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/figura 2.3.png, id=1127, 426.75893pt x 307.26114pt>
+=======
+<./Imagenes/Figuras/figura 2.3.png, id=1132, 426.75893pt x 307.26114pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/figura 2.3.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.3.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.3.png  used on input line 
 167.
 (pdftex.def)             Requested size: 284.52756pt x 204.85588pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/figura 2.4.png, id=1129, 426.75893pt x 176.81151pt>
+=======
+<./Imagenes/Figuras/figura 2.4.png, id=1134, 426.75893pt x 176.81151pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/figura 2.4.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.4.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.4.png  used on input line 
@@ -1026,7 +1092,11 @@ LaTeX Info: Redefining \% on input line 179.
 LaTeX Info: Redefining \. on input line 179.
 LaTeX Info: Redefining \% on input line 179.
  [14 <./Imagenes/Figuras/figura 2.2.png> <./Imagenes/Figuras/figura 2.3.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/2.1.png, id=1145, 408.02437pt x 266.9975pt>
+=======
+<./Imagenes/Figuras/2.1.png, id=1150, 408.02437pt x 266.9975pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/2.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/2.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/2.1.png  used on input line 196.
@@ -1034,7 +1104,11 @@ Package pdftex.def Info: ./Imagenes/Figuras/2.1.png  used on input line 196.
 LaTeX Info: Redefining \. on input line 200.
 LaTeX Info: Redefining \% on input line 200.
  [15 <./Imagenes/Figuras/figura 2.4.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/figura 2.6.8.png, id=1157, 550.055pt x 303.1325pt>
+=======
+<./Imagenes/Figuras/figura 2.6.8.png, id=1161, 550.055pt x 303.1325pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/figura 2.6.8.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.8.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.8.png  used on input lin
@@ -1045,7 +1119,11 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/figura 2.6.9.png, id=1158, 538.01pt x 291.0875pt>
+=======
+<./Imagenes/Figuras/figura 2.6.9.png, id=1162, 538.01pt x 291.0875pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/figura 2.6.9.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.9.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.9.png  used on input lin
@@ -1056,7 +1134,11 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 211--212
  [][] 
  []
 
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/figura 2.6.10.png, id=1159, 370.88562pt x 273.02pt>
+=======
+<./Imagenes/Figuras/figura 2.6.10.png, id=1163, 370.88562pt x 273.02pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/figura 2.6.10.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.10.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.10.png  used on input li
@@ -1077,7 +1159,11 @@ LaTeX Info: Redefining \% on input line 239.
 LaTeX Info: Redefining \. on input line 259.
 LaTeX Info: Redefining \% on input line 259.
  [18 <./Imagenes/Figuras/figura 2.6.10.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=1181, 482.40225pt x 322.20
+=======
+<./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=1185, 482.40225pt x 322.20
+>>>>>>> Stashed changes
 375pt>
 File: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_evaluacion_clinica.PNG>
@@ -1087,7 +1173,11 @@ on input line 308.
 LaTeX Info: Redefining \. on input line 316.
 LaTeX Info: Redefining \% on input line 316.
 [19]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/movil_historia_vida.PNG, id=1187, 481.19775pt x 278.84175pt
+=======
+<./Imagenes/Figuras/movil_historia_vida.PNG, id=1192, 481.19775pt x 278.84175pt
+>>>>>>> Stashed changes
 >
 File: ./Imagenes/Figuras/movil_historia_vida.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_historia_vida.PNG>
@@ -1097,7 +1187,11 @@ put line 321.
 LaTeX Info: Redefining \. on input line 337.
 LaTeX Info: Redefining \% on input line 337.
  [20 <./Imagenes/Figuras/movil_evaluacion_clinica.PNG>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/funcionamiento_bot.PNG, id=1196, 416.30531pt x 242.40562pt>
+=======
+<./Imagenes/Figuras/funcionamiento_bot.PNG, id=1201, 416.30531pt x 242.40562pt>
+>>>>>>> Stashed changes
 
 File: ./Imagenes/Figuras/funcionamiento_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/funcionamiento_bot.PNG>
@@ -1110,19 +1204,31 @@ Underfull \vbox (badness 2772) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 348.
 LaTeX Info: Redefining \% on input line 348.
  [21 <./Imagenes/Figuras/movil_historia_vida.PNG>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/bienvenida_bot.PNG, id=1207, 231.86626pt x 319.94531pt>
+=======
+<./Imagenes/Figuras/bienvenida_bot.PNG, id=1211, 231.86626pt x 319.94531pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/bienvenida_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/bienvenida_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/bienvenida_bot.PNG  used on input l
 ine 353.
 (pdftex.def)             Requested size: 162.30525pt x 223.96017pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/imagenes_bot.PNG, id=1208, 243.15843pt x 237.13594pt>
+=======
+<./Imagenes/Figuras/imagenes_bot.PNG, id=1212, 243.15843pt x 237.13594pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/imagenes_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/imagenes_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/imagenes_bot.PNG  used on input lin
 e 360.
 (pdftex.def)             Requested size: 170.20973pt x 165.994pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/pregunta_bot.PNG, id=1209, 234.1247pt x 420.06938pt>
+=======
+<./Imagenes/Figuras/pregunta_bot.PNG, id=1213, 234.1247pt x 420.06938pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/pregunta_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/pregunta_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/pregunta_bot.PNG  used on input lin
@@ -1206,7 +1312,11 @@ LaTeX Info: Redefining \% on input line 150.
 
  (./Capitulos/Diseno.tex
 Cap\'itulo 4.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png, id=1307, 1144.2
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png, id=1310, 1144.2
+>>>>>>> Stashed changes
 75pt x 357.335pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png Graphic fil
 e (type png)
@@ -1214,7 +1324,11 @@ e (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacien
 tes.png  used on input line 12.
 (pdftex.def)             Requested size: 341.43306pt x 106.62335pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png, id=1309, 1060.96375p
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png, id=1312, 1060.96375p
+>>>>>>> Stashed changes
 t x 320.19624pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png Graphic file (ty
 pe png)
@@ -1228,7 +1342,11 @@ ng  used on input line 25.
 
 
 ]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png, id=1316, 1060.96
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png, id=1320, 1060.96
+>>>>>>> Stashed changes
 375pt x 359.3425pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png Graphic file
  (type png)
@@ -1236,7 +1354,11 @@ File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png Graphic file
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesion
 es.png  used on input line 40.
 (pdftex.def)             Requested size: 341.43306pt x 115.63895pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png, id=1318, 1031.855pt 
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png, id=1322, 1031.855pt 
+>>>>>>> Stashed changes
 x 431.6125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png Graphic file (ty
 pe png)
@@ -1244,7 +1366,11 @@ pe png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.p
 ng  used on input line 50.
 (pdftex.def)             Requested size: 341.43306pt x 142.81453pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png, id=1320, 1
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png, id=1324, 1
+>>>>>>> Stashed changes
 032.85875pt x 519.9425pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png Graphi
 c file (type png)
@@ -1256,7 +1382,11 @@ LaTeX Info: Redefining \. on input line 62.
 LaTeX Info: Redefining \% on input line 62.
  [38 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png> <./Imagene
 s/Figuras/prototipo_cris/3.2.1_ver_paciente.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png, id=1332
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png, id=1336
+>>>>>>> Stashed changes
 , 1034.86626pt x 578.16pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png Gra
 phic file (type png)
@@ -1264,7 +1394,11 @@ phic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_c
 onfirmacion.png  used on input line 66.
 (pdftex.def)             Requested size: 341.43306pt x 190.74927pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png, id=1334, 1033.8625pt x
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png, id=1338, 1033.8625pt x
+>>>>>>> Stashed changes
  410.53375pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png Graphic file (type
  png)
@@ -1272,7 +1406,11 @@ File: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png Graphic file (type
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png
   used on input line 75.
 (pdftex.def)             Requested size: 341.43306pt x 135.57678pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png, id=1337, 1033.86
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png, id=1341, 1033.86
+>>>>>>> Stashed changes
 25pt x 449.68pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png Graphic file
  (type png)
@@ -1284,7 +1422,11 @@ LaTeX Info: Redefining \. on input line 87.
 LaTeX Info: Redefining \% on input line 87.
  [39 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png> <./Imagenes
 /Figuras/prototipo_cris/3.2.1_nueva_sesion.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png, id=1346, 612.
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png, id=1349, 612.
+>>>>>>> Stashed changes
 2875pt x 594.22pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png Graphic f
 ile (type png)
@@ -1292,7 +1434,11 @@ ile (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguim
 iento.png  used on input line 90.
 (pdftex.def)             Requested size: 341.43306pt x 331.35553pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png, id=1348, 103
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png, id=1351, 103
+>>>>>>> Stashed changes
 3.8625pt x 380.42125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png Graphic 
 file (type png)
@@ -1300,7 +1446,11 @@ file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_rec
 uerdos.png  used on input line 98.
 (pdftex.def)             Requested size: 341.43306pt x 125.63226pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png, id=1350,
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png, id=1353,
+>>>>>>> Stashed changes
  1036.87375pt x 513.92pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png Grap
 hic file (type png)
@@ -1308,7 +1458,11 @@ hic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo
 _existente.png  used on input line 108.
 (pdftex.def)             Requested size: 341.43306pt x 169.2334pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png, id=1352, 1035.87pt
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png, id=1355, 1035.87pt
+>>>>>>> Stashed changes
  x 622.325pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png Graphic file (
 type png)
@@ -1320,7 +1474,11 @@ LaTeX Info: Redefining \. on input line 120.
 LaTeX Info: Redefining \% on input line 120.
  [40 <./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png> <./Im
 agenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png, id=1360, 1033.86
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png, id=1364, 1033.86
+>>>>>>> Stashed changes
 25pt x 364.36125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png Graphic file
  (type png)
@@ -1329,7 +1487,11 @@ Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimed
 ia.png  used on input line 128.
 (pdftex.def)             Requested size: 341.43306pt x 120.32854pt.
 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png, id=136
+<<<<<<< Updated upstream
 2, 1031.855pt x 522.95375pt>
+=======
+6, 1031.855pt x 522.95375pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png Gr
 aphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png>
@@ -1337,7 +1499,11 @@ Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimed
 ia_existente.png  used on input line 136.
 (pdftex.def)             Requested size: 341.43306pt x 173.03809pt.
 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_personas_relacionadas.png, id=
+<<<<<<< Updated upstream
 1365, 1033.8625pt x 345.29pt>
+=======
+1369, 1033.8625pt x 345.29pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_personas_relacionadas.png
  Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_personas_relacionadas.png>
@@ -1349,7 +1515,15 @@ LaTeX Info: Redefining \. on input line 149.
 LaTeX Info: Redefining \% on input line 149.
  [41 <./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png> <./Imagenes/Figur
 as/prototipo_cris/3.2.1_finalizar_sesion.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png, id=1372, 1035
+=======
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
+ [42 <./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png> <./Image
+nes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png, id=1382, 1035
+>>>>>>> Stashed changes
 .87pt x 366.36874pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png Graphic f
 ile (type png)
@@ -1358,13 +1532,18 @@ Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relaci
 onada.png  used on input line 152.
 (pdftex.def)             Requested size: 341.43306pt x 120.7567pt.
 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png, id=1
+<<<<<<< Updated upstream
 376, 1031.855pt x 361.35pt>
+=======
+384, 1031.855pt x 361.35pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png 
 Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_inform
 es_seguimiento.png  used on input line 161.
 (pdftex.def)             Requested size: 341.43306pt x 119.56566pt.
+<<<<<<< Updated upstream
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1377,6 +1556,9 @@ LaTeX Info: Redefining \% on input line 165.
  [43 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png> <./
 Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png>]
 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png, id=1391, 103
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png, id=1387, 103
+>>>>>>> Stashed changes
 3.8625pt x 298.11375pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png Graphic 
 file (type png)
@@ -1384,7 +1566,20 @@ file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evalua
 ciones.png  used on input line 168.
 (pdftex.def)             Requested size: 341.43306pt x 98.45062pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png, id=1392, 1034.86626pt 
+=======
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
+ [43 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png> <./
+Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png>]
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
+ [44 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png> <./Imagenes
+/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png> <./Imagenes/Figur
+as/prototipo_cris/3.2.1_listado_personas_relacionadas.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png, id=1403, 1034.86626pt 
+>>>>>>> Stashed changes
 x 400.49625pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png Graphic file (type
  png)
@@ -1392,7 +1587,11 @@ File: ./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png Graphic file (type
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png
   used on input line 175.
 (pdftex.def)             Requested size: 341.43306pt x 132.1336pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.png, id=1395, 1037.8775p
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.png, id=1406, 1037.8775p
+>>>>>>> Stashed changes
 t x 367.3725pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.png Graphic file (t
 ype png)
@@ -1400,7 +1599,11 @@ ype png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.
 png  used on input line 184.
 (pdftex.def)             Requested size: 341.43306pt x 120.85771pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro.png, id=1396, 1035
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro.png, id=1407, 1035
+>>>>>>> Stashed changes
 .87pt x 402.50375pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro.png Graphic f
 ile (type png)
@@ -1409,6 +1612,7 @@ Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_
 libro.png  used on input line 190.
 (pdftex.def)             Requested size: 341.43306pt x 132.66696pt.
 
+<<<<<<< Updated upstream
 Underfull \vbox (badness 4792) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 194.
@@ -1422,6 +1626,12 @@ LaTeX Info: Redefining \% on input line 194.
 nes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png> <./Imagenes/
 Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png>]
 <./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png, id=1415, 1032.85875pt 
+=======
+[45 <./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png> <./Imagen
+es/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png> <./Imagenes/F
+iguras/prototipo_cris/3.2.1_listado_evaluaciones.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png, id=1418, 1032.85875pt 
+>>>>>>> Stashed changes
 x 359.3425pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png Graphic file (type
  png)
@@ -1429,7 +1639,11 @@ File: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png Graphic file (type
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png
   used on input line 199.
 (pdftex.def)             Requested size: 341.43306pt x 118.78625pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png, id=1416, 1035.87pt x 35
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png, id=1419, 1035.87pt x 35
+>>>>>>> Stashed changes
 6.33125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png Graphic file (type 
 png)
@@ -1442,7 +1656,11 @@ LaTeX Info: Redefining \% on input line 209.
  [46 <./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png> <./Imagenes/Figur
 as/prototipo_cris/3.2.1_historia_vida.png> <./Imagenes/Figuras/prototipo_cris/3
 .2.1_historia_vida_libro.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png, id=1426, 103
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png, id=1429, 103
+>>>>>>> Stashed changes
 4.86626pt x 348.30125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png Graphic 
 file (type png)
@@ -1450,7 +1668,11 @@ file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_ter
 apeuta.png  used on input line 214.
 (pdftex.def)             Requested size: 341.43306pt x 114.9132pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png, id=1428, 1034.8
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png, id=1431, 1034.8
+>>>>>>> Stashed changes
 6626pt x 563.10374pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png Graphic fil
 e (type png)
@@ -1458,7 +1680,15 @@ e (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacien
 tes.png  used on input line 223.
 (pdftex.def)             Requested size: 341.43306pt x 185.78185pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png, id=1430, 1034
+=======
+LaTeX Info: Redefining \. on input line 235.
+LaTeX Info: Redefining \% on input line 235.
+ [47 <./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png> <./Imagenes/Figur
+as/prototipo_cris/3.2.1_actividad.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png, id=1441, 1034
+>>>>>>> Stashed changes
 .86626pt x 363.3575pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png Graphic f
 ile (type png)
@@ -1466,11 +1696,15 @@ ile (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cui
 dador.png  used on input line 236.
 (pdftex.def)             Requested size: 341.43306pt x 119.88062pt.
+<<<<<<< Updated upstream
 LaTeX Info: Redefining \. on input line 240.
 LaTeX Info: Redefining \% on input line 240.
  [47 <./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png> <./Imagenes/Figur
 as/prototipo_cris/3.2.1_actividad.png>]
 <./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png, id=1442, 1
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png, id=1444, 1
+>>>>>>> Stashed changes
 034.86626pt x 186.6975pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png Graphi
 c file (type png)
@@ -1479,14 +1713,22 @@ Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_
 cuidador.png  used on input line 245.
 (pdftex.def)             Requested size: 341.43306pt x 61.59612pt.
 <./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png, id=1
+<<<<<<< Updated upstream
 443, 1031.855pt x 399.4925pt>
+=======
+453, 1031.855pt x 399.4925pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png 
 Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_
 libro_cuidador.png  used on input line 252.
 (pdftex.def)             Requested size: 341.43306pt x 132.18648pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png, id=1445, 1032
+=======
+<./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png, id=1455, 1032
+>>>>>>> Stashed changes
 .85875pt x 288.07625pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png Graphic f
 ile (type png)
@@ -1508,14 +1750,22 @@ LaTeX Info: Redefining \% on input line 272.
  [49 <./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png> <./Image
 nes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png> <./Imagenes/Figura
 s/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.1.png, id=1466, 191.21437pt x 159.0943
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.1.png, id=1468, 191.21437pt x 159.0943
+>>>>>>> Stashed changes
 8pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.1.png  used on
  input line 281.
 (pdftex.def)             Requested size: 227.62204pt x 189.39502pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.6.png, id=1468, 202.25563pt x 136.51pt
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.6.png, id=1470, 202.25563pt x 136.51pt
+>>>>>>> Stashed changes
 >
 File: ./Imagenes/Figuras/prototipo_Patricia/f.6.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.6.png>
@@ -1526,21 +1776,33 @@ LaTeX Info: Redefining \. on input line 298.
 LaTeX Info: Redefining \% on input line 298.
  [50 <./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png> <./Image
 nes/Figuras/prototipo_Patricia/f.1.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.7.png, id=1475, 195.22937pt x 149.5587
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.7.png, id=1477, 195.22937pt x 149.5587
+>>>>>>> Stashed changes
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.7.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.7.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.7.png  used on
  input line 301.
 (pdftex.def)             Requested size: 227.62204pt x 174.38055pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.8.png, id=1477, 198.7425pt x 149.55875
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.8.png, id=1479, 198.7425pt x 149.55875
+>>>>>>> Stashed changes
 pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.8.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.8.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.8.png  used on
  input line 310.
 (pdftex.def)             Requested size: 227.62204pt x 171.29747pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.10.png, id=1479, 191.71625pt x 152.068
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.10.png, id=1481, 191.71625pt x 152.068
+>>>>>>> Stashed changes
 13pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.10.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.10.png>
@@ -1551,21 +1813,33 @@ LaTeX Info: Redefining \. on input line 328.
 LaTeX Info: Redefining \% on input line 328.
  [51 <./Imagenes/Figuras/prototipo_Patricia/f.6.png> <./Imagenes/Figuras/protot
 ipo_Patricia/f.7.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.17.png, id=1486, 235.37938pt x 144.54p
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.17.png, id=1487, 235.37938pt x 144.54p
+>>>>>>> Stashed changes
 t>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.17.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.17.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.17.png  used o
 n input line 331.
 (pdftex.def)             Requested size: 227.62204pt x 139.77794pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.18.png, id=1488, 239.89626pt x 151.064
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.18.png, id=1489, 239.89626pt x 151.064
+>>>>>>> Stashed changes
 38pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.18.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.18.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.18.png  used o
 n input line 340.
 (pdftex.def)             Requested size: 227.62204pt x 143.33745pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.11.png, id=1490, 194.22563pt x 152.068
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.11.png, id=1491, 194.22563pt x 152.068
+>>>>>>> Stashed changes
 13pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.11.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.11.png>
@@ -1583,14 +1857,22 @@ LaTeX Info: Redefining \. on input line 357.
 LaTeX Info: Redefining \% on input line 357.
 [53 <./Imagenes/Figuras/prototipo_Patricia/f.17.png> <./Imagenes/Figuras/protot
 ipo_Patricia/f.18.png> <./Imagenes/Figuras/prototipo_Patricia/f.11.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.21.png, id=1500, 208.27812pt x 146.547
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.21.png, id=1501, 208.27812pt x 146.547
+>>>>>>> Stashed changes
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.21.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.21.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.21.png  used o
 n input line 360.
 (pdftex.def)             Requested size: 227.62204pt x 160.16515pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.15.png, id=1502, 268.00125pt x 151.064
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.15.png, id=1503, 268.00125pt x 151.064
+>>>>>>> Stashed changes
 38pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.15.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.15.png>
@@ -1601,14 +1883,22 @@ LaTeX Info: Redefining \. on input line 379.
 LaTeX Info: Redefining \% on input line 379.
 
 [54 <./Imagenes/Figuras/prototipo_Patricia/f.21.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.12.png, id=1509, 201.75375pt x 152.068
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.12.png, id=1510, 201.75375pt x 152.068
+>>>>>>> Stashed changes
 13pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.12.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.12.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.12.png  used o
 n input line 382.
 (pdftex.def)             Requested size: 227.62204pt x 171.56813pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.19.png, id=1510, 240.9pt x 151.06438pt
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.19.png, id=1511, 240.9pt x 151.06438pt
+>>>>>>> Stashed changes
 >
 File: ./Imagenes/Figuras/prototipo_Patricia/f.19.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.19.png>
@@ -1619,14 +1909,22 @@ LaTeX Info: Redefining \. on input line 394.
 LaTeX Info: Redefining \% on input line 394.
  [55 <./Imagenes/Figuras/prototipo_Patricia/f.15.png> <./Imagenes/Figuras/proto
 tipo_Patricia/f.12.png> <./Imagenes/Figuras/prototipo_Patricia/f.19.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.13.png, id=1517, 187.19937pt x 158.592
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.13.png, id=1518, 187.19937pt x 158.592
+>>>>>>> Stashed changes
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.13.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.13.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.13.png  used o
 n input line 398.
 (pdftex.def)             Requested size: 227.62204pt x 192.84851pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.20.png, id=1520, 202.25563pt x 159.596
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.20.png, id=1521, 202.25563pt x 159.596
+>>>>>>> Stashed changes
 25pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.20.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.20.png>
@@ -1637,21 +1935,33 @@ LaTeX Info: Redefining \. on input line 417.
 LaTeX Info: Redefining \% on input line 417.
  [56 <./Imagenes/Figuras/prototipo_Patricia/f.13.png> <./Imagenes/Figuras/proto
 tipo_Patricia/f.20.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.14.png, id=1528, 194.22563pt x 143.536
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.14.png, id=1529, 194.22563pt x 143.536
+>>>>>>> Stashed changes
 25pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.14.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.14.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.14.png  used o
 n input line 425.
 (pdftex.def)             Requested size: 227.62204pt x 168.22145pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.16.png, id=1531, 261.97874pt x 153.573
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.16.png, id=1532, 261.97874pt x 153.573
+>>>>>>> Stashed changes
 75pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.16.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.16.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.16.png  used o
 n input line 434.
 (pdftex.def)             Requested size: 227.62204pt x 133.43701pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_Patricia/f.22.png, id=1532, 212.795pt x 146.5475p
+=======
+<./Imagenes/Figuras/prototipo_Patricia/f.22.png, id=1533, 212.795pt x 146.5475p
+>>>>>>> Stashed changes
 t>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.22.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.22.png>
@@ -1735,7 +2045,11 @@ LaTeX Info: Redefining \. on input line 536.
 LaTeX Info: Redefining \% on input line 536.
  [61 <./Imagenes/Figuras/prototipo_Patricia/f.9.png> <./Imagenes/Figuras/protot
 ipo_santi/login_san.PNG> <./Imagenes/Figuras/prototipo_santi/ini_san.PNG>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_santi/crea_ses.PNG, id=1574, 887.315pt x 601.2462
+=======
+<./Imagenes/Figuras/prototipo_santi/crea_ses.PNG, id=1575, 887.315pt x 601.2462
+>>>>>>> Stashed changes
 5pt>
 File: ./Imagenes/Figuras/prototipo_santi/crea_ses.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/crea_ses.PNG>
@@ -1746,21 +2060,33 @@ LaTeX Info: Redefining \. on input line 551.
 LaTeX Info: Redefining \% on input line 551.
  [62 <./Imagenes/Figuras/prototipo_santi/prep_ses.PNG> <./Imagenes/Figuras/prot
 otipo_santi/crea_ses.PNG>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_santi/rea_ses.PNG, id=1582, 965.6075pt x 767.8687
+=======
+<./Imagenes/Figuras/prototipo_santi/rea_ses.PNG, id=1583, 965.6075pt x 767.8687
+>>>>>>> Stashed changes
 4pt>
 File: ./Imagenes/Figuras/prototipo_santi/rea_ses.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/rea_ses.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/rea_ses.PNG  used o
 n input line 554.
 (pdftex.def)             Requested size: 227.62204pt x 180.99986pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_santi/fin_ses.PNG, id=1584, 704.6325pt x 468.7512
+=======
+<./Imagenes/Figuras/prototipo_santi/fin_ses.PNG, id=1585, 704.6325pt x 468.7512
+>>>>>>> Stashed changes
 5pt>
 File: ./Imagenes/Figuras/prototipo_santi/fin_ses.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/fin_ses.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/fin_ses.PNG  used o
 n input line 561.
 (pdftex.def)             Requested size: 227.62204pt x 151.41966pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_santi/family_ses.PNG, id=1586, 654.445pt x 493.84
+=======
+<./Imagenes/Figuras/prototipo_santi/family_ses.PNG, id=1587, 654.445pt x 493.84
+>>>>>>> Stashed changes
 5pt>
 File: ./Imagenes/Figuras/prototipo_santi/family_ses.PNG Graphic file (type png)
 
@@ -1919,7 +2245,11 @@ LaTeX Info: Redefining \. on input line 719.
 LaTeX Info: Redefining \% on input line 719.
  [69 <./Imagenes/Figuras/prototipo_eva/historia_vida.png> <./Imagenes/Figuras/p
 rototipo_eva/nueva_evaluacion.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_eva/lista_pacientes.png, id=1668, 1413.28pt x 777
+=======
+<./Imagenes/Figuras/prototipo_eva/lista_pacientes.png, id=1667, 1413.28pt x 777
+>>>>>>> Stashed changes
 .90625pt>
 File: ./Imagenes/Figuras/prototipo_eva/lista_pacientes.png Graphic file (type p
 ng)
@@ -1927,7 +2257,11 @@ ng)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/lista_pacientes.png  
 used on input line 725.
 (pdftex.def)             Requested size: 170.71652pt x 93.96194pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_eva/mensajeria.png, id=1670, 1015.795pt x 764.857
+=======
+<./Imagenes/Figuras/prototipo_eva/mensajeria.png, id=1669, 1015.795pt x 764.857
+>>>>>>> Stashed changes
 5pt>
 File: ./Imagenes/Figuras/prototipo_eva/mensajeria.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/mensajeria.png>
@@ -1939,14 +2273,22 @@ LaTeX Info: Redefining \% on input line 737.
  [70 <./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.png> <./Imagenes/Figu
 ras/prototipo_eva/lista_informes.png> <./Imagenes/Figuras/prototipo_eva/menu.pn
 g>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_eva/mi_perfil.png, id=1680, 1000.73875pt x 741.77
+=======
+<./Imagenes/Figuras/prototipo_eva/mi_perfil.png, id=1679, 1000.73875pt x 741.77
+>>>>>>> Stashed changes
 126pt>
 File: ./Imagenes/Figuras/prototipo_eva/mi_perfil.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/mi_perfil.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/mi_perfil.png  used o
 n input line 743.
 (pdftex.def)             Requested size: 199.16928pt x 147.62724pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png, id=1682, 1034.86626pt 
+=======
+<./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png, id=1681, 1034.86626pt 
+>>>>>>> Stashed changes
 x 838.13126pt>
 File: ./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png Graphic file (type
  png)
@@ -1954,14 +2296,22 @@ File: ./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png Graphic file (type
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png
   used on input line 755.
 (pdftex.def)             Requested size: 170.71652pt x 138.2601pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_eva/calendario.png, id=1685, 1362.08875pt x 1027.
+=======
+<./Imagenes/Figuras/prototipo_eva/calendario.png, id=1684, 1362.08875pt x 1027.
+>>>>>>> Stashed changes
 84pt>
 File: ./Imagenes/Figuras/prototipo_eva/calendario.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/calendario.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/calendario.png  used 
 on input line 767.
 (pdftex.def)             Requested size: 170.71652pt x 128.80904pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png, id=1686, 838.13126pt 
+=======
+<./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png, id=1685, 838.13126pt 
+>>>>>>> Stashed changes
 x 712.6625pt>
 File: ./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png Graphic file (typ
 e png)
@@ -1969,14 +2319,22 @@ e png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.pn
 g  used on input line 774.
 (pdftex.def)             Requested size: 227.62204pt x 193.5415pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_eva/c_menu.png, id=1688, 234.8775pt x 444.66125pt
+=======
+<./Imagenes/Figuras/prototipo_eva/c_menu.png, id=1687, 234.8775pt x 444.66125pt
+>>>>>>> Stashed changes
 >
 File: ./Imagenes/Figuras/prototipo_eva/c_menu.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/c_menu.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/c_menu.png  used on i
 nput line 786.
 (pdftex.def)             Requested size: 71.9989pt x 136.30336pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_eva/c_calendario.png, id=1690, 894.34125pt x 361.
+=======
+<./Imagenes/Figuras/prototipo_eva/c_calendario.png, id=1689, 894.34125pt x 361.
+>>>>>>> Stashed changes
 35pt>
 File: ./Imagenes/Figuras/prototipo_eva/c_calendario.png Graphic file (type png)
 
@@ -1984,7 +2342,11 @@ File: ./Imagenes/Figuras/prototipo_eva/c_calendario.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/c_calendario.png  use
 d on input line 796.
 (pdftex.def)             Requested size: 284.52756pt x 114.96169pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/prototipo_eva/c_mensajeria.png, id=1692, 894.34125pt x 311.
+=======
+<./Imagenes/Figuras/prototipo_eva/c_mensajeria.png, id=1691, 894.34125pt x 311.
+>>>>>>> Stashed changes
 1625pt>
 File: ./Imagenes/Figuras/prototipo_eva/c_mensajeria.png Graphic file (type png)
 
@@ -2053,7 +2415,16 @@ LaTeX Info: Redefining \. on input line 866.
 LaTeX Info: Redefining \% on input line 866.
 
 [75 <./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png, id=1740, 11
+=======
+LaTeX Info: Redefining \. on input line 867.
+LaTeX Info: Redefining \% on input line 867.
+ [76 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png> <./Im
+agenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png> <./Imagenes/Figura
+s/disenio_competitivo/3.2.5_modificar_paciente.png>]
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png, id=1746, 11
+>>>>>>> Stashed changes
 30.2225pt x 467.7475pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png Graphic
  file (type png)
@@ -2061,12 +2432,16 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png Graphic
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_s
 esiones.png  used on input line 870.
 (pdftex.def)             Requested size: 341.43306pt x 141.30312pt.
+<<<<<<< Updated upstream
 LaTeX Info: Redefining \. on input line 874.
 LaTeX Info: Redefining \% on input line 874.
  [76 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png> <./Im
 agenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png> <./Imagenes/Figura
 s/disenio_competitivo/3.2.5_modificar_paciente.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png, id=1749, 812.03
+=======
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png, id=1748, 812.03
+>>>>>>> Stashed changes
 375pt x 871.255pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png Graphic fil
 e (type png)
@@ -2078,7 +2453,11 @@ LaTeX Info: Redefining \. on input line 882.
 LaTeX Info: Redefining \% on input line 882.
  [77 <./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png> <./Imagene
 s/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png, id=1757, 813.
+=======
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png, id=1756, 813.
+>>>>>>> Stashed changes
 0375pt x 841.1425pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png Graphic f
 ile (type png)
@@ -2090,7 +2469,11 @@ LaTeX Info: Redefining \. on input line 894.
 LaTeX Info: Redefining \% on input line 894.
  [78 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png, id=
+<<<<<<< Updated upstream
 1764, 1051.93pt x 449.68pt>
+=======
+1763, 1051.93pt x 449.68pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png
  Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png>
@@ -2099,7 +2482,11 @@ Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_rec
 uerdo_existente.png  used on input line 898.
 (pdftex.def)             Requested size: 227.62204pt x 97.30371pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png, id
+<<<<<<< Updated upstream
 =1766, 1115.16624pt x 475.7775pt>
+=======
+=1771, 1115.16624pt x 475.7775pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.pn
 g Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png
@@ -2128,7 +2515,11 @@ Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_mul
 timedia.png  used on input line 929.
 (pdftex.def)             Requested size: 341.43306pt x 347.92386pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.png, i
+<<<<<<< Updated upstream
 d=1776, 1237.62375pt x 529.98pt>
+=======
+d=1782, 1237.62375pt x 529.98pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.p
 ng Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.pn
@@ -2136,6 +2527,7 @@ g>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_mul
 timedia_existente.png  used on input line 937.
 (pdftex.def)             Requested size: 341.43306pt x 146.20993pt.
+<<<<<<< Updated upstream
 LaTeX Info: Redefining \. on input line 941.
 LaTeX Info: Redefining \% on input line 941.
 
@@ -2150,6 +2542,10 @@ istente.png> <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png
 >]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png, id=179
 2, 1115.16624pt x 450.68375pt>
+=======
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png, id=178
+4, 1115.16624pt x 450.68375pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png Gr
 aphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png>
@@ -2157,7 +2553,11 @@ Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_h
 istoria_vida.png  used on input line 949.
 (pdftex.def)             Requested size: 341.43306pt x 137.98442pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.png, 
+<<<<<<< Updated upstream
 id=1794, 1197.47375pt x 578.16pt>
+=======
+id=1786, 1197.47375pt x 578.16pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.
 png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.p
@@ -2166,7 +2566,11 @@ Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_h
 istoria_vida_libro.png  used on input line 958.
 (pdftex.def)             Requested size: 341.43306pt x 164.84789pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png, id
+<<<<<<< Updated upstream
 =1796, 1366.10374pt x 741.77126pt>
+=======
+=1788, 1366.10374pt x 741.77126pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.pn
 g Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png
@@ -2174,11 +2578,15 @@ g Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_h
 istoria_vida_pdf.png  used on input line 966.
 (pdftex.def)             Requested size: 341.43306pt x 185.38576pt.
+<<<<<<< Updated upstream
 LaTeX Info: Redefining \. on input line 970.
 LaTeX Info: Redefining \% on input line 970.
  [82 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.p
 ng> <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png, id=1804, 1
+=======
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png, id=1790, 1
+>>>>>>> Stashed changes
 135.24126pt x 545.03625pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png Graphi
 c file (type png)
@@ -2192,7 +2600,11 @@ LaTeX Info: Redefining \% on input line 979.
 png> <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.pn
 g>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas.png
+<<<<<<< Updated upstream
 , id=1812, 1073.00874pt x 443.6575pt>
+=======
+, id=1810, 1073.00874pt x 443.6575pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionada
 s.png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas
@@ -2200,7 +2612,11 @@ s.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_p
 ersonas_relacionadas.png  used on input line 983.
 (pdftex.def)             Requested size: 341.43306pt x 141.1677pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png, id=1815
+=======
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png, id=1813
+>>>>>>> Stashed changes
 , 1208.515pt x 451.6875pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png Gra
 phic file (type png)
@@ -2209,7 +2625,11 @@ Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeri
 a_terapeuta.png  used on input line 992.
 (pdftex.def)             Requested size: 341.43306pt x 127.60884pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.png,
+<<<<<<< Updated upstream
  id=1816, 1057.9525pt x 396.48125pt>
+=======
+ id=1814, 1057.9525pt x 396.48125pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado
 .png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.
@@ -2217,7 +2637,11 @@ png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeri
 a_terapeuta_enviado.png  used on input line 999.
 (pdftex.def)             Requested size: 341.43306pt x 127.95345pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png, id=1819,
+=======
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png, id=1817,
+>>>>>>> Stashed changes
  1104.125pt x 446.66875pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png Grap
 hic file (type png)
@@ -2230,7 +2654,11 @@ LaTeX Info: Redefining \% on input line 1011.
  [84 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png> <./Im
 agenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.png, 
+<<<<<<< Updated upstream
 id=1826, 1208.515pt x 497.86pt>
+=======
+id=1818, 1208.515pt x 497.86pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.
 png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.p
@@ -2246,7 +2674,11 @@ LaTeX Info: Redefining \. on input line 1034.
 LaTeX Info: Redefining \% on input line 1034.
  [86 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png> <./
 Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.png>]
+<<<<<<< Updated upstream
 <./Archivos/debriefing_ivan.pdf, id=1840, 598.235pt x 845.1575pt>
+=======
+<./Archivos/debriefing_ivan.pdf, id=1839, 598.235pt x 845.1575pt>
+>>>>>>> Stashed changes
 File: ./Archivos/debriefing_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing_ivan.pdf>
 Package pdftex.def Info: ./Archivos/debriefing_ivan.pdf  used on input line 104
@@ -2257,7 +2689,11 @@ File: ./Archivos/debriefing_ivan.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/debriefing_ivan.pdf  used on input line 104
 0.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<<<<<<< Updated upstream
 <./Archivos/debriefing_ivan.pdf, id=1843, page=1, 598.235pt x 845.1575pt>
+=======
+<./Archivos/debriefing_ivan.pdf, id=1842, page=1, 598.235pt x 845.1575pt>
+>>>>>>> Stashed changes
 File: ./Archivos/debriefing_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing_ivan.pdf, page 1>
 Package pdftex.def Info: ./Archivos/debriefing_ivan.pdf , page1 used on input l
@@ -2287,7 +2723,11 @@ Package pdftex.def Info: ./Archivos/debriefing_ivan.pdf , page1 used on input l
 ine 1040.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
  [88 <./Archivos/debriefing_ivan.pdf>]
+<<<<<<< Updated upstream
 <./Archivos/debriefing_ivan.pdf, id=1866, page=2, 598.235pt x 845.1575pt>
+=======
+<./Archivos/debriefing_ivan.pdf, id=1864, page=2, 598.235pt x 845.1575pt>
+>>>>>>> Stashed changes
 File: ./Archivos/debriefing_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing_ivan.pdf, page 2>
 Package pdftex.def Info: ./Archivos/debriefing_ivan.pdf , page2 used on input l
@@ -2309,7 +2749,11 @@ Overfull \hbox (48.45834pt too wide) in paragraph at lines 1044--1044
 WBtuyD/view?usp=sharing| 
  []
 
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png, id=1873, 383.9
+=======
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png, id=1871, 383.9
+>>>>>>> Stashed changes
 3437pt x 268.00125pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png Graphic fi
 le (type png)
@@ -2317,7 +2761,11 @@ le (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paci
 ente.png  used on input line 1056.
 (pdftex.def)             Requested size: 341.43306pt x 238.34859pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png, id=1875, 407.5
+=======
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png, id=1873, 407.5
+>>>>>>> Stashed changes
 225pt x 321.70187pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png Graphic fi
 le (type png)
@@ -2329,14 +2777,22 @@ LaTeX Info: Redefining \. on input line 1074.
 LaTeX Info: Redefining \% on input line 1074.
 [90 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png>]
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png, id=1
+<<<<<<< Updated upstream
 882, 463.23062pt x 198.24063pt>
+=======
+880, 463.23062pt x 198.24063pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png 
 Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Info
 rmes_de_sesion.png  used on input line 1078.
 (pdftex.def)             Requested size: 341.43306pt x 146.11801pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png, id=1884, 4
+=======
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png, id=1882, 4
+>>>>>>> Stashed changes
 58.21187pt x 304.63812pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png Graphi
 c file (type png)
@@ -2344,7 +2800,11 @@ c file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Eval
 uaciones.png  used on input line 1089.
 (pdftex.def)             Requested size: 341.43306pt x 227.00912pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2.png, id=1886, 46
+=======
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2.png, id=1884, 46
+>>>>>>> Stashed changes
 1.725pt x 342.27875pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2.png Graphic
  file (type png)
@@ -2355,7 +2815,11 @@ ndario2.png  used on input line 1100.
 LaTeX Info: Redefining \. on input line 1107.
 LaTeX Info: Redefining \% on input line 1107.
  [91 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png>]
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1.png, id=1893, 379
+=======
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1.png, id=1892, 379
+>>>>>>> Stashed changes
 .91937pt x 320.69812pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1.png Graphic 
 file (type png)
@@ -2363,7 +2827,11 @@ file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recu
 erdos1.png  used on input line 1111.
 (pdftex.def)             Requested size: 341.43306pt x 288.21947pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2.png, id=1894, 462
+=======
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2.png, id=1893, 462
+>>>>>>> Stashed changes
 .22687pt x 215.30438pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2.png Graphic 
 file (type png)
@@ -2376,7 +2844,11 @@ LaTeX Info: Redefining \% on input line 1125.
  [92 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png>
  <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png>]
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Personas_relacionadas.png, i
+<<<<<<< Updated upstream
 d=1900, 457.71pt x 194.22563pt>
+=======
+d=1899, 457.71pt x 194.22563pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Personas_relacionadas.p
 ng Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Personas_relacionadas.pn
@@ -2405,7 +2877,12 @@ ng>]
 
 ]
 Cap\'itulo 5.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/mvc_structure.png, id=1920, 295.70474pt x 285.4665pt>
+=======
+[97]
+<./Imagenes/Figuras/mvc_structure.png, id=1922, 295.70474pt x 285.4665pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/mvc_structure.png Graphic file (type png)
 <use ./Imagenes/Figuras/mvc_structure.png>
 Package pdftex.def Info: ./Imagenes/Figuras/mvc_structure.png  used on input li
@@ -2418,10 +2895,14 @@ LaTeX Info: Redefining \% on input line 38.
 LaTeX Info: Redefining \. on input line 58.
 LaTeX Info: Redefining \% on input line 58.
  [99]
+<<<<<<< Updated upstream
 LaTeX Info: Redefining \. on input line 78.
 LaTeX Info: Redefining \% on input line 78.
  [100]
 <./Imagenes/Figuras/estructura_bd.jpeg, id=1940, 1172.12906pt x 548.80031pt>
+=======
+<./Imagenes/Figuras/estructura_bd.jpeg, id=1933, 1172.12906pt x 548.80031pt>
+>>>>>>> Stashed changes
 File: ./Imagenes/Figuras/estructura_bd.jpeg Graphic file (type jpg)
 <use ./Imagenes/Figuras/estructura_bd.jpeg>
 Package pdftex.def Info: ./Imagenes/Figuras/estructura_bd.jpeg  used on input l
@@ -2432,6 +2913,7 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 94--95
  [][] 
  []
 
+<<<<<<< Updated upstream
 LaTeX Info: Redefining \. on input line 103.
 LaTeX Info: Redefining \% on input line 103.
 [101 <./Imagenes/Figuras/estructura_bd.jpeg>]
@@ -2448,6 +2930,216 @@ File: ./Imagenes/Figuras/diagramas_secuencia/login.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/login.png  used
  on input line 114.
 (pdftex.def)             Requested size: 341.43306pt x 240.81839pt.
+=======
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+[100]
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+ [101 <./Imagenes/Figuras/estructura_bd.jpeg>]
+<./Imagenes/Figuras/implementacion/login.png, id=1943, 260.47313pt x 229.35687p
+t>
+File: ./Imagenes/Figuras/implementacion/login.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/login.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/login.png  used on i
+nput line 117.
+(pdftex.def)             Requested size: 227.62204pt x 200.43129pt.
+<./Imagenes/Figuras/implementacion/listPacientes.png, id=1945, 1224.9765pt x 56
+4.30824pt>
+File: ./Imagenes/Figuras/implementacion/listPacientes.png Graphic file (type pn
+g)
+<use ./Imagenes/Figuras/implementacion/listPacientes.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/listPacientes.png  u
+sed on input line 132.
+(pdftex.def)             Requested size: 341.43306pt x 157.28192pt.
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+ [102 <./Imagenes/Figuras/implementacion/login.png>]
+<./Imagenes/Figuras/implementacion/paciente.png, id=1952, 962.59625pt x 431.110
+63pt>
+File: ./Imagenes/Figuras/implementacion/paciente.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/paciente.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/paciente.png  used o
+n input line 142.
+(pdftex.def)             Requested size: 341.43306pt x 152.91048pt.
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
+ [103 <./Imagenes/Figuras/implementacion/listPacientes.png> <./Imagenes/Figuras
+/implementacion/paciente.png>]
+<./Imagenes/Figuras/implementacion/sesiones.png, id=1963, 959.585pt x 373.89688
+pt>
+File: ./Imagenes/Figuras/implementacion/sesiones.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/sesiones.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/sesiones.png  used o
+n input line 155.
+(pdftex.def)             Requested size: 341.43306pt x 133.03955pt.
+<./Imagenes/Figuras/implementacion/ses.png, id=1964, 1137.65025pt x 287.27325pt
+>
+File: ./Imagenes/Figuras/implementacion/ses.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/ses.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/ses.png  used on inp
+ut line 163.
+(pdftex.def)             Requested size: 341.43306pt x 86.2177pt.
+<./Imagenes/Figuras/implementacion/ses2.png, id=1965, 955.06813pt x 361.85187pt
+>
+File: ./Imagenes/Figuras/implementacion/ses2.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/ses2.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/ses2.png  used on in
+put line 170.
+(pdftex.def)             Requested size: 341.43306pt x 129.35553pt.
+<./Imagenes/Figuras/implementacion/infSes.png, id=1969, 959.08313pt x 387.4475p
+t>
+File: ./Imagenes/Figuras/implementacion/infSes.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/infSes.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/infSes.png  used on 
+input line 178.
+(pdftex.def)             Requested size: 341.43306pt x 137.93205pt.
+<./Imagenes/Figuras/implementacion/datInfSes.png, id=1970, 1153.30875pt x 243.3
+09pt>
+File: ./Imagenes/Figuras/implementacion/datInfSes.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/datInfSes.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/datInfSes.png  used 
+on input line 184.
+(pdftex.def)             Requested size: 341.43306pt x 72.0317pt.
+<./Imagenes/Figuras/implementacion/pdfInfSes.png, id=1971, 315.1775pt x 330.233
+75pt>
+File: ./Imagenes/Figuras/implementacion/pdfInfSes.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/pdfInfSes.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/pdfInfSes.png  used 
+on input line 191.
+(pdftex.def)             Requested size: 341.43306pt x 357.76576pt.
+LaTeX Info: Redefining \. on input line 196.
+LaTeX Info: Redefining \% on input line 196.
+ [104 <./Imagenes/Figuras/implementacion/sesiones.png> <./Imagenes/Figuras/impl
+ementacion/ses.png> <./Imagenes/Figuras/implementacion/ses2.png>]
+<./Imagenes/Figuras/implementacion/infSegui.png, id=1980, 962.59625pt x 394.473
+75pt>
+File: ./Imagenes/Figuras/implementacion/infSegui.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/infSegui.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/infSegui.png  used o
+n input line 200.
+(pdftex.def)             Requested size: 341.43306pt x 139.91576pt.
+LaTeX Info: Redefining \. on input line 206.
+LaTeX Info: Redefining \% on input line 206.
+ [105 <./Imagenes/Figuras/implementacion/infSes.png> <./Imagenes/Figuras/implem
+entacion/datInfSes.png>]
+
+LaTeX Warning: Text page 106 contains only floats.
+
+LaTeX Info: Redefining \. on input line 206.
+LaTeX Info: Redefining \% on input line 206.
+[106 <./Imagenes/Figuras/implementacion/pdfInfSes.png> <./Imagenes/Figuras/impl
+ementacion/infSegui.png>]
+<./Imagenes/Figuras/implementacion/datInfSegui.png, id=1995, 492.84125pt x 306.
+14375pt>
+File: ./Imagenes/Figuras/implementacion/datInfSegui.png Graphic file (type png)
+
+<use ./Imagenes/Figuras/implementacion/datInfSegui.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/datInfSegui.png  use
+d on input line 209.
+(pdftex.def)             Requested size: 341.43306pt x 212.1036pt.
+<./Imagenes/Figuras/implementacion/pdfInfSegui.png, id=1996, 246.9225pt x 189.7
+0876pt>
+File: ./Imagenes/Figuras/implementacion/pdfInfSegui.png Graphic file (type png)
+
+<use ./Imagenes/Figuras/implementacion/pdfInfSegui.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/pdfInfSegui.png  use
+d on input line 215.
+(pdftex.def)             Requested size: 341.43306pt x 262.33676pt.
+<./Imagenes/Figuras/implementacion/genHV.png, id=2001, 962.59625pt x 388.95313p
+t>
+File: ./Imagenes/Figuras/implementacion/genHV.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/genHV.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/genHV.png  used on i
+nput line 223.
+(pdftex.def)             Requested size: 341.43306pt x 137.95766pt.
+<./Imagenes/Figuras/implementacion/librodevida1.png, id=2002, 861.71938pt x 340
+.77313pt>
+File: ./Imagenes/Figuras/implementacion/librodevida1.png Graphic file (type png
+)
+<use ./Imagenes/Figuras/implementacion/librodevida1.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/librodevida1.png  us
+ed on input line 230.
+(pdftex.def)             Requested size: 341.43306pt x 135.02249pt.
+<./Imagenes/Figuras/implementacion/librodevida2.png, id=2003, 871.75688pt x 351
+.3125pt>
+File: ./Imagenes/Figuras/implementacion/librodevida2.png Graphic file (type png
+)
+<use ./Imagenes/Figuras/implementacion/librodevida2.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/librodevida2.png  us
+ed on input line 237.
+(pdftex.def)             Requested size: 341.43306pt x 137.59561pt.
+<./Imagenes/Figuras/implementacion/pdfLV.png, id=2004, 338.76563pt x 387.4475pt
+>
+File: ./Imagenes/Figuras/implementacion/pdfLV.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/pdfLV.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/pdfLV.png  used on i
+nput line 244.
+(pdftex.def)             Requested size: 341.43306pt x 390.51485pt.
+<./Imagenes/Figuras/implementacion/listPersRel.png, id=2007, 960.58875pt x 432.
+61626pt>
+File: ./Imagenes/Figuras/implementacion/listPersRel.png Graphic file (type png)
+
+<use ./Imagenes/Figuras/implementacion/listPersRel.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/listPersRel.png  use
+d on input line 251.
+(pdftex.def)             Requested size: 341.43306pt x 153.76797pt.
+<./Imagenes/Figuras/implementacion/formPR.png, id=2008, 952.05687pt x 188.705pt
+>
+File: ./Imagenes/Figuras/implementacion/formPR.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/formPR.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/formPR.png  used on 
+input line 258.
+(pdftex.def)             Requested size: 341.43306pt x 67.67459pt.
+LaTeX Info: Redefining \. on input line 263.
+LaTeX Info: Redefining \% on input line 263.
+ [107 <./Imagenes/Figuras/implementacion/datInfSegui.png>]
+<./Imagenes/Figuras/implementacion/listRecuerdos.png, id=2016, 956.57375pt x 39
+1.96437pt>
+File: ./Imagenes/Figuras/implementacion/listRecuerdos.png Graphic file (type pn
+g)
+<use ./Imagenes/Figuras/implementacion/listRecuerdos.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/listRecuerdos.png  u
+sed on input line 266.
+(pdftex.def)             Requested size: 341.43306pt x 139.9049pt.
+<./Imagenes/Figuras/implementacion/formRecuerdos.png, id=2017, 963.6pt x 396.48
+125pt>
+File: ./Imagenes/Figuras/implementacion/formRecuerdos.png Graphic file (type pn
+g)
+<use ./Imagenes/Figuras/implementacion/formRecuerdos.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/formRecuerdos.png  u
+sed on input line 273.
+(pdftex.def)             Requested size: 341.43306pt x 140.4826pt.
+LaTeX Info: Redefining \. on input line 277.
+LaTeX Info: Redefining \% on input line 277.
+ [108 <./Imagenes/Figuras/implementacion/pdfInfSegui.png> <./Imagenes/Figuras/i
+mplementacion/genHV.png>]
+<./Imagenes/Figuras/implementacion/formCal.png, id=2025, 254.9525pt x 239.89626
+pt>
+File: ./Imagenes/Figuras/implementacion/formCal.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/formCal.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/formCal.png  used on
+ input line 283.
+(pdftex.def)             Requested size: 341.43306pt x 321.28726pt.
+<./Imagenes/Figuras/implementacion/calendario.png, id=2026, 961.09062pt x 391.4
+625pt>
+File: ./Imagenes/Figuras/implementacion/calendario.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/calendario.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/calendario.png  used
+ on input line 290.
+(pdftex.def)             Requested size: 341.43306pt x 139.06871pt.
+LaTeX Info: Redefining \. on input line 295.
+LaTeX Info: Redefining \% on input line 295.
+ [109 <./Imagenes/Figuras/implementacion/librodevida1.png> <./Imagenes/Figuras/
+implementacion/librodevida2.png>]
+<./Imagenes/Figuras/implementacion/modCal.png, id=2035, 256.45813pt x 235.37938
+pt>
+File: ./Imagenes/Figuras/implementacion/modCal.png Graphic file (type png)
+<use ./Imagenes/Figuras/implementacion/modCal.png>
+Package pdftex.def Info: ./Imagenes/Figuras/implementacion/modCal.png  used on 
+input line 298.
+(pdftex.def)             Requested size: 341.43306pt x 313.39183pt.
+>>>>>>> Stashed changes
 )
 LaTeX Info: Redefining \. on input line 152.
 LaTeX Info: Redefining \% on input line 152.
@@ -2465,6 +3157,7 @@ LaTeX Info: Redefining \% on input line 152.
 
 ]
 Cap\'itulo 6.
+<<<<<<< Updated upstream
 [105]
 LaTeX Info: Redefining \. on input line 47.
 LaTeX Info: Redefining \% on input line 47.
@@ -2473,12 +3166,20 @@ LaTeX Info: Redefining \. on input line 73.
 LaTeX Info: Redefining \% on input line 73.
  [107]
 <./Imagenes/Figuras/evaluacion/SUS_IVAN.png, id=1983, 314.67563pt x 235.37938pt
+=======
+[115]
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+ [116]
+<./Imagenes/Figuras/evaluacion/SUS_IVAN.png, id=2078, 314.67563pt x 235.37938pt
+>>>>>>> Stashed changes
 >
 File: ./Imagenes/Figuras/evaluacion/SUS_IVAN.png Graphic file (type png)
 <use ./Imagenes/Figuras/evaluacion/SUS_IVAN.png>
 Package pdftex.def Info: ./Imagenes/Figuras/evaluacion/SUS_IVAN.png  used on in
-put line 101.
+put line 58.
 (pdftex.def)             Requested size: 284.52756pt x 212.83794pt.
+<<<<<<< Updated upstream
 <./Imagenes/Figuras/evaluacion/CAL_SUS_IVAN.png, id=1984, 230.8625pt x 104.39pt
 >
 File: ./Imagenes/Figuras/evaluacion/CAL_SUS_IVAN.png Graphic file (type png)
@@ -2495,37 +3196,105 @@ LaTeX Info: Redefining \% on input line 153.
  [109 <./Imagenes/Figuras/evaluacion/SUS_IVAN.png> <./Imagenes/Figuras/evaluaci
 on/CAL_SUS_IVAN.png>]
 \openout2 = `Capitulos/ConclusionesTrabajoFuturo.aux'.
+=======
+<./Imagenes/Figuras/evaluacion/sus_adriana.png, id=2079, 301.72725pt x 218.0145
+pt>
+File: ./Imagenes/Figuras/evaluacion/sus_adriana.png Graphic file (type png)
+<use ./Imagenes/Figuras/evaluacion/sus_adriana.png>
+Package pdftex.def Info: ./Imagenes/Figuras/evaluacion/sus_adriana.png  used on
+ input line 65.
+(pdftex.def)             Requested size: 284.52756pt x 205.58897pt.
+<./Imagenes/Figuras/evaluacion/resultado_eval_ivan.png, id=2082, 178.86826pt x 
+174.6525pt>
+File: ./Imagenes/Figuras/evaluacion/resultado_eval_ivan.png Graphic file (type 
+png)
+<use ./Imagenes/Figuras/evaluacion/resultado_eval_ivan.png>
+Package pdftex.def Info: ./Imagenes/Figuras/evaluacion/resultado_eval_ivan.png 
+ used on input line 85.
+(pdftex.def)             Requested size: 142.26378pt x 138.91469pt.
+<./Imagenes/Figuras/evaluacion/resultado_eval_adriana.png, id=2083, 171.64125pt
+ x 168.63pt>
+File: ./Imagenes/Figuras/evaluacion/resultado_eval_adriana.png Graphic file (ty
+pe png)
+<use ./Imagenes/Figuras/evaluacion/resultado_eval_adriana.png>
+Package pdftex.def Info: ./Imagenes/Figuras/evaluacion/resultado_eval_adriana.p
+ng  used on input line 92.
+(pdftex.def)             Requested size: 135.15059pt x 132.77881pt.
 
+Overfull \hbox (19.0696pt too wide) in paragraph at lines 83--96
+[][]   [] 
+ []
 
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
+[117]
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
+ [118 <./Imagenes/Figuras/evaluacion/SUS_IVAN.png> <./Imagenes/Figuras/evaluaci
+on/sus_adriana.png>]
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
+ [119 <./Imagenes/Figuras/evaluacion/resultado_eval_ivan.png> <./Imagenes/Figur
+as/evaluacion/resultado_eval_adriana.png>]
+LaTeX Info: Redefining \. on input line 161.
+LaTeX Info: Redefining \% on input line 161.
+ [120])
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
+>>>>>>> Stashed changes
+
+[121]
+\openout2 = `Capitulos/ConclusionesTrabajoFuturo.aux'.
+
+<<<<<<< Updated upstream
 (./Capitulos/ConclusionesTrabajoFuturo.tex [110
+=======
+ (Capitulos/ConclusionesTrabajoFuturo.tex [122
+>>>>>>> Stashed changes
 
 
 
 
 ]
 Cap\'itulo 7.
+<<<<<<< Updated upstream
 ) [111]
 \openout2 = `Capitulos/ConclusionsFutureWork.aux'.
 
  (./Capitulos/ConclusionsFutureWork.tex [112
+=======
+) [123]
+\openout2 = `Capitulos/ConclusionsFutureWork.aux'.
+
+ (Capitulos/ConclusionsFutureWork.tex [124
+>>>>>>> Stashed changes
 
 
 
 
 ]
 Chapter 7.
+<<<<<<< Updated upstream
 ) [113]
+=======
+) [125]
+>>>>>>> Stashed changes
 LaTeX Info: Redefining \. on input line 162.
 LaTeX Info: Redefining \% on input line 162.
 \openout2 = `Capitulos/TrabajoIndividual.aux'.
 
+<<<<<<< Updated upstream
  (./Capitulos/TrabajoIndividual.tex [114
+=======
+ (Capitulos/TrabajoIndividual.tex [126
+>>>>>>> Stashed changes
 
 
 
 
 ]
 Cap\'itulo 8.
+<<<<<<< Updated upstream
 [115]
 LaTeX Info: Redefining \. on input line 44.
 LaTeX Info: Redefining \% on input line 44.
@@ -2542,6 +3311,24 @@ LaTeX Info: Redefining \% on input line 115.
 LaTeX Info: Redefining \. on input line 164.
 LaTeX Info: Redefining \% on input line 164.
  [120]
+=======
+[127]
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
+ [128]
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+ [129]
+LaTeX Info: Redefining \. on input line 93.
+LaTeX Info: Redefining \% on input line 93.
+ [130]
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
+ [131])
+LaTeX Info: Redefining \. on input line 164.
+LaTeX Info: Redefining \% on input line 164.
+ [132]
+>>>>>>> Stashed changes
 \openout2 = `Cascaras/bibliografia.aux'.
 
  (./Cascaras/bibliografia.tex
@@ -2587,7 +3374,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--37
  en _ personas _
  []
 
+<<<<<<< Updated upstream
 [121
+=======
+[133
+>>>>>>> Stashed changes
 
 
 
@@ -2595,12 +3386,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--37
 ]))
 LaTeX Info: Redefining \. on input line 171.
 LaTeX Info: Redefining \% on input line 171.
+<<<<<<< Updated upstream
  [122]
+=======
+ [134]
+>>>>>>> Stashed changes
 \openout2 = `Apendices/appendixA.aux'.
 
  (./Apendices/appendixA.tex
 Ap\'{e}ndice A.
+<<<<<<< Updated upstream
 <./Archivos/mini_mental.pdf, id=2079, 597.2212pt x 845.1374pt>
+=======
+<./Archivos/mini_mental.pdf, id=2180, 597.2212pt x 845.1374pt>
+>>>>>>> Stashed changes
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 10.
@@ -2609,7 +3408,11 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 10.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
+<<<<<<< Updated upstream
 <./Archivos/mini_mental.pdf, id=2082, page=1, 597.2212pt x 845.1374pt>
+=======
+<./Archivos/mini_mental.pdf, id=2183, page=1, 597.2212pt x 845.1374pt>
+>>>>>>> Stashed changes
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 1>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page1 used on input line 
@@ -2653,7 +3456,11 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page1 used on input line 
 16.
 (pdftex.def)             Requested size: 597.21974pt x 418.34505pt.
+<<<<<<< Updated upstream
 [123
+=======
+[135
+>>>>>>> Stashed changes
 
 
 
@@ -2674,7 +3481,11 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page1 used on input line 
 16.
 (pdftex.def)             Requested size: 597.21974pt x 446.79773pt.
+<<<<<<< Updated upstream
  [124]
+=======
+ [136]
+>>>>>>> Stashed changes
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 20.
@@ -2687,7 +3498,11 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
+<<<<<<< Updated upstream
 <./Archivos/mini_mental.pdf, id=2126, page=2, 597.2212pt x 845.1374pt>
+=======
+<./Archivos/mini_mental.pdf, id=2225, page=2, 597.2212pt x 845.1374pt>
+>>>>>>> Stashed changes
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 2>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page2 used on input line 
@@ -2713,8 +3528,13 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page2 used on input line 
 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
+<<<<<<< Updated upstream
  [125 <./Archivos/mini_mental.pdf>]
 <./Archivos/mini_mental.pdf, id=2135, page=3, 597.2212pt x 845.1374pt>
+=======
+ [137 <./Archivos/mini_mental.pdf>]
+<./Archivos/mini_mental.pdf, id=2234, page=3, 597.2212pt x 845.1374pt>
+>>>>>>> Stashed changes
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 3>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page3 used on input line 
@@ -2731,7 +3551,11 @@ Package pdftex.def Info: ./Archivos/mini_mental.pdf , page3 used on input line
 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
 
+<<<<<<< Updated upstream
 [126 <./Archivos/mini_mental.pdf>])
+=======
+[138 <./Archivos/mini_mental.pdf>])
+>>>>>>> Stashed changes
 \openout2 = `Apendices/appendixB.aux'.
 
  (./Apendices/appendixB.tex
@@ -2759,7 +3583,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+<<<<<<< Updated upstream
  [127
+=======
+ [139
+>>>>>>> Stashed changes
 
 
 
@@ -2781,7 +3609,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
+<<<<<<< Updated upstream
 [128]
+=======
+[140]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
@@ -2803,7 +3635,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 LaTeX Info: Redefining \. on input line 39.
 LaTeX Info: Redefining \% on input line 39.
+<<<<<<< Updated upstream
 [129]
+=======
+[141]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
@@ -2835,27 +3671,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
 LaTeX Info: Redefining \. on input line 51.
 LaTeX Info: Redefining \% on input line 51.
+<<<<<<< Updated upstream
 [130]
 LaTeX Info: Redefining \. on input line 60.
 LaTeX Info: Redefining \% on input line 60.
  [131]
+=======
+[142]
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+ [143]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 LaTeX Info: Redefining \. on input line 71.
 LaTeX Info: Redefining \% on input line 71.
+<<<<<<< Updated upstream
 [132]
+=======
+[144]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
+<<<<<<< Updated upstream
 [133]
 LaTeX Info: Redefining \. on input line 103.
 LaTeX Info: Redefining \% on input line 103.
  [134]
+=======
+[145]
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
+ [146]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
@@ -2882,7 +3736,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
 LaTeX Info: Redefining \. on input line 117.
 LaTeX Info: Redefining \% on input line 117.
+<<<<<<< Updated upstream
 [135]
+=======
+[147]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
@@ -2904,7 +3762,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
 LaTeX Info: Redefining \. on input line 128.
 LaTeX Info: Redefining \% on input line 128.
+<<<<<<< Updated upstream
 [136]
+=======
+[148]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
@@ -2921,7 +3783,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
 LaTeX Info: Redefining \. on input line 138.
 LaTeX Info: Redefining \% on input line 138.
+<<<<<<< Updated upstream
 [137]
+=======
+[149]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
@@ -2933,7 +3799,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
 LaTeX Info: Redefining \. on input line 145.
 LaTeX Info: Redefining \% on input line 145.
+<<<<<<< Updated upstream
 [138]
+=======
+[150]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
@@ -2950,7 +3820,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
 LaTeX Info: Redefining \. on input line 161.
 LaTeX Info: Redefining \% on input line 161.
+<<<<<<< Updated upstream
 [139]
+=======
+[151]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
@@ -2967,7 +3841,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
 LaTeX Info: Redefining \. on input line 172.
 LaTeX Info: Redefining \% on input line 172.
+<<<<<<< Updated upstream
 [140]
+=======
+[152]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
@@ -3002,7 +3880,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 184.
 LaTeX Info: Redefining \% on input line 184.
+<<<<<<< Updated upstream
  [141]
+=======
+ [153]
+>>>>>>> Stashed changes
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
@@ -3024,6 +3906,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
 LaTeX Info: Redefining \. on input line 201.
 LaTeX Info: Redefining \% on input line 201.
+<<<<<<< Updated upstream
 [142])
 LaTeX Info: Redefining \. on input line 176.
 LaTeX Info: Redefining \% on input line 176.
@@ -3031,13 +3914,26 @@ LaTeX Info: Redefining \% on input line 176.
 \openout2 = `Apendices/appendixC.aux'.
 
  (./Apendices/appendixC.tex [144
+=======
+[154])
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
+ [155]
+\openout2 = `Apendices/appendixC.aux'.
+
+ (Apendices/appendixC.tex [156
+>>>>>>> Stashed changes
 
 
 
 
 ]
 Ap\'{e}ndice C.
+<<<<<<< Updated upstream
 <./Archivos/debriefing.pdf, id=2233, 598.235pt x 845.1575pt>
+=======
+<./Archivos/debriefing.pdf, id=2314, 598.235pt x 845.1575pt>
+>>>>>>> Stashed changes
 File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf>
 Package pdftex.def Info: ./Archivos/debriefing.pdf  used on input line 8.
@@ -3046,7 +3942,11 @@ File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf>
 Package pdftex.def Info: ./Archivos/debriefing.pdf  used on input line 8.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<<<<<<< Updated upstream
 <./Archivos/debriefing.pdf, id=2236, page=1, 598.235pt x 845.1575pt>
+=======
+<./Archivos/debriefing.pdf, id=2317, page=1, 598.235pt x 845.1575pt>
+>>>>>>> Stashed changes
 File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf, page 1>
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page1 used on input line 8
@@ -3075,7 +3975,11 @@ File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf>
 Package pdftex.def Info: ./Archivos/debriefing.pdf  used on input line 12.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<<<<<<< Updated upstream
 <./Archivos/debriefing.pdf, id=2243, page=2, 598.235pt x 845.1575pt>
+=======
+<./Archivos/debriefing.pdf, id=2324, page=2, 598.235pt x 845.1575pt>
+>>>>>>> Stashed changes
 File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf, page 2>
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page2 used on input line 1
@@ -3091,7 +3995,11 @@ File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page1 used on input line 1
 2.
 (pdftex.def)             Requested size: 358.94377pt x 370.52414pt.
+<<<<<<< Updated upstream
 [145 <./Archivos/debriefing.pdf>]
+=======
+[157 <./Archivos/debriefing.pdf>]
+>>>>>>> Stashed changes
 File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf, page 2>
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page2 used on input line 1
@@ -3107,144 +4015,456 @@ File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page2 used on input line 1
 2.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+<<<<<<< Updated upstream
  [146 <./Archivos/debriefing.pdf>])
+=======
+ [158 <./Archivos/debriefing.pdf>])
+>>>>>>> Stashed changes
 \openout2 = `Apendices/appendixD.aux'.
 
 
 (./Apendices/appendixD.tex
 Ap\'{e}ndice D.
+<<<<<<< Updated upstream
 <./Archivos/pdf_eva_1.png, id=2269, 360.74776pt x 520.94624pt>
 File: ./Archivos/pdf_eva_1.png Graphic file (type png)
 <use ./Archivos/pdf_eva_1.png>
 Package pdftex.def Info: ./Archivos/pdf_eva_1.png  used on input line 10.
 (pdftex.def)             Requested size: 252.5217pt x 364.65988pt.
 [147
+=======
+<./Archivos/pdf_eva_1.png, id=2350, 342.078pt x 508.90125pt>
+File: ./Archivos/pdf_eva_1.png Graphic file (type png)
+<use ./Archivos/pdf_eva_1.png>
+Package pdftex.def Info: ./Archivos/pdf_eva_1.png  used on input line 6.
+(pdftex.def)             Requested size: 256.55786pt x 381.675pt.
+[159
+>>>>>>> Stashed changes
 
 
 
 
  <./Archivos/pdf_eva_1.png>]
+<<<<<<< Updated upstream
 <./Archivos/evaluacion_final.pdf, id=2278, 598.235pt x 845.1575pt>
+=======
+<./Archivos/evaluacion_final.pdf, id=2357, 598.235pt x 845.1575pt>
+>>>>>>> Stashed changes
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf>
-Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 17
+Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 13
 .
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf>
-Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 17
+Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 13
 .
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<<<<<<< Updated upstream
 <./Archivos/evaluacion_final.pdf, id=2281, page=2, 598.235pt x 845.1575pt>
+=======
+<./Archivos/evaluacion_final.pdf, id=2360, page=2, 598.235pt x 845.1575pt>
+>>>>>>> Stashed changes
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 2>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page2 used on input 
-line 17.
+line 13.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 2>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page2 used on input 
-line 17.
+line 13.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 2>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page2 used on input 
-line 17.
+line 13.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 2>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page2 used on input 
-line 17.
+line 13.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 2>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page2 used on input 
-line 17.
+line 13.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+<<<<<<< Updated upstream
  [148 <./Archivos/evaluacion_final.pdf>]
+=======
+ [160 <./Archivos/evaluacion_final.pdf>]
+>>>>>>> Stashed changes
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf>
-Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 20
+Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 16
 .
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf>
-Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 20
+Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 16
 .
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<<<<<<< Updated upstream
 <./Archivos/evaluacion_final.pdf, id=2301, page=3, 598.235pt x 845.1575pt>
+=======
+<./Archivos/evaluacion_final.pdf, id=2380, page=3, 598.235pt x 845.1575pt>
+>>>>>>> Stashed changes
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 3>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page3 used on input 
-line 20.
+line 16.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 3>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page3 used on input 
-line 20.
+line 16.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 3>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page3 used on input 
-line 20.
+line 16.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 3>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page3 used on input 
-line 20.
+line 16.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 3>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page3 used on input 
-line 20.
+line 16.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
 
+<<<<<<< Updated upstream
 [149 <./Archivos/evaluacion_final.pdf>]
+=======
+[161 <./Archivos/evaluacion_final.pdf>]
+>>>>>>> Stashed changes
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf>
-Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 23
+Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 19
 .
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf>
-Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 23
+Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 19
 .
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<<<<<<< Updated upstream
 <./Archivos/evaluacion_final.pdf, id=2308, page=4, 598.235pt x 845.1575pt>
+=======
+<./Archivos/evaluacion_final.pdf, id=2387, page=4, 598.235pt x 845.1575pt>
+>>>>>>> Stashed changes
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 4>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page4 used on input 
-line 23.
+line 19.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 4>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page4 used on input 
-line 23.
+line 19.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 4>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page4 used on input 
-line 23.
+line 19.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 4>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page4 used on input 
-line 23.
+line 19.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 4>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page4 used on input 
-line 23.
+line 19.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+<<<<<<< Updated upstream
  [150 <./Archivos/evaluacion_final.pdf>])
 \openout2 = `Cascaras/fin.aux'.
 
  (./Cascaras/fin.tex [151
+=======
+ [162 <./Archivos/evaluacion_final.pdf>])
+\openout2 = `Apendices/appendixE.aux'.
+
+ (Apendices/appendixE.tex
+Ap\'{e}ndice E.
+<./Archivos/pdf_eva_ivan.png, id=2392, 346.896pt x 502.2765pt>
+File: ./Archivos/pdf_eva_ivan.png Graphic file (type png)
+<use ./Archivos/pdf_eva_ivan.png>
+Package pdftex.def Info: ./Archivos/pdf_eva_ivan.png  used on input line 6.
+(pdftex.def)             Requested size: 260.17136pt x 376.70645pt.
+<./Archivos/resultados_bruto_eval_ivan.pdf, id=2393, 598.235pt x 845.1575pt>
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
+ut line 11.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
+ut line 11.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<./Archivos/resultados_bruto_eval_ivan.pdf, id=2396, page=2, 598.235pt x 845.15
+75pt>
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 2>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page2 used
+ on input line 11.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 2>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page2 used
+ on input line 11.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+[163
 
 
 
 
+ <./Archivos/pdf_eva_ivan.png>]
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 2>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page2 used
+ on input line 11.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 2>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page2 used
+ on input line 11.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 2>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page2 used
+ on input line 11.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+ [164 <./Archivos/resultados_bruto_eval_ivan.pdf>]
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
+ut line 14.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
+ut line 14.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<./Archivos/resultados_bruto_eval_ivan.pdf, id=2423, page=3, 598.235pt x 845.15
+75pt>
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 3>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page3 used
+ on input line 14.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 3>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page3 used
+ on input line 14.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 3>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page3 used
+ on input line 14.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 3>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page3 used
+ on input line 14.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 3>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page3 used
+ on input line 14.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+ [165 <./Archivos/resultados_bruto_eval_ivan.pdf>]
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
+ut line 17.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
+ut line 17.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<./Archivos/resultados_bruto_eval_ivan.pdf, id=2430, page=4, 598.235pt x 845.15
+75pt>
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 4>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page4 used
+ on input line 17.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 4>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page4 used
+ on input line 17.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 4>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page4 used
+ on input line 17.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 4>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page4 used
+ on input line 17.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 4>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page4 used
+ on input line 17.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+ [166 <./Archivos/resultados_bruto_eval_ivan.pdf>]
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
+ut line 20.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
+ut line 20.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<./Archivos/resultados_bruto_eval_ivan.pdf, id=2437, page=5, 598.235pt x 845.15
+75pt>
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 5>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page5 used
+ on input line 20.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 5>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page5 used
+ on input line 20.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 5>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page5 used
+ on input line 20.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 5>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page5 used
+ on input line 20.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_ivan.pdf, page 5>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page5 used
+ on input line 20.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+ [167 <./Archivos/resultados_bruto_eval_ivan.pdf>])
+\openout2 = `Apendices/appendixF.aux'.
+
+
+(Apendices/appendixF.tex [168
+
+
+>>>>>>> Stashed changes
+
+
+]
+Ap\'{e}ndice F.
+<./Archivos/pdf_eva_adri.png, id=2446, 346.29375pt x 507.0945pt>
+File: ./Archivos/pdf_eva_adri.png Graphic file (type png)
+<use ./Archivos/pdf_eva_adri.png>
+Package pdftex.def Info: ./Archivos/pdf_eva_adri.png  used on input line 6.
+(pdftex.def)             Requested size: 259.71967pt x 380.31993pt.
+<./Archivos/resultados_bruto_eval_adriana.pdf, id=2447, 598.235pt x 845.1575pt>
+
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf  used on 
+input line 11.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf  used on 
+input line 11.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<./Archivos/resultados_bruto_eval_adriana.pdf, id=2450, page=2, 598.235pt x 845
+.1575pt>
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf, page 2>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf , page2 u
+sed on input line 11.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf, page 2>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf , page2 u
+sed on input line 11.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+[169 <./Archivos/pdf_eva_adri.png>]
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf, page 2>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf , page2 u
+sed on input line 11.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf, page 2>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf , page2 u
+sed on input line 11.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf, page 2>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf , page2 u
+sed on input line 11.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+ [170 <./Archivos/resultados_bruto_eval_adriana.pdf>]
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf  used on 
+input line 14.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf  used on 
+input line 14.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+<./Archivos/resultados_bruto_eval_adriana.pdf, id=2477, page=3, 598.235pt x 845
+.1575pt>
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf, page 3>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf , page3 u
+sed on input line 14.
+(pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf, page 3>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf , page3 u
+sed on input line 14.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf, page 3>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf , page3 u
+sed on input line 14.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf, page 3>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf , page3 u
+sed on input line 14.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
+<use ./Archivos/resultados_bruto_eval_adriana.pdf, page 3>
+Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf , page3 u
+sed on input line 14.
+(pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
+ [171 <./Archivos/resultados_bruto_eval_adriana.pdf>]) [172
+
+
+
+]
+\openout2 = `Cascaras/fin.aux'.
+
+
+(Cascaras/fin.tex [173
+
+<<<<<<< Updated upstream
 ] [152]) (./TFMTeXiS.aux (./Cascaras/cover.aux)
+=======
+] [174]) (TFMTeXiS.aux (Cascaras/cover.aux)
+>>>>>>> Stashed changes
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 
@@ -3264,6 +4484,7 @@ LaTeX Info: Redefining \% on input line 39.
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
 
+<<<<<<< Updated upstream
 (./Cascaras/bibliografia.aux) (./Apendices/appendixA.aux)
 (./Apendices/appendixB.aux) (./Apendices/appendixC.aux)
 (./Apendices/appendixD.aux) (./Cascaras/fin.aux))
@@ -3516,4 +4737,51 @@ PDF statistics:
  1997 compressed objects within 20 object streams
  561 named destinations out of 1000 (max. 500000)
  1806 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+(Cascaras/bibliografia.aux) (Apendices/appendixA.aux) (Apendices/appendixB.aux)
+(Apendices/appendixC.aux) (Apendices/appendixD.aux) (Apendices/appendixE.aux)
+(Apendices/appendixF.aux) (Cascaras/fin.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `TFMTeXiS.out' has not changed.
+(rerunfilecheck)             Checksum: 3B8D5654F0C3C179A62F2A1D0D2F5B9B;30714.
+ ) 
+Here is how much of TeX's memory you used:
+ 20245 strings out of 478584
+ 403129 string characters out of 2844401
+ 720325 words of memory out of 3000000
+ 36933 multiletter control sequences out of 15000+600000
+ 490434 words of font info for 64 fonts, out of 8000000 for 9000
+ 1379 hyphenation exceptions out of 8191
+ 92i,19n,98p,1467b,774s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+1095.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm1000.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecti1000.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\tcrm1095.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\evavr\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk>{D:/Users/evavr/AppData/Local
+/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\evavr\AppData\Local\MiK
+TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\evavr\AppData\Loc
+al\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\evavr\AppDa
+ta\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\evavr
+\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users
+\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:
+\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.p
+k> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
+1200.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbx1440.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx2074.pk><D:/Users/evavr/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><D:/Users/evavr/AppData/Local/Programs/MiKTeX/font
+s/type1/urw/helvetic/uhvr8a.pfb><D:/Users/evavr/AppData/Local/Programs/MiKTeX/f
+onts/type1/urw/times/utmr8a.pfb>
+Output written on TFMTeXiS.pdf (198 pages, 26282823 bytes).
+PDF statistics:
+ 3347 PDF objects out of 3580 (max. 8388607)
+ 551 named destinations out of 1000 (max. 500000)
+ 2039 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> Stashed changes
 

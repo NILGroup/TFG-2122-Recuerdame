@@ -48,14 +48,14 @@ Reallocating 'name_of_file' (item size: 1) to 24 items.
 A level-1 auxiliary file: Apendices/appendixC.aux
 Reallocating 'name_of_file' (item size: 1) to 24 items.
 A level-1 auxiliary file: Apendices/appendixD.aux
-Reallocating 'name_of_file' (item size: 1) to 17 items.
-A level-1 auxiliary file: Cascaras/fin.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Apendices/appendixE.aux
 Database file #1: nuestros.bib
 Database file #2: latex.bib
 Database file #3: otros.bib
 You've used 8 entries,
             2962 wiz_defined-function locations,
-            1149 strings with 15061 characters,
+            1149 strings with 15068 characters,
 and the built_in function-call counts, 5603 in all, are:
 = -- 442
 > -- 232
