@@ -1,22 +1,25 @@
 \chapter{Implementación de la aplicación}
 \label{cap:implementacionDelTFG}
-
-	
 Para este TFG se ha desarrollado una aplicación web que será adaptable a dispositivo tablet. En este capitulo mostraremos la arquitectura que se ha decidido para la aplicación así como el diseño de la base de datos implementado. Además se mostrará cuales fueron las herramientas utilizadas y como fue implementada la aplicación
 
 Todas nuestras decisiones fueron tomadas a partir de las requisitos y las especificaciones pedidas por los expertos que utilizaran la aplicación.
 
 \section{Arquitectura}
-
-La arquitectura de la aplicación esta basada en el patrón Modelo-Vista-Controlador (Figura \ref{fig:str_mvc}). Este patrón se basa en separar, el código en tres partes:
+Para la arquitectura de la aplicación se ha utilizado el patrón Modelo-Vista-Controlador (MVC). Este patrón se basa en separar la interfaz de usuario de la lógica de negocio y lo hace separando el código en 3 bloques:
 \begin{itemize}
-\item \textbf{Modelo:} Es el encargado de gestionar la base de datos, ya que es el único que se comunica con esta. Además se encarga de la lógica del negocio.
-\item \textbf{Controlador:} Actúa de intermediario entre el Modelo y la Vista, responde a eventos e invocan las peticiones al modelo.
-\item \textbf{Vista:} Es el que se encarga de interactuar con el usuario y de accionar los distintos eventos.
-\end{itemize}  
+	\item \textbf{Modelo:} Es el encargado de gestionar la información almacenada en la base de datos y transformar los datos según las reglas de negocio.
+	\item \textbf{Controlador:} Actúa de intermediario entre el Modelo y la Vista. La Vista realiza una petición al Controlador y éste se encarga de obtener los datos a través del Modelo y enviarlos a la Vista.
+	\item \textbf{Vista:} Es la interfaz de usuario. Se encarga de realizar peticiones de datos al Controlador y mostrar la información necesaria con la que el usuario pueda interactuar.
+\end{itemize}
+Un ejemplo de este flujo entre los 3 bloques se puede ver en la Figura \ref{fig:str_mvc}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=5cm]{./Imagenes/Figuras/mvc_structure.png}
+	\caption{Estructura de Modelo-Vista-Controlador}
+	\label{fig:str_mvc}
+\end{figure}
 			
 Esta decisión fue tomada debido a las grandes ventajas que este modelo impone en el código, algunas de estas son:
-
 \begin{itemize}
 	\item La separación clara de dónde tiene que ir cada tipo de lógica, facilita el mantenimiento y la escalabilidad de la aplicación.
 	\item La facilidad para la realización de pruebas unitarias de los componentes y para el manejo de errores.
@@ -24,13 +27,6 @@ Esta decisión fue tomada debido a las grandes ventajas que este modelo impone en
 	\item La facilidad del control de versiones. 
 	\item Facilita la división de trabajo.
 \end{itemize}
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=5cm]{./Imagenes/Figuras/mvc_structure.png}
-	\caption{Estructura de Modelo-Vista-Controlador}
-	\label{fig:str_mvc}
-\end{figure}
 
 Para aplicar este patrón de la manera más ordenada posible aplicamos esta división a cada modulo/acción que la aplicación realiza. Algunas de estas divisiones son:
 \begin{itemize}
@@ -47,8 +43,19 @@ Para aplicar este patrón de la manera más ordenada posible aplicamos esta divisi
 
 Como resultado, cada modulo tendrá: por una parte distintas vistas para sus distintas acciones y, por otra, un controlador y un modelo. Por ejemplo, en el caso del modulo ``Sesiones'', una de sus vistas es ``Modificar Datos de la Sesión'' que se encarga de mostrar la pantalla para modificar los distintos datos de una sesión. Además de eso, tiene un modelo que se encarga de pedir los datos de la sesión a la base de datos y un controlador que comunica la vista con el modelo.
 
-\section{Base de datos}
+La implementación de esta aplicación se ha llevado a cabo con la siguientes herramientas:
+\begin{itemize}
+	\item Para el front-end de la aplicación hemos utilizado HTML y CSS por la facilidad de uso y generación de código. También, hemos incorporado Bootstrap para los estilos de la aplicación ya que simplifica la generación de formulario. Además, Bootstrap genera código Responsive que es uno de los requisitos para poder utilizar la aplicación en tablets. Hemos usado una librería de Bootstrap llamada Fontawesome que es un conjunto de herramientas de fuentes e iconos basado en CSS.
+	 Para la conexión con el Backend hemos utilizado JavaScript por sencillez y porque es un lenguaje que conocemos todos los integrantes del grupo. Dentro de JavaScript hemos utilizado un plugin para realizar el calendario llamado FullCalendar, que ofrece bastantes facilidades para ello.
+	\item Para el back-end hemos utilizado PHP porque lo hemos utilizado en otras asignaturas y nos resulta muy familiar.
+	\item Para almacenar los datos hemos utilizado el motor de base de datos MySQL porque es de código abierto.
+	\item Como servidor local hemos utilizado Xampp porque es un servidor de plataforma libre y nos da muchas facilidades porque integra varias aplicaciones (MySQL, PHP). Además, se puede ejecutar en diversos sistemas operativos que nos ha facilitado colaborar en equipo.
+	\item Como herramienta de control de versiones hemos utilizao GitHub ya que es donde alojamos todo el material del TFG.
+	\item Para desarrollar la aplicación utilizamos  Visual Studio Code como editor de código puesto que consideramos que es el más completo y con el que más familiarizados estamos.
+	\item Para el desarrollo de la lógica de la aplicación hemos aplicado programación orientada a objetos para tratar los diferentes elementos con los que trabaja el backend de la aplicación.
+\end{itemize}
 
+\section{Base de datos}
 Tras realizar un estudio cerciorado de las necesidades del proyecto. Observamos que para el modelo de datos de la aplicación, teníamos que decidir entre dos opciones: coger una base de datos relacional o una base de datos no relacional.
 
 Las bases de datos no relacionales están pensadas para ser utilizadas cuando: la estructura de la base datos no tiene esquemas específicos, se guardan grandes cantidades de información o se realizan grandes movimientos de datos en momentos puntuales. Lo cual no es el caso de nuestra aplicación. Ademas su compatibilidad con servidores y distintos sistemas operativos es mas complicada. Por lo mencionado anteriormente, decidimos que la mejor forma de guardar la base de datos de nuestra aplicación sería una base de datos relacional, y entre ellas escogimos MySQL. Por varias razones:
@@ -90,28 +97,11 @@ A continuación, se explicarán algunas de las tablas que se pueden observar en la
 \end{figure}
 
 
-
-\section{Implementación }
-
-Una vez establecida la arquitectura de la base de datos y de la aplicación, se comienza a realizar la implementación de la aplicación siguiendo los patrones definidos en el capítulo anterior.
-
-La implementación de esta aplicación se ha llevado a cabo con la siguientes herramientas:
-\begin{itemize}
-	\item Para el front-end de la aplicación hemos utilizado HTML y CSS por la facilidad de uso y generación de código. También, hemos incorporado Bootstrap para los estilos de la aplicación ya que simplifica la generación de formulario. Además, Bootstrap genera código Responsive que es uno de los requisitos para poder utilizar la aplicación en tablets. Hemos usado una librería de Bootstrap llamada Fontawesome que es un conjunto de herramientas de fuentes e iconos basado en CSS.
-	 Para la conexión con el Backend hemos utilizado JavaScript por sencillez y porque es un lenguaje que conocemos todos los integrantes del grupo. Dentro de JavaScript hemos utilizado un plugin para realizar el calendario llamado FullCalendar, que ofrece bastantes facilidades para ello.
-	\item Para el back-end hemos utilizado PHP porque lo hemos utilizado en otras asignaturas y nos resulta muy familiar.
-	\item Para almacenar los datos hemos utilizado el motor de base de datos MySQL porque es de código abierto.
-	\item Como servidor local hemos utilizado Xampp porque es un servidor de plataforma libre y nos da muchas facilidades porque integra varias aplicaciones (MySQL, PHP). Además, se puede ejecutar en diversos sistemas operativos que nos ha facilitado colaborar en equipo.
-	\item Como herramienta de control de versiones hemos utilizao GitHub ya que es donde alojamos todo el material del TFG.
-	\item Para desarrollar la aplicación utilizamos  Visual Studio Code como editor de código puesto que consideramos que es el más completo y con el que más familiarizados estamos.
-	\item Para el desarrollo de la lógica de la aplicación hemos aplicado programación orientada a objetos para tratar los diferentes elementos con los que trabaja el backend de la aplicación.
-\end{itemize}
-
-A continuación, se describirá la interfaz gráfica de la aplicación, así como los objetos relacionados con cada parte de esta interfaz gráfica.
+\section{Funcionalidades}
+A continuación, se describirán todas las funcionalidades de la aplicación.
 
 \subsection{Login}
-
-En primer lugar, al entrar en la aplicación aparece la página de login.php, donde el terapeuta o cuidador entrará en la aplicación. Aparece un cuadro para introducir las credenciales e iniciar sesión (Figura \ref{fig:login}). 
+Pantalla que permite al cuidador y al terapeuta iniciar sesión en la aplicación. Para ello, tienen que introducir su correo y contraseña como se muestra en la Figura \ref{fig:login}. En caso de que uno de los dos sea incorrecto se mostrará el error "Usuario o contraseña incorrectos.", en caso contrario se accederá a la pantalla inicial de la aplicación tal y como se muestra en el diagrama de secuencia que se muestra en la Figura .
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/login.png}
@@ -119,185 +109,9 @@ En primer lugar, al entrar en la aplicación aparece la página de login.php, dond
 	\label{fig:login}
 \end{figure}
 
-\subsection{Sesión del Terapeuta}
-
-Una vez logueado en la aplicación como terapeuta nos aparecerá una página (Figura \ref{fig:listPac}) donde se muestra distintos componentes:
-\begin{itemize}
-	\item La cabecera y el pie de pagina: La cabecera contiene el logo de la aplicación en la parte izquierda, y en la otra esquina, los iconos para acceder a la lista de pacientes, acceder a la mensajería y cerrar la sesión. El pie de página solamente muestra el sello de copyright. Estas dos secciones se mantendrán mientras la sesión esté iniciada.
-	\item: Listado de pacientes: donde se mostraran todos los pacientes que el terapeuta tenga registrado o asignado.
-\end{itemize}
-
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/listPacientes.png}
-  	\caption{Listado de pacientes.}
-	\label{fig:listPac}
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/diagramas_secuencia/login.png}
+  	\caption{Diagrama de secuencia del proceso login.}
+	\label{fig:login}
 \end{figure}
-
-
-Cuando seleccionemos un paciente de la lista, se nos redirigirá a una página donde nos aparecerán la información general del paciente seleccionado. Su nombre, apellidos, genero, lugar y fecha de nacimiento, nacionalidad, dirección y tipo de residencia (Figura \ref{fig:pac}). Además, mientras un paciente esté seleccionado, aparecerá un componente nuevo: La barra de navegación. Por un lado nos permitirá navegar por todas las secciones (sesiones, evaluaciones, historias de vida y calendario). Por otra, nos mostrará un resumen de la información del paciente.  
-
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/paciente.png}
-  	\caption{Información del paciente.}
-	\label{fig:pac}
-\end{figure}
-s
-A continuación se explican cada una de las secciones de esta barra de navegación:
- 
-\begin{itemize}
- 	
- 	\item Sesión: Este componente se encarga de la lógica del tratamiento de sesiones. A través de él accedemos al listado de las sesiones de un paciente (Figura \ref{fig:listses}). De cada sesión del listado aparece: su fecha, la descripción, si esta finalizada o no y las opciones de editar, ver y eliminar. Si seleccionamos en la fecha o en en el botón de ver, nos aparecerá un formulario no editable con la información de la sesión como son la fecha, etapa, terapeuta que realiza la sesión, objetivo, descripción, barreras, facilitadores, con el material a utilizar, como pueden ser recuerdos o archivos multimedia (como podemos ver en las Figuras \ref{fig:ses} y \ref{fig:ses2}. Si seleccionamos el botón de editar, nos aparecerá el mismo formulario con los datos de la sesión pero en este caso si que se podrán editar y guardar los cambios realizados. Si seleccionamos eliminar, se eliminará la sesión.
- 				
- \begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/sesiones.png}
-  	\caption{Listado sesiones.}
-  	
-	\label{fig:listses}
-\end{figure}
-
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/ses.png}
-  	\caption{Información de la  sesión.}
-  	\label{fig:ses}
-\end{figure}
-
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/ses2.png}
-  	\caption{Información de la sesión.}
-  	\label{fig:ses2}
-\end{figure}
-
-\item Informe de sesión: Componente con el que se manejan los informes de las sesiones. Estos informes son realizados por el terapeuta una vez terminada la sesión con el paciente. Cuando accedemos a la página, podremos visualizar un listado con todos los informes de sesión (Figura: \ref{fig:InfSes}). De cada informe de la lista se muestra el número del informe, la fecha y los botones de visualización, edición y borrado. Si en un informe de la lista seleccionamos en el numero del informe o en en el botón de ver, nos aparecerá un formulario no editable con la respuesta del paciente a la sesión y las observaciones realizadas por el terauta (Figura: \ref{fig:datSes}). Además aparecerá un botón que permitirá generar un PDF con la información detallada anteriormente(Figura: \ref{fig:pdfSes}). Si en la lista de informes, se pulsa el botón de editar, los campos del formulario no estarán bloqueados y serán editables.
- 		\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/infSes.png}
-  	\caption{Listado informes de sesion.}
-	\label{fig:InfSes}
-\end{figure}
- 		\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/datInfSes.png}
-  	\caption{Datos informe de sesión.}
-  	
-	\label{fig:datSes}
-\end{figure}
-	\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/pdfInfSes.png}
-  	\caption{PDF informe de sesión.}
-  	
-	\label{fig:pdfSes}
-\end{figure}
- 		
- 		\item Informe de seguimiento: Este componente permite la creación de los informes de seguimiento de un paciente. Los cuales se realizan cada 3 meses para diagnosticar el estado del paciente. En la página aparecerá un listado con todos los informes de seguimiento realizados con la fecha de realización, el diagnostico, un enlace para ver los datos del informe y las opciones de visualizar, editar y eliminar el informe (Figura \ref{fig:infSegui}).
-  \begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/infSegui.png}
-  	\caption{Listado informes de seguimiento.}
-	\label{fig:infSegui}
-\end{figure}
-
- 		Esta lista sigue la misma mecánica que las listas anteriores, cambiando la información que se muestra en el formulario. Este, muestra las diferentes escalas( GDS, minimental/MEC de Lobo y CDR) con su respectivo valor y la fecha en la que se documentó el dato, con la posibilidad de introducir otro dato, también el diagnóstico final y un area de texo con las observaciones(Figura \ref{fig:datInfSegui}). Por último, esta la posibilidad de generas un PDF con la información anteriormente detallada(Figura \ref{fig:pdfInfSegui}).
- 		
- 		\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/datInfSegui.png}
-  	\caption{Datos informe de seguimiento.}
-	\label{fig:datInfSegui}
-\end{figure}
-	\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/pdfInfSegui.png}
-  	\caption{PDF con datos informe de seguimiento.}
-	\label{fig:pdfInfSegui}
-\end{figure}
-
-		\item Historia de vida: En cuanto a este objeto en la aplicación podemos verlo en el cuadro de navegación anteriormente comentado y dentro de este estarán las opciones de generar historia de vida, recuerdos y persona relacionada. En la opción de generar historia de vida podremos seleccionar un rango de tiempo, una etapa de la vida, una categoría de los recuerdos y una etiqueta, según sea el recuerdo positivo, negativo o neutro,como vemos en la figura \ref{fig:GHV}, y una vez todo lo anterior seleccionado se podrá generar un libro de vida (figura \ref{fig:lv1} y figura \ref{fig:lv2}) con todos esos recuerdos que podremos ver en la página de la aplicación y además podremos generar un pdf de este libro de vida (figura \ref{fig:pdfLV}).
-	\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/genHV.png}
-  	\caption{Generar historia de vida.}
-  	\label{fig:GHV}
-\end{figure}
-		
-	\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/librodevida1.png}
-  	\caption{Pagina libro de vida.}
-  	\label{fig:lv1}
-\end{figure}
-
-	\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/librodevida2.png}
-  	\caption{Pagina libro de vida.}
-  	\label{fig:lv2}
-\end{figure}
-
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/pdfLV.png}
-  	\caption{PDF libro de vida.}
-  	\label{fig:pdfLV}
-\end{figure}
- 		\item Persona relacionada: Este objeto esta relacionado con el paciente. A partir del navegador de la cabecera, en la parte de historias de vida se accede a la sección de personas relacionadas, una vez allí se nos muestra un listado con las personas relacionadas del paciente que tiene seleccionado el terapeuta (Figura \ref{fig:listpr}). Cada persona en el listado contiene el nombre, apellido, tipo de relación, correo electrónico y la posibilidad de ver, editar o borrar, según la opción elegida nos aparecerá un formulario con los campos bloqueados si has elegido la opción de ver o con la posibilidad de modificar los campos en caso de elegir la opción de editar (Figura \ref{fig:formpr}).
- 		\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/listPersRel.png}
-  	\caption{Listado personas relacionadas.}
-  	
-	\label{fig:listpr}
-\end{figure}
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/formPR.png}
-  	\caption{Formulario personas relacionadas.}
-  	
-	\label{fig:formpr}
-\end{figure}
- 		\item Recuerdo: Este objeto esta relacionado con el paciente y con las personas relacionadas. A partir del navegador de la cabecera, en la parte de historias de vida se accede a la sección de recuerdos, una vez allí se nos muestra un listado con los recuerdos  del paciente que tiene seleccionado el terapeuta (Figura \ref{fig:rec}). Cada recuerdo en el listado contiene el nombre, fecha, etapa de la vida , categoría, estado, etiqueta (positivo, neutro, negativo), categoría y unos botones con la posibilidad de ver, editar o borrar, según la opción elegida nos aparecerá un formulario con los campos bloqueados si has elegido la opción de ver o con la posibilidad de modificar los campos en caso de elegir la opción de editar (Figura \ref{fig:formRec}). Además de la información nombrada anteriormente una vez seleccionado el botón de ver o editar, también mostrará el formulario anteriormente comentado con esos campos y además con los campos de puntuación, descripción, emoción, categoría, localización; también un listado de personas relacionadas, con la posibilidad de añadir más; y la opción de añadir archivos multimedia relacionados con este recuerdo.
- 			\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/listRecuerdos.png}
-  	\caption{Listado recuerdos.}
-  	
-	\label{fig:rec}
-\end{figure}
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/formRecuerdos.png}
-  	\caption{Formulario recuerdos.}
-  	\label{fig:formRec}
-\end{figure}
-  	
- 		
- 		\item Actividad: Este objeto está directamente relacionado con el calendario, estas actividades son una especie de tareas que el terapeuta manda al cuidador del paciente y son registradas en el calendario. Con ayuda del plugin FullCalendar de JavaScript, hemos implementado un calendario donde se guardan estas actividades que están almacenadas en la base de datos.
- 		Estas actividades se añaden a través del botón del "+" que sale en la cabecera del calendario o haciendo click en el día que quieres establecer esa actividad, una vez elegida una de estas opciones, aparecerá un formulario para rellenar con los datos de la actividad (Figura: \ref{fig:formCal}). 
- 		\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/formCal.png}
-  	\caption{Formulario nueva actividad.}
-  	
-	\label{fig:formCal}
-	\end{figure}
-		\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/calendario.png}
-  	\caption{Calendario.}
-	\label{fig:Cal}
-	\end{figure}
-	Para modificar o eliminar una actividad hay que hacer click sobre esta y nos aparecerá el formulario anteriormente vacío con todos los datos rellenos y con los botones de eliminar y modificar que son mandados a un documento PHP para tratar la información según la opción elegida (Figura \ref{fig:modCal}).
- 	\end{itemize}
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/modCal.png}
-  	\caption{Modificar/eliminar actividad.}
-	\label{fig:modCal}
-	\end{figure}
-
-
