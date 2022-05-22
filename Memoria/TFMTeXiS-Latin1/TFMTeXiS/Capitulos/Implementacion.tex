@@ -449,6 +449,7 @@ A continuación se muestra la pantalla de creación del informe de sesión (ver Fig
 \end{figure}
 
 \subsection{Calendario de actividades}
+El front hace una petición al modelo actividad que recupera el listado de actividades del paciente y el front las añade en el calendario.
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/calendario.png}
@@ -457,6 +458,7 @@ A continuación se muestra la pantalla de creación del informe de sesión (ver Fig
 \end{figure}
 
 \subsection{Crear nueva actividad}
+Mediante el formulario nueva actividad el usuario genera una petición mediante el botón Registrar que recupera el gestor y hace una llamada a la función guardarActividad(actividad) del Controlador CalendarioControlador que guarda la actividad haciendo una petición al modelo Actividad y con la función guardarActividad(actividad).
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/anadirActividad.png}
@@ -465,6 +467,7 @@ A continuación se muestra la pantalla de creación del informe de sesión (ver Fig
 \end{figure}
 
 \subsection{Modificar una actividad}
+El usuario muestra una actividad del calendario y modifica sus datos mediante el botón Modificar. El gestor hace una llamada a la función guardarActividad(actividad) del Controlador CalendarioControlador que guarda la actividad haciendo una petición al modelo Actividad y con la función guardarActividad(actividad).
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/modificarActividad.png}
@@ -473,8 +476,11 @@ A continuación se muestra la pantalla de creación del informe de sesión (ver Fig
 \end{figure}
 
 \subsection{Eliminar una actividad}
+El usuario muestra una actividad del calendario y mediante el botón Eliminar actividad hace una llamada al gestor que hace una petición al Controlador CalendarioController que mediante la función eliminarActivida(idActividad) eliminar la activad llamando al modelo Actividad.
 
 \subsection{Registro de un terapeuta}
+El usuario introduce todos los datos del formulario que se muestra en la Figura \ref{fig:registroTerapeuta} y mediante el botón Guardar hace una petición que procesa el front y hace una llamada al Controlador (UsuarioController) para guardar el nuevo usuario mediante la función guardarUsuario (usuario) que hace una petición al modelo Usuario que guarda los datos en la base de datos.
+A continuación se muestra la pantalla de registro de un terapeuta (ver Figura \ref{fig:registroTerapeuta}) y el diagrama de secuencia.
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/registroTerapeuta.png}
@@ -483,6 +489,8 @@ A continuación se muestra la pantalla de creación del informe de sesión (ver Fig
 \end{figure}
 
 \subsection{Registro de un cuidador}
+El usuario introduce todos los datos del formulario que se muestra en la Figura \ref{fig:registroCuidador} y mediante el botón Guardar hace una petición que procesa el front y hace una llamada al Controlador (UsuarioController) para guardar el nuevo usuario mediante la función guardarUsuario (usuario) que hace una petición al modelo Usuario que guarda los datos en la base de datos. Además, asigna el cuidador al paciente seleccionado en el formulario mediante la función asignarCuidador (idCuidador, idPaciente) del UsuarioController y éste hace una petición al modelo Usuario que mediante la función asignarCuidador (idCuidador, idPaciente) asigna el paciente al nuevo cuidador.
+A continuación se muestra la pantalla de registro de un terapeuta (ver Figura \ref{fig:registroTerapeuta}) y el diagrama de secuencia.
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/registroCuidador.png}
@@ -491,6 +499,7 @@ A continuación se muestra la pantalla de creación del informe de sesión (ver Fig
 \end{figure}
 
 \subsection{Cambio de contraseña de un usuario}
+La aplicación permite recuperar la contraseña por si un usuario no la recuerda. El usuario debe indicar su correo electrónico y el UsuarioController comprueba si el usuario existe mediante la función comprobarUsuario (usuario). En caso de que exista se le pide la nueva contraseña y se modifica mediante la función modificarContrasenia (contraseña, correo) que hace una llamada al modelo Usuario y encripta y modifica su contraseña mediante la función modificarUsuario(contraseña, correo).
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/cambioContrasena.png}
