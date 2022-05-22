@@ -370,3 +370,58 @@ Pantalla que permite al cuidador y al terapeuta iniciar sesión en la aplicación.
   	\caption{Diagrama de secuencia del proceso login.}
 	\label{fig:login}
 \end{figure}
+
+
+\subsection{Listado}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/listado.png}
+  	\caption{Pantalla del listado de usuarios.}
+	\label{fig:listado}
+\end{figure}
+
+\subsection{Eliminar}
+El botón de eliminar lo podemos encontrar en todas las listas con el icono de una basura como podemos observar en la Figura \ref{fig:listado}. Para poder hacer uso de él simplemente se  haría click en él y posteriormente la aplicación eliminaría la el paciente (en el caso de que estuviésemos en la lista de los pacientes) haciendo llegar una petición a la base de datos con la orden de eliminar por la id del usuario.
+
+
+\subsection{Modificar}
+El botón de modificar a su vez lo podemos encontrar en todas las listas con el icono de un lápiz, como podemos observar en la Figura \ref{fig:modificar}. Para poder hacer uso de él clicaríamos en él y posteriormente la aplicación nos llevaría a la página de edición en la que una vez hayamos seleccionado el botón guardar, mandará una orden a la base de datos para que ésta sea modificada. Posteriormente una vez volvamos a acceder a aquella lista que modificada, podremos observar que se ha hecho el cambio. 
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/modificar.png}
+  	\caption{Botón de modificación.}
+	\label{fig:modificar}
+\end{figure}
+
+\subsection{Generar Libro de vida y PDF}
+Una ver que queramos generar un libro de vida o de PDF del paciente seleccionamos en una de ambas opciones donde se recogerá la información de la base de datos para posteriormente mostrarla en forma de libro de vida \ref{fig:libroDeVida} o de PDF \ref{fig:pdf}, ambos recogerán la misma información sin embargo, su presentación es lo que las distingue.
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/libroDeVida.png}
+  	\caption{Generar Libro de Vida.}
+	\label{fig:libroDeVida.png}
+\end{figure}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/pdf.png}
+  	\caption{Generar PDF.}
+	\label{fig:pdf.png}
+\end{figure}
+
+\subsection{Logout}
+Se encuentra en la parte superior derecha de la pantalla y permite al usuario salir de la aplicación. Este botón lo podemos ubicar fácilmente en la siguiente Figura \ref{fig:logout}. Y le correspondería el siguiente diagrama de secuencia
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/logout.png}
+  	\caption{Botón de logout.}
+	\label{fig:login}
+\end{figure}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/diagramas_secuencia/logout.png}
+  	\caption{Diagrama de secuencia del proceso logout.}
+	\label{fig:login}
+\end{figure}
