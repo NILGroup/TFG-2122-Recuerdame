@@ -372,49 +372,137 @@ Pantalla que permite al cuidador y al terapeuta iniciar sesión en la aplicación.
 \end{figure}
 
 
-\subsection{Listado}
-
+\subsection{Listado de registros}
+En la aplicación se pueden encontrar los siguientes listados: pacientes, sesiones, informes de sesión, informes de evaluación, recuerdos y personas relacionadas.
+En este caso vamos a explicar el listado de pacientes. El listado muestra todos los registros tal y como se muestra en la Figura \ref{fig:listado} y, en el caso de que un listado tenga una columna de fecha, éste se muestra ordenado por dicha fecha. En todas las listas se puede añadir un nuevo registro, ver, modificar y eliminar. Además, se pueden ordenar ascendente o descendentemente por cada columna y tienen un buscador para buscar en toda la lista. El usuario hace una petición al Controlador (ControladorPacientes) mediante la vista listadoPacientes, seleccionando la opción de pacientes (icono de usuarios). El Controlador, mediante la función listadoPacientes(idTerapeuta), hace una petición al modelo Paciente que recupera todos los registros filtrando por el terapeuta y, devuelve el listado para que la vista lo muestre. A continuación se muestra la pantalla de uno de ellos (ver Figura \ref{fig:listado}) el diagrama de secuencia de un de ellos que sirve como ejemplo de lo que hacen todos los listados de la aplicación.
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/listado.png}
-  	\caption{Pantalla del listado de usuarios.}
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/listado.png}
+  	\caption{Pantalla del listado de sesiones.}
 	\label{fig:listado}
 \end{figure}
 
-\subsection{Eliminar}
-El botón de eliminar lo podemos encontrar en todas las listas con el icono de una basura como podemos observar en la Figura \ref{fig:listado}. Para poder hacer uso de él simplemente se  haría click en él y posteriormente la aplicación eliminaría la el paciente (en el caso de que estuviésemos en la lista de los pacientes) haciendo llegar una petición a la base de datos con la orden de eliminar por la id del usuario.
-
-
-\subsection{Modificar}
-El botón de modificar a su vez lo podemos encontrar en todas las listas con el icono de un lápiz, como podemos observar en la Figura \ref{fig:modificar}. Para poder hacer uso de él clicaríamos en él y posteriormente la aplicación nos llevaría a la página de edición en la que una vez hayamos seleccionado el botón guardar, mandará una orden a la base de datos para que ésta sea modificada. Posteriormente una vez volvamos a acceder a aquella lista que modificada, podremos observar que se ha hecho el cambio. 
+\subsection{Crear un nuevo registro}
+Hay varios listados que permiten crear un nuevo registro. En este caso se va a explicar la creación de un nuevo paciente. En el listado de pacientes se puede encontrar el botón de añadir un nuevo registro con el botón ``Nuevo paciente'' en el caso del listado pacientes y el botón con el icono ``+'' en el resto de listados. El usuario hace una petición al front mediante el botón y la vista llama al gestor de las vistas del front para hacer una redirección al formulario de nuevo paciente tal y como se puede ver en la Figura \ref{fig:anadir}. Para poder crear un nuevo registro es necesario introducir todos los datos obligatorios que se muestran en la pantalla mediante un asterisco (``*''). El usuario hace una petición mediante el botón Guardar y la vista manda al gestor los datos del nuevo registro para validarlos. Una vez el gestor ha validado los datos, hace una petición al Controlador (ControladorPacientes) que mediante la función nuevoPaciente (paciente) hace una petición al modelo Paciente que se encarga de añadir el nuevo registro a la base de datos.
+En la aplicación se pueden encontrar los siguientes formularios para crear nuevos registros: nuevo paciente, nueva sesión, nueva informe de seguimiento, nuevo informe de sesión, nuevo recuerdo y una persona relacionada. A continuación se muestra la pantalla de uno de ellos (ver Figura \ref{fig:anadir}) el diagrama de secuencia de un de ellos que sirve como ejemplo de lo que hacen todos los listado de la aplicación.
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/modificar.png}
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/anadir.png}
+  	\caption{Crear un nuevo paciente.}
+	\label{fig:anadir}
+\end{figure}
+
+\subsection{Modificar un registro}
+En la aplicación se pueden encontrar los siguientes formularios para modificar registros: modificar paciente, modificar sesión, modificar informe de seguimiento, modificar informe de sesión, modificar recuerdo y modificar una persona relacionada.
+En este caso vamos a explicar como se modifica un paciente. Mediante el botón de modificar (icono de un lápiz) que se encuentra en el listado de pacientes tal y como podemos observar en la Figura \ref{fig:listado}, el usuario hace una petición para que posteriormente la aplicación nos llevaría a la página de edición en la que una vez hayamos seleccionado el botón guardar, mandará una orden a la base de datos para que ésta sea modificada. Posteriormente una vez volvamos a acceder a aquella lista que modificada, podremos observar que se ha hecho el cambio. A continuación se muestra la pantalla de uno de ellos (ver Figura \ref{fig:modificar}) el diagrama de secuencia de un de ellos que sirve como ejemplo de lo que hacen todos los formularios de modificar un registro. 
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/modificar.png}
   	\caption{Botón de modificación.}
 	\label{fig:modificar}
 \end{figure}
 
-\subsection{Generar Libro de vida y PDF}
-Una ver que queramos generar un libro de vida o de PDF del paciente seleccionamos en una de ambas opciones donde se recogerá la información de la base de datos para posteriormente mostrarla en forma de libro de vida \ref{fig:libroDeVida} o de PDF \ref{fig:pdf}, ambos recogerán la misma información sin embargo, su presentación es lo que las distingue.
+\subsection{Eliminar un registro}
+El botón de eliminar lo podemos encontrar en todas las listas con el icono de una basura como podemos observar en la Figura \ref{fig:listado}. Para poder hacer uso de él simplemente se haría click en él y posteriormente la aplicación eliminaría la el paciente (en el caso de que estuviésemos en la lista de los pacientes) haciendo llegar una petición a la base de datos con la orden de eliminar por la id del usuario.
+En la aplicación se pueden eliminar los siguientes registros: paciente, sesión, informe de seguimiento, informe de sesión, recuerdo y persona relacionada.
+
+\subsection{Generar Libro de vida}
+El usuario indica los filtros que desee (fecha, etiqueta y etapa de vida) para generar la Historia de Vida y hace una petición mediante el botón ``Generar Historia de Vida'' y el front envía una petición al gestor de las vistas del front que a su vez llama al Controlador (ControladorHistoriaVida) que mediante la función generarLibroHistoriaVida (filtros) hace una petición al modelo Recuerdo para que recupere la información de la base de datos y devuelva un listado de recuerdos.
+A continuación se muestra el libro de Historia de Vida (ver Figura \ref{fig:libroDeVida}) el diagrama de secuencia.
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/libroDeVida.png}
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/libroDeVida.png}
   	\caption{Generar Libro de Vida.}
 	\label{fig:libroDeVida.png}
 \end{figure}
 
+\subsection{Generar PDF}
+Se pueden generar 3 pdf en la aplicación que son: Historia de Vida, Informe de sesión e Informe de Seguimiento. En este caso vamos a explicar como se genera el PDF de Historia de Vida. El usuario genera una petición mediante el botón ``Generar PDF'' y el front envía una petición al gestor de las vistas del front que a su vez llama al Controlador (ControladorHistoriaVida) que mediante la función generarPDFHistoriaVida (filtros) hace una petición al modelo Recuerdo para que recupere la información de la base de datos y devuelva un listado de recuerdos.
+A continuación se muestra el PDF de Historia de Vida (ver Figura \ref{fig:pdf}) el diagrama de secuencia. 
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/pdf.png}
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/pdf.png}
   	\caption{Generar PDF.}
 	\label{fig:pdf.png}
+\end{figure}
+
+\subsection{Añadir un registro ya existente}
+En el caso de los archivos multimedia en recuerdos y sesiones se pueden añadir archivos ya existentes en otros recuerdos o sesiones. En el caso de las sesiones se pueden añadir recuerdos ya existentes del paciente. Y en el caso de los recuerdos se pueden añadir personas relacionadas ya existentes del paciente.
+En este caso vamos a explicar como se añade una persona relacionada ya existente en otros recuerdos del paciente.
+El usuario hace una petición mediante el botón ``Añadir existente'' y el front envía una petición al Controlador (ControladorPersonasRelacionadas) que mediante la función personasRelacionadasRecuerdo(idRecuerdo) envía una petición al modelo PersonaRelacionada para que devuelva el listado de las personas relacionadas de un paciente y la vista muestre el listado indicando cuáles ya existen en el recuerdo y cuáles no. El usuario selecciona/deselecciona las personas relacionadas que quiere añadir o quitar del recuerdo y envía una petición mediante el botón ``Añadir'' para que el front llame al Controlador (a través del gestor del front). El Controlador (ControladorPersonaRelacionada) envía una petición al modelo para que elimine todas las personas relacionadas de un recuerdo y asigne, mediante la función guardarPersonasRelacionadas(idRecuerdo, lista), las que ha seleccionado el usuario mediante la vista.
+A continuación se muestra la lista de personas relacionadas asignadas a un recuerdo (ver Figura \ref{fig:anadirExistente.png}) y el diagrama de secuencia. 
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/anadirExistente.png}
+  	\caption{Añadir personas relacionadas a un recuerdo.}
+	\label{fig:anadirExistente.png}
+\end{figure}
+
+\subsection{Crear un informe de sesión}
+El usuario hace una petición al front mediante el botón de informe (icono de un documento) en el listado de sesiones y la vista llama al gestor de las vistas del front para hacer una redirección al formulario de nuevo informe de seguimiento tal y como se puede ver en la Figura \ref{fig:anadirInformeSesion}. El usuario hace una petición mediante el botón Guardar y la vista manda al gestor los datos del nuevo registro para validarlos. Una vez el gestor ha validado los datos, hace una petición al Controlador (InformeSesionController) que mediante la función guardarInformeSesion (informe) hace una petición al modelo InformeSesion que se encarga de añadir el nuevo registro a la base de datos.
+A continuación se muestra la pantalla de creación del informe de sesión (ver Figura \ref{fig:anadirInformeSesion}) y el diagrama de secuencia de un de ellos que sirve como ejemplo de lo que hacen todos los listado de la aplicación.
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/anadirInformeSesion.png}
+  	\caption{Crear un nuevo informe de sesión.}
+	\label{fig:anadirInformeSesion}
+\end{figure}
+
+\subsection{Calendario de actividades}
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/calendario.png}
+  	\caption{Calendario de actividades.}
+	\label{fig:calendario}
+\end{figure}
+
+\subsection{Crear nueva actividad}
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/anadirActividad.png}
+  	\caption{Crear nueva actividad.}
+	\label{fig:anadirAcitvidad}
+\end{figure}
+
+\subsection{Modificar una actividad}
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/modificarActividad.png}
+  	\caption{Modificar actividad.}
+	\label{fig:modificarActividad}
+\end{figure}
+
+\subsection{Eliminar una actividad}
+
+\subsection{Registro de un terapeuta}
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/registroTerapeuta.png}
+  	\caption{Registro de un nuevo terapeuta.}
+	\label{fig:registroTerapeuta}
+\end{figure}
+
+\subsection{Registro de un cuidador}
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/registroCuidador.png}
+  	\caption{Registro de un nuevo cuidador.}
+	\label{fig:registroCuidador}
+\end{figure}
+
+\subsection{Cambio de contraseña de un usuario}
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/cambioContrasena.png}
+  	\caption{Cambio de contraseña de un usuario.}
+	\label{fig:cambioContrasena}
 \end{figure}
 
 \subsection{Logout}
 Se encuentra en la parte superior derecha de la pantalla y permite al usuario salir de la aplicación. Este botón lo podemos ubicar fácilmente en la siguiente Figura \ref{fig:logout}. Y le correspondería el siguiente diagrama de secuencia
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/logout.png}
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/logout.png}
   	\caption{Botón de logout.}
 	\label{fig:login}
 \end{figure}

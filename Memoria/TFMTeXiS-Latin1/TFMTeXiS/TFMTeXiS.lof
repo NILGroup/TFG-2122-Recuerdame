@@ -1,9 +1,9 @@
-\babel@toc {spanish}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}
+\babel@toc {english}{}
+\babel@toc {spanish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ejemplo palabra inicial recomendada ``pedir'' donde poder a\~nadir relaciones con archivos multimedia o palabras clave.\relax }}{13}{figure.caption.35}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Grafo resultante de la categor\IeC {\'\i }a ``vacaciones'' tras la evaluaci\'on con usuarios.\relax }}{14}{figure.caption.36}%
@@ -19,7 +19,7 @@
 \contentsline {figure}{\numberline {2.12}{\ignorespaces bienvenidabot\relax }}{23}{figure.caption.49}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces im\'agenes bot\relax }}{23}{figure.caption.50}%
 \contentsline {figure}{\numberline {2.14}{\ignorespaces pregunta bot\relax }}{24}{figure.caption.51}%
-\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Listado de los pacientes del terapeuta en el prototipo de Cristina.\relax }}{38}{figure.caption.84}%
@@ -164,22 +164,31 @@
 \contentsline {figure}{\numberline {5.27}{\ignorespaces Tabla de base de datos \texttt {recuerdo\char `_multimedia}.\relax }}{110}{figure.caption.282}%
 \contentsline {figure}{\numberline {5.28}{\ignorespaces Pagina de login.\relax }}{111}{figure.caption.285}%
 \contentsline {figure}{\numberline {5.29}{\ignorespaces Diagrama de secuencia del proceso login.\relax }}{112}{figure.caption.286}%
-\contentsline {figure}{\numberline {5.30}{\ignorespaces Pantalla del listado de usuarios.\relax }}{112}{figure.caption.288}%
-\contentsline {figure}{\numberline {5.31}{\ignorespaces Bot\'on de modificaci\'on.\relax }}{112}{figure.caption.291}%
-\contentsline {figure}{\numberline {5.32}{\ignorespaces Generar Libro de Vida.\relax }}{113}{figure.caption.293}%
-\contentsline {figure}{\numberline {5.33}{\ignorespaces Generar PDF.\relax }}{113}{figure.caption.294}%
-\contentsline {figure}{\numberline {5.34}{\ignorespaces Bot\'on de logout.\relax }}{113}{figure.caption.296}%
-\contentsline {figure}{\numberline {5.35}{\ignorespaces Diagrama de secuencia del proceso logout.\relax }}{114}{figure.caption.297}%
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Pantalla del listado de sesiones.\relax }}{112}{figure.caption.288}%
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Crear un nuevo paciente.\relax }}{113}{figure.caption.290}%
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Bot\'on de modificaci\'on.\relax }}{114}{figure.caption.292}%
+\contentsline {figure}{\numberline {5.33}{\ignorespaces Generar Libro de Vida.\relax }}{115}{figure.caption.295}%
+\contentsline {figure}{\numberline {5.34}{\ignorespaces Generar PDF.\relax }}{116}{figure.caption.297}%
+\contentsline {figure}{\numberline {5.35}{\ignorespaces A\~nadir personas relacionadas a un recuerdo.\relax }}{117}{figure.caption.299}%
+\contentsline {figure}{\numberline {5.36}{\ignorespaces Crear un nuevo informe de sesi\'on.\relax }}{118}{figure.caption.301}%
+\contentsline {figure}{\numberline {5.37}{\ignorespaces Calendario de actividades.\relax }}{118}{figure.caption.303}%
+\contentsline {figure}{\numberline {5.38}{\ignorespaces Crear nueva actividad.\relax }}{119}{figure.caption.305}%
+\contentsline {figure}{\numberline {5.39}{\ignorespaces Modificar actividad.\relax }}{119}{figure.caption.307}%
+\contentsline {figure}{\numberline {5.40}{\ignorespaces Registro de un nuevo terapeuta.\relax }}{120}{figure.caption.310}%
+\contentsline {figure}{\numberline {5.41}{\ignorespaces Registro de un nuevo cuidador.\relax }}{120}{figure.caption.312}%
+\contentsline {figure}{\numberline {5.42}{\ignorespaces Cambio de contrase\~na de un usuario.\relax }}{121}{figure.caption.314}%
+\contentsline {figure}{\numberline {5.43}{\ignorespaces Bot\'on de logout.\relax }}{121}{figure.caption.316}%
+\contentsline {figure}{\numberline {5.44}{\ignorespaces Diagrama de secuencia del proceso logout.\relax }}{122}{figure.caption.317}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Cuestionario SUS de Iv\'an\relax }}{118}{figure.caption.309}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Cuestionario SUS de Adriana\relax }}{118}{figure.caption.310}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Resultado SUS de Iv\'an\relax }}{119}{figure.caption.314}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultado SUS de Adriana\relax }}{119}{figure.caption.314}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Cuestionario SUS de Iv\'an\relax }}{126}{figure.caption.329}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Cuestionario SUS de Adriana\relax }}{126}{figure.caption.330}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Resultado SUS de Iv\'an\relax }}{127}{figure.caption.334}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultado SUS de Adriana\relax }}{127}{figure.caption.334}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\babel@toc {english}{}\relax 
+\babel@toc {english}{}
 \addvspace {10\p@ }
-\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
