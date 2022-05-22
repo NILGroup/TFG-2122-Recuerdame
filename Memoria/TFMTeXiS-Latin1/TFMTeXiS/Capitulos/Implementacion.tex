@@ -68,33 +68,288 @@ Las bases de datos no relacionales están pensadas para ser utilizadas cuando: la
 \end{itemize}	
 
 La estructura de la base de datos (Figura \ref{fig:str_bd}) fue definida, en parte, por toda la información aportada por los terapeutas durante las entrevistas y durante la evaluación del diseño competitivo.
-
-A continuación, se explicarán algunas de las tablas que se pueden observar en la base de datos:
-\begin{itemize}
-	\item Paciente: Información del paciente a tratar.
-	\item Recuerdo: Información de los recuerdos del paciente.
-	\item Para los datos de los recuerdos que necesitaban una lista de opciones como la etapa de vida, se crearon varias tablas con datos pre-definidos y que se pueden añadir, modificar o borrar. Estas tablas son las siguientes:
-	\begin{itemize}
-		\item Categoría: Indica una forma de etiquetar los recuerdos.
-		\item Etiqueta: Indica si el recuerdo es positivo, negativo o neutro.
-		\item Etapa: Indica la etapa de vida en la que sucedió ese recuerdo.
-		\item Emoción: Indica la emoción con la que el usuario recuerda el momento.
-		\item Estado: Indica como el paciente conserva el recuerdo en su memoria.
-	\end{itemize}
-	 \item Sesión: Información sobre las distintas sesiones para el usuario.
-	 \item Usuario: Información del terapeuta.
-	 \item Evaluación: Información sobre el informe de seguimiento del usuario.
-	 \item Persona relacionada: Contactos cercanos del usuario. Al igual que los recuerdos, personas relacionadas guarda una lista de "tipo de relación" que indica la relación que tiene el paciente con su contacto.
-	 \item Actividad: Guarda las actividades puestas en el calendario.
-	 \item Multimedia: Guarda las imágenes, vídeos o audios que se utilizarán durante las funcionalidades de la aplicación.
-\end{itemize}
-
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=14cm]{./Imagenes/Figuras/estructura_bd.jpeg}
+	\includegraphics[width=17cm]{./Imagenes/Figuras/estructura_bd.jpeg}
 	\caption{Estructura de la base de datos}
 	\label{fig:str_bd}
 \end{figure}
+
+\subsection{Tabla usuario}
+Contiene toda la información de los usuarios (terapeutas y cuidadores) que pueden iniciar sesión en la aplicación. Los atributos se pueden ver en la Figura \ref{fig:bd_usuario}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/usuario.png}
+	\caption{Tabla de base de datos usuario.}
+	\label{fig:bd_usuario}
+\end{figure}
+
+\subsection{Tabla paciente}
+Tabla con la información de los pacientes a tratar que podrán ser asignados a los terapeutas o a un cuidador. Los atributos se pueden ver en la Figura \ref{fig:bd_paciente}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/paciente.png}
+	\caption{Tabla de base de datos paciente.}
+	\label{fig:bd_paciente}
+\end{figure}
+
+Esta tabla tiene las siguientes foreign keys:
+\begin{itemize}
+	\item \verb|FK_CUIDADOR_PACIENTE|: referencia a la tabla usuario.
+\end{itemize}
+
+\subsection{Tabla sesion}
+Tabla con la información de las sesiones que el terapeuta realiza con los pacientes. Los atributos se pueden ver en la Figura \ref{fig:bd_sesion}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/sesion.png}
+	\caption{Tabla de base de datos sesion.}
+	\label{fig:bd_sesion}
+\end{figure}
+
+Esta tabla tiene las siguientes foreign keys:
+\begin{itemize}
+	\item \verb|FK_SESION_ETAPA|: referencia a la tabla etapa.
+	\item \verb|FK_SESION_PACIENTE|: referencia a la tabla paciente.
+	\item \verb|FK_SESION_USUARIO|: referencia a la tabla usuario.
+\end{itemize}
+
+\subsection{Tabla recuerdo}
+Tabla con la información de los recuerdos de todos los pacientes. Los atributos se pueden ver en la Figura \ref{fig:bd_recuerdo}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/recuerdo.png}
+	\caption{Tabla de base de datos recuerdo.}
+	\label{fig:bd_recuerdo}
+\end{figure}
+
+Esta tabla tiene las siguientes foreign keys:
+\begin{itemize}
+	\item \verb|FK_RECUERDO_CATEGORIA|: referencia a la tabla categoria.
+	\item \verb|FK_RECUERDO_EMOCION|: referencia a la tabla emocion.
+	\item \verb|FK_RECUERDO_ESTADO|: referencia a la tabla estado.
+	\item \verb|FK_RECUERDO_ETAPA|: referencia a la tabla etapa.
+	\item \verb|FK_RECUERDO_ETIQUETA|: referencia a la tabla etiqueta.
+	\item \verb|FK_RECUERDO_PACIENTE|: referencia a la tabla paciente.
+\end{itemize}
+
+\subsection{Tabla multimedia}
+Tabla con la información de los acrhivos multimedia de todos los pacientes. Estos archivos multimedia se utilizan tanto en las sesiones como en los recuerdos. Los atributos se pueden ver en la Figura \ref{fig:bd_multimedia}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/multimedia.png}
+	\caption{Tabla de base de datos multimedia.}
+	\label{fig:bd_multimedia}
+\end{figure}
+
+\subsection{Tabla evaluacion}
+Tabla con la información de las evaluaciones que hacen los terapeutas a los pacientes para ver su progreso. Los atributos se pueden ver en la Figura \ref{fig:bd_evaluacion}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/evaluacion.png}
+	\caption{Tabla de base de datos evaluacion.}
+	\label{fig:bd_evaluacion}
+\end{figure}
+
+\subsection{Tabla \texttt{persona\char`_relacionada}}
+Tabla con la información de las personas que están relacionadas con los pacientes. Los atributos se pueden ver en la Figura \ref{fig:bd_persona_relacionada}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/persona_relacionada.png}
+	\caption{Tabla de base de datos \texttt{persona\char`_relacionada}.}
+	\label{fig:bd_persona_relacionada}
+\end{figure}
+
+Esta tabla tiene las siguientes foreign keys:
+\begin{itemize}
+	\item \verb|FK_PERSONA_RELACIONADA_TIPO_RELACION|: referencia a la tabla \texttt{tipo\char`_relacion}.
+	\item \verb|FK_PERSONA_RELACIONADA_PACIENTE|: referencia a la tabla paciente.
+\end{itemize}
+
+\subsection{Tabla actividad}
+Tabla con la información de las actividades que el terapeuta ha asignado al paciente para que las realice con su cuidador. Los atributos se pueden ver en la Figura \ref{fig:bd_actividad}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/actividad.png}
+	\caption{Tabla de base de datos actividad.}
+	\label{fig:bd_actividad}
+\end{figure}
+
+Esta tabla tiene las siguientes foreign keys:
+\begin{itemize}
+	\item \verb|FK_ACTIVIDAD_PACIENTE|: referencia a la tabla paciente.
+\end{itemize}
+
+\subsection{Tabla \texttt{tipo\char`_relacion}}
+Tabla que contiene los tipos de relación que pueden tener las personas que están relacionadas con los pacientes. Los atributos se pueden ver en la Figura \ref{fig:bd_tipo_relacion}. Esta tabla se carga inicialmente con los datos que se pueden ver en la Figura \ref{fig:bd_tipo_relacion_datos}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/tipo_relacion.png}
+	\caption{Tabla de base de datos \texttt{tipo\char`_relacion}.}
+	\label{fig:bd_tipo_relacion}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=3cm]{./Imagenes/Figuras/base_de_datos/tipo_relacion_datos.png}
+	\caption{Datos de la tabla de base de datos \texttt{tipo\char`_relacion}.}
+	\label{fig:bd_tipo_relacion_datos}
+\end{figure}
+
+\subsection{Tabla etiqueta}
+Tabla que contiene las etiquetas que pueden tener los recuerdos de los pacientes y que sirven para indicar si un recuerdo es positivo, neutro o negativo. Los atributos se pueden ver en la Figura \ref{fig:bd_etiqueta}. Esta tabla se carga inicialmente con los datos que se pueden ver en la Figura \ref{fig:bd_etiqueta_datos}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/etiqueta.png}
+	\caption{Tabla de base de datos etiqueta.}
+	\label{fig:bd_etiqueta}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=3cm]{./Imagenes/Figuras/base_de_datos/etiqueta_datos.png}
+	\caption{Datos de la tabla de base de datos etiqueta.}
+	\label{fig:bd_etiqueta_datos}
+\end{figure}
+
+\subsection{Tabla etapa}
+Tabla que contiene las etapas de vida que pueden tener las sesiones y los recuerdos de los pacientes. Los atributos se pueden ver en la Figura \ref{fig:bd_etapa}. Esta tabla se carga inicialmente con los datos que se pueden ver en la Figura \ref{fig:bd_etapa_datos}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/etapa.png}
+	\caption{Tabla de base de datos etapa.}
+	\label{fig:bd_etapa}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=3cm]{./Imagenes/Figuras/base_de_datos/etapa_datos.png}
+	\caption{Datos de la tabla de base de datos etapa.}
+	\label{fig:bd_etapa_datos}
+\end{figure}
+
+\subsection{Tabla estado}
+Tabla que contiene las tipo de estados que pueden tener los recuerdos de los pacientes y que sirven para indicar si un recuerdo está conservado, en riesgo de perder o perdido. Los atributos se pueden ver en la Figura \ref{fig:bd_estado}. Esta tabla se carga inicialmente con los datos que se pueden ver en la Figura \ref{fig:bd_estado_datos}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/estado.png}
+	\caption{Tabla de base de datos estado.}
+	\label{fig:bd_estado}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=3cm]{./Imagenes/Figuras/base_de_datos/estado_datos.png}
+	\caption{Datos de la tabla de base de datos estado.}
+	\label{fig:bd_estado_datos}
+\end{figure}
+
+\subsection{Tabla emocion}
+Tabla que contiene las tipo de emoción que pueden tener los recuerdos de los pacientes y que sirven para indicar la emoción que le surge al paciente con el recuerdo. Los atributos se pueden ver en la Figura \ref{fig:bd_emocion}. Esta tabla se carga inicialmente con los datos que se pueden ver en la Figura \ref{fig:bd_emocion_datos}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/emocion.png}
+	\caption{Tabla de base de datos emocion.}
+	\label{fig:bd_emocion}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=3cm]{./Imagenes/Figuras/base_de_datos/emocion_datos.png}
+	\caption{Datos de la tabla de base de datos emocion.}
+	\label{fig:bd_emocion_datos}
+\end{figure}
+
+\subsection{Tabla categoria}
+Tabla que contiene las tipo de categorías que pueden tener los recuerdos de los pacientes y que sirven para indicar con qué está relacionado el recuerdo (familia, hobbies, amistad, trabajo, política, estudios u otros). Los atributos se pueden ver en la Figura \ref{fig:bd_categoria}. Esta tabla se carga inicialmente con los datos que se pueden ver en la Figura \ref{fig:bd_categoria_datos}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/categoria.png}
+	\caption{Tabla de base de datos categoria.}
+	\label{fig:bd_categoria}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=3cm]{./Imagenes/Figuras/base_de_datos/categoria_datos.png}
+	\caption{Datos de la tabla de base de datos categoria.}
+	\label{fig:bd_categoria_datos}
+\end{figure}
+
+\subsection{Tabla terapeuta}
+Tabla con la relación de terapeutas y pacientes que sirve para asignar los pacientes a varios terapeutas. Los atributos se pueden ver en la Figura \ref{fig:bd_terapeuta}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/terapeuta.png}
+	\caption{Tabla de base de datos terapeuta.}
+	\label{fig:bd_terapeuta}
+\end{figure}
+
+Esta tabla tiene las siguientes foreign keys:
+\begin{itemize}
+	\item \verb|FK_TERAPEUTA_USUARIO|: referencia a la tabla usuario.
+	\item \verb|FK_TERAPEUTA_PACIENTE|: referencia a la tabla paciente.
+\end{itemize}
+
+\subsection{Tabla \texttt{sesion\char`_recuerdo}}
+Tabla con la relación de sesiones y recuerdos que sirve para asignar los recuerdos de los pacientes a las sesiones. Los atributos se pueden ver en la Figura \ref{fig:bd_sesion_recuerdo}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/sesion_recuerdo.png}
+	\caption{Tabla de base de datos \texttt{sesion\char`_recuerdo}.}
+	\label{fig:bd_sesion_recuerdo}
+\end{figure}
+
+Esta tabla tiene las siguientes foreign keys:
+\begin{itemize}
+	\item \verb|FK_SESION_RECUERDO_RECUERDO|: referencia a la tabla recuerdo.
+	\item \verb|FK_SESION_RECUERDO_SESION|: referencia a la tabla sesion.
+\end{itemize}
+
+\subsection{Tabla \texttt{sesion\char`_multimedia}}
+Tabla con la relación de sesiones y archivos multimedia que sirve para asignar los archivos multimedia a las sesiones de los pacientes. Los atributos se pueden ver en la Figura \ref{fig:bd_sesion_multimedia}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/sesion_multimedia.png}
+	\caption{Tabla de base de datos \texttt{sesion\char`_multimedia}.}
+	\label{fig:bd_sesion_multimedia}
+\end{figure}
+
+Esta tabla tiene las siguientes foreign keys:
+\begin{itemize}
+	\item \verb|FK_SESION_MULTIMEDIA_MULTIMEDIA|: referencia a la tabla multimedia.
+	\item \verb|FK_SESION_MULTIMEDIA_SESION|: referencia a la tabla sesion.
+\end{itemize}
+
+\subsection{Tabla \texttt{recuerdo\char`_persona\char`_ralacionada}}
+Tabla con la relación de recuerdos y personas relacionadas de los pacientes que sirve para asignar las personas relacionadas a los recuerdos de los pacientes. Los atributos se pueden ver en la Figura \ref{fig:bd_recuerdo_persona_relacionada}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/recuerdo_persona_relacionada.png}
+	\caption{Tabla de base de datos \texttt{recuerdo\char`_persona\char`_relacionada}.}
+	\label{fig:bd_recuerdo_persona_relacionada}
+\end{figure}
+
+Esta tabla tiene las siguientes foreign keys:
+\begin{itemize}
+	\item \verb|FK_RECUERDO_PERSONA_RELACIONADA_PERSONA_RELACIONADA|: referencia a la tabla \texttt{persona\char`_relacionada}.
+	\item \verb|FK_RECUERDO_PERSONA_RELACIONADA_RECUERDO|: referencia a la tabla recuerdo.
+\end{itemize}
+
+\subsection{Tabla \texttt{recuerdo\char`_multimedia}}
+Tabla con la relación de recuerdos y archivos multimedia que sirve para asignar los archivos multimedia a los recuerdos de los pacientes. Los atributos se pueden ver en la Figura \ref{fig:bd_recuerdo_multimedia}.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=14cm]{./Imagenes/Figuras/base_de_datos/recuerdo_multimedia.png}
+	\caption{Tabla de base de datos \texttt{recuerdo\char`_multimedia}.}
+	\label{fig:bd_recuerdo_multimedia}
+\end{figure}
+
+Esta tabla tiene las siguientes foreign keys:
+\begin{itemize}
+	\item \verb|FK_RECUERDO_MULTIMEDIA_MULTIMEDIA|: referencia a la tabla multimedia.
+	\item \verb|FK_RECUERDO_MULTIMEDIA_RECUERDO|: referencia a la tabla recuerdo.
+\end{itemize}
 
 
 \section{Funcionalidades}
