@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.24)  24 MAY 2022 21:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.24)  24 MAY 2022 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1071,15 +1071,15 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 217--218
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 236.
-LaTeX Info: Redefining \% on input line 236.
+LaTeX Info: Redefining \. on input line 237.
+LaTeX Info: Redefining \% on input line 237.
 [18 <./Imagenes/Figuras/2.1.png>]
-LaTeX Info: Redefining \. on input line 239.
-LaTeX Info: Redefining \% on input line 239.
+LaTeX Info: Redefining \. on input line 240.
+LaTeX Info: Redefining \% on input line 240.
  [19 <./Imagenes/Figuras/figura 2.6.8.png> <./Imagenes/Figuras/figura 2.6.9.png
 >]
-LaTeX Info: Redefining \. on input line 259.
-LaTeX Info: Redefining \% on input line 259.
+LaTeX Info: Redefining \. on input line 260.
+LaTeX Info: Redefining \% on input line 260.
  [20 <./Imagenes/Figuras/figura 2.6.10.png>]
 <./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=1470, 482.40225pt x 322.20
 375pt>
@@ -1088,8 +1088,8 @@ File: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG  used 
 on input line 308.
 (pdftex.def)             Requested size: 337.67926pt x 225.54108pt.
-LaTeX Info: Redefining \. on input line 316.
-LaTeX Info: Redefining \% on input line 316.
+LaTeX Info: Redefining \. on input line 317.
+LaTeX Info: Redefining \% on input line 317.
 [21]
 <./Imagenes/Figuras/movil_historia_vida.PNG, id=1476, 481.19775pt x 278.84175pt
 >
@@ -1101,18 +1101,15 @@ put line 321.
 LaTeX Info: Redefining \. on input line 337.
 LaTeX Info: Redefining \% on input line 337.
  [22 <./Imagenes/Figuras/movil_evaluacion_clinica.PNG>]
-<./Imagenes/Figuras/funcionamiento_bot.PNG, id=1485, 416.30531pt x 242.40562pt>
+<./Imagenes/Figuras/funcionamiento_bot.PNG, id=1486, 416.30531pt x 242.40562pt>
 
 File: ./Imagenes/Figuras/funcionamiento_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/funcionamiento_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/funcionamiento_bot.PNG  used on inp
 ut line 342.
 (pdftex.def)             Requested size: 291.41173pt x 169.68277pt.
-
-Underfull \vbox (badness 2772) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 348.
-LaTeX Info: Redefining \% on input line 348.
+LaTeX Info: Redefining \. on input line 350.
+LaTeX Info: Redefining \% on input line 350.
  [23 <./Imagenes/Figuras/movil_historia_vida.PNG>]
 <./Imagenes/Figuras/bienvenida_bot.PNG, id=1495, 231.86626pt x 319.94531pt>
 File: ./Imagenes/Figuras/bienvenida_bot.PNG Graphic file (type png)
@@ -1132,20 +1129,24 @@ File: ./Imagenes/Figuras/pregunta_bot.PNG Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/pregunta_bot.PNG  used on input lin
 e 368.
 (pdftex.def)             Requested size: 163.88615pt x 294.04655pt.
-LaTeX Info: Redefining \. on input line 385.
-LaTeX Info: Redefining \% on input line 385.
- [24 <./Imagenes/Figuras/funcionamiento_bot.PNG>])
+
+Underfull \vbox (badness 2334) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 378.
+LaTeX Info: Redefining \% on input line 378.
+ [24 <./Imagenes/Figuras/funcionamiento_bot.PNG> <./Imagenes/Figuras/bienvenida
+_bot.PNG>]
+LaTeX Info: Redefining \. on input line 379.
+LaTeX Info: Redefining \% on input line 379.
+
+[25 <./Imagenes/Figuras/imagenes_bot.PNG> <./Imagenes/Figuras/pregunta_bot.PNG>
+])
 LaTeX Info: Redefining \. on input line 149.
 LaTeX Info: Redefining \% on input line 149.
- [25 <./Imagenes/Figuras/bienvenida_bot.PNG> <./Imagenes/Figuras/imagenes_bot.P
-NG>]
-LaTeX Info: Redefining \. on input line 149.
-LaTeX Info: Redefining \% on input line 149.
- [26 <./Imagenes/Figuras/pregunta_bot.PNG>]
+ [26]
 \openout2 = `Capitulos/PropuestaDelTFG.aux'.
 
-
-(Capitulos/PropuestaDelTFG.tex
+ (Capitulos/PropuestaDelTFG.tex
 Cap\'itulo 3.
 [27
 
@@ -4287,7 +4288,7 @@ pen/ec/dpi600\ecbx2074.pk><D:/Users/evavr/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb><D:/Users/evavr/AppData/Local/Programs/MiKTe
 X/fonts/type1/urw/helvetic/uhvr8a.pfb><D:/Users/evavr/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on TFMTeXiS.pdf (212 pages, 32288346 bytes).
+Output written on TFMTeXiS.pdf (212 pages, 32288250 bytes).
 PDF statistics:
  3801 PDF objects out of 4296 (max. 8388607)
  636 named destinations out of 1000 (max. 500000)
