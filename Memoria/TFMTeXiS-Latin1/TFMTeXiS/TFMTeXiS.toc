@@ -1,13 +1,13 @@
-\babel@toc {spanish}{}
-\babel@toc {english}{}
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.7}%
 \contentsline {section}{\numberline {1.1}Motivaci\'on}{1}{section.8}%
 \contentsline {section}{\numberline {1.2}Objetivos}{2}{section.9}%
 \contentsline {section}{\numberline {1.3}Metodolog\IeC {\'\i }a}{2}{section.10}%
 \contentsline {section}{\numberline {1.4}Estructura de la Memoria}{3}{section.15}%
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.16}%
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {2}Estado de la Cuesti\'on}{7}{chapter.17}%
 \contentsline {section}{\numberline {2.1}Enfermedad del Alzheimer}{7}{section.18}%
 \contentsline {section}{\numberline {2.2}Terapias basadas en reminiscencia}{10}{section.26}%
@@ -15,10 +15,10 @@
 \contentsline {section}{\numberline {2.4}Trabajos relacionados}{12}{section.31}%
 \contentsline {subsection}{\numberline {2.4.1}Generaci\'on de historias a partir de una base de conocimiento}{12}{subsection.33}%
 \contentsline {subsection}{\numberline {2.4.2}Extracci\'on de informaci\'on personal a partir de redes sociales para la creaci\'on de un libro de vida}{15}{subsection.38}%
-\contentsline {subsection}{\numberline {2.4.3}Sistema de asistencia para cuidado de enfermos con alzh\'eimer}{17}{subsection.43}%
-\contentsline {subsection}{\numberline {2.4.4}Extracci\'on de preguntas a partir de im\'agenes para personas con problemas de memoria mediante t\'ecnicas de Deep Learning}{20}{subsection.46}%
+\contentsline {subsection}{\numberline {2.4.3}Sistema de asistencia para cuidado de enfermos con alzh\'eimer}{16}{subsection.43}%
+\contentsline {subsection}{\numberline {2.4.4}Extracci\'on de preguntas a partir de im\'agenes para personas con problemas de memoria mediante t\'ecnicas de Deep Learning}{21}{subsection.46}%
 \contentsline {subsection}{\numberline {2.4.5}Conclusiones}{22}{subsection.51}%
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {3}Captura de requisitos}{25}{chapter.52}%
 \contentsline {section}{\numberline {3.1}Preparaci\'on de las entrevistas}{25}{section.53}%
 \contentsline {section}{\numberline {3.2}Entrevistas realizadas}{27}{section.65}%
@@ -51,10 +51,10 @@
 \contentsline {subsection}{\numberline {4.4.1}Vista del terapeuta}{66}{subsection.164}%
 \contentsline {subsection}{\numberline {4.4.2}Vista del cuidador}{71}{subsection.189}%
 \contentsline {section}{\numberline {4.5}Dise\~no competitivo}{74}{section.193}%
-\contentsline {section}{\numberline {4.6}Evaluaci\'on del dise\~no competitivo con expertos}{87}{section.216}%
-\contentsline {subsection}{\numberline {4.6.1}Dise\~no de la evaluaci\'on}{87}{subsection.217}%
+\contentsline {section}{\numberline {4.6}Evaluaci\'on del dise\~no competitivo con expertos}{86}{section.216}%
+\contentsline {subsection}{\numberline {4.6.1}Dise\~no de la evaluaci\'on}{86}{subsection.217}%
 \contentsline {subsection}{\numberline {4.6.2}Desarrollo de la evaluaci\'on}{87}{subsection.218}%
-\contentsline {subsection}{\numberline {4.6.3}Resultados de la evaluaci\'on}{90}{subsection.219}%
+\contentsline {subsection}{\numberline {4.6.3}Resultados de la evaluaci\'on}{91}{subsection.219}%
 \contentsline {chapter}{\numberline {5}Implementaci\'on de la aplicaci\'on}{97}{chapter.229}%
 \contentsline {section}{\numberline {5.1}Arquitectura}{97}{section.230}%
 \contentsline {section}{\numberline {5.2}Base de datos}{100}{section.232}%
@@ -102,7 +102,7 @@
 \contentsline {section}{\numberline {7.1}Conclusiones}{135}{section.338}%
 \contentsline {section}{\numberline {7.2}Trabajo futuro}{136}{section.339}%
 \contentsline {chapter}{\numberline {7}Conclusions and Future Work}{139}{chapter.340}%
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {8}Trabajo Individual}{141}{chapter.341}%
 \contentsline {section}{\numberline {8.1}Cristina Barquilla Blanco}{141}{section.342}%
 \contentsline {subsection}{\numberline {8.1.1}Redacci\'on de la memoria}{141}{subsection.343}%
@@ -125,39 +125,40 @@
 \contentsline {subsection}{\numberline {8.4.3}Dise\~no de la aplicaci\'on}{146}{subsection.360}%
 \contentsline {subsection}{\numberline {8.4.4}Implementaci\'on de la aplicaci\'on}{146}{subsection.361}%
 \contentsline {subsection}{\numberline {8.4.5}Evaluaci\'on de la aplicaci\'on}{146}{subsection.362}%
-\babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {A}Minimental, Test de Lobo}{147}{appendix.363}%
-\contentsline {chapter}{\numberline {B}Transcripciones entrevistas}{151}{appendix.365}%
-\contentsline {section}{\numberline {B.1}Transcripci\'on de la entrevista a Adriana}{151}{section.366}%
-\contentsline {subsection}{\numberline {B.1.1}\IeC {\textquestiondown }Qu\'e es la terapia de reminiscencia? - 0:00}{151}{subsection.367}%
-\contentsline {subsection}{\numberline {B.1.2}\IeC {\textquestiondown }C\'omo es el flujo de trabajo de una terapia? - 4:05}{152}{subsection.368}%
-\contentsline {subsection}{\numberline {B.1.3}\IeC {\textquestiondown }Qui\'en se beneficia de esta aplicaci\'on? - 11:20}{153}{subsection.369}%
-\contentsline {subsection}{\numberline {B.1.4}\IeC {\textquestiondown }Qu\'e es una historia de vida ? - 14:10}{153}{subsection.370}%
-\contentsline {subsection}{\numberline {B.1.5}Una vez ten\'eis recopilada esta informaci\'on \IeC {\textquestiondown }C\'omo la usais en terapia? - 21:55}{154}{subsection.371}%
-\contentsline {subsection}{\numberline {B.1.6}Si el paciente ya no se pudiera realizar alg\'un objetivo o alg\'un inter\'es \IeC {\textquestiondown }Qu\'e se hace con la informaci\'on recogida? - 29:15}{155}{subsection.372}%
-\contentsline {subsection}{\numberline {B.1.7}\IeC {\textquestiondown }Ser\IeC {\'\i }a importante que los recuerdos se dividieran por intereses y si existen categor\IeC {\'\i }as fijas? - 31:25}{155}{subsection.373}%
-\contentsline {subsection}{\numberline {B.1.8}Antes de preparar una sesi\'on, \IeC {\textquestiondown }Qu\'e miras en la historia de vida? - 33:57}{155}{subsection.374}%
-\contentsline {subsection}{\numberline {B.1.9}\IeC {\textquestiondown }Reutilizas material de sesiones con otros pacientes? - 39:00}{156}{subsection.375}%
-\contentsline {subsection}{\numberline {B.1.10}\IeC {\textquestiondown }Qu\'e informaci\'on espera encontrar a la hora de la b\'usqueda de etiquetas? - 42:50}{156}{subsection.376}%
-\contentsline {subsection}{\numberline {B.1.11}\IeC {\textquestiondown }Qu\'e dispositivos son los que m\'as utiliza a la hora de realizar sesiones? - 44:50}{156}{subsection.377}%
-\contentsline {subsection}{\numberline {B.1.12}\IeC {\textquestiondown }Guardas las emociones sacadas de las sesiones con los pacientes? - 45:50}{157}{subsection.378}%
-\contentsline {subsection}{\numberline {B.1.13}\IeC {\textquestiondown }La aplicaci\'on ser\IeC {\'\i }a de utilidad solo para ustedes, los terapeutas, o tambi\'en ser\IeC {\'\i }a \'util para familiares? - 48:07}{157}{subsection.379}%
-\contentsline {subsection}{\numberline {B.1.14}Una vez registradas todas las historias de vida. \IeC {\textquestiondown }C\'omo le gustar\IeC {\'\i }a que se mostrar\'an en la aplicaci\'on? - 51:50}{157}{subsection.380}%
-\contentsline {subsection}{\numberline {B.1.15}\IeC {\textquestiondown }Es necesario unas estad\IeC {\'\i }sticas para ver como va evolucionando el paciente? - 52:25}{157}{subsection.381}%
-\contentsline {subsection}{\numberline {B.1.16}\IeC {\textquestiondown }Qu\'e informaci\'on se pone en los informes de seguimiento? - 54:00}{157}{subsection.382}%
-\contentsline {subsection}{\numberline {B.1.17}\IeC {\textquestiondown }Los pacientes son solamente tratados por un \'unico terapeuta? - 1:02:00}{158}{subsection.383}%
-\contentsline {section}{\numberline {B.2}Transcripci\'on de la entrevista a Iv\'an}{159}{section.384}%
-\contentsline {subsection}{\numberline {B.2.1}\IeC {\textquestiondown }Qu\'e es la terapia de reminiscencia? - 0:00}{159}{subsection.385}%
-\contentsline {subsection}{\numberline {B.2.2}\IeC {\textquestiondown }Qu\'e es una historia de vida ? - 6:51}{160}{subsection.386}%
-\contentsline {subsection}{\numberline {B.2.3}\IeC {\textquestiondown }C\'omo ser\IeC {\'\i }a ese flujo de trabajo desde que llega un paciente, se registra toda la informaci\'on que ellos dan y luego se utiliza en una sesi\'on con ellos? - 12:28}{161}{subsection.387}%
-\contentsline {subsection}{\numberline {B.2.4}\IeC {\textquestiondown }Os ser\IeC {\'\i }a \'util hacer determinadas b\'usquedas para encontrar, por ejemplo, cosas de la infancia, de la edad adulta y que lo pongamos con etiquetas o algo por el estilo? - 18:55}{162}{subsection.388}%
-\contentsline {subsection}{\numberline {B.2.5}Una duda que surge a partir de lo del grado, \IeC {\textquestiondown }seg\'un el GDS las sesiones son distintas o la informaci\'on que transmit\IeC {\'\i }s a los pacientes var\IeC {\'\i }a en algo? - 29:25}{164}{subsection.389}%
-\contentsline {subsection}{\numberline {B.2.6}Virginia: \IeC {\textquestiondown }Se guardaban etiquetas en los tfg anteriores? (Emoci\'on, recuerdo\IeC {\dots }) - 31:20}{164}{subsection.390}%
-\contentsline {subsection}{\numberline {B.2.7}Comentario de Iv\'an - 42:35}{166}{subsection.391}%
-\contentsline {subsection}{\numberline {B.2.8}\IeC {\textquestiondown }Una vez acabadas esas sesiones c\'omo se hace esa evoluci\'on de mejora o empeoramiento del paciente y c\'omo se recoger\IeC {\'\i }a esa evoluci\'on en sesiones grupales? - 45:47}{166}{subsection.392}%
-\contentsline {subsection}{\numberline {B.2.9}Varios comentarios de Iv\'an - 50:40}{166}{subsection.393}%
-\contentsline {subsection}{\numberline {B.2.10}\IeC {\textquestiondown }Qu\'e dispositivo te sueles llevar para hacer las terapias de vida? - 1:04:33}{167}{subsection.394}%
-\contentsline {chapter}{\numberline {C}Debriefing}{169}{appendix.395}%
-\contentsline {chapter}{\numberline {D}Evaluaci\'on final}{171}{appendix.397}%
-\contentsline {chapter}{\numberline {E}Resultado de la evaluaci\'on Iv\'an}{175}{appendix.399}%
-\contentsline {chapter}{\numberline {F}Resultado de la evaluaci\'on Adriana}{181}{appendix.401}%
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{Bibliograf\'{\i }a}{147}{chapter*.363}%
+\contentsline {chapter}{\numberline {A}Minimental, Test de Lobo}{149}{appendix.364}%
+\contentsline {chapter}{\numberline {B}Transcripciones entrevistas}{153}{appendix.366}%
+\contentsline {section}{\numberline {B.1}Transcripci\'on de la entrevista a Adriana}{153}{section.367}%
+\contentsline {subsection}{\numberline {B.1.1}\IeC {\textquestiondown }Qu\'e es la terapia de reminiscencia? - 0:00}{153}{subsection.368}%
+\contentsline {subsection}{\numberline {B.1.2}\IeC {\textquestiondown }C\'omo es el flujo de trabajo de una terapia? - 4:05}{154}{subsection.369}%
+\contentsline {subsection}{\numberline {B.1.3}\IeC {\textquestiondown }Qui\'en se beneficia de esta aplicaci\'on? - 11:20}{155}{subsection.370}%
+\contentsline {subsection}{\numberline {B.1.4}\IeC {\textquestiondown }Qu\'e es una historia de vida ? - 14:10}{155}{subsection.371}%
+\contentsline {subsection}{\numberline {B.1.5}Una vez ten\'eis recopilada esta informaci\'on \IeC {\textquestiondown }C\'omo la usais en terapia? - 21:55}{156}{subsection.372}%
+\contentsline {subsection}{\numberline {B.1.6}Si el paciente ya no se pudiera realizar alg\'un objetivo o alg\'un inter\'es \IeC {\textquestiondown }Qu\'e se hace con la informaci\'on recogida? - 29:15}{157}{subsection.373}%
+\contentsline {subsection}{\numberline {B.1.7}\IeC {\textquestiondown }Ser\IeC {\'\i }a importante que los recuerdos se dividieran por intereses y si existen categor\IeC {\'\i }as fijas? - 31:25}{157}{subsection.374}%
+\contentsline {subsection}{\numberline {B.1.8}Antes de preparar una sesi\'on, \IeC {\textquestiondown }Qu\'e miras en la historia de vida? - 33:57}{157}{subsection.375}%
+\contentsline {subsection}{\numberline {B.1.9}\IeC {\textquestiondown }Reutilizas material de sesiones con otros pacientes? - 39:00}{158}{subsection.376}%
+\contentsline {subsection}{\numberline {B.1.10}\IeC {\textquestiondown }Qu\'e informaci\'on espera encontrar a la hora de la b\'usqueda de etiquetas? - 42:50}{158}{subsection.377}%
+\contentsline {subsection}{\numberline {B.1.11}\IeC {\textquestiondown }Qu\'e dispositivos son los que m\'as utiliza a la hora de realizar sesiones? - 44:50}{158}{subsection.378}%
+\contentsline {subsection}{\numberline {B.1.12}\IeC {\textquestiondown }Guardas las emociones sacadas de las sesiones con los pacientes? - 45:50}{159}{subsection.379}%
+\contentsline {subsection}{\numberline {B.1.13}\IeC {\textquestiondown }La aplicaci\'on ser\IeC {\'\i }a de utilidad solo para ustedes, los terapeutas, o tambi\'en ser\IeC {\'\i }a \'util para familiares? - 48:07}{159}{subsection.380}%
+\contentsline {subsection}{\numberline {B.1.14}Una vez registradas todas las historias de vida. \IeC {\textquestiondown }C\'omo le gustar\IeC {\'\i }a que se mostrar\'an en la aplicaci\'on? - 51:50}{159}{subsection.381}%
+\contentsline {subsection}{\numberline {B.1.15}\IeC {\textquestiondown }Es necesario unas estad\IeC {\'\i }sticas para ver como va evolucionando el paciente? - 52:25}{159}{subsection.382}%
+\contentsline {subsection}{\numberline {B.1.16}\IeC {\textquestiondown }Qu\'e informaci\'on se pone en los informes de seguimiento? - 54:00}{159}{subsection.383}%
+\contentsline {subsection}{\numberline {B.1.17}\IeC {\textquestiondown }Los pacientes son solamente tratados por un \'unico terapeuta? - 1:02:00}{160}{subsection.384}%
+\contentsline {section}{\numberline {B.2}Transcripci\'on de la entrevista a Iv\'an}{161}{section.385}%
+\contentsline {subsection}{\numberline {B.2.1}\IeC {\textquestiondown }Qu\'e es la terapia de reminiscencia? - 0:00}{161}{subsection.386}%
+\contentsline {subsection}{\numberline {B.2.2}\IeC {\textquestiondown }Qu\'e es una historia de vida ? - 6:51}{162}{subsection.387}%
+\contentsline {subsection}{\numberline {B.2.3}\IeC {\textquestiondown }C\'omo ser\IeC {\'\i }a ese flujo de trabajo desde que llega un paciente, se registra toda la informaci\'on que ellos dan y luego se utiliza en una sesi\'on con ellos? - 12:28}{163}{subsection.388}%
+\contentsline {subsection}{\numberline {B.2.4}\IeC {\textquestiondown }Os ser\IeC {\'\i }a \'util hacer determinadas b\'usquedas para encontrar, por ejemplo, cosas de la infancia, de la edad adulta y que lo pongamos con etiquetas o algo por el estilo? - 18:55}{164}{subsection.389}%
+\contentsline {subsection}{\numberline {B.2.5}Una duda que surge a partir de lo del grado, \IeC {\textquestiondown }seg\'un el GDS las sesiones son distintas o la informaci\'on que transmit\IeC {\'\i }s a los pacientes var\IeC {\'\i }a en algo? - 29:25}{166}{subsection.390}%
+\contentsline {subsection}{\numberline {B.2.6}Virginia: \IeC {\textquestiondown }Se guardaban etiquetas en los tfg anteriores? (Emoci\'on, recuerdo\IeC {\dots }) - 31:20}{166}{subsection.391}%
+\contentsline {subsection}{\numberline {B.2.7}Comentario de Iv\'an - 42:35}{168}{subsection.392}%
+\contentsline {subsection}{\numberline {B.2.8}\IeC {\textquestiondown }Una vez acabadas esas sesiones c\'omo se hace esa evoluci\'on de mejora o empeoramiento del paciente y c\'omo se recoger\IeC {\'\i }a esa evoluci\'on en sesiones grupales? - 45:47}{168}{subsection.393}%
+\contentsline {subsection}{\numberline {B.2.9}Varios comentarios de Iv\'an - 50:40}{168}{subsection.394}%
+\contentsline {subsection}{\numberline {B.2.10}\IeC {\textquestiondown }Qu\'e dispositivo te sueles llevar para hacer las terapias de vida? - 1:04:33}{169}{subsection.395}%
+\contentsline {chapter}{\numberline {C}Debriefing}{171}{appendix.396}%
+\contentsline {chapter}{\numberline {D}Evaluaci\'on final}{173}{appendix.398}%
+\contentsline {chapter}{\numberline {E}Resultado de la evaluaci\'on Iv\'an}{177}{appendix.400}%
+\contentsline {chapter}{\numberline {F}Resultado de la evaluaci\'on Adriana}{183}{appendix.402}%

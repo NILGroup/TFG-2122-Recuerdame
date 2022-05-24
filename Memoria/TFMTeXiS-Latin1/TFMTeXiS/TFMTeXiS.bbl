@@ -1,0 +1,76 @@
+\begin{thebibliography}{8}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Aguilera Heredero} y {Molina Munoz}(2021)}]{article_15}
+{\sc {Aguilera Heredero}, P.} y {\sc {Molina Munoz}, C.}
+\newblock Extracci\'on de informaci\'on personal a partir de redes sociales
+  para la creaci\'on de un libro de vida.
+\newblock Informe t\'ecnico, Universidad Complutense de Madrid, 2021.
+\newblock TFG. Grado de Ingener\'ia Inform\'atica. Departamento de Ingenier\'ia
+  del Software e Inteligencia Artificial.
+
+\bibitem[{Boto et\ al.(2021)Boto, Torres y Mayo}]{article_16}
+{\sc Boto, A.~A.}, {\sc Torres, R.~P.} y {\sc Mayo, D.~S.}
+\newblock Extracci\'on de preguntas a partir de im\'agenes para personas con
+  problemas de memoria mediante t\'ecnicas de deep learning.
+\newblock Informe t\'ecnico, Universidad Complutense de Madrid, 2021.
+\newblock TFG. Grado de Ingener\'ia Inform\'atica y grado de Ingener\'ia del
+  Software.
+
+\bibitem[{{Castilla Castellano}(2021)}]{article_14}
+{\sc {Castilla Castellano}, L.}
+\newblock Generaci\'on de historias a partir de una base de conocimiento.
+\newblock Informe t\'ecnico, Universidad Complutense de Madrid, 2021.
+\newblock TFG. Grado de Ingener\'ia Inform\'atica. Departamento de Ingenier\'ia
+  del Software e Inteligencia Artificial.
+
+\bibitem[{Irazoki et\ al.(2017)Irazoki, Garc\'ia-Casal, Sanchez-Meca y
+  Franco}]{article_12}
+{\sc Irazoki, E.}, {\sc Garc\'ia-Casal, J.~A.}, {\sc Sanchez-Meca, J.} y {\sc
+  Franco, M.}
+\newblock Eficacia de la terapia de reminiscencia grupal en personas con
+  demencia. revisi\'on sistem\'atica y metaan\'alisis.
+\newblock {\em Revista de neurolog\'ia\/}, vol.\ 65, p\'aginas 447--456, 2017.
+\newblock Disponible en
+  \url{https://www.researchgate.net/publication/321165965_Eficacia_de_la_terapia_de_reminiscencia_grupal_en_personas_con_demencia_Revision_sistematica_y_metaanalisis}
+  (último acceso,  Septiembre, 2021).
+
+\bibitem[{Kirk et\ al.(2019)Kirk, Rasmussen, Overgaard y Berntsen}]{article_13}
+{\sc Kirk, M.}, {\sc Rasmussen, K.}, {\sc Overgaard, S.} y {\sc Berntsen, D.}
+\newblock Five weeks of immersive reminiscence therapy improves
+  autobiographical memory in alzheimer's disease.
+\newblock {\em Memory\/}, vol.\ 27(4), p\'aginas 441--454, 2019.
+\newblock ISSN 0965-8211.
+\newblock Disponible en \url{https://pubmed.ncbi.nlm.nih.gov/30198380/} (último
+  acceso,  Septiembre, 2021).
+
+\bibitem[{Oliveras et\ al.(2021)Oliveras, Munoz, Ulloa y \'Alvarez}]{article_3}
+{\sc Oliveras, D.~B.}, {\sc Munoz, C.~C.}, {\sc Ulloa, D.~P.} y {\sc \'Alvarez,
+  C.~S.}
+\newblock Sistema de asistencia para cuidados de enfermos del alzheimer.
+\newblock Informe t\'ecnico, Universidad Complutense de Madrid, 2021.
+\newblock TFG. Grado de Ingener\'ia Inform\'atica y grado de Ingener\'ia del
+  Software.
+
+\bibitem[{Su et\ al.(2011)Su, Wu y Lin}]{article_11}
+{\sc Su, T.-W.}, {\sc Wu, L.-L.} y {\sc Lin, C.-P.}
+\newblock The prevalence of dementia and depression in taiwanese
+  institutionalized leprosy patients, and the effectiveness evaluation of
+  reminiscence therapy-a longitudinal, single-blind, randomized control study.
+\newblock {\em Int. J. Geriat. Psychiatry\/}, vol.\ 27(2), p\'aginas 187--196,
+  2011.
+\newblock Disponible en \url{https://pubmed.ncbi.nlm.nih.gov/21425346/} (último
+  acceso,  Septiembre, 2021).
+
+\bibitem[{{Villarejo Galende} et\ al.(2021){Villarejo Galende}, {Eimil Ortiz},
+  {Llamas Velasco}, {Llanero Luque}, C.{ L\'opez de Silanes de Miguel} y
+  {Prieto Jurczynska}}]{article_2}
+{\sc {Villarejo Galende}, A.}, {\sc {Eimil Ortiz}, M.}, {\sc {Llamas Velasco},
+  S.}, {\sc {Llanero Luque}, M.}, {\sc C.{ L\'opez de Silanes de Miguel}} y
+  {\sc {Prieto Jurczynska}, C.}
+\newblock Informe de la fundaci\'on del cerebro. impacto social de la
+  enfermedad de alzheimer y otras demencias.
+\newblock {\em Neurolog\'ia\/}, vol.\ 36(1), p\'aginas 39--49, 2021.
+\newblock ISSN 0213-4853.
+
+\end{thebibliography}
