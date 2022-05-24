@@ -1,7 +1,7 @@
 \chapter{Diseño de la aplicación}
 \label{cap:disenoDelTFG}
 
-Cada uno de los 4 integrantes del grupo hemos hecho un diseño de la aplicación siguiendo los requisitos que hemos obtenidos de las entrevistas con los expertos. Una vez hemos hecho estos prototipos, nos hemos reunido para que cada uno presentara su diseño al resto del grupo y entre todos hemos elegido cuál es el que más se adapta y cubre las funcionalidades necesarias. Con el prototipo elegido de base realizamos algunos cambios recogidos de otros prototipos. En las siguientes secciones presentamos los distintos prototipos creados:
+Cada uno de los 4 integrantes del grupo hicimos un diseño de la aplicación siguiendo los requisitos obtenidos de las entrevistas con los expertos. Una vez hechos estos prototipos, nos reunimos para que cada uno presentara su diseño al resto del grupo y entre todos crear un nuevo prototipo con lo mejor de cada prototipo individual. Este prototipo fue presentado al Dr.Iván Rosendo para su evaluación. En las siguientes secciones presentamos los distintos prototipos creados:
 
 \section{Prototipo de Cristina Barquilla Blanco}
 \label{cap:disenio_cris}
@@ -14,7 +14,7 @@ El prototipo de Cristina se diseñó con la herramienta Balsamiq y está diseñado d
 	\label{fig:3.2.1_listado_pacientes}
 \end{figure}
 
-Al seleccionar un paciente de la lista se puede ver otro menú con varias opciones para realizar diferentes acciones con respecto al paciente seleccionado y ver qué paciente ha seleccionado (ver Figura \ref{fig:3.2.1_ver_paciente}). Las diferentes opciones del menú (que se explican en detalle en las siguientes subsecciones) son:
+Al seleccionar un paciente de la lista se puede ver otro menú con varias opciones para realizar diferentes acciones con respecto al paciente seleccionado y ver qué paciente ha seleccionado (ver Figura \ref{fig:3.2.1_ver_paciente}). Las diferentes opciones del menú son:
 \begin{itemize}
 	\item Terapeuta: Pacientes, sesiones, evaluaciones, historia de vida, calendario, mensajería y asignar pacientes.
 	\item Cuidador: Calendario, historia de vida y mensajería.
@@ -27,7 +27,10 @@ Al seleccionar un paciente de la lista se puede ver otro menú con varias opcione
 	\label{fig:3.2.1_ver_paciente}
 \end{figure}
 
+En las siguientes subsecciones se explican en detalle las dos vistas principales de la aplicación (Terapeuta y Cuidador).
+
 \subsection{Vista del terapeuta}
+Esta vista corresponde al usuario que inicia sesión con el rol de terapeuta y puede acceder a todas las opciones del paciente que son las que se explican a continuación.
 
 \subsubsection{Pacientes}
 Se muestra el listado de pacientes de la Figura \ref{fig:3.2.1_listado_pacientes} y se puede elegir el paciente con el que se desee trabajar así como eliminar pacientes o modificar sus datos.
@@ -42,7 +45,7 @@ Permite ver un listado de las sesiones de un paciente ordenadas cronológicamente
 	\label{fig:3.2.1_listado_sesiones}
 \end{figure}
 
-Además, la aplicación permitía crear una nueva sesión mediante un formulario con 3 pasos:
+Además, la aplicación permite crear una nueva sesión mediante un formulario con 3 pasos:
 	\begin{enumerate}
 		\item Datos de la sesión. Se podrán añadir la fecha de la sesión, el interés, el objetivo y la descripción. Además, se mostrará automáticamente el terapeuta que está registrando la sesión y se guardará en el registro (ver Figura \ref{fig:3.2.1_nueva_sesion}).
 			\begin{figure}[!ht]
@@ -60,7 +63,7 @@ Además, la aplicación permitía crear una nueva sesión mediante un formulario con
 				\label{fig:3.2.1_nueva_sesion_recuerdos}
 			\end{figure}
 				
-		\item Confirma. Por último, se mostrará una pantalla de confirmación de datos donde se podrán ver todos los datos y recuerdos introducidos tal y como se muestra en la Figura \ref{fig:3.2.1_nueva_sesion_confirmacion}.
+		\item Confirmación. Por último, se mostrará una pantalla de confirmación de datos donde se podrán ver todos los datos y recuerdos introducidos tal y como se muestra en la Figura \ref{fig:3.2.1_nueva_sesion_confirmacion}.
 			\begin{figure}[!ht]
   				\centering
 		  		\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion}
@@ -80,7 +83,7 @@ Mediante el icono de editar de la lista de sesiones, se puede acceder al detalle
 Además, se permite finalizar la sesión mediante un botón que muestra un formulario donde poder registrar un informe de seguimiento donde se podrá indicar la fecha, las reacciones del paciente y las observaciones necesarias (ver Figura \ref{fig:3.2.1_finalizar_sesion}). Este informe se podrá imprimir y vendrán reflejados tanto los datos del informe como los datos del paciente y un listado con los recuerdos de la sesión del informe donde se podrá ver el estado, etiqueta, emoción, puntuación y descripción de cada recuerdo (ver Figura \ref{fig:3.2.1_informe_seguimiento}).		
 \begin{figure}[!ht]
 	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion}
+  	\includegraphics[width=8cm]{./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion}
   	\caption{Datos de informe de seguimiento en el prototipo de Cristina.}
 	\label{fig:3.2.1_finalizar_sesion}
 \end{figure}
@@ -229,6 +232,8 @@ Mediante esta opción, el terapeuta podrá asignar sus pacientes a otros terapeuta
 El terapeuta tiene la opción de salir de la aplicación que le llevará de nuevo al login de la aplicación.
 
 \subsection{Vista del cuidador}
+Esta vista corresponde al usuario que inicia sesión con el rol de cuidador y puede acceder a unas opciones del paciente limitadas que son las que se explican a continuación.
+
 \subsubsection{Calendario de la sesión del cuidador}
 El cuidador podrá ver las actividades que ha añadido el terapeuta al calendario del paciente (ver Figura \ref{fig:3.2.1_calendario_cuidador}).
 \begin{figure}[!ht]
