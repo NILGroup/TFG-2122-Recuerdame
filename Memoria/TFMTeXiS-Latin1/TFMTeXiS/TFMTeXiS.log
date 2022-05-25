@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.23)  25 MAY 2022 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.23)  25 MAY 2022 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -635,7 +635,35 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
- (TFMTeXiS.aux)
+ (TFMTeXiS.aux (Cascaras/cover.aux)
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+ (Cascaras/autorizacion.aux) (Cascaras/agradecimientos.aux) (Cascaras/resumen.a
+ux) (Cascaras/abstract.aux)
+(TeXiS/TeXiS_toc.aux)
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+ (Capitulos/Introduccion.aux) (Capitulos/Introduction.aux) (Capitulos/EstadoDeL
+aCuestion.aux)
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+ (Capitulos/PropuestaDelTFG.aux)
+(Capitulos/Diseno.aux) (Capitulos/Implementacion.aux)
+(Capitulos/Evaluaciones.aux) (Capitulos/ConclusionesTrabajoFuturo.aux)
+(Capitulos/ConclusionsFutureWork.aux) (Capitulos/TrabajoIndividual.aux)
+LaTeX Info: Redefining \. on input line 48.
+LaTeX Info: Redefining \% on input line 48.
+
+(Cascaras/bibliografia.aux) (Apendices/appendixA.aux) (Apendices/appendixB.aux)
+(Apendices/appendixC.aux) (Apendices/appendixD.aux) (Apendices/appendixE.aux
+
+LaTeX Warning: Label `pdf:evalu_fi' multiply defined.
+
+) (Apendices/appendixF.aux
+
+LaTeX Warning: Label `pdf:evalu_fi' multiply defined.
+
+))
 \openout1 = `TFMTeXiS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
@@ -729,7 +757,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \evensidemarginOriginal=\skip85
 \oddsidemarginOriginal=\skip86
 \longTitulo=\skip87
-<Imagenes/Vectorial/escudoUCM.pdf, id=595, 597.23125pt x 844.15375pt>
+<Imagenes/Vectorial/escudoUCM.pdf, id=575, 597.23125pt x 844.15375pt>
 File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 <use Imagenes/Vectorial/escudoUCM.pdf>
 Package pdftex.def Info: Imagenes/Vectorial/escudoUCM.pdf  used on input line 1
@@ -786,27 +814,129 @@ LaTeX Info: Redefining \% on input line 124.
 
 
 
-]
+] (TFMTeXiS.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 5.
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+Overfull \hbox (14.04448pt too wide) in paragraph at lines 20--20
+ [][] [][]\T1/cmr/m/n/10.95 Generación de his-to-rias a par-tir de una base de 
+conocimiento[] [][]  
+ []
 
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+[13]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
+1.
+ (C:\Users\Patricia\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [14] [15]
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
+ [16])
 \tf@toc=\write6
 \openout6 = `TFMTeXiS.toc'.
 
-[13] [14
+ [17] [18
 
-]
+] (TFMTeXiS.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
 
-Package hyperref Warning: old lof file detected, not used; run LaTeX again.
+Overfull \hbox (10.24167pt too wide) in paragraph at lines 8--8
+ [][] [][]\T1/cmr/m/n/10.95 Ejemplo pal-abra ini-cial re-comen-dada ``pedir'' d
+onde poder añadir 
+ []
 
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+
+Underfull \vbox (badness 1024) has occurred while \output is active []
+
+ [19]
+[20] [21]
+Overfull \hbox (2.7858pt too wide) detected at line 124
+\T1/cmr/m/n/10.95 4.100. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 125
+\T1/cmr/m/n/10.95 4.101. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 126
+\T1/cmr/m/n/10.95 4.102. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 127
+\T1/cmr/m/n/10.95 4.103. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 128
+\T1/cmr/m/n/10.95 4.104. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 129
+\T1/cmr/m/n/10.95 4.105. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 130
+\T1/cmr/m/n/10.95 4.106. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 131
+\T1/cmr/m/n/10.95 4.107. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 132
+\T1/cmr/m/n/10.95 4.108. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 133
+\T1/cmr/m/n/10.95 4.109. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 134
+\T1/cmr/m/n/10.95 4.110. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 135
+\T1/cmr/m/n/10.95 4.111. 
+ []
+
+
+Overfull \hbox (2.7858pt too wide) detected at line 136
+\T1/cmr/m/n/10.95 4.112. 
+ []
+
+[22] [23]
+LaTeX Info: Redefining \. on input line 202.
+LaTeX Info: Redefining \% on input line 202.
+)
 \tf@lof=\write7
 \openout7 = `TFMTeXiS.lof'.
 
-) [15] [16
-
-
-
-]
+) [24]
 \openout2 = `Capitulos/Introduccion.aux'.
 
  (Capitulos/Introduccion.tex
@@ -822,18 +952,10 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
 (C:\Users\Patricia\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 6.
-
-
-Package natbib Warning: Citation `article_2' on page 1 undefined on input line 
-13.
-
 [1
+
+
+
 
 
 ]
@@ -856,10 +978,6 @@ LaTeX Info: Redefining \% on input line 137.
 
 ]
 Chapter 1.
-
-Package natbib Warning: Citation `article_2' on page 5 undefined on input line 
-13.
-
 
 Overfull \hbox (20.96045pt too wide) in paragraph at lines 15--16
 \T1/cmr/m/n/10.95 tients that help de-lay the de-gen-er-a-tive ef-fects of the 
@@ -888,9 +1006,6 @@ tos/como-identificar-
  []
 
 
-LaTeX Warning: Reference `aped.A' on page 11 undefined on input line 74.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 79--79
 [][][]\T1/cmr/m/n/9 https://www.estimulacioncognitiva.info/2018/04/11/qu$ $%C3$
  $%A9-es-la-terapia-de-
@@ -899,71 +1014,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--79
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
 [11]
-
-Package natbib Warning: Citation `article_11' on page 12 undefined on input lin
-e 100.
-
-
-Package natbib Warning: Citation `article_12' on page 12 undefined on input lin
-e 102.
-
-
-Package natbib Warning: Citation `article_13' on page 12 undefined on input lin
-e 104.
-
 LaTeX Info: Redefining \. on input line 105.
 LaTeX Info: Redefining \% on input line 105.
-[12]
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
+ [12]
+LaTeX Info: Redefining \. on input line 131.
+LaTeX Info: Redefining \% on input line 131.
  [13]
-
-Package natbib Warning: Citation `article_14' on page 14 undefined on input lin
-e 145.
-
-
-LaTeX Warning: Reference `fig:figura2.1' on page 14 undefined on input line 147
-.
-
 LaTeX Info: Redefining \. on input line 148.
 LaTeX Info: Redefining \% on input line 148.
-[14]
-<./Imagenes/Figuras/figura 2.1.png, id=774, 426.75893pt x 178.1751pt>
+ [14]
+<./Imagenes/Figuras/figura 2.1.png, id=1363, 426.75893pt x 178.1751pt>
 File: ./Imagenes/Figuras/figura 2.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.1.png  used on input line 
 151.
 (pdftex.def)             Requested size: 284.52756pt x 118.79216pt.
-
-
-LaTeX Warning: Reference `fig:figura2.2' on page 15 undefined on input line 156
-.
-
-<./Imagenes/Figuras/figura 2.2.png, id=776, 426.75893pt x 248.62698pt>
+<./Imagenes/Figuras/figura 2.2.png, id=1366, 426.75893pt x 248.62698pt>
 File: ./Imagenes/Figuras/figura 2.2.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.2.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.2.png  used on input line 
 159.
 (pdftex.def)             Requested size: 341.43306pt x 198.91702pt.
-
-LaTeX Warning: Reference `fig:figura2.1' on page 15 undefined on input line 164
-.
-
-
-LaTeX Warning: Reference `fig:figura2.3' on page 15 undefined on input line 164
-.
-
-<./Imagenes/Figuras/figura 2.3.png, id=777, 426.75893pt x 307.26114pt>
+<./Imagenes/Figuras/figura 2.3.png, id=1369, 426.75893pt x 307.26114pt>
 File: ./Imagenes/Figuras/figura 2.3.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.3.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.3.png  used on input line 
 167.
 (pdftex.def)             Requested size: 284.52756pt x 204.85588pt.
-
-LaTeX Warning: Reference `fig:figura2.4' on page 15 undefined on input line 172
-.
-
-<./Imagenes/Figuras/figura 2.4.png, id=778, 426.75893pt x 176.81151pt>
+<./Imagenes/Figuras/figura 2.4.png, id=1371, 426.75893pt x 176.81151pt>
 File: ./Imagenes/Figuras/figura 2.4.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.4.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.4.png  used on input line 
@@ -980,31 +1058,15 @@ LaTeX Info: Redefining \% on input line 179.
 LaTeX Info: Redefining \. on input line 179.
 LaTeX Info: Redefining \% on input line 179.
  [16 <./Imagenes/Figuras/figura 2.2.png> <./Imagenes/Figuras/figura 2.3.png>]
-
-Package natbib Warning: Citation `article_15' on page 17 undefined on input lin
-e 193.
-
-
-LaTeX Warning: Reference `flujo_app' on page 17 undefined on input line 193.
-
-<./Imagenes/Figuras/2.1.png, id=794, 408.02437pt x 266.9975pt>
+<./Imagenes/Figuras/2.1.png, id=1386, 408.02437pt x 266.9975pt>
 File: ./Imagenes/Figuras/2.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/2.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/2.1.png  used on input line 196.
 (pdftex.def)             Requested size: 251.9989pt x 164.90117pt.
 LaTeX Info: Redefining \. on input line 200.
 LaTeX Info: Redefining \% on input line 200.
-[17 <./Imagenes/Figuras/figura 2.4.png>]
-
-LaTeX Warning: Reference `friends' on page 18 undefined on input line 201.
-
-
-LaTeX Warning: Reference `places' on page 18 undefined on input line 201.
-
-
-LaTeX Warning: Reference `pic' on page 18 undefined on input line 201.
-
-<./Imagenes/Figuras/figura 2.6.8.png, id=802, 515.42563pt x 291.0875pt>
+ [17 <./Imagenes/Figuras/figura 2.4.png>]
+<./Imagenes/Figuras/figura 2.6.8.png, id=1397, 515.42563pt x 291.0875pt>
 File: ./Imagenes/Figuras/figura 2.6.8.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.8.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.8.png  used on input lin
@@ -1015,7 +1077,7 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
-<./Imagenes/Figuras/figura 2.6.9.png, id=803, 485.31313pt x 286.06876pt>
+<./Imagenes/Figuras/figura 2.6.9.png, id=1398, 485.31313pt x 286.06876pt>
 File: ./Imagenes/Figuras/figura 2.6.9.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.9.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.9.png  used on input lin
@@ -1026,7 +1088,7 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 211--212
  [][] 
  []
 
-<./Imagenes/Figuras/figura 2.6.10.png, id=804, 477.785pt x 292.59312pt>
+<./Imagenes/Figuras/figura 2.6.10.png, id=1399, 477.785pt x 292.59312pt>
 File: ./Imagenes/Figuras/figura 2.6.10.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.10.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.10.png  used on input li
@@ -1037,133 +1099,84 @@ Overfull \hbox (71.9989pt too wide) in paragraph at lines 217--218
  [][] 
  []
 
-
-Package natbib Warning: Citation `article_3' on page 18 undefined on input line
- 227.
-
-LaTeX Info: Redefining \. on input line 237.
-LaTeX Info: Redefining \% on input line 237.
+LaTeX Info: Redefining \. on input line 235.
+LaTeX Info: Redefining \% on input line 235.
 [18 <./Imagenes/Figuras/2.1.png>]
 
 LaTeX Warning: Text page 19 contains only floats.
 
-LaTeX Info: Redefining \. on input line 237.
-LaTeX Info: Redefining \% on input line 237.
+LaTeX Info: Redefining \. on input line 235.
+LaTeX Info: Redefining \% on input line 235.
 [19 <./Imagenes/Figuras/figura 2.6.8.png> <./Imagenes/Figuras/figura 2.6.9.png>
 ]
-LaTeX Info: Redefining \. on input line 261.
-LaTeX Info: Redefining \% on input line 261.
+LaTeX Info: Redefining \. on input line 258.
+LaTeX Info: Redefining \% on input line 258.
  [20 <./Imagenes/Figuras/figura 2.6.10.png>]
-
-LaTeX Warning: Reference `fig:movil_evaluacion_clinica' on page 21 undefined on
- input line 304.
-
-<./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=826, 482.40225pt x 322.203
-75pt>
+<./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=1422, 482.40225pt x 322.20
+375pt>
 File: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_evaluacion_clinica.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG  used 
 on input line 308.
 (pdftex.def)             Requested size: 337.67926pt x 225.54108pt.
-LaTeX Info: Redefining \. on input line 317.
-LaTeX Info: Redefining \% on input line 317.
-[21]
-
-LaTeX Warning: Reference `fig:movil_historia_vida' on page 22 undefined on inpu
-t line 318.
-
-<./Imagenes/Figuras/movil_historia_vida.PNG, id=832, 481.19775pt x 278.84175pt>
-
+LaTeX Info: Redefining \. on input line 315.
+LaTeX Info: Redefining \% on input line 315.
+ [21]
+<./Imagenes/Figuras/movil_historia_vida.PNG, id=1428, 481.19775pt x 278.84175pt
+>
 File: ./Imagenes/Figuras/movil_historia_vida.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_historia_vida.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_historia_vida.PNG  used on in
 put line 321.
 (pdftex.def)             Requested size: 336.83614pt x 195.18788pt.
-
-Package natbib Warning: Citation `article_16' on page 22 undefined on input lin
-e 336.
-
 LaTeX Info: Redefining \. on input line 337.
 LaTeX Info: Redefining \% on input line 337.
-[22 <./Imagenes/Figuras/movil_evaluacion_clinica.PNG>]
+ [22 <./Imagenes/Figuras/movil_evaluacion_clinica.PNG>]
+<./Imagenes/Figuras/funcionamiento_bot.PNG, id=1437, 416.30531pt x 242.40562pt>
 
-LaTeX Warning: Reference `fig:funcionamiento_bot' on page 23 undefined on input
- line 338.
-
-<./Imagenes/Figuras/funcionamiento_bot.PNG, id=839, 416.30531pt x 242.40562pt>
 File: ./Imagenes/Figuras/funcionamiento_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/funcionamiento_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/funcionamiento_bot.PNG  used on inp
 ut line 343.
 (pdftex.def)             Requested size: 291.41173pt x 169.68277pt.
 
-LaTeX Warning: Reference `fig:bienvenida_bot' on page 23 undefined on input lin
-e 350.
+Underfull \vbox (badness 2772) has occurred while \output is active []
 
-
-LaTeX Warning: Reference `fig:imagenes_bot' on page 23 undefined on input line 
-350.
-
-
-LaTeX Warning: Reference `fig:pregunta_bot' on page 23 undefined on input line 
-350.
-
-LaTeX Info: Redefining \. on input line 351.
-LaTeX Info: Redefining \% on input line 351.
-[23 <./Imagenes/Figuras/movil_historia_vida.PNG>]
-<./Imagenes/Figuras/bienvenida_bot.PNG, id=846, 231.86626pt x 319.94531pt>
+LaTeX Info: Redefining \. on input line 349.
+LaTeX Info: Redefining \% on input line 349.
+ [23 <./Imagenes/Figuras/movil_historia_vida.PNG>]
+<./Imagenes/Figuras/bienvenida_bot.PNG, id=1447, 231.86626pt x 319.94531pt>
 File: ./Imagenes/Figuras/bienvenida_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/bienvenida_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/bienvenida_bot.PNG  used on input l
 ine 354.
 (pdftex.def)             Requested size: 162.30525pt x 223.96017pt.
-<./Imagenes/Figuras/imagenes_bot.PNG, id=847, 243.15843pt x 237.13594pt>
+<./Imagenes/Figuras/imagenes_bot.PNG, id=1448, 243.15843pt x 237.13594pt>
 File: ./Imagenes/Figuras/imagenes_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/imagenes_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/imagenes_bot.PNG  used on input lin
 e 361.
 (pdftex.def)             Requested size: 170.20973pt x 165.994pt.
-<./Imagenes/Figuras/pregunta_bot.PNG, id=848, 234.1247pt x 420.06938pt>
+<./Imagenes/Figuras/pregunta_bot.PNG, id=1449, 234.1247pt x 420.06938pt>
 File: ./Imagenes/Figuras/pregunta_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/pregunta_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/pregunta_bot.PNG  used on input lin
 e 369.
 (pdftex.def)             Requested size: 163.88615pt x 294.04655pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 379.
-LaTeX Info: Redefining \% on input line 379.
- [24 <./Imagenes/Figuras/funcionamiento_bot.PNG> <./Imagenes/Figuras/bienvenida
-_bot.PNG>]
-LaTeX Info: Redefining \. on input line 380.
-LaTeX Info: Redefining \% on input line 380.
-
-[25 <./Imagenes/Figuras/imagenes_bot.PNG> <./Imagenes/Figuras/pregunta_bot.PNG>
-]
-
-LaTeX Warning: Reference `tfg:sis_asis_cui_enf_alz' on page 26 undefined on inp
-ut line 384.
-
-
-LaTeX Warning: Reference `tfg:ext_inf_per_por_red_soc' on page 26 undefined on 
-input line 386.
-
-
-LaTeX Warning: Reference `tfg:gen_his_base_cono' on page 26 undefined on input 
-line 389.
-
-
-LaTeX Warning: Reference `tfg:ext_pre_por_img_alz' on page 26 undefined on inpu
-t line 390.
-
-)
+LaTeX Info: Redefining \. on input line 387.
+LaTeX Info: Redefining \% on input line 387.
+ [24 <./Imagenes/Figuras/funcionamiento_bot.PNG>])
 LaTeX Info: Redefining \. on input line 149.
 LaTeX Info: Redefining \% on input line 149.
- [26]
+ [25 <./Imagenes/Figuras/bienvenida_bot.PNG> <./Imagenes/Figuras/imagenes_bot.P
+NG>]
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+ [26 <./Imagenes/Figuras/pregunta_bot.PNG>]
 \openout2 = `Capitulos/PropuestaDelTFG.aux'.
 
- (Capitulos/PropuestaDelTFG.tex
+
+(Capitulos/PropuestaDelTFG.tex
 Cap\'itulo 3.
 [27
 
@@ -1184,23 +1197,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--48
 
  []
 
-
-LaTeX Warning: Reference `appendix:key2' on page 29 undefined on input line 48.
-
-
 LaTeX Info: Redefining \. on input line 60.
 LaTeX Info: Redefining \% on input line 60.
 [29]
 LaTeX Info: Redefining \. on input line 73.
 LaTeX Info: Redefining \% on input line 73.
  [30]
-
-LaTeX Warning: Reference `appendix:key2' on page 31 undefined on input line 76.
-
-
 LaTeX Info: Redefining \. on input line 87.
 LaTeX Info: Redefining \% on input line 87.
-[31]
+ [31]
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
  [32]
@@ -1238,54 +1243,33 @@ LaTeX Info: Redefining \% on input line 150.
 
 ]
 Cap\'itulo 4.
-
-LaTeX Warning: Reference `fig:3.2.1_listado_pacientes' on page 39 undefined on 
-input line 8.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png, id=938, 1144.27
-5pt x 357.335pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png, id=1543, 1144.2
+75pt x 357.335pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png Graphic fil
 e (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacien
 tes.png  used on input line 12.
 (pdftex.def)             Requested size: 341.43306pt x 106.62335pt.
-
-LaTeX Warning: Reference `fig:3.2.1_ver_paciente' on page 39 undefined on input
- line 17.
-
 [39 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_pacientes.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png, id=946, 1060.96375pt
- x 320.19624pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png, id=1550, 1060.96375p
+t x 320.19624pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png Graphic file (ty
 pe png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.p
 ng  used on input line 25.
 (pdftex.def)             Requested size: 341.43306pt x 103.04141pt.
-
-
-LaTeX Warning: Reference `fig:3.2.1_listado_pacientes' on page 40 undefined on 
-input line 36.
-
-
-LaTeX Warning: Reference `fig:3.2.1_listado_sesiones' on page 40 undefined on i
-nput line 39.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png, id=947, 1060.963
-75pt x 359.3425pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png, id=1553, 1060.96
+375pt x 359.3425pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png Graphic file
  (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesion
 es.png  used on input line 43.
 (pdftex.def)             Requested size: 341.43306pt x 115.63895pt.
-
-LaTeX Warning: Reference `fig:3.2.1_nueva_sesion' on page 40 undefined on input
- line 50.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png, id=948, 1031.855pt x
- 431.6125pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png, id=1555, 1031.855pt 
+x 431.6125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png Graphic file (ty
 pe png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion.png>
@@ -1294,37 +1278,25 @@ ng  used on input line 53.
 (pdftex.def)             Requested size: 341.43306pt x 142.81453pt.
 LaTeX Info: Redefining \. on input line 57.
 LaTeX Info: Redefining \% on input line 57.
-[40 <./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png>]
-
-LaTeX Warning: Reference `fig:3.2.1_nueva_sesion_recuerdos' on page 41 undefine
-d on input line 58.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png, id=957, 10
-32.85875pt x 519.9425pt>
+ [40 <./Imagenes/Figuras/prototipo_cris/3.2.1_ver_paciente.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png, id=1564, 1
+032.85875pt x 519.9425pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png Graphi
 c file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_r
 ecuerdos.png  used on input line 61.
 (pdftex.def)             Requested size: 341.43306pt x 171.87509pt.
-
-LaTeX Warning: Reference `fig:3.2.1_nueva_sesion_confirmacion' on page 41 undef
-ined on input line 66.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png, id=958,
- 1034.86626pt x 578.16pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png, id=1566
+, 1034.86626pt x 578.16pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png Gra
 phic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_c
 onfirmacion.png  used on input line 69.
 (pdftex.def)             Requested size: 341.43306pt x 190.74927pt.
-
-LaTeX Warning: Reference `fig:3.2.1_ver_sesion' on page 41 undefined on input l
-ine 75.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png, id=959, 1033.8625pt x 
-410.53375pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png, id=1568, 1033.8625pt x
+ 410.53375pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png Graphic file (type
  png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png>
@@ -1333,38 +1305,26 @@ Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png
 (pdftex.def)             Requested size: 341.43306pt x 135.57678pt.
 LaTeX Info: Redefining \. on input line 82.
 LaTeX Info: Redefining \% on input line 82.
-[41 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png> <./Imagenes/
-Figuras/prototipo_cris/3.2.1_nueva_sesion.png>]
-
-LaTeX Warning: Reference `fig:3.2.1_finalizar_sesion' on page 42 undefined on i
-nput line 83.
-
-
-LaTeX Warning: Reference `fig:3.2.1_informe_seguimiento' on page 42 undefined o
-n input line 83.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png, id=971, 1033.862
-5pt x 449.68pt>
+ [41 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_sesiones.png> <./Imagenes
+/Figuras/prototipo_cris/3.2.1_nueva_sesion.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png, id=1580, 1033.86
+25pt x 449.68pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png Graphic file
  (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_finalizar_sesi
 on.png  used on input line 86.
 (pdftex.def)             Requested size: 227.62204pt x 98.99852pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png, id=972, 612.2
-875pt x 594.22pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png, id=1581, 612.
+2875pt x 594.22pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png Graphic f
 ile (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguim
 iento.png  used on input line 93.
 (pdftex.def)             Requested size: 341.43306pt x 331.35553pt.
-
-LaTeX Warning: Reference `fig:3.2.1_ver_sesion_recuerdos' on page 42 undefined 
-on input line 98.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png, id=973, 1033
-.8625pt x 380.42125pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png, id=1583, 103
+3.8625pt x 380.42125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png Graphic 
 file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png>
@@ -1373,50 +1333,34 @@ uerdos.png  used on input line 101.
 (pdftex.def)             Requested size: 341.43306pt x 125.63226pt.
 LaTeX Info: Redefining \. on input line 105.
 LaTeX Info: Redefining \% on input line 105.
-[42 <./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png> <./Ima
-genes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png>]
-
-LaTeX Warning: Reference `fig:3.2.1_nuevo_recuerdo_existente' on page 43 undefi
-ned on input line 108.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png, id=982, 
-1036.87375pt x 513.92pt>
+ [42 <./Imagenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_recuerdos.png> <./Im
+agenes/Figuras/prototipo_cris/3.2.1_nueva_sesion_confirmacion.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png, id=1591,
+ 1036.87375pt x 513.92pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png Grap
 hic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo
 _existente.png  used on input line 111.
 (pdftex.def)             Requested size: 341.43306pt x 169.2334pt.
-
-LaTeX Warning: Reference `fig:3.2.1_nuevo_recuerdo' on page 43 undefined on inp
-ut line 116.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png, id=983, 1035.87pt 
-x 622.325pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png, id=1593, 1035.87pt
+ x 622.325pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png Graphic file (
 type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo
 .png  used on input line 119.
 (pdftex.def)             Requested size: 341.43306pt x 205.12099pt.
-
-LaTeX Warning: Reference `fig:3.2.1_nuevo_multimedia' on page 43 undefined on i
-nput line 128.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png, id=984, 1033.862
-5pt x 364.36125pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png, id=1595, 1033.86
+25pt x 364.36125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png Graphic file
  (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimed
 ia.png  used on input line 131.
 (pdftex.def)             Requested size: 341.43306pt x 120.32854pt.
-
-LaTeX Warning: Reference `fig:3.2.1_nuevo_multimedia_existente' on page 43 unde
-fined on input line 136.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png, id=985
-, 1031.855pt x 522.95375pt>
+<./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png, id=159
+7, 1031.855pt x 522.95375pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png Gr
 aphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png>
@@ -1425,18 +1369,10 @@ ia_existente.png  used on input line 139.
 (pdftex.def)             Requested size: 341.43306pt x 173.03809pt.
 LaTeX Info: Redefining \. on input line 143.
 LaTeX Info: Redefining \% on input line 143.
-[43 <./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png> <./Imagenes/Figura
-s/prototipo_cris/3.2.1_finalizar_sesion.png>]
-
-LaTeX Warning: Reference `fig:3.2.1_listado_personas_relacionadas' on page 44 u
-ndefined on input line 145.
-
-
-LaTeX Warning: Reference `fig:3.2.1_persona_relacionada' on page 44 undefined o
-n input line 145.
-
+ [43 <./Imagenes/Figuras/prototipo_cris/3.2.1_ver_sesion.png> <./Imagenes/Figur
+as/prototipo_cris/3.2.1_finalizar_sesion.png>]
 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_personas_relacionadas.png, id=
-994, 1033.8625pt x 345.29pt>
+1607, 1033.8625pt x 345.29pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_personas_relacionadas.png
  Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_personas_relacionadas.png>
@@ -1446,9 +1382,9 @@ as_relacionadas.png  used on input line 148.
 (pdftex.def)             Requested size: 341.43306pt x 114.03033pt.
 LaTeX Info: Redefining \. on input line 152.
 LaTeX Info: Redefining \% on input line 152.
-[44 <./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png> <./Imagen
-es/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png, id=1003, 1035
+ [44 <./Imagenes/Figuras/prototipo_cris/3.2.1_informe_seguimiento.png> <./Image
+nes/Figuras/prototipo_cris/3.2.1_ver_sesion_recuerdos.png>]
+<./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png, id=1614, 1035
 .87pt x 366.36874pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png Graphic f
 ile (type png)
@@ -1456,21 +1392,8 @@ ile (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relaci
 onada.png  used on input line 155.
 (pdftex.def)             Requested size: 341.43306pt x 120.7567pt.
-
-
-LaTeX Warning: Reference `fig:3.2.1_listado_informes_seguimiento' on page 45 un
-defined on input line 161.
-
-
-LaTeX Warning: Reference `fig:3.2.1_listado_evaluaciones' on page 45 undefined 
-on input line 161.
-
-
-LaTeX Warning: Reference `fig:3.2.1_evaluacion' on page 45 undefined on input l
-ine 161.
-
 <./Imagenes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png, id=1
-004, 1031.855pt x 361.35pt>
+618, 1031.855pt x 361.35pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png 
 Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png>
@@ -1479,14 +1402,14 @@ es_seguimiento.png  used on input line 164.
 (pdftex.def)             Requested size: 341.43306pt x 119.56566pt.
 LaTeX Info: Redefining \. on input line 168.
 LaTeX Info: Redefining \% on input line 168.
-[45 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png> <./I
-magenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png>]
+ [45 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo_existente.png> <./
+Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_recuerdo.png>]
 LaTeX Info: Redefining \. on input line 168.
 LaTeX Info: Redefining \% on input line 168.
  [46 <./Imagenes/Figuras/prototipo_cris/3.2.1_nuevo_multimedia.png> <./Imagenes
 /Figuras/prototipo_cris/3.2.1_nuevo_multimedia_existente.png> <./Imagenes/Figur
 as/prototipo_cris/3.2.1_listado_personas_relacionadas.png>]
-<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png, id=1025, 103
+<./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png, id=1633, 103
 3.8625pt x 298.11375pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png Graphic 
 file (type png)
@@ -1494,7 +1417,7 @@ file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_listado_evalua
 ciones.png  used on input line 171.
 (pdftex.def)             Requested size: 341.43306pt x 98.45062pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png, id=1026, 1034.86626pt 
+<./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png, id=1634, 1034.86626pt 
 x 400.49625pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png Graphic file (type
  png)
@@ -1502,16 +1425,7 @@ File: ./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png Graphic file (type
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png
   used on input line 178.
 (pdftex.def)             Requested size: 341.43306pt x 132.1336pt.
-
-
-LaTeX Warning: Reference `fig:3.2.1_historia_vida' on page 47 undefined on inpu
-t line 184.
-
-
-LaTeX Warning: Reference `fig:3.2.1_historia_vida_libro' on page 47 undefined o
-n input line 184.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.png, id=1027, 1037.8775p
+<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.png, id=1637, 1037.8775p
 t x 367.3725pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.png Graphic file (t
 ype png)
@@ -1519,7 +1433,7 @@ ype png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida.
 png  used on input line 187.
 (pdftex.def)             Requested size: 341.43306pt x 120.85771pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro.png, id=1028, 1035
+<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro.png, id=1638, 1035
 .87pt x 402.50375pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro.png Graphic f
 ile (type png)
@@ -1535,15 +1449,7 @@ LaTeX Info: Redefining \% on input line 197.
  [47 <./Imagenes/Figuras/prototipo_cris/3.2.1_persona_relacionada.png> <./Image
 nes/Figuras/prototipo_cris/3.2.1_listado_informes_seguimiento.png> <./Imagenes/
 Figuras/prototipo_cris/3.2.1_listado_evaluaciones.png>]
-
-LaTeX Warning: Reference `fig:3.2.1_calendario' on page 48 undefined on input l
-ine 199.
-
-
-LaTeX Warning: Reference `fig:3.2.1_actividad' on page 48 undefined on input li
-ne 199.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png, id=1040, 1032.85875pt 
+<./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png, id=1649, 1032.85875pt 
 x 359.3425pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png Graphic file (type
  png)
@@ -1551,7 +1457,7 @@ File: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png Graphic file (type
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario.png
   used on input line 202.
 (pdftex.def)             Requested size: 341.43306pt x 118.78625pt.
-<./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png, id=1041, 1035.87pt x 35
+<./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png, id=1650, 1035.87pt x 35
 6.33125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png Graphic file (type 
 png)
@@ -1559,11 +1465,7 @@ png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_actividad.png 
  used on input line 208.
 (pdftex.def)             Requested size: 341.43306pt x 117.4483pt.
-
-LaTeX Warning: Reference `fig:3.2.1_mensajeria_terapeuta' on page 48 undefined 
-on input line 214.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png, id=1042, 103
+<./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png, id=1652, 103
 4.86626pt x 348.30125pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png Graphic 
 file (type png)
@@ -1578,11 +1480,7 @@ LaTeX Info: Redefining \. on input line 221.
 LaTeX Info: Redefining \% on input line 221.
  [48 <./Imagenes/Figuras/prototipo_cris/3.2.1_evaluacion.png> <./Imagenes/Figur
 as/prototipo_cris/3.2.1_historia_vida.png>]
-
-LaTeX Warning: Reference `fig:3.2.1_asignar_pacientes' on page 49 undefined on 
-input line 223.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png, id=1053, 1034.8
+<./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png, id=1662, 1034.8
 6626pt x 563.10374pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png Graphic fil
 e (type png)
@@ -1604,11 +1502,7 @@ LaTeX Info: Redefining \. on input line 236.
 LaTeX Info: Redefining \% on input line 236.
  [50 <./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_terapeuta.png> <./Imag
 enes/Figuras/prototipo_cris/3.2.1_asignar_pacientes.png>]
-
-LaTeX Warning: Reference `fig:3.2.1_calendario_cuidador' on page 51 undefined o
-n input line 238.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png, id=1074, 1034
+<./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png, id=1680, 1034
 .86626pt x 363.3575pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png Graphic f
 ile (type png)
@@ -1616,15 +1510,7 @@ ile (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cui
 dador.png  used on input line 241.
 (pdftex.def)             Requested size: 341.43306pt x 119.88062pt.
-
-LaTeX Warning: Reference `fig:3.2.1_historia_vida_cuidador' on page 51 undefine
-d on input line 247.
-
-
-LaTeX Warning: Reference `fig:3.2.1_historia_vida_libro_cuidador' on page 51 un
-defined on input line 247.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png, id=1075, 1
+<./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png, id=1683, 1
 034.86626pt x 186.6975pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png Graphi
 c file (type png)
@@ -1633,18 +1519,14 @@ Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_
 cuidador.png  used on input line 250.
 (pdftex.def)             Requested size: 341.43306pt x 61.59612pt.
 <./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png, id=1
-076, 1031.855pt x 399.4925pt>
+684, 1031.855pt x 399.4925pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png 
 Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_
 libro_cuidador.png  used on input line 257.
 (pdftex.def)             Requested size: 341.43306pt x 132.18648pt.
-
-LaTeX Warning: Reference `fig:3.2.1_mensajeria_cuidador' on page 51 undefined o
-n input line 263.
-
-<./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png, id=1077, 1032
+<./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png, id=1686, 1032
 .85875pt x 288.07625pt>
 File: ./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png Graphic f
 ile (type png)
@@ -1654,111 +1536,76 @@ dador.png  used on input line 266.
 (pdftex.def)             Requested size: 341.43306pt x 95.22809pt.
 LaTeX Info: Redefining \. on input line 275.
 LaTeX Info: Redefining \% on input line 275.
-[51 <./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png> <./Imagen
-es/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png>]
-
-LaTeX Warning: Reference `fig:f.2' on page 52 undefined on input line 276.
-
-
-LaTeX Warning: Reference `fig:f.1' on page 52 undefined on input line 276.
-
-
-LaTeX Warning: Reference `fig:f.1' on page 52 undefined on input line 282.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.1.png, id=1091, 191.21437pt x 159.0943
+ [51 <./Imagenes/Figuras/prototipo_cris/3.2.1_calendario_cuidador.png> <./Image
+nes/Figuras/prototipo_cris/3.2.1_historia_vida_cuidador.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.1.png, id=1700, 191.21437pt x 159.0943
 8pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.1.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.1.png  used on
  input line 286.
 (pdftex.def)             Requested size: 227.62204pt x 189.39502pt.
-
-LaTeX Warning: Reference `fig:f.6' on page 52 undefined on input line 290.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.6.png, id=1092, 202.25563pt x 136.51pt
+<./Imagenes/Figuras/prototipo_Patricia/f.6.png, id=1702, 202.25563pt x 136.51pt
 >
 File: ./Imagenes/Figuras/prototipo_Patricia/f.6.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.6.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.6.png  used on
  input line 294.
 (pdftex.def)             Requested size: 227.62204pt x 153.63376pt.
-
-LaTeX Warning: Reference `fig:f.7' on page 52 undefined on input line 301.
-
 LaTeX Info: Redefining \. on input line 302.
 LaTeX Info: Redefining \% on input line 302.
-[52 <./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png> 
-<./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.7.png, id=1101, 195.22937pt x 149.5587
+ [52 <./Imagenes/Figuras/prototipo_cris/3.2.1_historia_vida_libro_cuidador.png>
+ <./Imagenes/Figuras/prototipo_cris/3.2.1_mensajeria_cuidador.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.7.png, id=1710, 195.22937pt x 149.5587
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.7.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.7.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.7.png  used on
  input line 305.
 (pdftex.def)             Requested size: 227.62204pt x 174.38055pt.
-
-
-LaTeX Warning: Reference `fig:f.8' on page 53 undefined on input line 310.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.8.png, id=1102, 198.7425pt x 149.55875
+<./Imagenes/Figuras/prototipo_Patricia/f.8.png, id=1712, 198.7425pt x 149.55875
 pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.8.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.8.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.8.png  used on
  input line 314.
 (pdftex.def)             Requested size: 227.62204pt x 171.29747pt.
-
-LaTeX Warning: Reference `fig:f.10' on page 53 undefined on input line 321.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.10.png, id=1103, 191.71625pt x 152.068
+<./Imagenes/Figuras/prototipo_Patricia/f.10.png, id=1714, 191.71625pt x 152.068
 13pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.10.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.10.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.10.png  used o
 n input line 325.
 (pdftex.def)             Requested size: 227.62204pt x 180.55956pt.
-
-LaTeX Warning: Reference `fig:f.17' on page 53 undefined on input line 331.
-
 LaTeX Info: Redefining \. on input line 332.
 LaTeX Info: Redefining \% on input line 332.
-[53 <./Imagenes/Figuras/prototipo_Patricia/f.1.png> <./Imagenes/Figuras/prototi
-po_Patricia/f.6.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.17.png, id=1110, 235.37938pt x 144.54p
+ [53 <./Imagenes/Figuras/prototipo_Patricia/f.1.png> <./Imagenes/Figuras/protot
+ipo_Patricia/f.6.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.17.png, id=1720, 235.37938pt x 144.54p
 t>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.17.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.17.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.17.png  used o
 n input line 335.
 (pdftex.def)             Requested size: 227.62204pt x 139.77794pt.
-
-
-LaTeX Warning: Reference `fig:f.18' on page 54 undefined on input line 340.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.18.png, id=1111, 239.89626pt x 151.064
+<./Imagenes/Figuras/prototipo_Patricia/f.18.png, id=1722, 239.89626pt x 151.064
 38pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.18.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.18.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.18.png  used o
 n input line 344.
 (pdftex.def)             Requested size: 227.62204pt x 143.33745pt.
-
-LaTeX Warning: Reference `fig:f.11' on page 54 undefined on input line 350.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.11.png, id=1112, 194.22563pt x 152.068
+<./Imagenes/Figuras/prototipo_Patricia/f.11.png, id=1724, 194.22563pt x 152.068
 13pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.11.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.11.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.11.png  used o
 n input line 354.
 (pdftex.def)             Requested size: 227.62204pt x 178.22063pt.
-
-LaTeX Warning: Reference `fig:f.21' on page 54 undefined on input line 360.
-
 LaTeX Info: Redefining \. on input line 361.
 LaTeX Info: Redefining \% on input line 361.
-[54 <./Imagenes/Figuras/prototipo_Patricia/f.7.png> <./Imagenes/Figuras/prototi
-po_Patricia/f.8.png>]
+ [54 <./Imagenes/Figuras/prototipo_Patricia/f.7.png> <./Imagenes/Figuras/protot
+ipo_Patricia/f.8.png>]
 
 LaTeX Warning: Text page 55 contains only floats.
 
@@ -1766,132 +1613,90 @@ LaTeX Info: Redefining \. on input line 361.
 LaTeX Info: Redefining \% on input line 361.
 [55 <./Imagenes/Figuras/prototipo_Patricia/f.10.png> <./Imagenes/Figuras/protot
 ipo_Patricia/f.17.png> <./Imagenes/Figuras/prototipo_Patricia/f.18.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.21.png, id=1126, 208.27812pt x 146.547
+<./Imagenes/Figuras/prototipo_Patricia/f.21.png, id=1735, 208.27812pt x 146.547
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.21.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.21.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.21.png  used o
 n input line 364.
 (pdftex.def)             Requested size: 227.62204pt x 160.16515pt.
-
-
-LaTeX Warning: Reference `fig:f.15' on page 56 undefined on input line 369.
-
 LaTeX Info: Redefining \. on input line 370.
 LaTeX Info: Redefining \% on input line 370.
+
 [56 <./Imagenes/Figuras/prototipo_Patricia/f.11.png> <./Imagenes/Figuras/protot
 ipo_Patricia/f.21.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.15.png, id=1133, 268.00125pt x 151.064
+<./Imagenes/Figuras/prototipo_Patricia/f.15.png, id=1741, 268.00125pt x 151.064
 38pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.15.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.15.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.15.png  used o
 n input line 377.
 (pdftex.def)             Requested size: 227.62204pt x 128.3039pt.
-
-
-LaTeX Warning: Reference `fig:f.12' on page 57 undefined on input line 382.
-
-
-LaTeX Warning: Reference `fig:f.19' on page 57 undefined on input line 382.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.12.png, id=1134, 201.75375pt x 152.068
+<./Imagenes/Figuras/prototipo_Patricia/f.12.png, id=1744, 201.75375pt x 152.068
 13pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.12.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.12.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.12.png  used o
 n input line 386.
 (pdftex.def)             Requested size: 227.62204pt x 171.56813pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.19.png, id=1135, 240.9pt x 151.06438pt
+<./Imagenes/Figuras/prototipo_Patricia/f.19.png, id=1745, 240.9pt x 151.06438pt
 >
 File: ./Imagenes/Figuras/prototipo_Patricia/f.19.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.19.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.19.png  used o
 n input line 393.
 (pdftex.def)             Requested size: 227.62204pt x 142.74274pt.
-
-LaTeX Warning: Reference `fig:f.13' on page 57 undefined on input line 398.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.13.png, id=1136, 187.19937pt x 158.592
+<./Imagenes/Figuras/prototipo_Patricia/f.13.png, id=1747, 187.19937pt x 158.592
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.13.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.13.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.13.png  used o
 n input line 402.
 (pdftex.def)             Requested size: 227.62204pt x 192.84851pt.
-
-LaTeX Warning: Reference `fig:f.19' on page 57 undefined on input line 408.
-
-
-LaTeX Warning: Reference `fig:f.20' on page 57 undefined on input line 410.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.20.png, id=1137, 202.25563pt x 159.596
+<./Imagenes/Figuras/prototipo_Patricia/f.20.png, id=1750, 202.25563pt x 159.596
 25pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.20.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.20.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.20.png  used o
 n input line 414.
 (pdftex.def)             Requested size: 227.62204pt x 179.61594pt.
-
-LaTeX Warning: Reference `fig:f.9' on page 57 undefined on input line 420.
-
-
-LaTeX Warning: Reference `fig:f.15' on page 57 undefined on input line 423.
-
-LaTeX Info: Redefining \. on input line 425.
-LaTeX Info: Redefining \% on input line 425.
-[57 <./Imagenes/Figuras/prototipo_Patricia/f.15.png>]
-
-LaTeX Warning: Reference `fig:f.14' on page 58 undefined on input line 425.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.14.png, id=1144, 194.22563pt x 143.536
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
+ [57 <./Imagenes/Figuras/prototipo_Patricia/f.15.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.14.png, id=1758, 194.22563pt x 143.536
 25pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.14.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.14.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.14.png  used o
 n input line 429.
 (pdftex.def)             Requested size: 227.62204pt x 168.22145pt.
-
-LaTeX Warning: Reference `fig:f.16' on page 58 undefined on input line 434.
-
-
-LaTeX Warning: Reference `fig:f.22' on page 58 undefined on input line 434.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.16.png, id=1145, 261.97874pt x 153.573
+<./Imagenes/Figuras/prototipo_Patricia/f.16.png, id=1761, 261.97874pt x 153.573
 75pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.16.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.16.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.16.png  used o
 n input line 438.
 (pdftex.def)             Requested size: 227.62204pt x 133.43701pt.
-<./Imagenes/Figuras/prototipo_Patricia/f.22.png, id=1146, 212.795pt x 146.5475p
+<./Imagenes/Figuras/prototipo_Patricia/f.22.png, id=1762, 212.795pt x 146.5475p
 t>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.22.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.22.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.22.png  used o
 n input line 445.
 (pdftex.def)             Requested size: 227.62204pt x 156.76624pt.
-
-LaTeX Warning: Reference `fig:f.9' on page 58 undefined on input line 451.
-
 LaTeX Info: Redefining \. on input line 452.
 LaTeX Info: Redefining \% on input line 452.
+
 [58 <./Imagenes/Figuras/prototipo_Patricia/f.12.png> <./Imagenes/Figuras/protot
 ipo_Patricia/f.19.png>]
-
-LaTeX Warning: Reference `fig:f.2' on page 59 undefined on input line 460.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.2.png, id=1153, 182.18062pt x 148.555p
+<./Imagenes/Figuras/prototipo_Patricia/f.2.png, id=1769, 182.18062pt x 148.555p
 t>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.2.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.2.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.2.png  used on
  input line 464.
 (pdftex.def)             Requested size: 227.62204pt x 185.61621pt.
-
-LaTeX Warning: Reference `fig:f.3' on page 59 undefined on input line 469.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.3.png, id=1154, 197.23688pt x 155.5812
+<./Imagenes/Figuras/prototipo_Patricia/f.3.png, id=1771, 197.23688pt x 155.5812
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.3.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.3.png>
@@ -1900,52 +1705,38 @@ Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.3.png  used on
 (pdftex.def)             Requested size: 227.62204pt x 179.55087pt.
 LaTeX Info: Redefining \. on input line 476.
 LaTeX Info: Redefining \% on input line 476.
-[59 <./Imagenes/Figuras/prototipo_Patricia/f.13.png> <./Imagenes/Figuras/protot
-ipo_Patricia/f.20.png>]
+ [59 <./Imagenes/Figuras/prototipo_Patricia/f.13.png> <./Imagenes/Figuras/proto
+tipo_Patricia/f.20.png>]
 LaTeX Info: Redefining \. on input line 476.
 LaTeX Info: Redefining \% on input line 476.
  [60 <./Imagenes/Figuras/prototipo_Patricia/f.14.png> <./Imagenes/Figuras/proto
 tipo_Patricia/f.16.png> <./Imagenes/Figuras/prototipo_Patricia/f.22.png>]
-
-LaTeX Warning: Reference `fig:f.4' on page 61 undefined on input line 478.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.4.png, id=1168, 197.23688pt x 155.5812
+<./Imagenes/Figuras/prototipo_Patricia/f.4.png, id=1781, 197.23688pt x 155.5812
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.4.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.4.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.4.png  used on
  input line 482.
 (pdftex.def)             Requested size: 227.62204pt x 179.55087pt.
-
-LaTeX Warning: Reference `fig:f.5' on page 61 undefined on input line 487.
-
-<./Imagenes/Figuras/prototipo_Patricia/f.5.png, id=1169, 200.24812pt x 155.5812
+<./Imagenes/Figuras/prototipo_Patricia/f.5.png, id=1783, 200.24812pt x 155.5812
 5pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.5.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.5.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.5.png  used on
  input line 491.
 (pdftex.def)             Requested size: 227.62204pt x 176.8588pt.
-
-LaTeX Warning: Reference `fig:f.9' on page 61 undefined on input line 496.
-
 LaTeX Info: Redefining \. on input line 497.
 LaTeX Info: Redefining \% on input line 497.
-[61 <./Imagenes/Figuras/prototipo_Patricia/f.2.png> <./Imagenes/Figuras/prototi
-po_Patricia/f.3.png>]
-<./Imagenes/Figuras/prototipo_Patricia/f.9.png, id=1176, 268.00125pt x 152.0681
+ [61 <./Imagenes/Figuras/prototipo_Patricia/f.2.png> <./Imagenes/Figuras/protot
+ipo_Patricia/f.3.png>]
+<./Imagenes/Figuras/prototipo_Patricia/f.9.png, id=1790, 268.00125pt x 152.0681
 3pt>
 File: ./Imagenes/Figuras/prototipo_Patricia/f.9.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_Patricia/f.9.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_Patricia/f.9.png  used on
  input line 500.
 (pdftex.def)             Requested size: 227.62204pt x 129.15642pt.
-
-
-LaTeX Warning: Reference `fig:login_san' on page 62 undefined on input line 510
-.
-
-<./Imagenes/Figuras/prototipo_santi/login_san.PNG, id=1177, 466.74374pt x 295.1
+<./Imagenes/Figuras/prototipo_santi/login_san.PNG, id=1792, 466.74374pt x 295.1
 025pt>
 File: ./Imagenes/Figuras/prototipo_santi/login_san.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/login_san.PNG>
@@ -1959,21 +1750,14 @@ LaTeX Info: Redefining \. on input line 517.
 LaTeX Info: Redefining \% on input line 517.
  [62 <./Imagenes/Figuras/prototipo_Patricia/f.4.png> <./Imagenes/Figuras/protot
 ipo_Patricia/f.5.png>]
-
-LaTeX Warning: Reference `fig:ini_san' on page 63 undefined on input line 520.
-
-<./Imagenes/Figuras/prototipo_santi/ini_san.PNG, id=1184, 506.89375pt x 392.466
+<./Imagenes/Figuras/prototipo_santi/ini_san.PNG, id=1798, 506.89375pt x 392.466
 25pt>
 File: ./Imagenes/Figuras/prototipo_santi/ini_san.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/ini_san.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/ini_san.PNG  used o
 n input line 523.
 (pdftex.def)             Requested size: 227.62204pt x 176.23688pt.
-
-LaTeX Warning: Reference `fig:prep_ses' on page 63 undefined on input line 531.
-
-
-<./Imagenes/Figuras/prototipo_santi/prep_ses.PNG, id=1185, 417.56pt x 283.0575p
+<./Imagenes/Figuras/prototipo_santi/prep_ses.PNG, id=1800, 417.56pt x 283.0575p
 t>
 File: ./Imagenes/Figuras/prototipo_santi/prep_ses.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/prep_ses.PNG>
@@ -1982,38 +1766,27 @@ on input line 534.
 (pdftex.def)             Requested size: 227.62204pt x 154.30429pt.
 LaTeX Info: Redefining \. on input line 538.
 LaTeX Info: Redefining \% on input line 538.
-[63 <./Imagenes/Figuras/prototipo_Patricia/f.9.png> <./Imagenes/Figuras/prototi
-po_santi/login_san.PNG>]
-
-LaTeX Warning: Reference `fig:crea_ses' on page 64 undefined on input line 539.
-
-
+ [63 <./Imagenes/Figuras/prototipo_Patricia/f.9.png> <./Imagenes/Figuras/protot
+ipo_santi/login_san.PNG>]
 LaTeX Info: Redefining \. on input line 540.
 LaTeX Info: Redefining \% on input line 540.
-[64 <./Imagenes/Figuras/prototipo_santi/ini_san.PNG> <./Imagenes/Figuras/protot
-ipo_santi/prep_ses.PNG>]
-<./Imagenes/Figuras/prototipo_santi/crea_ses.PNG, id=1202, 887.315pt x 601.2462
+ [64 <./Imagenes/Figuras/prototipo_santi/ini_san.PNG> <./Imagenes/Figuras/proto
+tipo_santi/prep_ses.PNG>]
+<./Imagenes/Figuras/prototipo_santi/crea_ses.PNG, id=1813, 887.315pt x 601.2462
 5pt>
 File: ./Imagenes/Figuras/prototipo_santi/crea_ses.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/crea_ses.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/crea_ses.PNG  used 
 on input line 543.
 (pdftex.def)             Requested size: 227.62204pt x 154.22859pt.
-
-
-LaTeX Warning: Reference `fig:rea_ses' on page 65 undefined on input line 552.
-
-<./Imagenes/Figuras/prototipo_santi/rea_ses.PNG, id=1203, 965.6075pt x 767.8687
+<./Imagenes/Figuras/prototipo_santi/rea_ses.PNG, id=1815, 965.6075pt x 767.8687
 4pt>
 File: ./Imagenes/Figuras/prototipo_santi/rea_ses.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/rea_ses.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/rea_ses.PNG  used o
 n input line 556.
 (pdftex.def)             Requested size: 227.62204pt x 180.99986pt.
-
-LaTeX Warning: Reference `fig:fin_ses' on page 65 undefined on input line 560.
-
-<./Imagenes/Figuras/prototipo_santi/fin_ses.PNG, id=1204, 349.305pt x 236.885pt
+<./Imagenes/Figuras/prototipo_santi/fin_ses.PNG, id=1817, 349.305pt x 236.885pt
 >
 File: ./Imagenes/Figuras/prototipo_santi/fin_ses.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/fin_ses.PNG>
@@ -2022,13 +1795,9 @@ n input line 563.
 (pdftex.def)             Requested size: 227.62204pt x 154.3674pt.
 LaTeX Info: Redefining \. on input line 567.
 LaTeX Info: Redefining \% on input line 567.
-[65 <./Imagenes/Figuras/prototipo_santi/crea_ses.PNG> <./Imagenes/Figuras/proto
-tipo_santi/rea_ses.PNG>]
-
-LaTeX Warning: Reference `fig:family_ses' on page 66 undefined on input line 57
-0.
-
-<./Imagenes/Figuras/prototipo_santi/family_ses.PNG, id=1213, 654.445pt x 493.84
+ [65 <./Imagenes/Figuras/prototipo_santi/crea_ses.PNG> <./Imagenes/Figuras/prot
+otipo_santi/rea_ses.PNG>]
+<./Imagenes/Figuras/prototipo_santi/family_ses.PNG, id=1825, 654.445pt x 493.84
 5pt>
 File: ./Imagenes/Figuras/prototipo_santi/family_ses.PNG Graphic file (type png)
 
@@ -2036,36 +1805,25 @@ File: ./Imagenes/Figuras/prototipo_santi/family_ses.PNG Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/family_ses.PNG  use
 d on input line 573.
 (pdftex.def)             Requested size: 227.62204pt x 171.76323pt.
-
-LaTeX Warning: Reference `fig:cal_san' on page 66 undefined on input line 579.
-
-<./Imagenes/Figuras/prototipo_santi/cal_san.PNG, id=1214, 815.045pt x 497.86pt>
+<./Imagenes/Figuras/prototipo_santi/cal_san.PNG, id=1827, 815.045pt x 497.86pt>
 
 File: ./Imagenes/Figuras/prototipo_santi/cal_san.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/cal_san.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/cal_san.PNG  used o
 n input line 582.
 (pdftex.def)             Requested size: 227.62204pt x 139.0352pt.
-
-LaTeX Warning: Reference `fig:hv_san' on page 66 undefined on input line 587.
-
 LaTeX Info: Redefining \. on input line 588.
 LaTeX Info: Redefining \% on input line 588.
-[66 <./Imagenes/Figuras/prototipo_santi/fin_ses.PNG> <./Imagenes/Figuras/protot
-ipo_santi/family_ses.PNG>]
-<./Imagenes/Figuras/prototipo_santi/hv_san.PNG, id=1223, 877.2775pt x 560.0925p
+ [66 <./Imagenes/Figuras/prototipo_santi/fin_ses.PNG> <./Imagenes/Figuras/proto
+tipo_santi/family_ses.PNG>]
+<./Imagenes/Figuras/prototipo_santi/hv_san.PNG, id=1835, 877.2775pt x 560.0925p
 t>
 File: ./Imagenes/Figuras/prototipo_santi/hv_san.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/hv_san.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/hv_san.PNG  used on
  input line 591.
 (pdftex.def)             Requested size: 227.62204pt x 145.32149pt.
-
-
-LaTeX Warning: Reference `fig:chat_san' on page 67 undefined on input line 595.
-
-
-<./Imagenes/Figuras/prototipo_santi/chat_san.PNG, id=1224, 750.805pt x 537.0062
+<./Imagenes/Figuras/prototipo_santi/chat_san.PNG, id=1837, 750.805pt x 537.0062
 6pt>
 File: ./Imagenes/Figuras/prototipo_santi/chat_san.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_santi/chat_san.PNG>
@@ -2073,18 +1831,13 @@ Package pdftex.def Info: ./Imagenes/Figuras/prototipo_santi/chat_san.PNG  used
 on input line 598.
 (pdftex.def)             Requested size: 227.62204pt x 162.79929pt.
 
-LaTeX Warning: Reference `fig:pro_eva_bus_paciente' on page 67 undefined on inp
-ut line 610.
-
-
-LaTeX Warning: Reference `fig:pro_eva_menu_paciente' on page 67 undefined on in
-put line 610.
+Underfull \vbox (badness 1694) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 611.
 LaTeX Info: Redefining \% on input line 611.
-[67 <./Imagenes/Figuras/prototipo_santi/cal_san.PNG> <./Imagenes/Figuras/protot
-ipo_santi/hv_san.PNG>]
-<./Imagenes/Figuras/prototipo_eva/buscador_pacientes.png, id=1233, 684.5575pt x
+ [67 <./Imagenes/Figuras/prototipo_santi/cal_san.PNG> <./Imagenes/Figuras/proto
+tipo_santi/hv_san.PNG>]
+<./Imagenes/Figuras/prototipo_eva/buscador_pacientes.png, id=1847, 684.5575pt x
  605.26125pt>
 File: ./Imagenes/Figuras/prototipo_eva/buscador_pacientes.png Graphic file (typ
 e png)
@@ -2092,7 +1845,7 @@ e png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/buscador_pacientes.pn
 g  used on input line 614.
 (pdftex.def)             Requested size: 170.71652pt x 150.93628pt.
-<./Imagenes/Figuras/prototipo_eva/menu_paciente.png, id=1234, 685.56125pt x 606
+<./Imagenes/Figuras/prototipo_eva/menu_paciente.png, id=1848, 685.56125pt x 606
 .265pt>
 File: ./Imagenes/Figuras/prototipo_eva/menu_paciente.png Graphic file (type png
 )
@@ -2100,12 +1853,7 @@ File: ./Imagenes/Figuras/prototipo_eva/menu_paciente.png Graphic file (type png
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/menu_paciente.png  us
 ed on input line 621.
 (pdftex.def)             Requested size: 170.71652pt x 150.96457pt.
-
-
-LaTeX Warning: Reference `fig:pro_eva_menu_ss' on page 68 undefined on input li
-ne 628.
-
-<./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png, id=1235, 1193.45876pt 
+<./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png, id=1850, 1193.45876pt 
 x 862.22125pt>
 File: ./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png Graphic file (type
  png)
@@ -2113,11 +1861,7 @@ File: ./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png Graphic file (type
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/preparar_sesiones.png
   used on input line 632.
 (pdftex.def)             Requested size: 170.71652pt x 123.32828pt.
-
-LaTeX Warning: Reference `fig:pro_eva_historial_ss' on page 68 undefined on inp
-ut line 638.
-
-<./Imagenes/Figuras/prototipo_eva/historial_sesiones.png, id=1236, 1701.35625pt
+<./Imagenes/Figuras/prototipo_eva/historial_sesiones.png, id=1852, 1701.35625pt
  x 573.14125pt>
 File: ./Imagenes/Figuras/prototipo_eva/historial_sesiones.png Graphic file (typ
 e png)
@@ -2125,20 +1869,16 @@ e png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/historial_sesiones.pn
 g  used on input line 642.
 (pdftex.def)             Requested size: 341.43306pt x 115.01976pt.
-
-LaTeX Warning: Reference `fig:pro_eva_crear_ss' on page 68 undefined on input l
-ine 647.
-
 LaTeX Info: Redefining \. on input line 648.
 LaTeX Info: Redefining \% on input line 648.
-[68 <./Imagenes/Figuras/prototipo_santi/chat_san.PNG> <./Imagenes/Figuras/proto
-tipo_eva/buscador_pacientes.png>]
+ [68 <./Imagenes/Figuras/prototipo_santi/chat_san.PNG> <./Imagenes/Figuras/prot
+otipo_eva/buscador_pacientes.png>]
 LaTeX Info: Redefining \. on input line 648.
 LaTeX Info: Redefining \% on input line 648.
  [69 <./Imagenes/Figuras/prototipo_eva/menu_paciente.png> <./Imagenes/Figuras/p
 rototipo_eva/preparar_sesiones.png> <./Imagenes/Figuras/prototipo_eva/historial
 _sesiones.png>]
-<./Imagenes/Figuras/prototipo_eva/nueva_sesion.png, id=1257, 1776.6375pt x 521.
+<./Imagenes/Figuras/prototipo_eva/nueva_sesion.png, id=1868, 1776.6375pt x 521.
 95pt>
 File: ./Imagenes/Figuras/prototipo_eva/nueva_sesion.png Graphic file (type png)
 
@@ -2146,16 +1886,7 @@ File: ./Imagenes/Figuras/prototipo_eva/nueva_sesion.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/nueva_sesion.png  use
 d on input line 651.
 (pdftex.def)             Requested size: 341.43306pt x 100.30246pt.
-
-
-LaTeX Warning: Reference `fig:pro_eva_realizar_ss' on page 70 undefined on inpu
-t line 658.
-
-
-LaTeX Warning: Reference `fig:pro_eva_finalizar_ss' on page 70 undefined on inp
-ut line 658.
-
-<./Imagenes/Figuras/prototipo_eva/realizar_sesion.png, id=1258, 1734.48pt x 562
+<./Imagenes/Figuras/prototipo_eva/realizar_sesion.png, id=1871, 1734.48pt x 562
 .1pt>
 File: ./Imagenes/Figuras/prototipo_eva/realizar_sesion.png Graphic file (type p
 ng)
@@ -2163,7 +1894,7 @@ ng)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/realizar_sesion.png  
 used on input line 662.
 (pdftex.def)             Requested size: 341.43306pt x 110.64258pt.
-<./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png, id=1259, 1637.11626pt x
+<./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png, id=1872, 1637.11626pt x
  605.26125pt>
 File: ./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png Graphic file (type 
 png)
@@ -2171,15 +1902,11 @@ png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png 
  used on input line 669.
 (pdftex.def)             Requested size: 341.43306pt x 126.23123pt.
-
-LaTeX Warning: Reference `fig:pro_eva_hv' on page 70 undefined on input line 67
-4.
-
 LaTeX Info: Redefining \. on input line 675.
 LaTeX Info: Redefining \% on input line 675.
-[70 <./Imagenes/Figuras/prototipo_eva/nueva_sesion.png> <./Imagenes/Figuras/pro
-totipo_eva/realizar_sesion.png>]
-<./Imagenes/Figuras/prototipo_eva/historia_vida.png, id=1270, 1684.2925pt x 627
+ [70 <./Imagenes/Figuras/prototipo_eva/nueva_sesion.png> <./Imagenes/Figuras/pr
+ototipo_eva/realizar_sesion.png>]
+<./Imagenes/Figuras/prototipo_eva/historia_vida.png, id=1882, 1684.2925pt x 627
 .34375pt>
 File: ./Imagenes/Figuras/prototipo_eva/historia_vida.png Graphic file (type png
 )
@@ -2187,12 +1914,7 @@ File: ./Imagenes/Figuras/prototipo_eva/historia_vida.png Graphic file (type png
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/historia_vida.png  us
 ed on input line 678.
 (pdftex.def)             Requested size: 341.43306pt x 127.17043pt.
-
-
-LaTeX Warning: Reference `fig:pro_eva_crear_evalu' on page 71 undefined on inpu
-t line 685.
-
-<./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png, id=1271, 851.18pt x 652
+<./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png, id=1884, 851.18pt x 652
 .4375pt>
 File: ./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png Graphic file (type 
 png)
@@ -2200,11 +1922,7 @@ png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png 
  used on input line 689.
 (pdftex.def)             Requested size: 170.71652pt x 130.85353pt.
-
-LaTeX Warning: Reference `fig:pro_eva_mostrar_evalu' on page 71 undefined on in
-put line 694.
-
-<./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.png, id=1272, 1425.325pt x
+<./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.png, id=1886, 1425.325pt x
  443.6575pt>
 File: ./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.png Graphic file (typ
 e png)
@@ -2212,11 +1930,7 @@ e png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/lista_evaluaciones.pn
 g  used on input line 698.
 (pdftex.def)             Requested size: 341.43306pt x 106.27687pt.
-
-LaTeX Warning: Reference `fig:pro_eva_mostrar_infor' on page 71 undefined on in
-put line 703.
-
-<./Imagenes/Figuras/prototipo_eva/lista_informes.png, id=1273, 1425.325pt x 403
+<./Imagenes/Figuras/prototipo_eva/lista_informes.png, id=1888, 1425.325pt x 403
 .5075pt>
 File: ./Imagenes/Figuras/prototipo_eva/lista_informes.png Graphic file (type pn
 g)
@@ -2224,22 +1938,14 @@ g)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/lista_informes.png  u
 sed on input line 707.
 (pdftex.def)             Requested size: 341.43306pt x 96.65906pt.
-
-LaTeX Warning: Reference `fig:pro_eva_t_menu' on page 71 undefined on input lin
-e 714.
-
-<./Imagenes/Figuras/prototipo_eva/menu.png, id=1274, 380.42125pt x 810.02625pt>
+<./Imagenes/Figuras/prototipo_eva/menu.png, id=1890, 380.42125pt x 810.02625pt>
 
 File: ./Imagenes/Figuras/prototipo_eva/menu.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/menu.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/menu.png  used on inp
 ut line 717.
 (pdftex.def)             Requested size: 53.9978pt x 114.97261pt.
-
-LaTeX Warning: Reference `fig:pro_eva_lista_paci' on page 71 undefined on input
- line 724.
-
-<./Imagenes/Figuras/prototipo_eva/lista_pacientes.png, id=1275, 1413.28pt x 777
+<./Imagenes/Figuras/prototipo_eva/lista_pacientes.png, id=1892, 1413.28pt x 777
 .90625pt>
 File: ./Imagenes/Figuras/prototipo_eva/lista_pacientes.png Graphic file (type p
 ng)
@@ -2249,40 +1955,28 @@ used on input line 727.
 (pdftex.def)             Requested size: 170.71652pt x 93.96194pt.
 LaTeX Info: Redefining \. on input line 731.
 LaTeX Info: Redefining \% on input line 731.
-[71 <./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png> <./Imagenes/Figuras
-/prototipo_eva/historia_vida.png>]
+ [71 <./Imagenes/Figuras/prototipo_eva/finalizar_sesion.png> <./Imagenes/Figura
+s/prototipo_eva/historia_vida.png>]
 LaTeX Info: Redefining \. on input line 731.
 LaTeX Info: Redefining \% on input line 731.
  [72 <./Imagenes/Figuras/prototipo_eva/nueva_evaluacion.png> <./Imagenes/Figura
 s/prototipo_eva/lista_evaluaciones.png> <./Imagenes/Figuras/prototipo_eva/lista
 _informes.png> <./Imagenes/Figuras/prototipo_eva/menu.png>]
-
-LaTeX Warning: Reference `fig:pro_eva_t_men' on page 73 undefined on input line
- 732.
-
-<./Imagenes/Figuras/prototipo_eva/mensajeria.png, id=1298, 1015.795pt x 764.857
+<./Imagenes/Figuras/prototipo_eva/mensajeria.png, id=1910, 1015.795pt x 764.857
 5pt>
 File: ./Imagenes/Figuras/prototipo_eva/mensajeria.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/mensajeria.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/mensajeria.png  used 
 on input line 736.
 (pdftex.def)             Requested size: 170.71652pt x 128.54185pt.
-
-LaTeX Warning: Reference `fig:pro_eva_t_perfil' on page 73 undefined on input l
-ine 741.
-
-<./Imagenes/Figuras/prototipo_eva/mi_perfil.png, id=1299, 1000.73875pt x 741.77
+<./Imagenes/Figuras/prototipo_eva/mi_perfil.png, id=1912, 1000.73875pt x 741.77
 126pt>
 File: ./Imagenes/Figuras/prototipo_eva/mi_perfil.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/mi_perfil.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/mi_perfil.png  used o
 n input line 745.
 (pdftex.def)             Requested size: 170.71652pt x 126.52954pt.
-
-LaTeX Warning: Reference `fig:pro_eva_opc_config' on page 73 undefined on input
- line 753.
-
-<./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png, id=1300, 1034.86626pt 
+<./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png, id=1914, 1034.86626pt 
 x 838.13126pt>
 File: ./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png Graphic file (type
  png)
@@ -2290,22 +1984,14 @@ File: ./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png Graphic file (type
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/ajustes_pacientes.png
   used on input line 757.
 (pdftex.def)             Requested size: 170.71652pt x 138.2601pt.
-
-LaTeX Warning: Reference `fig:pro_eva_calendario' on page 73 undefined on input
- line 763.
-
-
-LaTeX Warning: Reference `fig:pro_eva_asig_tera' on page 73 undefined on input 
-line 764.
-
-<./Imagenes/Figuras/prototipo_eva/calendario.png, id=1301, 1362.08875pt x 1027.
+<./Imagenes/Figuras/prototipo_eva/calendario.png, id=1917, 1362.08875pt x 1027.
 84pt>
 File: ./Imagenes/Figuras/prototipo_eva/calendario.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/calendario.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/calendario.png  used 
 on input line 769.
 (pdftex.def)             Requested size: 170.71652pt x 128.80904pt.
-<./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png, id=1302, 838.13126pt 
+<./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png, id=1918, 838.13126pt 
 x 712.6625pt>
 File: ./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png Graphic file (typ
 e png)
@@ -2313,25 +1999,17 @@ e png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.pn
 g  used on input line 776.
 (pdftex.def)             Requested size: 170.71652pt x 145.15068pt.
-
-LaTeX Warning: Reference `fig:pro_eva_c_menu' on page 73 undefined on input lin
-e 784.
-
-<./Imagenes/Figuras/prototipo_eva/c_menu.png, id=1303, 234.8775pt x 444.66125pt
+<./Imagenes/Figuras/prototipo_eva/c_menu.png, id=1920, 234.8775pt x 444.66125pt
 >
 File: ./Imagenes/Figuras/prototipo_eva/c_menu.png Graphic file (type png)
 <use ./Imagenes/Figuras/prototipo_eva/c_menu.png>
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/c_menu.png  used on i
 nput line 788.
 (pdftex.def)             Requested size: 53.9978pt x 102.22243pt.
-
-LaTeX Warning: Reference `fig:pro_eva_c_calendario' on page 73 undefined on inp
-ut line 794.
-
 LaTeX Info: Redefining \. on input line 795.
 LaTeX Info: Redefining \% on input line 795.
-[73 <./Imagenes/Figuras/prototipo_eva/lista_pacientes.png> <./Imagenes/Figuras/
-prototipo_eva/mensajeria.png>]
+ [73 <./Imagenes/Figuras/prototipo_eva/lista_pacientes.png> <./Imagenes/Figuras
+/prototipo_eva/mensajeria.png>]
 LaTeX Info: Redefining \. on input line 795.
 LaTeX Info: Redefining \% on input line 795.
  [74 <./Imagenes/Figuras/prototipo_eva/mi_perfil.png> <./Imagenes/Figuras/proto
@@ -2341,7 +2019,7 @@ LaTeX Info: Redefining \. on input line 795.
 LaTeX Info: Redefining \% on input line 795.
  [75 <./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png> <./Imagenes/Figu
 ras/prototipo_eva/c_menu.png>]
-<./Imagenes/Figuras/prototipo_eva/c_calendario.png, id=1332, 894.34125pt x 361.
+<./Imagenes/Figuras/prototipo_eva/c_calendario.png, id=1943, 894.34125pt x 361.
 35pt>
 File: ./Imagenes/Figuras/prototipo_eva/c_calendario.png Graphic file (type png)
 
@@ -2349,12 +2027,7 @@ File: ./Imagenes/Figuras/prototipo_eva/c_calendario.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/c_calendario.png  use
 d on input line 798.
 (pdftex.def)             Requested size: 284.52756pt x 114.96169pt.
-
-
-LaTeX Warning: Reference `fig:pro_eva_c_men' on page 76 undefined on input line
- 803.
-
-<./Imagenes/Figuras/prototipo_eva/c_mensajeria.png, id=1333, 894.34125pt x 311.
+<./Imagenes/Figuras/prototipo_eva/c_mensajeria.png, id=1945, 894.34125pt x 311.
 1625pt>
 File: ./Imagenes/Figuras/prototipo_eva/c_mensajeria.png Graphic file (type png)
 
@@ -2362,35 +2035,11 @@ File: ./Imagenes/Figuras/prototipo_eva/c_mensajeria.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/prototipo_eva/c_mensajeria.png  use
 d on input line 807.
 (pdftex.def)             Requested size: 284.52756pt x 98.99478pt.
-
-LaTeX Warning: Reference `cap:disenio_cris' on page 76 undefined on input line 
-820.
-
 LaTeX Info: Redefining \. on input line 822.
 LaTeX Info: Redefining \% on input line 822.
-[76 <./Imagenes/Figuras/prototipo_eva/c_calendario.png> <./Imagenes/Figuras/pro
-totipo_eva/c_mensajeria.png>]
-
-LaTeX Warning: Reference `fig:3.2.5_listado_pacientes' on page 77 undefined on 
-input line 822.
-
-
-LaTeX Warning: Reference `fig:3.2.5_listado_pacientes' on page 77 undefined on 
-input line 826.
-
-
-LaTeX Warning: Reference `fig:3.2.5_ver_paciente' on page 77 undefined on input
- line 827.
-
-
-LaTeX Warning: Reference `fig:3.2.5_ver_paciente' on page 77 undefined on input
- line 830.
-
-
-LaTeX Warning: Reference `fig:3.2.5_login' on page 77 undefined on input line 8
-32.
-
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png, id=1342, 544.0325pt x 
+ [76 <./Imagenes/Figuras/prototipo_eva/c_calendario.png> <./Imagenes/Figuras/pr
+ototipo_eva/c_mensajeria.png>]
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png, id=1958, 544.0325pt x 
 556.0775pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png Graphic file (type
  png)
@@ -2398,19 +2047,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png Graphic file (type
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png
   used on input line 835.
 (pdftex.def)             Requested size: 227.62204pt x 232.66002pt.
-
-LaTeX Warning: Reference `fig:3.2.5_listado_pacientes' on page 77 undefined on 
-input line 840.
-
-
-LaTeX Warning: Reference `fig:3.2.5_nuevo paciente' on page 77 undefined on inp
-ut line 840.
-
-
-LaTeX Warning: Reference `fig:3.2.5_modificar_paciente' on page 77 undefined on
- input line 840.
-
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png, id=1343, 1
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png, id=1962, 1
 139.25626pt x 364.36125pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png Graphi
 c file (type png)
@@ -2418,7 +2055,7 @@ c file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_p
 acientes.png  used on input line 843.
 (pdftex.def)             Requested size: 341.43306pt x 109.19801pt.
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png, id=1344, 1147
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png, id=1963, 1147
 .28625pt x 512.91624pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png Graphic f
 ile (type png)
@@ -2426,7 +2063,7 @@ ile (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_pac
 iente.png  used on input line 850.
 (pdftex.def)             Requested size: 341.43306pt x 152.63948pt.
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png, id=1345, 
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png, id=1964, 
 1019.81pt x 520.94624pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png Graph
 ic file (type png)
@@ -2434,7 +2071,7 @@ ic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar
 _paciente.png  used on input line 857.
 (pdftex.def)             Requested size: 341.43306pt x 174.41672pt.
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png, id=1346, 1134.2
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png, id=1965, 1134.2
 375pt x 652.4375pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png Graphic fil
 e (type png)
@@ -2442,11 +2079,7 @@ e (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_pacie
 nte.png  used on input line 865.
 (pdftex.def)             Requested size: 341.43306pt x 196.39977pt.
-
-LaTeX Warning: Reference `fig:3.2.5_listado_sesiones' on page 77 undefined on i
-nput line 870.
-
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png, id=1347, 11
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png, id=1967, 11
 30.2225pt x 467.7475pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png Graphic
  file (type png)
@@ -2456,12 +2089,8 @@ esiones.png  used on input line 873.
 (pdftex.def)             Requested size: 341.43306pt x 141.30312pt.
 LaTeX Info: Redefining \. on input line 877.
 LaTeX Info: Redefining \% on input line 877.
-[77]
-
-LaTeX Warning: Reference `fig:3.2.5_nueva_sesion' on page 78 undefined on input
- line 878.
-
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png, id=1352, 812.03
+ [77]
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png, id=1973, 812.03
 375pt x 871.255pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png Graphic fil
 e (type png)
@@ -2476,11 +2105,7 @@ LaTeX Info: Redefining \. on input line 885.
 LaTeX Info: Redefining \% on input line 885.
  [78 <./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png> <./Imagenes/Figur
 as/disenio_competitivo/3.2.5_listado_pacientes.png>]
-
-LaTeX Warning: Reference `fig:3.2.5_nuevo_recuerdo' on page 79 undefined on inp
-ut line 890.
-
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png, id=1361, 813.
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png, id=1981, 813.
 0375pt x 841.1425pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png Graphic f
 ile (type png)
@@ -2490,14 +2115,10 @@ uerdo.png  used on input line 893.
 (pdftex.def)             Requested size: 341.43306pt x 353.2261pt.
 LaTeX Info: Redefining \. on input line 897.
 LaTeX Info: Redefining \% on input line 897.
-[79 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png> <./Imagen
-es/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png>]
-
-LaTeX Warning: Reference `fig:3.2.5_nuevo_recuerdo_existente' on page 80 undefi
-ned on input line 898.
-
+ [79 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png> <./Image
+nes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png, id=
-1370, 1051.93pt x 449.68pt>
+1990, 1051.93pt x 449.68pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png
  Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png>
@@ -2507,14 +2128,10 @@ uerdo_existente.png  used on input line 901.
 (pdftex.def)             Requested size: 227.62204pt x 97.30371pt.
 LaTeX Info: Redefining \. on input line 909.
 LaTeX Info: Redefining \% on input line 909.
-[80 <./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png> <./Imagenes
-/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png>]
-
-LaTeX Warning: Reference `fig:3.2.5_nueva_persona_relacionada' on page 81 undef
-ined on input line 910.
-
+ [80 <./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png> <./Imagene
+s/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png, id
-=1379, 1115.16624pt x 475.7775pt>
+=1998, 1115.16624pt x 475.7775pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.pn
 g Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png
@@ -2523,7 +2140,7 @@ Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_per
 sona_relacionada.png  used on input line 913.
 (pdftex.def)             Requested size: 341.43306pt x 145.66728pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_existen
-te.png, id=1380, 1099.10625pt x 470.75874pt>
+te.png, id=1999, 1099.10625pt x 470.75874pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_ex
 istente.png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_exi
@@ -2531,11 +2148,10 @@ stente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_per
 sona_relacionada_existente.png  used on input line 921.
 (pdftex.def)             Requested size: 341.43306pt x 146.2354pt.
-
-LaTeX Warning: Reference `fig:3.2.5_nuevo_multimedia' on page 81 undefined on i
-nput line 929.
-
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png, id=1381, 84
+LaTeX Info: Redefining \. on input line 929.
+LaTeX Info: Redefining \% on input line 929.
+ [81 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png>]
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png, id=2006, 84
 5.1575pt x 861.2175pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png Graphic
  file (type png)
@@ -2545,13 +2161,11 @@ timedia.png  used on input line 932.
 (pdftex.def)             Requested size: 341.43306pt x 347.92386pt.
 LaTeX Info: Redefining \. on input line 936.
 LaTeX Info: Redefining \% on input line 936.
-[81 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png>]
 
-LaTeX Warning: Reference `fig:3.2.5_nuevo_multimedia_existente' on page 82 unde
-fined on input line 937.
-
+[82 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png> <./Imagen
+es/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.png, i
-d=1389, 1237.62375pt x 529.98pt>
+d=2014, 1237.62375pt x 529.98pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.p
 ng Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.pn
@@ -2559,31 +2173,16 @@ g>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_mul
 timedia_existente.png  used on input line 940.
 (pdftex.def)             Requested size: 341.43306pt x 146.20993pt.
-
-Underfull \vbox (badness 4531) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 944.
-LaTeX Info: Redefining \% on input line 944.
- [82 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png> <./Image
-nes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png>]
-
-LaTeX Warning: Reference `fig:3.2.5_generar_historia_vida' on page 83 undefined
- on input line 949.
-
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png, id=139
-8, 1115.16624pt x 450.68375pt>
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png, id=201
+6, 1115.16624pt x 450.68375pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png Gr
 aphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_h
 istoria_vida.png  used on input line 952.
 (pdftex.def)             Requested size: 341.43306pt x 137.98442pt.
-
-LaTeX Warning: Reference `fig:3.2.5_generar_historia_vida_libro' on page 83 und
-efined on input line 958.
-
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.png, 
-id=1399, 1197.47375pt x 578.16pt>
+id=2018, 1197.47375pt x 578.16pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.
 png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.p
@@ -2593,21 +2192,17 @@ istoria_vida_libro.png  used on input line 961.
 (pdftex.def)             Requested size: 341.43306pt x 164.84789pt.
 LaTeX Info: Redefining \. on input line 965.
 LaTeX Info: Redefining \% on input line 965.
-[83 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png
-> <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_exist
-ente.png>]
+ [83 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.pn
+g> <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_exis
+tente.png>]
 Underfull \vbox (badness 2351) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 965.
 LaTeX Info: Redefining \% on input line 965.
  [84 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png> <./Ima
 genes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.png>]
-
-LaTeX Warning: Reference `fig:3.2.5_generar_historia_vida_pdf' on page 85 undef
-ined on input line 966.
-
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png, id
-=1416, 1366.10374pt x 741.77126pt>
+=2032, 1366.10374pt x 741.77126pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.pn
 g Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png
@@ -2615,11 +2210,7 @@ g Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_h
 istoria_vida_pdf.png  used on input line 969.
 (pdftex.def)             Requested size: 341.43306pt x 185.38576pt.
-
-LaTeX Warning: Reference `fig:3.2.5_listado_recuerdos' on page 85 undefined on 
-input line 975.
-
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png, id=1417, 1
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png, id=2034, 1
 135.24126pt x 545.03625pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png Graphi
 c file (type png)
@@ -2629,14 +2220,10 @@ ecuerdos.png  used on input line 978.
 (pdftex.def)             Requested size: 341.43306pt x 163.91965pt.
 LaTeX Info: Redefining \. on input line 982.
 LaTeX Info: Redefining \% on input line 982.
-[85 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png> <.
-/Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.png>]
-
-LaTeX Warning: Reference `fig:3.2.5_listado_personas_relacionadas' on page 86 u
-ndefined on input line 983.
-
+ [85 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png> <
+./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas.png
-, id=1426, 1073.00874pt x 443.6575pt>
+, id=2043, 1073.00874pt x 443.6575pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionada
 s.png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas
@@ -2644,15 +2231,7 @@ s.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_p
 ersonas_relacionadas.png  used on input line 986.
 (pdftex.def)             Requested size: 341.43306pt x 141.1677pt.
-
-LaTeX Warning: Reference `fig:3.2.5_mensajeria_terapeuta' on page 86 undefined 
-on input line 992.
-
-
-LaTeX Warning: Reference `fig:3.2.5_mensajeria_terapeuta_enviado' on page 86 un
-defined on input line 992.
-
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png, id=1427
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png, id=2046
 , 1208.515pt x 451.6875pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png Gra
 phic file (type png)
@@ -2662,10 +2241,10 @@ a_terapeuta.png  used on input line 995.
 (pdftex.def)             Requested size: 341.43306pt x 127.60884pt.
 LaTeX Info: Redefining \. on input line 999.
 LaTeX Info: Redefining \% on input line 999.
-[86 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png
-> <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png>]
+ [86 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.pn
+g> <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.png,
- id=1436, 1057.9525pt x 396.48125pt>
+ id=2053, 1057.9525pt x 396.48125pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado
 .png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.
@@ -2673,16 +2252,7 @@ png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeri
 a_terapeuta_enviado.png  used on input line 1002.
 (pdftex.def)             Requested size: 341.43306pt x 127.95345pt.
-
-
-LaTeX Warning: Reference `fig:3.2.5_mensajeria_cuidador' on page 87 undefined o
-n input line 1007.
-
-
-LaTeX Warning: Reference `fig:3.2.5_mensajeria_cuidador_enviado' on page 87 und
-efined on input line 1007.
-
-<./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png, id=1437,
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png, id=2056,
  1104.125pt x 446.66875pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png Grap
 hic file (type png)
@@ -2692,11 +2262,12 @@ a_cuidador.png  used on input line 1010.
 (pdftex.def)             Requested size: 341.43306pt x 138.12509pt.
 LaTeX Info: Redefining \. on input line 1014.
 LaTeX Info: Redefining \% on input line 1014.
-[87 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas
-.png> <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png> <
-./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.png>]
+ [87 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionada
+s.png> <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png> 
+<./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.png>
+]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.png, 
-id=1449, 1208.515pt x 497.86pt>
+id=2064, 1208.515pt x 497.86pt>
 File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.
 png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.p
@@ -2706,12 +2277,9 @@ a_cuidador_enviado.png  used on input line 1017.
 (pdftex.def)             Requested size: 341.43306pt x 140.6533pt.
 LaTeX Info: Redefining \. on input line 1027.
 LaTeX Info: Redefining \% on input line 1027.
-[88 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png> <./I
-magenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.png>]
-
-LaTeX Warning: Reference `aped.C' on page 89 undefined on input line 1040.
-
-<./Archivos/debriefing_ivan.pdf, id=1458, 598.235pt x 845.1575pt>
+ [88 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png> <./
+Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.png>]
+<./Archivos/debriefing_ivan.pdf, id=2072, 598.235pt x 845.1575pt>
 File: ./Archivos/debriefing_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing_ivan.pdf>
 Package pdftex.def Info: ./Archivos/debriefing_ivan.pdf  used on input line 104
@@ -2722,7 +2290,7 @@ File: ./Archivos/debriefing_ivan.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/debriefing_ivan.pdf  used on input line 104
 3.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/debriefing_ivan.pdf, id=1461, page=1, 598.235pt x 845.1575pt>
+<./Archivos/debriefing_ivan.pdf, id=2075, page=1, 598.235pt x 845.1575pt>
 File: ./Archivos/debriefing_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing_ivan.pdf, page 1>
 Package pdftex.def Info: ./Archivos/debriefing_ivan.pdf , page1 used on input l
@@ -2735,7 +2303,7 @@ ine 1043.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
 LaTeX Info: Redefining \. on input line 1043.
 LaTeX Info: Redefining \% on input line 1043.
-[89]
+ [89]
 File: ./Archivos/debriefing_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing_ivan.pdf, page 1>
 Package pdftex.def Info: ./Archivos/debriefing_ivan.pdf , page1 used on input l
@@ -2752,7 +2320,7 @@ Package pdftex.def Info: ./Archivos/debriefing_ivan.pdf , page1 used on input l
 ine 1043.
 (pdftex.def)             Requested size: 478.58865pt x 676.12692pt.
  [90 <./Archivos/debriefing_ivan.pdf>]
-<./Archivos/debriefing_ivan.pdf, id=1483, page=2, 598.235pt x 845.1575pt>
+<./Archivos/debriefing_ivan.pdf, id=2097, page=2, 598.235pt x 845.1575pt>
 File: ./Archivos/debriefing_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing_ivan.pdf, page 2>
 Package pdftex.def Info: ./Archivos/debriefing_ivan.pdf , page2 used on input l
@@ -2774,11 +2342,7 @@ Overfull \hbox (48.45834pt too wide) in paragraph at lines 1047--1047
 WBtuyD/view?usp=sharing| 
  []
 
-
-LaTeX Warning: Reference `fig:3.2.6_Paciente' on page 92 undefined on input lin
-e 1054.
-
-<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png, id=1489, 383.9
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png, id=2105, 383.9
 3437pt x 268.00125pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png Graphic fi
 le (type png)
@@ -2786,11 +2350,7 @@ le (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paci
 ente.png  used on input line 1059.
 (pdftex.def)             Requested size: 341.43306pt x 238.34859pt.
-
-LaTeX Warning: Reference `fig:3.2.6_Sesiones' on page 92 undefined on input lin
-e 1065.
-
-<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png, id=1490, 407.5
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png, id=2107, 407.5
 225pt x 321.70187pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png Graphic fi
 le (type png)
@@ -2798,27 +2358,18 @@ le (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesi
 ones.png  used on input line 1070.
 (pdftex.def)             Requested size: 341.43306pt x 269.5405pt.
-
-LaTeX Warning: Reference `fig:3.2.6_Informes_de_sesion' on page 92 undefined on
- input line 1076.
-
 LaTeX Info: Redefining \. on input line 1077.
 LaTeX Info: Redefining \% on input line 1077.
 [92 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente.png>]
-<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png, id=1
-497, 463.23062pt x 198.24063pt>
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png, id=2
+114, 463.23062pt x 198.24063pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png 
 Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Info
 rmes_de_sesion.png  used on input line 1081.
 (pdftex.def)             Requested size: 341.43306pt x 146.11801pt.
-
-
-LaTeX Warning: Reference `fig:3.2.6_Evaluaciones' on page 93 undefined on input
- line 1087.
-
-<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png, id=1498, 4
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png, id=2116, 4
 58.21187pt x 304.63812pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png Graphi
 c file (type png)
@@ -2826,11 +2377,7 @@ c file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Eval
 uaciones.png  used on input line 1092.
 (pdftex.def)             Requested size: 341.43306pt x 227.00912pt.
-
-LaTeX Warning: Reference `fig:3.2.6_Calendario2' on page 93 undefined on input 
-line 1098.
-
-<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2.png, id=1499, 46
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2.png, id=2118, 46
 1.725pt x 342.27875pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2.png Graphic
  file (type png)
@@ -2838,18 +2385,10 @@ File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2.png Graphic
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Cale
 ndario2.png  used on input line 1103.
 (pdftex.def)             Requested size: 341.43306pt x 253.10472pt.
-
-LaTeX Warning: Reference `fig:3.2.6_Recuerdos1' on page 93 undefined on input l
-ine 1109.
-
-
-LaTeX Warning: Reference `fig:3.2.6_Recuerdos2' on page 93 undefined on input l
-ine 1109.
-
 LaTeX Info: Redefining \. on input line 1110.
 LaTeX Info: Redefining \% on input line 1110.
-[93 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png>]
-<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1.png, id=1506, 379
+ [93 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones.png>]
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1.png, id=2125, 379
 .91937pt x 320.69812pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1.png Graphic 
 file (type png)
@@ -2857,7 +2396,7 @@ file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recu
 erdos1.png  used on input line 1114.
 (pdftex.def)             Requested size: 341.43306pt x 288.21947pt.
-<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2.png, id=1507, 462
+<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2.png, id=2126, 462
 .22687pt x 215.30438pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2.png Graphic 
 file (type png)
@@ -2865,17 +2404,12 @@ file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recu
 erdos2.png  used on input line 1121.
 (pdftex.def)             Requested size: 341.43306pt x 159.0402pt.
-
-
-LaTeX Warning: Reference `fig:3.2.6_Personas_relacionadas' on page 94 undefined
- on input line 1127.
-
 LaTeX Info: Redefining \. on input line 1128.
 LaTeX Info: Redefining \% on input line 1128.
-[94 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png> 
-<./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png>]
+ [94 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion.png>
+ <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones.png>]
 <./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Personas_relacionadas.png, i
-d=1514, 457.71pt x 194.22563pt>
+d=2132, 457.71pt x 194.22563pt>
 File: ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Personas_relacionadas.p
 ng Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Personas_relacionadas.pn
@@ -2904,10 +2438,7 @@ ng>]
 
 ]
 Cap\'itulo 5.
-
-LaTeX Warning: Reference `fig:str_mvc' on page 99 undefined on input line 14.
-
-<./Imagenes/Figuras/mvc_structure.png, id=1535, 295.70474pt x 285.4665pt>
+<./Imagenes/Figuras/mvc_structure.png, id=2151, 295.70474pt x 285.4665pt>
 File: ./Imagenes/Figuras/mvc_structure.png Graphic file (type png)
 <use ./Imagenes/Figuras/mvc_structure.png>
 Package pdftex.def Info: ./Imagenes/Figuras/mvc_structure.png  used on input li
@@ -2920,10 +2451,7 @@ LaTeX Info: Redefining \% on input line 42.
 LaTeX Info: Redefining \. on input line 56.
 LaTeX Info: Redefining \% on input line 56.
  [101]
-
-LaTeX Warning: Reference `fig:str_bd' on page 102 undefined on input line 70.
-
-<./Imagenes/Figuras/estructura_bd.jpeg, id=1551, 1172.12906pt x 548.80031pt>
+<./Imagenes/Figuras/estructura_bd.jpeg, id=2166, 1172.12906pt x 548.80031pt>
 File: ./Imagenes/Figuras/estructura_bd.jpeg Graphic file (type jpg)
 <use ./Imagenes/Figuras/estructura_bd.jpeg>
 Package pdftex.def Info: ./Imagenes/Figuras/estructura_bd.jpeg  used on input l
@@ -2934,11 +2462,7 @@ Overfull \hbox (123.69684pt too wide) in paragraph at lines 73--74
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:bd_usuario' on page 102 undefined on input line 7
-9.
-
-<./Imagenes/Figuras/base_de_datos/usuario.png, id=1552, 751.80875pt x 245.91875
+<./Imagenes/Figuras/base_de_datos/usuario.png, id=2168, 751.80875pt x 245.91875
 pt>
 File: ./Imagenes/Figuras/base_de_datos/usuario.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/usuario.png>
@@ -2950,11 +2474,7 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 82--83
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:bd_paciente' on page 102 undefined on input line 
-88.
-
-<./Imagenes/Figuras/base_de_datos/paciente.png, id=1553, 736.7525pt x 341.275pt
+<./Imagenes/Figuras/base_de_datos/paciente.png, id=2170, 736.7525pt x 341.275pt
 >
 File: ./Imagenes/Figuras/base_de_datos/paciente.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/paciente.png>
@@ -2969,16 +2489,7 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 91--92
 LaTeX Info: Redefining \. on input line 95.
 LaTeX Info: Redefining \% on input line 95.
 [102]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
-8.
- (C:\Users\Patricia\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-
-LaTeX Warning: Reference `fig:bd_sesion' on page 103 undefined on input line 10
-2.
-
-<./Imagenes/Figuras/base_de_datos/sesion.png, id=1558, 727.71875pt x 406.51875p
+<./Imagenes/Figuras/base_de_datos/sesion.png, id=2176, 727.71875pt x 406.51875p
 t>
 File: ./Imagenes/Figuras/base_de_datos/sesion.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/sesion.png>
@@ -2994,11 +2505,7 @@ LaTeX Info: Redefining \. on input line 112.
 LaTeX Info: Redefining \% on input line 112.
 [103 <./Imagenes/Figuras/estructura_bd.jpeg> <./Imagenes/Figuras/base_de_datos/
 usuario.png>]
-
-LaTeX Warning: Reference `fig:bd_recuerdo' on page 104 undefined on input line 
-118.
-
-<./Imagenes/Figuras/base_de_datos/recuerdo.png, id=1567, 726.715pt x 406.51875p
+<./Imagenes/Figuras/base_de_datos/recuerdo.png, id=2184, 726.715pt x 406.51875p
 t>
 File: ./Imagenes/Figuras/base_de_datos/recuerdo.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/recuerdo.png>
@@ -3014,11 +2521,7 @@ LaTeX Info: Redefining \. on input line 125.
 LaTeX Info: Redefining \% on input line 125.
 [104 <./Imagenes/Figuras/base_de_datos/paciente.png> <./Imagenes/Figuras/base_d
 e_datos/sesion.png>]
-
-LaTeX Warning: Reference `fig:bd_multimedia' on page 105 undefined on input lin
-e 137.
-
-<./Imagenes/Figuras/base_de_datos/multimedia.png, id=1576, 737.75626pt x 114.42
+<./Imagenes/Figuras/base_de_datos/multimedia.png, id=2192, 737.75626pt x 114.42
 75pt>
 File: ./Imagenes/Figuras/base_de_datos/multimedia.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/multimedia.png>
@@ -3030,11 +2533,7 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 140--141
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:bd_evaluacion' on page 105 undefined on input lin
-e 146.
-
-<./Imagenes/Figuras/base_de_datos/evaluacion.png, id=1577, 761.84625pt x 468.75
+<./Imagenes/Figuras/base_de_datos/evaluacion.png, id=2194, 761.84625pt x 468.75
 125pt>
 File: ./Imagenes/Figuras/base_de_datos/evaluacion.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/evaluacion.png>
@@ -3060,11 +2559,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 154.
 
-
-LaTeX Warning: Reference `fig:bd_persona_relacionada' on page 106 undefined on 
-input line 155.
-
-<./Imagenes/Figuras/base_de_datos/persona_relacionada.png, id=1585, 799.98875pt
+<./Imagenes/Figuras/base_de_datos/persona_relacionada.png, id=2201, 799.98875pt
  x 277.035pt>
 File: ./Imagenes/Figuras/base_de_datos/persona_relacionada.png Graphic file (ty
 pe png)
@@ -3084,11 +2579,7 @@ Overfull \hbox (46.58156pt too wide) in paragraph at lines 165--166
  . 
  []
 
-
-LaTeX Warning: Reference `fig:bd_actividad' on page 106 undefined on input line
- 170.
-
-<./Imagenes/Figuras/base_de_datos/actividad.png, id=1586, 744.7825pt x 214.8025
+<./Imagenes/Figuras/base_de_datos/actividad.png, id=2203, 744.7825pt x 214.8025
 pt>
 File: ./Imagenes/Figuras/base_de_datos/actividad.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/actividad.png>
@@ -3112,15 +2603,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 183.
 
-
-LaTeX Warning: Reference `fig:bd_tipo_relacion' on page 107 undefined on input 
-line 184.
-
-
-LaTeX Warning: Reference `fig:bd_tipo_relacion_datos' on page 107 undefined on 
-input line 184.
-
-<./Imagenes/Figuras/base_de_datos/tipo_relacion.png, id=1596, 742.775pt x 89.33
+<./Imagenes/Figuras/base_de_datos/tipo_relacion.png, id=2213, 742.775pt x 89.33
 376pt>
 File: ./Imagenes/Figuras/base_de_datos/tipo_relacion.png Graphic file (type png
 )
@@ -3133,7 +2616,7 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 187--188
  [][] 
  []
 
-<./Imagenes/Figuras/base_de_datos/tipo_relacion_datos.png, id=1597, 195.73125pt
+<./Imagenes/Figuras/base_de_datos/tipo_relacion_datos.png, id=2214, 195.73125pt
  x 213.79875pt>
 File: ./Imagenes/Figuras/base_de_datos/tipo_relacion_datos.png Graphic file (ty
 pe png)
@@ -3141,15 +2624,7 @@ pe png)
 Package pdftex.def Info: ./Imagenes/Figuras/base_de_datos/tipo_relacion_datos.p
 ng  used on input line 194.
 (pdftex.def)             Requested size: 85.35826pt x 93.23659pt.
-
-LaTeX Warning: Reference `fig:bd_etiqueta' on page 107 undefined on input line 
-200.
-
-
-LaTeX Warning: Reference `fig:bd_etiqueta_datos' on page 107 undefined on input
- line 200.
-
-<./Imagenes/Figuras/base_de_datos/etiqueta.png, id=1598, 712.6625pt x 86.3225pt
+<./Imagenes/Figuras/base_de_datos/etiqueta.png, id=2217, 712.6625pt x 86.3225pt
 >
 File: ./Imagenes/Figuras/base_de_datos/etiqueta.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/etiqueta.png>
@@ -3165,7 +2640,7 @@ LaTeX Info: Redefining \. on input line 207.
 LaTeX Info: Redefining \% on input line 207.
 [107 <./Imagenes/Figuras/base_de_datos/persona_relacionada.png> <./Imagenes/Fig
 uras/base_de_datos/actividad.png>]
-<./Imagenes/Figuras/base_de_datos/etiqueta_datos.png, id=1607, 149.55875pt x 99
+<./Imagenes/Figuras/base_de_datos/etiqueta_datos.png, id=2224, 149.55875pt x 99
 .37125pt>
 File: ./Imagenes/Figuras/base_de_datos/etiqueta_datos.png Graphic file (type pn
 g)
@@ -3173,16 +2648,7 @@ g)
 Package pdftex.def Info: ./Imagenes/Figuras/base_de_datos/etiqueta_datos.png  u
 sed on input line 210.
 (pdftex.def)             Requested size: 85.35826pt x 56.71497pt.
-
-
-LaTeX Warning: Reference `fig:bd_etapa' on page 108 undefined on input line 216
-.
-
-
-LaTeX Warning: Reference `fig:bd_etapa_datos' on page 108 undefined on input li
-ne 216.
-
-<./Imagenes/Figuras/base_de_datos/etapa.png, id=1608, 692.5875pt x 85.31876pt>
+<./Imagenes/Figuras/base_de_datos/etapa.png, id=2227, 692.5875pt x 85.31876pt>
 File: ./Imagenes/Figuras/base_de_datos/etapa.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/etapa.png>
 Package pdftex.def Info: ./Imagenes/Figuras/base_de_datos/etapa.png  used on in
@@ -3193,22 +2659,14 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 219--220
  [][] 
  []
 
-<./Imagenes/Figuras/base_de_datos/etapa_datos.png, id=1609, 150.5625pt x 157.58
+<./Imagenes/Figuras/base_de_datos/etapa_datos.png, id=2228, 150.5625pt x 157.58
 875pt>
 File: ./Imagenes/Figuras/base_de_datos/etapa_datos.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/etapa_datos.png>
 Package pdftex.def Info: ./Imagenes/Figuras/base_de_datos/etapa_datos.png  used
  on input line 226.
 (pdftex.def)             Requested size: 85.35826pt x 89.34558pt.
-
-LaTeX Warning: Reference `fig:bd_estado' on page 108 undefined on input line 23
-2.
-
-
-LaTeX Warning: Reference `fig:bd_estado_datos' on page 108 undefined on input l
-ine 232.
-
-<./Imagenes/Figuras/base_de_datos/estado.png, id=1610, 702.625pt x 85.31876pt>
+<./Imagenes/Figuras/base_de_datos/estado.png, id=2231, 702.625pt x 85.31876pt>
 File: ./Imagenes/Figuras/base_de_datos/estado.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/estado.png>
 Package pdftex.def Info: ./Imagenes/Figuras/base_de_datos/estado.png  used on i
@@ -3224,7 +2682,7 @@ LaTeX Info: Redefining \% on input line 239.
 [108 <./Imagenes/Figuras/base_de_datos/tipo_relacion.png> <./Imagenes/Figuras/b
 ase_de_datos/tipo_relacion_datos.png> <./Imagenes/Figuras/base_de_datos/etiquet
 a.png> <./Imagenes/Figuras/base_de_datos/etiqueta_datos.png>]
-<./Imagenes/Figuras/base_de_datos/estado_datos.png, id=1623, 198.7425pt x 106.3
+<./Imagenes/Figuras/base_de_datos/estado_datos.png, id=2240, 198.7425pt x 106.3
 975pt>
 File: ./Imagenes/Figuras/base_de_datos/estado_datos.png Graphic file (type png)
 
@@ -3232,16 +2690,7 @@ File: ./Imagenes/Figuras/base_de_datos/estado_datos.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/base_de_datos/estado_datos.png  use
 d on input line 242.
 (pdftex.def)             Requested size: 85.35826pt x 45.69807pt.
-
-
-LaTeX Warning: Reference `fig:bd_emocion' on page 109 undefined on input line 2
-48.
-
-
-LaTeX Warning: Reference `fig:bd_emocion_datos' on page 109 undefined on input 
-line 248.
-
-<./Imagenes/Figuras/base_de_datos/emocion.png, id=1624, 715.67375pt x 85.31876p
+<./Imagenes/Figuras/base_de_datos/emocion.png, id=2243, 715.67375pt x 85.31876p
 t>
 File: ./Imagenes/Figuras/base_de_datos/emocion.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/emocion.png>
@@ -3253,7 +2702,7 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 251--252
  [][] 
  []
 
-<./Imagenes/Figuras/base_de_datos/emocion_datos.png, id=1625, 152.57pt x 156.58
+<./Imagenes/Figuras/base_de_datos/emocion_datos.png, id=2244, 152.57pt x 156.58
 5pt>
 File: ./Imagenes/Figuras/base_de_datos/emocion_datos.png Graphic file (type png
 )
@@ -3261,15 +2710,7 @@ File: ./Imagenes/Figuras/base_de_datos/emocion_datos.png Graphic file (type png
 Package pdftex.def Info: ./Imagenes/Figuras/base_de_datos/emocion_datos.png  us
 ed on input line 258.
 (pdftex.def)             Requested size: 85.35826pt x 87.60814pt.
-
-LaTeX Warning: Reference `fig:bd_categoria' on page 109 undefined on input line
- 264.
-
-
-LaTeX Warning: Reference `fig:bd_categoria_datos' on page 109 undefined on inpu
-t line 264.
-
-<./Imagenes/Figuras/base_de_datos/categoria.png, id=1626, 718.685pt x 88.33pt>
+<./Imagenes/Figuras/base_de_datos/categoria.png, id=2247, 718.685pt x 88.33pt>
 File: ./Imagenes/Figuras/base_de_datos/categoria.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/categoria.png>
 Package pdftex.def Info: ./Imagenes/Figuras/base_de_datos/categoria.png  used o
@@ -3285,7 +2726,7 @@ LaTeX Info: Redefining \% on input line 271.
 [109 <./Imagenes/Figuras/base_de_datos/etapa.png> <./Imagenes/Figuras/base_de_d
 atos/etapa_datos.png> <./Imagenes/Figuras/base_de_datos/estado.png> <./Imagenes
 /Figuras/base_de_datos/estado_datos.png>]
-<./Imagenes/Figuras/base_de_datos/categoria_datos.png, id=1639, 155.58125pt x 2
+<./Imagenes/Figuras/base_de_datos/categoria_datos.png, id=2257, 155.58125pt x 2
 14.8025pt>
 File: ./Imagenes/Figuras/base_de_datos/categoria_datos.png Graphic file (type p
 ng)
@@ -3293,12 +2734,7 @@ ng)
 Package pdftex.def Info: ./Imagenes/Figuras/base_de_datos/categoria_datos.png  
 used on input line 274.
 (pdftex.def)             Requested size: 85.35826pt x 117.85002pt.
-
-
-LaTeX Warning: Reference `fig:bd_terapeuta' on page 110 undefined on input line
- 280.
-
-<./Imagenes/Figuras/base_de_datos/terapeuta.png, id=1640, 614.295pt x 85.31876p
+<./Imagenes/Figuras/base_de_datos/terapeuta.png, id=2259, 614.295pt x 85.31876p
 t>
 File: ./Imagenes/Figuras/base_de_datos/terapeuta.png Graphic file (type png)
 <use ./Imagenes/Figuras/base_de_datos/terapeuta.png>
@@ -3310,8 +2746,8 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 283--284
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 291.
-LaTeX Info: Redefining \% on input line 291.
+LaTeX Info: Redefining \. on input line 290.
+LaTeX Info: Redefining \% on input line 290.
 [110 <./Imagenes/Figuras/base_de_datos/emocion.png> <./Imagenes/Figuras/base_de
 _datos/emocion_datos.png> <./Imagenes/Figuras/base_de_datos/categoria.png> <./I
 magenes/Figuras/base_de_datos/categoria_datos.png>]
@@ -3323,11 +2759,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 294.
 
-
-LaTeX Warning: Reference `fig:bd_sesion_recuerdo' on page 111 undefined on inpu
-t line 295.
-
-<./Imagenes/Figuras/base_de_datos/sesion_recuerdo.png, id=1653, 611.28375pt x 8
+<./Imagenes/Figuras/base_de_datos/sesion_recuerdo.png, id=2269, 611.28375pt x 8
 4.315pt>
 File: ./Imagenes/Figuras/base_de_datos/sesion_recuerdo.png Graphic file (type p
 ng)
@@ -3348,11 +2780,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 309.
 
-
-LaTeX Warning: Reference `fig:bd_sesion_multimedia' on page 111 undefined on in
-put line 310.
-
-<./Imagenes/Figuras/base_de_datos/sesion_multimedia.png, id=1654, 625.33624pt x
+<./Imagenes/Figuras/base_de_datos/sesion_multimedia.png, id=2271, 625.33624pt x
  85.31876pt>
 File: ./Imagenes/Figuras/base_de_datos/sesion_multimedia.png Graphic file (type
  png)
@@ -3365,6 +2793,11 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 313--314
  [][] 
  []
 
+LaTeX Info: Redefining \. on input line 322.
+LaTeX Info: Redefining \% on input line 322.
+[111 <./Imagenes/Figuras/base_de_datos/terapeuta.png> <./Imagenes/Figuras/base_
+de_datos/sesion_recuerdo.png> <./Imagenes/Figuras/base_de_datos/sesion_multimed
+ia.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\char' on input line 324.
@@ -3381,11 +2814,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 324.
 
-
-LaTeX Warning: Reference `fig:bd_recuerdo_persona_relacionada' on page 111 unde
-fined on input line 325.
-
-<./Imagenes/Figuras/base_de_datos/recuerdo_persona_relacionada.png, id=1655, 68
+<./Imagenes/Figuras/base_de_datos/recuerdo_persona_relacionada.png, id=2280, 68
 7.56876pt x 85.31876pt>
 File: ./Imagenes/Figuras/base_de_datos/recuerdo_persona_relacionada.png Graphic
  file (type png)
@@ -3398,11 +2827,6 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 328--329
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 332.
-LaTeX Info: Redefining \% on input line 332.
-[111 <./Imagenes/Figuras/base_de_datos/terapeuta.png> <./Imagenes/Figuras/base_
-de_datos/sesion_recuerdo.png> <./Imagenes/Figuras/base_de_datos/sesion_multimed
-ia.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\char' on input line 339.
@@ -3411,11 +2835,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 339.
 
-
-LaTeX Warning: Reference `fig:bd_recuerdo_multimedia' on page 112 undefined on 
-input line 340.
-
-<./Imagenes/Figuras/base_de_datos/recuerdo_multimedia.png, id=1667, 626.34pt x 
+<./Imagenes/Figuras/base_de_datos/recuerdo_multimedia.png, id=2282, 626.34pt x 
 86.3225pt>
 File: ./Imagenes/Figuras/base_de_datos/recuerdo_multimedia.png Graphic file (ty
 pe png)
@@ -3428,45 +2848,31 @@ Overfull \hbox (38.33858pt too wide) in paragraph at lines 343--344
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:login' on page 112 undefined on input line 359.
-
-
-LaTeX Warning: Reference `fig:inicio' on page 112 undefined on input line 359.
-
-
-LaTeX Warning: Reference `fig:d_login' on page 112 undefined on input line 359.
-
-
-<./Imagenes/Figuras/implementacion/login.png, id=1668, 501.875pt x 423.5825pt>
+LaTeX Info: Redefining \. on input line 357.
+LaTeX Info: Redefining \% on input line 357.
+[112 <./Imagenes/Figuras/base_de_datos/recuerdo_persona_relacionada.png> <./Ima
+genes/Figuras/base_de_datos/recuerdo_multimedia.png>]
+<./Imagenes/Figuras/implementacion/login.png, id=2292, 501.875pt x 423.5825pt>
 File: ./Imagenes/Figuras/implementacion/login.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/login.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/login.png  used on i
 nput line 362.
 (pdftex.def)             Requested size: 170.71652pt x 144.08723pt.
-LaTeX Info: Redefining \. on input line 366.
-LaTeX Info: Redefining \% on input line 366.
-[112 <./Imagenes/Figuras/base_de_datos/recuerdo_persona_relacionada.png> <./Ima
-genes/Figuras/base_de_datos/recuerdo_multimedia.png>]
-<./Imagenes/Figuras/implementacion/inicio.png, id=1677, 961.09062pt x 454.69875
+<./Imagenes/Figuras/implementacion/inicio.png, id=2293, 961.09062pt x 454.69875
 pt>
 File: ./Imagenes/Figuras/implementacion/inicio.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/inicio.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/inicio.png  used on 
 input line 369.
 (pdftex.def)             Requested size: 227.62204pt x 107.68678pt.
-<./Imagenes/Figuras/diagramas_secuencia/login.png, id=1678, 527.9725pt x 372.39
+<./Imagenes/Figuras/diagramas_secuencia/login.png, id=2294, 527.9725pt x 372.39
 125pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/login.png Graphic file (type png)
 <use ./Imagenes/Figuras/diagramas_secuencia/login.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/login.png  used
  on input line 376.
 (pdftex.def)             Requested size: 341.43306pt x 240.81839pt.
-
-
-LaTeX Warning: Reference `fig:inicio' on page 113 undefined on input line 384.
-
-<./Imagenes/Figuras/implementacion/listado.png, id=1679, 1445.4pt x 792.9625pt>
+<./Imagenes/Figuras/implementacion/listado.png, id=2296, 1445.4pt x 792.9625pt>
 
 File: ./Imagenes/Figuras/implementacion/listado.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/listado.png>
@@ -3482,18 +2888,14 @@ LaTeX Info: Redefining \. on input line 391.
 LaTeX Info: Redefining \% on input line 391.
 [113 <./Imagenes/Figuras/implementacion/login.png> <./Imagenes/Figuras/implemen
 tacion/inicio.png>]
-<./Imagenes/Figuras/diagramas_secuencia/lista.png, id=1688, 543.02875pt x 314.1
+<./Imagenes/Figuras/diagramas_secuencia/lista.png, id=2303, 543.02875pt x 314.1
 7375pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/lista.png Graphic file (type png)
 <use ./Imagenes/Figuras/diagramas_secuencia/lista.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/lista.png  used
  on input line 394.
 (pdftex.def)             Requested size: 341.43306pt x 197.54698pt.
-
-
-LaTeX Warning: Reference `fig:anadir' on page 114 undefined on input line 400.
-
-<./Imagenes/Figuras/implementacion/anadir.png, id=1689, 1445.4pt x 739.76375pt>
+<./Imagenes/Figuras/implementacion/anadir.png, id=2305, 1445.4pt x 739.76375pt>
 
 File: ./Imagenes/Figuras/implementacion/anadir.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/anadir.png>
@@ -3508,7 +2910,11 @@ Overfull \hbox (66.79134pt too wide) in paragraph at lines 404--405
 LaTeX Info: Redefining \. on input line 408.
 LaTeX Info: Redefining \% on input line 408.
 [114 <./Imagenes/Figuras/diagramas_secuencia/login.png>]
-<./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png, id=1696, 814.0412
+LaTeX Info: Redefining \. on input line 408.
+LaTeX Info: Redefining \% on input line 408.
+ [115 <./Imagenes/Figuras/implementacion/listado.png> <./Imagenes/Figuras/diagr
+amas_secuencia/lista.png>]
+<./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png, id=2318, 814.0412
 4pt x 442.65375pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png Graphic file 
 (type png)
@@ -3516,12 +2922,7 @@ File: ./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png Graphic file
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/modcrearpacient
 e.png  used on input line 411.
 (pdftex.def)             Requested size: 341.43306pt x 185.66339pt.
-
-
-LaTeX Warning: Reference `fig:listado' on page 115 undefined on input line 418.
-
-
-<./Imagenes/Figuras/implementacion/modificar.png, id=1697, 963.6pt x 422.07687p
+<./Imagenes/Figuras/implementacion/modificar.png, id=2320, 963.6pt x 422.07687p
 t>
 File: ./Imagenes/Figuras/implementacion/modificar.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/modificar.png>
@@ -3539,27 +2940,14 @@ File: ./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png Graphic file
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/modcrearpacient
 e.png  used on input line 427.
 (pdftex.def)             Requested size: 341.43306pt x 185.66339pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 431.
 LaTeX Info: Redefining \% on input line 431.
- [115 <./Imagenes/Figuras/implementacion/listado.png> <./Imagenes/Figuras/diagr
-amas_secuencia/lista.png>]
-Underfull \vbox (badness 1389) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 431.
-LaTeX Info: Redefining \% on input line 431.
- [116 <./Imagenes/Figuras/implementacion/anadir.png> <./Imagenes/Figuras/diagra
-mas_secuencia/modcrearpaciente.png>]
-
-LaTeX Warning: Reference `fig:listado' on page 117 undefined on input line 432.
-
-
+[116 <./Imagenes/Figuras/implementacion/anadir.png> <./Imagenes/Figuras/diagram
+as_secuencia/modcrearpaciente.png>]
 LaTeX Info: Redefining \. on input line 434.
 LaTeX Info: Redefining \% on input line 434.
-[117 <./Imagenes/Figuras/implementacion/modificar.png>]
-<./Imagenes/Figuras/diagramas_secuencia/delete.png, id=1721, 573.14125pt x 261.
+ [117 <./Imagenes/Figuras/implementacion/modificar.png>]
+<./Imagenes/Figuras/diagramas_secuencia/delete.png, id=2332, 573.14125pt x 261.
 97874pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/delete.png Graphic file (type png)
 
@@ -3567,16 +2955,7 @@ File: ./Imagenes/Figuras/diagramas_secuencia/delete.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/delete.png  use
 d on input line 437.
 (pdftex.def)             Requested size: 341.43306pt x 156.06917pt.
-
-
-LaTeX Warning: Reference `fig:libroDeVida.png' on page 118 undefined on input l
-ine 443.
-
-
-LaTeX Warning: Reference `fig:libroVidaPac' on page 118 undefined on input line
- 443.
-
-<./Imagenes/Figuras/implementacion/libroDeVida.png, id=1722, 1445.4pt x 792.962
+<./Imagenes/Figuras/implementacion/libroDeVida.png, id=2335, 1445.4pt x 792.962
 5pt>
 File: ./Imagenes/Figuras/implementacion/libroDeVida.png Graphic file (type png)
 
@@ -3589,7 +2968,7 @@ Overfull \hbox (66.79134pt too wide) in paragraph at lines 446--447
  [][] 
  []
 
-<./Imagenes/Figuras/implementacion/filtro.png, id=1723, 959.585pt x 433.62pt>
+<./Imagenes/Figuras/implementacion/filtro.png, id=2336, 959.585pt x 433.62pt>
 File: ./Imagenes/Figuras/implementacion/filtro.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/filtro.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/filtro.png  used on 
@@ -3600,7 +2979,7 @@ Overfull \hbox (66.79134pt too wide) in paragraph at lines 453--454
  [][] 
  []
 
-<./Imagenes/Figuras/diagramas_secuencia/generarLibro.png, id=1724, 532.99126pt 
+<./Imagenes/Figuras/diagramas_secuencia/generarLibro.png, id=2337, 532.99126pt 
 x 282.05376pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/generarLibro.png Graphic file (typ
 e png)
@@ -3608,11 +2987,7 @@ e png)
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/generarLibro.pn
 g  used on input line 459.
 (pdftex.def)             Requested size: 341.43306pt x 180.68593pt.
-
-LaTeX Warning: Reference `fig:pdf.png' on page 118 undefined on input line 465.
-
-
-<./Imagenes/Figuras/implementacion/pdf.png, id=1725, 963.6pt x 433.62pt>
+<./Imagenes/Figuras/implementacion/pdf.png, id=2339, 963.6pt x 433.62pt>
 File: ./Imagenes/Figuras/implementacion/pdf.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/pdf.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/pdf.png  used on inp
@@ -3623,7 +2998,7 @@ Overfull \hbox (66.79134pt too wide) in paragraph at lines 468--469
  [][] 
  []
 
-<./Imagenes/Figuras/diagramas_secuencia/generarPDF.png, id=1726, 613.29124pt x 
+<./Imagenes/Figuras/diagramas_secuencia/generarPDF.png, id=2340, 613.29124pt x 
 282.05376pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/generarPDF.png Graphic file (type 
 png)
@@ -3631,11 +3006,10 @@ png)
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/generarPDF.png 
  used on input line 474.
 (pdftex.def)             Requested size: 341.43306pt x 157.0237pt.
-
-LaTeX Warning: Reference `fig:anadirExistente.png' on page 118 undefined on inp
-ut line 482.
-
-<./Imagenes/Figuras/implementacion/anadirExistente.png, id=1727, 1445.4pt x 739
+LaTeX Info: Redefining \. on input line 478.
+LaTeX Info: Redefining \% on input line 478.
+[118 <./Imagenes/Figuras/diagramas_secuencia/delete.png>]
+<./Imagenes/Figuras/implementacion/anadirExistente.png, id=2347, 1445.4pt x 739
 .76375pt>
 File: ./Imagenes/Figuras/implementacion/anadirExistente.png Graphic file (type 
 png)
@@ -3648,7 +3022,7 @@ Overfull \hbox (66.79134pt too wide) in paragraph at lines 485--486
  [][] 
  []
 
-<./Imagenes/Figuras/diagramas_secuencia/andExist.png, id=1728, 653.44125pt x 55
+<./Imagenes/Figuras/diagramas_secuencia/andExist.png, id=2348, 653.44125pt x 55
 3.06625pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/andExist.png Graphic file (type pn
 g)
@@ -3656,28 +3030,18 @@ g)
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/andExist.png  u
 sed on input line 491.
 (pdftex.def)             Requested size: 341.43306pt x 288.98012pt.
-LaTeX Info: Redefining \. on input line 495.
-LaTeX Info: Redefining \% on input line 495.
-[118 <./Imagenes/Figuras/diagramas_secuencia/delete.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 495.
 LaTeX Info: Redefining \% on input line 495.
  [119 <./Imagenes/Figuras/implementacion/libroDeVida.png> <./Imagenes/Figuras/i
 mplementacion/filtro.png>]
-Underfull \vbox (badness 1783) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 495.
 LaTeX Info: Redefining \% on input line 495.
  [120 <./Imagenes/Figuras/diagramas_secuencia/generarLibro.png> <./Imagenes/Fig
 uras/implementacion/pdf.png>]
-
-LaTeX Warning: Reference `fig:anadirInformeSesion' on page 121 undefined on inp
-ut line 497.
-
-
-LaTeX Warning: Reference `fig:anadirInformeSesion' on page 121 undefined on inp
-ut line 498.
-
-<./Imagenes/Figuras/implementacion/anadirInformeSesion.png, id=1750, 1445.4pt x
+<./Imagenes/Figuras/implementacion/anadirInformeSesion.png, id=2362, 1445.4pt x
  792.9625pt>
 File: ./Imagenes/Figuras/implementacion/anadirInformeSesion.png Graphic file (t
 ype png)
@@ -3690,7 +3054,7 @@ Overfull \hbox (66.79134pt too wide) in paragraph at lines 501--502
  [][] 
  []
 
-<./Imagenes/Figuras/diagramas_secuencia/Crear_informe_sesion.png, id=1751, 985.
+<./Imagenes/Figuras/diagramas_secuencia/Crear_informe_sesion.png, id=2363, 985.
 6825pt x 302.12875pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/Crear_informe_sesion.png Graphic f
 ile (type png)
@@ -3698,19 +3062,7 @@ ile (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/Crear_informe_s
 esion.png  used on input line 507.
 (pdftex.def)             Requested size: 341.43306pt x 104.65404pt.
-LaTeX Info: Redefining \. on input line 511.
-LaTeX Info: Redefining \% on input line 511.
-[121 <./Imagenes/Figuras/diagramas_secuencia/generarPDF.png> <./Imagenes/Figura
-s/implementacion/anadirExistente.png>]
-
-LaTeX Warning: Reference `fig:calendario' on page 122 undefined on input line 5
-12.
-
-
-LaTeX Warning: Reference `fig:calendar' on page 122 undefined on input line 513
-.
-
-<./Imagenes/Figuras/implementacion/calendario.png, id=1760, 1445.4pt x 740.7675
+<./Imagenes/Figuras/implementacion/calendario.png, id=2366, 1445.4pt x 740.7675
 pt>
 File: ./Imagenes/Figuras/implementacion/calendario.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/calendario.png>
@@ -3722,7 +3074,7 @@ Overfull \hbox (66.79134pt too wide) in paragraph at lines 516--517
  [][] 
  []
 
-<./Imagenes/Figuras/diagramas_secuencia/calendario.png, id=1761, 437.635pt x 30
+<./Imagenes/Figuras/diagramas_secuencia/calendario.png, id=2367, 437.635pt x 30
 2.12875pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/calendario.png Graphic file (type 
 png)
@@ -3731,17 +3083,12 @@ Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/calendario.png
  used on input line 522.
 (pdftex.def)             Requested size: 341.43306pt x 235.71478pt.
 
-LaTeX Warning: Reference `fig:registroTerapeuta' on page 122 undefined on input
- line 530.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Warning: Reference `fig:registroTerapeuta' on page 122 undefined on input
- line 531.
-
-LaTeX Info: Redefining \. on input line 532.
-LaTeX Info: Redefining \% on input line 532.
-[122 <./Imagenes/Figuras/diagramas_secuencia/andExist.png>]
-<./Imagenes/Figuras/implementacion/registroTerapeuta.png, id=1768, 1445.4pt x 7
+LaTeX Info: Redefining \. on input line 526.
+LaTeX Info: Redefining \% on input line 526.
+ [121 <./Imagenes/Figuras/diagramas_secuencia/generarPDF.png>]
+<./Imagenes/Figuras/implementacion/registroTerapeuta.png, id=2376, 1445.4pt x 7
 40.7675pt>
 File: ./Imagenes/Figuras/implementacion/registroTerapeuta.png Graphic file (typ
 e png)
@@ -3754,7 +3101,7 @@ Overfull \hbox (66.79134pt too wide) in paragraph at lines 535--536
  [][] 
  []
 
-<./Imagenes/Figuras/diagramas_secuencia/terapeuta.png, id=1769, 624.3325pt x 42
+<./Imagenes/Figuras/diagramas_secuencia/terapeuta.png, id=2377, 624.3325pt x 42
 2.57875pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/terapeuta.png Graphic file (type p
 ng)
@@ -3762,15 +3109,7 @@ ng)
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/terapeuta.png  
 used on input line 541.
 (pdftex.def)             Requested size: 341.43306pt x 231.10362pt.
-
-LaTeX Warning: Reference `fig:registroCuidador' on page 123 undefined on input 
-line 547.
-
-
-LaTeX Warning: Reference `fig:registroTerapeuta' on page 123 undefined on input
- line 548.
-
-<./Imagenes/Figuras/implementacion/registroCuidador.png, id=1770, 1445.4pt x 79
+<./Imagenes/Figuras/implementacion/registroCuidador.png, id=2380, 1445.4pt x 79
 2.9625pt>
 File: ./Imagenes/Figuras/implementacion/registroCuidador.png Graphic file (type
  png)
@@ -3783,7 +3122,7 @@ Overfull \hbox (66.79134pt too wide) in paragraph at lines 551--552
  [][] 
  []
 
-<./Imagenes/Figuras/diagramas_secuencia/cuidador.png, id=1771, 624.3325pt x 422
+<./Imagenes/Figuras/diagramas_secuencia/cuidador.png, id=2381, 624.3325pt x 422
 .57875pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/cuidador.png Graphic file (type pn
 g)
@@ -3791,26 +3130,10 @@ g)
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/cuidador.png  u
 sed on input line 557.
 (pdftex.def)             Requested size: 199.16928pt x 134.80238pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Info: Redefining \. on input line 561.
 LaTeX Info: Redefining \% on input line 561.
- [123 <./Imagenes/Figuras/implementacion/anadirInformeSesion.png> <./Imagenes/F
-iguras/diagramas_secuencia/Crear_informe_sesion.png>]
-LaTeX Info: Redefining \. on input line 561.
-LaTeX Info: Redefining \% on input line 561.
- [124 <./Imagenes/Figuras/implementacion/calendario.png> <./Imagenes/Figuras/di
-agramas_secuencia/calendario.png>]
-LaTeX Info: Redefining \. on input line 561.
-LaTeX Info: Redefining \% on input line 561.
-
-[125 <./Imagenes/Figuras/implementacion/registroTerapeuta.png> <./Imagenes/Figu
-ras/diagramas_secuencia/terapeuta.png>]
-
-LaTeX Warning: Reference `fig:camb' on page 126 undefined on input line 562.
-
-<./Imagenes/Figuras/implementacion/cambioContrasena.png, id=1797, 1445.4pt x 79
+[122 <./Imagenes/Figuras/implementacion/anadirExistente.png>]
+<./Imagenes/Figuras/implementacion/cambioContrasena.png, id=2388, 1445.4pt x 79
 2.9625pt>
 File: ./Imagenes/Figuras/implementacion/cambioContrasena.png Graphic file (type
  png)
@@ -3818,7 +3141,7 @@ File: ./Imagenes/Figuras/implementacion/cambioContrasena.png Graphic file (type
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/cambioContrasena.png
   used on input line 565.
 (pdftex.def)             Requested size: 227.62204pt x 124.86804pt.
-<./Imagenes/Figuras/diagramas_secuencia/olvido.png, id=1798, 734.745pt x 422.57
+<./Imagenes/Figuras/diagramas_secuencia/olvido.png, id=2389, 734.745pt x 422.57
 875pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/olvido.png Graphic file (type png)
 
@@ -3826,14 +3149,13 @@ File: ./Imagenes/Figuras/diagramas_secuencia/olvido.png Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/olvido.png  use
 d on input line 571.
 (pdftex.def)             Requested size: 341.43306pt x 196.37457pt.
-LaTeX Info: Redefining \. on input line 575.
-LaTeX Info: Redefining \% on input line 575.
-[126 <./Imagenes/Figuras/implementacion/registroCuidador.png> <./Imagenes/Figur
-as/diagramas_secuencia/cuidador.png>]
 
-LaTeX Warning: Reference `fig:logout' on page 127 undefined on input line 576.
+Underfull \vbox (badness 2903) has occurred while \output is active []
 
-<./Imagenes/Figuras/diagramas_secuencia/logout.png, id=1807, 274.02374pt x 291.
+LaTeX Info: Redefining \. on input line 577.
+LaTeX Info: Redefining \% on input line 577.
+ [123 <./Imagenes/Figuras/diagramas_secuencia/andExist.png>]
+<./Imagenes/Figuras/diagramas_secuencia/logout.png, id=2396, 274.02374pt x 291.
 0875pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/logout.png Graphic file (type png)
 
@@ -3844,64 +3166,54 @@ d on input line 581.
 )
 LaTeX Info: Redefining \. on input line 152.
 LaTeX Info: Redefining \% on input line 152.
- [127 <./Imagenes/Figuras/implementacion/cambioContrasena.png> <./Imagenes/Figu
-ras/diagramas_secuencia/olvido.png>]
+ [124 <./Imagenes/Figuras/implementacion/anadirInformeSesion.png> <./Imagenes/F
+iguras/diagramas_secuencia/Crear_informe_sesion.png>]
 LaTeX Info: Redefining \. on input line 152.
 LaTeX Info: Redefining \% on input line 152.
- [128 <./Imagenes/Figuras/diagramas_secuencia/logout.png>]
+ [125 <./Imagenes/Figuras/implementacion/calendario.png> <./Imagenes/Figuras/di
+agramas_secuencia/calendario.png>]
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
+ [126 <./Imagenes/Figuras/implementacion/registroTerapeuta.png> <./Imagenes/Fig
+uras/diagramas_secuencia/terapeuta.png>]
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
+ [127 <./Imagenes/Figuras/implementacion/registroCuidador.png> <./Imagenes/Figu
+ras/diagramas_secuencia/cuidador.png> <./Imagenes/Figuras/implementacion/cambio
+Contrasena.png>]
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
+ [128 <./Imagenes/Figuras/diagramas_secuencia/olvido.png> <./Imagenes/Figuras/d
+iagramas_secuencia/logout.png>]
 \openout2 = `Capitulos/Evaluaciones.aux'.
 
- (Capitulos/Evaluaciones.tex
+
+(Capitulos/Evaluaciones.tex
 Cap\'itulo 6.
-
-LaTeX Warning: Reference `aped.D' on page 129 undefined on input line 18.
-
 [129
 
 
 
 
 ]
-
-LaTeX Warning: Reference `aped.E' on page 130 undefined on input line 29.
-
-
-LaTeX Warning: Reference `aped.F' on page 130 undefined on input line 38.
-
 LaTeX Info: Redefining \. on input line 40.
 LaTeX Info: Redefining \% on input line 40.
-[130]
-
-LaTeX Warning: Reference `fig:sus_ivan' on page 131 undefined on input line 54.
-
-
-
-LaTeX Warning: Reference `fig:sus_adriana' on page 131 undefined on input line 
-54.
-
-<./Imagenes/Figuras/evaluacion/SUS_IVAN.png, id=1830, 314.67563pt x 235.37938pt
+ [130]
+<./Imagenes/Figuras/evaluacion/SUS_IVAN.png, id=2441, 314.67563pt x 235.37938pt
 >
 File: ./Imagenes/Figuras/evaluacion/SUS_IVAN.png Graphic file (type png)
 <use ./Imagenes/Figuras/evaluacion/SUS_IVAN.png>
 Package pdftex.def Info: ./Imagenes/Figuras/evaluacion/SUS_IVAN.png  used on in
 put line 58.
 (pdftex.def)             Requested size: 284.52756pt x 212.83794pt.
-<./Imagenes/Figuras/evaluacion/sus_adriana.png, id=1831, 301.72725pt x 218.0145
+<./Imagenes/Figuras/evaluacion/sus_adriana.png, id=2442, 301.72725pt x 218.0145
 pt>
 File: ./Imagenes/Figuras/evaluacion/sus_adriana.png Graphic file (type png)
 <use ./Imagenes/Figuras/evaluacion/sus_adriana.png>
 Package pdftex.def Info: ./Imagenes/Figuras/evaluacion/sus_adriana.png  used on
  input line 65.
 (pdftex.def)             Requested size: 284.52756pt x 205.58897pt.
-
-LaTeX Warning: Reference `fig:resultado_eval_ivan' on page 131 undefined on inp
-ut line 80.
-
-
-LaTeX Warning: Reference `fig:resultado_eval_adriana' on page 131 undefined on 
-input line 80.
-
-<./Imagenes/Figuras/evaluacion/resultado_eval_ivan.png, id=1832, 178.86826pt x 
+<./Imagenes/Figuras/evaluacion/resultado_eval_ivan.png, id=2445, 178.86826pt x 
 174.6525pt>
 File: ./Imagenes/Figuras/evaluacion/resultado_eval_ivan.png Graphic file (type 
 png)
@@ -3909,7 +3221,7 @@ png)
 Package pdftex.def Info: ./Imagenes/Figuras/evaluacion/resultado_eval_ivan.png 
  used on input line 85.
 (pdftex.def)             Requested size: 142.26378pt x 138.91469pt.
-<./Imagenes/Figuras/evaluacion/resultado_eval_adriana.png, id=1833, 171.64125pt
+<./Imagenes/Figuras/evaluacion/resultado_eval_adriana.png, id=2446, 171.64125pt
  x 168.63pt>
 File: ./Imagenes/Figuras/evaluacion/resultado_eval_adriana.png Graphic file (ty
 pe png)
@@ -3981,22 +3293,26 @@ LaTeX Info: Redefining \% on input line 162.
 ]
 Cap\'itulo 8.
 [143]
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
  [144]
-LaTeX Info: Redefining \. on input line 37.
-LaTeX Info: Redefining \% on input line 37.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
  [145]
-LaTeX Info: Redefining \. on input line 60.
-LaTeX Info: Redefining \% on input line 60.
- [146])
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
+
+[146])
 LaTeX Info: Redefining \. on input line 164.
 LaTeX Info: Redefining \% on input line 164.
  [147]
 \openout2 = `Cascaras/bibliografia.aux'.
 
- (Cascaras/bibliografia.tex (TFMTeXiS.bbl
-[148
+ (Cascaras/bibliografia.tex (TFMTeXiS.bbl [148
 
 
 
@@ -4046,7 +3362,7 @@ LaTeX Info: Redefining \% on input line 171.
 
  (Apendices/appendixA.tex
 Ap\'{e}ndice A.
-<./Archivos/mini_mental.pdf, id=1951, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=2554, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 10.
@@ -4055,7 +3371,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 10.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
-<./Archivos/mini_mental.pdf, id=1954, page=1, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=2557, page=1, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 1>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page1 used on input line 
@@ -4133,7 +3449,7 @@ File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf  used on input line 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
-<./Archivos/mini_mental.pdf, id=1997, page=2, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=2601, page=2, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 2>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page2 used on input line 
@@ -4160,7 +3476,7 @@ Package pdftex.def Info: ./Archivos/mini_mental.pdf , page2 used on input line
 20.
 (pdftex.def)             Requested size: 597.21974pt x 845.13535pt.
  [153 <./Archivos/mini_mental.pdf>]
-<./Archivos/mini_mental.pdf, id=2007, page=3, 597.2212pt x 845.1374pt>
+<./Archivos/mini_mental.pdf, id=2610, page=3, 597.2212pt x 845.1374pt>
 File: ./Archivos/mini_mental.pdf Graphic file (type pdf)
 <use ./Archivos/mini_mental.pdf, page 3>
 Package pdftex.def Info: ./Archivos/mini_mental.pdf , page3 used on input line 
@@ -4483,7 +3799,7 @@ LaTeX Info: Redefining \% on input line 176.
 
 ]
 Ap\'{e}ndice C.
-<./Archivos/debriefing.pdf, id=2095, 598.235pt x 845.1575pt>
+<./Archivos/debriefing.pdf, id=2698, 598.235pt x 845.1575pt>
 File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf>
 Package pdftex.def Info: ./Archivos/debriefing.pdf  used on input line 8.
@@ -4492,7 +3808,7 @@ File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf>
 Package pdftex.def Info: ./Archivos/debriefing.pdf  used on input line 8.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/debriefing.pdf, id=2098, page=1, 598.235pt x 845.1575pt>
+<./Archivos/debriefing.pdf, id=2701, page=1, 598.235pt x 845.1575pt>
 File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf, page 1>
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page1 used on input line 8
@@ -4521,7 +3837,7 @@ File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf>
 Package pdftex.def Info: ./Archivos/debriefing.pdf  used on input line 12.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/debriefing.pdf, id=2105, page=2, 598.235pt x 845.1575pt>
+<./Archivos/debriefing.pdf, id=2708, page=2, 598.235pt x 845.1575pt>
 File: ./Archivos/debriefing.pdf Graphic file (type pdf)
 <use ./Archivos/debriefing.pdf, page 2>
 Package pdftex.def Info: ./Archivos/debriefing.pdf , page2 used on input line 1
@@ -4559,7 +3875,7 @@ Package pdftex.def Info: ./Archivos/debriefing.pdf , page2 used on input line 1
 
 (Apendices/appendixD.tex
 Ap\'{e}ndice D.
-<./Archivos/pdf_eva_1.png, id=2131, 342.078pt x 508.90125pt>
+<./Archivos/pdf_eva_1.png, id=2734, 342.078pt x 508.90125pt>
 File: ./Archivos/pdf_eva_1.png Graphic file (type png)
 <use ./Archivos/pdf_eva_1.png>
 Package pdftex.def Info: ./Archivos/pdf_eva_1.png  used on input line 6.
@@ -4570,7 +3886,7 @@ Package pdftex.def Info: ./Archivos/pdf_eva_1.png  used on input line 6.
 
 
  <./Archivos/pdf_eva_1.png>]
-<./Archivos/evaluacion_final.pdf, id=2139, 598.235pt x 845.1575pt>
+<./Archivos/evaluacion_final.pdf, id=2743, 598.235pt x 845.1575pt>
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 13
@@ -4581,7 +3897,7 @@ File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 13
 .
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/evaluacion_final.pdf, id=2142, page=2, 598.235pt x 845.1575pt>
+<./Archivos/evaluacion_final.pdf, id=2746, page=2, 598.235pt x 845.1575pt>
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 2>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page2 used on input 
@@ -4618,7 +3934,7 @@ File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 16
 .
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/evaluacion_final.pdf, id=2162, page=3, 598.235pt x 845.1575pt>
+<./Archivos/evaluacion_final.pdf, id=2766, page=3, 598.235pt x 845.1575pt>
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 3>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page3 used on input 
@@ -4656,7 +3972,7 @@ File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf  used on input line 19
 .
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/evaluacion_final.pdf, id=2170, page=4, 598.235pt x 845.1575pt>
+<./Archivos/evaluacion_final.pdf, id=2773, page=4, 598.235pt x 845.1575pt>
 File: ./Archivos/evaluacion_final.pdf Graphic file (type pdf)
 <use ./Archivos/evaluacion_final.pdf, page 4>
 Package pdftex.def Info: ./Archivos/evaluacion_final.pdf , page4 used on input 
@@ -4687,12 +4003,12 @@ line 19.
 
  (Apendices/appendixE.tex
 Ap\'{e}ndice E.
-<./Archivos/pdf_eva_ivan.png, id=2175, 346.896pt x 502.2765pt>
+<./Archivos/pdf_eva_ivan.png, id=2778, 346.896pt x 502.2765pt>
 File: ./Archivos/pdf_eva_ivan.png Graphic file (type png)
 <use ./Archivos/pdf_eva_ivan.png>
 Package pdftex.def Info: ./Archivos/pdf_eva_ivan.png  used on input line 6.
 (pdftex.def)             Requested size: 260.17136pt x 376.70645pt.
-<./Archivos/resultados_bruto_eval_ivan.pdf, id=2176, 598.235pt x 845.1575pt>
+<./Archivos/resultados_bruto_eval_ivan.pdf, id=2779, 598.235pt x 845.1575pt>
 File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/resultados_bruto_eval_ivan.pdf>
 Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
@@ -4703,7 +4019,7 @@ File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
 ut line 11.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/resultados_bruto_eval_ivan.pdf, id=2179, page=2, 598.235pt x 845.15
+<./Archivos/resultados_bruto_eval_ivan.pdf, id=2782, page=2, 598.235pt x 845.15
 75pt>
 File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/resultados_bruto_eval_ivan.pdf, page 2>
@@ -4747,7 +4063,7 @@ File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
 ut line 14.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/resultados_bruto_eval_ivan.pdf, id=2206, page=3, 598.235pt x 845.15
+<./Archivos/resultados_bruto_eval_ivan.pdf, id=2809, page=3, 598.235pt x 845.15
 75pt>
 File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/resultados_bruto_eval_ivan.pdf, page 3>
@@ -4785,7 +4101,7 @@ File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
 ut line 17.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/resultados_bruto_eval_ivan.pdf, id=2213, page=4, 598.235pt x 845.15
+<./Archivos/resultados_bruto_eval_ivan.pdf, id=2817, page=4, 598.235pt x 845.15
 75pt>
 File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/resultados_bruto_eval_ivan.pdf, page 4>
@@ -4823,7 +4139,7 @@ File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf  used on inp
 ut line 20.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/resultados_bruto_eval_ivan.pdf, id=2220, page=5, 598.235pt x 845.15
+<./Archivos/resultados_bruto_eval_ivan.pdf, id=2824, page=5, 598.235pt x 845.15
 75pt>
 File: ./Archivos/resultados_bruto_eval_ivan.pdf Graphic file (type pdf)
 <use ./Archivos/resultados_bruto_eval_ivan.pdf, page 5>
@@ -4861,12 +4177,12 @@ Package pdftex.def Info: ./Archivos/resultados_bruto_eval_ivan.pdf , page5 used
 
 ]
 Ap\'{e}ndice F.
-<./Archivos/pdf_eva_adri.png, id=2230, 346.29375pt x 507.0945pt>
+<./Archivos/pdf_eva_adri.png, id=2833, 346.29375pt x 507.0945pt>
 File: ./Archivos/pdf_eva_adri.png Graphic file (type png)
 <use ./Archivos/pdf_eva_adri.png>
 Package pdftex.def Info: ./Archivos/pdf_eva_adri.png  used on input line 6.
 (pdftex.def)             Requested size: 259.71967pt x 380.31993pt.
-<./Archivos/resultados_bruto_eval_adriana.pdf, id=2231, 598.235pt x 845.1575pt>
+<./Archivos/resultados_bruto_eval_adriana.pdf, id=2834, 598.235pt x 845.1575pt>
 
 File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
 <use ./Archivos/resultados_bruto_eval_adriana.pdf>
@@ -4878,7 +4194,7 @@ File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf  used on 
 input line 11.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/resultados_bruto_eval_adriana.pdf, id=2234, page=2, 598.235pt x 845
+<./Archivos/resultados_bruto_eval_adriana.pdf, id=2837, page=2, 598.235pt x 845
 .1575pt>
 File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
 <use ./Archivos/resultados_bruto_eval_adriana.pdf, page 2>
@@ -4917,7 +4233,7 @@ File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Archivos/resultados_bruto_eval_adriana.pdf  used on 
 input line 14.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
-<./Archivos/resultados_bruto_eval_adriana.pdf, id=2261, page=3, 598.235pt x 845
+<./Archivos/resultados_bruto_eval_adriana.pdf, id=2864, page=3, 598.235pt x 845
 .1575pt>
 File: ./Archivos/resultados_bruto_eval_adriana.pdf Graphic file (type pdf)
 <use ./Archivos/resultados_bruto_eval_adriana.pdf, page 3>
@@ -4949,9 +4265,6 @@ sed on input line 14.
 
 
 ]
-
-Package natbib Warning: There were undefined citations.
-
 (TFMTeXiS.aux (Cascaras/cover.aux)
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
@@ -4971,18 +4284,11 @@ LaTeX Info: Redefining \% on input line 39.
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
 
-(Cascaras/bibliografia.aux
+(Cascaras/bibliografia.aux) (Apendices/appendixA.aux) (Apendices/appendixB.aux)
+(Apendices/appendixC.aux) (Apendices/appendixD.aux) (Apendices/appendixE.aux)
+(Apendices/appendixF.aux))
 
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-) (Apendices/appendixA.aux) (Apendices/appendixB.aux) (Apendices/appendixC.aux)
-(Apendices/appendixD.aux) (Apendices/appendixE.aux) (Apendices/appendixF.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 
 Package rerunfilecheck Warning: File `TFMTeXiS.out' has changed.
@@ -4990,114 +4296,118 @@ Package rerunfilecheck Warning: File `TFMTeXiS.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `TFMTeXiS.out':
-(rerunfilecheck)             Before: F80961FA8430D42C4050350D4568D45F;37048
-(rerunfilecheck)             After:  BC0F1A2B2E8ED0562D9A92A42CE990D1;36055.
+(rerunfilecheck)             Before: BC0F1A2B2E8ED0562D9A92A42CE990D1;36055
+(rerunfilecheck)             After:  27400E1D7F4DD169171848FFCCEB856E;35062.
  ) 
 Here is how much of TeX's memory you used:
- 20503 strings out of 478584
- 410630 string characters out of 2842985
- 682043 words of memory out of 3000000
- 37133 multiletter control sequences out of 15000+600000
+ 20575 strings out of 478584
+ 414013 string characters out of 2842985
+ 723941 words of memory out of 3000000
+ 37151 multiletter control sequences out of 15000+600000
  490747 words of font info for 65 fonts, out of 8000000 for 9000
  1379 hyphenation exceptions out of 8191
- 92i,19n,98p,1467b,782s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 92i,19n,98p,1467b,754s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-pdfTeX warning (dest): name{appendix.406} has been referenced but does not exis
+pdfTeX warning (dest): name{appendix.401} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{appendix.404} has been referenced but does not exis
+pdfTeX warning (dest): name{appendix.399} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{appendix.402} has been referenced but does not exis
+pdfTeX warning (dest): name{appendix.397} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{appendix.400} has been referenced but does not exis
+pdfTeX warning (dest): name{appendix.395} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subsection.399} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.394} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subsection.398} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.393} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subsection.397} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.392} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subsection.396} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.391} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subsection.395} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.390} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{section.389} has been referenced but does not exist
+pdfTeX warning (dest): name{section.384} has been referenced but does not exist
 , replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subsection.384} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.379} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{section.371} has been referenced but does not exist
+pdfTeX warning (dest): name{section.366} has been referenced but does not exist
 , replaced by a fixed one
 
 
-pdfTeX warning (dest): name{appendix.370} has been referenced but does not exis
+pdfTeX warning (dest): name{appendix.365} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{appendix.368} has been referenced but does not exis
+pdfTeX warning (dest): name{appendix.363} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{chapter*.367} has been referenced but does not exis
+pdfTeX warning (dest): name{chapter*.362} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subsection.365} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.360} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subsection.364} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.359} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{section.363} has been referenced but does not exist
+pdfTeX warning (dest): name{section.358} has been referenced but does not exist
 , replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subsection.362} has been referenced but does not ex
+pdfTeX warning (dest): name{section.357} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.356} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subsection.361} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.353} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subsection.358} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.352} has been referenced but does not ex
 ist, replaced by a fixed one
 
  <C:\Users\Patricia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
 m1000.pk> <C:\Users\Patricia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
 pi600\ecti1000.pk> <C:\Users\Patricia\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
 ppen/ec/dpi600\ectt1200.pk> <C:\Users\Patricia\AppData\Local\MiKTeX\fonts/pk/lj
-four/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Patricia\AppData\Local\MiKTeX\fo
-nts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Patricia\AppData\Local\
-MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Patricia\AppDa
-ta\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Patri
-cia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Us
-ers\Patricia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.p
-k> <C:\Users\Patricia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
-cti1095.pk>{C:/Users/Patricia/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/bas
-e/8r.enc} <C:\Users\Patricia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
+four/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Patricia\AppData\Local\MiKTeX\fo
+nts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\Patricia\AppData\Local\
+MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Patricia\AppDa
+ta\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Patri
+cia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk>{C:/Use
+rs/Patricia/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\User
+s\Patricia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk>
+ <C:\Users\Patricia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
+x1095.pk> <C:\Users\Patricia\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
 pi600\eccc1095.pk> <C:\Users\Patricia\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
 ppen/ec/dpi600\ecrm1200.pk> <C:\Users\Patricia\AppData\Local\MiKTeX\fonts/pk/lj
 four/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Patricia\AppData\Local\MiKTeX\fo
@@ -5110,9 +4420,9 @@ k><C:/Users/Patricia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb><C:/Users/Patricia/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
 helvetic/uhvr8a.pfb><C:/Users/Patricia/AppData/Local/Programs/MiKTeX/fonts/type
 1/urw/times/utmr8a.pfb>
-Output written on TFMTeXiS.pdf (204 pages, 32277537 bytes).
+Output written on TFMTeXiS.pdf (212 pages, 32401687 bytes).
 PDF statistics:
- 3155 PDF objects out of 3580 (max. 8388607)
- 640 named destinations out of 1000 (max. 500000)
- 2480 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3765 PDF objects out of 4296 (max. 8388607)
+ 644 named destinations out of 1000 (max. 500000)
+ 2440 words of extra memory for PDF output out of 10000 (max. 10000000)
 
