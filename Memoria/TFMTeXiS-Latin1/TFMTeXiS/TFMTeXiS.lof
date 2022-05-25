@@ -163,37 +163,38 @@
 \contentsline {figure}{\numberline {5.26}{\ignorespaces Tabla de base de datos \texttt {recuerdo\char `_persona\char `_relacionada}.\relax }}{112}{figure.caption.283}%
 \contentsline {figure}{\numberline {5.27}{\ignorespaces Tabla de base de datos \texttt {recuerdo\char `_multimedia}.\relax }}{112}{figure.caption.285}%
 \contentsline {figure}{\numberline {5.28}{\ignorespaces Pagina de login.\relax }}{113}{figure.caption.288}%
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Diagrama de secuencia del proceso login.\relax }}{114}{figure.caption.289}%
-\contentsline {figure}{\numberline {5.30}{\ignorespaces Pantalla del listado de sesiones.\relax }}{114}{figure.caption.291}%
-\contentsline {figure}{\numberline {5.31}{\ignorespaces Diagrama de secuencia del listado de pacientes.\relax }}{115}{figure.caption.292}%
-\contentsline {figure}{\numberline {5.32}{\ignorespaces Crear un nuevo paciente.\relax }}{116}{figure.caption.294}%
-\contentsline {figure}{\numberline {5.33}{\ignorespaces Diagrama de secuencia nuevo paciente.\relax }}{116}{figure.caption.295}%
-\contentsline {figure}{\numberline {5.34}{\ignorespaces Bot\'on de modificaci\'on.\relax }}{117}{figure.caption.297}%
-\contentsline {figure}{\numberline {5.35}{\ignorespaces Diagrama de secuencia modificar paciente.\relax }}{117}{figure.caption.298}%
-\contentsline {figure}{\numberline {5.36}{\ignorespaces Diagrama de secuencia eliminar paciente.\relax }}{118}{figure.caption.300}%
-\contentsline {figure}{\numberline {5.37}{\ignorespaces Generar Libro de Vida.\relax }}{119}{figure.caption.302}%
-\contentsline {figure}{\numberline {5.38}{\ignorespaces Diagrama de secuencia generar libro de vida del paciente.\relax }}{119}{figure.caption.303}%
-\contentsline {figure}{\numberline {5.39}{\ignorespaces Generar PDF.\relax }}{120}{figure.caption.305}%
-\contentsline {figure}{\numberline {5.40}{\ignorespaces Diagrama de secuencia generar historia de vida en PDF .\relax }}{120}{figure.caption.306}%
-\contentsline {figure}{\numberline {5.41}{\ignorespaces A\~nadir personas relacionadas a un recuerdo.\relax }}{121}{figure.caption.308}%
-\contentsline {figure}{\numberline {5.42}{\ignorespaces Diagrama de secuencia a\~nadir personas relacionadas a un recuerdo.\relax }}{122}{figure.caption.309}%
-\contentsline {figure}{\numberline {5.43}{\ignorespaces Crear un nuevo informe de sesi\'on.\relax }}{123}{figure.caption.311}%
-\contentsline {figure}{\numberline {5.44}{\ignorespaces Diagrama de secuencia crear un nuevo informe de sesi\'on.\relax }}{123}{figure.caption.312}%
-\contentsline {figure}{\numberline {5.45}{\ignorespaces Calendario de actividades.\relax }}{124}{figure.caption.314}%
-\contentsline {figure}{\numberline {5.46}{\ignorespaces Diagrama de secuencia calendario.\relax }}{124}{figure.caption.315}%
-\contentsline {figure}{\numberline {5.47}{\ignorespaces Registro de un nuevo terapeuta.\relax }}{125}{figure.caption.317}%
-\contentsline {figure}{\numberline {5.48}{\ignorespaces Diagrama de secuencia registro terapeuta.\relax }}{125}{figure.caption.318}%
-\contentsline {figure}{\numberline {5.49}{\ignorespaces Registro de un nuevo cuidador.\relax }}{126}{figure.caption.320}%
-\contentsline {figure}{\numberline {5.50}{\ignorespaces Diagrama de secuencia registro cuidador.\relax }}{126}{figure.caption.321}%
-\contentsline {figure}{\numberline {5.51}{\ignorespaces Cambio de contrase\~na de un usuario.\relax }}{127}{figure.caption.323}%
-\contentsline {figure}{\numberline {5.52}{\ignorespaces Diagrama de secuencia cambio contrase\~na.\relax }}{127}{figure.caption.324}%
-\contentsline {figure}{\numberline {5.53}{\ignorespaces Bot\'on de logout.\relax }}{128}{figure.caption.326}%
-\contentsline {figure}{\numberline {5.54}{\ignorespaces Diagrama de secuencia del proceso logout.\relax }}{128}{figure.caption.327}%
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Pagina de inicio de la aplicaci\'on.\relax }}{113}{figure.caption.289}%
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Diagrama de secuencia del proceso login.\relax }}{114}{figure.caption.290}%
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Pantalla del listado de sesiones.\relax }}{115}{figure.caption.292}%
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Diagrama de secuencia del listado de pacientes.\relax }}{115}{figure.caption.293}%
+\contentsline {figure}{\numberline {5.33}{\ignorespaces Crear un nuevo paciente.\relax }}{116}{figure.caption.295}%
+\contentsline {figure}{\numberline {5.34}{\ignorespaces Diagrama de secuencia nuevo paciente.\relax }}{116}{figure.caption.296}%
+\contentsline {figure}{\numberline {5.35}{\ignorespaces Formulario de modificaci\'on de un paciente.\relax }}{117}{figure.caption.298}%
+\contentsline {figure}{\numberline {5.36}{\ignorespaces Diagrama de secuencia modificar paciente.\relax }}{117}{figure.caption.299}%
+\contentsline {figure}{\numberline {5.37}{\ignorespaces Diagrama de secuencia eliminar paciente.\relax }}{118}{figure.caption.301}%
+\contentsline {figure}{\numberline {5.38}{\ignorespaces Generar Libro de Vida.\relax }}{119}{figure.caption.303}%
+\contentsline {figure}{\numberline {5.39}{\ignorespaces Formulario para filtrar Historia de Vida\relax }}{119}{figure.caption.304}%
+\contentsline {figure}{\numberline {5.40}{\ignorespaces Diagrama de secuencia generar libro de vida del paciente.\relax }}{120}{figure.caption.305}%
+\contentsline {figure}{\numberline {5.41}{\ignorespaces Generar PDF.\relax }}{120}{figure.caption.307}%
+\contentsline {figure}{\numberline {5.42}{\ignorespaces Diagrama de secuencia generar historia de vida en PDF .\relax }}{121}{figure.caption.308}%
+\contentsline {figure}{\numberline {5.43}{\ignorespaces A\~nadir personas relacionadas a un recuerdo.\relax }}{122}{figure.caption.310}%
+\contentsline {figure}{\numberline {5.44}{\ignorespaces Diagrama de secuencia a\~nadir personas relacionadas a un recuerdo.\relax }}{123}{figure.caption.311}%
+\contentsline {figure}{\numberline {5.45}{\ignorespaces Crear un nuevo informe de sesi\'on.\relax }}{124}{figure.caption.313}%
+\contentsline {figure}{\numberline {5.46}{\ignorespaces Diagrama de secuencia crear un nuevo informe de sesi\'on.\relax }}{124}{figure.caption.314}%
+\contentsline {figure}{\numberline {5.47}{\ignorespaces Calendario de actividades.\relax }}{125}{figure.caption.316}%
+\contentsline {figure}{\numberline {5.48}{\ignorespaces Diagrama de secuencia calendario.\relax }}{125}{figure.caption.317}%
+\contentsline {figure}{\numberline {5.49}{\ignorespaces Registro de un nuevo terapeuta.\relax }}{126}{figure.caption.319}%
+\contentsline {figure}{\numberline {5.50}{\ignorespaces Diagrama de secuencia registro terapeuta.\relax }}{126}{figure.caption.320}%
+\contentsline {figure}{\numberline {5.51}{\ignorespaces Registro de un nuevo cuidador.\relax }}{127}{figure.caption.322}%
+\contentsline {figure}{\numberline {5.52}{\ignorespaces Diagrama de secuencia registro cuidador.\relax }}{127}{figure.caption.323}%
+\contentsline {figure}{\numberline {5.53}{\ignorespaces Cambio de contrase\~na de un usuario.\relax }}{127}{figure.caption.325}%
+\contentsline {figure}{\numberline {5.54}{\ignorespaces Diagrama de secuencia cambio contrase\~na.\relax }}{128}{figure.caption.326}%
+\contentsline {figure}{\numberline {5.55}{\ignorespaces Diagrama de secuencia del proceso logout.\relax }}{128}{figure.caption.328}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Cuestionario SUS de Iv\'an\relax }}{132}{figure.caption.339}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Cuestionario SUS de Adriana\relax }}{132}{figure.caption.340}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Resultado SUS de Iv\'an\relax }}{133}{figure.caption.344}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultado SUS de Adriana\relax }}{133}{figure.caption.344}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Cuestionario SUS de Iv\'an\relax }}{132}{figure.caption.340}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Cuestionario SUS de Adriana\relax }}{132}{figure.caption.341}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Resultado SUS de Iv\'an\relax }}{133}{figure.caption.345}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultado SUS de Adriana\relax }}{133}{figure.caption.345}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {english}{}\relax 
