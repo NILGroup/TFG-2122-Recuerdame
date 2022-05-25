@@ -13,15 +13,15 @@
 \contentsline {section}{\numberline {1.4}Structure of the Report}{7}{section.24}%
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {2}Estado de la Cuesti\'on}{9}{chapter.25}%
-\contentsline {section}{\numberline {2.1}Enfermedad del Alzheimer}{9}{section.26}%
+\contentsline {section}{\numberline {2.1}Enfermedad de Alzheimer}{9}{section.26}%
 \contentsline {section}{\numberline {2.2}Terapias basadas en reminiscencia}{12}{section.34}%
 \contentsline {section}{\numberline {2.3}Historias de Vida}{13}{section.36}%
 \contentsline {section}{\numberline {2.4}Trabajos relacionados}{14}{section.39}%
 \contentsline {subsection}{\numberline {2.4.1}Generaci\'on de historias a partir de una base de conocimiento}{14}{subsection.41}%
 \contentsline {subsection}{\numberline {2.4.2}Extracci\'on de informaci\'on personal a partir de redes sociales para la creaci\'on de un libro de vida}{17}{subsection.46}%
 \contentsline {subsection}{\numberline {2.4.3}Sistema de asistencia para cuidado de enfermos con alzh\'eimer}{18}{subsection.51}%
-\contentsline {subsection}{\numberline {2.4.4}Extracci\'on de preguntas a partir de im\'agenes para personas con problemas de memoria mediante t\'ecnicas de Deep Learning}{22}{subsection.54}%
-\contentsline {subsection}{\numberline {2.4.5}Conclusiones}{25}{subsection.59}%
+\contentsline {subsection}{\numberline {2.4.4}Extracci\'on de preguntas a partir de im\'agenes para personas con problemas de memoria mediante t\'ecnicas de Deep Learning}{23}{subsection.54}%
+\contentsline {subsection}{\numberline {2.4.5}Conclusiones}{24}{subsection.59}%
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {3}Captura de requisitos}{27}{chapter.60}%
 \contentsline {section}{\numberline {3.1}Preparaci\'on de las entrevistas}{27}{section.61}%
