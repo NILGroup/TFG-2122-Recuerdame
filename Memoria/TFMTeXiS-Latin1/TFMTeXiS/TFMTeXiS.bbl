@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{9}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Aguilera Heredero} y {Molina Munoz}(2021)}]{article_15}
@@ -16,6 +16,11 @@
 \newblock Informe t\'ecnico, Universidad Complutense de Madrid, 2021.
 \newblock TFG. Grado de Ingener\'ia Inform\'atica y grado de Ingener\'ia del
   Software.
+
+\bibitem[{Brooke(1995)}]{article_17}
+{\sc Brooke, J.}
+\newblock Sus: A quick and dirty usability scale.
+\newblock {\em Usability Eval. Ind.\/}, vol. 189, 1995.
 
 \bibitem[{{Castilla Castellano}(2021)}]{article_14}
 {\sc {Castilla Castellano}, L.}

@@ -20,8 +20,8 @@
 \contentsline {subsection}{\numberline {2.4.1}Generaci\'on de historias a partir de una base de conocimiento}{14}{subsection.41}%
 \contentsline {subsection}{\numberline {2.4.2}Extracci\'on de informaci\'on personal a partir de redes sociales para la creaci\'on de un libro de vida}{17}{subsection.46}%
 \contentsline {subsection}{\numberline {2.4.3}Sistema de asistencia para cuidado de enfermos con alzh\'eimer}{18}{subsection.51}%
-\contentsline {subsection}{\numberline {2.4.4}Extracci\'on de preguntas a partir de im\'agenes para personas con problemas de memoria mediante t\'ecnicas de Deep Learning}{22}{subsection.54}%
-\contentsline {subsection}{\numberline {2.4.5}Conclusiones}{25}{subsection.59}%
+\contentsline {subsection}{\numberline {2.4.4}Extracci\'on de preguntas a partir de im\'agenes para personas con problemas de memoria mediante t\'ecnicas de Deep Learning}{23}{subsection.54}%
+\contentsline {subsection}{\numberline {2.4.5}Conclusiones}{24}{subsection.59}%
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {3}Captura de requisitos}{27}{chapter.60}%
 \contentsline {section}{\numberline {3.1}Preparaci\'on de las entrevistas}{27}{section.61}%
@@ -98,10 +98,10 @@
 \contentsline {subsection}{\numberline {5.3.14}Logout}{120}{subsection.302}%
 \contentsline {chapter}{\numberline {6}Evaluaci\'on}{125}{chapter.304}%
 \contentsline {section}{\numberline {6.1}Dise\~no de la evaluaci\'on}{125}{section.305}%
-\contentsline {section}{\numberline {6.2}Desarrollo de la evaluaci\'on}{126}{section.306}%
-\contentsline {subsection}{\numberline {6.2.1}Desarrollo de la evaluaci\'on final con Dr. Iv\'an De Rosende Celeiro}{126}{subsection.307}%
-\contentsline {subsection}{\numberline {6.2.2}Desarrollo de la evaluaci\'on final con Dra. Adriana Ivette \'Avila \'Alvarez}{126}{subsection.308}%
-\contentsline {section}{\numberline {6.3}Resultados de la evaluaci\'on}{127}{section.309}%
+\contentsline {section}{\numberline {6.2}Desarrollo de la evaluaci\'on}{126}{section.314}%
+\contentsline {subsection}{\numberline {6.2.1}Desarrollo de la evaluaci\'on final con Dr. Iv\'an De Rosende Celeiro}{126}{subsection.315}%
+\contentsline {subsection}{\numberline {6.2.2}Desarrollo de la evaluaci\'on final con Dra. Adriana Ivette \'Avila \'Alvarez}{128}{subsection.317}%
+\contentsline {section}{\numberline {6.3}Resultados de la evaluaci\'on}{128}{section.319}%
 \contentsline {chapter}{\numberline {7}Conclusiones y Trabajo Futuro}{133}{chapter.321}%
 \contentsline {section}{\numberline {7.1}Conclusiones}{133}{section.322}%
 \contentsline {section}{\numberline {7.2}Trabajo futuro}{134}{section.323}%
