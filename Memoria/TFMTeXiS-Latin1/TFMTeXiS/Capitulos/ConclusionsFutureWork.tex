@@ -3,6 +3,47 @@
 \chapter{Conclusions and Future Work}
 \label{cap:conclusions}
 
-Conclusions and future lines of work.
+Throughout this section we will report the conclusions that have been drawn after the development and evaluation of the application, checking if we have met the objectives that were set at the beginning of the project. On the other hand, we will comment on the future work that we consider important for the application to be considered complete.
 
+\section{Conclusions}
 
+The main objective of this project was to develop an application that would help therapists of patients with dementia or Alzheimer's disease to perform their reminiscence-based therapies. As can be seen throughout the report, this goal has been fully achieved. We have created a functional application based on the real needs of the end users and an evaluation of it has been performed in order to measure its impact. 
+
+The development of this project has allowed us to apply a lot of knowledge acquired during the degree. Some of the subjects that were most helpful to us were: 
+
+\begin{itemize}
+	\item \textbf{Software Engineering:} where we learned the basics to start creating a project. It taught us how to manage and structure our work to make good teamwork in this software project. It also helped us to know how to apply the different design patterns in our project. 
+	\item \textbf{Web Applications:} where we learned the programming languages with which the application was developed, such as HTML, PHP, CSS and JavaScript.
+	\item \textbf{Interactive Systems Desgin:} where we learned how to design user-centered applications (a fundamental part of our project). It taught us how to perform a  proper requirements capture and how to perform a good evaluation of both the design and the final application.
+	\item \textbf{Operating Systems and Networks:} where we learned everything we needed to know about Linux to be able to upload the application to the server provided by the University.
+	\item \textbf{Internships:} the experience gained and the tools used during our internship period have helped us in the implementation and development of the project.
+\end{itemize}
+
+In this project, in addition to using knowledge already acquired, we have also learned other skills such as: the use of Latex, how to work with real users and the use of some libraries for web pages such as: FPDF, Bootstrap, Fullcalendar, Dropzone, Fontawesome.
+
+Comparing our project with the TFG explained in the section \ref{tfg:sis_asis_cui_enf_alz} we can find that it is a much improved version of it. Because not only do we store and display information, but it also allows us to manage and organize sessions and activities, as well as a session to the caregiver. In spite of this, it has been very useful for us, since all the information they keep about life history, patient information, memories and related people, is all represented in our application, with the difference that in our case it is much more expanded and with more information stored and has a different structure than theirs. On the other hand, the other TFGs can be very helpful in the future work explained in the next section.
+
+In general, both we and the therapists are very happy with the result of the application. There are still many details to tweak and improve, so we hope that this project will continue to develop over the next few years and that it will be improved enough to reach as many therapists as possible at some point.
+
+\section{Future Work}
+
+Although right now the application is a fully functional and useful system for use by therapists in their reminiscence therapies. There are still a few details left for the application to be considered complete. Many of these details are initial requirements that, due to lack of time, could not be implemented and others are changes that the experts indicated during the final evaluation. The improvements that we think are most important are the following:
+
+\begin{itemize}
+\item \textbf{Messaging:} Implement messaging functionality with between therapist and caregiver.
+\item \textbf{PDFs:} Increase the size of the images and place them horizontally for better viewing. In addition, a section should be added to see the date of generation of the document.
+\item \textbf{Sessions:} Move some session sections such as ``status'', ``label'', ``score'' and ``emotion'', ``barriers'' and ``facilitators'', as they should appear at the end of a session and not when creating it.
+\item \textbf{Session Reports:} Add in the window some sections such as the duration of the session and the time of the session, as these are important data for the therapist.
+\item \textbf{Tracking reports:} Add a field indicating the number of sessions since the last report.
+\item \textbf{Life stories:} In the life story filters, implement the option to select multiple options in the same filter.
+\item \textbf{Related Persons:} Add new fields such as ``location/residence'', ``level of contact with patient'' and ``comments''. Also in the relationship section, when the other option is selected, a box should appear where the type of relationship should be specified.
+\item \textbf{Calendar:} Add a new private calendar for the therapist where they can put the sessions they have to do and the activities they want to do and basically help them to get organized. Also implement the option to add images to the activities.
+\item \textbf{Patient:} The various fields should be added such as ``job occupation'', ``marital status'', ``children'', ``level of studies'', ``age in the center'', ``initial diagnosis'' and the option to add a photo of the patient.
+\item \textbf{Caregiver:} implement the option to be able to add several caregivers to a patient. Add more information such as ``location of residence'', ``relative degree''. In addition, the option to view the list of caregivers of a patient could be implemented.
+\item \textbf{Caregiver view:} Implement the option to mark activities as done or not done. Also, some fields in the memories that are useful for the therapist but not for the caregiver such as ``status'', ``label'', ``score'' and ``emotion'' should not be displayed. Finally, change the home screen to a picture carousel of memories or calendar of activities.
+\item \textbf{Clues about a memory:} A new functionality that could be implemented is that when the patient has problems with a memory, a button is clicked and the application displays a hint about it, helping the patient to remember it easier. For this implementation the work done in the TFG presented in Section \ref{tfg:ext_pre_by_img_alz} would be very useful.
+\item \textbf{Life Story Video:} Just as we have the option to display the life story in PDF and with the carousel, another option could be added that will display the life story in video, showing the photos and videos of the Life Story while narrating the description of the memory.
+\item \textbf{Evaluation of the memory:} Another functionality that should be implemented is that in the session report the application would allow the option to update the data of each memory used during that session. 
+\item \textbf{Life Story Narration:} Right now the life histories are a list of memories with images, so a good future work would be to implement the narration of these memories as if it were a novel. For this development it would be very useful what was done in the TFG presented in the Section \ref{tfg:gen_his_base_cono}
+\item \textbf{Bot chat:} To help caregivers with the different activities to be performed with the patient, it would be useful to implement a bot that simulates the therapist and is able to help the caregiver with their tasks.
+\end{itemize}
