@@ -28,7 +28,15 @@ Para aplicar este patrón de la manera más ordenada posible aplicamos esta divisi
 	\item Calendario: Muestra el calendario por mes. Permite modificar, añadir y eliminar tareas en el calendario.
 \end{itemize}
 
-Como resultado, cada modulo tendrá: por una parte distintas vistas para sus distintas acciones y, por otra, un controlador y un modelo. Por ejemplo, en el caso del modulo ``Sesiones'', una de sus vistas es ``Modificar Datos de la Sesión'' que se encarga de mostrar la pantalla para modificar los distintos datos de una sesión. Además de eso, tiene un modelo que se encarga de pedir los datos de la sesión a la base de datos y un controlador que comunica la vista con el modelo.
+Como resultado, cada modulo tendrá: por una parte distintas vistas para sus distintas acciones y, por otra, un controlador y un modelo. Por ejemplo, en el caso del modulo ``Sesiones'', una de sus vistas es ``Modificar Datos de la Sesión'' que se encarga de mostrar la pantalla para modificar los distintos datos de una sesión. Además de eso, tiene un modelo que se encarga de pedir los datos de la sesión a la base de datos y un controlador que comunica la vista con el modelo. En la Figura \ref{fig:componentes} se muestra un resumen de los componentes de la aplicación con su relación.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=15cm]{./Imagenes/Figuras/componentes.png}
+	\caption{Componentes aplicación}
+	\label{fig:componentes}
+\end{figure}
+
 
 La implementación de esta aplicación se ha llevado a cabo con la siguientes herramientas:
 \begin{itemize}
