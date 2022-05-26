@@ -1020,112 +1020,89 @@ En la mensajería del cuidador se ha modificado la pantalla para seleccionar el t
 \end{figure}	
 
 \section{Evaluación del diseño competitivo con expertos}
-Una vez creada la primera versión de nuestro diseño procedemos a realizar su evaluación
+Una vez creada la primera versión de nuestro diseño procedemos a realizar su evaluación con expertos tal y como explicamos en esta sección.
 
 \subsection{Diseño de la evaluación}
 Para la preparación de la evaluación, nos reunimos los integrantes del equipo para decidir cual era la mejor forma de realizar esta valoración del prototipo: determinar el objetivo, que pasos se iban a seguir, como se iba a evaluar. Tras debatirlo, se decretaron  que los pasos a seguir serian los siguientes:
 
-\begin{itemize}
-\item Demostración de la aplicación
-\item Realización del Debriefing.
-\item Ronda de preguntas sobre las distintas secciones de la aplicación.
-\end{itemize}
 
-La primera demostración, le dará al usuario una vista global de la aplicación, para así introducirlo poco a poco a al prototipo. El Debriefing nos demostrará la usabilidad de la aplicación, se le mandará al usuario distintas tareas a realizar, y según como se desenvuelva con la aplicación, se le dará una puntuación. La ultima parte de la entrevista es donde el usuario nos dará un feedback sobre cada parte de la aplicación: Que le ha gustado, que no, que ha hecho de menos, que errores a visto, etc... 
-Con este esquema de desarrollo nos cercioramos  de poder observar los problemas de usabilidad que tenga y de que el usuario nos de un feedback completo de la aplicación. 
+Primero se realizará una demo del diseño que le dará al usuario una vista global de la aplicación, para así introducirlo poco a poco en el prototipo. A continuación, se le mandarán al usuario distintas tareas a realizar, y según como se desenvuelva con la aplicación, se le dará una puntuación. Finalmente se realizará una entrevista al evaluador para recoger su feedback sobre cada parte de la aplicación: qué le ha gustado, qué no, que ha echado de menos, que errores ha visto, etc... 
+Con este esquema nos cercioramos  de poder observar los problemas de usabilidad que tenga la aplicación y de que el usuario nos de un feedback completo. Las tareas a realizar fueron las siguientes:
+  \begin{itemize}
+  	\item Accede a la paciente Juana.
+  	\item Crea una sesión.
+  	\item Finalizar una sesión con su informe de seguimiento.
+  	\item Realiza una evaluación del paciente.
+  	\item Modifica la actividad del calendario.
+  	\item Genera una historia de vida en PDF.
+  	\item Observa las personas relacionadas de un recuerdo concreto.
+  	\item Mete en un recuerdo un archivo multimedia existente.
+  	\item Añade una persona relacionada a la lista general.
+  	\item Escribe un correo a uno de tus pacientes.
+  	\item Cierra sesión.
+  \end{itemize}
 
 \subsection{Desarrollo de la evaluación}
 La evaluación se llevó a cabo el 16 de Febrero a las 16.00 h con el Dr. Iván De Rosende Celeiro. La reunión se realizó por Google Meet. De primeras, le agradecimos por su tiempo y le pedimos permiso para poder grabar la reunión. Después, pudimos dar comienzo a la evaluación.
 
-Como explicamos anteriormente, en primer lugar le enseñamos el prototipo mostrando cada una de sus funcionalidades y pantallas. A continuación se procedió a realizar el debriefing (Apéndice \ref{aped.C}) donde pudimos observar la usabilidad de la aplicación. Iván fue comentando sus opiniones mientras realizaba las distintas tareas. Con lo cual las preguntas finales sobre la opinión de la aplicación no se realizó exactamente como se deseaba, pero el resultado fue el mismo. Al finalizar la entrevista indicó que se sentía sorprendido al encontrarse con un prototipo que el creía pionero y que cubría todas las necesidades que había propuesto en un principio. Aquí se puede ver los resultados en bruto de la evaluación: 
+Como explicamos anteriormente, en primer lugar le enseñamos el prototipo mostrando cada una de sus funcionalidades y pantallas. A continuación se procedió a realizar la evaluación completa de la aplicación. Le fuimos pidiendo a Iván que fuera realizando una serie de tareas e Iván fue comentando sus opiniones mientras realizaba las distintas tareas. Al finalizar la entrevista indicó que se sentía sorprendido al encontrarse con un prototipo que el creía pionero y que cubría todas las necesidades que había propuesto en un principio. En la Figura \ref{fig:debriefing} se muestra la puntuación que otorgamos a cada tarea realizada según cómo se desenvolvió Iván junto con una serie de observaciones. En la Figura \ref{fig:pyr} se muestran las contestaciones a las distintas preguntas realizadas sobre cada sección.
 
-\includepdf[
-scale=0.8, pages=-]{./Archivos/debriefing_ivan}
-\label{pdf:debr_ivan}
 
-\subsection{Resultados de la evaluación} 
-Con todos los datos recogidos en la entrevista, nos pusimos a realizar las mejoras en el prototipo, creando así una versión final del diseño de la aplicación \footnote{https://drive.google.com/file/d/1RETh7BoEp7UKxO2MlHunIq99zJWBtuyD/view?usp=sharing}. Los cambios realizados fueron:
-
-\begin{itemize}
-	\item Menú: se nos indicó cambiar los nombres de ``Informes de seguimiento'' por ``Informes de sesión'' y ``Evaluaciones'' por ``Evaluaciones de seguimiento''.
-\end{itemize}
-
-\begin{itemize}
-	\item Pacientes: se nos propuso añadir un campo con el ``Diagnóstico histórico'' con el que el usuario comienza a hacer la terapia y un ``Diagnóstico actual'' que se modifica cuando el terapeuta lo considere necesario, así mismo, aparecerá la fecha de diagnóstico de ambos en la parte superior (ver Figura \ref{fig:3.2.6_Paciente}). 
-\end{itemize}
 
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Paciente}
-  	\caption{Pantalla del paciente del prototipo final.}
-	\label{fig:3.2.6_Paciente}
-\end{figure}
-
-\begin{itemize}
-	\item Sesiones: se nos pidió cambiar la palabra del campo ``Categoría'' por una más significativa, por lo que se optó por poner ``Etapa de vida''. Además, en esta pantalla creamos dos campos nuevos llamados ``Barreras'' y ``Facilitadores'' donde barreras son las dificultades que pone el usuario para realizar la sesión y facilitadores aquellos que ayudan a hacerla de manera más amena (ver Figura \ref{fig:3.2.6_Sesiones}).
-\end{itemize}
-
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Sesiones}
-  	\caption{Pantalla de sesiones del prototipo final.}
-	\label{fig:3.2.6_Sesiones}
-\end{figure}
-
-\begin{itemize}
-	\item Informes de seguimiento: nos indicó que no entendía de manera clara para qué se utilizaba el botón de finalizar sesión por lo que hemos optado por quitar el tick y poner un botón para cuando él considere mejor finalizar el informe de seguimiento. Así mismo, como anteriormente se nos sugirió cambiar el nombre del campo ``Reacción del paciente'' por ``Respuesta del usuario'' y ampliar el espacio de edición. En la Figura \ref{fig:3.2.6_Informes_de_sesion} se pueden ver estos cambios. 
-\end{itemize}
-
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Informes_de_sesion}
-  	\caption{Pantalla de informes de seguimiento del prototipo final.}
-	\label{fig:3.2.6_Informes_de_sesion}
-\end{figure}
-
-\begin{itemize}
-	\item Evaluaciones: se sugirió eliminar el campo ``Estado'' ya que era un dato carente de valor. Además, se pidió añadir tres nuevos: test mini mental/MEC Lobo, CDR y otra escala que es un campo personalizado donde el terapeuta puede elegir el nombre, en ellas se puede observar el valor editable de dichos campos y la fecha en la que se diagnostica. Podemos observar los cambios en la Figura \ref{fig:3.2.6_Evaluaciones}.
-\end{itemize}
-
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Evaluaciones}
-  	\caption{Pantalla evaluaciones del prototipo final.}
-	\label{fig:3.2.6_Evaluaciones}
-\end{figure}
-
-\begin{itemize}
-	\item Calendario: Iván indicó que una mejora de lo que teníamos era poder introducir material multimedia en las actividades que ellos mandan a los cuidadores para así facilitarle la tarea al cuidador. En la figura \ref{fig:3.2.6_Calendario2} se pueden ver estos campos.
-\end{itemize}
-
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Calendario2}
-  	\caption{Pantalla actividad de calendario del prototipo final.}
-	\label{fig:3.2.6_Calendario2}
-\end{figure}
-
-\begin{itemize}
-	\item Recuerdos: se modificó para que se pudiesen ordenar por distintos parámetros, se añadieron filtros en la parte superior y se añadió la posibilidad de modificar los recuerdos. Estos cambios se incorporaron a la versión final tal y como muestran las Figuras \ref{fig:3.2.6_Recuerdos1} y \ref{fig:3.2.6_Recuerdos2}.
-\end{itemize}
-
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos1}
-  	\caption{Pantalla recuerdos del prototipo final.}
-	\label{fig:3.2.6_Recuerdos1}
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/evaluacion_expertos/debriefing.png}
+  	\caption{Puntuaciones y observaciones de cada tarea.}
+	\label{fig:debriefing}
 \end{figure}
 
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_cambiosPrototipo/3.2.6_Recuerdos2}
-  	\caption{Pantalla recuerdos con filtros del prototipo final.}
-	\label{fig:3.2.6_Recuerdos2}
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/evaluacion_expertos/pyr.png}
+  	\caption{Contestaciones a las distintas preguntas realizadas sobre cada sección.}
+	\label{fig:pyr}
 \end{figure}
 
+
+\subsection{Conclusiones de la evaluación} 
+Durante la evaluación llegamos a la conclusión de que eran necesarios los siguientes cambios: \footnote{https://drive.google.com/file/d/1RETh7BoEp7UKxO2MlHunIq99zJWBtuyD/view?usp=sharing}.
+
 \begin{itemize}
-	\item Personas Relacionadas: Se cambió el nombre del campo ``Relación'' por ``Tipo de relación/parentesco'' y se incluyó un icono de un correo para que el terapeuta pueda enviar un mensaje con mayor facilidad a la persona relacionada con el usuario. Los cambios se pueden observar en la figura \ref{fig:3.2.6_Personas_relacionadas}.
+	\item Menú: Se pidió cambiar los nombres de ``Informes de seguimiento'' por ``Informes de sesión'' y ``Evaluaciones'' por ``Evaluaciones de seguimiento''.
 \end{itemize}
+
+\begin{itemize}
+	\item Pacientes: Se propuso añadir un campo con el ``Diagnóstico histórico'' con el que el usuario comienza a hacer la terapia y un ``Diagnóstico actual'' que se modifica cuando el terapeuta lo considere necesario, así mismo, aparecerá la fecha de diagnóstico de ambos en la parte superior . 
+\end{itemize}
+
+\begin{itemize}
+	\item Sesiones: se nos pidió cambiar la palabra del campo ``Categoría'' por una más significativa, por lo que se optó por poner ``Etapa de vida''. Además, en esta pantalla creamos dos campos nuevos llamados ``Barreras'' y ``Facilitadores'' donde barreras son las dificultades que pone el usuario para realizar la sesión y facilitadores aquellos que ayudan a hacerla de manera más amena.
+\end{itemize}
+
+\begin{itemize}
+	\item Informes de seguimiento: Iván indicó que no entendía de manera clara para qué se utilizaba el botón de finalizar sesión por lo que hemos optado por quitar el tick y poner un botón para cuando él considere mejor finalizar el informe de seguimiento. Así mismo, sugirió cambiar el nombre del campo ``Reacción del paciente'' por ``Respuesta del usuario'' y ampliar el espacio de edición.
+\end{itemize}
+
+
+\begin{itemize}
+	\item Evaluaciones: Sugirió eliminar el campo ``Estado'' ya que era un dato carente de valor. Además, se pidió añadir tres nuevos: test mini mental/MEC Lobo, CDR y otra escala que es un campo personalizado donde el terapeuta puede elegir el nombre, en ellas se puede observar el valor editable de dichos campos y la fecha en la que se diagnostica.
+\end{itemize}
+
+
+\begin{itemize}
+	\item Calendario: Iván indicó que una mejora de lo que teníamos era poder introducir material multimedia en las actividades que ellos mandan a los cuidadores para así facilitarle la tarea al cuidador.
+\end{itemize}
+
+
+
+\begin{itemize}
+	\item Recuerdos: Permitir ordenar por distintos parámetros, añadir filtros y permitir modificar los recuerdos.
+\end{itemize}
+
+\begin{itemize}
+	\item Personas Relacionadas: Cambiar el nombre del campo ``Relación'' por ``Tipo de relación/parentesco''e incluir un icono de un correo para que el terapeuta pueda enviar un mensaje con mayor facilidad a la persona relacionada con el usuario. 
+\end{itemize}
+Todos estos cambios dieron lugar a una nueva versión del diseño.
 
 \begin{figure}[!ht]
   	\centering
