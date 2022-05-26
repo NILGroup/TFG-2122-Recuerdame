@@ -1,9 +1,7 @@
 \chapter{Implementación de la aplicación}
 \label{cap:implementacionDelTFG}
-Para este TFG se ha desarrollado una aplicación web que será adaptable a dispositivo tablet y que actualmente se encuentra alojada en el servidor: \footnote{http://melpomene.fdi.ucm.es/recuerdame/}. 
-En este capitulo mostraremos la arquitectura que se ha decidido para la aplicación así como el diseño de la base de datos implementado. Además se mostrarán cuales fueron las herramientas utilizadas y como fue implementada la aplicación.
-
-Todas nuestras decisiones fueron tomadas a partir de las requisitos y las especificaciones pedidas por los expertos que utilizaran la aplicación.
+Para este TFG se ha desarrollado una aplicación web que será adaptable a dispositivo tablet. La aplicación está disponible en http://melpomene.fdi.ucm.es/recuerdame/.
+En este capitulo mostraremos la arquitectura que se ha decidido para la aplicación así como el diseño de la base de datos implementado. Además se mostrarán cuales fueron las herramientas utilizadas y como fue implementada la aplicación. Todas nuestras decisiones fueron tomadas a partir de las requisitos y las especificaciones pedidas por los expertos que utilizaran la aplicación.
 
 \section{Arquitectura}
 Para la arquitectura de la aplicación se ha utilizado el patrón Modelo-Vista-Controlador (MVC). Esta decisión fue tomada debido a las grandes ventajas que este modelo impone en el código, algunas de estas son:
@@ -28,7 +26,7 @@ Para aplicar este patrón de la manera más ordenada posible aplicamos esta divisi
 	\item Calendario: Muestra el calendario por mes. Permite modificar, añadir y eliminar tareas en el calendario.
 \end{itemize}
 
-Como resultado, cada modulo tendrá: por una parte distintas vistas para sus distintas acciones y, por otra, un controlador y un modelo. Por ejemplo, en el caso del modulo ``Sesiones'', una de sus vistas es ``Modificar Datos de la Sesión'' que se encarga de mostrar la pantalla para modificar los distintos datos de una sesión. Además de eso, tiene un modelo que se encarga de pedir los datos de la sesión a la base de datos y un controlador que comunica la vista con el modelo. En la Figura \ref{fig:componentes} se muestra un resumen de los componentes de la aplicación con su relación.
+Como resultado, cada modulo tendrá: por una parte distintas vistas para sus distintas acciones y, por otra, un controlador y un modelo. Por ejemplo, en el caso del modulo ``Sesiones'', una de sus vistas es ``Modificar Datos de la Sesión'' que se encarga de mostrar la pantalla para modificar los distintos datos de una sesión. Además de eso, tiene un modelo que se encarga de pedir los datos de la sesión a la base de datos y un controlador que comunica la vista con el modelo. En la Figura \ref{fig:componentes} se muestra un diagrama con los componentes de la aplicación.
 
 \begin{figure}[!ht]
 	\centering
@@ -45,7 +43,7 @@ La implementación de esta aplicación se ha llevado a cabo con la siguientes herr
 	\item Para el back-end hemos utilizado PHP porque lo hemos utilizado en otras asignaturas y nos resulta muy familiar.
 	\item Para almacenar los datos hemos utilizado el motor de base de datos MySQL porque es de código abierto.
 	\item Como servidor local hemos utilizado Xampp porque es un servidor de plataforma libre y nos da muchas facilidades porque integra varias aplicaciones (MySQL, PHP). Además, se puede ejecutar en diversos sistemas operativos que nos ha facilitado colaborar en equipo.
-	\item Como herramienta de control de versiones hemos utilizado GitHub debido a la facilidad de uso ya que podemos ver en todo momento los cambios realizados por nuestros compañeros.
+	\item Como herramienta de control de versiones hemos utilizado GitHub debido a que todos los miembros del equipo lo hemos utilizado.
 \end{itemize}
 	
 Para el volcado de la aplicación en el servidor hemos usado:
@@ -64,7 +62,7 @@ Tras realizar un estudio de las necesidades del proyecto, observamos que para el
 	\item Su seguridad: al tratar con datos muy personales de alto riesgo, es muy importante estar seguros de donde se están alojando esos datos. MySQL es altamente seguro, gracias a varias funciones avanzadas de seguridad.
 \end{itemize}	
 
-La estructura de la base de datos (Figura \ref{fig:str_bd}) fue definida, teniendo en cuenta toda la información aportada por los terapeutas durante las entrevistas y durante la evaluación del diseño competitivo. En las siguientes subsecciones se explica en detalle las características de cada tabla.
+La estructura de la base de datos (Figura \ref{fig:str_bd}) fue definida teniendo en cuenta toda la información aportada por los terapeutas durante las entrevistas y durante la evaluación del diseño. En las siguientes subsecciones se explica en detalle las características de cada tabla.
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=17cm]{./Imagenes/Figuras/estructura_bd.jpeg}
@@ -73,218 +71,218 @@ La estructura de la base de datos (Figura \ref{fig:str_bd}) fue definida, tenien
 \end{figure}
 
 \subsection{Tabla usuario}
-Contiene toda la información de los usuarios (terapeutas y cuidadores) que pueden iniciar sesión en la aplicación. Los atributos se pueden ver a continuación:
+Contiene toda la información de los usuarios (terapeutas y cuidadores) que pueden iniciar sesión en la aplicación. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_usuario}: El id del usuario.
-	\item \texttt{nombre\_usuario}: El nombre del usuario.
-	\item correo: El correo del usuario.
-	\item contrasenia: La contraseña asociada al correo del usuario.
-	\item nombre: El nombre del usuario.
-	\item apellidos: Los apellidos del usuario.
-	\item rol: El rol del usuario (terapeuta o cuidador).
+	\item El id del usuario.
+	\item El nombre del usuario.
+	\item El correo del usuario.
+	\item La contraseña asociada al correo del usuario.
+	\item El nombre del usuario.
+	\item Los apellidos del usuario.
+	\item El rol del usuario (terapeuta o cuidador).
 	
 \end{itemize}
 
 \subsection{Tabla paciente}
-Tabla con la información de los pacientes a tratar que podrán ser asignados a los terapeutas o a un cuidador. Los atributos se pueden ver a continuación:
+Tabla con la información de los pacientes a tratar que podrán ser asignados a los terapeutas o a un cuidador. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_paciente}: El id del paciente.
-	\item nombre: El nombre del paciente.
-	\item apellidos: Los apellidos del paciente.
-	\item genero: El genero del paciente.
-	\item \texttt{lugar\_nacimiento}: El lugar de nacimiento del paciente.
-	\item nacionalidad: La nacionalidad del paciente.
-	\item \texttt{fecha\_nacimiento}: La fecha de nacimiento del paciente.
-	\item \texttt{tipo\_residencia}: El tipo de residencia del paciente (centro de día, residencia de ancianos, su casa...).
-	\item \texttt{residencia\_actual}: Dirección donde se encuentra actualmente el paciente.
-	\item \texttt{id\_cuidador}: El id del cuidador asociado a ese paciente.
+	\item El id del paciente.
+	\item El nombre del paciente.
+	\item Los apellidos del paciente.
+	\item El genero del paciente.
+	\item El lugar de nacimiento del paciente.
+	\item La nacionalidad del paciente.
+	\item La fecha de nacimiento del paciente.
+	\item El tipo de residencia del paciente (centro de día, residencia de ancianos, su casa...).
+	\item Dirección donde se encuentra actualmente el paciente.
+	\item El id del cuidador asociado a ese paciente.
 	
 \end{itemize}
 
 \subsection{Tabla sesion}
-Tabla con la información de las sesiones que el terapeuta realiza con los pacientes. Los atributos se pueden ver a continuación:
+Tabla con la información de las sesiones que el terapeuta realiza con los pacientes. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_sesion}: El id de la sesión.
-	\item fecha: La fecha en la que se realiza la sesión.
-	\item \texttt{id\_etapa}: La etapa asociada al recuerdo de esa sesión.
-	\item objetivo: El objetivo de la sesión.
-	\item descripcion: La descripción de la sesión.
-	\item barreras: Si el paciente se opone a hablar de algunos temas.
-	\item facilitadores: Los temas en los que el paciente se siente más cómodo.
-	\item \texttt{fecha\_finalizada}: La fecha de finalización de la sesión.
-	\item \texttt{id\_paciente}: El id del paciente.
-	\item \texttt{id\_usuario}: El id del usuario.
-	\item respuestas: Las respuestas que se obtienen de esa sesión.
-	\item observaciones: Las observaciones que se obtienen de la sesión.
+	\item El id de la sesión.
+	\item La fecha en la que se realiza la sesión.
+	\item La etapa asociada al recuerdo de esa sesión.
+	\item El objetivo de la sesión.
+	\item La descripción de la sesión.
+	\item Si el paciente se opone a hablar de algunos temas.
+	\item Los temas en los que el paciente se siente más cómodo.
+	\item La fecha de finalización de la sesión.
+	\item El id del paciente.
+	\item El id del usuario.
+	\item Las respuestas que se obtienen de esa sesión.
+	\item Las observaciones que se obtienen de la sesión.
 	
 \end{itemize}
 
 \subsection{Tabla recuerdo}
-Tabla con la información de los recuerdos de todos los pacientes. Los atributos se pueden ver a continuación:
+Tabla con la información de los recuerdos de todos los pacientes. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_recuerdo}: El id del recuerdo.
-	\item fecha: La fecha aproximada en la que se da ese recuerdo.
-	\item nombre: El nombre que se le da a ese recuerdo.
-	\item descripcion: Una descripción breve del recuerdo.
-	\item localizacion: El lugar donde se da el recuerdo.
-	\item \texttt{id\_etapa}: La etapa de vida en la que se encuentra el paciente durante dicho recuerdo.
-	\item \texttt{id\_categoría}: La categoría del recuerdo.
-	\item \texttt{id\_emocion}: La emoción que le provoca ese recuerdo al paciente.
-	\item \texttt{id\_estado}: El estado del recuerdo, si esta conservado o en riesgo de perder.
-	\item \texttt{id\_etiqueta}: Si es un recuerdo positivo, negativo o neutro.
-	\item puntuacion: Una puntuación siendo 0 de menos relevante a 10 más relevante.
-	\item \texttt{id\_paciente}: El id del paciente
+	\item El id del recuerdo.
+	\item La fecha aproximada en la que se da ese recuerdo.
+	\item El nombre que se le da a ese recuerdo.
+	\item Una descripción breve del recuerdo.
+	\item El lugar donde se da el recuerdo.
+	\item La etapa de vida en la que se encuentra el paciente durante dicho recuerdo.
+	\item La categoría del recuerdo.
+	\item La emoción que le provoca ese recuerdo al paciente.
+	\item El estado del recuerdo, si esta conservado o en riesgo de perder.
+	\item Si es un recuerdo positivo, negativo o neutro.
+	\item Una puntuación siendo 0 de menos relevante a 10 más relevante.
+	\item El id del paciente.
 
 \end{itemize}
 
 \subsection{Tabla multimedia}
-Tabla con la información de los acrhivos multimedia de todos los pacientes. Estos archivos multimedia se utilizan tanto en las sesiones como en los recuerdos. Los atributos se pueden ver a continuación:
+Tabla con la información de los acrhivos multimedia de todos los pacientes. Estos archivos multimedia se utilizan tanto en las sesiones como en los recuerdos. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_multimedia}: El id de la multimedia.
-	\item nombre: El nombre del fichero.
-	\item fichero: El fichero multimedia.
+	\item El id de la multimedia.
+	\item El nombre del fichero.
+	\item El fichero multimedia.
 
 \end{itemize}
 
 \subsection{Tabla evaluacion}
-Tabla con la información de las evaluaciones que hacen los terapeutas a los pacientes para ver su progreso. Los atributos se pueden ver a continuación:
+Tabla con la información de las evaluaciones que hacen los terapeutas a los pacientes para ver su progreso. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_evaluacion}: El id de la evaluación.
-	\item \texttt{id\_paciente}: El id del paciente.
-	\item fecha: La fecha en la que se lleva a cabo la evaluación.
+	\item El id de la evaluación.
+	\item El id del paciente.
+	\item La fecha en la que se lleva a cabo la evaluación.
 	\item gds: El grado de GDS.
-	\item \texttt{gds\_fecha}: La fecha en la que se le pone ese grado de GDS.
-	\item mental: El grado de mini-mental.
-	\item \texttt{mental\_fecha}: La fecha en la que se le pone ese nivel.
-	\item cdr: El grado de CDR.
-	\item \texttt{cdr\_fecha}: La fecha en la que se pone ese grado.
-	\item diagnostico: El diagnóstico que considera el terapeuta si ha evolucionado o no.
-	\item observaciones: Las observaciones del terapeuta.
-	\item \texttt{nombre\_escala}: Otro tipo de escala que los terapeutas consideren necesaria.
+	\item La fecha en la que se le pone ese grado de GDS.
+	\item El grado de mini-mental.
+	\item La fecha en la que se le pone ese nivel.
+	\item El grado de CDR.
+	\item La fecha en la que se pone ese grado.
+	\item El diagnóstico que considera el terapeuta si ha evolucionado o no.
+	\item Las observaciones del terapeuta.
+	\item Otro tipo de escala que los terapeutas consideren necesaria.
 	\item escala: El grado de escala.
-	\item \texttt{fecha\_escala}: La fecha en la que se le da ese grado.
+	\item La fecha en la que se le da ese grado.
 	
 \end{itemize}
 
 \subsection{Tabla \texttt{persona\char`_relacionada}}
-Tabla con la información de las personas que están relacionadas con los pacientes. Los atributos se pueden ver a continuación:
+Tabla con la información de las personas que están relacionadas con los pacientes. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_persona\_relacionada}: El id de la persona relacionada.
-	\item nombre: El nombre de la persona relacionada.
-	\item apellidos: Los apellidos de la persona relacionada.
-	\item telefono: El teléfono de la persona relacionada.
-	\item ocupacion: La ocupación actual de la persona relacionada.
-	\item email: El email de la persona relacionada.
-	\item \texttt{id\_tipo\_relacion}: El tipo de relación que tiene con el paciente.
-	\item \texttt{id\_paciente}: El id del paciente asociado.
+	\item El id de la persona relacionada.
+	\item El nombre de la persona relacionada.
+	\item Los apellidos de la persona relacionada.
+	\item El teléfono de la persona relacionada.
+	\item La ocupación actual de la persona relacionada.
+	\item El email de la persona relacionada.
+	\item El tipo de relación que tiene con el paciente.
+	\item El id del paciente asociado.
 
 \end{itemize}
 
 \subsection{Tabla actividad}
-Tabla con la información de las actividades que el terapeuta ha asignado al paciente para que las realice con su cuidador. Los atributos se pueden ver a continuación:
+Tabla con la información de las actividades que el terapeuta ha asignado al paciente para que las realice con su cuidador. Los atributos de esta tabla son:
 \begin{itemize}
-	\item id: Id de la actividad.
-	\item start: Cuando da comienzo la actividad.
-	\item title: El título de la actividad.
-	\item description: La descripción de la actividad.
-	\item \texttt{id\_paciente}: El id del paciente.
-	\item color: El color que se le pone a la actividad.
+	\item Id de la actividad.
+	\item Cuando da comienzo la actividad.
+	\item El título de la actividad.
+	\item La descripción de la actividad.
+	\item El id del paciente.
+	\item El color que se le pone a la actividad.
 
 \end{itemize}
 
 \subsection{Tabla \texttt{tipo\char`_relacion}}
-Tabla que contiene los tipos de relación que pueden tener las personas que están relacionadas con los pacientes. Los atributos se pueden ver a continuación:
+Tabla que contiene los tipos de relación que pueden tener las personas que están relacionadas con los pacientes. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_tipo\_relacion}: El tipo de relación con el paciente.
-	\item nombre: El nombre de la persona.
+	\item El tipo de relación con el paciente.
+	\item El nombre de la persona.
 
 \end{itemize}
 
 \subsection{Tabla etiqueta}
-Tabla que contiene las etiquetas que pueden tener los recuerdos de los pacientes y que sirven para indicar si un recuerdo es positivo, neutro o negativo. Los atributos se pueden ver a continuación:
+Tabla que contiene las etiquetas que pueden tener los recuerdos de los pacientes y que sirven para indicar si un recuerdo es positivo, neutro o negativo. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_etiqueta}: Id de la etiqueta.
-	\item nombre: El nombre de la etiqueta.
+	\item Id de la etiqueta.
+	\item El nombre de la etiqueta.
 
 \end{itemize}
 
 \subsection{Tabla etapa}
-Tabla que contiene las etapas de vida que pueden tener las sesiones y los recuerdos de los pacientes. Los atributos se pueden ver a continuación:
+Tabla que contiene las etapas de vida que pueden tener las sesiones y los recuerdos de los pacientes. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_etapa}: Id de la etapa.
-	\item nombre: El nombre de la etapa.
+	\item Id de la etapa.
+	\item El nombre de la etapa.
 
 \end{itemize}
 
 \subsection{Tabla estado}
-Tabla que contiene las tipo de estados que pueden tener los recuerdos de los pacientes y que sirven para indicar si un recuerdo está conservado, en riesgo de perder o perdido. Los atributos se pueden ver a continuación:
+Tabla que contiene las tipo de estados que pueden tener los recuerdos de los pacientes y que sirven para indicar si un recuerdo está conservado, en riesgo de perder o perdido. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_estado}: Id de estado.
-	\item nombre: El nombre del estado.
+	\item Id de estado.
+	\item El nombre del estado.
 
 \end{itemize}
 
 \subsection{Tabla emocion}
-Tabla que contiene las tipo de emoción que pueden tener los recuerdos de los pacientes y que sirven para indicar la emoción que le surge al paciente con el recuerdo. Los atributos se pueden ver a continuación:
+Tabla que contiene las tipo de emoción que pueden tener los recuerdos de los pacientes y que sirven para indicar la emoción que le surge al paciente con el recuerdo. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_emocion}: Id de la emoción.
-	\item nombre: El nombre de la emoción.
+	\item Id de la emoción.
+	\item El nombre de la emoción.
 
 \end{itemize}
 
 \subsection{Tabla categoria}
-Tabla que contiene las tipo de categorías que pueden tener los recuerdos de los pacientes y que sirven para indicar con qué está relacionado el recuerdo (familia, hobbies, amistad, trabajo, política, estudios u otros). Los atributos se pueden ver a continuación:
+Tabla que contiene las tipo de categorías que pueden tener los recuerdos de los pacientes y que sirven para indicar con qué está relacionado el recuerdo (familia, hobbies, amistad, trabajo, política, estudios u otros). Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_categoria}: Id de la categoría.
-	\item nombre: El nombre de la categoría.
+	\item Id de la categoría.
+	\item El nombre de la categoría.
 
 \end{itemize}
 
 \subsection{Tabla terapeuta}
-Tabla con la relación de terapeutas y pacientes que sirve para asignar los pacientes a varios terapeutas. Los atributos se pueden ver a continuación:
+Tabla con la relación de terapeutas y pacientes que sirve para asignar los pacientes a varios terapeutas. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_paciente}: Id del paciente.
-	\item \texttt{id\_terapeuta}: Id del terapeuta.
+	\item Id del paciente.
+	\item Id del terapeuta.
 
 \end{itemize}
 
 \subsection{Tabla \texttt{sesion\char`_recuerdo}}
-Tabla con la relación de sesiones y recuerdos que sirve para asignar los recuerdos de los pacientes a las sesiones. Los atributos se pueden ver a continuación:
+Tabla con la relación de sesiones y recuerdos que sirve para asignar los recuerdos de los pacientes a las sesiones. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_sesion}: Id de la sesión.
-	\item \texttt{id\_recuerdo}: Id del recuerdo.
+	\item Id de la sesión.
+	\item Id del recuerdo.
 
 \end{itemize}
 
 \subsection{Tabla \texttt{sesion\char`_multimedia}}
-Tabla con la relación de sesiones y archivos multimedia que sirve para asignar los archivos multimedia a las sesiones de los pacientes. Los atributos se pueden ver a continuación:
+Tabla con la relación de sesiones y archivos multimedia que sirve para asignar los archivos multimedia a las sesiones de los pacientes. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_sesion}: Id de la sesión.
-	\item \texttt{id\_multimedia}: Id de la multimedia.
+	\item Id de la sesión.
+	\item Id de la multimedia.
 
 \end{itemize}
 
 \subsection{Tabla \texttt{recuerdo\char`_persona\char`_ralacionada}}
-Tabla con la relación de recuerdos y personas relacionadas de los pacientes que sirve para asignar las personas relacionadas a los recuerdos de los pacientes. Los atributos se pueden ver a continuación:
+Tabla con la relación de recuerdos y personas relacionadas de los pacientes que sirve para asignar las personas relacionadas a los recuerdos de los pacientes. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_recuerdo}: Id del recuerdo.
-	\item \texttt{id\_persona\_relacionada}: Id de la persona relacionada.
+	\item Id del recuerdo.
+	\item Id de la persona relacionada.
 
 \end{itemize}
 
 \subsection{Tabla \texttt{recuerdo\char`_multimedia}}
-Tabla con la relación de recuerdos y archivos multimedia que sirve para asignar los archivos multimedia a los recuerdos de los pacientes. Los atributos se pueden ver a continuación:
+Tabla con la relación de recuerdos y archivos multimedia que sirve para asignar los archivos multimedia a los recuerdos de los pacientes. Los atributos de esta tabla son:
 \begin{itemize}
-	\item \texttt{id\_recuerdo}: Id del recuerdo.
-	\item \texttt{id\_multimedia}: Id de la multimedia.
+	\item Id del recuerdo.
+	\item Id de la multimedia.
 
 \end{itemize}
 
-\section{Funcionalidades de la aplicación}
-En esta sección se presentan cada una de las funcionalidades de la aplicación para cada una se muestra su funcionamiento y cómo ha sido implementado. 
+\section{Implementación de las funcionalidades de la aplicación}
+En esta sección se presentan cada una de las funcionalidades de la aplicación. Para cada una de ellas se muestra su funcionamiento y cómo ha sido implementado. 
 
 \subsection{Login}
-El login que permite al cuidador y al terapeuta iniciar sesión en la aplicación. Para ello, tienen que introducir su correo y contraseña como se muestra en la Figura \ref{fig:login}. En caso de que uno de los dos sea incorrecto se mostrará el error " Usuario o contraseña incorrectos.", en caso contrario se accederá a la pantalla inicial de la aplicación(ver Figura \ref{fig:inicio}). En la Figura \ref{fig:d_login} se muestra el diagrama de secuencia que corresponde con esta funcionalidad.
+Para hacer el login en la aplicación el cuidador o el terapeuta debe introducir su correo y contraseña como se muestra en la Figura \ref{fig:login}. En caso de que uno de los dos sea incorrecto se mostrará el error ``Usuario o contraseña incorrectos.'', en caso contrario se accederá a la pantalla inicial de la aplicación (ver Figura \ref{fig:inicio}). En la Figura \ref{fig:d_login} se muestra el diagrama de secuencia que corresponde con esta funcionalidad.
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=6cm]{./Imagenes/Figuras/implementacion/login.png}
@@ -294,28 +292,22 @@ El login que permite al cuidador y al terapeuta iniciar sesión en la aplicación.
 
 \begin{figure}[!ht]
   	\centering
-  	\includegraphics[width=8cm]{./Imagenes/Figuras/implementacion/inicio.png}
-  	\caption{Pagina de inicio de la aplicación.}
-	\label{fig:inicio}
-\end{figure}
-
-\begin{figure}[!ht]
-  	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/diagramas_secuencia/login.png}
   	\caption{Diagrama de secuencia del proceso login.}
 	\label{fig:d_login}
 \end{figure}
 
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/inicio.png}
+  	\caption{Pagina de inicio de la aplicación.}
+	\label{fig:inicio}
+\end{figure}
+
 
 \subsection{Listado de registros}
 En la aplicación se pueden encontrar los siguientes listados: pacientes, sesiones, informes de sesión, informes de evaluación, recuerdos y personas relacionadas.
-En este sección vamos a explicar solo el listado de pacientes ya que el resto de listados son muy similares. El listado muestra todos los registros tal y como se muestra en la Figura \ref{fig:inicio} y, en el caso de que un listado tenga una columna de fecha, éste se muestra ordenado por dicha fecha. En todas las listas se puede añadir un nuevo registro, ver, modificar y eliminar registros. Además, se pueden ordenar ascendente o descendentemente por cada columna y tienen un buscador para buscar en toda la lista. El usuario hace una petición al Controlador (ControladorPacientes) mediante la vista listadoPacientes, seleccionando la opción de pacientes (icono de usuarios). El Controlador, mediante la función listadoPacientes(), hace una petición al modelo Paciente que recupera todos los registros filtrando por el terapeuta y, devuelve el listado para que la vista lo muestre. 
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/listado.png}
-  	\caption{Pantalla del listado de sesiones.}
-	\label{fig:listado}
-\end{figure}
+En este sección vamos a explicar solo el listado de pacientes ya que el resto de listados son muy similares. El listado muestra todos los registros tal y como se muestra en la Figura \ref{fig:inicio} y, en el caso de que un listado tenga una columna de fecha, éste se muestra ordenado por dicha fecha. En todas las listas se puede añadir un nuevo registro, ver, modificar y eliminar registros. Además, se pueden ordenar ascendente o descendentemente por cada columna y tienen un buscador para buscar en toda la lista. El usuario hace una petición al Controlador (ControladorPacientes) mediante la vista listadoPacientes, seleccionando la opción de pacientes (icono de usuarios). El Controlador, mediante la función listadoPacientes, hace una petición al modelo Paciente que recupera todos los registros filtrando por el terapeuta y, devuelve el listado para que la vista lo muestre. 
 
 \begin{figure}[!ht]
   	\centering
@@ -324,8 +316,15 @@ En este sección vamos a explicar solo el listado de pacientes ya que el resto de
 	\label{fig:lista}
 \end{figure}
 
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/implementacion/inicio.png}
+  	\caption{Pagina de inicio de la aplicación.}
+	\label{fig:inicio}
+\end{figure}
+
 \subsection{Crear un nuevo registro}
-Hay varios listados que permiten crear un nuevo registro. En esta sección se va a explicar la creación de un nuevo paciente ya que el resto son muy similares. En el listado de pacientes se puede encontrar el botón de añadir un nuevo paciente. El usuario hace una petición al front mediante el botón y la vista llama al gestor de las vistas del front para hacer una redirección al formulario de nuevo paciente tal y como se puede ver en la Figura \ref{fig:anadir}. Para poder crear un nuevo registro es necesario introducir todos los datos obligatorios que se muestran en la pantalla mediante un asterisco (``*''). El usuario hace una petición mediante el botón Guardar y la vista manda al gestor los datos del nuevo registro para validarlos. Una vez el gestor ha validado los datos, hace una petición al Controlador (ControladorPacientes) que mediante la función nuevoPaciente hace una petición al modelo Paciente que se encarga de añadir el nuevo registro a la base de datos.
+Hay varios listados que permiten crear un nuevo registro. En esta sección se va a explicar la creación de un nuevo paciente ya que el resto son muy similares. En el listado de pacientes se puede encontrar el botón de añadir un nuevo paciente (ver Figura \ref{fig:inicio}). El usuario hace una petición al front mediante el botón y la vista llama al gestor de las vistas del front para hacer una redirección al formulario de nuevo paciente tal y como se puede ver en la Figura \ref{fig:anadir}. Para poder crear un nuevo registro es necesario introducir todos los datos obligatorios que se muestran en la pantalla mediante un asterisco (``*''). El usuario hace una petición mediante el botón Guardar y la vista manda al gestor los datos del nuevo registro para validarlos. Una vez el gestor ha validado los datos, hace una petición al Controlador (ControladorPacientes) que mediante la función nuevoPaciente hace una petición al modelo Paciente que se encarga de añadir el nuevo registro a la base de datos.
 En la aplicación se pueden encontrar los siguientes formularios para crear nuevos registros: nuevo paciente, nueva sesión, nueva informe de seguimiento, nuevo informe de sesión, nuevo recuerdo y una persona relacionada. 
 \begin{figure}[!ht]
   	\centering
@@ -343,21 +342,24 @@ En la aplicación se pueden encontrar los siguientes formularios para crear nuevo
 
 \subsection{Modificar un registro}
 En la aplicación se pueden encontrar los siguientes formularios para modificar registros: modificar paciente, modificar sesión, modificar informe de seguimiento, modificar informe de sesión, modificar recuerdo y modificar una persona relacionada.
-En esta sección vamos a explicar como se modifica un paciente ya que el resto son muy similares. Mediante el botón de modificar (icono de un lápiz) que se encuentra en el listado de pacientes tal y como podemos observar en la Figura \ref{fig:listado}, el usuario hace una petición que nos llevará a la página de edición en la que una vez hayamos seleccionado el botón guardar, mandará una orden a la base de datos para que el paciente sea modificado. Posteriormente una vez volvamos a acceder a ese paciente modificado, podremos observar que se ha hecho el cambio.
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/modificar.png}
-  	\caption{Formulario de modificación de un paciente.}
-	\label{fig:modificar}
-\end{figure}
+En esta sección vamos a explicar como se modifica un paciente ya que el resto son muy similares. Mediante el botón de modificar (icono de un lápiz) que se encuentra en el listado de pacientes tal y como podemos observar en la Figura \ref{fig:listado}, el usuario hace una petición que nos llevará a la página de edición en la que una vez hayamos seleccionado el botón guardar, mandará una orden a la base de datos para que el paciente sea modificado. Posteriormente una vez volvamos a acceder a ese paciente modificado, podremos observar que se ha hecho el cambio. Este flujo se puede ver en el diagrama de secuencia \ref{fig:modPaciente}.
+
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png}
   	\caption{Diagrama de secuencia modificar paciente.}
 	\label{fig:modPaciente}
 \end{figure}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/modificar.png}
+  	\caption{Formulario de modificación de un paciente.}
+	\label{fig:modificar}
+\end{figure}
+
 \subsection{Eliminar un registro}
-El botón de eliminar lo podemos encontrar en todas las listas con el icono de una papelera como podemos observar en la Figura \ref{fig:listado}. Al  hacer click en él la aplicación eliminaría a el paciente (en el caso de que estuviésemos en la lista de los pacientes) haciendo llegar una petición a la base de datos con la orden de eliminar por el id del usuario.
+El botón de eliminar lo podemos encontrar en todas las listas con el icono de una papelera como podemos observar en la Figura \ref{fig:listado}. Al  hacer clic en él la aplicación eliminaría a el paciente (en el caso de que estuviésemos en la lista de los pacientes) haciendo llegar una petición a la base de datos con la orden de eliminar por el id del usuario.
 En la aplicación se pueden eliminar los siguientes registros: paciente, sesión, informe de seguimiento, informe de sesión, recuerdo y persona relacionada.
 
 \begin{figure}[!ht]
@@ -367,8 +369,16 @@ En la aplicación se pueden eliminar los siguientes registros: paciente, sesión, 
 	\label{fig:eliminarPac}
 \end{figure}
 \subsection{Generar Libro de Historias de Vida}
-Para generar el libro de Historias de Vida el usuario indica los filtros que desee (fecha, etiqueta y etapa de vida)  y hace una petición mediante el botón ``Generar Historia de Vida'' y el front envía una petición al gestor de las vistas del front que a su vez llama al Controlador (ControladorHistoriaVida) que mediante la función generarLibroHistoriaVida  hace una petición al modelo Recuerdo para que recupere la información de la base de datos y devuelva un listado de recuerdos.
+Para generar el libro de Historias de Vida el usuario indica los filtros que desee (fecha, etiqueta y etapa de vida) como se muestra en la Figura \ref{fig:filtro.png} y hace una petición mediante el botón ``Generar Historia de Vida'' y el front envía una petición al gestor de las vistas del front que a su vez llama al Controlador (ControladorHistoriaVida) que mediante la función generarLibroHistoriaVida  hace una petición al modelo Recuerdo para que recupere la información de la base de datos y devuelva un listado de recuerdos.
 En la Figura \ref{fig:libroDeVida.png})se muestra el carrusel de fotos de la Historia de Vida y en la Figura \ref{fig:libroVidaPac}) el diagrama de secuencia de esta funcionalidad.
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=12cm]{./Imagenes/Figuras/diagramas_secuencia/generarLibro.png}
+  	\caption{Diagrama de secuencia generar libro de vida del paciente.}
+	\label{fig:libroVidaPac}
+\end{figure}
+
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/libroDeVida.png}
@@ -382,31 +392,29 @@ En la Figura \ref{fig:libroDeVida.png})se muestra el carrusel de fotos de la His
   	\caption{Formulario para filtrar Historia de Vida}
 	\label{fig:filtro.png}
 \end{figure}
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=12cm]{./Imagenes/Figuras/diagramas_secuencia/generarLibro.png}
-  	\caption{Diagrama de secuencia generar libro de vida del paciente.}
-	\label{fig:libroVidaPac}
-\end{figure}
+
 \subsection{Generar PDF}
 Se pueden generar 3 pdf en la aplicación que son: Historia de Vida, Informe de sesión e Informe de Seguimiento. En este caso vamos a explicar como se genera el PDF de Historia de Vida ya que el resto son muy similares. El usuario genera una petición mediante el botón ``Generar PDF'' y el front envía una petición al gestor de las vistas del front que a su vez llama al Controlador (ControladorHistoriaVida) que mediante la función generarPDFHistoriaVida  hace una petición al modelo Recuerdo para que recupere la información de la base de datos y devuelva un listado de recuerdos.
-A continuación se muestra el PDF de Historia de Vida generado (ver Figura \ref{fig:pdf.png}). 
-\begin{figure}[!ht]
-  	\centering
-  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/pdf.png}
-  	\caption{Generar PDF.}
-	\label{fig:pdf.png}
-\end{figure}
+A continuación se muestra el PDF de Historia de Vida generado que tendrá el aspecto que se muestra en la Figura \ref{fig:pdf.png}.
+
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/diagramas_secuencia/generarPDF.png}
   	\caption{Diagrama de secuencia generar historia de vida en PDF .}
 	\label{fig:pdfPac}
 \end{figure}
+
+\begin{figure}[!ht]
+  	\centering
+  	\includegraphics[width=15cm]{./Imagenes/Figuras/implementacion/pdf.png}
+  	\caption{Generar PDF.}
+	\label{fig:pdf.png}
+\end{figure}
+
 \subsection{Añadir un registro ya existente}
 En el caso de los archivos multimedia en recuerdos y sesiones se pueden añadir archivos ya existentes en otros recuerdos o sesiones. En el caso de las sesiones se pueden añadir recuerdos ya existentes del paciente. Y en el caso de los recuerdos se pueden añadir personas relacionadas ya existentes del paciente.
 En este caso vamos a explicar como se añade una persona relacionada ya existente en otros recuerdos del paciente y añadir archivos a recuerdos es similar.
-El usuario hace una petición mediante el botón ``Añadir existente'' y el front envía una petición al Controlador (ControladorPersonasRelacionadas) que mediante la función personasRelacionadasRecuerdo( envía una petición al modelo PersonaRelacionada para que devuelva el listado de las personas relacionadas de un paciente y la vista muestre el listado indicando cuáles ya existen en el recuerdo y cuáles no. El usuario selecciona/deselecciona las personas relacionadas que quiere añadir o quitar del recuerdo y envía una petición mediante el botón ``Añadir'' para que el front llame al Controlador (a través del gestor del front). El Controlador (ControladorPersonaRelacionada) envía una petición al modelo para que elimine todas las personas relacionadas de un recuerdo y asigne, mediante la función guardarPersonasRelacionadas(idRecuerdo, lista), las que ha seleccionado el usuario mediante la vista.
+El usuario hace una petición mediante el botón ``Añadir existente'' y el front envía una petición al Controlador (ControladorPersonasRelacionadas) que mediante la función personasRelacionadasRecuerdo envía una petición al modelo PersonaRelacionada para que devuelva el listado de las personas relacionadas de un paciente y la vista muestre el listado indicando cuáles ya existen en el recuerdo y cuáles no. El usuario selecciona/deselecciona las personas relacionadas que quiere añadir o quitar del recuerdo y envía una petición mediante el botón ``Añadir'' para que el front llame al Controlador (a través del gestor del front). El Controlador (ControladorPersonaRelacionada) envía una petición al modelo para que elimine todas las personas relacionadas de un recuerdo y asigne, mediante la función guardarPersonasRelacionadas, las que ha seleccionado el usuario mediante la vista.
 En la Figura \ref{fig:anadirExistente.png} se muestra la lista de personas relacionadas asignadas a un recuerdo.
 \begin{figure}[!ht]
   	\centering
