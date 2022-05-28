@@ -584,7 +584,7 @@ En la página principal del familiar (Figura \ref{fig:family_ses}) vemos el nombr
 				\label{fig:cal_san}
 			\end{figure}
 
-\item Historia de vida (figura \ref{fig:hv_san}): Página donde se encuentra la historia de vida del paciente con todos sus recuerdos, fotos, personas, acontecimientos y demás que se han añadido en la aplicación. Aparece también un buscador también, para realizar una búsqueda por las diferentes categorías.
+\item Historia de vida (figura \ref{fig:hv_san}): Página donde se encuentra la historia de vida del paciente con todos sus recuerdos, fotos, personas, acontecimientos y demás que se han añadido en la aplicación. Aparece también un buscador, para realizar una búsqueda por las diferentes categorías.
 			
 			\begin{figure}[!ht]
 	 			\centering
@@ -644,7 +644,7 @@ En caso de que un terapeuta iniciara sesión se le conducirá a la página de búsqu
 			\label{fig:pro_eva_historial_ss}
 		\end{figure}
 		
-		\item Crear una nueva sesión: para crear una nueva sesión, podrás seleccionar la opción de coger una sesión anterior. Esto autocompletará los detalles de la sesión, que después se podrán modificar en caso de que el terapeuta no quiera que la sesión sea exactamente igual. En esa misma pantalla, aparecerá la lista de todos los recuerdos. Estos serán seleccionables, para que el terapeuta pueda elegir cuales son útiles para la sesión. Cada recuerdo dispone de un botón con forma de ojo que abrirá una ventana emergente donde se podrá ver los detalles del recuerdo en concreto (Figura \ref{fig:pro_eva_crear_ss}).
+		\item Crear una nueva sesión: para crear una nueva sesión, podrás seleccionar la opción de coger una sesión anterior. Esto autocompletará los detalles de la sesión, que después se podrán modificar en caso de que el terapeuta no quiera que la sesión sea exactamente igual. En esa misma pantalla, aparecerá la lista de todos los recuerdos. Estos serán seleccionables, para que el terapeuta pueda elegir cuales son útiles para la sesión. Cada recuerdo dispone de un botón con forma de ojo que abrirá una ventana emergente donde se podrán ver los detalles del recuerdo en concreto (Figura \ref{fig:pro_eva_crear_ss}).
 		
 		 \begin{figure}[htp]
 	  		\centering
@@ -820,7 +820,9 @@ Después de realizar y documentar cada uno de los prototipos, los integrantes del
 Finalmente el diseño base elegido en consenso fue el realizado por Cristina (Sección \ref{cap:disenio_cris}). La decisión fue tomada debido a que consideramos que este prototipo es el más completo y sencillo para la comprensión del usuario. A este prototipo se han añadido los cambios que se detallan a continuación.
 
 Para guardar la consistencia interna de la aplicación se le ha dado el mismo formato a todas las listas. Para añadir un nuevo registro, se ha añadido un botón ``+'' (ver Figura \ref{fig:3.2.5_listado_pacientes}), guardando la consistencia externa con otras aplicaciones. Para ver un registro, se puede hacer de dos formas: mediante un link en la primera columna de la lista o mediante el icono de un ojo. 
-Para modificar un registro se utiliza el icono de un lápiz. Para borrarlo se utiliza un icono de una papelera en rojo. Para guardar la consistencia externa con otras aplicaciones, se ha separado el menú que había a la izquierda en dos menús:
+Para modificar un registro se utiliza el icono de un lápiz. Para borrarlo se utiliza un icono de una papelera en rojo. 
+
+Para guardar la consistencia externa con otras aplicaciones, se ha separado el menú que había a la izquierda en dos menús:
 		\begin{itemize}
 			\item Un menú general del usuario en la parte superior de la pantalla donde se pueden ver 3 iconos que permiten acceder a los pacientes, a la mensajería y cerrar sesión (ver Figura \ref{fig:3.2.5_listado_pacientes}). A este menú se puede acceder desde cualquier pantalla de la aplicación.
 			\item Un menú (ver Figura \ref{fig:3.2.5_ver_paciente}) que aparece una vez se ha seleccionado un paciente y que tiene las siguientes opciones: pacientes, sesiones, informes de seguimiento, evaluaciones, calendario, generar historia de vida, recuerdos y personas relacionadas. 
@@ -866,7 +868,7 @@ Al seleccionar un paciente se muestra la pantalla de datos del paciente seleccio
 	\label{fig:3.2.5_ver_paciente}
 \end{figure}
 
-En el listado de sesiones se puede ver un listado con todas las sesiones del paciente ordenadas por fecha descendente, y de cada sesión se muestra: la fecha de la sesión, el objetivo y si se ha finalizado o no. Además, se ha añadido un nuevo icono ``check'' tal y como se muestra en la Figura \ref{fig:3.2.5_listado_sesiones} para poder acceder a la pantalla de finalizar sesión. Esto con el objetivo del que el usuario pueda finalizar de manera rápida la sesión. Esta opción se añadió tras revisar el nuevo diseño, ya que anteriormente esta opción estaba dentro de los datos de la sesión y no era tan fácil acceder a ella.
+En el listado de sesiones se puede ver un listado con todas las sesiones del paciente ordenadas por fecha descendente, y de cada sesión se muestra: la fecha de la sesión, el objetivo y si se ha finalizado o no. Además, se ha añadido un nuevo icono ``check'' tal y como se muestra en la Figura \ref{fig:3.2.5_listado_sesiones} para poder acceder a la pantalla de finalizar sesión. Esto con el objetivo de que el usuario pueda finalizar de manera rápida la sesión. Esta opción se añadió tras revisar el nuevo diseño, ya que anteriormente esta opción estaba dentro de los datos de la sesión y no era tan fácil acceder a ella.
 \begin{figure}[!ht]
   	\centering
   	\includegraphics[width=12cm]{./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png}
@@ -882,7 +884,7 @@ Se ha modificado todo el proceso de añadir una sesión para que se puedan añadir 
 	\label{fig:3.2.5_nueva_sesion}
 \end{figure}
 
-A continuación vamos a indicar las modificaciones que realizamos para incorporar los requisitos que Cristina no había tenido en cuenta en su diseño. Cabe destacar que la mayor parte de ellas surgieron mientras se llevaba a cabo la reunión de selección del diseño y por lo tanto no están en ningún prototipo anterior.
+A continuación vamos a indicar las modificaciones que realizamos para incorporar los requisitos que Cristina no había tenido en cuenta en su diseño. Cabe destacar que la mayor parte de ellos surgieron mientras se llevaba a cabo la reunión de selección del diseño y por lo tanto no están en ningún prototipo anterior.
 
 En el listado de recuerdos se pueden añadir, modificar y borrar los recuerdos relacionados al igual que en el resto de listados de la aplicación. Hay dos formas de añadir un recuerdo a una sesión:
 \begin{itemize}
@@ -1022,7 +1024,7 @@ En la mensajería del cuidador se ha modificado la pantalla para seleccionar el t
 Una vez creada la primera versión de nuestro diseño procedemos a realizar su evaluación con expertos tal y como explicamos en esta sección.
 
 \subsection{Diseño de la evaluación}
-Para la preparación de la evaluación, nos reunimos los integrantes del equipo para decidir cual era la mejor forma de realizar esta valoración del prototipo: determinar el objetivo, que pasos se iban a seguir, como se iba a evaluar. Tras debatirlo, se decretaron que los pasos a seguir serían los siguientes. Primero se realizará una demo del diseño que le dará al usuario una vista global de la aplicación, para así introducirlo poco a poco en el prototipo. A continuación, se le mandarán al usuario distintas tareas a realizar, y según como se desenvuelva con la aplicación, se le dará una puntuación. Finalmente se realizará una entrevista al evaluador para recoger su feedback sobre cada parte de la aplicación: qué le ha gustado, qué no, que ha echado de menos, que errores ha visto, etc... 
+Para la preparación de la evaluación, nos reunimos los integrantes del equipo para decidir cual era la mejor forma de realizar esta valoración del prototipo: determinar el objetivo, que pasos se iban a seguir, como se iba a evaluar. Tras debatirlo, se decidió que los pasos a seguir serían los siguientes. Primero se realizará una demo del diseño que le dará al usuario una vista global de la aplicación, para así introducirlo poco a poco en el prototipo. A continuación, se le mandarán al usuario distintas tareas a realizar, y según como se desenvuelva con la aplicación, se le dará una puntuación. Finalmente se realizará una entrevista al evaluador para recoger su feedback sobre cada parte de la aplicación: qué le ha gustado, qué no, que ha echado de menos, que errores ha visto, etc... 
 Con este esquema nos cercioramos  de poder observar los problemas de usabilidad que tenga la aplicación y de que el usuario nos de un feedback completo. Las tareas a realizar fueron las siguientes:
   \begin{itemize}
   	\item Acceder a la paciente Juana.
@@ -1078,6 +1080,6 @@ Durante la evaluación llegamos a la conclusión de que eran necesarios los siguie
 
 	\item Recuerdos: Permitir ordenar por distintos parámetros, añadir filtros y permitir modificar los recuerdos.
 
-	\item Personas Relacionadas: Cambiar el nombre del campo ``Relación'' por ``Tipo de relación/parentesco''e incluir un icono de un correo para que el terapeuta pueda enviar un mensaje con mayor facilidad a la persona relacionada con el usuario. 
+	\item Personas Relacionadas: Cambiar el nombre del campo ``Relación'' por ``Tipo de relación/parentesco'' e incluir un icono de un correo para que el terapeuta pueda enviar un mensaje con mayor facilidad a la persona relacionada con el usuario. 
 \end{itemize}
-Todos estos cambios dieron lugar a una nueva versión del diseño que se puede ver en https://drive.google.com/file/d/1RETh7BoEp7UKxO2MlHunIq99zJWBtuyD/view?usp=sharing.
+Todos estos cambios dieron lugar a una nueva versión del diseño que se puede ver en https://acortar.link/82v6gg.

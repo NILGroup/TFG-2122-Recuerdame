@@ -1,25 +1,25 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.2.14)  27 MAY 2022 15:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.24)  28 MAY 2022 12:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./TFMTeXiS.tex
 (TFMTeXiS.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2021-11-22>
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+L3 programming layer <2022-02-21>
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
 File: bk11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count183
-\c@chapter=\count184
-\c@section=\count185
-\c@subsection=\count186
-\c@subsubsection=\count187
-\c@paragraph=\count188
-\c@subparagraph=\count189
-\c@figure=\count190
-\c@table=\count191
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -31,7 +31,7 @@ e 75.
 (config.tex) (TeXiS/TeXiS.sty
 Package: TeXiS/TeXiS 
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks16
 \verbatim@line=\toks17
@@ -44,44 +44,43 @@ LaTeX Warning: \include should only be used after \begin{document} on input lin
 e 460.
 
 (TeXiS/TeXiS_pream.tex
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/base\shortvrb.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/base\shortvrb.sty
 Package: shortvrb 2021/10/04 v2.1n Standard LaTeX documentation package (FMi)
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/base\ansinew.def
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/base\ansinew.def
 File: ansinew.def 2021/02/14 v1.3d Input encoding file
 ))
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip49
 \bibsep=\skip50
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count192
+\c@NAT@ctr=\count194
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2021/11/29 3.67 The Babel package
-\babel@savecnt=\count193
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2022/02/13 3.71 The Babel package
+\babel@savecnt=\count195
 \U@D=\dimen139
 \l@unhyphenated=\language79
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def
-)
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read3
-\bbl@dirlevel=\count194
+\bbl@dirlevel=\count196
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\englis
-h.ldf
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.l
+df
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
@@ -90,27 +89,27 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanis
-h.ldf
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.l
+df
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks20
-\es@quotdepth=\count195
+\es@quotdepth=\count197
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
 Package babel Info: Making ' an active character on input line 740.
-)) (C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+)) (D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+)
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/fncychap\fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip51
 \mylen=\skip52
@@ -120,82 +119,74 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \pyy=\skip56
 \pxx=\skip57
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexc
-mds.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarer
-r.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkey
-s.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
+ty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdef
-inekeys.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescap
-e.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxma
-cro.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.
-sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen140
-\Hy@linkcounter=\count196
-\Hy@pagecounter=\count197
-
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+\Hy@linkcounter=\count198
+\Hy@pagecounter=\count199
+ (D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-la
-ngpatches.def
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-langp
+atches.def
 File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
 nguages
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.
-sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count198
-
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+\Hy@SavedSpaceFactor=\count266
+ (D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -215,18 +206,18 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count199
+\c@Hy@tempcnt=\count267
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen141
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintc
-alc.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count266
+\Fld@menulength=\count268
 \Field@Width=\dimen142
 \Fld@charsize=\dimen143
 Package hyperref Info: Hyper figures OFF on input line 6076.
@@ -239,35 +230,32 @@ Package hyperref Info: PDF/A mode OFF on input line 6106.
 LaTeX Info: Redefining \ref on input line 6146.
 LaTeX Info: Redefining \pageref on input line 6150.
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count267
-\c@Item=\count268
-\c@Hfootnote=\count269
+\Hy@abspage=\count269
+\c@Item=\count270
+\c@Hfootnote=\count271
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.s
-ty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count270
-\c@bookmark@seq@number=\count271
+\Fld@listcount=\count272
+\c@bookmark@seq@number=\count273
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerun
-filecheck.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniq
-uecounter.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -277,7 +265,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `false' on input line 290.
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 )
 \@indexfile=\write4
@@ -285,16 +273,16 @@ Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 
 
 Writing index file TFMTeXiS.idx
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
-\c@tracingmulticols=\count272
+\c@tracingmulticols=\count274
 \mult@box=\box50
 \multicol@leftmargin=\dimen144
-\c@unbalance=\count273
-\c@collectmore=\count274
-\doublecol@number=\count275
-\multicoltolerance=\count276
-\multicolpretolerance=\count277
+\c@unbalance=\count275
+\c@collectmore=\count276
+\doublecol@number=\count277
+\multicoltolerance=\count278
+\multicolpretolerance=\count279
 \full@width=\dimen145
 \page@free=\dimen146
 \premulticols=\dimen147
@@ -344,203 +332,191 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \@tempa=\box90
 \@tempa=\box91
 \@tempa=\box92
-\c@minrows=\count278
-\c@columnbadness=\count279
-\c@finalcolumnbadness=\count280
+\c@minrows=\count280
+\c@columnbadness=\count281
+\c@finalcolumnbadness=\count282
 \last@try=\dimen150
 \multicolovershoot=\dimen151
 \multicolundershoot=\dimen152
 \mult@nat@firstbox=\box93
 \colbreak@box=\box94
-\mc@col@check@num=\count281
+\mc@col@check@num=\count283
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2022/02/20 v3.6 Customizing captions (AR)
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen153
-\captionmargin@=\dimen154
-\captionwidth=\dimen155
-\caption@tempdima=\dimen156
-\caption@indent=\dimen157
-\caption@parindent=\dimen158
-\caption@hangindent=\dimen159
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2022/01/07 v2.3 caption3 kernel (AR)
+\caption@tempdima=\dimen153
+\captionmargin=\dimen154
+\caption@leftmargin=\dimen155
+\caption@rightmargin=\dimen156
+\caption@width=\dimen157
+\caption@indent=\dimen158
+\caption@parindent=\dimen159
+\caption@hangindent=\dimen160
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count282
-\c@continuedfloat=\count283
+\c@caption@flags=\count284
+\c@continuedfloat=\count285
 Package caption Info: hyperref package is loaded.
 )
-\c@KVtest=\count284
+\c@KVtest=\count286
 \sf@farskip=\skip61
-\sf@captopadj=\dimen160
+\sf@captopadj=\dimen161
 \sf@capskip=\skip62
 \sf@nearskip=\skip63
-\c@subfigure=\count285
-\c@subfigure@save=\count286
-\c@lofdepth=\count287
-\c@subtable=\count288
-\c@subtable@save=\count289
-\c@lotdepth=\count290
+\c@subfigure=\count287
+\c@subfigure@save=\count288
+\c@lofdepth=\count289
+\c@subtable=\count290
+\c@subtable@save=\count291
+\c@lotdepth=\count292
 \sf@top=\skip64
 \sf@bottom=\skip65
 )
 \sf@box=\box95
-
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.st
-y
-\lst@mode=\count291
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count293
 \lst@gtempboxa=\box96
 \lst@token=\toks22
-\lst@length=\count292
-\lst@currlwidth=\dimen161
-\lst@column=\count293
-\lst@pos=\count294
-\lst@lostspace=\dimen162
-\lst@width=\dimen163
-\lst@newlines=\count295
-\lst@lineno=\count296
-\lst@maxwidth=\dimen164
+\lst@length=\count294
+\lst@currlwidth=\dimen162
+\lst@column=\count295
+\lst@pos=\count296
+\lst@lostspace=\dimen163
+\lst@width=\dimen164
+\lst@newlines=\count297
+\lst@lineno=\count298
+\lst@maxwidth=\dimen165
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count297
-\lst@skipnumbers=\count298
+\c@lstnumber=\count299
+\lst@skipnumbers=\count300
 \lst@framebox=\box97
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cf
-g
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen165
+\col@sep=\dimen166
 \ar@mcellbox=\box98
-\extrarowheight=\dimen166
+\extrarowheight=\dimen167
 \NC@list=\toks23
 \extratabsurround=\skip66
 \backup@length=\skip67
 \ar@cellbox=\box99
 )
-\TX@col@width=\dimen167
-\TX@old@table=\dimen168
-\TX@old@col=\dimen169
-\TX@target=\dimen170
-\TX@delta=\dimen171
-\TX@cols=\count299
+\TX@col@width=\dimen168
+\TX@old@table=\dimen169
+\TX@old@col=\dimen170
+\TX@target=\dimen171
+\TX@delta=\dimen172
+\TX@cols=\count301
 \TX@ftn=\toks24
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/graphics\epsfig.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphic
-s.cfg
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.
-def
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen172
-\Gin@req@width=\dimen173
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
 )
-\epsfxsize=\dimen174
-\epsfysize=\dimen175
-)
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+\epsfxsize=\dimen175
+\epsfysize=\dimen176
+) (D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count300
-\calc@Bcount=\count301
-\calc@Adimen=\dimen176
-\calc@Bdimen=\dimen177
+\calc@Acount=\count302
+\calc@Bcount=\count303
+\calc@Adimen=\dimen177
+\calc@Bdimen=\dimen178
 \calc@Askip=\skip68
 \calc@Bskip=\skip69
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count302
+\calc@Ccount=\count304
 \calc@Cskip=\skip70
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box100
 \beforetitleunit=\skip71
 \aftertitleunit=\skip72
-\ttl@plus=\dimen178
-\ttl@minus=\dimen179
+\ttl@plus=\dimen179
+\ttl@minus=\dimen180
 \ttl@toksa=\toks25
-\titlewidth=\dimen180
-\titlewidthlast=\dimen181
-\titlewidthfirst=\dimen182
+\titlewidth=\dimen181
+\titlewidthlast=\dimen182
+\titlewidthfirst=\dimen183
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count303
+\etb@tempcnta=\count305
 )
-\csq@reset=\count304
-\csq@gtype=\count305
-\csq@glevel=\count306
-\csq@qlevel=\count307
-\csq@maxlvl=\count308
-\csq@tshold=\count309
+\csq@reset=\count306
+\csq@gtype=\count307
+\csq@glevel=\count308
+\csq@qlevel=\count309
+\csq@maxlvl=\count310
+\csq@tshold=\count311
 \csq@ltx@everypar=\toks26
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.de
-f
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cf
-g
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
-))
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.st
+)) (D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.st
 y
 Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
- (C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen183
-\ESO@tempdimb=\dimen184
+\ESO@tempdima=\dimen184
+\ESO@tempdimb=\dimen185
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
-fg
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
@@ -554,50 +530,47 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ))
-\AM@pagewidth=\dimen185
-\AM@pageheight=\dimen186
-\AM@fboxrule=\dimen187
+\AM@pagewidth=\dimen186
+\AM@pageheight=\dimen187
+\AM@fboxrule=\dimen188
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.de
-f
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count310
+\pdfpages@includegraphics@status=\count312
 \AM@pagebox=\box101
 \AM@global@opts=\toks27
-\AM@pagecnt=\count311
+\AM@pagecnt=\count313
 \AM@toc@title=\toks28
-\c@AM@survey=\count312
+\c@AM@survey=\count314
 \AM@templatesizebox=\box102
-)
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\
-l3keys2e.sty
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2021-11-22 L3 programming layer (loader) 
+) (D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-02-21 L3 programming layer (loader) 
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
-pdftex.def
-File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count313
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count315
 \l__pdf_internal_box=\box103
 ))
-Package: l3keys2e 2021-11-12 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count314
-\l__lipsum_a_int=\count315
-\l__lipsum_b_int=\count316
+\g__lipsum_par_int=\count316
+\l__lipsum_a_int=\count317
+\l__lipsum_b_int=\count318
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.te
-x)))
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
+)
 
 LaTeX Warning: \include should only be used after \begin{document} on input lin
 e 464.
 
 (TeXiS/TeXiS_cab.tex
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
 rs
 \f@nch@headwidth=\skip73
@@ -689,19 +662,16 @@ LaTeX Font Info:    ... okay on input line 104.
 LaTeX Info: Redefining \. on input line 104.
 LaTeX Info: Redefining \% on input line 104.
 Package hyperref Info: Link coloring OFF on input line 104.
-
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+ (D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.st
-y
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\get
-titlestring.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count317
+\c@section@level=\count319
 )
 LaTeX Info: Redefining \ref on input line 104.
 LaTeX Info: Redefining \pageref on input line 104.
@@ -714,42 +684,41 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count318
+\c@lstlisting=\count320
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
-.mkii
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count319
-\scratchdimen=\dimen188
+\scratchcounter=\count321
+\scratchdimen=\dimen189
 \scratchbox=\box104
-\nofMPsegments=\count320
-\nofMParguments=\count321
+\nofMPsegments=\count322
+\nofMParguments=\count323
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count322
-\MPscratchDim=\dimen189
-\MPnumerator=\count323
-\makeMPintoPDFobject=\count324
+\MPscratchCnt=\count324
+\MPscratchDim=\dimen190
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
 \everyMPtoPDFconversion=\toks30
 )
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
-f-base.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sy
-s.cfg
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.
-sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-) (guionado.tex)
+)
+(guionado.tex)
 \openout2 = `Cascaras/cover.aux'.
 
  (Cascaras/cover.tex
@@ -765,13 +734,13 @@ File: Imagenes/Vectorial/escudoUCM.pdf Graphic file (type pdf)
 Package pdftex.def Info: Imagenes/Vectorial/escudoUCM.pdf  used on input line 1
 58.
 (pdftex.def)             Requested size: 119.44412pt x 168.82776pt.
-\c@lastyear=\count325
+\c@lastyear=\count327
  [1
 
 
 
-{C:/Users/MERCEDES/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Imagene
-s/Vectorial/escudoUCM.pdf>] [2] [3])
+{C:/Users/evavr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Imagenes/V
+ectorial/escudoUCM.pdf>] [2] [3])
 \openout2 = `Cascaras/autorizacion.aux'.
 
 
@@ -838,9 +807,10 @@ LaTeX Info: Redefining \% on input line 25.
 [13]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
 1.
- (C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+ (D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [14] [15]
+)
+[14] [15]
 LaTeX Info: Redefining \. on input line 119.
 LaTeX Info: Redefining \% on input line 119.
  [16])
@@ -919,13 +889,13 @@ LaTeX Info: Redefining \% on input line 169.
 Cap\'itulo 1.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 3
 .
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
 .
 
-(C:\Users\MERCEDES\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+(D:\Users\evavr\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 [1
@@ -990,8 +960,8 @@ LaTeX Info: Redefining \% on input line 80.
 LaTeX Info: Redefining \. on input line 105.
 LaTeX Info: Redefining \% on input line 105.
  [12]
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
+LaTeX Info: Redefining \. on input line 131.
+LaTeX Info: Redefining \% on input line 131.
  [13]
 LaTeX Info: Redefining \. on input line 148.
 LaTeX Info: Redefining \% on input line 148.
@@ -1018,108 +988,106 @@ Package pdftex.def Info: ./Imagenes/Figuras/figura 2.3.png  used on input line
 File: ./Imagenes/Figuras/figura 2.4.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.4.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.4.png  used on input line 
-175.
+176.
 (pdftex.def)             Requested size: 426.79134pt x 176.82724pt.
 
-Overfull \hbox (66.79134pt too wide) in paragraph at lines 175--176
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 176--177
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 179.
-LaTeX Info: Redefining \% on input line 179.
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
 [15 <./Imagenes/Figuras/figura 2.1.png>]
-LaTeX Info: Redefining \. on input line 179.
-LaTeX Info: Redefining \% on input line 179.
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
  [16 <./Imagenes/Figuras/figura 2.2.png> <./Imagenes/Figuras/figura 2.3.png>]
 <./Imagenes/Figuras/2.1.png, id=1307, 408.02437pt x 266.9975pt>
 File: ./Imagenes/Figuras/2.1.png Graphic file (type png)
 <use ./Imagenes/Figuras/2.1.png>
-Package pdftex.def Info: ./Imagenes/Figuras/2.1.png  used on input line 196.
+Package pdftex.def Info: ./Imagenes/Figuras/2.1.png  used on input line 197.
 (pdftex.def)             Requested size: 251.9989pt x 164.90117pt.
-LaTeX Info: Redefining \. on input line 200.
-LaTeX Info: Redefining \% on input line 200.
+LaTeX Info: Redefining \. on input line 201.
+LaTeX Info: Redefining \% on input line 201.
  [17 <./Imagenes/Figuras/figura 2.4.png>]
-<./Imagenes/Figuras/figura 2.6.8.png, id=1318, 515.42563pt x 291.0875pt>
+<./Imagenes/Figuras/figura 2.6.8.png, id=1317, 515.42563pt x 291.0875pt>
 File: ./Imagenes/Figuras/figura 2.6.8.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.8.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.8.png  used on input lin
-e 205.
+e 206.
 (pdftex.def)             Requested size: 251.9989pt x 142.31432pt.
-<./Imagenes/Figuras/figura 2.6.9.png, id=1319, 485.31313pt x 286.06876pt>
+<./Imagenes/Figuras/figura 2.6.9.png, id=1318, 485.31313pt x 286.06876pt>
 File: ./Imagenes/Figuras/figura 2.6.9.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.9.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.9.png  used on input lin
-e 211.
+e 212.
 (pdftex.def)             Requested size: 251.9989pt x 148.54271pt.
-<./Imagenes/Figuras/figura 2.6.10.png, id=1320, 477.785pt x 292.59312pt>
+<./Imagenes/Figuras/figura 2.6.10.png, id=1319, 477.785pt x 292.59312pt>
 File: ./Imagenes/Figuras/figura 2.6.10.png Graphic file (type png)
 <use ./Imagenes/Figuras/figura 2.6.10.png>
 Package pdftex.def Info: ./Imagenes/Figuras/figura 2.6.10.png  used on input li
-ne 217.
+ne 218.
 (pdftex.def)             Requested size: 251.9989pt x 154.32355pt.
+LaTeX Info: Redefining \. on input line 230.
+LaTeX Info: Redefining \% on input line 230.
+[18 <./Imagenes/Figuras/2.1.png> <./Imagenes/Figuras/figura 2.6.8.png>]
+LaTeX Info: Redefining \. on input line 237.
+LaTeX Info: Redefining \% on input line 237.
 
-Underfull \vbox (badness 5622) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 229.
-LaTeX Info: Redefining \% on input line 229.
- [18 <./Imagenes/Figuras/2.1.png> <./Imagenes/Figuras/figura 2.6.8.png>]
-LaTeX Info: Redefining \. on input line 236.
-LaTeX Info: Redefining \% on input line 236.
- [19 <./Imagenes/Figuras/figura 2.6.9.png> <./Imagenes/Figuras/figura 2.6.10.pn
-g>]
-LaTeX Info: Redefining \. on input line 291.
-LaTeX Info: Redefining \% on input line 291.
+[19 <./Imagenes/Figuras/figura 2.6.9.png> <./Imagenes/Figuras/figura 2.6.10.png
+>]
+LaTeX Info: Redefining \. on input line 292.
+LaTeX Info: Redefining \% on input line 292.
  [20]
 <./Imagenes/Figuras/movil_evaluacion_clinica.PNG, id=1342, 482.40225pt x 322.20
 375pt>
 File: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_evaluacion_clinica.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_evaluacion_clinica.PNG  used 
-on input line 308.
+on input line 309.
 (pdftex.def)             Requested size: 337.67926pt x 225.54108pt.
-LaTeX Info: Redefining \. on input line 316.
-LaTeX Info: Redefining \% on input line 316.
+LaTeX Info: Redefining \. on input line 317.
+LaTeX Info: Redefining \% on input line 317.
  [21 <./Imagenes/Figuras/movil_evaluacion_clinica.PNG>]
 <./Imagenes/Figuras/movil_historia_vida.PNG, id=1349, 481.19775pt x 278.84175pt
 >
 File: ./Imagenes/Figuras/movil_historia_vida.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/movil_historia_vida.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/movil_historia_vida.PNG  used on in
-put line 321.
+put line 322.
 (pdftex.def)             Requested size: 336.83614pt x 195.18788pt.
-LaTeX Info: Redefining \. on input line 337.
-LaTeX Info: Redefining \% on input line 337.
+LaTeX Info: Redefining \. on input line 338.
+LaTeX Info: Redefining \% on input line 338.
  [22 <./Imagenes/Figuras/movil_historia_vida.PNG>]
 <./Imagenes/Figuras/funcionamiento_bot.PNG, id=1359, 416.30531pt x 242.40562pt>
 
 File: ./Imagenes/Figuras/funcionamiento_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/funcionamiento_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/funcionamiento_bot.PNG  used on inp
-ut line 343.
+ut line 344.
 (pdftex.def)             Requested size: 291.41173pt x 169.68277pt.
-LaTeX Info: Redefining \. on input line 351.
-LaTeX Info: Redefining \% on input line 351.
+LaTeX Info: Redefining \. on input line 352.
+LaTeX Info: Redefining \% on input line 352.
  [23 <./Imagenes/Figuras/funcionamiento_bot.PNG>]
 <./Imagenes/Figuras/bienvenida_bot.PNG, id=1367, 231.86626pt x 319.94531pt>
 File: ./Imagenes/Figuras/bienvenida_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/bienvenida_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/bienvenida_bot.PNG  used on input l
-ine 354.
+ine 355.
 (pdftex.def)             Requested size: 162.30525pt x 223.96017pt.
 <./Imagenes/Figuras/imagenes_bot.PNG, id=1368, 243.15843pt x 237.13594pt>
 File: ./Imagenes/Figuras/imagenes_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/imagenes_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/imagenes_bot.PNG  used on input lin
-e 361.
+e 362.
 (pdftex.def)             Requested size: 170.20973pt x 165.994pt.
 <./Imagenes/Figuras/pregunta_bot.PNG, id=1369, 234.1247pt x 420.06938pt>
 File: ./Imagenes/Figuras/pregunta_bot.PNG Graphic file (type png)
 <use ./Imagenes/Figuras/pregunta_bot.PNG>
 Package pdftex.def Info: ./Imagenes/Figuras/pregunta_bot.PNG  used on input lin
-e 369.
+e 370.
 (pdftex.def)             Requested size: 163.88615pt x 294.04655pt.
-LaTeX Info: Redefining \. on input line 381.
-LaTeX Info: Redefining \% on input line 381.
+LaTeX Info: Redefining \. on input line 382.
+LaTeX Info: Redefining \% on input line 382.
  [24 <./Imagenes/Figuras/bienvenida_bot.PNG> <./Imagenes/Figuras/imagenes_bot.P
 NG>])
 LaTeX Info: Redefining \. on input line 149.
@@ -1130,7 +1098,8 @@ LaTeX Info: Redefining \% on input line 149.
  [26]
 \openout2 = `Capitulos/PropuestaDelTFG.aux'.
 
- (Capitulos/PropuestaDelTFG.tex
+
+(Capitulos/PropuestaDelTFG.tex
 Cap\'itulo 3.
 [27
 
@@ -1989,8 +1958,8 @@ LaTeX Info: Redefining \. on input line 821.
 LaTeX Info: Redefining \% on input line 821.
  [75 <./Imagenes/Figuras/prototipo_eva/asignar_terapeutas.png> <./Imagenes/Figu
 ras/prototipo_eva/c_menu.png>]
-LaTeX Info: Redefining \. on input line 830.
-LaTeX Info: Redefining \% on input line 830.
+LaTeX Info: Redefining \. on input line 832.
+LaTeX Info: Redefining \% on input line 832.
 
 [76 <./Imagenes/Figuras/prototipo_eva/c_calendario.png> <./Imagenes/Figuras/pro
 totipo_eva/c_mensajeria.png>]
@@ -2000,7 +1969,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png Graphic file (type
  png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png
-  used on input line 834.
+  used on input line 836.
 (pdftex.def)             Requested size: 170.71652pt x 174.49501pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png, id=1882, 1
 139.25626pt x 364.36125pt>
@@ -2008,7 +1977,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png Graphi
 c file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_p
-acientes.png  used on input line 842.
+acientes.png  used on input line 844.
 (pdftex.def)             Requested size: 341.43306pt x 109.19801pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png, id=1883, 1147
 .28625pt x 512.91624pt>
@@ -2016,7 +1985,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png Graphic f
 ile (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_pac
-iente.png  used on input line 849.
+iente.png  used on input line 851.
 (pdftex.def)             Requested size: 341.43306pt x 152.63948pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png, id=1884, 
 1019.81pt x 520.94624pt>
@@ -2024,7 +1993,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png Graph
 ic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar_paciente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_modificar
-_paciente.png  used on input line 856.
+_paciente.png  used on input line 858.
 (pdftex.def)             Requested size: 341.43306pt x 174.41672pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png, id=1885, 1134.2
 375pt x 652.4375pt>
@@ -2032,7 +2001,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png Graphic fil
 e (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_pacie
-nte.png  used on input line 864.
+nte.png  used on input line 866.
 (pdftex.def)             Requested size: 341.43306pt x 196.39977pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png, id=1887, 11
 30.2225pt x 467.7475pt>
@@ -2040,13 +2009,13 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png Graphic
  file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_s
-esiones.png  used on input line 872.
+esiones.png  used on input line 874.
 (pdftex.def)             Requested size: 341.43306pt x 141.30312pt.
-LaTeX Info: Redefining \. on input line 876.
-LaTeX Info: Redefining \% on input line 876.
+LaTeX Info: Redefining \. on input line 878.
+LaTeX Info: Redefining \% on input line 878.
  [77 <./Imagenes/Figuras/disenio_competitivo/3.2.5_login.png>]
-LaTeX Info: Redefining \. on input line 876.
-LaTeX Info: Redefining \% on input line 876.
+LaTeX Info: Redefining \. on input line 878.
+LaTeX Info: Redefining \% on input line 878.
  [78 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_pacientes.png> <./Im
 agenes/Figuras/disenio_competitivo/3.2.5_nuevo_paciente.png> <./Imagenes/Figura
 s/disenio_competitivo/3.2.5_modificar_paciente.png>]
@@ -2056,10 +2025,10 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png Graphic fil
 e (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_ses
-ion.png  used on input line 880.
+ion.png  used on input line 882.
 (pdftex.def)             Requested size: 341.43306pt x 366.32344pt.
-LaTeX Info: Redefining \. on input line 886.
-LaTeX Info: Redefining \% on input line 886.
+LaTeX Info: Redefining \. on input line 888.
+LaTeX Info: Redefining \% on input line 888.
  [79 <./Imagenes/Figuras/disenio_competitivo/3.2.5_ver_paciente.png> <./Imagene
 s/Figuras/disenio_competitivo/3.2.5_listado_sesiones.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png, id=1910, 813.
@@ -2068,10 +2037,10 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png Graphic f
 ile (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_rec
-uerdo.png  used on input line 892.
+uerdo.png  used on input line 894.
 (pdftex.def)             Requested size: 341.43306pt x 353.2261pt.
-LaTeX Info: Redefining \. on input line 896.
-LaTeX Info: Redefining \% on input line 896.
+LaTeX Info: Redefining \. on input line 898.
+LaTeX Info: Redefining \% on input line 898.
  [80 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_sesion.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png, id=
 1917, 1051.93pt x 449.68pt>
@@ -2080,7 +2049,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png>
 
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_rec
-uerdo_existente.png  used on input line 900.
+uerdo_existente.png  used on input line 902.
 (pdftex.def)             Requested size: 227.62204pt x 97.30371pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png, id
 =1919, 1115.16624pt x 475.7775pt>
@@ -2089,10 +2058,10 @@ g Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png
 >
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_per
-sona_relacionada.png  used on input line 912.
+sona_relacionada.png  used on input line 914.
 (pdftex.def)             Requested size: 341.43306pt x 145.66728pt.
-LaTeX Info: Redefining \. on input line 916.
-LaTeX Info: Redefining \% on input line 916.
+LaTeX Info: Redefining \. on input line 918.
+LaTeX Info: Redefining \% on input line 918.
  [81 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_existen
 te.png, id=1925, 1099.10625pt x 470.75874pt>
@@ -2101,10 +2070,10 @@ istente.png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_exi
 stente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_per
-sona_relacionada_existente.png  used on input line 920.
+sona_relacionada_existente.png  used on input line 922.
 (pdftex.def)             Requested size: 341.43306pt x 146.2354pt.
-LaTeX Info: Redefining \. on input line 927.
-LaTeX Info: Redefining \% on input line 927.
+LaTeX Info: Redefining \. on input line 929.
+LaTeX Info: Redefining \% on input line 929.
  [82 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_recuerdo_existente.png
 > <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada.png> 
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nueva_persona_relacionada_existen
@@ -2115,7 +2084,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png Graphic
  file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_mul
-timedia.png  used on input line 931.
+timedia.png  used on input line 933.
 (pdftex.def)             Requested size: 341.43306pt x 347.92386pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.png, i
 d=1936, 1237.62375pt x 529.98pt>
@@ -2124,10 +2093,10 @@ ng Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.pn
 g>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_mul
-timedia_existente.png  used on input line 939.
+timedia_existente.png  used on input line 941.
 (pdftex.def)             Requested size: 341.43306pt x 146.20993pt.
-LaTeX Info: Redefining \. on input line 948.
-LaTeX Info: Redefining \% on input line 948.
+LaTeX Info: Redefining \. on input line 950.
+LaTeX Info: Redefining \% on input line 950.
  [83 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png, id=194
 3, 1115.16624pt x 450.68375pt>
@@ -2135,7 +2104,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png Gr
 aphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_h
-istoria_vida.png  used on input line 951.
+istoria_vida.png  used on input line 953.
 (pdftex.def)             Requested size: 341.43306pt x 137.98442pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.png, 
 id=1945, 1197.47375pt x 578.16pt>
@@ -2144,7 +2113,7 @@ png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.p
 ng>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_h
-istoria_vida_libro.png  used on input line 960.
+istoria_vida_libro.png  used on input line 962.
 (pdftex.def)             Requested size: 341.43306pt x 164.84789pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png, id
 =1947, 1366.10374pt x 741.77126pt>
@@ -2153,10 +2122,10 @@ g Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.png
 >
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_h
-istoria_vida_pdf.png  used on input line 968.
+istoria_vida_pdf.png  used on input line 970.
 (pdftex.def)             Requested size: 341.43306pt x 185.38576pt.
-LaTeX Info: Redefining \. on input line 972.
-LaTeX Info: Redefining \% on input line 972.
+LaTeX Info: Redefining \. on input line 974.
+LaTeX Info: Redefining \% on input line 974.
  [84 <./Imagenes/Figuras/disenio_competitivo/3.2.5_nuevo_multimedia_existente.p
 ng> <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png, id=1955, 1
@@ -2165,10 +2134,10 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png Graphi
 c file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_r
-ecuerdos.png  used on input line 977.
+ecuerdos.png  used on input line 979.
 (pdftex.def)             Requested size: 341.43306pt x 163.91965pt.
-LaTeX Info: Redefining \. on input line 981.
-LaTeX Info: Redefining \% on input line 981.
+LaTeX Info: Redefining \. on input line 983.
+LaTeX Info: Redefining \% on input line 983.
  [85 <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_libro.
 png> <./Imagenes/Figuras/disenio_competitivo/3.2.5_generar_historia_vida_pdf.pn
 g>]
@@ -2179,7 +2148,7 @@ s.png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas
 .png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_p
-ersonas_relacionadas.png  used on input line 985.
+ersonas_relacionadas.png  used on input line 987.
 (pdftex.def)             Requested size: 341.43306pt x 141.1677pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png, id=1967
 , 1208.515pt x 451.6875pt>
@@ -2187,7 +2156,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png Gra
 phic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeri
-a_terapeuta.png  used on input line 994.
+a_terapeuta.png  used on input line 996.
 (pdftex.def)             Requested size: 341.43306pt x 127.60884pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.png,
  id=1968, 1057.9525pt x 396.48125pt>
@@ -2196,7 +2165,7 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.
 png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeri
-a_terapeuta_enviado.png  used on input line 1001.
+a_terapeuta_enviado.png  used on input line 1003.
 (pdftex.def)             Requested size: 341.43306pt x 127.95345pt.
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png, id=1971,
  1104.125pt x 446.66875pt>
@@ -2204,10 +2173,10 @@ File: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png Grap
 hic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeri
-a_cuidador.png  used on input line 1009.
+a_cuidador.png  used on input line 1011.
 (pdftex.def)             Requested size: 341.43306pt x 138.12509pt.
-LaTeX Info: Redefining \. on input line 1013.
-LaTeX Info: Redefining \% on input line 1013.
+LaTeX Info: Redefining \. on input line 1015.
+LaTeX Info: Redefining \% on input line 1015.
  [86 <./Imagenes/Figuras/disenio_competitivo/3.2.5_listado_recuerdos.png> <./Im
 agenes/Figuras/disenio_competitivo/3.2.5_listado_personas_relacionadas.png>]
 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.png, 
@@ -2217,15 +2186,15 @@ png Graphic file (type png)
 <use ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.p
 ng>
 Package pdftex.def Info: ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeri
-a_cuidador_enviado.png  used on input line 1016.
+a_cuidador_enviado.png  used on input line 1018.
 (pdftex.def)             Requested size: 341.43306pt x 140.6533pt.
-LaTeX Info: Redefining \. on input line 1024.
-LaTeX Info: Redefining \% on input line 1024.
+LaTeX Info: Redefining \. on input line 1026.
+LaTeX Info: Redefining \% on input line 1026.
  [87 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta.png> <.
 /Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_terapeuta_enviado.png> <
 ./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador.png>]
-LaTeX Info: Redefining \. on input line 1033.
-LaTeX Info: Redefining \% on input line 1033.
+LaTeX Info: Redefining \. on input line 1036.
+LaTeX Info: Redefining \% on input line 1036.
  [88 <./Imagenes/Figuras/disenio_competitivo/3.2.5_mensajeria_cuidador_enviado.
 png>]
 <./Imagenes/Figuras/evaluacion_expertos/debriefing.png, id=1993, 310.66063pt x 
@@ -2234,35 +2203,31 @@ File: ./Imagenes/Figuras/evaluacion_expertos/debriefing.png Graphic file (type
 png)
 <use ./Imagenes/Figuras/evaluacion_expertos/debriefing.png>
 Package pdftex.def Info: ./Imagenes/Figuras/evaluacion_expertos/debriefing.png 
- used on input line 1050.
+ used on input line 1052.
 (pdftex.def)             Requested size: 341.43306pt x 404.31502pt.
 <./Imagenes/Figuras/evaluacion_expertos/pyr.png, id=1994, 345.29pt x 372.89313p
 t>
 File: ./Imagenes/Figuras/evaluacion_expertos/pyr.png Graphic file (type png)
 <use ./Imagenes/Figuras/evaluacion_expertos/pyr.png>
 Package pdftex.def Info: ./Imagenes/Figuras/evaluacion_expertos/pyr.png  used o
-n input line 1057.
+n input line 1059.
 (pdftex.def)             Requested size: 341.43306pt x 368.7329pt.
-LaTeX Info: Redefining \. on input line 1072.
-LaTeX Info: Redefining \% on input line 1072.
- [89]
 LaTeX Info: Redefining \. on input line 1074.
 LaTeX Info: Redefining \% on input line 1074.
+ [89]
+LaTeX Info: Redefining \. on input line 1078.
+LaTeX Info: Redefining \% on input line 1078.
  [90 <./Imagenes/Figuras/evaluacion_expertos/debriefing.png>]
-LaTeX Info: Redefining \. on input line 1081.
-LaTeX Info: Redefining \% on input line 1081.
+LaTeX Info: Redefining \. on input line 1084.
+LaTeX Info: Redefining \% on input line 1084.
  [91 <./Imagenes/Figuras/evaluacion_expertos/pyr.png>])
-Overfull \hbox (134.48947pt too wide) in paragraph at lines 1083--151
-\T1/cmr/m/n/10.95 ver en https://drive.google.com/file/d/1RETh7BoEp7UKxO2MlHunI
-q99zJWBtuyD/view?usp=sharing. 
- []
-
 LaTeX Info: Redefining \. on input line 151.
 LaTeX Info: Redefining \% on input line 151.
-[92]
+ [92]
 \openout2 = `Capitulos/Implementacion.aux'.
 
- (Capitulos/Implementacion.tex
+
+(Capitulos/Implementacion.tex
 Cap\'itulo 5.
 
 Overfull \hbox (82.36267pt too wide) in paragraph at lines 3--5
@@ -3810,41 +3775,40 @@ Package rerunfilecheck Info: File `TFMTeXiS.out' has not changed.
 (rerunfilecheck)             Checksum: 678CF7456DE0DA82008E42772DAF0C4E;35423.
  ) 
 Here is how much of TeX's memory you used:
- 20125 strings out of 478659
- 397889 string characters out of 2844498
- 725670 words of memory out of 3000000
- 36724 multiletter control sequences out of 15000+600000
- 424918 words of font info for 64 fonts, out of 8000000 for 9000
+ 20180 strings out of 478584
+ 397786 string characters out of 2844401
+ 719695 words of memory out of 3000000
+ 36860 multiletter control sequences out of 15000+600000
+ 490747 words of font info for 65 fonts, out of 8000000 for 9000
  1379 hyphenation exceptions out of 8191
  92i,19n,98p,1467b,757s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\MERCEDES\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
-crm1000.pk> <C:\Users\MERCEDES\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecti1000.pk> <C:\Users\MERCEDES\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
-nappen/ec/dpi600\ectt1200.pk> <C:\Users\MERCEDES\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\MERCEDES\AppData\Local\MiKTeX\
-fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\MERCEDES\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\MERCEDES\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\MER
-CEDES\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk>{C:/U
-sers/MERCEDES/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Us
-ers\MERCEDES\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.p
-k> <C:\Users\MERCEDES\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
-cbx1095.pk> <C:\Users\MERCEDES\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\eccc1095.pk> <C:\Users\MERCEDES\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
-nappen/ec/dpi600\ecrm1200.pk> <C:\Users\MERCEDES\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\MERCEDES\AppData\Local\MiKTeX\
-fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\MERCEDES\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\MERCEDES\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\MER
-CEDES\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\
-Users\MERCEDES\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074
-.pk><C:/Users/MERCEDES/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><C:/Users/MERCEDES/AppData/Local/Programs/MiKTeX/fonts/type1/ur
-w/helvetic/uhvr8a.pfb><C:/Users/MERCEDES/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/urw/times/utmr8a.pfb>
-Output written on TFMTeXiS.pdf (204 pages, 29834849 bytes).
+ <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
+1000.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecti1000.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ectt1200.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\tcrm1095.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\evavr\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk>{D:/Users/evavr/AppData/Local
+/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\evavr\AppData\Local\MiK
+TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\evavr\AppData\Loc
+al\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\evavr\AppDa
+ta\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\evavr
+\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users
+\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:
+\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.p
+k> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
+2488.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbx1200.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1440.pk> <C:\Users\evavr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx2074.pk><D:/Users/evavr/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><D:/Users/evavr/AppData/Local/Programs/MiKTe
+X/fonts/type1/urw/helvetic/uhvr8a.pfb><D:/Users/evavr/AppData/Local/Programs/Mi
+KTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on TFMTeXiS.pdf (204 pages, 29834497 bytes).
 PDF statistics:
- 3515 PDF objects out of 3580 (max. 8388607)
+ 3514 PDF objects out of 3580 (max. 8388607)
  584 named destinations out of 1000 (max. 500000)
  2221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
