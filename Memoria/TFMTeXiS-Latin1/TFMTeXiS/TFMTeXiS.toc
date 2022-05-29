@@ -54,11 +54,11 @@
 \contentsline {section}{\numberline {4.4}Prototipo de Eva Verd\'u Rodr\IeC {\'\i }guez}{67}{section.170}%
 \contentsline {subsection}{\numberline {4.4.1}Vista del terapeuta}{68}{subsection.171}%
 \contentsline {subsection}{\numberline {4.4.2}Vista del cuidador}{73}{subsection.193}%
-\contentsline {section}{\numberline {4.5}Dise\~no competitivo}{75}{section.197}%
-\contentsline {section}{\numberline {4.6}Evaluaci\'on del dise\~no competitivo con expertos}{87}{section.220}%
+\contentsline {section}{\numberline {4.5}Dise\~no competitivo}{74}{section.197}%
+\contentsline {section}{\numberline {4.6}Evaluaci\'on del dise\~no competitivo con expertos}{86}{section.220}%
 \contentsline {subsection}{\numberline {4.6.1}Dise\~no de la evaluaci\'on}{87}{subsection.221}%
-\contentsline {subsection}{\numberline {4.6.2}Desarrollo de la evaluaci\'on}{88}{subsection.222}%
-\contentsline {subsection}{\numberline {4.6.3}Conclusiones de la evaluaci\'on}{88}{subsection.225}%
+\contentsline {subsection}{\numberline {4.6.2}Desarrollo de la evaluaci\'on}{87}{subsection.222}%
+\contentsline {subsection}{\numberline {4.6.3}Conclusiones de la evaluaci\'on}{89}{subsection.225}%
 \contentsline {chapter}{\numberline {5}Implementaci\'on de la aplicaci\'on}{91}{chapter.226}%
 \contentsline {section}{\numberline {5.1}Arquitectura}{91}{section.227}%
 \contentsline {section}{\numberline {5.2}Base de datos}{94}{section.229}%

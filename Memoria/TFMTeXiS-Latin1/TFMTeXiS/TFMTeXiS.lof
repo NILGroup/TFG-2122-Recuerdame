@@ -103,12 +103,12 @@
 \contentsline {figure}{\numberline {4.79}{\ignorespaces Asignar paciente a m\'as terapeutas del prototipo de Eva.\relax }}{73}{figure.caption.192}%
 \contentsline {figure}{\numberline {4.80}{\ignorespaces Men\'u del cuidador del prototipo de Eva.\relax }}{74}{figure.caption.194}%
 \contentsline {figure}{\numberline {4.81}{\ignorespaces Pantalla de inicio del cuidador y calendario del prototipo de Eva.\relax }}{74}{figure.caption.195}%
-\contentsline {figure}{\numberline {4.82}{\ignorespaces Mensajer\IeC {\'\i }a del cuidador del prototipo de Eva.\relax }}{74}{figure.caption.196}%
+\contentsline {figure}{\numberline {4.82}{\ignorespaces Mensajer\IeC {\'\i }a del cuidador del prototipo de Eva.\relax }}{75}{figure.caption.196}%
 \contentsline {figure}{\numberline {4.83}{\ignorespaces Login de la aplicaci\'on.\relax }}{76}{figure.caption.198}%
 \contentsline {figure}{\numberline {4.84}{\ignorespaces Listado de paciente.\relax }}{76}{figure.caption.199}%
-\contentsline {figure}{\numberline {4.85}{\ignorespaces A\~nadir un nuevo paciente.\relax }}{77}{figure.caption.200}%
+\contentsline {figure}{\numberline {4.85}{\ignorespaces A\~nadir un nuevo paciente.\relax }}{76}{figure.caption.200}%
 \contentsline {figure}{\numberline {4.86}{\ignorespaces Modificar un paciente.\relax }}{77}{figure.caption.201}%
-\contentsline {figure}{\numberline {4.87}{\ignorespaces Seleccionar un paciente.\relax }}{78}{figure.caption.202}%
+\contentsline {figure}{\numberline {4.87}{\ignorespaces Seleccionar un paciente.\relax }}{77}{figure.caption.202}%
 \contentsline {figure}{\numberline {4.88}{\ignorespaces Listado de sesiones de un paciente.\relax }}{78}{figure.caption.203}%
 \contentsline {figure}{\numberline {4.89}{\ignorespaces A\~nadir una nueva sesi\'on.\relax }}{79}{figure.caption.204}%
 \contentsline {figure}{\numberline {4.90}{\ignorespaces A\~nadir un nuevo recuerdo a una sesi\'on.\relax }}{80}{figure.caption.205}%
@@ -116,18 +116,18 @@
 \contentsline {figure}{\numberline {4.92}{\ignorespaces A\~nadir una nueva persona relacionada a un recuerdo.\relax }}{81}{figure.caption.207}%
 \contentsline {figure}{\numberline {4.93}{\ignorespaces A\~nadir una persona relacionado ya existente a un recuerdo.\relax }}{81}{figure.caption.208}%
 \contentsline {figure}{\numberline {4.94}{\ignorespaces A\~nadir un archivo multimedia.\relax }}{82}{figure.caption.209}%
-\contentsline {figure}{\numberline {4.95}{\ignorespaces A\~nadir un archivo multimedia ya existente.\relax }}{83}{figure.caption.210}%
+\contentsline {figure}{\numberline {4.95}{\ignorespaces A\~nadir un archivo multimedia ya existente.\relax }}{82}{figure.caption.210}%
 \contentsline {figure}{\numberline {4.96}{\ignorespaces Generar Historia de Vida.\relax }}{83}{figure.caption.211}%
 \contentsline {figure}{\numberline {4.97}{\ignorespaces Generar Historia de Vida como Libro.\relax }}{83}{figure.caption.212}%
 \contentsline {figure}{\numberline {4.98}{\ignorespaces Generar Historia de Vida como PDF.\relax }}{84}{figure.caption.213}%
-\contentsline {figure}{\numberline {4.99}{\ignorespaces Listado de recuerdos de un paciente.\relax }}{85}{figure.caption.214}%
+\contentsline {figure}{\numberline {4.99}{\ignorespaces Listado de recuerdos de un paciente.\relax }}{84}{figure.caption.214}%
 \contentsline {figure}{\numberline {4.100}{\ignorespaces Listado de personas relacionadas de un paciente.\relax }}{85}{figure.caption.215}%
 \contentsline {figure}{\numberline {4.101}{\ignorespaces Mensajer\IeC {\'\i }a del terapeuta.\relax }}{85}{figure.caption.216}%
 \contentsline {figure}{\numberline {4.102}{\ignorespaces Confirmaci\'on de mensaje enviado en la mensajer\IeC {\'\i }a del terapeuta.\relax }}{86}{figure.caption.217}%
 \contentsline {figure}{\numberline {4.103}{\ignorespaces Mensajer\IeC {\'\i }a del cuidador.\relax }}{86}{figure.caption.218}%
 \contentsline {figure}{\numberline {4.104}{\ignorespaces Confirmaci\'on de mensaje enviado en la mensajer\IeC {\'\i }a del cuidador.\relax }}{86}{figure.caption.219}%
-\contentsline {figure}{\numberline {4.105}{\ignorespaces Puntuaciones y observaciones de cada tarea.\relax }}{89}{figure.caption.223}%
-\contentsline {figure}{\numberline {4.106}{\ignorespaces Contestaciones a las distintas preguntas realizadas sobre cada secci\'on.\relax }}{90}{figure.caption.224}%
+\contentsline {figure}{\numberline {4.105}{\ignorespaces Puntuaciones y observaciones de cada tarea.\relax }}{88}{figure.caption.223}%
+\contentsline {figure}{\numberline {4.106}{\ignorespaces Contestaciones a las distintas preguntas realizadas sobre cada secci\'on.\relax }}{89}{figure.caption.224}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Componentes aplicaci\'on\relax }}{93}{figure.caption.228}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Estructura de la base de datos\relax }}{95}{figure.caption.230}%

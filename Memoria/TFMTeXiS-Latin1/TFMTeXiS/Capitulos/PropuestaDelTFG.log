@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.2.14)  27 MAY 2022 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.24)  29 MAY 2022 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./PropuestaDelTFG.tex
 (PropuestaDelTFG.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2021-11-22>
+L3 programming layer <2022-02-21>
 ! Undefined control sequence.
 l.3 \chapter
             {Captura de requisitos}
@@ -5126,7 +5126,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ! Undefined control sequence.
 \@footnotetext ...tins {\reset@font \footnotesize 
                                                   \interlinepenalty \interfo...
-l.48 ...Vm4PwV1afp1xr2XV3lp5a9-/view?usp=sharing/}
+l.48 ...8Vm4PwV1afp1xr2XV3lp5a9-/view?usp=sharing}
                                                   . La transcripción de esta...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5137,7 +5137,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@footnotetext ...}\color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
-l.48 ...Vm4PwV1afp1xr2XV3lp5a9-/view?usp=sharing/}
+l.48 ...8Vm4PwV1afp1xr2XV3lp5a9-/view?usp=sharing}
                                                   . La transcripción de esta...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5152,7 +5152,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 ...Vm4PwV1afp1xr2XV3lp5a9-/view?usp=sharing/}
+l.48 ...8Vm4PwV1afp1xr2XV3lp5a9-/view?usp=sharing}
                                                   . La transcripción de esta...
 
 The document does not appear to be in UTF-8 encoding.
@@ -5168,7 +5168,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 ...Vm4PwV1afp1xr2XV3lp5a9-/view?usp=sharing/}
+l.48 ...8Vm4PwV1afp1xr2XV3lp5a9-/view?usp=sharing}
                                                   . La transcripción de esta...
 
 The document does not appear to be in UTF-8 encoding.
@@ -5229,8 +5229,8 @@ a9-
  []
 
 
-Overfull \hbox (89.02798pt too wide) in paragraph at lines 48--48
-\OT1/cmr/m/n/10 /view?usp=sharing/| 
+Overfull \hbox (84.02797pt too wide) in paragraph at lines 48--48
+\OT1/cmr/m/n/10 /view?usp=sharing| 
  []
 
 Missing character: There is no . in font nullfont!
@@ -5254,7 +5254,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 ...9-/view?usp=sharing/}. La transcripción de
+l.48 ...a9-/view?usp=sharing}. La transcripción de
                                                    esta entrevista se puede ...
 
 The document does not appear to be in UTF-8 encoding.
@@ -10629,6 +10629,17 @@ or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
+! Undefined control sequence.
+<argument> ... en: https://drive.google.com/\file 
+                                                  /d/1g1-YmsEua1orr-qjbm2qgZ...
+l.76 ...a1orr-qjbm2qgZQkTM4lM3yg/view?usp=sharing}
+                                                  . La transcripción de esta...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 Overfull \hbox (11.25003pt too wide) in paragraph at lines 76--76
 [][]\OT1/cmr/m/n/10 La
@@ -10675,8 +10686,8 @@ Overfull \hbox (12.7778pt too wide) in paragraph at lines 76--76
  []
 
 
-Overfull \hbox (159.52817pt too wide) in paragraph at lines 76--76
-\OT1/cmr/m/n/10 https://drive.google.com/file/d/1g1-
+Overfull \hbox (146.75037pt too wide) in paragraph at lines 76--76
+\OT1/cmr/m/n/10 https://drive.google.com//d/1g1-
  []
 
 
@@ -14635,6 +14646,16 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no L in font nullfont!
 Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no q in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -14676,6 +14697,16 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no L in font nullfont!
 Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no q in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -14689,8 +14720,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98 		\item Lo que está en
-                            riesgo de perderse se trabaja para retrasar    s...
+l.98 		\item Los recuerdos que está en
+                                       riesgo de perderse se trabaja para re...
 
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -14754,7 +14785,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98 ...rabaja para retrasar    su desaparición. P
+l.98 ...e trabaja para retrasar su desaparición. P
                                                   ara ello se deben dar pist...
 
 The document does not appear to be in UTF-8 encoding.
@@ -16561,7 +16592,7 @@ Missing character: There is no ) in font nullfont!
 ! Undefined control sequence.
 \@footnotetext ...tins {\reset@font \footnotesize 
                                                   \interlinepenalty \interfo...
-l.112 ...WayuhzVda-YSurICkzGdGMr/view?usp=sharing}
+l.112 ...ayuhzVda\-YSurICkzGdGMr/view?usp=sharing}
                                                    de la Caixa donde cuentan...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -16572,7 +16603,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \@footnotetext ...}\color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
-l.112 ...WayuhzVda-YSurICkzGdGMr/view?usp=sharing}
+l.112 ...ayuhzVda\-YSurICkzGdGMr/view?usp=sharing}
                                                    de la Caixa donde cuentan...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20276,23 +20307,24 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 
-! LaTeX Error: Invalid UTF-8 byte sequence (ón.D).
+! LaTeX Error: Invalid UTF-8 byte sequence (ónen).
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.202 ...un informe de seguimiento de la sesión. D
-                                                  onde se guardará:
+l.202 ...un informe de seguimiento de la sesión en
+                                                   el que se guardará:
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
 or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -23703,11 +23735,11 @@ Missing character: There is no . in font nullfont!
 
  
 Here is how much of TeX's memory you used:
- 217 strings out of 478659
- 1983 string characters out of 2844498
- 323559 words of memory out of 3000000
- 18423 multiletter control sequences out of 15000+600000
- 403738 words of font info for 28 fonts, out of 8000000 for 9000
+ 218 strings out of 478584
+ 1981 string characters out of 2844401
+ 316917 words of memory out of 3000000
+ 18502 multiletter control sequences out of 15000+600000
+ 469567 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  24i,5n,14p,954b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
