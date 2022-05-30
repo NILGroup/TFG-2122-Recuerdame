@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.8)  30 MAY 2022 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.8)  30 MAY 2022 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2341,59 +2341,57 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 273.
 
-LaTeX Info: Redefining \. on input line 283.
-LaTeX Info: Redefining \% on input line 283.
+LaTeX Info: Redefining \. on input line 282.
+LaTeX Info: Redefining \% on input line 282.
 [100]
 <./Imagenes/Figuras/implementacion/login.png, id=2065, 501.875pt x 423.5825pt>
 File: ./Imagenes/Figuras/implementacion/login.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/login.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/login.png  used on i
-nput line 288.
+nput line 290.
 (pdftex.def)             Requested size: 170.71652pt x 144.08723pt.
 <./Imagenes/Figuras/diagramas_secuencia/login.png, id=2066, 527.9725pt x 372.39
 125pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/login.png Graphic file (type png)
 <use ./Imagenes/Figuras/diagramas_secuencia/login.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/login.png  used
- on input line 295.
+ on input line 297.
 (pdftex.def)             Requested size: 341.43306pt x 240.81839pt.
 <./Imagenes/Figuras/implementacion/inicio.png, id=2067, 961.09062pt x 454.69875
 pt>
 File: ./Imagenes/Figuras/implementacion/inicio.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/inicio.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/inicio.png  used on 
-input line 302.
+input line 304.
 (pdftex.def)             Requested size: 341.43306pt x 161.53366pt.
-LaTeX Info: Redefining \. on input line 311.
-LaTeX Info: Redefining \% on input line 311.
+LaTeX Info: Redefining \. on input line 313.
+LaTeX Info: Redefining \% on input line 313.
  [101 <./Imagenes/Figuras/implementacion/login.png>]
-<./Imagenes/Figuras/diagramas_secuencia/lista.png, id=2075, 543.02875pt x 314.1
+LaTeX Info: Redefining \. on input line 313.
+LaTeX Info: Redefining \% on input line 313.
+ [102 <./Imagenes/Figuras/diagramas_secuencia/login.png> <./Imagenes/Figuras/im
+plementacion/inicio.png>]
+<./Imagenes/Figuras/diagramas_secuencia/lista.png, id=2081, 543.02875pt x 314.1
 7375pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/lista.png Graphic file (type png)
 <use ./Imagenes/Figuras/diagramas_secuencia/lista.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/lista.png  used
- on input line 314.
+ on input line 316.
 (pdftex.def)             Requested size: 341.43306pt x 197.54698pt.
 File: ./Imagenes/Figuras/implementacion/inicio.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/inicio.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/inicio.png  used on 
-input line 321.
+input line 323.
 (pdftex.def)             Requested size: 341.43306pt x 161.53366pt.
-<./Imagenes/Figuras/implementacion/anadir.png, id=2079, 1445.4pt x 739.76375pt>
+<./Imagenes/Figuras/implementacion/anadir.png, id=2085, 1445.4pt x 739.76375pt>
 
 File: ./Imagenes/Figuras/implementacion/anadir.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/anadir.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/anadir.png  used on 
-input line 331.
+input line 333.
 (pdftex.def)             Requested size: 355.65944pt x 182.0282pt.
-LaTeX Info: Redefining \. on input line 335.
-LaTeX Info: Redefining \% on input line 335.
- [102 <./Imagenes/Figuras/diagramas_secuencia/login.png> <./Imagenes/Figuras/im
-plementacion/inicio.png>]
-Underfull \vbox (badness 1817) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 335.
-LaTeX Info: Redefining \% on input line 335.
+LaTeX Info: Redefining \. on input line 337.
+LaTeX Info: Redefining \% on input line 337.
  [103 <./Imagenes/Figuras/diagramas_secuencia/lista.png>]
 <./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png, id=2092, 814.0412
 4pt x 442.65375pt>
@@ -2401,46 +2399,42 @@ File: ./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png Graphic file
 (type png)
 <use ./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/modcrearpacient
-e.png  used on input line 338.
+e.png  used on input line 340.
 (pdftex.def)             Requested size: 341.43306pt x 185.66339pt.
-LaTeX Info: Redefining \. on input line 346.
-LaTeX Info: Redefining \% on input line 346.
- [104 <./Imagenes/Figuras/implementacion/anadir.png> <./Imagenes/Figuras/diagra
-mas_secuencia/modcrearpaciente.png>]
+LaTeX Info: Redefining \. on input line 348.
+LaTeX Info: Redefining \% on input line 348.
+ [104 <./Imagenes/Figuras/implementacion/anadir.png>]
 File: ./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png Graphic file 
 (type png)
 <use ./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/modcrearpacient
-e.png  used on input line 349.
+e.png  used on input line 351.
 (pdftex.def)             Requested size: 341.43306pt x 185.66339pt.
-<./Imagenes/Figuras/implementacion/modificar.png, id=2101, 963.6pt x 422.07687p
+<./Imagenes/Figuras/implementacion/modificar.png, id=2100, 963.6pt x 422.07687p
 t>
 File: ./Imagenes/Figuras/implementacion/modificar.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/modificar.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/modificar.png  used 
-on input line 356.
+on input line 358.
 (pdftex.def)             Requested size: 355.65944pt x 155.78601pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 364.
-LaTeX Info: Redefining \% on input line 364.
- [105 <./Imagenes/Figuras/implementacion/modificar.png>]
-<./Imagenes/Figuras/diagramas_secuencia/delete.png, id=2106, 573.14125pt x 261.
+<./Imagenes/Figuras/diagramas_secuencia/delete.png, id=2101, 573.14125pt x 261.
 97874pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/delete.png Graphic file (type png)
 
 <use ./Imagenes/Figuras/diagramas_secuencia/delete.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/delete.png  use
-d on input line 367.
+d on input line 369.
 (pdftex.def)             Requested size: 341.43306pt x 156.06917pt.
+LaTeX Info: Redefining \. on input line 372.
+LaTeX Info: Redefining \% on input line 372.
+ [105 <./Imagenes/Figuras/diagramas_secuencia/modcrearpaciente.png>]
 <./Imagenes/Figuras/diagramas_secuencia/generarLibro.png, id=2110, 532.99126pt 
 x 282.05376pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/generarLibro.png Graphic file (typ
 e png)
 <use ./Imagenes/Figuras/diagramas_secuencia/generarLibro.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/generarLibro.pn
-g  used on input line 377.
+g  used on input line 379.
 (pdftex.def)             Requested size: 341.43306pt x 180.68593pt.
 <./Imagenes/Figuras/implementacion/libroDeVida.png, id=2111, 1445.4pt x 792.962
 5pt>
@@ -2448,65 +2442,65 @@ File: ./Imagenes/Figuras/implementacion/libroDeVida.png Graphic file (type png)
 
 <use ./Imagenes/Figuras/implementacion/libroDeVida.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/libroDeVida.png  use
-d on input line 384.
+d on input line 386.
 (pdftex.def)             Requested size: 355.65944pt x 195.11842pt.
 <./Imagenes/Figuras/implementacion/filtro.png, id=2112, 959.585pt x 433.62pt>
 File: ./Imagenes/Figuras/implementacion/filtro.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/filtro.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/filtro.png  used on 
-input line 391.
+input line 393.
 (pdftex.def)             Requested size: 355.65944pt x 160.71478pt.
-LaTeX Info: Redefining \. on input line 399.
-LaTeX Info: Redefining \% on input line 399.
- [106 <./Imagenes/Figuras/diagramas_secuencia/delete.png>]
-<./Imagenes/Figuras/diagramas_secuencia/generarPDF.png, id=2120, 613.29124pt x 
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
+ [106 <./Imagenes/Figuras/implementacion/modificar.png> <./Imagenes/Figuras/dia
+gramas_secuencia/delete.png>]
+Underfull \vbox (badness 1810) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
+ [107 <./Imagenes/Figuras/diagramas_secuencia/generarLibro.png> <./Imagenes/Fig
+uras/implementacion/libroDeVida.png>]
+<./Imagenes/Figuras/diagramas_secuencia/generarPDF.png, id=2126, 613.29124pt x 
 282.05376pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/generarPDF.png Graphic file (type 
 png)
 <use ./Imagenes/Figuras/diagramas_secuencia/generarPDF.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/generarPDF.png 
- used on input line 402.
+ used on input line 404.
 (pdftex.def)             Requested size: 341.43306pt x 157.0237pt.
-<./Imagenes/Figuras/implementacion/pdf.png, id=2121, 963.6pt x 433.62pt>
+<./Imagenes/Figuras/implementacion/pdf.png, id=2127, 963.6pt x 433.62pt>
 File: ./Imagenes/Figuras/implementacion/pdf.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/pdf.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/pdf.png  used on inp
-ut line 409.
+ut line 411.
 (pdftex.def)             Requested size: 355.65944pt x 160.04651pt.
-<./Imagenes/Figuras/implementacion/anadirExistente.png, id=2124, 1445.4pt x 739
+<./Imagenes/Figuras/implementacion/anadirExistente.png, id=2130, 1445.4pt x 739
 .76375pt>
 File: ./Imagenes/Figuras/implementacion/anadirExistente.png Graphic file (type 
 png)
 <use ./Imagenes/Figuras/implementacion/anadirExistente.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/anadirExistente.png 
- used on input line 421.
+ used on input line 423.
 (pdftex.def)             Requested size: 355.65944pt x 182.0282pt.
-<./Imagenes/Figuras/diagramas_secuencia/andExist.png, id=2125, 653.44125pt x 55
+<./Imagenes/Figuras/diagramas_secuencia/andExist.png, id=2131, 653.44125pt x 55
 3.06625pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/andExist.png Graphic file (type pn
 g)
 <use ./Imagenes/Figuras/diagramas_secuencia/andExist.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/andExist.png  u
-sed on input line 427.
+sed on input line 429.
 (pdftex.def)             Requested size: 341.43306pt x 288.98012pt.
-LaTeX Info: Redefining \. on input line 431.
-LaTeX Info: Redefining \% on input line 431.
- [107 <./Imagenes/Figuras/diagramas_secuencia/generarLibro.png> <./Imagenes/Fig
-uras/implementacion/libroDeVida.png>]
-
-LaTeX Warning: Text page 108 contains only floats.
-
-LaTeX Info: Redefining \. on input line 431.
-LaTeX Info: Redefining \% on input line 431.
-[108 <./Imagenes/Figuras/implementacion/filtro.png> <./Imagenes/Figuras/diagram
-as_secuencia/generarPDF.png> <./Imagenes/Figuras/implementacion/pdf.png>]
+LaTeX Info: Redefining \. on input line 433.
+LaTeX Info: Redefining \% on input line 433.
+ [108 <./Imagenes/Figuras/implementacion/filtro.png> <./Imagenes/Figuras/diagra
+mas_secuencia/generarPDF.png>]
 <./Imagenes/Figuras/implementacion/anadirInformeSesion.png, id=2141, 1445.4pt x
  792.9625pt>
 File: ./Imagenes/Figuras/implementacion/anadirInformeSesion.png Graphic file (t
 ype png)
 <use ./Imagenes/Figuras/implementacion/anadirInformeSesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/anadirInformeSesion.
-png  used on input line 436.
+png  used on input line 438.
 (pdftex.def)             Requested size: 355.65944pt x 195.11842pt.
 <./Imagenes/Figuras/diagramas_secuencia/Crear_informe_sesion.png, id=2142, 985.
 6825pt x 302.12875pt>
@@ -2514,122 +2508,125 @@ File: ./Imagenes/Figuras/diagramas_secuencia/Crear_informe_sesion.png Graphic f
 ile (type png)
 <use ./Imagenes/Figuras/diagramas_secuencia/Crear_informe_sesion.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/Crear_informe_s
-esion.png  used on input line 442.
+esion.png  used on input line 444.
 (pdftex.def)             Requested size: 341.43306pt x 104.65404pt.
-LaTeX Info: Redefining \. on input line 446.
-LaTeX Info: Redefining \% on input line 446.
-
-[109 <./Imagenes/Figuras/implementacion/anadirExistente.png>]
-<./Imagenes/Figuras/implementacion/calendario.png, id=2151, 1445.4pt x 740.7675
+LaTeX Info: Redefining \. on input line 448.
+LaTeX Info: Redefining \% on input line 448.
+ [109 <./Imagenes/Figuras/implementacion/pdf.png>]
+<./Imagenes/Figuras/implementacion/calendario.png, id=2150, 1445.4pt x 740.7675
 pt>
 File: ./Imagenes/Figuras/implementacion/calendario.png Graphic file (type png)
 <use ./Imagenes/Figuras/implementacion/calendario.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/calendario.png  used
- on input line 451.
+ on input line 453.
 (pdftex.def)             Requested size: 355.65944pt x 182.27519pt.
-<./Imagenes/Figuras/diagramas_secuencia/calendario.png, id=2152, 437.635pt x 30
+<./Imagenes/Figuras/diagramas_secuencia/calendario.png, id=2151, 437.635pt x 30
 2.12875pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/calendario.png Graphic file (type 
 png)
 <use ./Imagenes/Figuras/diagramas_secuencia/calendario.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/calendario.png 
- used on input line 457.
+ used on input line 459.
 (pdftex.def)             Requested size: 341.43306pt x 235.71478pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 467.
-LaTeX Info: Redefining \% on input line 467.
- [110 <./Imagenes/Figuras/diagramas_secuencia/andExist.png>]
-<./Imagenes/Figuras/implementacion/registroTerapeuta.png, id=2162, 1445.4pt x 7
+LaTeX Info: Redefining \. on input line 463.
+LaTeX Info: Redefining \% on input line 463.
+ [110 <./Imagenes/Figuras/implementacion/anadirExistente.png> <./Imagenes/Figur
+as/diagramas_secuencia/andExist.png>]
+LaTeX Info: Redefining \. on input line 469.
+LaTeX Info: Redefining \% on input line 469.
+ [111 <./Imagenes/Figuras/implementacion/anadirInformeSesion.png> <./Imagenes/F
+iguras/diagramas_secuencia/Crear_informe_sesion.png>]
+<./Imagenes/Figuras/implementacion/registroTerapeuta.png, id=2168, 1445.4pt x 7
 40.7675pt>
 File: ./Imagenes/Figuras/implementacion/registroTerapeuta.png Graphic file (typ
 e png)
 <use ./Imagenes/Figuras/implementacion/registroTerapeuta.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/registroTerapeuta.pn
-g  used on input line 470.
+g  used on input line 472.
 (pdftex.def)             Requested size: 355.65944pt x 182.27519pt.
-<./Imagenes/Figuras/diagramas_secuencia/terapeuta.png, id=2163, 624.3325pt x 42
+<./Imagenes/Figuras/diagramas_secuencia/terapeuta.png, id=2169, 624.3325pt x 42
 2.57875pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/terapeuta.png Graphic file (type p
 ng)
 <use ./Imagenes/Figuras/diagramas_secuencia/terapeuta.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/terapeuta.png  
-used on input line 476.
+used on input line 478.
 (pdftex.def)             Requested size: 341.43306pt x 231.10362pt.
-<./Imagenes/Figuras/implementacion/registroCuidador.png, id=2167, 1445.4pt x 79
+<./Imagenes/Figuras/implementacion/registroCuidador.png, id=2173, 1445.4pt x 79
 2.9625pt>
 File: ./Imagenes/Figuras/implementacion/registroCuidador.png Graphic file (type
  png)
 <use ./Imagenes/Figuras/implementacion/registroCuidador.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/registroCuidador.png
-  used on input line 486.
+  used on input line 488.
 (pdftex.def)             Requested size: 355.65944pt x 195.11842pt.
-<./Imagenes/Figuras/diagramas_secuencia/cuidador.png, id=2168, 624.3325pt x 422
+<./Imagenes/Figuras/diagramas_secuencia/cuidador.png, id=2174, 624.3325pt x 422
 .57875pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/cuidador.png Graphic file (type pn
 g)
 <use ./Imagenes/Figuras/diagramas_secuencia/cuidador.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/cuidador.png  u
-sed on input line 492.
+sed on input line 494.
 (pdftex.def)             Requested size: 199.16928pt x 134.80238pt.
-LaTeX Info: Redefining \. on input line 496.
-LaTeX Info: Redefining \% on input line 496.
- [111 <./Imagenes/Figuras/implementacion/anadirInformeSesion.png> <./Imagenes/F
-iguras/diagramas_secuencia/Crear_informe_sesion.png>]
-LaTeX Info: Redefining \. on input line 496.
-LaTeX Info: Redefining \% on input line 496.
- [112 <./Imagenes/Figuras/implementacion/calendario.png> <./Imagenes/Figuras/di
-agramas_secuencia/calendario.png>]
-<./Imagenes/Figuras/implementacion/cambioContrasena.png, id=2182, 1445.4pt x 79
+LaTeX Info: Redefining \. on input line 498.
+LaTeX Info: Redefining \% on input line 498.
+[112 <./Imagenes/Figuras/implementacion/calendario.png> <./Imagenes/Figuras/dia
+gramas_secuencia/calendario.png>]
+Underfull \vbox (badness 1867) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 498.
+LaTeX Info: Redefining \% on input line 498.
+ [113 <./Imagenes/Figuras/implementacion/registroTerapeuta.png> <./Imagenes/Fig
+uras/diagramas_secuencia/terapeuta.png>]
+<./Imagenes/Figuras/implementacion/cambioContrasena.png, id=2188, 1445.4pt x 79
 2.9625pt>
 File: ./Imagenes/Figuras/implementacion/cambioContrasena.png Graphic file (type
  png)
 <use ./Imagenes/Figuras/implementacion/cambioContrasena.png>
 Package pdftex.def Info: ./Imagenes/Figuras/implementacion/cambioContrasena.png
-  used on input line 500.
+  used on input line 502.
 (pdftex.def)             Requested size: 227.62204pt x 124.86804pt.
-<./Imagenes/Figuras/diagramas_secuencia/olvido.png, id=2183, 734.745pt x 422.57
+<./Imagenes/Figuras/diagramas_secuencia/olvido.png, id=2189, 734.745pt x 422.57
 875pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/olvido.png Graphic file (type png)
 
 <use ./Imagenes/Figuras/diagramas_secuencia/olvido.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/olvido.png  use
-d on input line 506.
+d on input line 508.
 (pdftex.def)             Requested size: 284.52756pt x 163.6444pt.
-LaTeX Info: Redefining \. on input line 510.
-LaTeX Info: Redefining \% on input line 510.
- [113 <./Imagenes/Figuras/implementacion/registroTerapeuta.png> <./Imagenes/Fig
-uras/diagramas_secuencia/terapeuta.png>]
-<./Imagenes/Figuras/diagramas_secuencia/logout.png, id=2191, 274.02374pt x 291.
+LaTeX Info: Redefining \. on input line 512.
+LaTeX Info: Redefining \% on input line 512.
+ [114 <./Imagenes/Figuras/implementacion/registroCuidador.png> <./Imagenes/Figu
+ras/diagramas_secuencia/cuidador.png>]
+<./Imagenes/Figuras/diagramas_secuencia/logout.png, id=2197, 274.02374pt x 291.
 0875pt>
 File: ./Imagenes/Figuras/diagramas_secuencia/logout.png Graphic file (type png)
 
 <use ./Imagenes/Figuras/diagramas_secuencia/logout.png>
 Package pdftex.def Info: ./Imagenes/Figuras/diagramas_secuencia/logout.png  use
-d on input line 516.
+d on input line 518.
 (pdftex.def)             Requested size: 142.26378pt x 151.12651pt.
 )
 LaTeX Info: Redefining \. on input line 152.
 LaTeX Info: Redefining \% on input line 152.
- [114 <./Imagenes/Figuras/implementacion/registroCuidador.png> <./Imagenes/Figu
-ras/diagramas_secuencia/cuidador.png>]
+ [115 <./Imagenes/Figuras/implementacion/cambioContrasena.png> <./Imagenes/Figu
+ras/diagramas_secuencia/olvido.png>]
 LaTeX Info: Redefining \. on input line 152.
 LaTeX Info: Redefining \% on input line 152.
- [115 <./Imagenes/Figuras/implementacion/cambioContrasena.png> <./Imagenes/Figu
-ras/diagramas_secuencia/olvido.png> <./Imagenes/Figuras/diagramas_secuencia/log
-out.png>]
+ [116 <./Imagenes/Figuras/diagramas_secuencia/logout.png>]
 \openout2 = `Capitulos/Evaluaciones.aux'.
 
-
-(./Capitulos/Evaluaciones.tex [116
+ (./Capitulos/Evaluaciones.tex
+Cap\'itulo 6.
+[117
 
 
 
 
 ]
-Cap\'itulo 6.
-[117]
 LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
  [118]
@@ -3738,7 +3735,7 @@ ublic/cm-super/sftt1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
 lic/cm-super/sftt1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/h
 elvetic/uhvr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb>
-Output written on TFMTeXiS.pdf (202 pages, 29729710 bytes).
+Output written on TFMTeXiS.pdf (202 pages, 29730792 bytes).
 PDF statistics:
  2849 PDF objects out of 2984 (max. 8388607)
  2241 compressed objects within 23 object streams

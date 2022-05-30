@@ -84,18 +84,18 @@
 \contentsline {section}{\numberline {5.3}Implementaci\'on de las funcionalidades de la aplicaci\'on}{101}{section.250}%
 \contentsline {subsection}{\numberline {5.3.1}Login}{101}{subsection.251}%
 \contentsline {subsection}{\numberline {5.3.2}Listado de registros}{101}{subsection.255}%
-\contentsline {subsection}{\numberline {5.3.3}Crear un nuevo registro}{102}{subsection.258}%
+\contentsline {subsection}{\numberline {5.3.3}Crear un nuevo registro}{103}{subsection.258}%
 \contentsline {subsection}{\numberline {5.3.4}Modificar un registro}{104}{subsection.261}%
-\contentsline {subsection}{\numberline {5.3.5}Eliminar un registro}{106}{subsection.264}%
+\contentsline {subsection}{\numberline {5.3.5}Eliminar un registro}{105}{subsection.264}%
 \contentsline {subsection}{\numberline {5.3.6}Generar Libro de Historias de Vida}{106}{subsection.266}%
-\contentsline {subsection}{\numberline {5.3.7}Generar PDF}{106}{subsection.270}%
-\contentsline {subsection}{\numberline {5.3.8}A\~nadir un registro ya existente}{107}{subsection.273}%
+\contentsline {subsection}{\numberline {5.3.7}Generar PDF}{107}{subsection.270}%
+\contentsline {subsection}{\numberline {5.3.8}A\~nadir un registro ya existente}{108}{subsection.273}%
 \contentsline {subsection}{\numberline {5.3.9}Crear un informe de sesi\'on}{109}{subsection.276}%
-\contentsline {subsection}{\numberline {5.3.10}Calendario de actividades}{110}{subsection.279}%
+\contentsline {subsection}{\numberline {5.3.10}Calendario de actividades}{111}{subsection.279}%
 \contentsline {subsection}{\numberline {5.3.11}Registro de un terapeuta}{111}{subsection.282}%
-\contentsline {subsection}{\numberline {5.3.12}Registro de un cuidador}{111}{subsection.285}%
-\contentsline {subsection}{\numberline {5.3.13}Cambio de contrase\~na de un usuario}{113}{subsection.288}%
-\contentsline {subsection}{\numberline {5.3.14}Logout}{114}{subsection.291}%
+\contentsline {subsection}{\numberline {5.3.12}Registro de un cuidador}{112}{subsection.285}%
+\contentsline {subsection}{\numberline {5.3.13}Cambio de contrase\~na de un usuario}{114}{subsection.288}%
+\contentsline {subsection}{\numberline {5.3.14}Logout}{115}{subsection.291}%
 \contentsline {chapter}{\numberline {6}Evaluaci\'on}{117}{chapter.293}%
 \contentsline {section}{\numberline {6.1}Dise\~no de la evaluaci\'on}{117}{section.294}%
 \contentsline {section}{\numberline {6.2}Desarrollo de la evaluaci\'on}{118}{section.298}%
